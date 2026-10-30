@@ -146,21 +146,7 @@
     });
   }
 
-  async function loadProjectIndex() {
-    if (location.protocol === 'file:') return;
-    try {
-      const response = await fetch(`json/projects.index.json?v=${Date.now()}`, { cache: 'no-store' });
-      if (!response.ok) throw new Error(`projects.index.json: HTTP ${response.status}`);
-      const index = await response.json();
-      const files = Array.isArray(index) ? index : index?.arquivos;
-      if (Array.isArray(files) && files.length) window.PORTFOLIO_JSON_FILES = files.map(clean).filter(Boolean);
-    } catch (error) {
-      console.warn('Lista de projetos não relida; usando a lista já carregada.', error);
-    }
-  }
-
   async function loadProjects({ force = false } = {}) {
-    if (force) await loadProjectIndex();
     const files = Array.isArray(window.PORTFOLIO_JSON_FILES) ? window.PORTFOLIO_JSON_FILES : [];
     state.failedFiles = 0;
 
@@ -381,14 +367,17 @@
   }
 
   function priorityKey(value) {
-    const key = clean(value).toUpperCase();
-    return ['P0','P1','P2'].includes(key) ? key : 'S/P';
+    const key = String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().trim();
+    if (['P0','P1','P2'].includes(key)) return key;
+    if (key.startsWith('CONGELAD')) return 'Congelado';
+    if (key.startsWith('CANCELAD')) return 'Cancelado';
+    return '';
   }
 
-  const PRIORITY_RANK = { P0: 0, P1: 1, P2: 2, 'S/P': 3 };
+  const PRIORITY_RANK = { P0: 0, P1: 1, P2: 2, Congelado: 3, Cancelado: 4, '': 5 };
   const priorityRank = value => PRIORITY_RANK[priorityKey(value)];
   const byPriority = (a, b) => priorityRank(a.prioridade) - priorityRank(b.prioridade) || clean(a.inicio || '9999').localeCompare(clean(b.inicio || '9999')) || idNumber(a.id) - idNumber(b.id);
-  const roadmapPrioritySelected = item => !Array.isArray(window.roadmapPriorityFilter) || window.roadmapPriorityFilter.includes(priorityKey(item.prioridade));
+  const roadmapPrioritySelected = item => Boolean(priorityKey(item.prioridade)) && (!Array.isArray(window.roadmapPriorityFilter) || window.roadmapPriorityFilter.includes(priorityKey(item.prioridade)));
 
   function executiveMonthsHeader() {
     return `<div class="months"><div>Projeto e período</div>${EXEC_MONTHS.map(month => `<div class="month-label">${month.label}<span>${month.year}</span></div>`).join('')}</div>`;
@@ -422,7 +411,7 @@
       .filter(roadmapPrioritySelected)
       .map(project => ({ ...project, fim: project.termino }))
       .sort(byPriority);
-    card.innerHTML = `<div class="roadmap-legend"><span><i class="legend-p0"></i>P0</span><span><i class="legend-p1"></i>P1</span><span><i class="legend-p2"></i>P2</span><span><i class="legend-sp"></i>Sem prioridade</span><span class="today-legend"><i></i>Data atual</span></div><div class="roadmap-scroll"><div class="roadmap-grid">${executiveMonthsHeader()}${executiveRoadmapRows(candidates) || '<div class="empty-state">Sem cronograma no recorte.</div>'}${todayLayer()}</div></div>`;
+    card.innerHTML = `<div class="roadmap-legend"><span><i class="legend-p0"></i>P0</span><span><i class="legend-p1"></i>P1</span><span><i class="legend-p2"></i>P2</span><span><i class="legend-congelado"></i>Congelado</span><span><i class="legend-cancelado"></i>Cancelado</span><span class="today-legend"><i></i>Data atual</span></div><div class="roadmap-scroll"><div class="roadmap-grid">${executiveMonthsHeader()}${executiveRoadmapRows(candidates) || '<div class="empty-state">Sem cronograma no recorte.</div>'}${todayLayer()}</div></div>`;
     if (typeof window.layoutRoadmapTimeline === 'function') window.layoutRoadmapTimeline(card);
   }
 

@@ -699,7 +699,7 @@ body.project-open .topbar{display:none!important}
         </section>
 
         <section class="section" id="roadmap">
-          <div class="section-head"><div><h2>Roadmap executivo</h2><p>6 meses antes e 6 meses depois de hoje</p></div><div class="roadmap-actions"><div class="roadmap-priority-filter" role="group" aria-label="Filtrar roadmap por prioridade"><span>Prioridade</span><button type="button" class="rp-btn active" data-rp="ALL" onclick="toggleRoadmapPriority('ALL')">Todos</button><button type="button" class="rp-btn active" data-rp="P0" onclick="toggleRoadmapPriority('P0')">P0</button><button type="button" class="rp-btn active" data-rp="P1" onclick="toggleRoadmapPriority('P1')">P1</button><button type="button" class="rp-btn active" data-rp="P2" onclick="toggleRoadmapPriority('P2')">P2</button><button type="button" class="rp-btn active" data-rp="S/P" onclick="toggleRoadmapPriority('S/P')">S/P</button></div><button class="link-btn" type="button" onclick="document.querySelector('#roadmap .roadmap-scroll')?.scrollBy({top:240,behavior:'smooth'})">Ver próximos projetos ↓</button></div></div>
+          <div class="section-head"><div><h2>Roadmap executivo</h2><p>6 meses antes e 6 meses depois de hoje</p></div><div class="roadmap-actions"><div class="roadmap-priority-filter" role="group" aria-label="Filtrar roadmap por prioridade"><span>Prioridade</span><button type="button" class="rp-btn active" data-rp="ALL" onclick="toggleRoadmapPriority('ALL')">Todos</button><button type="button" class="rp-btn active" data-rp="P0" onclick="toggleRoadmapPriority('P0')">P0</button><button type="button" class="rp-btn active" data-rp="P1" onclick="toggleRoadmapPriority('P1')">P1</button><button type="button" class="rp-btn active" data-rp="P2" onclick="toggleRoadmapPriority('P2')">P2</button><button type="button" class="rp-btn active" data-rp="Congelado" onclick="toggleRoadmapPriority('Congelado')">Congelado</button><button type="button" class="rp-btn active" data-rp="Cancelado" onclick="toggleRoadmapPriority('Cancelado')">Cancelado</button></div><button class="link-btn" type="button" onclick="document.querySelector('#roadmap .roadmap-scroll')?.scrollBy({top:240,behavior:'smooth'})">Ver próximos projetos ↓</button></div></div>
           <style>
             #roadmap .roadmap-actions{display:flex;align-items:center;gap:14px;flex-wrap:nowrap;justify-content:flex-end}
             #roadmap>.section-head{align-items:flex-end;margin-bottom:8px}
@@ -736,9 +736,9 @@ body.project-open .topbar{display:none!important}
             #roadmap .roadmap-scroll::-webkit-scrollbar-track{background:#f3f5f8}
           </style>
           <script>
-            window.roadmapPriorityFilter = ['P0','P1','P2','S/P'];
+            window.roadmapPriorityFilter = ['P0','P1','P2','Congelado','Cancelado'];
             window.toggleRoadmapPriority = key => {
-              const all = ['P0','P1','P2','S/P'];
+              const all = ['P0','P1','P2','Congelado','Cancelado'];
               let selected = Array.isArray(window.roadmapPriorityFilter) ? window.roadmapPriorityFilter.slice() : all.slice();
               if (key === 'ALL') selected = selected.length === all.length ? [] : all.slice();
               else selected = selected.includes(key) ? selected.filter(item => item !== key) : all.filter(item => item === key || selected.includes(item));
@@ -1116,8 +1116,11 @@ body.project-open .topbar{display:none!important}
       return `${['JAN','FEV','MAR','ABR','MAI','JUN','JUL','AGO','SET','OUT','NOV','DEZ'][month - 1]}/${String(year).slice(-2)}`;
     }
     function priorityKey(value) {
-      const key = String(value || '').toUpperCase().trim();
-      return ['P0','P1','P2'].includes(key) ? key : 'S/P';
+      const key = String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().trim();
+      if (['P0','P1','P2'].includes(key)) return key;
+      if (key.startsWith('CONGELAD')) return 'Congelado';
+      if (key.startsWith('CANCELAD')) return 'Cancelado';
+      return '';
     }
     function monthsHeader() {
       return `<div class="months"><div>Projeto e período</div>${EXEC_MONTHS.map(month => `<div class="month-label">${month.label}<span>${month.year}</span></div>`).join('')}</div>`;
@@ -1156,10 +1159,10 @@ body.project-open .topbar{display:none!important}
       const card = document.querySelector('#roadmap .roadmap-card');
       if (!card) return;
       const candidates = filteredData()
-        .filter(project => !Array.isArray(window.roadmapPriorityFilter) || window.roadmapPriorityFilter.includes(priorityKey(project.prioridade)))
+        .filter(project => Boolean(priorityKey(project.prioridade)) && (!Array.isArray(window.roadmapPriorityFilter) || window.roadmapPriorityFilter.includes(priorityKey(project.prioridade))))
         .map(project => ({...project, fim:project.termino}))
-        .sort((a,b) => ({P0:0,P1:1,P2:2,'S/P':3})[priorityKey(a.prioridade)] - ({P0:0,P1:1,P2:2,'S/P':3})[priorityKey(b.prioridade)] || (a.inicio || '9999').localeCompare(b.inicio || '9999') || idNumber(a.id) - idNumber(b.id));
-      card.innerHTML = `<div class="roadmap-legend"><span><i class="legend-p0"></i>P0</span><span><i class="legend-p1"></i>P1</span><span><i class="legend-p2"></i>P2</span><span><i class="legend-sp"></i>Sem prioridade</span><span class="today-legend"><i></i>Data atual</span></div><div class="roadmap-scroll"><div class="roadmap-grid">${monthsHeader()}${roadmapRows(candidates) || '<div class="empty-state">Sem cronograma no recorte.</div>'}${todayLayer()}</div></div>`;
+        .sort((a,b) => ({P0:0,P1:1,P2:2,Congelado:3,Cancelado:4,'':5})[priorityKey(a.prioridade)] - ({P0:0,P1:1,P2:2,Congelado:3,Cancelado:4,'':5})[priorityKey(b.prioridade)] || (a.inicio || '9999').localeCompare(b.inicio || '9999') || idNumber(a.id) - idNumber(b.id));
+      card.innerHTML = `<div class="roadmap-legend"><span><i class="legend-p0"></i>P0</span><span><i class="legend-p1"></i>P1</span><span><i class="legend-p2"></i>P2</span><span><i class="legend-congelado"></i>Congelado</span><span><i class="legend-cancelado"></i>Cancelado</span><span class="today-legend"><i></i>Data atual</span></div><div class="roadmap-scroll"><div class="roadmap-grid">${monthsHeader()}${roadmapRows(candidates) || '<div class="empty-state">Sem cronograma no recorte.</div>'}${todayLayer()}</div></div>`;
       if (typeof window.layoutRoadmapTimeline === 'function') window.layoutRoadmapTimeline(card);
     }
     window.addEventListener('DOMContentLoaded', renderRoadmap, {once:true});
@@ -1223,7 +1226,8 @@ body.project-open .topbar{display:none!important}
 #roadmap .roadmap-legend .legend-p0,#roadmap .priority-p0 .road-block{background:#c00000!important}
 #roadmap .roadmap-legend .legend-p1,#roadmap .priority-p1 .road-block{background:#ed7d31!important}
 #roadmap .roadmap-legend .legend-p2,#roadmap .priority-p2 .road-block{background:#ffc000!important}
-#roadmap .roadmap-legend .legend-sp,#roadmap .priority-s-p .road-block{background:#bfbfbf!important}
+#roadmap .roadmap-legend .legend-congelado,#roadmap .priority-congelado .road-block{background:#bfbfbf!important}
+#roadmap .roadmap-legend .legend-cancelado,#roadmap .priority-cancelado .road-block{background:#7f7f7f!important}
 #roadmap .today-line,#roadmap .today-line span,#roadmap .roadmap-legend .today-legend i{background:#530b03!important}
 #roadmap .roadmap-legend .today-legend{color:#530b03!important}
 /* Distribuição por stage */
