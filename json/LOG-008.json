@@ -1,6 +1,6 @@
 {
   "id": "LOG-008",
-  "projeto": "E-sim",
+  "projeto": "LOG-08 |Massificação eSIM",
   "area": "Transportes",
   "pontoFocal": "Raquel",
   "inicio": "2026-01-29",
@@ -31,19 +31,19 @@
   "macroAtividades": [
     {
       "numero": "01.",
-      "atividade": "Massificação eSIM PME e GE - 5G NSA",
-      "responsavel": "Logística",
+      "atividade": "Televendas Receptivo - Fase 1.0",
+      "responsavel": "Negócios",
       "status": 1,
-      "inicio": "2026-06-26",
-      "fim": "2026-08-11"
+      "inicio": "2026-06-16",
+      "fim": ""
     },
     {
       "numero": "02.",
-      "atividade": "e-SIM  - PAP - Lançamento comercial",
-      "responsavel": "Jéssica Melo",
+      "atividade": "e-SIM  - PAP",
+      "responsavel": "Negócios",
       "status": 4,
-      "inicio": "2026-08-12",
-      "fim": "2026-08-14"
+      "inicio": "2026-03-31",
+      "fim": "2026-04-02"
     },
     {
       "numero": "03.",
@@ -249,43 +249,283 @@
   "cronogramaDetalhado": [
     {
       "numero": 1,
-      "atividade": "1. Televendas Receptivo - Fase 1.0",
-      "responsavel": "Alessandro Andrade",
+      "atividade": "1. Televendas",
+      "responsavel": "",
+      "status": 1,
+      "inicio": "2026-01-14",
+      "fim": "2028-01-31"
+    },
+    {
+      "numero": "1.1",
+      "atividade": "Desenvolvimento",
+      "responsavel": "TI",
       "status": 4,
-      "inicio": "2026-06-26",
-      "fim": "2026-08-31"
+      "inicio": "2026-06-29",
+      "fim": "2026-06-30"
+    },
+    {
+      "numero": "1.2",
+      "atividade": "Validação dos cenários de testes",
+      "responsavel": "Daniela Rabelo",
+      "status": 4,
+      "inicio": "2026-07-02",
+      "fim": "2026-07-02"
+    },
+    {
+      "numero": "1.3",
+      "atividade": "Homologação",
+      "responsavel": "TI / Canal",
+      "status": 4,
+      "inicio": "2026-06-16",
+      "fim": "2026-07-15"
+    },
+    {
+      "numero": "1.4",
+      "atividade": "Testes regressivos",
+      "responsavel": "TI",
+      "status": 4,
+      "inicio": "2026-07-22",
+      "fim": "2026-07-22"
+    },
+    {
+      "numero": "1.5",
+      "atividade": "Implantação",
+      "responsavel": "TI",
+      "status": 4,
+      "inicio": "2026-07-26",
+      "fim": "2026-07-26"
+    },
+    {
+      "numero": "1.6",
+      "atividade": "GMUD para correção de defeitos",
+      "responsavel": "TI",
+      "status": 4,
+      "inicio": "2026-08-15",
+      "fim": "2026-08-15"
+    },
+    {
+      "numero": "1.7",
+      "atividade": "Reunião de diretoria para definição do uso de componente de segurança",
+      "responsavel": "Renato Martins",
+      "status": 4,
+      "inicio": "2026-08-20",
+      "fim": "2026-08-20"
+    },
+    {
+      "numero": "1.8",
+      "atividade": "Reteste das correções",
+      "responsavel": "TI",
+      "status": 4,
+      "inicio": "2026-08-17",
+      "fim": "2026-09-23"
+    },
+    {
+      "numero": "1.9",
+      "atividade": "Implantação das correções",
+      "responsavel": "TI",
+      "status": 4,
+      "inicio": "2026-09-22",
+      "fim": "2026-09-22"
+    },
+    {
+      "numero": "1.10",
+      "atividade": "Treinamento",
+      "responsavel": "Comercial / Treinamento",
+      "status": 4,
+      "inicio": "2026-08-24",
+      "fim": "2026-10-16"
+    },
+    {
+      "numero": "1.11",
+      "atividade": "BSIM",
+      "responsavel": "Canal TLV",
+      "status": 1,
+      "inicio": "2026-10-06",
+      "fim": "2026-11-17"
+    },
+    {
+      "numero": "1.12",
+      "atividade": "Lançamento comercial",
+      "responsavel": "Canal TLV",
+      "status": 2,
+      "inicio": "2026-01-14",
+      "fim": ""
     },
     {
       "numero": 2,
-      "atividade": "2. Televendas Ativo Single Móvel -Liberação do canal 40 Televendas ativo na jornada prospect do SOLAR",
-      "responsavel": "Eliane Cabrelli",
+      "atividade": "2. LP",
+      "responsavel": "",
       "status": 1,
-      "inicio": "2026-08-11",
-      "fim": "2026-08-10"
+      "inicio": "2026-07-10",
+      "fim": "2026-10-26"
     },
     {
-      "numero": 3,
-      "atividade": "3. LP - Implantar cobrança paliativa de e-Sim (LP) para retomada dos testes junto ao Solar",
-      "responsavel": "Jessica Gomes",
+      "numero": "2.1",
+      "atividade": "Treinamento de vendedores",
+      "responsavel": "Canal",
+      "status": 4,
+      "inicio": "2026-07-10",
+      "fim": "2026-07-28"
+    },
+    {
+      "numero": "2.2",
+      "atividade": "Teste de faturamento",
+      "responsavel": "TI",
+      "status": 4,
+      "inicio": "2026-07-24",
+      "fim": "2026-07-27"
+    },
+    {
+      "numero": "2.3",
+      "atividade": "Validação das correções dos erros",
+      "responsavel": "Canal",
+      "status": 4,
+      "inicio": "2026-08-18",
+      "fim": "2026-08-18"
+    },
+    {
+      "numero": "2.4",
+      "atividade": "Conferência da nova fatura",
+      "responsavel": "TI",
+      "status": 4,
+      "inicio": "2026-09-15",
+      "fim": "2026-09-17"
+    },
+    {
+      "numero": "2.5",
+      "atividade": "Recapacitação de vendedores",
+      "responsavel": "Canais",
+      "status": 4,
+      "inicio": "2026-09-18",
+      "fim": "2026-09-18"
+    },
+    {
+      "numero": "2.6",
+      "atividade": "Inclusão de permissões",
+      "responsavel": "TI",
+      "status": 4,
+      "inicio": "2026-09-26",
+      "fim": "2026-10-19"
+    },
+    {
+      "numero": "2.7",
+      "atividade": "BSIM",
+      "responsavel": "Canal",
       "status": 1,
+      "inicio": "2026-08-12",
+      "fim": "2026-10-23"
+    },
+    {
+      "numero": "2.8",
+      "atividade": "Liberação comercial",
+      "responsavel": "Canal",
+      "status": 1,
+      "inicio": "2026-09-01",
+      "fim": "2026-10-26"
+    },
+    {
+      "numero": "4.1",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
       "inicio": "",
       "fim": ""
     },
     {
-      "numero": 4,
-      "atividade": "4. Massificação eSIM PME / GE",
-      "responsavel": "Rodrigo Pestana",
-      "status": 4,
+      "numero": "4.2",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "4.3",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "4.4",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "4.5",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "4.6",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
       "inicio": "",
       "fim": ""
     },
     {
       "numero": 5,
-      "atividade": "5. Bsim (35 vendedores receptivos)",
-      "responsavel": "Negócios",
-      "status": 2,
-      "inicio": "2026-08-04",
-      "fim": "2026-08-25"
+      "atividade": "5. ",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "5.1",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "5.2",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "5.3",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "5.4",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "5.5",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "5.6",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 6,
@@ -296,8 +536,96 @@
       "fim": ""
     },
     {
+      "numero": "6.1",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "6.2",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "6.3",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "6.4",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "6.5",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "6.6",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
       "numero": 7,
       "atividade": "7. ",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "7.1",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "7.3",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "7.4",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "7.5",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": "7.6",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -426,6 +754,14 @@
     {
       "numero": 23,
       "atividade": "23. ",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
+    },
+    {
+      "numero": 24,
+      "atividade": "24. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -694,357 +1030,13 @@
       "status": "",
       "inicio": "",
       "fim": ""
-    },
-    {
-      "numero": 58,
-      "atividade": "58. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 59,
-      "atividade": "59. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 60,
-      "atividade": "60. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 61,
-      "atividade": "61. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 62,
-      "atividade": "62. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 63,
-      "atividade": "63. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 64,
-      "atividade": "64. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 65,
-      "atividade": "65. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 66,
-      "atividade": "66. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 67,
-      "atividade": "67. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 68,
-      "atividade": "68. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 69,
-      "atividade": "69. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 70,
-      "atividade": "70. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 71,
-      "atividade": "71. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 72,
-      "atividade": "72. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 73,
-      "atividade": "73. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 74,
-      "atividade": "74. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 75,
-      "atividade": "75. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 76,
-      "atividade": "76. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 77,
-      "atividade": "77. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 78,
-      "atividade": "78. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 79,
-      "atividade": "79. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 80,
-      "atividade": "80. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 81,
-      "atividade": "81. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 82,
-      "atividade": "82. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 83,
-      "atividade": "83. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 84,
-      "atividade": "84. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 85,
-      "atividade": "85. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 86,
-      "atividade": "86. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 87,
-      "atividade": "87. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 88,
-      "atividade": "88. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 89,
-      "atividade": "89. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 90,
-      "atividade": "90. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 91,
-      "atividade": "91. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 92,
-      "atividade": "92. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 93,
-      "atividade": "93. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 94,
-      "atividade": "94. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 95,
-      "atividade": "95. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 96,
-      "atividade": "96. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 97,
-      "atividade": "97. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 98,
-      "atividade": "98. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 99,
-      "atividade": "99. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 100,
-      "atividade": "100. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
     }
   ],
   "historico": [
     {
-      "data": "2026-10-30",
-      "acoes": "-",
-      "detalhe": ""
+      "data": "2026-10-28",
+      "acoes": "Ganhos projeto E-sim",
+      "detalhe": "Alinhado com Rafaela que o ganho de Ecommerce não deve ser contabilizado na linha de logística.Em reunião com Wagner o mesmo informou que o BP o ganho de PAP está sendo considerado apenas referente a conta e controle, os demais não estão sendo contabilizados.\nMétrica de calculo de ganhos por logística já está definido, porém é necessário BP do Maciel para projeção dos ganhos de PME e GE"
     },
     {
       "data": "2026-10-21",
@@ -1082,7 +1074,7 @@
       "detalhe": "Realizar levantamento de volume de SIMcards distribuídos por canal/segmento"
     }
   ],
-  "statusProjeto": "Risco:\n21/10/26 - Teste de migração do eSIM para o televendas concluídos para novos clientes. Nos casos de portabilidade estão verificando jornada no solar, prazo 30/10.",
+  "statusProjeto": "Risco: 30/10/2026  Transferência Rápida:Identificados casos isolados de aparelhos importados incompatíveis com eSIM. Contingência operacional definida (chip físico) e validação pré-venda em implementação. Potencial impacto no rollout.\n30/10/2026 - As implantações de LP, ALS e Transferência Rápida foram concluídas conforme planejado, porém a frente de Transferência Rápida permanece sob monitoramento devido à dependência da correção do bundle Motorola, que pode impactar os próximos marcos comerciais da implementação do E-SIM.\n21/10/2026 - Teste de migração do eSIM para o televendas concluídos para novos clientes. Nos casos de portabilidade estão verificando jornada no solar, prazo 30/10.",
   "financeiro": [
     {
       "id": "LOG-008",
@@ -3680,6 +3672,6 @@
   "fonte": {
     "arquivo": "LOG-008 - Massificação eSIM (Saving Logístico).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-008%20-%20Massifica%C3%A7%C3%A3o%20eSIM%20%28Saving%20Log%C3%ADstico%29.xlsx?web=1",
-    "extraidoEm": "2026-10-30T16:10:11-03:00"
+    "extraidoEm": "2026-10-30T19:09:20-03:00"
   }
 }

@@ -1,7 +1,7 @@
 DASHBOARD PORTFÓLIO LOGÍSTICA — MANIFESTO
 
-Projetos JSON: 60
-Gerado em: 2026-10-30T16:11:49-03:00
+Projetos JSON: 62
+Gerado em: 2026-10-30T19:11:05-03:00
 
 Projetos:
 - LOG-001.json
@@ -64,6 +64,8 @@ Projetos:
 - LOG-077.json
 - LOG-078.json
 - LOG-079.json
+- LOG-080.json
+- LOG-081.json
 
 Arquivos com erro (não publicados):
 - LOG-022 - Reduzir a Utilização dos Correios.xlsx: ID duplicado com LOG-022 - Cronograma Ecommerce_Tex.xlsx

@@ -33,7 +33,7 @@
       "numero": "01.",
       "atividade": "kickoff do projeto",
       "responsavel": "Compras/Log/Mck",
-      "status": "",
+      "status": 4,
       "inicio": "2026-07-06",
       "fim": "2026-07-06"
     },
@@ -41,7 +41,7 @@
       "numero": "02.",
       "atividade": "Definição do scopo",
       "responsavel": "Compras/Log/Mck",
-      "status": "",
+      "status": 4,
       "inicio": "2026-07-06",
       "fim": "2026-07-31"
     },
@@ -49,7 +49,7 @@
       "numero": "03.",
       "atividade": "Escopo validado e envio de RFI a Mercado",
       "responsavel": "Compras/Log/Mck",
-      "status": "",
+      "status": 4,
       "inicio": "2026-07-31",
       "fim": "2026-08-11"
     },
@@ -57,7 +57,7 @@
       "numero": "04.",
       "atividade": "RFI fechado (retorno transportadoras) e Envio de RFP",
       "responsavel": "Compras",
-      "status": "",
+      "status": 4,
       "inicio": "2026-08-11",
       "fim": "2026-08-14"
     },
@@ -65,7 +65,7 @@
       "numero": "05.",
       "atividade": "Live com fornecedores",
       "responsavel": "Compras",
-      "status": "",
+      "status": 4,
       "inicio": "2026-08-14",
       "fim": "2026-09-04"
     },
@@ -73,7 +73,7 @@
       "numero": "06.",
       "atividade": "Deadline envio RFP Round 1",
       "responsavel": "Compras/Mck",
-      "status": "",
+      "status": 4,
       "inicio": "2026-09-04",
       "fim": "2026-10-02"
     },
@@ -81,7 +81,7 @@
       "numero": "07.",
       "atividade": "Deadline envio RFP Round 2",
       "responsavel": "Compras/Mck",
-      "status": "",
+      "status": 4,
       "inicio": "2026-10-02",
       "fim": "2026-10-23"
     },
@@ -89,7 +89,7 @@
       "numero": "08.",
       "atividade": "Deadline Round Final de Negociações",
       "responsavel": "Compras/Log/Mck",
-      "status": "",
+      "status": 2,
       "inicio": "2026-10-23",
       "fim": "2026-11-20"
     },
@@ -97,15 +97,15 @@
       "numero": "09.",
       "atividade": "Plano finalizado (contrato + ramp-up)",
       "responsavel": "Compras/Log/Mck",
-      "status": "",
+      "status": 2,
       "inicio": "2026-11-20",
       "fim": "2026-12-31"
     },
     {
       "numero": "10.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
+      "atividade": "Deadline envio RFP Round 3",
+      "responsavel": "Compras/Log/Mck",
+      "status": 4,
       "inicio": "",
       "fim": ""
     },
@@ -1140,7 +1140,7 @@
       "detalhe": "Aqui foi colocado a mesa qual seria o foco do BID"
     }
   ],
-  "statusProjeto": "Risco:\ndata - Pontos relevantes para aquele evento",
+  "statusProjeto": "Risco:\ndata - Pontos relevantes para aquele evento\n30/10/26 -",
   "financeiro": [
     {
       "id": "LOG-010.1",
@@ -3738,6 +3738,6 @@
   "fonte": {
     "arquivo": "LOG-010.1 - BID Transportes - Engenharia.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.1%20-%20BID%20Transportes%20-%20Engenharia.xlsx?web=1",
-    "extraidoEm": "2026-10-30T16:10:19-03:00"
+    "extraidoEm": "2026-10-30T19:09:28-03:00"
   }
 }

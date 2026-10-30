@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
-  "geradoEm": "2026-10-30T16:11:49-03:00",
-  "totalProjetos": 60,
+  "geradoEm": "2026-10-30T19:11:05-03:00",
+  "totalProjetos": 62,
   "arquivos": [
     "LOG-001.json",
     "LOG-002.json",
@@ -62,6 +62,8 @@
     "LOG-076.json",
     "LOG-077.json",
     "LOG-078.json",
-    "LOG-079.json"
+    "LOG-079.json",
+    "LOG-080.json",
+    "LOG-081.json"
   ]
 }
