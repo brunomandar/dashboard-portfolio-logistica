@@ -4,7 +4,7 @@
   "area": "Transportes",
   "pontoFocal": "Nathan MkT",
   "inicio": "2026-10-23",
-  "termino": "",
+  "termino": "2026-11-30",
   "inicioCaptura": "",
   "iniciativa": "Op. Logística",
   "pmo": "wagner",
@@ -12,7 +12,7 @@
   "status": "L2",
   "situacao": "Planejado",
   "prioridade": "P1",
-  "ganhoProjeto": "Quantitativo",
+  "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "Desenvolver o Relatório Funil de Vendas e Ativação de Chips, com o objetivo de acompanhar, comparar e analisar o desempenho entre os chips vendidos e os chips efetivamente ativados, permitindo identificar perdas no processo comercial, oportunidades de melhoria e apoiar a tomada de decisão das áreas de Vendas, Operações e Planejamento.",
   "entregaveis": [
@@ -33,33 +33,33 @@
       "numero": "01.",
       "atividade": "Volumetria geral validada em tempo real.",
       "responsavel": "Nathan MkT",
-      "status": 1,
+      "status": 4,
       "inicio": "2026-10-23",
       "fim": "2026-10-29"
     },
     {
       "numero": "02.",
       "atividade": "Tirar filtro do e-commerce no Combo Multi.",
-      "responsavel": "Nathan MkT",
+      "responsavel": "LEONARDO TARQUINI",
       "status": 1,
       "inicio": "2026-10-30",
-      "fim": "2026-11-05"
+      "fim": "2026-11-03"
     },
     {
       "numero": "03.",
       "atividade": "Garantir usabilidade do dashboard.",
       "responsavel": "Nathan MkT",
       "status": 1,
-      "inicio": "2026-11-06",
-      "fim": "2026-11-12"
+      "inicio": "2026-11-04",
+      "fim": "2026-11-10"
     },
     {
       "numero": "04.",
       "atividade": "Entregar o restante do Data Request.",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
+      "responsavel": "GISLEI CRISTINA",
+      "status": 1,
+      "inicio": "2026-11-11",
+      "fim": "2026-11-30"
     },
     {
       "numero": "05.",
@@ -252,8 +252,8 @@
       "atividade": "1. ",
       "responsavel": "",
       "status": "",
-      "inicio": "2026-08-13",
-      "fim": "2026-08-13"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 2,
@@ -3647,6 +3647,6 @@
   "fonte": {
     "arquivo": "LOG-051 - Relatório ComboMulti.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-051%20-%20Relat%C3%B3rio%20ComboMulti.xlsx?web=1",
-    "extraidoEm": "2026-10-30T14:56:54-03:00"
+    "extraidoEm": "2026-10-30T15:54:17-03:00"
   }
 }

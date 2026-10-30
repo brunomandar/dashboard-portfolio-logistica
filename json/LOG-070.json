@@ -3,14 +3,14 @@
   "projeto": "Projeto 8ª Base",
   "area": "",
   "pontoFocal": "",
-  "inicio": "2026-09-05",
-  "termino": "2026-11-30",
+  "inicio": "2026-09-01",
+  "termino": "2026-09-30",
   "inicioCaptura": "",
   "iniciativa": "",
   "pmo": "",
   "risco": "Médio",
-  "status": "L4",
-  "situacao": "Atenção",
+  "status": "L5",
+  "situacao": "Concluído",
   "prioridade": "P1",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
@@ -24,7 +24,7 @@
     "opex12M": 0.0,
     "capex12M": 0.0,
     "total12M": 0.0,
-    "opex2026": 0.396,
+    "opex2026": 0.0,
     "capex2026": 0.0,
     "total2026": 0.0
   },
@@ -42,40 +42,40 @@
       "atividade": "Sistemas e Ativação",
       "responsavel": "Fábio / Mirella / Lucas / TI",
       "status": 4,
-      "inicio": "2026-09-21",
-      "fim": "2026-10-02"
+      "inicio": "2026-09-10",
+      "fim": "2026-09-21"
     },
     {
       "numero": "03.",
       "atividade": "Infraestrutura, Acessos e Equipe",
-      "responsavel": "Acessos / Segurança / TI",
+      "responsavel": "PostalGOW / TI",
       "status": 4,
-      "inicio": "2026-10-05",
-      "fim": "2026-10-16"
+      "inicio": "2026-09-01",
+      "fim": "2026-09-14"
     },
     {
       "numero": "04.",
-      "atividade": "Abastecimento, Comercial e Automação",
-      "responsavel": "Claro / PostalGOW",
-      "status": 1,
-      "inicio": "2026-10-19",
-      "fim": "2026-11-06"
+      "atividade": "Abastecimento, Comercial e Parceiros",
+      "responsavel": "Claro / S&OP / Transporte",
+      "status": 4,
+      "inicio": "2026-09-09",
+      "fim": "2026-09-17"
     },
     {
       "numero": "05.",
       "atividade": "Operação, Transporte e Reversa",
-      "responsavel": "PostalGOW / Transportes",
-      "status": 1,
-      "inicio": "2026-10-19",
-      "fim": "2026-11-25"
+      "responsavel": "Claro / PostalGOW / Compras",
+      "status": 4,
+      "inicio": "2026-09-08",
+      "fim": "2026-09-14"
     },
     {
       "numero": "06.",
-      "atividade": "Testes, Virada e Estabilização",
-      "responsavel": "Claro / PostalGOW",
-      "status": 1,
-      "inicio": "2026-10-22",
-      "fim": "2026-11-30"
+      "atividade": "Testes, Go-live e Evolução",
+      "responsavel": "Gestão Claro / PostalGOW",
+      "status": 4,
+      "inicio": "2026-09-15",
+      "fim": "2026-09-30"
     },
     {
       "numero": "07.",
@@ -277,7 +277,7 @@
       "responsavel": "Fábio / Mirella / Lucas / TI",
       "status": 4,
       "inicio": "2026-09-10",
-      "fim": "2026-09-16"
+      "fim": "2026-09-21"
     },
     {
       "numero": "2.2",
@@ -300,8 +300,8 @@
       "atividade": "Confirmar baixa direta no NETSMS com acessos existentes",
       "responsavel": "Mirella / PostalGOW",
       "status": 4,
-      "inicio": "2026-09-10",
-      "fim": "2026-09-18"
+      "inicio": "2026-09-11",
+      "fim": "2026-09-21"
     },
     {
       "numero": "2.5",
@@ -312,196 +312,188 @@
       "fim": "2026-09-21"
     },
     {
-      "numero": "3.1",
-      "atividade": "Concluir cabeamento das posições e confirmar 12 pontos de rede",
+      "numero": 3,
+      "atividade": "3. Infraestrutura, Acessos e Equipe",
       "responsavel": "PostalGOW / TI",
       "status": 4,
-      "inicio": "2026-10-05",
-      "fim": "2026-10-13"
+      "inicio": "2026-09-01",
+      "fim": "2026-09-14"
+    },
+    {
+      "numero": "3.1",
+      "atividade": "Concluir cabeamento das posições e confirmar 10 pontos de rede",
+      "responsavel": "PostalGOW / TI",
+      "status": 4,
+      "inicio": "2026-09-08",
+      "fim": "2026-09-14"
     },
     {
       "numero": "3.2",
-      "atividade": "Habilitar as 12 máquinas na rede Claro e concluir preparação da célula",
-      "responsavel": "Russo / TI Claro / PostalGOW",
+      "atividade": "Padronizar 4 PCs novos com imagem Claro",
+      "responsavel": "TI Claro",
       "status": 4,
-      "inicio": "2026-10-07",
-      "fim": "2026-10-13"
+      "inicio": "2026-09-08",
+      "fim": "2026-09-16"
     },
     {
       "numero": "3.3",
       "atividade": "Liberar acessos nominais NETSMS/SAP e perfis necessários",
       "responsavel": "Acessos / Segurança / TI",
       "status": 4,
-      "inicio": "2026-10-08",
-      "fim": "2026-10-16"
+      "inicio": "2026-09-05",
+      "fim": "2026-09-17"
+    },
+    {
+      "numero": "3.4",
+      "atividade": "Concluir admissões, shadowing e esteira de 2 estágios",
+      "responsavel": "PostalGOW / RH / Operação",
+      "status": 4,
+      "inicio": "2026-09-01",
+      "fim": "2026-09-07"
+    },
+    {
+      "numero": "3.5",
+      "atividade": "Treinar fluxo ponta a ponta e tratamento de exceções",
+      "responsavel": "PostalGOW / Claro",
+      "status": 4,
+      "inicio": "2026-09-10",
+      "fim": "2026-09-16"
     },
     {
       "numero": 4,
-      "atividade": "4. Abastecimento, Comercial e Automação",
-      "responsavel": "Claro / PostalGOW",
-      "status": 1,
-      "inicio": "2026-10-19",
-      "fim": "2026-11-10"
+      "atividade": "4. Abastecimento, Comercial e Parceiros",
+      "responsavel": "Claro / S&OP / Transporte",
+      "status": 4,
+      "inicio": "2026-09-09",
+      "fim": "2026-09-17"
     },
     {
       "numero": "4.1",
-      "atividade": "Receber e bipar carga inicial de 9.000 a 9.500 kits",
-      "responsavel": "Claro / PostalGOW",
+      "atividade": "Confirmar calendário e forecast semanal de abastecimento",
+      "responsavel": "Claro / S&OP / Transportes",
       "status": 4,
-      "inicio": "2026-10-19",
-      "fim": "2026-10-23"
+      "inicio": "2026-09-09",
+      "fim": "2026-09-17"
     },
     {
       "numero": "4.2",
-      "atividade": "Definir BOT para emissão automática de NF em lote",
-      "responsavel": "Trudo / SAP / TI",
+      "atividade": "Receber e bipar carga inicial de 9.000 a 9.500 kits",
+      "responsavel": "Claro / PostalGOW",
       "status": 4,
-      "inicio": "2026-10-20",
-      "fim": "2026-10-26"
+      "inicio": "2026-09-11",
+      "fim": "2026-09-15"
     },
     {
       "numero": "4.3",
-      "atividade": "Negociar valor apartado para chip entregue fora do box",
+      "atividade": "Revisar capacidade, prazo e condições comerciais com a PostalGOW",
       "responsavel": "Compras / PostalGOW",
-      "status": 1,
-      "inicio": "2026-10-21",
-      "fim": "2026-11-10"
+      "status": 4,
+      "inicio": "2026-09-09",
+      "fim": "2026-09-15"
     },
     {
       "numero": "4.4",
-      "atividade": "Formalizar condições de compras, entrega de chip e SLA contratual",
+      "atividade": "Negociar valor apartado para chip entregue fora do box",
       "responsavel": "Compras / PostalGOW",
-      "status": 1,
-      "inicio": "2026-10-22",
-      "fim": "2026-10-30"
+      "status": 4,
+      "inicio": "2026-09-09",
+      "fim": "2026-09-10"
+    },
+    {
+      "numero": "4.5",
+      "atividade": "Formalizar contratos de frete e sustentação da estrutura",
+      "responsavel": "Claro / PostalGOW / Compras",
+      "status": 4,
+      "inicio": "2026-09-10",
+      "fim": "2026-09-15"
     },
     {
       "numero": 5,
       "atividade": "5. Operação, Transporte e Reversa",
-      "responsavel": "PostalGOW / Transportes",
-      "status": 1,
-      "inicio": "2026-10-19",
-      "fim": "2026-10-27"
+      "responsavel": "Claro / PostalGOW / Compras",
+      "status": 4,
+      "inicio": "2026-09-08",
+      "fim": "2026-09-14"
     },
     {
       "numero": "5.1",
-      "atividade": "Configurar Box Postal, API Orange, etiquetas, romaneio e rastreio",
-      "responsavel": "Carlos Vinicius / Wagner",
+      "atividade": "Configurar fluxo de OS imediata, sem agendamento",
+      "responsavel": "Operação / TI",
       "status": 4,
-      "inicio": "2026-10-19",
-      "fim": "2026-10-23"
+      "inicio": "2026-09-10",
+      "fim": "2026-09-14"
     },
     {
       "numero": "5.2",
-      "atividade": "Validar malha, algoritmo e SLA por praça",
-      "responsavel": "PostalGOW / Transportes",
+      "atividade": "Configurar Box Postal, API Orange, etiquetas, romaneio e rastreio",
+      "responsavel": "Carlos Vinicius / Wagner",
       "status": 4,
-      "inicio": "2026-10-20",
-      "fim": "2026-10-21"
+      "inicio": "2026-09-08",
+      "fim": "2026-09-10"
     },
     {
       "numero": "5.3",
+      "atividade": "Validar malha, algoritmo e SLA por praça",
+      "responsavel": "PostalGOW / Transportes",
+      "status": 4,
+      "inicio": "2026-09-09",
+      "fim": "2026-09-14"
+    },
+    {
+      "numero": "5.4",
       "atividade": "Aprovar modelo e valor vigente da logística reversa",
       "responsavel": "Claro / PostalGOW / Compras",
       "status": 4,
-      "inicio": "2026-10-22",
-      "fim": "2026-10-27"
+      "inicio": "2026-09-09",
+      "fim": "2026-09-11"
     },
     {
       "numero": 6,
-      "atividade": "6. Testes, Virada e Estabilização",
-      "responsavel": "Claro / PostalGOW",
-      "status": 1,
-      "inicio": "2026-10-22",
-      "fim": "2026-11-30"
+      "atividade": "6. Testes, Go-live e Evolução",
+      "responsavel": "Gestão Claro / PostalGOW",
+      "status": 4,
+      "inicio": "2026-09-15",
+      "fim": "2026-09-30"
     },
     {
       "numero": "6.1",
       "atividade": "Executar dry-run ponta a ponta",
       "responsavel": "Claro / PostalGOW",
       "status": 4,
-      "inicio": "2026-10-22",
-      "fim": "2026-10-28"
+      "inicio": "2026-09-15",
+      "fim": "2026-09-21"
     },
     {
       "numero": "6.2",
-      "atividade": "Realizar GO/NO-GO da virada",
+      "atividade": "Realizar GO/NO-GO formal",
       "responsavel": "Gestão Claro / PostalGOW",
       "status": 4,
-      "inicio": "2026-10-22",
-      "fim": "2026-10-28"
+      "inicio": "2026-09-17",
+      "fim": "2026-09-23"
     },
     {
       "numero": "6.3",
-      "atividade": "Realizar virada da 8ª Base",
+      "atividade": "Realizar go-live da 8ª Base com 100% do volume",
       "responsavel": "Claro / PostalGOW",
       "status": 4,
-      "inicio": "2026-10-22",
-      "fim": "2026-10-28"
+      "inicio": "2026-09-19",
+      "fim": "2026-09-24"
     },
     {
       "numero": "6.4",
       "atividade": "Travar agenda das 48 EPOS, se encerramento confirmado",
       "responsavel": "Mirella / Márcia",
       "status": 4,
-      "inicio": "2026-10-22",
-      "fim": "2026-10-28"
+      "inicio": "2026-09-21",
+      "fim": "2026-09-25"
     },
     {
       "numero": "6.5",
-      "atividade": "Acompanhar estabilização após a virada",
-      "responsavel": "Sala de guerra / Operação",
-      "status": 1,
-      "inicio": "2026-10-22",
-      "fim": "2026-11-30"
-    },
-    {
-      "numero": 7,
-      "atividade": "7. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 8,
-      "atividade": "8. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 9,
-      "atividade": "9. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 10,
-      "atividade": "10. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 11,
-      "atividade": "11. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 12,
-      "atividade": "12. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
+      "atividade": "Implantar túnel sistêmico e acompanhar estabilização",
+      "responsavel": "TI Claro / PostalGOW",
+      "status": 4,
+      "inicio": "2026-09-19",
+      "fim": "2026-09-30"
     },
     {
       "numero": 13,
@@ -1181,7 +1173,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -1193,7 +1185,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -1469,7 +1461,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -1481,7 +1473,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -1613,7 +1605,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -1625,7 +1617,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -1901,7 +1893,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -1913,7 +1905,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2357,7 +2349,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jan",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2369,7 +2361,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Fev",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2381,7 +2373,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2393,7 +2385,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2405,7 +2397,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mai",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2417,7 +2409,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2429,7 +2421,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2441,7 +2433,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2453,7 +2445,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Set",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2465,7 +2457,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Out",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2477,7 +2469,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Nov",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2489,7 +2481,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Dez",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2645,7 +2637,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jan",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2657,7 +2649,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Fev",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2669,7 +2661,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2681,7 +2673,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2693,7 +2685,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Mai",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2705,7 +2697,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2717,7 +2709,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2729,7 +2721,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2741,7 +2733,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Set",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2753,7 +2745,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Out",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2765,7 +2757,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Nov",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2777,7 +2769,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Dez",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2789,7 +2781,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jan",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2801,7 +2793,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Fev",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2813,7 +2805,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2825,7 +2817,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2837,7 +2829,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mai",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2849,7 +2841,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2861,7 +2853,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2873,7 +2865,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2885,7 +2877,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Set",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2897,7 +2889,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Out",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2909,7 +2901,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Nov",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -2921,7 +2913,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Dez",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -3077,7 +3069,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jan",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -3089,7 +3081,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Fev",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -3101,7 +3093,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -3113,7 +3105,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -3125,7 +3117,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Mai",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -3137,7 +3129,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -3149,7 +3141,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -3161,7 +3153,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -3173,7 +3165,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Set",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -3185,7 +3177,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Out",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -3197,7 +3189,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Nov",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -3209,7 +3201,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Dez",
-      "resultado": 0.198
+      "resultado": 0.0
     },
     {
       "id": "LOG-070",
@@ -3647,6 +3639,6 @@
   "fonte": {
     "arquivo": "LOG-070 - Projeto 8ª Base (1).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-070%20-%20Projeto%208%C2%AA%20Base%20%281%29.xlsx?web=1",
-    "extraidoEm": "2026-10-30T14:57:13-03:00"
+    "extraidoEm": "2026-10-30T15:54:37-03:00"
   }
 }

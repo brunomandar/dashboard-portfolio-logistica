@@ -1048,7 +1048,13 @@
       "fim": ""
     }
   ],
-  "historico": [],
+  "historico": [
+    {
+      "data": "2026-07-04",
+      "acoes": "Ajuste de FCST",
+      "detalhe": "Objetivo reduzir de 50 para 35 (15) , porém estamos reduzindo de 50 para 27( redução de 23PAs)"
+    }
+  ],
   "statusProjeto": "",
   "financeiro": [
     {
@@ -3647,6 +3653,6 @@
   "fonte": {
     "arquivo": "LOG-001 - Eficiência Desconexão - RPA Terminais Presos.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-001%20-%20Efici%C3%AAncia%20Desconex%C3%A3o%20-%20RPA%20Terminais%20Presos.xlsx?web=1",
-    "extraidoEm": "2026-10-30T14:55:39-03:00"
+    "extraidoEm": "2026-10-30T15:53:03-03:00"
   }
 }
