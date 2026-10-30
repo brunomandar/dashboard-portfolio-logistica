@@ -154,6 +154,43 @@ def valor_abaixo(ws, rotulos, *nomes):
     return ""
 
 
+def ler_status_projeto(ws):
+    """
+    Lê o quadro 'Status do Projeto' (com ou sem ':' no rótulo).
+    Aceita o texto numa única célula com quebras de linha ou distribuído em várias linhas abaixo do rótulo.
+    """
+    alvo = chave("Status do Projeto")
+    posicao = None
+    for r in range(1, 80):
+        for c in range(1, 10):
+            v = ws.cell(r, c).value
+            if isinstance(v, str) and chave(v.split("\n")[0]).startswith(alvo):
+                posicao = (r, c)
+                break
+        if posicao:
+            break
+    if not posicao:
+        return ""
+    r0, c0 = posicao
+    linhas = []
+    # Texto que esteja na mesma célula do rótulo, após a primeira linha
+    resto = str(ws.cell(r0, c0).value).split("\n", 1)
+    if len(resto) > 1 and resto[1].strip():
+        linhas.append(resto[1].strip())
+    vazias = 0
+    for r in range(r0 + 1, min(ws.max_row, r0 + 60) + 1):
+        valores = [texto_celula(ws.cell(r, c).value) for c in range(c0, c0 + 7)]
+        valores = [v for v in valores if v]
+        if not valores:
+            vazias += 1
+            if vazias >= 5:
+                break
+            continue
+        vazias = 0
+        linhas.append(" ".join(valores))
+    return "\n".join(linhas).strip()
+
+
 def ler_one_page(ws):
     rot = mapa_rotulos(ws)
     dados = {
@@ -171,7 +208,7 @@ def ler_one_page(ws):
         "ganhoProjeto": valor_ao_lado(ws, rot, "Ganho Projeto:"),
         "escopo": valor_abaixo(ws, rot, "Escopo:"),
         "entregaveisTexto": valor_abaixo(ws, rot, "Entregáveis do Projeto:"),
-        "statusProjeto": valor_abaixo(ws, rot, "Status do Projeto:"),
+        "statusProjeto": ler_status_projeto(ws),
         "saving": {
             "opex12M": numero(valor_ao_lado(ws, rot, "S. Opex 12M:")),
             "capex12M": numero(valor_ao_lado(ws, rot, "S. Capex 12M:")),

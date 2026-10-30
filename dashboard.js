@@ -683,29 +683,30 @@
   }
 
   function projectTimeline(project) {
-    // Fonte única: campo "Status do Projeto" do One_Page. Cada linha iniciada por data é uma atualização.
+    // Fonte única: campo "Status do Projeto". Só entram linhas no padrão DATA + atualização
+    // (ex.: "21/10/26 - texto"). Linhas sem data antes da 1ª data (ex.: "Risco: ...") são ignoradas.
     const today = new Date();
     const entries = [];
     clean(project.statusProjeto).split(/\r?\n+/).forEach(rawLine => {
-      const line = clean(rawLine.replace(/\u00a0/g, ' '));
-      if (!line || /^risco\s*:?$/i.test(line) || /^data\s*[-–—:]\s*pontos relevantes/i.test(line)) return;
+      const line = clean(String(rawLine).replace(/\u00a0/g, ' '));
+      if (!line) return;
       const match = line.match(/^(\d{1,2})[\/.\-](\d{1,2})(?:[\/.\-](\d{2}|\d{4}))?(?=\s|[-–—|:]|$)\s*[-–—|:]?\s*/);
       if (match) {
         const day = Number(match[1]);
         const month = Number(match[2]);
         const year = match[3] ? Number(match[3].length === 2 ? `20${match[3]}` : match[3]) : today.getFullYear();
         const valid = new Date(year, month - 1, day);
-        if (valid.getFullYear() === year && valid.getMonth() === month - 1 && valid.getDate() === day) {
-          entries.push({ data: `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`, detalhe: clean(line.slice(match[0].length)), ordem: entries.length });
+        const text = clean(line.slice(match[0].length));
+        if (text && valid.getFullYear() === year && valid.getMonth() === month - 1 && valid.getDate() === day) {
+          entries.push({ data: `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`, detalhe: text, ordem: entries.length });
           return;
         }
       }
-      if (entries.length) entries[entries.length - 1].detalhe = clean(`${entries[entries.length - 1].detalhe} ${line}`);
-      else entries.push({ data: '', detalhe: line, ordem: entries.length });
+      // Continuação de uma atualização quebrada em mais de uma linha (nunca linhas de risco)
+      if (entries.length && !/^risco\b/i.test(line)) entries[entries.length - 1].detalhe = clean(`${entries[entries.length - 1].detalhe} ${line}`);
     });
     return entries
-      .filter(item => item.detalhe)
-      .sort((a, b) => clean(b.data).localeCompare(clean(a.data)) || a.ordem - b.ordem)
+      .sort((a, b) => b.data.localeCompare(a.data) || a.ordem - b.ordem)
       .slice(0, 3);
   }
 
