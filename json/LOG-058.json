@@ -265,7 +265,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "",
+  "statusProjeto": "29/07/26 - Projeto concluído e demanda atendida.\n17/07/26 - Ampliação concluída no RS; sem previsão de expansão para outras áreas no momento, com validação semanal.\n23/06/26 - Avaliação com maior frequência a ser estruturada (ex.: unificar regiões), com acompanhamento solicitado por Fabrício.\n15/06/26 - Ampliação do atendimento realizada em 5 cidades do RS.\n20/05/26 - Ampliação das áreas de atendimento no RS em captação, com início previsto para a primeira semana de junho e ajuste de estoque a solicitar.\n11/05/26 - Avaliação de volumetria e custo por cidade (moto x Correios) em andamento, com prioridade no RS.",
   "financeiro": [
     {
       "id": "LOG-058",
@@ -2863,6 +2863,6 @@
   "fonte": {
     "arquivo": "LOG-058 - Migração do TELEVENDAS de correios para Expressa.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-058%20-%20Migra%C3%A7%C3%A3o%20do%20TELEVENDAS%20de%20correios%20para%20Expressa.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:54:23-03:00"
+    "extraidoEm": "2026-10-30T16:11:23-03:00"
   }
 }

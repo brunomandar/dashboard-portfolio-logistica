@@ -361,7 +361,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "",
+  "statusProjeto": "28/08/26 - Projeto concluído, conforme informado por Ingrid.\n29/07/26 - Aguardando a Fiscalização informar data para agendar com o despachante o acesso ao Portal Único e a verificação de seus acessos.\n17/07/26 - Catalão não aprovou a solução; área fiscal precisa apoiar e Michele solicitará ajuda a Fabricio para dar seguimento.\n23/06/26 - Ingrid informou que a procuração a ser submetida ao Catalão está em validação.\n08/06/26 - Solicitadas a Ingrid atualização e detalhes do projeto.\n29/05/26 - Aguardando e-mail de Michele com o escopo da demanda para seguimento com os setores necessários.\n22/05/26 - Setor necessita receber via API os dados de pagamentos de impostos à Receita Federal; demanda apresentada ao time de Analytics, sem avanços até o momento.\n11/05/26 - Ingrid informou que atualizará o Planner com todos os seus projetos.\n07/05/26 - Definida a criação de integração via API para DUIMP (atualização da rastreabilidade).\n24/04/26 - Definido o alinhamento da comunicação do Produto com Edgar e Devanil, com acompanhamento previsto para 11/05.",
   "financeiro": [
     {
       "id": "LOG-045",
@@ -2959,6 +2959,6 @@
   "fonte": {
     "arquivo": "LOG-045 - DUIMP – COMEX (Acompanhamento RFP).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-045%20-%20DUIMP%20%E2%80%93%20COMEX%20%28Acompanhamento%20RFP%29.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:54:11-03:00"
+    "extraidoEm": "2026-10-30T16:11:10-03:00"
   }
 }

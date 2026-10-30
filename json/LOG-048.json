@@ -489,7 +489,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "",
+  "statusProjeto": "28/08/26 - Projeto concluído.\n29/07/26 - Pendente envio, pela Catalde, do relatório final para avaliar a efetividade das ações implantadas.\n19/06/26 - Relatório de análise registrado.\n18/06/26 - Comparação entre a tabela do Frete Mínimo e a do Fracionado realizada.\n17/06/26 - 3 transportadores ajustados, com monitoramento previsto até 30/06.\n17/06/26 - Comunicado executivo pendente com Helder e Fabricio.\n12/06/26 - Reunião recorrente em andamento sobre o tema.\n11/06/26 - Minuta em validação em Compras e na PGR, devolvida ao jurídico e depois seguirá para a TEX; pendente definição de adesão da TEX ao programa de seguros, que depende de reunião entre Márcia e Fabrício.\n03/06/26 - Regra implementada no sistema, com testes da nova regra.\n26/05/26 - Desenvolvimento da Catalde previsto para 27/05.\n25/05/26 - Valor de tabela de frete preenchido como evidência, pois a composição de cálculo não se altera; frete SPOT também deverá ser parametrizado, pois o documento é único.\n25/05/26 - Processo de contratação em Compras concluído (SR2172056820).\n19/05/26 - Análise da solicitação de sourcing pendente com o comprador, com reunião do Elberte com a gestão da logística prevista para 25/05.\n19/05/26 - Previstos ponto de situação para medir aderência (ajuste NOTFIS e testes) em 20/05 e regra em produção em 24/05.\n18/05/26 - Reunião com transportadores para informar o ajuste do NOTFIS pela Catalde.\n18/05/26 - Solicitação de sourcing pendente de análise do comprador, aguardando suporte do Elberte para finalizar o processo em Compras.\n14/05/26 - Solicitação de sourcing em análise pelo comprador, aguardando suporte da Vanessa para avançar.\n13/05/26 - Solicitação de sourcing pendente de aprovação, aguardando suporte da Vanessa para avançar.\n12/05/26 - Etapa de Análise de BPO escalada para a gerência da área, com previsão de resolução em 12/05 para chegada em Compras.\n12/05/26 - Wagner informou a resposta diretamente a Helder, que alinhará o tema com Fabricio.\n11/05/26 - Etapa de Análise de BPO aguardando aprovação de Andrea Ortelan e Claudineia Garcia.\n11/05/26 - Wagner fará acompanhamento com a Catalde sobre o desenvolvimento da nova regra de seleção da tabela correta.\n08/05/26 - Etapa de Avaliação MSO aguardando aprovação do Edgar.\n07/05/26 - Solicitada à Gisele a aprovação de orçamento para contratação de serviço SPOT de análise de base de dados de frete mínimo (SR2172056820).\n06/05/26 - Acompanhamento no Ariba e com Compras, aguardando envio do escopo da demanda e upload de documentos.",
   "financeiro": [
     {
       "id": "LOG-048",
@@ -3087,6 +3087,6 @@
   "fonte": {
     "arquivo": "LOG-048 - Frete Mínimo (Deadline 24_05).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-048%20-%20Frete%20M%C3%ADnimo%20%28Deadline%2024_05%29.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:54:14-03:00"
+    "extraidoEm": "2026-10-30T16:11:13-03:00"
   }
 }

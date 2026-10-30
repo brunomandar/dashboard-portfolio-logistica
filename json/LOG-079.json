@@ -1061,7 +1061,7 @@
       "detalhe": "- Foi mencionado que, na reunião realizada em 22/10/2026, foram encaminhados pela Andreia, o Blueprint do PING Identity e a planilha de GA. Hoje foi informado que o Blueprint IGA será compartilhado com os participantes.\n - Alex informou que a aplicação possui aproximadamente 1.500 usuários ativos.\n -Foi esclarecido por Alex que nem todos os usuários da aplicação possuem login no SGT3.\n - Bianca solicitou o levantamento do volume mensal de criação de novos usuários e a quantidade de chamados relacionados à aplicação, com o objetivo de compreender a demanda operacional e avaliar a capacidade de absorção do processo.\n - Alex e Cícero informaram que a aplicação possui perfis e controles de acesso internos.\n - Cícero comunicou que, no contexto da implementação do PING Identity, a aplicação passará a utilizar o protocolo OpenID.\n - Rafael Felix questionou sobre a compatibilidade da aplicação com o processo de provisionamento automático via JIT (Just-In-Time). Em resposta, Cícero informou que atualmente a aplicação utiliza mecanismo de autocadastro.\n - Cícero confirmou que a aplicação dispõe de ambiente específico para testes.\n - Marcos Damasceno destacou a necessidade de recebimento das informações técnicas da aplicação, incluindo URL de Callback, Claims e demais parâmetros informados no quadro compartilhado via Teams, para viabilizar o início das atividades de integração."
     }
   ],
-  "statusProjeto": "",
+  "statusProjeto": "29/10/2026 - A relação de requisitos de segurança serão necessários para a renovação do contrato da Catalde junto ao time de compras\n23/10/2026 - Andreia encaminhou Blueprint IGA que precisa ser preenchido pelo time Catalde",
   "financeiro": [
     {
       "id": "LOG-079",
@@ -3659,6 +3659,6 @@
   "fonte": {
     "arquivo": "LOG-079 - Segundo Fator de Autenticação TMS (PING e IGA).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-079%20-%20Segundo%20Fator%20de%20Autentica%C3%A7%C3%A3o%20TMS%20%28PING%20e%20IGA%29.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:54:50-03:00"
+    "extraidoEm": "2026-10-30T16:11:49-03:00"
   }
 }

@@ -329,7 +329,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "",
+  "statusProjeto": "28/08/26 - Drones para contagens em andamento (Campinas e Palhoça).\n28/08/26 - Coletores (MWS/TOTVS/Celistics) em andamento (contagem em 2027).\n28/08/26 - Totalização de Pallet validada e concluída.\n28/08/26 - Inventário Rotativo x Inventário Anual (Móvel) em análise com Auditoria.\n17/06/26 - Responsável informou não haver escopo sequenciado e necessidade de definições gerenciais; projeto segue em backlog até segunda ordem.\n25/05/26 - Retomada dos testes com drones em Campinas, em conjunto com a Marinalva.\n25/05/26 - Início de pesquisa de mercado por soluções mais avançadas, pois o material ainda não é totalmente serializado.\n25/05/26 - Retomada da frente de RFID, já iniciada anteriormente, junto ao time de processos.",
   "financeiro": [
     {
       "id": "LOG-027",
@@ -2927,6 +2927,6 @@
   "fonte": {
     "arquivo": "LOG-027 - Inv. Automatizado e Inv. Equipamentos.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-027%20-%20Inv.%20Automatizado%20e%20Inv.%20Equipamentos.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:53:56-03:00"
+    "extraidoEm": "2026-10-30T16:10:55-03:00"
   }
 }

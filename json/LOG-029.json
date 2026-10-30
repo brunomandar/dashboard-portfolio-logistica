@@ -297,7 +297,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "",
+  "statusProjeto": "22/09/26 - Atualização do projeto solicitada.\n13/08/26 - Análise da malha de reversa por proximidade entre parceiro e CD em andamento.\n17/07/26 - Atualização recorrente do fluxo, tempos e movimentos para fechar o diagnóstico da reversa.\n17/07/26 - Desenvolvimento do painel de tempo de transporte TMS (da emissão da NF até a expedição) em andamento.\n17/07/26 - Análise dos 20 maiores x modal de transporte em andamento.\n09/06/26 - Reunião com Fabio agendada para 15/06, para atualização do status e entendimento do projeto.\n25/05/26 - Painel por era e em tempo real em desenvolvimento, com rankings de EPOs por volume, periodicidade de devolução e piores performances, com previsão para 28/05.\n25/05/26 - Trade-off da viabilidade de laboratório de triagem em CD Jaboatão e Palhoça entregue, com direcionamento de manter a recuperação nos CDs CPS e RJ; previsão 29/05.\n12/05/26 - Levantamento de informações para atualização do projeto no Planner em andamento (Fabio Souza).\n06/05/26 - Levantamento das principais EPOs de reversa em volume em andamento, para calcular o SLA do tempo mediano.",
   "financeiro": [
     {
       "id": "LOG-029",
@@ -2895,6 +2895,6 @@
   "fonte": {
     "arquivo": "LOG-029 - Esteira da Reversa (operação, velocidade, qualidade).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-029%20-%20Esteira%20da%20Reversa%20%28opera%C3%A7%C3%A3o%2C%20velocidade%2C%20qualidade%29.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:53:58-03:00"
+    "extraidoEm": "2026-10-30T16:10:56-03:00"
   }
 }

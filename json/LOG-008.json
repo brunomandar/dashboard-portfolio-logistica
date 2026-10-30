@@ -34,16 +34,16 @@
       "atividade": "Massificação eSIM PME e GE - 5G NSA",
       "responsavel": "Logística",
       "status": 1,
-      "inicio": "2026-08-11",
+      "inicio": "2026-06-26",
       "fim": "2026-08-11"
     },
     {
       "numero": "02.",
-      "atividade": "e-SIM  - PAP",
+      "atividade": "e-SIM  - PAP - Lançamento comercial",
       "responsavel": "Jéssica Melo",
       "status": 4,
-      "inicio": "",
-      "fim": ""
+      "inicio": "2026-08-12",
+      "fim": "2026-08-14"
     },
     {
       "numero": "03.",
@@ -252,16 +252,16 @@
       "atividade": "1. Televendas Receptivo - Fase 1.0",
       "responsavel": "Alessandro Andrade",
       "status": 4,
-      "inicio": "2026-08-13",
-      "fim": "2026-10-16"
+      "inicio": "2026-06-26",
+      "fim": "2026-08-31"
     },
     {
       "numero": 2,
       "atividade": "2. Televendas Ativo Single Móvel -Liberação do canal 40 Televendas ativo na jornada prospect do SOLAR",
       "responsavel": "Eliane Cabrelli",
       "status": 1,
-      "inicio": "",
-      "fim": ""
+      "inicio": "2026-08-11",
+      "fim": "2026-08-10"
     },
     {
       "numero": 3,
@@ -273,33 +273,33 @@
     },
     {
       "numero": 4,
-      "atividade": "4. Varejo - Avaliação de estratégia das necessidades para comercialização de eSIM no canal",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 5,
-      "atividade": "5. Massificação eSIM PME / GE",
+      "atividade": "4. Massificação eSIM PME / GE",
       "responsavel": "Rodrigo Pestana",
       "status": 4,
       "inicio": "",
       "fim": ""
     },
     {
+      "numero": 5,
+      "atividade": "5. Bsim (35 vendedores receptivos)",
+      "responsavel": "Negócios",
+      "status": 2,
+      "inicio": "2026-08-04",
+      "fim": "2026-08-25"
+    },
+    {
       "numero": 6,
-      "atividade": "6. Relatórios gerenciais",
-      "responsavel": "Sérgio Gaiotto",
+      "atividade": "6. ",
+      "responsavel": "",
       "status": "",
       "inicio": "",
       "fim": ""
     },
     {
       "numero": 7,
-      "atividade": "7. Bsim (35 vendedores receptivos)",
-      "responsavel": "Negócios",
-      "status": 1,
+      "atividade": "7. ",
+      "responsavel": "",
+      "status": "",
       "inicio": "",
       "fim": ""
     },
@@ -1042,6 +1042,11 @@
   ],
   "historico": [
     {
+      "data": "2026-10-30",
+      "acoes": "-",
+      "detalhe": ""
+    },
+    {
       "data": "2026-10-21",
       "acoes": "Teste iniciado em 08/10 para validação da jornada do cliente no solar. Casos de Portabilidade. Casos onde não necessitamos de portabilidade fluxo OK. Prazo de conclusão 30/10",
       "detalhe": "Agenda Prévia Parrada\n- Treinamentos concluídos para o Canal Televendas\n- Etapa para checar o início das ativações no canal\n - Previsão de término\n- Testes iniciando em 21/10 (avaliação da jornada)"
@@ -1057,12 +1062,12 @@
       "detalhe": "Sem necessidade investimento. Está programado o teste para iniciar em dia 08/10/26 (jornada do Solar com Biometria) com chip físico e eSim"
     },
     {
-      "data": "",
+      "data": "2026-10-09",
       "acoes": "LP - Implantar cobrança paliativa de e-Sim (LP) para retomada dos testes junto ao Solar",
       "detalhe": "Testes controlados realizados.\n- Treinamentos  - 10/07/26 28/07/26 (1) (concluído e será feito reforço)\n- Teste fatura - 24/07/26 (apresentou erro), com  nova correção em 27/07/26, em observação - TI\n- Validação das correção dos erros - 18/08/26 - Canal - Valor não apareceu na fatura\n- Idenfificação causa raiz e correção - 21/08/26 - TI\n- Data de conferência de nova fatura - 15/09/26 17/09/26 - TI - concluído\n- Recapacitação de vendedores - 18/09/26 - Canais - concluído\n- Inclusão de permissões - 26/09/26 19/10/26 (2) - TI - concluído\n- BSIM - 12/08/26 23/10/26 (3) - Canal\n- Liberação comercial - 01/09/26 26/10/26 (1)"
     },
     {
-      "data": "2027-01-28",
+      "data": "2026-10-09",
       "acoes": "Varejo - Avaliação de estratégia das necessidades para comercialização de eSIM no canal",
       "detalhe": "Aguardando a entrega da Jornada Única para habilitação da venda do eSIM no canal Varejo (pós-pago)"
     },
@@ -1077,7 +1082,7 @@
       "detalhe": "Realizar levantamento de volume de SIMcards distribuídos por canal/segmento"
     }
   ],
-  "statusProjeto": "",
+  "statusProjeto": "Risco:\n21/10/26 - Teste de migração do eSIM para o televendas concluídos para novos clientes. Nos casos de portabilidade estão verificando jornada no solar, prazo 30/10.",
   "financeiro": [
     {
       "id": "LOG-008",
@@ -3675,6 +3680,6 @@
   "fonte": {
     "arquivo": "LOG-008 - Massificação eSIM (Saving Logístico).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-008%20-%20Massifica%C3%A7%C3%A3o%20eSIM%20%28Saving%20Log%C3%ADstico%29.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:53:13-03:00"
+    "extraidoEm": "2026-10-30T16:10:11-03:00"
   }
 }

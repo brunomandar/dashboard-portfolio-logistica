@@ -1055,7 +1055,7 @@
       "detalhe": "Esse aplicativo do zello ele é por comando de voz,  a ideia do zello é trabalhar em paralelo junto com as entregas da bring (Modelo bring de estoque avançado dos chips, monitoramento das rotas)\nDiario de bordo por comando de voz\nQuestao operacional - precido de 5 pessoas para testar, o fornecedor (transportadora) falou que não tem problema\nO que precisa de informações? Que dia vai fazer,  qual o periodo, etc?\nQuestao contratual - NDA"
     }
   ],
-  "statusProjeto": "",
+  "statusProjeto": "23/10 - Encaminhado ao Jurídico da Claro para avaliar NDA\n20/10 - Solicitado documento NDA\n19/10 - Passado informação para criação do projeto",
   "financeiro": [
     {
       "id": "LOG-077",
@@ -3653,6 +3653,6 @@
   "fonte": {
     "arquivo": "LOG-077 - POC Zello.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-077%20-%20POC%20Zello.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:54:47-03:00"
+    "extraidoEm": "2026-10-30T16:11:46-03:00"
   }
 }

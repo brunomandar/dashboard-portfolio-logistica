@@ -425,7 +425,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "",
+  "statusProjeto": "21/08/26 - Funcionalidades foram desenvolvidas na Torre de Controle para atender à necessidade da demanda.\n13/08/26 - Demanda foi congelada até segunda ordem, pois as funcionalidades da Torre de Controle também atendem à necessidade estabelecida.\n22/07/26 - Reunião com Leandro e equipe foi marcada para dar continuidade ao tema.\n17/07/26 - Retorno de Leandro com as definições sobre o tema permaneceu pendente.\n17/06/26 - Alinhamento entre coordenação e gerência de Transportes foi incluído como próxima ação.\n11/06/26 - Avaliação da aderência da ferramenta à operação e de possível ampliação para outras ocorrências ficou prevista para 15/06.\n01/06/26 - Reunião com TCIA/Catalde para entendimento da ferramenta e início dos testes ficou prevista para 02/06.\n25/05/26 - Envio de usuários por Leandro para teste no TMS ficou pendente.\n25/05/26 - Levantamento de transportadores para teste na SOL ficou pendente.\n13/05/26 - Reunião com TCIA e Catalde para apresentação à homologação foi realizada.\n13/05/26 - Testes no TMS, teste do transportador via WhatsApp e validação do protocolo na etiqueta com Cícero ficaram pendentes.\n08/05/26 - Reunião com TCIA e Catalde foi remarcada para 13/05.\n06/05/26 - Reunião com TCIA e Catalde para apresentação à homologação ficou prevista para 08/05.",
   "financeiro": [
     {
       "id": "LOG-049",
@@ -3023,6 +3023,6 @@
   "fonte": {
     "arquivo": "LOG-049 - Whatsapp Transportador.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-049%20-%20Whatsapp%20Transportador.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:54:16-03:00"
+    "extraidoEm": "2026-10-30T16:11:15-03:00"
   }
 }

@@ -233,7 +233,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "",
+  "statusProjeto": "29/09/26 - Inventário Nacional EPO Construção em andamento, com rollout das empreiteiras e conclusão prevista para nov/26; iniciado rollout das funcionalidades de controle de estoque no SIAKI para TCIA, Planejamento e Operações.\n21/08/26 - Desenvolvimento das funcionalidades de controle de estoque no SIAKI em execução, contemplando entrevistas, telas, autonomia, cobertura e gestão dos estoques.\n22/06/26 - Avanço do inventário físico nacional e da implantação das melhorias sistêmicas para controle dos estoques PEP.\n22/05/26 - Iniciado o Inventário Nacional EPO Construção para aumento da acuracidade e visibilidade dos estoques PEP.\n12/05/26 - Iniciado o desenvolvimento das funcionalidades de controle de estoque no SIAKI.\n06/05/26 - Estruturado plano de implantação do controle de estoque PEP e do inventário nacional.",
   "financeiro": [
     {
       "id": "LOG-037",
@@ -2831,6 +2831,6 @@
   "fonte": {
     "arquivo": "LOG-037 - Controle de estoque PEP.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-037%20-%20Controle%20de%20estoque%20PEP.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:54:08-03:00"
+    "extraidoEm": "2026-10-30T16:11:07-03:00"
   }
 }

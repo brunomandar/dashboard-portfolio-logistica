@@ -265,7 +265,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "",
+  "statusProjeto": "02/10/26 - Site em produção com visibilidade completa dos estoques do Empresarial.\n09/09/26 - Fabio Delduque informou, via Planner, que o projeto foi concluído.\n14/08/26 - Base SIAK não está correta e está em atraso; correção buscada até o fim do mês (31/08); EA previsto para migrar até o fim do ano.\n04/08/26 - Expansão dos depósitos para os centros migrados do PM para o MM (BSR – OS 162304) com conclusão reprogramada para 05/08.\n17/07/26 - Expansão dos depósitos para os centros migrados do PM para o MM tratada pela BSR (OS 162304), com conclusão prevista para 28/07.\n27/06/26 - WMS Estendido: sistema de gestão operacional dos EAs com visão de ocupação em tempo real em desenvolvimento.\n12/05/26 - TCIA adiou a entrega do sistema de informações gerenciais e visibilidade do estoque para 15/06.\n07/05/26 - Alinhada com a TCIA a entrega do sistema, com prazo para 15/05.\n06/05/26 - TCIA finalizando o sistema de visibilidade do estoque PM e MM; reunião marcada para 06/05.",
   "financeiro": [
     {
       "id": "LOG-020",
@@ -2863,6 +2863,6 @@
   "fonte": {
     "arquivo": "LOG-020 - EE - Visão de Estoques.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-020%20-%20EE%20-%20Vis%C3%A3o%20de%20Estoques.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:53:50-03:00"
+    "extraidoEm": "2026-10-30T16:10:48-03:00"
   }
 }

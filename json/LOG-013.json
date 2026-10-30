@@ -513,7 +513,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "",
+  "statusProjeto": "08/10/26 - Nova Blacklist gerada pelo Time de Serviços Técnicos (WIFI 3.1 + GPON).\n21/08/26 - Previsão de 30/08/26 para cruzar com a base de jigas de testes e rodar a 1ª Blacklist pelo Extrator.\n21/08/26 - Previsão de 15/09/26 para cruzar com as OS geradas por VT.\n21/08/26 - Previsão de 30/09/26 para implementar a rotina de Blacklist mensal para o fluxo de descarte.\n14/08/26 - Definido que até setembro haverá lista mensal automatizada por serviços de campo, com medição a criar e QuickWin a informar.\n28/07/26 - Previsão de 15/08/26 para identificar os motivos de baixas não ligados ao terminal.\n17/06/26 - Escopo de métricas de consulta da jornada dos terminais para Scrap por rotatividade, com previsão para 23/06/26.\n09/06/26 - Relatórios e testes apresentados ao Demis, com conclusão de que novos parâmetros e estudos são necessários.\n09/06/26 - Jackson e Mauricio vão alinhar as novas fases e a distribuição de tarefas do novo estudo.\n26/05/26 - Previsão de 08/06/26 para definir e estudar novas diretrizes para investigações.\n25/05/26 - Levantamento parado, com previsão de retomada em 01/06/26.\n15/05/26 - Mauricio levantará terminais novos de 2 anos e índice de troca; divergência entre 48 meses e dados maiores, com retorno previsto em 22/05/26.\n06/05/26 - Estudos, relatórios e laudos enviados ao Mauricio, aguardando validação para as próximas etapas.",
   "financeiro": [
     {
       "id": "LOG-013",
@@ -3111,6 +3111,6 @@
   "fonte": {
     "arquivo": "LOG-013 - Ciclo de Vida.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-013%20-%20Ciclo%20de%20Vida.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:53:41-03:00"
+    "extraidoEm": "2026-10-30T16:10:39-03:00"
   }
 }

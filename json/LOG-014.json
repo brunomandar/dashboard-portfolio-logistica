@@ -313,7 +313,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "",
+  "statusProjeto": "03/10/26 - Previsão da ferramenta de controle dos estoques de Marketing (End to End) definida para Mar/27.\n29/09/26 - Desenvolvimento de ferramenta para controle dos estoques de Marketing (End to End) registrado como ação, com prazo a definir (TBD).\n14/08/26 - Nova governança a ser marcada para Catalão, para puxar o tema.\n14/08/26 - Estoque de junho fechou em 1,4 BI, contra meta de 1,2 BI (Revenda Celular, GPON, HFC).\n08/06/26 - Revisão do FCST, com plano de ação para redução, prevista para a próxima reunião, em 28/07.\n01/06/26 - Revisão do TO BE e reunião com a TCIA previstas para 03/06 (antes 20/05).\n01/06/26 - PR em estudo.\n01/06/26 - Próximos passos para SPI, Centro-Oeste, Norte e Nordeste programados para 2027, sem verba.\n30/05/26 - RS finalizado, pendente de verba para pagamento.\n25/05/26 - Próximos passos para SPI, Centro-Oeste, Norte e Nordeste ainda a definir (TBD).\n13/05/26 - Revisão do TO BE e reunião com a TCIA previstas para 20/05.\n08/05/26 - Reunião marcada com Gustavo Mendes para atualização do projeto.\n08/05/26 - Prazo de 12/05 definido para criação do relatório Slow Moving, para acompanhamento do STK.\n08/05/26 - PR e RS em andamento, com prazo de 30/05.\n07/05/26 - Nova cobrança feita ao Gustavo para atualização via Teams.\n06/05/26 - Aguardando retorno do Gustavo para atualização dos próximos passos.\n30/04/26 - BI Slow Moving / Giro de estoque criado.\n10/02/26 - Processo enviado à AMX e e-mail enviado à Jéssica Morales; aguardando aprovação do México.",
   "financeiro": [
     {
       "id": "LOG-014",
@@ -2911,6 +2911,6 @@
   "fonte": {
     "arquivo": "LOG-014 - RAI de Estoques.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-014%20-%20RAI%20de%20Estoques.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:53:43-03:00"
+    "extraidoEm": "2026-10-30T16:10:40-03:00"
   }
 }

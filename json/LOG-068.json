@@ -317,7 +317,7 @@
       "detalhe": "1) Validar tabela de custos vigente por cidade e fornecedor, incluindo as 22 cidades de SPI; 2) confirmar capacidade, contrato e readiness das EPOs em SPI, PR, SC e CO; 3) definir piloto com linha de base (custo unitário, SLA, cancelamento, volume); 4) definir gatilhos de continuidade (saving confirmado, cancelamento controlado, SLA dentro da tolerância); 5) reavaliar expansão após estabilização do piloto."
     }
   ],
-  "statusProjeto": "",
+  "statusProjeto": "06/11/26 - Migração da esteira e inicio da captura financeira.\n23/10/26 - Envio da relação de Cidades e EPO´s de atendimento.\n21/10/26 - Agenda de alinhamento com a Regional SPI.\n16/10/26 - Revisão de SPI: custos de 22 cidades (~15% do volume de SPI) revisados. Custo médio EPO R$ 15,16 → R$ 17,82 (Expressa R$ 24,99); vantagem unitária R$ 9,83 → R$ 7,17; saving anual de SPI R$ 643,77 mil → R$ 469,88 mil (-R$ 173,89 mil, -27%). O saving consolidado (R$ 1,7 MM/ano) é anterior à revisão e requer confirmação.\n09/10/26 - Solicitada reavaliação de SPI após custos mais altos em cidades da Ctrends (até R$ 33 acima do custo atual em algumas localidades).\n18/09/26 - Fabio Costa informou que a unificação da malha suprirá a demanda em todo o Brasil, exceto em SP Capital e interior, onde Fabricio iniciará negociação com os demais gerentes para o retorno da entrega para EPO.\n17/09/26 - Mantida a espera pelo retorno de Fabio Costa, com novo prazo até 16/09, para dar andamento ao tema.\n05/09/26 - Aguardando retorno de Fabio Costa, com prazo até 09/09, para dar andamento ao tema.\n03/09/26 - Avaliação do time do Lencione concluiu que o projeto de unificação já traz saving semelhante, podendo haver algum desdobramento.\n03/09/26 - Agenda prevista para 04/09 para verificar se há desdobramento possível no projeto.\n21/08/26 - Prevista avaliação com o Lencione da volumetria de ganhos já levantada e agenda com José Rodrigo e Fabio para entender os processos.\n20/08/26 - Análise revisada com custos unitários atualizados: viável em 9 das 11 regionais (245 cidades, ~85% do volume; R$ 1,7 MM/ano). Quick wins: SPI, PR, SC e CO (171 cidades, ~25% do volume, ~R$ 1,0 MM/ano). MG e NE não recomendadas; RS e BA/SE com avaliação específica.\n28/07/26 - Análise inicial EPO x Expressa (tabelas EPO 2025) concluída e cenários enviados aos gestores.",
   "financeiro": [
     {
       "id": "LOG-068",
@@ -2915,6 +2915,6 @@
   "fonte": {
     "arquivo": "LOG-068 - Retornar Entrega de Simcard e ComboMulti para EPO.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-068%20-%20Retornar%20Entrega%20de%20Simcard%20e%20ComboMulti%20para%20EPO.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:54:34-03:00"
+    "extraidoEm": "2026-10-30T16:11:33-03:00"
   }
 }

@@ -1115,7 +1115,7 @@
       "detalhe": "Foi identificado que o canal PME não possui uma régua padronizada de comunicação ativa com os clientes, sendo o vendedor o principal ponto de contato durante o acompanhamento dos pedidos. Também foi constatado que as regionais utilizam diferentes ferramentas para consulta e acompanhamento operacional, principalmente SAP e TMS. Foi apresentada uma iniciativa em estudo para ampliar a comunicação direta com os clientes por meio do WhatsApp, permitindo consulta de rastreabilidade e status dos pedidos sem necessidade de acionamento do vendedor ou dos canais tradicionais de atendimento."
     }
   ],
-  "statusProjeto": "",
+  "statusProjeto": "06/11/2026: Reuniao de alinhamento das ações de cada erro da matriz\n27/10/2026: Reunião com o time de Cadastro, enviado Matriz de erro para validação\n26/10/2026: Reunião com Ivete para entender o fluxo PME pela Logistica\n19/10/2026: Criado procedimento pela equipe de Processos\n08/10/2026: Revisado os fluxos existentes e identificado que falta os procedimentos das etapas e os reponsáveis\n01/10/2026: Definidos pontos focais por parte de Logistica e PME. Inicio de mapeamento das atividades agendado para 08/10.\n17/09/2026: diagnóstico inicial e análise da volumetria concluídos. As rejeições SEFAZ representaram menos de 1% das vendas analisadas, não justificando naquele momento um desenvolvimento sistêmico específico. O projeto segue com o mapeamento dos fluxos, definição das responsabilidades e acompanhamento do card nº 1446811072.",
   "financeiro": [
     {
       "id": "LOG-065",
@@ -3713,6 +3713,6 @@
   "fonte": {
     "arquivo": "LOG-065 - Imersão na Esteira PME.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-065%20-%20Imers%C3%A3o%20na%20Esteira%20PME.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:54:31-03:00"
+    "extraidoEm": "2026-10-30T16:11:30-03:00"
   }
 }

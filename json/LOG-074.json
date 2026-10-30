@@ -1049,7 +1049,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "",
+  "statusProjeto": "data - Pontos relevantes para aquele evento",
   "financeiro": [
     {
       "id": "LOG-074",
@@ -3647,6 +3647,6 @@
   "fonte": {
     "arquivo": "LOG-074 - Saving Compras Bid OPL.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-074%20-%20Saving%20Compras%20Bid%20OPL.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:54:43-03:00"
+    "extraidoEm": "2026-10-30T16:11:43-03:00"
   }
 }

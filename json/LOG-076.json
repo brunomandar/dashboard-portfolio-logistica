@@ -1084,7 +1084,7 @@
       "detalhe": "Operação em fase final de implantação, com infraestrutura concluída e testes do RPA em andamento. Permanecem pendentes as liberações de acessos e validações de LGPD no TOA, impactando a entrada em operação, reprogramada para 13/10/2026."
     }
   ],
-  "statusProjeto": "",
+  "statusProjeto": "Risco: Atraso na disponibilidade das bases pelo time de LGPD. \n27/10/2026: Criar fluxo de devolução dos equipamentos para Postal Gow - Reversa\n26/10/2026: Backlog de 2247 OS\n23/10/2026: Ajuste no robo e embaladas 900 OS\n22/10/2026: Inicio da separação das 274 solicitações e envio pela Postal Gow\n21/10/2026: Go-Live iniciado, porém não conseguiu emitir as 274 etiquetas para o inicio da separação\n07/10/2026: Operação em fase final de implantação, com infraestrutura concluída e testes do RPA em andamento. Permanecem pendentes as liberações de acessos e validações de LGPD no TOA, impactando a entrada em operação, reprogramada para 13/10/2026.",
   "financeiro": [
     {
       "id": "LOG-076",
@@ -3682,6 +3682,6 @@
   "fonte": {
     "arquivo": "LOG-076 - Desativação DTH.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-076%20-%20Desativa%C3%A7%C3%A3o%20DTH.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:54:45-03:00"
+    "extraidoEm": "2026-10-30T16:11:44-03:00"
   }
 }

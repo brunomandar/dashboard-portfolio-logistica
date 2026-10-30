@@ -1059,7 +1059,7 @@
       "detalhe": "Foi solictado pela Magal revisão do SOW pelo time de GR no que se refere aos pntos de ; PG aplivcavel , conduores autonomos, Motocicleta valor maximo por saida e Fronteria de responsabiolidade."
     }
   ],
-  "statusProjeto": "",
+  "statusProjeto": "Risco:\ndata - Pontos relevantes para aquele evento",
   "financeiro": [
     {
       "id": "LOG-010.2",
@@ -3657,6 +3657,6 @@
   "fonte": {
     "arquivo": "LOG-010.2 - BID Transportes - Expressa.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.2%20-%20BID%20Transportes%20-%20Expressa.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:53:29-03:00"
+    "extraidoEm": "2026-10-30T16:10:27-03:00"
   }
 }

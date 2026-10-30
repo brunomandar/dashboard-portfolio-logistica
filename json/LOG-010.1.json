@@ -1050,76 +1050,6 @@
   ],
   "historico": [
     {
-      "data": "2026-07-01",
-      "acoes": "Logistica : Apresentar a estrura para para Mck",
-      "detalhe": "Aqui foi colocado a mesa qual seria o foco do BID"
-    },
-    {
-      "data": "2026-08-07",
-      "acoes": "Logistica :Enviar o  baseline de frete para Mck",
-      "detalhe": "Disponibilização de arquivos, baseline frete realziado do período de 12 meses  + rel detalhado de frete"
-    },
-    {
-      "data": "2026-08-11",
-      "acoes": "Logistica: Enviar documento com todas premissas BID Nacional de Transportes",
-      "detalhe": "BID Engenharia,BID Móvel,BID E-commerce;BID Expressa SIM Card,LogísticaReversa,KPIs,Penalidades,PGR,POD,Vale Pedágio e generalidades\nGeneralidades"
-    },
-    {
-      "data": "2026-08-12",
-      "acoes": "Logistica/Comparas/MckEnviao do SOW + KPIs Bid Nacional",
-      "detalhe": "Discussão de indicadores, SLA's e critérios que fariam parte do BID e Validar template da RFP.\nRevisar KPIs. Consolidar comentários para disparo aos fornecedores"
-    },
-    {
-      "data": "2026-08-17",
-      "acoes": "Discussão Inciativas Fretes",
-      "detalhe": "Avaliação das iniciativas de redução de custos e oportunidades dentro da categoria transportes. Foi encaminhado para transporte o material da RFP da  engenharia , Movel e equalização RFI"
-    },
-    {
-      "data": "2026-08-21",
-      "acoes": "[Transformação Claro - Fretes] Checkpoint Executiv",
-      "detalhe": "Continuidade da governança do programa e acompanhamento das iniciativas"
-    },
-    {
-      "data": "2026-09-04",
-      "acoes": "Logstica/Compras/Mck - defirnir",
-      "detalhe": "Construção do BID e definição dos escopos"
-    },
-    {
-      "data": "2026-09-17",
-      "acoes": "Alinhamento BID Nacional",
-      "detalhe": ""
-    },
-    {
-      "data": "2026-09-24",
-      "acoes": "Equalização e negociação com fornecedores",
-      "detalhe": "Discussão das propostas recebidas da engenharaia  e equalização do BID Móvel."
-    },
-    {
-      "data": "2026-09-25",
-      "acoes": "Logistica/Compras/Mck iniciar proximos Passos BID Expressa B2C",
-      "detalhe": "Discussão dos próximos passos para a concorrência da Expressa B2C."
-    },
-    {
-      "data": "2026-09-30",
-      "acoes": "Rollout do BID de Transportes",
-      "detalhe": "Inclusão de regras de VPO e Vale-Pedágio, estrutura da tabela de preços e ajustes nos materiais do BID."
-    },
-    {
-      "data": "2026-10-07",
-      "acoes": "Compras/Mck: Garantir a relação mesorregião → cidades, para que o fornecedor saiba exatamente quais municípios está assumindo",
-      "detalhe": "Reunião Mckinsey 07/10/26\n-O Round 3 ampliará a cobertura das rotas ainda não precificadas, utilizando a mesorregião como referência de preço, sem substituir as cotações cidade a cidade já realizadas, que permanecem prioritárias. No TMS, a proposta é cadastrar individualmente todas as cidades que compõem cada mesorregião, mantendo a tabela estruturada no nível cidade a cidade.\n-Foi discutida a inclusão de uma tabela de generalidades/taxas adicionais no BID, aproveitando o histórico de cobranças extras como referência.\n-Após o Round 3, avaliar a cobertura por região e a concentração de faturamento por fornecedor.\n-O target enviado aos fornecedores foi tratado como referência de negociação, e não como condição eliminatória. Quando o fornecedor não conseguisse atingir o target, deveria apresentar sua melhor proposta."
-    },
-    {
-      "data": "2026-10-09",
-      "acoes": "Logistica : Apurar o ganho com iniciativa FTL para LTL Top rotas engenharia",
-      "detalhe": "Consolidação e rodadas finais dos BID's\nBID Engenharia;BID Móvel;BID Expressa;Round 1, Round 2 e Round 3;E\nEqualização de fornecedores;impactos financeiros;oportunidades de saving;migração FTL para LTL;pipeline de iniciativas de logística"
-    },
-    {
-      "data": "2026-09-01",
-      "acoes": "Mmck: Status Report (cronograma, prazos, cenários BID",
-      "detalhe": ""
-    },
-    {
       "data": "2026-10-19",
       "acoes": "Comparas/Mck :Receber/revisar as cotações de Engenharia considerando mesorregiões",
       "detalhe": "Engenharia: BID avançando, mas o aumento de escopo das cotações e as dúvidas sobre mesorregiões podem pressionar o prazo.\nAvaliar distribuição/reequilíbrio das rotas conforme competitividade final"
@@ -1138,9 +1068,79 @@
       "data": "2026-10-19",
       "acoes": "Logistica :Cobrar retorno da negociação da tabela do DTH",
       "detalhe": "Estava pendente um retorno sobre a negociação da tabela do DH. O fornecedor havia solicitado prazo adicional, mas foi cobrado para retornar no mesmo dia da reunião.Foi reforçado que a operação não deveria ser virada antes da definição desses valores, evitando iniciar a operação sem clareza dos custos."
+    },
+    {
+      "data": "2026-10-09",
+      "acoes": "Logistica : Apurar o ganho com iniciativa FTL para LTL Top rotas engenharia",
+      "detalhe": "Consolidação e rodadas finais dos BID's\nBID Engenharia;BID Móvel;BID Expressa;Round 1, Round 2 e Round 3;E\nEqualização de fornecedores;impactos financeiros;oportunidades de saving;migração FTL para LTL;pipeline de iniciativas de logística"
+    },
+    {
+      "data": "2026-10-07",
+      "acoes": "Compras/Mck: Garantir a relação mesorregião → cidades, para que o fornecedor saiba exatamente quais municípios está assumindo",
+      "detalhe": "Reunião Mckinsey 07/10/26\n-O Round 3 ampliará a cobertura das rotas ainda não precificadas, utilizando a mesorregião como referência de preço, sem substituir as cotações cidade a cidade já realizadas, que permanecem prioritárias. No TMS, a proposta é cadastrar individualmente todas as cidades que compõem cada mesorregião, mantendo a tabela estruturada no nível cidade a cidade.\n-Foi discutida a inclusão de uma tabela de generalidades/taxas adicionais no BID, aproveitando o histórico de cobranças extras como referência.\n-Após o Round 3, avaliar a cobertura por região e a concentração de faturamento por fornecedor.\n-O target enviado aos fornecedores foi tratado como referência de negociação, e não como condição eliminatória. Quando o fornecedor não conseguisse atingir o target, deveria apresentar sua melhor proposta."
+    },
+    {
+      "data": "2026-09-30",
+      "acoes": "Rollout do BID de Transportes",
+      "detalhe": "Inclusão de regras de VPO e Vale-Pedágio, estrutura da tabela de preços e ajustes nos materiais do BID."
+    },
+    {
+      "data": "2026-09-25",
+      "acoes": "Logistica/Compras/Mck iniciar proximos Passos BID Expressa B2C",
+      "detalhe": "Discussão dos próximos passos para a concorrência da Expressa B2C."
+    },
+    {
+      "data": "2026-09-24",
+      "acoes": "Equalização e negociação com fornecedores",
+      "detalhe": "Discussão das propostas recebidas da engenharaia  e equalização do BID Móvel."
+    },
+    {
+      "data": "2026-09-17",
+      "acoes": "Alinhamento BID Nacional",
+      "detalhe": ""
+    },
+    {
+      "data": "2026-09-04",
+      "acoes": "Logstica/Compras/Mck - defirnir",
+      "detalhe": "Construção do BID e definição dos escopos"
+    },
+    {
+      "data": "2026-09-01",
+      "acoes": "Mmck: Status Report (cronograma, prazos, cenários BID",
+      "detalhe": ""
+    },
+    {
+      "data": "2026-08-21",
+      "acoes": "[Transformação Claro - Fretes] Checkpoint Executiv",
+      "detalhe": "Continuidade da governança do programa e acompanhamento das iniciativas"
+    },
+    {
+      "data": "2026-08-17",
+      "acoes": "Discussão Inciativas Fretes",
+      "detalhe": "Avaliação das iniciativas de redução de custos e oportunidades dentro da categoria transportes. Foi encaminhado para transporte o material da RFP da  engenharia , Movel e equalização RFI"
+    },
+    {
+      "data": "2026-08-12",
+      "acoes": "Logistica/Comparas/MckEnviao do SOW + KPIs Bid Nacional",
+      "detalhe": "Discussão de indicadores, SLA's e critérios que fariam parte do BID e Validar template da RFP.\nRevisar KPIs. Consolidar comentários para disparo aos fornecedores"
+    },
+    {
+      "data": "2026-08-11",
+      "acoes": "Logistica: Enviar documento com todas premissas BID Nacional de Transportes",
+      "detalhe": "BID Engenharia,BID Móvel,BID E-commerce;BID Expressa SIM Card,LogísticaReversa,KPIs,Penalidades,PGR,POD,Vale Pedágio e generalidades\nGeneralidades"
+    },
+    {
+      "data": "2026-08-07",
+      "acoes": "Logistica :Enviar o  baseline de frete para Mck",
+      "detalhe": "Disponibilização de arquivos, baseline frete realziado do período de 12 meses  + rel detalhado de frete"
+    },
+    {
+      "data": "2026-07-01",
+      "acoes": "Logistica : Apresentar a estrura para para Mck",
+      "detalhe": "Aqui foi colocado a mesa qual seria o foco do BID"
     }
   ],
-  "statusProjeto": "",
+  "statusProjeto": "Risco:\ndata - Pontos relevantes para aquele evento",
   "financeiro": [
     {
       "id": "LOG-010.1",
@@ -3738,6 +3738,6 @@
   "fonte": {
     "arquivo": "LOG-010.1 - BID Transportes - Engenharia.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.1%20-%20BID%20Transportes%20-%20Engenharia.xlsx?web=1",
-    "extraidoEm": "2026-10-30T15:53:21-03:00"
+    "extraidoEm": "2026-10-30T16:10:19-03:00"
   }
 }
