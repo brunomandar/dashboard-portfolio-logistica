@@ -683,21 +683,32 @@
   }
 
   function projectTimeline(project) {
-    const history = arrayOf(project.historico)
-      .filter(item => item && (item.data || item.detalhe || item.acoes))
-      .map(normalizeTimelineItem)
-      .sort((a, b) => clean(b.data).localeCompare(clean(a.data)))
+    // Fonte única: campo "Status do Projeto" do One_Page. Cada linha iniciada por data é uma atualização.
+    const today = new Date();
+    const entries = [];
+    clean(project.statusProjeto).split(/\r?\n+/).forEach(rawLine => {
+      const line = clean(rawLine.replace(/\u00a0/g, ' '));
+      if (!line || /^risco\s*:?$/i.test(line) || /^data\s*[-–—:]\s*pontos relevantes/i.test(line)) return;
+      const match = line.match(/^(\d{1,2})[\/.\-](\d{1,2})(?:[\/.\-](\d{2}|\d{4}))?(?=\s|[-–—|:]|$)\s*[-–—|:]?\s*/);
+      if (match) {
+        const day = Number(match[1]);
+        const month = Number(match[2]);
+        const year = match[3] ? Number(match[3].length === 2 ? `20${match[3]}` : match[3]) : today.getFullYear();
+        const valid = new Date(year, month - 1, day);
+        if (valid.getFullYear() === year && valid.getMonth() === month - 1 && valid.getDate() === day) {
+          entries.push({ data: `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`, detalhe: clean(line.slice(match[0].length)), ordem: entries.length });
+          return;
+        }
+      }
+      if (entries.length) entries[entries.length - 1].detalhe = clean(`${entries[entries.length - 1].detalhe} ${line}`);
+      else entries.push({ data: '', detalhe: line, ordem: entries.length });
+    });
+    return entries
+      .filter(item => item.detalhe)
+      .sort((a, b) => clean(b.data).localeCompare(clean(a.data)) || a.ordem - b.ordem)
       .slice(0, 3);
-    if (!history.length && project.statusProjeto) {
-      return clean(project.statusProjeto)
-        .split(/\n+/)
-        .filter(Boolean)
-        .map(line => normalizeTimelineItem({ data: '', detalhe: line }))
-        .sort((a, b) => clean(b.data).localeCompare(clean(a.data)))
-        .slice(0, 3);
-    }
-    return history;
   }
+
 
   function renderProject(project) {
     const view = $('#projectView');
@@ -713,7 +724,7 @@
       <section class="detail-grid"><article class="card detail"><small>Saving Opex 12M</small><b>${moneyMM(savingField(project, 'opex12M'))}</b></article><article class="card detail"><small>Saving Capex 12M</small><b>${moneyMM(savingField(project, 'capex12M'))}</b></article><article class="card detail"><small>Saving total 12M</small><b>${moneyMM(savingField(project, 'total12M'))}</b></article><article class="card detail"><small>Saving 2026</small><b>${moneyMM(savingField(project, 'total2026'))}</b></article></section>
       <section class="section two-col"><article class="card text-card scroll-card"><div class="chart-title">Escopo do projeto</div><p class="scroll-content">${esc(project.escopo || 'Escopo não preenchido no arquivo de origem.')}</p></article><article class="card text-card scroll-card"><div class="chart-title">Principais entregáveis</div><ul class="checklist scroll-content">${deliverables.length ? deliverables.map(item => `<li>${esc(item)}</li>`).join('') : '<li>Entregáveis não preenchidos no arquivo de origem.</li>'}</ul></article></section>
       <section class="section"><div class="section-head"><div><h2>Cronograma do projeto</h2><p>Alternância entre visão executiva e detalhada.</p></div></div><div class="tabs"><button class="tab ${state.scheduleMode === 'macro' ? 'active' : ''}" type="button" onclick="switchSchedule('macro')">Macrocronograma</button><button class="tab ${state.scheduleMode === 'detalhado' ? 'active' : ''}" type="button" onclick="switchSchedule('detalhado')">Cronograma detalhado</button></div><article class="card roadmap-card" id="projectSchedule">${scheduleCard(project, state.scheduleMode)}</article></section>
-      <section class="section two-col"><article class="card line-chart project-finance-chart"><div class="chart-title">Desempenho financeiro do projeto</div><div class="chart-sub">${esc(projectFinance.sub)}</div>${projectFinance.body}</article><article class="card timeline"><div class="chart-title" style="margin-bottom:18px">Histórico de atualizações</div>${timeline.length ? timeline.map(item => `<div class="time-item"><div class="time-date">${shortDate(item.data)}</div><div class="time-line"></div><div class="time-copy"><b>${esc(item.acoes && item.acoes !== '-' ? item.acoes : 'Atualização registrada')}</b><p>${esc(item.detalhe)}</p></div></div>`).join('') : '<div class="empty-state">Sem histórico preenchido no arquivo de origem.</div>'}</article></section>`;
+      <section class="section two-col"><article class="card line-chart project-finance-chart"><div class="chart-title">Desempenho financeiro do projeto</div><div class="chart-sub">${esc(projectFinance.sub)}</div>${projectFinance.body}</article><article class="card timeline"><div class="chart-title" style="margin-bottom:18px">Histórico de atualizações</div>${timeline.length ? timeline.map(item => `<div class="time-item"><div class="time-date">${shortDate(item.data)}</div><div class="time-line"></div><div class="time-copy"><b>Atualização registrada</b><p>${esc(item.detalhe)}</p></div></div>`).join('') : '<div class="empty-state">Sem atualizações registradas no Status do Projeto.</div>'}</article></section>`;
   }
 
   function renderDashboard() {
