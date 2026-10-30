@@ -146,7 +146,21 @@
     });
   }
 
+  async function loadProjectIndex() {
+    if (location.protocol === 'file:') return;
+    try {
+      const response = await fetch(`json/projects.index.json?v=${Date.now()}`, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`projects.index.json: HTTP ${response.status}`);
+      const index = await response.json();
+      const files = Array.isArray(index) ? index : index?.arquivos;
+      if (Array.isArray(files) && files.length) window.PORTFOLIO_JSON_FILES = files.map(clean).filter(Boolean);
+    } catch (error) {
+      console.warn('Lista de projetos não relida; usando a lista já carregada.', error);
+    }
+  }
+
   async function loadProjects({ force = false } = {}) {
+    if (force) await loadProjectIndex();
     const files = Array.isArray(window.PORTFOLIO_JSON_FILES) ? window.PORTFOLIO_JSON_FILES : [];
     state.failedFiles = 0;
 
