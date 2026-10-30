@@ -1,10 +1,10 @@
 {
-  "id": "LOG-010",
-  "projeto": "BID Transportes - Engenharia",
+  "id": "LOG-010.2",
+  "projeto": "BID Transportes - Expressa",
   "area": "Transportes",
   "pontoFocal": "Jaime",
   "inicio": "2026-07-06",
-  "termino": "2027-01-31",
+  "termino": "2027-02-26",
   "inicioCaptura": "2027-02-01",
   "iniciativa": "DGP",
   "pmo": "Jaime/Raquel",
@@ -14,12 +14,8 @@
   "prioridade": "P0",
   "ganhoProjeto": "Quantitativo",
   "tipos": [],
-  "escopo": "O projeto BID Nacional de Transportes para Engenharia tem como objetivo definir e contratar o modelo logístico futuro da Engenharia da Claro, selecionando parceiros estratégicos para operação nacional de transporte. \nA iniciativa busca otimizar custos, elevar o nível de serviço, ampliar a rastreabilidade e fortalecer a governança operacional, garantindo uma solução escalável, aderente aos requisitos técnicos e de compliance, e capaz de suportar as demandas atuais e futuras da companhia, além  do planejamento e da transição operacional e as adequaçoes sistemicas necessárias à implantação do novo modelo.",
-  "entregaveis": [
-    "Tabela para atendimento Expresso (Canal Vermelho)",
-    "Tabela direta e reversa para todas as transportadoras",
-    "Cobertura de 100% das rotas mitigando a necessidade de cotação"
-  ],
+  "escopo": "",
+  "entregaveis": [],
   "saving": {
     "opex12M": 0.0,
     "capex12M": 0.0,
@@ -31,75 +27,75 @@
   "macroAtividades": [
     {
       "numero": "01.",
-      "atividade": "kickoff do projeto",
-      "responsavel": "Compras/Log/Mck",
+      "atividade": "",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-07-06",
-      "fim": "2026-07-06"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": "02.",
-      "atividade": "Definição do scopo",
-      "responsavel": "Compras/Log/Mck",
+      "atividade": "",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-07-06",
-      "fim": "2026-07-31"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": "03.",
-      "atividade": "Escopo validado e envio de RFI a Mercado",
-      "responsavel": "Compras/Log/Mck",
+      "atividade": "",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-07-31",
-      "fim": "2026-08-11"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": "04.",
-      "atividade": "RFI fechado (retorno transportadoras) e Envio de RFP",
-      "responsavel": "Compras",
+      "atividade": "",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-08-11",
-      "fim": "2026-08-14"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": "05.",
-      "atividade": "Live com fornecedores",
-      "responsavel": "Compras",
+      "atividade": "",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-08-14",
-      "fim": "2026-09-04"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": "06.",
-      "atividade": "Deadline envio RFP Round 1",
-      "responsavel": "Compras/Mck",
+      "atividade": "",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-09-04",
-      "fim": "2026-10-02"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": "07.",
-      "atividade": "Deadline envio RFP Round 2",
-      "responsavel": "Compras/Mck",
+      "atividade": "",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-10-02",
-      "fim": "2026-10-23"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": "08.",
-      "atividade": "Deadline Round Final de Negociações",
-      "responsavel": "Compras/Log/Mck",
+      "atividade": "",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-10-23",
-      "fim": "2026-11-20"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": "09.",
-      "atividade": "Plano finalizado (contrato + ramp-up)",
-      "responsavel": "Compras/Log/Mck",
+      "atividade": "",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-11-20",
-      "fim": "2026-12-31"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": "10.",
@@ -249,175 +245,143 @@
   "cronogramaDetalhado": [
     {
       "numero": 1,
-      "atividade": "1. Detalhar o perfil de viagens (Engenharia, Móvel, E-commerce)",
-      "responsavel": "Compras/McK",
+      "atividade": "1. ",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-07-06",
-      "fim": "2026-08-07"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 2,
-      "atividade": "2. Definir o modelo de cotação (ex.: reduzir nº de rotas)",
-      "responsavel": "Compras/McK",
+      "atividade": "2. ",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-07-06",
-      "fim": "2026-08-07"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 3,
-      "atividade": "3. Mapear potenciais fornecedores para o BID",
-      "responsavel": "Compras/McK",
+      "atividade": "3. ",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-07-06",
-      "fim": "2026-07-31"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 4,
-      "atividade": "4. Realizar RFIs (perfil de fornecedores e insights)",
-      "responsavel": "Compras",
+      "atividade": "4. ",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-07-20",
-      "fim": "2026-08-11"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 5,
-      "atividade": "5. Alinhar internamente RFP e plano de execução",
-      "responsavel": "Compras/Log",
+      "atividade": "5. ",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-07-20",
-      "fim": "2026-08-10"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 6,
-      "atividade": "6. Estruturar a RFP",
-      "responsavel": "Compras",
+      "atividade": "6. ",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-08-03",
-      "fim": "2026-08-10"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 7,
-      "atividade": "7. Lançar rodada 1 de cotação",
-      "responsavel": "Compras",
+      "atividade": "7. ",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-08-12",
-      "fim": "2026-09-04"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 8,
-      "atividade": "8. Validação Técnica com equipe de Risco Claro",
-      "responsavel": "Compras/Risco",
+      "atividade": "8. ",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-08-17",
-      "fim": "2026-10-19"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 9,
-      "atividade": "9. Equalizar propostas + feedback Faróis– rodada 1",
-      "responsavel": "Compras/McK",
+      "atividade": "9. ",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-09-07",
-      "fim": "2026-09-11"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 10,
-      "atividade": "10. Lançar rodada 2 de cotação",
-      "responsavel": "Compras",
+      "atividade": "10. ",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-09-14",
-      "fim": "2026-10-02"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 11,
-      "atividade": "11. Equalizar propostas + feedback Faróis– rodada 2",
-      "responsavel": "Compras/McK",
+      "atividade": "11. ",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-10-05",
-      "fim": "2026-10-09"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 12,
-      "atividade": "12. Discutir tecnicamente com fornecedores (Q&A)",
-      "responsavel": "Compras/Log",
+      "atividade": "12. ",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-10-05",
-      "fim": "2026-10-19"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 13,
-      "atividade": "13. Validar shortlist e definir estratégia de negociação",
-      "responsavel": "Compras/McK",
+      "atividade": "13. ",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-10-05",
-      "fim": "2026-10-19"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 14,
-      "atividade": "14. Negociar com players do shortlist (Envio de Lista longa)",
-      "responsavel": "Compras",
+      "atividade": "14. ",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-10-12",
-      "fim": "2026-10-23"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 15,
-      "atividade": "15. Definir vencedores do BID",
-      "responsavel": "Compras/Dir",
+      "atividade": "15. ",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-10-26",
-      "fim": "2026-10-30"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 16,
-      "atividade": "16. Assinar o contrato",
-      "responsavel": "Compras/Jur",
+      "atividade": "16. ",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-10-30",
-      "fim": "2026-11-20"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 17,
-      "atividade": "17. Onboarding do fornecedor",
-      "responsavel": "Logística",
+      "atividade": "17. ",
+      "responsavel": "",
       "status": "",
-      "inicio": "2026-11-09",
-      "fim": "2026-11-20"
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": 18,
-      "atividade": "18. Definir planos de ramp-up e phase-out dos fornecedores",
-      "responsavel": "Logística",
-      "status": "",
-      "inicio": "2026-11-09",
-      "fim": "2026-11-20"
-    },
-    {
-      "numero": 19,
-      "atividade": "19. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 20,
-      "atividade": "20. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 21,
-      "atividade": "21. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 22,
-      "atividade": "22. ",
+      "atividade": "18. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -1050,100 +1014,55 @@
   ],
   "historico": [
     {
-      "data": "2026-07-01",
-      "acoes": "Logistica : Apresentar a estrura para para Mck",
-      "detalhe": "Aqui foi colocado a mesa qual seria o foco do BID"
-    },
-    {
-      "data": "2026-08-07",
-      "acoes": "Logistica :Enviar o  baseline de frete para Mck",
-      "detalhe": "Disponibilização de arquivos, baseline frete realziado do período de 12 meses  + rel detalhado de frete"
-    },
-    {
-      "data": "2026-08-11",
-      "acoes": "Logistica: Enviar documento com todas premissas BID Nacional de Transportes",
-      "detalhe": "BID Engenharia,BID Móvel,BID E-commerce;BID Expressa SIM Card,LogísticaReversa,KPIs,Penalidades,PGR,POD,Vale Pedágio e generalidades\nGeneralidades"
-    },
-    {
-      "data": "2026-08-12",
-      "acoes": "Logistica/Comparas/MckEnviao do SOW + KPIs Bid Nacional",
-      "detalhe": "Discussão de indicadores, SLA's e critérios que fariam parte do BID e Validar template da RFP.\nRevisar KPIs. Consolidar comentários para disparo aos fornecedores"
-    },
-    {
-      "data": "2026-08-17",
-      "acoes": "Discussão Inciativas Fretes",
-      "detalhe": "Avaliação das iniciativas de redução de custos e oportunidades dentro da categoria transportes. Foi encaminhado para transporte o material da RFP da  engenharia , Movel e equalização RFI"
-    },
-    {
-      "data": "2026-08-21",
-      "acoes": "[Transformação Claro - Fretes] Checkpoint Executiv",
-      "detalhe": "Continuidade da governança do programa e acompanhamento das iniciativas"
-    },
-    {
-      "data": "2026-09-04",
-      "acoes": "Logstica/Compras/Mck - defirnir",
-      "detalhe": "Construção do BID e definição dos escopos"
-    },
-    {
-      "data": "2026-09-17",
-      "acoes": "Alinhamento BID Nacional",
-      "detalhe": ""
-    },
-    {
-      "data": "2026-09-24",
-      "acoes": "Equalização e negociação com fornecedores",
-      "detalhe": "Discussão das propostas recebidas da engenharaia  e equalização do BID Móvel."
-    },
-    {
-      "data": "2026-09-25",
-      "acoes": "Logistica/Compras/Mck iniciar proximos Passos BID Expressa B2C",
-      "detalhe": "Discussão dos próximos passos para a concorrência da Expressa B2C."
-    },
-    {
-      "data": "2026-09-30",
-      "acoes": "Rollout do BID de Transportes",
-      "detalhe": "Inclusão de regras de VPO e Vale-Pedágio, estrutura da tabela de preços e ajustes nos materiais do BID."
-    },
-    {
-      "data": "2026-10-07",
-      "acoes": "Compras/Mck: Garantir a relação mesorregião → cidades, para que o fornecedor saiba exatamente quais municípios está assumindo",
-      "detalhe": "Reunião Mckinsey 07/10/26\n-O Round 3 ampliará a cobertura das rotas ainda não precificadas, utilizando a mesorregião como referência de preço, sem substituir as cotações cidade a cidade já realizadas, que permanecem prioritárias. No TMS, a proposta é cadastrar individualmente todas as cidades que compõem cada mesorregião, mantendo a tabela estruturada no nível cidade a cidade.\n-Foi discutida a inclusão de uma tabela de generalidades/taxas adicionais no BID, aproveitando o histórico de cobranças extras como referência.\n-Após o Round 3, avaliar a cobertura por região e a concentração de faturamento por fornecedor.\n-O target enviado aos fornecedores foi tratado como referência de negociação, e não como condição eliminatória. Quando o fornecedor não conseguisse atingir o target, deveria apresentar sua melhor proposta."
-    },
-    {
-      "data": "2026-10-09",
-      "acoes": "Logistica : Apurar o ganho com iniciativa FTL para LTL Top rotas engenharia",
-      "detalhe": "Consolidação e rodadas finais dos BID's\nBID Engenharia;BID Móvel;BID Expressa;Round 1, Round 2 e Round 3;E\nEqualização de fornecedores;impactos financeiros;oportunidades de saving;migração FTL para LTL;pipeline de iniciativas de logística"
-    },
-    {
       "data": "2026-09-01",
-      "acoes": "Mmck: Status Report (cronograma, prazos, cenários BID",
-      "detalhe": ""
+      "acoes": "Mck : Organizar a pasta do projeto e definir os próximos passo do BID",
+      "detalhe": "1-Reinião com gestão de riscos \n2- Primeira revisão do Sow e da RFP\n3 - Fechamento da lista de fornecedores"
     },
     {
-      "data": "2026-10-19",
-      "acoes": "Comparas/Mck :Receber/revisar as cotações de Engenharia considerando mesorregiões",
-      "detalhe": "Engenharia: BID avançando, mas o aumento de escopo das cotações e as dúvidas sobre mesorregiões podem pressionar o prazo.\nAvaliar distribuição/reequilíbrio das rotas conforme competitividade final"
+      "data": "2026-09-08",
+      "acoes": "Mck : Criar lista e fornecedores",
+      "detalhe": "Bruno  listar os fornecedores que farão parte do BID da expressa, Logistica  solictou para deixar no radar a transportadora Interlog."
     },
     {
-      "data": "2026-10-19",
-      "acoes": "Comparas/Mck :Revisar a equalização do BID Móvel ePreparar feedback para o próximo round do Móvel",
-      "detalhe": "propostas recebidas e em equalização; é preciso tratar fornecedores que não participaram do Round 2 antes do próximo round."
+      "data": "2026-09-10",
+      "acoes": "Logistica : Forcener baseline Expressa",
+      "detalhe": "Aqui foi discutido como  pontos de  base dados, como seria estudo de cobertra e PGR da operação"
     },
     {
-      "data": "2026-10-19",
-      "acoes": "Logistica : e modelo de contratação direta das empresas de escolta",
-      "detalhe": "Foi destacada a importância de comparar os valores de escolta apresentados pelos fornecedores com o que é pago atualmente.Paralelamente, estava sendo discutida com Márcia a possibilidade de um projeto para contratação direta das empresas de escolta pela Claro, mantendo o acionamento operacional pelas transportadoras, mas com o contrato e pagamento diretamente pela Claro."
+      "data": "2026-09-28",
+      "acoes": "Mck /compras enviar a priomeira versão da RFP e SOW",
+      "detalhe": "Para essa versão logistica e compras deve fazer as devidas consideraçoes, solicitado também a inclusão a area de negócio na consideraçoes  sobre o SOW.\nModelo operacional da Expressa ,Atendimento de SIM Cards, Estrutura de abastecimento dos pontos de coleta, Responsabilidade pelas transferências, Operação interestadual e Operação intermunicipal"
     },
     {
-      "data": "2026-10-19",
-      "acoes": "Logistica :Cobrar retorno da negociação da tabela do DTH",
-      "detalhe": "Estava pendente um retorno sobre a negociação da tabela do DH. O fornecedor havia solicitado prazo adicional, mas foi cobrado para retornar no mesmo dia da reunião.Foi reforçado que a operação não deveria ser virada antes da definição desses valores, evitando iniciar a operação sem clareza dos custos."
+      "data": "2026-10-20",
+      "acoes": "Logistica/Compras  revisar Sow  - BID Expressa B2C | Template RFP e Sow",
+      "detalhe": "Foi enviado e-mail    pelo bruno com a documentação atualizada para que a gente pudese revisar e fazer as devidas consideraçoes"
+    },
+    {
+      "data": "2026-10-23",
+      "acoes": "Transformação Claro - Fretes] Checkpoint Executivo",
+      "detalhe": "A agenda também foi aproveitada para discutir o cronograma da Movel e o processo de apuração do TOP Rotas Engenharia.\nEm relação ao TOP Rotas, avançamos para um nível maior de definição sobre a metodologia que será aplicada para a aferição dos resultados, alinhando os critérios e premissas que serão utilizados nas próximas etapas da análise."
+    },
+    {
+      "data": "2026-10-23",
+      "acoes": "Transformação Claro - Fretes] Checkpoint Executivo",
+      "detalhe": "No que se refere à Movel, o Bruno apresentou uma visão geral das atualizações realizadas na base de fornecedores da operação Expressa, com foco principal nos fornecedores de frete por moto.\nTambém foi informado que o BID está dividido em duas frentes distintas: uma voltada para a operação de SIM Card e outra para E-commerce. Para o E-commerce, a estratégia é utilizar a mesma base de fornecedores já contemplada no BID da Movel.\nEm relação aos fornecedores responsáveis pelas entregas de SIM Card, o Bruno ficou de compartilhar conosco a nova relação de fornecedores para avaliação."
+    },
+    {
+      "data": "2026-10-23",
+      "acoes": "Mck: Enviar lista de fornecedores",
+      "detalhe": "Lista enviada com relação de fornecedores, porém foi feito um alinhamento junto a compras que para lista de empreitera não deve considerar as transportadoras Antec e Danlex"
+    },
+    {
+      "data": "2026-10-26",
+      "acoes": "GR/Compras  revisar Sow  - BID Expressa B2C | Template RFP e Sow",
+      "detalhe": "Foi solictado pela Magal revisão do SOW pelo time de GR no que se refere aos pntos de ; PG aplivcavel , conduores autonomos, Motocicleta valor maximo por saida e Fronteria de responsabiolidade."
     }
   ],
   "statusProjeto": "",
   "financeiro": [
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1155,7 +1074,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1167,7 +1086,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1179,7 +1098,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1191,7 +1110,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1203,7 +1122,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1215,7 +1134,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1227,7 +1146,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1239,7 +1158,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1251,7 +1170,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1263,7 +1182,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1275,7 +1194,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1287,7 +1206,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1299,7 +1218,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1311,7 +1230,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1323,7 +1242,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1335,7 +1254,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1347,7 +1266,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1359,7 +1278,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1371,7 +1290,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1383,7 +1302,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1395,7 +1314,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1407,7 +1326,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1419,7 +1338,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1431,7 +1350,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1443,7 +1362,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1455,7 +1374,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1467,7 +1386,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1479,7 +1398,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1491,7 +1410,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1503,7 +1422,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1515,7 +1434,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1527,7 +1446,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1539,7 +1458,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1551,7 +1470,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1563,7 +1482,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1575,7 +1494,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1587,7 +1506,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1599,7 +1518,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1611,7 +1530,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1623,7 +1542,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1635,7 +1554,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1647,7 +1566,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1659,7 +1578,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1671,7 +1590,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1683,7 +1602,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1695,7 +1614,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1707,7 +1626,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1719,7 +1638,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1731,7 +1650,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1743,7 +1662,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1755,7 +1674,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1767,7 +1686,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1779,7 +1698,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1791,7 +1710,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1803,7 +1722,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1815,7 +1734,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1827,7 +1746,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1839,7 +1758,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1851,7 +1770,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1863,7 +1782,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1875,7 +1794,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1887,7 +1806,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1899,7 +1818,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1911,7 +1830,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1923,7 +1842,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1935,7 +1854,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1947,7 +1866,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1959,7 +1878,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1971,7 +1890,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1983,7 +1902,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -1995,7 +1914,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2007,7 +1926,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2019,7 +1938,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2031,7 +1950,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2043,7 +1962,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2055,7 +1974,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2067,7 +1986,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2079,7 +1998,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2091,7 +2010,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2103,7 +2022,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2115,7 +2034,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2127,7 +2046,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2139,7 +2058,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2151,7 +2070,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2163,7 +2082,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2175,7 +2094,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2187,7 +2106,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2199,7 +2118,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2211,7 +2130,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2223,7 +2142,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2235,7 +2154,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2247,7 +2166,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2259,7 +2178,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2271,7 +2190,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2283,7 +2202,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2295,7 +2214,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2307,7 +2226,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2319,7 +2238,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2331,7 +2250,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2343,7 +2262,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2355,7 +2274,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2367,7 +2286,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2379,7 +2298,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2391,7 +2310,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2403,7 +2322,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2415,7 +2334,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2427,7 +2346,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2439,7 +2358,7 @@
       "resultado": -0.2
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2451,7 +2370,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2463,7 +2382,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2475,7 +2394,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2487,7 +2406,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2499,7 +2418,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2511,7 +2430,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2523,7 +2442,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2535,7 +2454,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2547,7 +2466,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2559,7 +2478,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2571,7 +2490,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2583,7 +2502,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2595,7 +2514,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2607,7 +2526,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2619,7 +2538,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2631,7 +2550,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2643,7 +2562,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2655,7 +2574,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2667,7 +2586,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2679,7 +2598,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2691,7 +2610,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2703,7 +2622,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2715,7 +2634,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2727,7 +2646,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2739,7 +2658,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2751,7 +2670,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2763,7 +2682,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2775,7 +2694,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2787,7 +2706,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2799,7 +2718,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2811,7 +2730,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2823,7 +2742,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2835,7 +2754,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2847,7 +2766,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2859,7 +2778,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2871,7 +2790,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2883,7 +2802,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2895,7 +2814,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2907,7 +2826,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2919,7 +2838,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2931,7 +2850,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2943,7 +2862,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2955,7 +2874,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2967,7 +2886,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2979,7 +2898,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -2991,7 +2910,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3003,7 +2922,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3015,7 +2934,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3027,7 +2946,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3039,7 +2958,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3051,7 +2970,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3063,7 +2982,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3075,7 +2994,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3087,7 +3006,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3099,7 +3018,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3111,7 +3030,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3123,7 +3042,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3135,7 +3054,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3147,7 +3066,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3159,7 +3078,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3171,7 +3090,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3183,7 +3102,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3195,7 +3114,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3207,7 +3126,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3219,7 +3138,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3231,7 +3150,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3243,7 +3162,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3255,7 +3174,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3267,7 +3186,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3279,7 +3198,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3291,7 +3210,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3303,7 +3222,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3315,7 +3234,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3327,7 +3246,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3339,7 +3258,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3351,7 +3270,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3363,7 +3282,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3375,7 +3294,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3387,7 +3306,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3399,7 +3318,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3411,7 +3330,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3423,7 +3342,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3435,7 +3354,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3447,7 +3366,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3459,7 +3378,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3471,7 +3390,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3483,7 +3402,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3495,7 +3414,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3507,7 +3426,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3519,7 +3438,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3531,7 +3450,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3543,7 +3462,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3555,7 +3474,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3567,7 +3486,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3579,7 +3498,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3591,7 +3510,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3603,7 +3522,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3615,7 +3534,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3627,7 +3546,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3639,7 +3558,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3651,7 +3570,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3663,7 +3582,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3675,7 +3594,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3687,7 +3606,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3699,7 +3618,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3711,7 +3630,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3723,7 +3642,7 @@
       "resultado": 0.0
     },
     {
-      "id": "LOG-010",
+      "id": "LOG-010.2",
       "iniciativa": "",
       "gerencia": "",
       "projeto": "",
@@ -3736,8 +3655,8 @@
     }
   ],
   "fonte": {
-    "arquivo": "LOG-010.1 - BID Transportes - Engenharia.xlsx",
-    "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.1%20-%20BID%20Transportes%20-%20Engenharia.xlsx?web=1",
-    "extraidoEm": "2026-10-30T14:25:57-03:00"
+    "arquivo": "LOG-010.2 - BID Transportes - Expressa.xlsx",
+    "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.2%20-%20BID%20Transportes%20-%20Expressa.xlsx?web=1",
+    "extraidoEm": "2026-10-30T14:36:38-03:00"
   }
 }
