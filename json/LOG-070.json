@@ -257,59 +257,59 @@
     },
     {
       "numero": "1.1",
-      "atividade": "Confirmar escopo das 48 EPOS, fechamento da agenda e data da virada",
+      "atividade": "Consolidar forecast total x incremental e volumetria do rollout",
       "responsavel": "Márcia / Ricardo",
       "status": 4,
       "inicio": "2026-09-09",
       "fim": "2026-09-18"
     },
     {
+      "numero": "1.2",
+      "atividade": "Confirmar encerramento do atendimento das 48 EPOS e trava de agenda",
+      "responsavel": "Márcia / Ricardo",
+      "status": 4,
+      "inicio": "2026-09-20",
+      "fim": "2026-09-29"
+    },
+    {
       "numero": 2,
       "atividade": "2. Sistemas e Ativação",
       "responsavel": "Fábio / Mirella / Lucas / TI",
       "status": 4,
-      "inicio": "2026-09-21",
-      "fim": "2026-10-02"
-    },
-    {
-      "numero": "2.1",
-      "atividade": "Extração será via TOA, com mailing mantido como plano B",
-      "responsavel": "Fábio / Mirella / Lucas / TI",
-      "status": 4,
-      "inicio": "2026-09-21",
-      "fim": "2026-09-25"
+      "inicio": "2026-09-10",
+      "fim": "2026-09-16"
     },
     {
       "numero": "2.2",
-      "atividade": "Validar extração das OS diretamente pelo TOA e campos necessários",
-      "responsavel": "Mirella / Lucas / Cubiak/ Ingrid",
+      "atividade": "Definir arquitetura oficial de entrada das OS: TOA x DBM x Sterling",
+      "responsavel": "Fábio / Mirella / Lucas / TI",
       "status": 4,
-      "inicio": "2026-09-22",
-      "fim": "2026-10-01"
+      "inicio": "2026-09-10",
+      "fim": "2026-09-21"
     },
     {
       "numero": "2.3",
-      "atividade": "Confirmar baixa direta no NETSMS com acessos existentes",
-      "responsavel": "Mirella / PostalGOW",
+      "atividade": "Validar extração das OS diretamente pelo TOA e campos necessários",
+      "responsavel": "Mirella / Lucas / Cubiak/ Ingrid",
       "status": 4,
-      "inicio": "2026-09-23",
-      "fim": "2026-10-01"
+      "inicio": "2026-09-10",
+      "fim": "2026-09-18"
     },
     {
       "numero": "2.4",
-      "atividade": "Definido contingência até entrada do TOA - MAILING FICARÁ COMO PLANO B",
-      "responsavel": "DBM / TI / PostalGOW",
+      "atividade": "Confirmar baixa direta no NETSMS com acessos existentes",
+      "responsavel": "Mirella / PostalGOW",
       "status": 4,
-      "inicio": "2026-09-24",
-      "fim": "2026-10-02"
+      "inicio": "2026-09-10",
+      "fim": "2026-09-18"
     },
     {
-      "numero": 3,
-      "atividade": "3. Infraestrutura, Acessos e Equipe",
-      "responsavel": "Acessos / Segurança / TI",
+      "numero": "2.5",
+      "atividade": "Definir contingência de ativação para o D1",
+      "responsavel": "Claro / PostalGOW / Atendimento",
       "status": 4,
-      "inicio": "2026-10-05",
-      "fim": "2026-10-16"
+      "inicio": "2026-09-11",
+      "fim": "2026-09-21"
     },
     {
       "numero": "3.1",
@@ -3647,6 +3647,6 @@
   "fonte": {
     "arquivo": "LOG-070 - Projeto 8ª Base (1).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-070%20-%20Projeto%208%C2%AA%20Base%20%281%29.xlsx?web=1",
-    "extraidoEm": "2026-10-30T14:37:58-03:00"
+    "extraidoEm": "2026-10-30T14:57:13-03:00"
   }
 }
