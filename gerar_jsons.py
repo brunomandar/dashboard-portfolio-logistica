@@ -5,8 +5,9 @@ Gera os JSONs do Dashboard do Portfólio de Logística a partir dos Excel dos pr
 Uso: duplo clique em atualizar_dashboard.bat (ou: python gerar_jsons.py)
 
 O script:
-  1. Lê todos os arquivos "LOG-xxx - Nome do projeto.xlsx" da pasta do SharePoint (sincronizada pelo OneDrive);
-  2. Gera um json/LOG-xxx.json por projeto (ID sempre com 3 dígitos);
+  1. Lê todos os arquivos "LOG-xxx - Nome do projeto.xlsx" da pasta do SharePoint (sincronizada pelo OneDrive),
+     incluindo extensões de projetos, como "LOG-010.1 - Nome.xlsx";
+  2. Gera um json/LOG-xxx.json por projeto (ID sempre com 3 dígitos; extensões viram LOG-xxx.y.json);
   3. Recria projects.index.json, projects.index.js, portfolio.json, projects.data.js e MANIFESTO.txt;
   4. Remove da pasta json os LOG-xx.json antigos que não correspondem mais a nenhum Excel.
 """
@@ -102,8 +103,18 @@ def inteiro_ou_texto(valor):
 
 
 def normalizar_id(texto):
-    m = re.search(r"LOG\s*-?\s*(\d+)", str(texto), re.I)
-    return f"LOG-{int(m.group(1)):03d}" if m else ""
+    """LOG-15 -> LOG-015 | LOG-010.1 -> LOG-010.1 (extensão do projeto principal)."""
+    m = re.search(r"LOG\s*-?\s*(\d+)(?:\.(\d+))?", str(texto), re.I)
+    if not m:
+        return ""
+    principal = f"LOG-{int(m.group(1)):03d}"
+    return f"{principal}.{int(m.group(2))}" if m.group(2) else principal
+
+
+def ordem_id(project_id):
+    """Ordena LOG-010, LOG-010.1, LOG-010.2, LOG-011..."""
+    m = re.search(r"(\d+)(?:\.(\d+))?", project_id)
+    return (int(m.group(1)), int(m.group(2) or 0)) if m else (0, 0)
 
 
 def texto_celula(valor):
@@ -323,7 +334,7 @@ def processar(caminho):
     tipos = [t for t, v in (("Opex", saving["opex12M"]), ("Capex", saving["capex12M"])) if v]
     projeto = {
         "id": project_id,
-        "projeto": one["projeto"] or re.sub(r"^LOG-\d+\s*-\s*", "", os.path.splitext(arquivo)[0]),
+        "projeto": one["projeto"] or re.sub(r"^LOG-[\d.]+\s*-\s*", "", os.path.splitext(arquivo)[0]),
         "area": one["area"],
         "pontoFocal": one["pontoFocal"],
         "inicio": one["inicio"],
@@ -392,7 +403,7 @@ def main():
     for caminho in arquivos:
         nome = os.path.basename(caminho)
         pid = normalizar_id(nome)
-        if not pid or pid in IGNORAR_IDS:
+        if not pid or pid.split(".")[0] in IGNORAR_IDS:
             ignorados.append(nome)
             continue
         if pid in vistos:
@@ -411,7 +422,7 @@ def main():
         print("Nenhum projeto processado. Nada foi alterado na pasta json.")
         return 1
 
-    projetos.sort(key=lambda p: int(p["id"].split("-")[1]))
+    projetos.sort(key=lambda p: ordem_id(p["id"]))
     nomes_json = [f"{p['id']}.json" for p in projetos]
     agora = dt.datetime.now().astimezone().isoformat(timespec="seconds")
 

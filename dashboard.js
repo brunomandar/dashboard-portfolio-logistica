@@ -35,7 +35,7 @@
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const clean = value => String(value ?? '').trim();
   const n = value => Number.isFinite(Number(value)) ? Number(value) : 0;
-  const idNumber = value => Number(clean(value).match(/\d+/)?.[0] || 0);
+  const idNumber = value => { const match = String(value ?? '').match(/(\d+)(?:\.(\d+))?/); return match ? Number(match[1]) + (match[2] ? Number(match[2]) / 1000 : 0) : 0; };
   const pct = (part, total) => total ? Math.round(part * 100 / total) : 0;
   const compact = (value, max = 160) => {
     const text = clean(value).replace(/\s+/g, ' ');
@@ -146,7 +146,21 @@
     });
   }
 
+  async function loadProjectIndex() {
+    if (location.protocol === 'file:') return;
+    try {
+      const response = await fetch(`json/projects.index.json?v=${Date.now()}`, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`projects.index.json: HTTP ${response.status}`);
+      const index = await response.json();
+      const files = Array.isArray(index) ? index : index?.arquivos;
+      if (Array.isArray(files) && files.length) window.PORTFOLIO_JSON_FILES = files.map(clean).filter(Boolean);
+    } catch (error) {
+      console.warn('Lista de projetos não relida; usando a lista já carregada.', error);
+    }
+  }
+
   async function loadProjects({ force = false } = {}) {
+    if (force) await loadProjectIndex();
     const files = Array.isArray(window.PORTFOLIO_JSON_FILES) ? window.PORTFOLIO_JSON_FILES : [];
     state.failedFiles = 0;
 
@@ -185,7 +199,7 @@
   function prepareProjects(projects) {
     return flattenProjects(projects)
       .map(project => project && typeof project === 'object' ? { ...project, area: normalizeGerencia(project.area) } : project)
-      .filter(project => project && /^LOG-\d+$/i.test(clean(project.id)) && projectPolicy(project))
+      .filter(project => project && /^LOG-\d+(?:\.\d+)?$/i.test(clean(project.id)) && projectPolicy(project))
       .sort((a, b) => idNumber(a.id) - idNumber(b.id));
   }
 
