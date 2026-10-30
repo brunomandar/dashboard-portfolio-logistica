@@ -217,7 +217,8 @@
   function syncAdditionalFilterOptions() {
     const definitions = [
       { selector: '#filterIniciativa', emptyLabel: 'Todas', getter: project => clean(first(project, ['iniciativa','forum','fórum'])) },
-      { selector: '#filterPontoFocal', emptyLabel: 'Todos', getter: project => clean(first(project, ['pontoFocal','ponto_focal','ponto focal'])) }
+      { selector: '#filterPontoFocal', emptyLabel: 'Todos', getter: project => clean(first(project, ['pontoFocal','ponto_focal','ponto focal'])) },
+      { selector: '#filterFocalAcomp', emptyLabel: 'Todos', getter: project => clean(first(project, ['pmo','focalAcompanhamento'])) }
     ];
     definitions.forEach(({ selector, emptyLabel, getter }) => {
       const select = $(selector);
@@ -236,7 +237,8 @@
       ganho: $('#filterGanho')?.value || '',
       tipo: $('#filterTipo')?.value || '',
       iniciativa: $('#filterIniciativa')?.value || '',
-      pontoFocal: $('#filterPontoFocal')?.value || ''
+      pontoFocal: $('#filterPontoFocal')?.value || '',
+      focalAcomp: $('#filterFocalAcomp')?.value || ''
     };
   }
 
@@ -259,7 +261,8 @@
       (!filters.ganho || clean(project.ganhoProjeto) === filters.ganho) &&
       (!filters.tipo || arrayOf(project.tipos).map(clean).includes(filters.tipo)) &&
       (!filters.iniciativa || clean(first(project, ['iniciativa','forum','fórum'])) === filters.iniciativa) &&
-      (!filters.pontoFocal || clean(first(project, ['pontoFocal','ponto_focal','ponto focal'])) === filters.pontoFocal)
+      (!filters.pontoFocal || clean(first(project, ['pontoFocal','ponto_focal','ponto focal'])) === filters.pontoFocal) &&
+      (!filters.focalAcomp || clean(first(project, ['pmo','focalAcompanhamento'])) === filters.focalAcomp)
     );
   }
 
@@ -288,28 +291,60 @@
     const savingOpex = projects.reduce((sum, project) => sum + savingField(project, 'opex12M'), 0);
     const savingCapex = projects.reduce((sum, project) => sum + savingField(project, 'capex12M'), 0);
     grid.innerHTML = `
-      <article class="card kpi" style="--accent:#3569e8"><div class="kpi-label">Projetos ativos</div><div class="kpi-value">${active.length}</div><div class="kpi-foot">${projects.length} projeto(s) no recorte</div></article>
-      <article class="card kpi" style="--accent:#da291c"><div class="kpi-label">Em risco</div><div class="kpi-value">${risk.length}</div><div class="kpi-foot"><span class="danger">${pct(risk.length, active.length)}%</span> da carteira ativa</div></article>
-      <article class="card kpi" style="--accent:#17875b"><div class="kpi-label">Concluídos</div><div class="kpi-value">${done.length}</div><div class="kpi-foot"><span class="positive">${pct(done.length, projects.length)}%</span> da carteira</div></article>
-      <article class="card kpi" style="--accent:#f39c12"><div class="kpi-label">Saving potencial</div><div class="kpi-value">${moneyMM(saving)}</div><div class="kpi-foot">Opex ${moneyMM(savingOpex)} · Capex ${moneyMM(savingCapex)}</div></article>`;
+      <article class="card kpi" style="--accent:#ed7d31"><div class="kpi-label">Projetos ativos</div><div class="kpi-value">${active.length}</div><div class="kpi-foot">${projects.length} projeto(s) no recorte</div></article>
+      <article class="card kpi kpi-risk" style="--accent:#c00000" data-risk-list="${esc(JSON.stringify(risk.slice().sort((a, b) => idNumber(a.id) - idNumber(b.id)).map(project => `${project.id} · ${clean(project.projeto)}`)))}"><div class="kpi-label">Em risco</div><div class="kpi-value">${risk.length}</div><div class="kpi-foot"><span class="danger">${pct(risk.length, active.length)}%</span> da carteira ativa</div></article>
+      <article class="card kpi" style="--accent:#530b03"><div class="kpi-label">Concluídos</div><div class="kpi-value">${done.length}</div><div class="kpi-foot"><span class="positive">${pct(done.length, projects.length)}%</span> da carteira</div></article>
+      <article class="card kpi" style="--accent:#ffc000"><div class="kpi-label">Saving potencial</div><div class="kpi-value">${moneyMM(saving)}</div><div class="kpi-foot">Opex ${moneyMM(savingOpex)} · Capex ${moneyMM(savingCapex)}</div></article>`;
   }
 
+  function bindRiskTooltip() {
+    if (window.__riskTooltipBound) return;
+    window.__riskTooltipBound = true;
+    let tip = null;
+    const place = event => {
+      if (!tip) return;
+      const pad = 14, w = tip.offsetWidth, h = tip.offsetHeight;
+      let x = event.clientX + pad, y = event.clientY + pad;
+      if (x + w > window.innerWidth - 8) x = event.clientX - w - pad;
+      if (y + h > window.innerHeight - 8) y = event.clientY - h - pad;
+      tip.style.left = `${Math.max(8, x)}px`;
+      tip.style.top = `${Math.max(8, y)}px`;
+    };
+    document.addEventListener('mouseover', event => {
+      const card = event.target.closest && event.target.closest('.kpi-risk[data-risk-list]');
+      if (!card) return;
+      let list = [];
+      try { list = JSON.parse(card.dataset.riskList); } catch (error) { list = []; }
+      if (!tip) { tip = document.createElement('div'); tip.className = 'roadmap-tooltip risk-tooltip'; document.body.appendChild(tip); }
+      tip.innerHTML = `<b>Projetos em risco (${list.length})</b>${list.length ? `<ul style="margin:0;padding-left:16px;max-height:260px;overflow:hidden">${list.map(item => `<li style="margin:3px 0;font-weight:600">${esc(item)}</li>`).join('')}</ul>` : '<div style="color:#bfbfbf">Nenhum projeto em risco no recorte.</div>'}`;
+      tip.classList.add('show');
+      place(event);
+    });
+    document.addEventListener('mousemove', event => { if (tip && tip.classList.contains('show')) place(event); });
+    document.addEventListener('mouseout', event => {
+      const card = event.target.closest && event.target.closest('.kpi-risk[data-risk-list]');
+      if (!card || (event.relatedTarget && card.contains(event.relatedTarget))) return;
+      if (tip) tip.classList.remove('show');
+    });
+  }
+  bindRiskTooltip();
+
   function renderHealth(projects) {
-    const active = projects.filter(project => !isInactive(project));
-    const situationCounts = countsBy(active, situationOf);
-    const preferredOrder = ['Em execução','Planejado','Atenção','Em risco'];
-    const situations = [
-      ...preferredOrder.filter(value => situationCounts[value]),
-      ...Object.keys(situationCounts).filter(value => !preferredOrder.includes(value)).sort((a, b) => a.localeCompare(b, 'pt-BR'))
-    ];
-    const total = active.length;
+    // Rosca pelo estágio (L) de TODOS os projetos do recorte
+    const STAGE_GROUP = { L0: 'Backlog', L1: 'Planejado', L2: 'Planejado', L3: 'Em Execução', L4: 'Em Execução', L5: 'Concluído' };
+    const GROUP_COLORS = { 'Backlog': '#bfbfbf', 'Planejado': '#ffc000', 'Em Execução': '#c00000', 'Concluído': '#530b03', 'Sem estágio': '#7f7f7f' };
+    const groupOf = project => STAGE_GROUP[clean(project.status).toUpperCase()] || 'Sem estágio';
+    const situationCounts = countsBy(projects, groupOf);
+    const situations = ['Backlog','Planejado','Em Execução','Concluído','Sem estágio'].filter(value => situationCounts[value]);
+    const colorOf = key => GROUP_COLORS[key] || '#7f7f7f';
+    const total = projects.length;
     let cursor = 0;
     const stops = [];
     situations.forEach((key, index) => {
       const start = total ? cursor * 100 / total : 0;
       cursor += situationCounts[key] || 0;
       const end = total ? cursor * 100 / total : 0;
-      stops.push(`${STATUS_COLORS[index % STATUS_COLORS.length]} ${start}% ${end}%`);
+      stops.push(`${colorOf(key)} ${start}% ${end}%`);
     });
     const donut = $('.donut');
     if (donut) {
@@ -324,14 +359,14 @@
         const value = situationCounts[key] || 0;
         const length = total ? value * circumference / total : 0;
         const visible = Math.max(0.01, length - gap);
-        const arc = `<circle class="donut-arc" cx="100" cy="100" r="${radius}" fill="none" stroke="${STATUS_COLORS[index % STATUS_COLORS.length]}" stroke-width="20" stroke-linecap="round" stroke-dasharray="${visible.toFixed(2)} ${circumference.toFixed(2)}" stroke-dashoffset="${(-offset - gap / 2).toFixed(2)}" transform="rotate(-90 100 100)"><title>${esc(key)}: ${value}</title></circle>`;
+        const arc = `<circle class="donut-arc" cx="100" cy="100" r="${radius}" fill="none" stroke="${colorOf(key)}" stroke-width="20" stroke-linecap="round" stroke-dasharray="${visible.toFixed(2)} ${circumference.toFixed(2)}" stroke-dashoffset="${(-offset - gap / 2).toFixed(2)}" transform="rotate(-90 100 100)"><title>${esc(key)}: ${value}</title></circle>`;
         offset += length;
         return arc;
       }).join('');
-      donut.innerHTML = `<svg viewBox="0 0 200 200" aria-hidden="true"><defs><filter id="donutShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#18212f" flood-opacity=".12"/></filter></defs><circle cx="100" cy="100" r="${radius}" fill="none" stroke="#eef1f5" stroke-width="20"/><g filter="url(#donutShadow)">${arcs}</g><circle cx="100" cy="100" r="58" fill="#fff"/><text x="100" y="99" text-anchor="middle" class="donut-total">${total}</text><text x="100" y="122" text-anchor="middle" class="donut-caption">PROJETOS ATIVOS</text></svg>`;
+      donut.innerHTML = `<svg viewBox="0 0 200 200" aria-hidden="true"><defs><filter id="donutShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#18212f" flood-opacity=".12"/></filter></defs><circle cx="100" cy="100" r="${radius}" fill="none" stroke="#eef1f5" stroke-width="20"/><g filter="url(#donutShadow)">${arcs}</g><circle cx="100" cy="100" r="58" fill="#fff"/><text x="100" y="99" text-anchor="middle" class="donut-total">${total}</text><text x="100" y="122" text-anchor="middle" class="donut-caption">PROJETOS</text></svg>`;
     }
     const legend = $('.legend');
-    if (legend) legend.innerHTML = situations.map((key, index) => `<div><i style="background:${STATUS_COLORS[index % STATUS_COLORS.length]}"></i>${esc(key)} <b>${situationCounts[key]}</b><em>${pct(situationCounts[key], total)}%</em></div>`).join('') || '<div>Sem projetos ativos no recorte.</div>';
+    if (legend) legend.innerHTML = situations.map(key => `<div><i style="background:${colorOf(key)}"></i>${esc(key)} <b>${situationCounts[key]}</b><em>${pct(situationCounts[key], total)}%</em></div>`).join('') || '<div>Sem projetos no recorte.</div>';
 
     const stageCounts = countsBy(projects, project => project.status);
     const stages = ['L0','L1','L2','L3','L4','L5'];
@@ -361,9 +396,9 @@
       .map(([key]) => key);
     const colors = ['#530b03', '#df3232', '#bfbfbf'];
     const max = Math.max(1, ...managers.flatMap(manager => forums.map(forum => valid.filter(project => project.area === manager && forumOf(project) === forum).length)));
-    host.innerHTML = `<h3 style="text-align:center;margin-bottom:22px">Demandas por Gerência x Fórum</h3><div class="manager-scroll"><div class="manager-chart">${managers.map(manager => {
+    host.innerHTML = `<h3 style="text-align:center;margin-bottom:6px">Demandas por Gerência x Fórum</h3><div class="manager-total">Total: <b>${valid.length}</b> projeto(s) em <b>${managers.length}</b> gerência(s)</div><div class="manager-scroll"><div class="manager-chart">${managers.map(manager => {
       const values = forums.map(forum => valid.filter(project => project.area === manager && forumOf(project) === forum).length);
-      return `<div class="manager-group"><div class="manager-bars">${values.map((value, index) => `<div title="${esc(forums[index])}: ${value}" style="position:relative;height:${value ? Math.max(10, value * 220 / max) : 0}px;background:${colors[index]}">${value > 0 ? `<span style="position:absolute;left:50%;top:-24px;transform:translateX(-50%);z-index:5;display:block;font-size:12px;font-weight:800;color:#111827;line-height:1;white-space:nowrap;pointer-events:none">${value}</span>` : ''}</div>`).join('')}</div><b>${values.reduce((sum, value) => sum + value, 0)}</b><span>${esc(manager)}</span></div>`;
+      return `<div class="manager-group"><div class="manager-bars">${values.map((value, index) => value <= 0 ? '' : `<div title="${esc(forums[index])}: ${value}" style="position:relative;height:${Math.max(10, value * 150 / max)}px;background:${colors[index]}">${value > 0 ? `<span style="position:absolute;left:50%;top:-24px;transform:translateX(-50%);z-index:5;display:block;font-size:12px;font-weight:800;color:#111827;line-height:1;white-space:nowrap;pointer-events:none">${value}</span>` : ''}</div>`).join('')}</div><span>${esc(manager)}</span><em class="manager-count">${valid.filter(project => project.area === manager).length} projeto(s)</em></div>`;
     }).join('')}</div></div><div class="manager-legend">${forums.map((forum, index) => `<div><span style="background:${colors[index]}"></span>${esc(forum)}</div>`).join('') || '<div>Sem fóruns disponíveis no recorte.</div>'}</div>`;
   }
 
@@ -388,10 +423,18 @@
     return '';
   }
 
+  // Roadmap: Concluído = status L5 ou prioridade "Concluído"; demais seguem a prioridade
+  const ROADMAP_RANK = { P0: 0, P1: 1, P2: 2, Congelado: 3, Cancelado: 4, 'Concluído': 5, '': 6 };
+  function roadmapKey(item) {
+    const prioridade = String(item?.prioridade ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().trim();
+    if (String(item?.status ?? '').toUpperCase().trim() === 'L5' || prioridade.startsWith('CONCLUID')) return 'Concluído';
+    return priorityKey(item?.prioridade);
+  }
+
   const PRIORITY_RANK = { P0: 0, P1: 1, P2: 2, Congelado: 3, Cancelado: 4, '': 5 };
   const priorityRank = value => PRIORITY_RANK[priorityKey(value)];
   const byPriority = (a, b) => priorityRank(a.prioridade) - priorityRank(b.prioridade) || clean(a.inicio || '9999').localeCompare(clean(b.inicio || '9999')) || idNumber(a.id) - idNumber(b.id);
-  const roadmapPrioritySelected = item => Boolean(priorityKey(item.prioridade)) && (!Array.isArray(window.roadmapPriorityFilter) || window.roadmapPriorityFilter.includes(priorityKey(item.prioridade)));
+  const roadmapPrioritySelected = item => Boolean(roadmapKey(item)) && (!Array.isArray(window.roadmapPriorityFilter) || window.roadmapPriorityFilter.includes(roadmapKey(item)));
 
   function executiveMonthsHeader() {
     return `<div class="months"><div>Projeto e período</div>${EXEC_MONTHS.map(month => `<div class="month-label">${month.label}<span>${month.year}</span></div>`).join('')}</div>`;
@@ -410,9 +453,9 @@
 
   function executiveRoadmapRows(items) {
     return items.map(item => {
-      const priority = priorityKey(item.prioridade);
+      const priority = roadmapKey(item);
       const end = item.fim || item.termino;
-      const label = `<b>${esc(item.id || 'SEM LOG')} · ${esc(compact(item.projeto, 52))}</b><small>${esc(monthYear(item.inicio))} → ${esc(monthYear(end))} · ${priority}</small><button class="road-open" type="button" data-project-id="${esc(item.id || '')}" onclick="event.stopPropagation();if(typeof openProject==='function')openProject(this.dataset.projectId)">Abrir visão</button>`;
+      const label = `<b>${esc(item.id || 'SEM LOG')} · ${esc(clean(item.projeto))}</b><small>${esc(monthYear(item.inicio))} → ${esc(monthYear(end))} · ${priority}</small><button class="road-open" type="button" data-project-id="${esc(item.id || '')}" onclick="event.stopPropagation();if(typeof openProject==='function')openProject(this.dataset.projectId)">Abrir visão</button>`;
       return `<div class="road-row priority-${priority.replace('/', '-').toLowerCase()}"><div class="road-name" ${typeof window.roadmapTipAttr === 'function' ? window.roadmapTipAttr(item) : `title="${esc(`${item.id || ''} ${item.projeto || ''}`)}"`}>${label}</div>${EXEC_MONTHS.map(month => overlaps({ inicio: item.inicio, fim: end }, month.key) ? `<div class="road-block" title="${priority}"></div>` : '<div class="road-cell"></div>').join('')}</div>`;
     }).join('');
   }
@@ -423,9 +466,11 @@
     const candidates = projects
       .filter(project => project.inicio || project.termino)
       .filter(roadmapPrioritySelected)
+      .filter(project => typeof window.roadmapSearchMatch !== 'function' || window.roadmapSearchMatch(project))
       .map(project => ({ ...project, fim: project.termino }))
-      .sort(byPriority);
-    card.innerHTML = `<div class="roadmap-legend"><span><i class="legend-p0"></i>P0</span><span><i class="legend-p1"></i>P1</span><span><i class="legend-p2"></i>P2</span><span><i class="legend-congelado"></i>Congelado</span><span><i class="legend-cancelado"></i>Cancelado</span><span class="today-legend"><i></i>Data atual</span></div><div class="roadmap-scroll"><div class="roadmap-grid">${executiveMonthsHeader()}${executiveRoadmapRows(candidates) || '<div class="empty-state">Sem cronograma no recorte.</div>'}${todayLayer()}</div></div>`;
+      .sort((a, b) => ROADMAP_RANK[roadmapKey(a)] - ROADMAP_RANK[roadmapKey(b)] || clean(a.inicio || '9999').localeCompare(clean(b.inicio || '9999')) || idNumber(a.id) - idNumber(b.id));
+    const roadmapCount = document.getElementById('roadmapCount'); if (roadmapCount) roadmapCount.textContent = `${candidates.length} projeto(s)`;
+    card.innerHTML = `<div class="roadmap-legend"><span><i class="legend-p0"></i>P0</span><span><i class="legend-p1"></i>P1</span><span><i class="legend-p2"></i>P2</span><span><i class="legend-congelado"></i>Congelado</span><span><i class="legend-cancelado"></i>Cancelado</span><span><i class="legend-concluido"></i>Concluído</span><span class="today-legend"><i></i>Data atual</span></div><div class="roadmap-scroll"><div class="roadmap-grid">${executiveMonthsHeader()}${executiveRoadmapRows(candidates) || '<div class="empty-state">Sem cronograma no recorte.</div>'}${todayLayer()}</div></div>`;
     if (typeof window.layoutRoadmapTimeline === 'function') window.layoutRoadmapTimeline(card);
   }
 
@@ -542,8 +587,8 @@
       const situation = situationOf(project);
       const stage = clean(project.status) || 'Não informado';
       const risk = clean(project.risco) || 'Não informado';
-      return `<tr data-status="${esc(situation)}"><td title="${esc(`${id} · ${name}`)}"><span class="portfolio-project"><b>${esc(id)}</b> · ${esc(name)}</span></td><td class="portfolio-detail" title="${esc(formatDate(project.inicio))}">${esc(formatDate(project.inicio))}</td><td class="portfolio-detail" title="${esc(formatDate(project.termino))}">${esc(formatDate(project.termino))}</td><td class="portfolio-detail" title="${esc(focal)}">${esc(focal)}</td><td class="portfolio-detail" title="${esc(management)}">${esc(management)}</td><td title="${esc(situation)}">${esc(situation)}</td><td title="${esc(stage)}">${esc(stage)}</td><td title="${esc(risk)}"><span class="chip ${riskClass(risk)}">${esc(risk)}</span></td><td title="${esc(savingLabel(project))}">${esc(savingLabel(project))}</td></tr>`;
-    }).join('') || '<tr><td colspan="9" class="empty-state">Nenhum projeto corresponde aos filtros.</td></tr>';
+      return `<tr data-status="${esc(situation)}"><td title="${esc(`${id} · ${name}`)}"><span class="portfolio-project"><b>${esc(id)}</b> · ${esc(name)}</span></td><td class="portfolio-detail" title="${esc(formatDate(project.inicio))}">${esc(formatDate(project.inicio))}</td><td class="portfolio-detail" title="${esc(formatDate(project.termino))}">${esc(formatDate(project.termino))}</td><td class="portfolio-detail" title="${esc(focal)}">${esc(focal)}</td><td class="portfolio-detail" title="${esc(management)}">${esc(management)}</td><td title="${esc(situation)}">${esc(situation)}</td><td title="${esc(stage)}">${esc(stage)}</td><td title="${esc(risk)}"><span class="chip ${riskClass(risk)}">${esc(risk)}</span></td><td title="${esc(savingLabel(project))}">${esc(savingLabel(project))}</td><td><button class="open-project" type="button" data-project-id="${esc(id)}" onclick="if(typeof openProject==='function')openProject(this.dataset.projectId)">Abrir visão</button></td></tr>`;
+    }).join('') || '<tr><td colspan="10" class="empty-state">Nenhum projeto corresponde aos filtros.</td></tr>';
   }
 
   const SCHEDULE_STATUS = [
@@ -682,6 +727,23 @@
     };
   }
 
+  function projectRiskNote(project) {
+    // Texto de risco registrado no "Status do Projeto" (linha "Risco: ..." e continuações até a próxima data)
+    const lines = clean(project.statusProjeto).split(/\r?\n+/).map(line => clean(String(line).replace(/\u00a0/g, ' ')));
+    const dateLine = /^\d{1,2}[\/.\-]\d{1,2}(?:[\/.\-](?:\d{2}|\d{4}))?(?=\s|[-–—|:]|$)/;
+    const parts = [];
+    let reading = false;
+    lines.forEach(line => {
+      if (!line) return;
+      const match = line.match(/^risco\s*:?\s*(.*)$/i);
+      if (match) { reading = true; if (clean(match[1])) parts.push(clean(match[1])); return; }
+      if (dateLine.test(line)) { reading = false; return; }
+      if (reading) parts.push(line);
+    });
+    const text = clean(parts.join(' '));
+    return /^data\s*[-–—:]\s*pontos relevantes/i.test(text) ? '' : text;
+  }
+
   function projectTimeline(project) {
     // Fonte única: campo "Status do Projeto". Só entram linhas no padrão DATA + atualização
     // (ex.: "21/10/26 - texto"). Linhas sem data antes da 1ª data (ex.: "Risco: ...") são ignoradas.
@@ -702,7 +764,6 @@
           return;
         }
       }
-      // Continuação de uma atualização quebrada em mais de uma linha (nunca linhas de risco)
       if (entries.length && !/^risco\b/i.test(line)) entries[entries.length - 1].detalhe = clean(`${entries[entries.length - 1].detalhe} ${line}`);
     });
     return entries
@@ -719,13 +780,13 @@
     const projectFinance = projectFinanceChart(project);
     const initiative = clean(first(project, ['iniciativa','forum','fórum'])) || 'Iniciativa não informada';
     view.innerHTML = `
-      <button class="back" type="button" onclick="closeProject()">← Voltar ao portfólio</button>
-      <section class="project-hero hero-v9"><div class="hero-main"><div class="pid">${esc(project.id)} · ${esc(project.area || 'Não informado')} · ${esc(initiative)}</div><h1>${esc(project.projeto || 'Projeto sem nome')}</h1><div class="hero-tags-row"><div class="meta-row"><span class="chip">${esc(project.status || 'Sem stage')}</span><span class="chip">${esc(project.prioridade || 'S/P')}</span><span class="chip green">${esc(project.ganhoProjeto || 'Não informado')}</span></div><select class="project-selector" onchange="openProject(this.value)">${state.projects.map(item => `<option value="${esc(item.id)}" ${item.id === project.id ? 'selected' : ''}>${esc(item.id)} · ${esc(item.projeto)}</option>`).join('')}</select></div><p class="chart-sub hero-risk">Risco: ${esc(project.risco || 'não informado')}</p></div></section>
+      <div class="project-topbar"><button class="back" type="button" onclick="closeProject()">← Voltar ao portfólio</button><select class="project-selector" onchange="openProject(this.value)">${state.projects.map(item => `<option value="${esc(item.id)}" ${item.id === project.id ? 'selected' : ''}>${esc(item.id)} · ${esc(item.projeto)}</option>`).join('')}</select></div>
+      <section class="project-hero hero-v9"><div class="hero-main"><div class="pid">${esc(project.id)} · ${esc(project.area || 'Não informado')} · ${esc(initiative)}</div><h1>${esc(project.projeto || 'Projeto sem nome')}</h1><div class="hero-tags-row"><div class="meta-row"><span class="chip">${esc(project.status || 'Sem stage')}</span><span class="chip">${esc(project.prioridade || 'S/P')}</span><span class="chip green">${esc(project.ganhoProjeto || 'Não informado')}</span><span class="chip risk-tag risk-${clean(project.risco || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z]/g, '') || 'na'}">Risco - ${esc(project.risco || 'Não informado')}</span></div></div></div></section>
       <section class="detail-grid"><article class="card detail"><small>Início</small><b>${formatDate(project.inicio)}</b></article><article class="card detail"><small>Término</small><b>${formatDate(project.termino)}</b></article><article class="card detail"><small>Ponto focal</small><b title="${esc(project.pontoFocal)}">${esc(compact(project.pontoFocal || 'Não informado', 25))}</b></article><article class="card detail"><small>PMO</small><b title="${esc(project.pmo)}">${esc(compact(project.pmo || 'Não informado', 25))}</b></article></section>
       <section class="detail-grid"><article class="card detail"><small>Saving Opex 12M</small><b>${moneyMM(savingField(project, 'opex12M'))}</b></article><article class="card detail"><small>Saving Capex 12M</small><b>${moneyMM(savingField(project, 'capex12M'))}</b></article><article class="card detail"><small>Saving total 12M</small><b>${moneyMM(savingField(project, 'total12M'))}</b></article><article class="card detail"><small>Saving 2026</small><b>${moneyMM(savingField(project, 'total2026'))}</b></article></section>
       <section class="section two-col"><article class="card text-card scroll-card"><div class="chart-title">Escopo do projeto</div><p class="scroll-content">${esc(project.escopo || 'Escopo não preenchido no arquivo de origem.')}</p></article><article class="card text-card scroll-card"><div class="chart-title">Principais entregáveis</div><ul class="checklist scroll-content">${deliverables.length ? deliverables.map(item => `<li>${esc(item)}</li>`).join('') : '<li>Entregáveis não preenchidos no arquivo de origem.</li>'}</ul></article></section>
       <section class="section"><div class="section-head"><div><h2>Cronograma do projeto</h2><p>Alternância entre visão executiva e detalhada.</p></div></div><div class="tabs"><button class="tab ${state.scheduleMode === 'macro' ? 'active' : ''}" type="button" onclick="switchSchedule('macro')">Macrocronograma</button><button class="tab ${state.scheduleMode === 'detalhado' ? 'active' : ''}" type="button" onclick="switchSchedule('detalhado')">Cronograma detalhado</button></div><article class="card roadmap-card" id="projectSchedule">${scheduleCard(project, state.scheduleMode)}</article></section>
-      <section class="section two-col"><article class="card line-chart project-finance-chart"><div class="chart-title">Desempenho financeiro do projeto</div><div class="chart-sub">${esc(projectFinance.sub)}</div>${projectFinance.body}</article><article class="card timeline"><div class="chart-title" style="margin-bottom:18px">Histórico de atualizações</div>${timeline.length ? timeline.map(item => `<div class="time-item"><div class="time-date">${shortDate(item.data)}</div><div class="time-line"></div><div class="time-copy"><b>Atualização registrada</b><p>${esc(item.detalhe)}</p></div></div>`).join('') : '<div class="empty-state">Sem atualizações registradas no Status do Projeto.</div>'}</article></section>`;
+      <section class="section two-col"><article class="card line-chart project-finance-chart"><div class="chart-title">Desempenho financeiro do projeto</div><div class="chart-sub">${esc(projectFinance.sub)}</div>${projectFinance.body}</article><article class="card timeline"><div class="chart-title" style="margin-bottom:18px">Histórico de atualizações</div>${projectRiskNote(project) ? `<div class="timeline-risk"><b>⚠ Risco</b><p>${esc(projectRiskNote(project))}</p></div>` : ''}${timeline.length ? timeline.map(item => `<div class="time-item"><div class="time-date">${shortDate(item.data)}</div><div class="time-line"></div><div class="time-copy"><b>Atualização registrada</b><p>${esc(item.detalhe)}</p></div></div>`).join('') : '<div class="empty-state">Sem atualizações registradas no Status do Projeto.</div>'}</article></section>`;
   }
 
   function renderDashboard() {
