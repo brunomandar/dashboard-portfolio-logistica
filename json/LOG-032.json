@@ -11,7 +11,7 @@
   "risco": "",
   "status": "L1",
   "situacao": "Planejado",
-  "prioridade": "",
+  "prioridade": "Congelado",
   "ganhoProjeto": "",
   "tipos": [],
   "escopo": "O projeto visa revisar a malha logística à luz dos impactos da Reforma Tributária, avaliando a configuração de CDs, fluxos operacionais, sistemas e contratos para adequação à nova legislação, com foco na conformidade regulatória, otimização de custos logísticos e aumento da eficiência operacional. A iniciativa considera como premissas a definição progressiva das regras tributárias, o suporte das áreas tributária, logística e consultorias envolvidas, e a capacidade dos sistemas de suportar as adequações necessárias.",
@@ -3495,6 +3495,6 @@
   "fonte": {
     "arquivo": "LOG-032 - Revisão Malha Logistica (Reforma Tributária).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-032%20-%20Revis%C3%A3o%20Malha%20Logistica%20%28Reforma%20Tribut%C3%A1ria%29.xlsx?web=1",
-    "extraidoEm": "2026-10-30T10:53:21-03:00"
+    "extraidoEm": "2026-10-30T14:26:26-03:00"
   }
 }

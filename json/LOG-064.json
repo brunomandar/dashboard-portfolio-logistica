@@ -11,7 +11,7 @@
   "risco": "Alto",
   "status": "L2",
   "situacao": "Em risco",
-  "prioridade": "",
+  "prioridade": "P1",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "Implementar melhorias na ferramenta de Rastreabilidade COMEX para proporcionar visibilidade ponta a ponta dos pedidos de importação, por meio de um layout mais intuitivo, aumento da confiabilidade das informações, redução de inconsistências e minimização de inputs manuais. O projeto também visa eliminar controles paralelos, centralizar o acompanhamento dos processos e aumentar a eficiência operacional na gestão das cargas.",
@@ -411,6 +411,6 @@
   "fonte": {
     "arquivo": "LOG-064 - Rastreabilidade - COMEX.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-064%20-%20Rastreabilidade%20-%20COMEX.xlsx?web=1",
-    "extraidoEm": "2026-10-30T10:53:50-03:00"
+    "extraidoEm": "2026-10-30T14:26:57-03:00"
   }
 }
