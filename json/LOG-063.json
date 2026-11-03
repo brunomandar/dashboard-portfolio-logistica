@@ -1,8 +1,8 @@
 {
   "id": "LOG-063",
   "projeto": "S&OP Móvel (Consolidação de OV)",
-  "area": "Desconexão",
-  "pontoFocal": "",
+  "area": "Transportes",
+  "pontoFocal": "Edinalva",
   "inicio": "2027-02-01",
   "termino": "2028-02-01",
   "inicioCaptura": "2027-02-01",
@@ -17,14 +17,18 @@
     "Opex"
   ],
   "escopo": "Consolidar Simcard / Aparelho em uma única Ordem de venda para envio de material para Loja Própria (LP). Essa Ordem de vende deverá possibilitar a criação massiva.\n\nEssa ação visa aumentar a eficiência no Picking e Transporte, otimizando os pedidos de vendas de forma a separar e transportar num único romaneio / manifesto para a Loja própria. O Escopo contempla unificar SIMCARD e APARELHO.",
-  "entregaveis": [],
+  "entregaveis": [
+    "Redução do número de OVs emitidas.",
+    "Redução de custos operacionais com operador logístico.",
+    "Melhoria na consolidação de cargas."
+  ],
   "saving": {
     "opex12M": 0.698,
     "capex12M": 0.0,
     "total12M": 0.698,
-    "opex2026": 0.698,
+    "opex2026": 0.0,
     "capex2026": 0.0,
-    "total2026": 0.698
+    "total2026": 0.0
   },
   "macroAtividades": [
     {
@@ -3716,6 +3720,6 @@
   "fonte": {
     "arquivo": "LOG-063 - S&OP Móvel (Consolidação de OV).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-063%20-%20S%26OP%20M%C3%B3vel%20%28Consolida%C3%A7%C3%A3o%20de%20OV%29.xlsx?web=1",
-    "extraidoEm": "2026-10-30T19:10:39-03:00"
+    "extraidoEm": "2026-11-03T10:54:01-03:00"
   }
 }

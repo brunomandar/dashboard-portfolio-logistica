@@ -42,49 +42,49 @@
       "numero": "02.",
       "atividade": "Preencher e encaminhar a planilha excel de GA.",
       "responsavel": "Catalde e Logistica",
-      "status": 1,
+      "status": 4,
       "inicio": "2026-10-26",
-      "fim": "2026-11-03"
+      "fim": "2026-10-30"
     },
     {
       "numero": "03.",
       "atividade": "Solicitar a inclusão do sistema no CMDB da Claro (SmarTI) por meio de abertura de chamado JIRA.",
       "responsavel": "Logistica",
-      "status": 0,
-      "inicio": "2026-11-04",
-      "fim": "2026-11-10"
+      "status": 1,
+      "inicio": "2026-11-03",
+      "fim": "2026-11-09"
     },
     {
       "numero": "04.",
       "atividade": "Informar, por e-mail para GA (Bianca), o volume mensal de novos usuários criados na aplicação.",
       "responsavel": "Logistica",
-      "status": 1,
-      "inicio": "2026-11-11",
-      "fim": "2026-11-11"
+      "status": 5,
+      "inicio": "2026-10-30",
+      "fim": "2026-10-30"
     },
     {
       "numero": "05.",
       "atividade": "Criar usuários SGT3 para o time técnico da Catalde, viabilizando acesso ao TEAMS para  comunicação  das implementações.",
       "responsavel": "Logistica",
       "status": 0,
-      "inicio": "2026-11-12",
-      "fim": "2026-12-23"
+      "inicio": "2026-11-03",
+      "fim": "2027-01-25"
     },
     {
       "numero": "06.",
       "atividade": "Validar se todos os usuários possuem login no SGT3 e providenciar a criação para os casos pendentes.",
       "responsavel": "Logistica",
       "status": 0,
-      "inicio": "2026-12-24",
-      "fim": "2027-02-03"
+      "inicio": "2026-11-03",
+      "fim": "2026-12-14"
     },
     {
       "numero": "07.",
       "atividade": "Encaminhar as informações técnicas da aplicação (URL de Callback, Claims e demais parâmetros necessários) para início da implementação do PING Identity.",
       "responsavel": "Catalde e Logistica",
-      "status": 0,
-      "inicio": "2027-02-04",
-      "fim": "2027-02-25"
+      "status": 4,
+      "inicio": "2026-10-26",
+      "fim": "2026-10-28"
     },
     {
       "numero": "08.",
@@ -3659,6 +3659,6 @@
   "fonte": {
     "arquivo": "LOG-079 - Segundo Fator de Autenticação TMS (PING e IGA).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-079%20-%20Segundo%20Fator%20de%20Autentica%C3%A7%C3%A3o%20TMS%20%28PING%20e%20IGA%29.xlsx?web=1",
-    "extraidoEm": "2026-10-30T19:11:01-03:00"
+    "extraidoEm": "2026-11-03T10:54:50-03:00"
   }
 }
