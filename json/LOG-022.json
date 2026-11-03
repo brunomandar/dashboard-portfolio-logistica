@@ -35,7 +35,8 @@
       "responsavel": "Compras/Jurídico",
       "status": 1,
       "inicio": "2026-05-08",
-      "fim": "2026-11-22"
+      "fim": "2026-11-22",
+      "anotacao": ""
     },
     {
       "numero": "02.",
@@ -43,7 +44,8 @@
       "responsavel": "Seguros",
       "status": 4,
       "inicio": "2026-05-08",
-      "fim": "2026-10-30"
+      "fim": "2026-10-30",
+      "anotacao": ""
     },
     {
       "numero": "03.",
@@ -51,7 +53,8 @@
       "responsavel": "Claro / TEX",
       "status": 4,
       "inicio": "2026-08-01",
-      "fim": "2026-08-28"
+      "fim": "2026-08-28",
+      "anotacao": ""
     },
     {
       "numero": "04.",
@@ -59,7 +62,8 @@
       "responsavel": "Claro / TEX",
       "status": 4,
       "inicio": "2026-07-01",
-      "fim": "2026-07-20"
+      "fim": "2026-07-20",
+      "anotacao": ""
     },
     {
       "numero": "05.",
@@ -67,7 +71,8 @@
       "responsavel": "Claro / TEX / Catalde",
       "status": 2,
       "inicio": "2026-08-01",
-      "fim": "2026-11-14"
+      "fim": "2026-11-14",
+      "anotacao": ""
     },
     {
       "numero": "06.",
@@ -75,7 +80,8 @@
       "responsavel": "Claro / TEX",
       "status": 0,
       "inicio": "2026-08-01",
-      "fim": "2026-11-28"
+      "fim": "2026-11-28",
+      "anotacao": ""
     },
     {
       "numero": "07.",
@@ -83,7 +89,8 @@
       "responsavel": "Helder Claro",
       "status": 0,
       "inicio": "2026-11-14",
-      "fim": "2026-11-28"
+      "fim": "2026-11-28",
+      "anotacao": ""
     },
     {
       "numero": "08.",
@@ -91,7 +98,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "09.",
@@ -99,7 +107,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "10.",
@@ -107,7 +116,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "11.",
@@ -115,7 +125,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "12.",
@@ -123,7 +134,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "13.",
@@ -131,7 +143,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "14.",
@@ -139,7 +152,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "15.",
@@ -147,7 +161,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "16.",
@@ -155,7 +170,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "17.",
@@ -163,7 +179,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "18.",
@@ -171,7 +188,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "19.",
@@ -179,7 +197,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "20.",
@@ -187,7 +206,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "21.",
@@ -195,7 +215,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "22.",
@@ -203,7 +224,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "23.",
@@ -211,7 +233,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "24.",
@@ -219,7 +242,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "25.",
@@ -227,7 +251,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "26.",
@@ -235,7 +260,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "27.",
@@ -243,7 +269,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -253,7 +280,8 @@
       "responsavel": "",
       "status": 3,
       "inicio": "2026-05-08",
-      "fim": "2026-11-22"
+      "fim": "2026-11-22",
+      "anotacao": ""
     },
     {
       "numero": "1.1",
@@ -261,7 +289,8 @@
       "responsavel": "Guilherme TEX",
       "status": 4,
       "inicio": "2026-05-08",
-      "fim": "2026-10-30"
+      "fim": "2026-10-30",
+      "anotacao": ""
     },
     {
       "numero": "1.2",
@@ -269,7 +298,8 @@
       "responsavel": "Jurídico Claro",
       "status": 3,
       "inicio": "2026-05-08",
-      "fim": "2026-08-21"
+      "fim": "2026-08-21",
+      "anotacao": ""
     },
     {
       "numero": 2,
@@ -277,7 +307,8 @@
       "responsavel": "",
       "status": 4,
       "inicio": "2026-05-08",
-      "fim": "2026-10-30"
+      "fim": "2026-10-30",
+      "anotacao": ""
     },
     {
       "numero": "2.1",
@@ -285,7 +316,8 @@
       "responsavel": "Guilherme TEX",
       "status": 4,
       "inicio": "2026-08-01",
-      "fim": "2026-08-28"
+      "fim": "2026-08-28",
+      "anotacao": ""
     },
     {
       "numero": "2.2",
@@ -293,7 +325,8 @@
       "responsavel": "Salaroli Claro",
       "status": 4,
       "inicio": "2026-08-01",
-      "fim": "2026-08-28"
+      "fim": "2026-08-28",
+      "anotacao": ""
     },
     {
       "numero": "2.3",
@@ -301,7 +334,8 @@
       "responsavel": "Salaroli Claro",
       "status": 4,
       "inicio": "2026-08-01",
-      "fim": "2026-08-28"
+      "fim": "2026-08-28",
+      "anotacao": ""
     },
     {
       "numero": "2.4",
@@ -309,7 +343,8 @@
       "responsavel": "Diana (COPAG)",
       "status": 4,
       "inicio": "2026-08-01",
-      "fim": "2026-08-28"
+      "fim": "2026-08-28",
+      "anotacao": ""
     },
     {
       "numero": 3,
@@ -317,7 +352,8 @@
       "responsavel": "",
       "status": 4,
       "inicio": "2026-08-01",
-      "fim": "2026-08-28"
+      "fim": "2026-08-28",
+      "anotacao": ""
     },
     {
       "numero": "3.1",
@@ -325,7 +361,8 @@
       "responsavel": "Claro / TEX",
       "status": 4,
       "inicio": "2026-07-01",
-      "fim": "2026-07-20"
+      "fim": "2026-07-20",
+      "anotacao": ""
     },
     {
       "numero": "3.2",
@@ -333,7 +370,8 @@
       "responsavel": "Claro / TEX",
       "status": 4,
       "inicio": "2026-07-01",
-      "fim": "2026-07-20"
+      "fim": "2026-07-20",
+      "anotacao": ""
     },
     {
       "numero": "3.3",
@@ -341,7 +379,8 @@
       "responsavel": "Claro / TEX",
       "status": 4,
       "inicio": "2026-07-01",
-      "fim": "2026-07-20"
+      "fim": "2026-07-20",
+      "anotacao": ""
     },
     {
       "numero": "3.4",
@@ -349,7 +388,8 @@
       "responsavel": "Claro / TEX",
       "status": 4,
       "inicio": "2026-07-01",
-      "fim": "2026-07-20"
+      "fim": "2026-07-20",
+      "anotacao": ""
     },
     {
       "numero": "3.5",
@@ -357,7 +397,8 @@
       "responsavel": "Claro / TEX",
       "status": 4,
       "inicio": "2026-07-01",
-      "fim": "2026-07-20"
+      "fim": "2026-07-20",
+      "anotacao": ""
     },
     {
       "numero": "3.6",
@@ -365,7 +406,8 @@
       "responsavel": "Claro / TEX",
       "status": 4,
       "inicio": "2026-07-01",
-      "fim": "2026-07-20"
+      "fim": "2026-07-20",
+      "anotacao": ""
     },
     {
       "numero": 4,
@@ -373,7 +415,8 @@
       "responsavel": "",
       "status": 2,
       "inicio": "2026-07-01",
-      "fim": "2026-07-20"
+      "fim": "2026-07-20",
+      "anotacao": ""
     },
     {
       "numero": "4.1",
@@ -381,7 +424,8 @@
       "responsavel": "Guilherme TEX",
       "status": 3,
       "inicio": "2026-08-01",
-      "fim": "2026-11-14"
+      "fim": "2026-11-14",
+      "anotacao": ""
     },
     {
       "numero": "4.2",
@@ -389,7 +433,8 @@
       "responsavel": "Guilherme TEX",
       "status": 3,
       "inicio": "2026-08-01",
-      "fim": "2026-11-07"
+      "fim": "2026-11-07",
+      "anotacao": ""
     },
     {
       "numero": "4.3",
@@ -397,7 +442,8 @@
       "responsavel": "Catalde / TEX",
       "status": 4,
       "inicio": "2026-11-07",
-      "fim": "2026-11-13"
+      "fim": "2026-11-13",
+      "anotacao": ""
     },
     {
       "numero": "4.4",
@@ -405,7 +451,8 @@
       "responsavel": "Guilherme TEX",
       "status": 4,
       "inicio": "2026-08-01",
-      "fim": "2026-08-15"
+      "fim": "2026-08-15",
+      "anotacao": ""
     },
     {
       "numero": "4.5",
@@ -413,7 +460,8 @@
       "responsavel": "Guilherme TEX",
       "status": 4,
       "inicio": "2026-08-01",
-      "fim": "2026-11-07"
+      "fim": "2026-11-07",
+      "anotacao": ""
     },
     {
       "numero": "4.6",
@@ -421,7 +469,8 @@
       "responsavel": "Julio Claro",
       "status": 4,
       "inicio": "2026-09-14",
-      "fim": "2026-09-14"
+      "fim": "2026-09-14",
+      "anotacao": ""
     },
     {
       "numero": "4.7",
@@ -429,7 +478,8 @@
       "responsavel": "Claro / TEX / Catalde",
       "status": 3,
       "inicio": "2026-08-01",
-      "fim": "2026-08-19"
+      "fim": "2026-08-19",
+      "anotacao": ""
     },
     {
       "numero": "4.8",
@@ -437,7 +487,8 @@
       "responsavel": "TEX",
       "status": 0,
       "inicio": "2026-11-13",
-      "fim": "2026-11-14"
+      "fim": "2026-11-14",
+      "anotacao": ""
     },
     {
       "numero": 5,
@@ -445,7 +496,8 @@
       "responsavel": "",
       "status": 4,
       "inicio": "2026-10-26",
-      "fim": "2026-12-18"
+      "fim": "2026-12-18",
+      "anotacao": ""
     },
     {
       "numero": "5.1",
@@ -453,7 +505,8 @@
       "responsavel": "TEX / Claro",
       "status": 4,
       "inicio": "2026-07-03",
-      "fim": "2026-10-13"
+      "fim": "2026-10-13",
+      "anotacao": ""
     },
     {
       "numero": "5.2",
@@ -461,7 +514,8 @@
       "responsavel": "Guilherme TEX",
       "status": 4,
       "inicio": "2026-07-03",
-      "fim": "2026-08-13"
+      "fim": "2026-08-13",
+      "anotacao": ""
     },
     {
       "numero": "5.3",
@@ -469,7 +523,8 @@
       "responsavel": "TEX / Claro",
       "status": 4,
       "inicio": "2026-07-03",
-      "fim": "2026-10-13"
+      "fim": "2026-10-13",
+      "anotacao": ""
     },
     {
       "numero": "5.4",
@@ -477,7 +532,8 @@
       "responsavel": "TEX / Claro",
       "status": 4,
       "inicio": "2026-07-03",
-      "fim": "2026-08-13"
+      "fim": "2026-08-13",
+      "anotacao": ""
     },
     {
       "numero": "5.5",
@@ -485,7 +541,8 @@
       "responsavel": "TEX / Claro",
       "status": 4,
       "inicio": "2026-07-03",
-      "fim": "2026-08-13"
+      "fim": "2026-08-13",
+      "anotacao": ""
     },
     {
       "numero": "5.6",
@@ -493,7 +550,8 @@
       "responsavel": "TEX / Claro",
       "status": 4,
       "inicio": "2026-07-03",
-      "fim": "2026-09-21"
+      "fim": "2026-09-21",
+      "anotacao": ""
     },
     {
       "numero": "5.7",
@@ -501,7 +559,8 @@
       "responsavel": "CLARO",
       "status": 4,
       "inicio": "2026-08-25",
-      "fim": "2026-08-26"
+      "fim": "2026-08-26",
+      "anotacao": ""
     },
     {
       "numero": "5.8",
@@ -509,7 +568,8 @@
       "responsavel": "Guilherme TEX / Helder Claro / Julio",
       "status": 4,
       "inicio": "2026-08-25",
-      "fim": "2026-08-26"
+      "fim": "2026-08-26",
+      "anotacao": ""
     },
     {
       "numero": 6,
@@ -517,7 +577,8 @@
       "responsavel": "",
       "status": 1,
       "inicio": "2026-08-25",
-      "fim": "2026-09-11"
+      "fim": "2026-09-11",
+      "anotacao": ""
     },
     {
       "numero": "6.1",
@@ -525,7 +586,8 @@
       "responsavel": "Wagner Claro",
       "status": 4,
       "inicio": "2026-08-01",
-      "fim": "2026-11-28"
+      "fim": "2026-11-28",
+      "anotacao": ""
     },
     {
       "numero": "6.2",
@@ -533,7 +595,8 @@
       "responsavel": "Wagner Claro",
       "status": 4,
       "inicio": "2026-08-20",
-      "fim": "2026-09-01"
+      "fim": "2026-09-01",
+      "anotacao": ""
     },
     {
       "numero": "6.3",
@@ -541,7 +604,8 @@
       "responsavel": "Helder Claro",
       "status": 4,
       "inicio": "2026-08-20",
-      "fim": "2026-09-09"
+      "fim": "2026-09-09",
+      "anotacao": ""
     },
     {
       "numero": "6.4",
@@ -549,7 +613,8 @@
       "responsavel": "Helder Claro",
       "status": 4,
       "inicio": "2026-08-20",
-      "fim": "2026-09-05"
+      "fim": "2026-09-05",
+      "anotacao": ""
     },
     {
       "numero": "6.5",
@@ -557,7 +622,8 @@
       "responsavel": "Helder Claro",
       "status": 0,
       "inicio": "2026-08-01",
-      "fim": "2026-09-22"
+      "fim": "2026-09-22",
+      "anotacao": ""
     },
     {
       "numero": "6.6",
@@ -565,7 +631,8 @@
       "responsavel": "Helder Claro",
       "status": 1,
       "inicio": "2026-11-14",
-      "fim": "2026-11-28"
+      "fim": "2026-11-28",
+      "anotacao": ""
     },
     {
       "numero": "6.7",
@@ -573,7 +640,8 @@
       "responsavel": "Helder Claro",
       "status": 1,
       "inicio": "2026-11-14",
-      "fim": "2026-11-14"
+      "fim": "2026-11-14",
+      "anotacao": ""
     },
     {
       "numero": "6.8",
@@ -581,7 +649,8 @@
       "responsavel": "Helder Claro",
       "status": 0,
       "inicio": "2026-11-16",
-      "fim": "2026-11-22"
+      "fim": "2026-11-22",
+      "anotacao": ""
     },
     {
       "numero": "6.9",
@@ -589,7 +658,8 @@
       "responsavel": "Helder Claro",
       "status": 0,
       "inicio": "2026-11-16",
-      "fim": "2026-11-22"
+      "fim": "2026-11-22",
+      "anotacao": ""
     },
     {
       "numero": "6.10",
@@ -597,7 +667,8 @@
       "responsavel": "Helder Claro",
       "status": 0,
       "inicio": "2026-11-22",
-      "fim": "2026-11-28"
+      "fim": "2026-11-28",
+      "anotacao": ""
     },
     {
       "numero": "6.11",
@@ -605,7 +676,8 @@
       "responsavel": "Helder Claro",
       "status": 0,
       "inicio": "2026-11-22",
-      "fim": "2026-11-28"
+      "fim": "2026-11-28",
+      "anotacao": ""
     },
     {
       "numero": 7,
@@ -613,7 +685,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "2026-11-22",
-      "fim": "2026-11-28"
+      "fim": "2026-11-28",
+      "anotacao": ""
     },
     {
       "numero": 8,
@@ -621,7 +694,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 9,
@@ -629,7 +703,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 10,
@@ -637,7 +712,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 11,
@@ -645,7 +721,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 12,
@@ -653,7 +730,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 13,
@@ -661,7 +739,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 14,
@@ -669,7 +748,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 15,
@@ -677,7 +757,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 16,
@@ -685,7 +766,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 17,
@@ -693,7 +775,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 18,
@@ -701,7 +784,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 19,
@@ -709,7 +793,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 20,
@@ -717,7 +802,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 21,
@@ -725,7 +811,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 22,
@@ -733,7 +820,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 23,
@@ -741,7 +829,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 24,
@@ -749,7 +838,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 25,
@@ -757,7 +847,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 26,
@@ -765,7 +856,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 27,
@@ -773,7 +865,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 28,
@@ -781,7 +874,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 29,
@@ -789,7 +883,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 30,
@@ -797,7 +892,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 31,
@@ -805,7 +901,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 32,
@@ -813,7 +910,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 33,
@@ -821,7 +919,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 34,
@@ -829,7 +928,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 35,
@@ -837,7 +937,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 36,
@@ -845,7 +946,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 37,
@@ -853,7 +955,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 38,
@@ -861,7 +964,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 39,
@@ -869,7 +973,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 40,
@@ -877,7 +982,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 41,
@@ -885,7 +991,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 42,
@@ -893,7 +1000,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 43,
@@ -901,7 +1009,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 44,
@@ -909,7 +1018,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 45,
@@ -917,7 +1027,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 46,
@@ -925,7 +1036,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 47,
@@ -933,7 +1045,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 48,
@@ -941,7 +1054,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 49,
@@ -949,7 +1063,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 50,
@@ -957,7 +1072,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 51,
@@ -965,7 +1081,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 52,
@@ -973,7 +1090,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 53,
@@ -981,7 +1099,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 54,
@@ -989,7 +1108,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 55,
@@ -997,7 +1117,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 56,
@@ -1005,7 +1126,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 57,
@@ -1013,7 +1135,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 58,
@@ -1021,7 +1144,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 59,
@@ -1029,7 +1153,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 60,
@@ -1037,7 +1162,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 61,
@@ -1045,7 +1171,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     }
   ],
   "historico": [
@@ -3698,6 +3825,6 @@
   "fonte": {
     "arquivo": "LOG-022 - Cronograma Ecommerce_Tex.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-022%20-%20Cronograma%20Ecommerce_Tex.xlsx?web=1",
-    "extraidoEm": "2026-11-03T10:52:50-03:00"
+    "extraidoEm": "2026-11-03T16:29:24-03:00"
   }
 }

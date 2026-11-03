@@ -35,7 +35,8 @@
       "responsavel": "Marinalva / Luciano",
       "status": 3,
       "inicio": "2026-01-12",
-      "fim": "2026-05-14"
+      "fim": "2026-05-14",
+      "anotacao": ""
     },
     {
       "numero": "2",
@@ -43,7 +44,8 @@
       "responsavel": "Luciano / Eliani / Douglas / Marinalva",
       "status": 2,
       "inicio": "2026-04-02",
-      "fim": "2026-10-30"
+      "fim": "2026-10-30",
+      "anotacao": ""
     },
     {
       "numero": "3",
@@ -51,7 +53,8 @@
       "responsavel": "Douglas / Time OPL / Luciano / Marinalva",
       "status": 2,
       "inicio": "2025-12-01",
-      "fim": "2026-10-30"
+      "fim": "2026-10-30",
+      "anotacao": ""
     },
     {
       "numero": "4",
@@ -59,7 +62,8 @@
       "responsavel": "Evandro / Guilherme / Renan",
       "status": 3,
       "inicio": "2026-05-01",
-      "fim": "2026-07-30"
+      "fim": "2026-07-30",
+      "anotacao": ""
     },
     {
       "numero": "5",
@@ -67,7 +71,8 @@
       "responsavel": "Time TPC / Luciano / Guilherme / Eliani / Marileia",
       "status": 3,
       "inicio": "2025-09-01",
-      "fim": "2026-10-01"
+      "fim": "2026-10-01",
+      "anotacao": ""
     },
     {
       "numero": "6",
@@ -75,7 +80,8 @@
       "responsavel": "Marinalva / Wellington / Fábio Delduque",
       "status": 3,
       "inicio": "2026-06-01",
-      "fim": "2026-07-30"
+      "fim": "2026-07-30",
+      "anotacao": ""
     },
     {
       "numero": "7",
@@ -83,7 +89,8 @@
       "responsavel": "Marinalva / Luciano / Eliani / Guilherme",
       "status": "",
       "inicio": "2026-07-01",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "8",
@@ -91,7 +98,8 @@
       "responsavel": "Marinalva / Fábio Delduque / Demis",
       "status": 2,
       "inicio": "2026-05-01",
-      "fim": "2027-07-15"
+      "fim": "2027-07-15",
+      "anotacao": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -101,7 +109,8 @@
       "responsavel": "Marinalva / Luciano",
       "status": 3,
       "inicio": "2026-01-12",
-      "fim": "2026-05-14"
+      "fim": "2026-05-14",
+      "anotacao": ""
     },
     {
       "numero": "1.1",
@@ -109,7 +118,8 @@
       "responsavel": "Marinalva / Time",
       "status": 3,
       "inicio": "2026-02-02",
-      "fim": "2026-02-13"
+      "fim": "2026-02-13",
+      "anotacao": ""
     },
     {
       "numero": "1.2",
@@ -117,7 +127,8 @@
       "responsavel": "Marinalva",
       "status": 3,
       "inicio": "2026-03-09",
-      "fim": "2026-03-13"
+      "fim": "2026-03-13",
+      "anotacao": ""
     },
     {
       "numero": "1.3",
@@ -125,7 +136,8 @@
       "responsavel": "Marinalva / Time",
       "status": 5,
       "inicio": "2026-05-14",
-      "fim": "2026-05-14"
+      "fim": "2026-05-14",
+      "anotacao": ""
     },
     {
       "numero": "1.4",
@@ -133,7 +145,8 @@
       "responsavel": "Luciano",
       "status": 3,
       "inicio": "2026-01-12",
-      "fim": "2026-03-31"
+      "fim": "2026-03-31",
+      "anotacao": ""
     },
     {
       "numero": "1.5",
@@ -141,7 +154,8 @@
       "responsavel": "Luciano",
       "status": 3,
       "inicio": "2026-01-12",
-      "fim": "2026-03-31"
+      "fim": "2026-03-31",
+      "anotacao": ""
     },
     {
       "numero": "2",
@@ -149,7 +163,8 @@
       "responsavel": "Luciano / Eliani / Douglas / Marinalva",
       "status": 2,
       "inicio": "2026-04-02",
-      "fim": "2026-10-30"
+      "fim": "2026-10-30",
+      "anotacao": ""
     },
     {
       "numero": "2.1",
@@ -157,7 +172,8 @@
       "responsavel": "Luciano",
       "status": 5,
       "inicio": "2026-04-02",
-      "fim": "2026-04-30"
+      "fim": "2026-04-30",
+      "anotacao": ""
     },
     {
       "numero": "2.2",
@@ -165,7 +181,8 @@
       "responsavel": "Luciano",
       "status": 5,
       "inicio": "2026-05-01",
-      "fim": "2026-06-30"
+      "fim": "2026-06-30",
+      "anotacao": ""
     },
     {
       "numero": "2.3",
@@ -173,7 +190,8 @@
       "responsavel": "Luciano / Eliani",
       "status": 3,
       "inicio": "2026-05-01",
-      "fim": "2026-07-30"
+      "fim": "2026-07-30",
+      "anotacao": ""
     },
     {
       "numero": "2.4",
@@ -181,7 +199,8 @@
       "responsavel": "Eliani / Douglas",
       "status": 3,
       "inicio": "2026-05-01",
-      "fim": "2026-07-30"
+      "fim": "2026-07-30",
+      "anotacao": ""
     },
     {
       "numero": "2.5",
@@ -189,7 +208,8 @@
       "responsavel": "Eliani / Douglas",
       "status": 3,
       "inicio": "2026-05-01",
-      "fim": "2026-07-30"
+      "fim": "2026-07-30",
+      "anotacao": ""
     },
     {
       "numero": "2.6",
@@ -197,7 +217,8 @@
       "responsavel": "Eliani / Douglas",
       "status": 3,
       "inicio": "2026-05-01",
-      "fim": "2026-07-30"
+      "fim": "2026-07-30",
+      "anotacao": ""
     },
     {
       "numero": "2.7",
@@ -205,7 +226,8 @@
       "responsavel": "Eliani / Douglas",
       "status": 3,
       "inicio": "2026-05-01",
-      "fim": "2026-07-30"
+      "fim": "2026-07-30",
+      "anotacao": ""
     },
     {
       "numero": "2.8",
@@ -213,7 +235,8 @@
       "responsavel": "Luciano / Eliani",
       "status": 3,
       "inicio": "2026-05-01",
-      "fim": "2026-08-30"
+      "fim": "2026-08-30",
+      "anotacao": ""
     },
     {
       "numero": "2.9",
@@ -221,7 +244,8 @@
       "responsavel": "Luciano / Eliani",
       "status": 3,
       "inicio": "2026-05-01",
-      "fim": "2026-08-30"
+      "fim": "2026-08-30",
+      "anotacao": ""
     },
     {
       "numero": "2.10",
@@ -229,7 +253,8 @@
       "responsavel": "Marinalva / Luciano",
       "status": 3,
       "inicio": "2026-07-01",
-      "fim": "2026-08-30"
+      "fim": "2026-08-30",
+      "anotacao": ""
     },
     {
       "numero": "2.11",
@@ -237,7 +262,8 @@
       "responsavel": "Marinalva / Demis",
       "status": 3,
       "inicio": "",
-      "fim": "2026-09-30"
+      "fim": "2026-09-30",
+      "anotacao": ""
     },
     {
       "numero": "2.12",
@@ -245,7 +271,8 @@
       "responsavel": "A confirmar",
       "status": 2,
       "inicio": "",
-      "fim": "2026-10-30"
+      "fim": "2026-10-30",
+      "anotacao": ""
     },
     {
       "numero": "3",
@@ -253,7 +280,8 @@
       "responsavel": "Douglas / Time OPL / Luciano / Marinalva",
       "status": 2,
       "inicio": "2025-12-01",
-      "fim": "2026-10-30"
+      "fim": "2026-10-30",
+      "anotacao": ""
     },
     {
       "numero": "3.1",
@@ -261,7 +289,8 @@
       "responsavel": "Douglas / Time OPL",
       "status": 4,
       "inicio": "2025-12-01",
-      "fim": "2026-01-30"
+      "fim": "2026-01-30",
+      "anotacao": ""
     },
     {
       "numero": "3.2",
@@ -269,7 +298,8 @@
       "responsavel": "Douglas / Time OPL",
       "status": 4,
       "inicio": "2025-12-01",
-      "fim": "2026-01-30"
+      "fim": "2026-01-30",
+      "anotacao": ""
     },
     {
       "numero": "3.3",
@@ -277,7 +307,8 @@
       "responsavel": "Time OPL",
       "status": 4,
       "inicio": "2026-01-01",
-      "fim": "2026-03-01"
+      "fim": "2026-03-01",
+      "anotacao": ""
     },
     {
       "numero": "3.4",
@@ -285,7 +316,8 @@
       "responsavel": "Douglas / Time OPL",
       "status": 4,
       "inicio": "2026-03-01",
-      "fim": "2026-03-15"
+      "fim": "2026-03-15",
+      "anotacao": ""
     },
     {
       "numero": "3.5",
@@ -293,7 +325,8 @@
       "responsavel": "Douglas / Time OPL",
       "status": 4,
       "inicio": "2026-04-01",
-      "fim": "2026-04-10"
+      "fim": "2026-04-10",
+      "anotacao": ""
     },
     {
       "numero": "3.6",
@@ -301,7 +334,8 @@
       "responsavel": "Luciano / Douglas",
       "status": 2,
       "inicio": "2026-05-01",
-      "fim": "2026-10-30"
+      "fim": "2026-10-30",
+      "anotacao": ""
     },
     {
       "numero": "3.7",
@@ -309,7 +343,8 @@
       "responsavel": "Marinalva / Douglas",
       "status": 3,
       "inicio": "2026-06-01",
-      "fim": "2026-08-30"
+      "fim": "2026-08-30",
+      "anotacao": ""
     },
     {
       "numero": "4",
@@ -317,7 +352,8 @@
       "responsavel": "Evandro / Guilherme / Renan",
       "status": 3,
       "inicio": "2026-05-01",
-      "fim": "2026-07-30"
+      "fim": "2026-07-30",
+      "anotacao": ""
     },
     {
       "numero": "4.1",
@@ -325,7 +361,8 @@
       "responsavel": "Guilherme / Carlos Beraldo",
       "status": 4,
       "inicio": "2026-05-01",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "4.2",
@@ -333,7 +370,8 @@
       "responsavel": "Guilherme / Renan",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-06-30"
+      "fim": "2026-06-30",
+      "anotacao": ""
     },
     {
       "numero": "4.3",
@@ -341,7 +379,8 @@
       "responsavel": "Guilherme / Renan",
       "status": 3,
       "inicio": "2026-06-01",
-      "fim": "2026-07-30"
+      "fim": "2026-07-30",
+      "anotacao": ""
     },
     {
       "numero": "5",
@@ -349,7 +388,8 @@
       "responsavel": "Time TPC / Luciano / Guilherme / Eliani / Marileia",
       "status": 3,
       "inicio": "2025-09-01",
-      "fim": "2026-10-01"
+      "fim": "2026-10-01",
+      "anotacao": ""
     },
     {
       "numero": "5.1",
@@ -357,7 +397,8 @@
       "responsavel": "Time TPC / Luciano / Guilherme",
       "status": 4,
       "inicio": "2025-09-01",
-      "fim": "2026-10-01"
+      "fim": "2026-10-01",
+      "anotacao": ""
     },
     {
       "numero": "5.2",
@@ -365,7 +406,8 @@
       "responsavel": "Time TPC / Eliani",
       "status": 3,
       "inicio": "2026-07-01",
-      "fim": "2026-09-01"
+      "fim": "2026-09-01",
+      "anotacao": ""
     },
     {
       "numero": "5.3",
@@ -373,7 +415,8 @@
       "responsavel": "Time TPC / Marileia",
       "status": 3,
       "inicio": "2026-07-01",
-      "fim": "2026-09-01"
+      "fim": "2026-09-01",
+      "anotacao": ""
     },
     {
       "numero": "6",
@@ -381,7 +424,8 @@
       "responsavel": "Marinalva / Wellington / Fábio Delduque",
       "status": 3,
       "inicio": "2026-06-01",
-      "fim": "2026-07-30"
+      "fim": "2026-07-30",
+      "anotacao": ""
     },
     {
       "numero": "6.1",
@@ -389,7 +433,8 @@
       "responsavel": "Marinalva / Wellington / Fábio Delduque",
       "status": 3,
       "inicio": "2026-06-01",
-      "fim": "2026-07-30"
+      "fim": "2026-07-30",
+      "anotacao": ""
     },
     {
       "numero": "7",
@@ -397,7 +442,8 @@
       "responsavel": "Marinalva / Luciano / Eliani / Guilherme",
       "status": "",
       "inicio": "2026-07-01",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "7.1",
@@ -405,7 +451,8 @@
       "responsavel": "Marinalva / Luciano / Eliani / Guilherme",
       "status": "",
       "inicio": "2026-07-01",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "8",
@@ -413,7 +460,8 @@
       "responsavel": "Marinalva / Fábio Delduque / Demis",
       "status": 2,
       "inicio": "2026-05-01",
-      "fim": "2027-07-15"
+      "fim": "2027-07-15",
+      "anotacao": ""
     },
     {
       "numero": "8.1",
@@ -421,7 +469,8 @@
       "responsavel": "Marinalva / Fábio Delduque",
       "status": 3,
       "inicio": "2026-05-01",
-      "fim": "2026-05-30"
+      "fim": "2026-05-30",
+      "anotacao": ""
     },
     {
       "numero": "8.2",
@@ -429,7 +478,8 @@
       "responsavel": "Marinalva / Fábio Delduque",
       "status": 3,
       "inicio": "2026-05-01",
-      "fim": "2026-07-01"
+      "fim": "2026-07-01",
+      "anotacao": ""
     },
     {
       "numero": "8.3",
@@ -437,7 +487,8 @@
       "responsavel": "Marinalva / Fábio Delduque / Demis",
       "status": "",
       "inicio": "2026-07-01",
-      "fim": "2027-07-15"
+      "fim": "2027-07-15",
+      "anotacao": ""
     }
   ],
   "historico": [],
@@ -3039,6 +3090,6 @@
   "fonte": {
     "arquivo": "LOG-030 - Automatização e Robotização dos CDs.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-030%20-%20Automatiza%C3%A7%C3%A3o%20e%20Robotiza%C3%A7%C3%A3o%20dos%20CDs.xlsx?web=1",
-    "extraidoEm": "2026-11-03T10:53:02-03:00"
+    "extraidoEm": "2026-11-03T16:29:31-03:00"
   }
 }

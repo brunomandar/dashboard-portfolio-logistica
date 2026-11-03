@@ -33,7 +33,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "02.",
@@ -41,7 +42,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "03.",
@@ -49,7 +51,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "04.",
@@ -57,7 +60,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "05.",
@@ -65,7 +69,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "06.",
@@ -73,7 +78,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "07.",
@@ -81,7 +87,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "08.",
@@ -89,7 +96,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "09.",
@@ -97,7 +105,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "10.",
@@ -105,7 +114,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "11.",
@@ -113,7 +123,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "12.",
@@ -121,7 +132,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "13.",
@@ -129,7 +141,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "14.",
@@ -137,7 +150,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "15.",
@@ -145,7 +159,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "16.",
@@ -153,7 +168,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "17.",
@@ -161,7 +177,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "18.",
@@ -169,7 +186,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "19.",
@@ -177,7 +195,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "20.",
@@ -185,7 +204,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "21.",
@@ -193,7 +213,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "22.",
@@ -201,7 +222,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "23.",
@@ -209,7 +231,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "24.",
@@ -217,7 +240,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "25.",
@@ -225,7 +249,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "26.",
@@ -233,7 +258,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "27.",
@@ -241,7 +267,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -251,7 +278,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "2026-08-13",
-      "fim": "2026-08-13"
+      "fim": "2026-08-13",
+      "anotacao": ""
     },
     {
       "numero": 2,
@@ -259,7 +287,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 3,
@@ -267,7 +296,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 4,
@@ -275,7 +305,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 5,
@@ -283,7 +314,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 6,
@@ -291,7 +323,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 7,
@@ -299,7 +332,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 8,
@@ -307,7 +341,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 9,
@@ -315,7 +350,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 10,
@@ -323,7 +359,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 11,
@@ -331,7 +368,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 12,
@@ -339,7 +377,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 13,
@@ -347,7 +386,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 14,
@@ -355,7 +395,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 15,
@@ -363,7 +404,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 16,
@@ -371,7 +413,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 17,
@@ -379,7 +422,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 18,
@@ -387,7 +431,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 19,
@@ -395,7 +440,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 20,
@@ -403,7 +449,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 21,
@@ -411,7 +458,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 22,
@@ -419,7 +467,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 23,
@@ -427,7 +476,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 24,
@@ -435,7 +485,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 25,
@@ -443,7 +494,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 26,
@@ -451,7 +503,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 27,
@@ -459,7 +512,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 28,
@@ -467,7 +521,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 29,
@@ -475,7 +530,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 30,
@@ -483,7 +539,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 31,
@@ -491,7 +548,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 32,
@@ -499,7 +557,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 33,
@@ -507,7 +566,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 34,
@@ -515,7 +575,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 35,
@@ -523,7 +584,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 36,
@@ -531,7 +593,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 37,
@@ -539,7 +602,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 38,
@@ -547,7 +611,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 39,
@@ -555,7 +620,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 40,
@@ -563,7 +629,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 41,
@@ -571,7 +638,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 42,
@@ -579,7 +647,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 43,
@@ -587,7 +656,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 44,
@@ -595,7 +665,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 45,
@@ -603,7 +674,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 46,
@@ -611,7 +683,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 47,
@@ -619,7 +692,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 48,
@@ -627,7 +701,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 49,
@@ -635,7 +710,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 50,
@@ -643,7 +719,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 51,
@@ -651,7 +728,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 52,
@@ -659,7 +737,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 53,
@@ -667,7 +746,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 54,
@@ -675,7 +755,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 55,
@@ -683,7 +764,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 56,
@@ -691,7 +773,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 57,
@@ -699,7 +782,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 58,
@@ -707,7 +791,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 59,
@@ -715,7 +800,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 60,
@@ -723,7 +809,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 61,
@@ -731,7 +818,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 62,
@@ -739,7 +827,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 63,
@@ -747,7 +836,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 64,
@@ -755,7 +845,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 65,
@@ -763,7 +854,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 66,
@@ -771,7 +863,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 67,
@@ -779,7 +872,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 68,
@@ -787,7 +881,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 69,
@@ -795,7 +890,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 70,
@@ -803,7 +899,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 71,
@@ -811,7 +908,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 72,
@@ -819,7 +917,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 73,
@@ -827,7 +926,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 74,
@@ -835,7 +935,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 75,
@@ -843,7 +944,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 76,
@@ -851,7 +953,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 77,
@@ -859,7 +962,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 78,
@@ -867,7 +971,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 79,
@@ -875,7 +980,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 80,
@@ -883,7 +989,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 81,
@@ -891,7 +998,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 82,
@@ -899,7 +1007,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 83,
@@ -907,7 +1016,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 84,
@@ -915,7 +1025,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 85,
@@ -923,7 +1034,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 86,
@@ -931,7 +1043,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 87,
@@ -939,7 +1052,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 88,
@@ -947,7 +1061,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 89,
@@ -955,7 +1070,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 90,
@@ -963,7 +1079,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 91,
@@ -971,7 +1088,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 92,
@@ -979,7 +1097,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 93,
@@ -987,7 +1106,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 94,
@@ -995,7 +1115,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 95,
@@ -1003,7 +1124,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 96,
@@ -1011,7 +1133,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 97,
@@ -1019,7 +1142,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 98,
@@ -1027,7 +1151,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 99,
@@ -1035,7 +1160,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 100,
@@ -1043,7 +1169,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     }
   ],
   "historico": [],
@@ -3645,6 +3772,6 @@
   "fonte": {
     "arquivo": "LOG-005 - Venda de Ativo.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-005%20-%20Venda%20de%20Ativo.xlsx?web=1",
-    "extraidoEm": "2026-11-03T10:51:36-03:00"
+    "extraidoEm": "2026-11-03T16:28:30-03:00"
   }
 }

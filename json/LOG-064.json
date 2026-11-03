@@ -41,7 +41,8 @@
       "responsavel": "Michelle",
       "status": 4,
       "inicio": "2026-06-15",
-      "fim": "2026-06-30"
+      "fim": "2026-06-30",
+      "anotacao": ""
     },
     {
       "numero": "02.",
@@ -49,7 +50,8 @@
       "responsavel": "Michele / Emerson (E4U)",
       "status": 4,
       "inicio": "2026-09-24",
-      "fim": "2026-10-13"
+      "fim": "2026-10-13",
+      "anotacao": ""
     },
     {
       "numero": "03.",
@@ -57,7 +59,8 @@
       "responsavel": "Emerson/Adão (E4U)",
       "status": 2,
       "inicio": "2026-10-13",
-      "fim": "2026-10-15"
+      "fim": "2026-10-15",
+      "anotacao": ""
     },
     {
       "numero": "04.",
@@ -65,7 +68,8 @@
       "responsavel": "Michelle/Luis",
       "status": 4,
       "inicio": "2026-10-16",
-      "fim": "2026-10-22"
+      "fim": "2026-10-22",
+      "anotacao": ""
     },
     {
       "numero": "05.",
@@ -73,7 +77,8 @@
       "responsavel": "Emerson (E4U)",
       "status": 4,
       "inicio": "2026-10-23",
-      "fim": "2026-10-26"
+      "fim": "2026-10-26",
+      "anotacao": ""
     },
     {
       "numero": "06.",
@@ -81,7 +86,8 @@
       "responsavel": "Fabricio",
       "status": 0,
       "inicio": "2026-10-27",
-      "fim": "2026-11-06"
+      "fim": "2026-11-06",
+      "anotacao": ""
     },
     {
       "numero": "07.",
@@ -89,7 +95,8 @@
       "responsavel": "Edinalva",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "08.",
@@ -97,7 +104,8 @@
       "responsavel": "Emerson (E4U)",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "09.",
@@ -105,7 +113,8 @@
       "responsavel": "Michelle/Luis",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "10.",
@@ -113,7 +122,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "11.",
@@ -121,7 +131,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "12.",
@@ -129,7 +140,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "13.",
@@ -137,7 +149,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "14.",
@@ -145,7 +158,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "15.",
@@ -153,7 +167,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "16.",
@@ -161,7 +176,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "17.",
@@ -169,7 +185,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "18.",
@@ -177,7 +194,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "19.",
@@ -185,7 +203,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "20.",
@@ -193,7 +212,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "21.",
@@ -201,7 +221,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "22.",
@@ -209,7 +230,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "23.",
@@ -217,7 +239,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "24.",
@@ -225,7 +248,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "25.",
@@ -233,7 +257,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "26.",
@@ -241,7 +266,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "27.",
@@ -249,7 +275,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -259,7 +286,8 @@
       "responsavel": "",
       "status": 4,
       "inicio": "2026-09-24",
-      "fim": "2026-12-30"
+      "fim": "2026-12-30",
+      "anotacao": ""
     },
     {
       "numero": "1.1",
@@ -267,7 +295,8 @@
       "responsavel": "Michele / Emerson (E4U)",
       "status": 4,
       "inicio": "2026-09-24",
-      "fim": "2026-10-13"
+      "fim": "2026-10-13",
+      "anotacao": ""
     },
     {
       "numero": "1.2",
@@ -275,7 +304,8 @@
       "responsavel": "Michele / Emerson (E4U)",
       "status": 4,
       "inicio": "2026-09-24",
-      "fim": "2026-10-13"
+      "fim": "2026-10-13",
+      "anotacao": ""
     },
     {
       "numero": "1.3",
@@ -283,7 +313,8 @@
       "responsavel": "Michele / Emerson (E4U)",
       "status": 4,
       "inicio": "2026-09-24",
-      "fim": "2026-10-13"
+      "fim": "2026-10-13",
+      "anotacao": ""
     },
     {
       "numero": "1.4",
@@ -291,7 +322,8 @@
       "responsavel": "Michele / Emerson (E4U)",
       "status": 4,
       "inicio": "2026-09-24",
-      "fim": "2026-10-13"
+      "fim": "2026-10-13",
+      "anotacao": ""
     },
     {
       "numero": "1.5",
@@ -299,7 +331,8 @@
       "responsavel": "Michele / Emerson (E4U)",
       "status": 4,
       "inicio": "2026-09-24",
-      "fim": "2026-10-13"
+      "fim": "2026-10-13",
+      "anotacao": ""
     },
     {
       "numero": "1.6",
@@ -307,7 +340,8 @@
       "responsavel": "Michele / Emerson (E4U)",
       "status": 4,
       "inicio": "2026-09-24",
-      "fim": "2026-10-13"
+      "fim": "2026-10-13",
+      "anotacao": ""
     },
     {
       "numero": "1.7",
@@ -315,7 +349,8 @@
       "responsavel": "Michele / Emerson (E4U)",
       "status": 4,
       "inicio": "2026-09-24",
-      "fim": "2026-10-13"
+      "fim": "2026-10-13",
+      "anotacao": ""
     },
     {
       "numero": "1.10",
@@ -323,7 +358,8 @@
       "responsavel": "Emerson/Adão (E4U)",
       "status": 4,
       "inicio": "2026-10-13",
-      "fim": "2026-10-15"
+      "fim": "2026-10-15",
+      "anotacao": ""
     },
     {
       "numero": 2,
@@ -331,7 +367,8 @@
       "responsavel": "",
       "status": 2,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "2.1",
@@ -339,7 +376,8 @@
       "responsavel": "",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "2.2",
@@ -347,7 +385,8 @@
       "responsavel": "Edinalva",
       "status": 4,
       "inicio": "2026-09-21",
-      "fim": "2026-09-25"
+      "fim": "2026-09-25",
+      "anotacao": ""
     },
     {
       "numero": "2.3",
@@ -355,7 +394,8 @@
       "responsavel": "",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "2.4",
@@ -363,7 +403,8 @@
       "responsavel": "TI",
       "status": 3,
       "inicio": "2026-09-15",
-      "fim": "2027-03-30"
+      "fim": "2027-03-30",
+      "anotacao": ""
     },
     {
       "numero": "2.5",
@@ -371,7 +412,8 @@
       "responsavel": "Gustavo",
       "status": 0,
       "inicio": "2026-10-23",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     }
   ],
   "historico": [
@@ -411,6 +453,6 @@
   "fonte": {
     "arquivo": "LOG-064 - Rastreabilidade - COMEX.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-064%20-%20Rastreabilidade%20-%20COMEX.xlsx?web=1",
-    "extraidoEm": "2026-11-03T10:54:03-03:00"
+    "extraidoEm": "2026-11-03T16:30:08-03:00"
   }
 }

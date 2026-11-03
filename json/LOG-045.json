@@ -35,7 +35,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-04-24",
-      "fim": "2026-05-13"
+      "fim": "2026-05-13",
+      "anotacao": ""
     },
     {
       "numero": "02.",
@@ -43,7 +44,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-05-07",
-      "fim": "2026-05-11"
+      "fim": "2026-05-11",
+      "anotacao": ""
     },
     {
       "numero": "03.",
@@ -51,7 +53,8 @@
       "responsavel": "Analytics / Michele",
       "status": "A confirmar",
       "inicio": "2026-05-18",
-      "fim": "2026-06-11"
+      "fim": "2026-06-11",
+      "anotacao": ""
     },
     {
       "numero": "04.",
@@ -59,7 +62,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-06-23",
-      "fim": "2026-07-29"
+      "fim": "2026-07-29",
+      "anotacao": ""
     },
     {
       "numero": "05.",
@@ -67,7 +71,8 @@
       "responsavel": "Fiscalização",
       "status": "A confirmar",
       "inicio": "2026-07-29",
-      "fim": "2026-08-28"
+      "fim": "2026-08-28",
+      "anotacao": ""
     },
     {
       "numero": "06.",
@@ -75,7 +80,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "07.",
@@ -83,7 +89,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "08.",
@@ -91,7 +98,8 @@
       "responsavel": "Ingrid Alcici",
       "status": "Concluído",
       "inicio": "2026-08-28",
-      "fim": "2026-08-28"
+      "fim": "2026-08-28",
+      "anotacao": ""
     },
     {
       "numero": "09.",
@@ -99,7 +107,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "10.",
@@ -107,7 +116,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "11.",
@@ -115,7 +125,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "12.",
@@ -123,7 +134,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "13.",
@@ -131,7 +143,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "14.",
@@ -139,7 +152,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "15.",
@@ -147,7 +161,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "16.",
@@ -155,7 +170,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "17.",
@@ -163,7 +179,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "18.",
@@ -171,7 +188,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "19.",
@@ -179,7 +197,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "20.",
@@ -187,7 +206,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "21.",
@@ -195,7 +215,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "22.",
@@ -203,7 +224,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "23.",
@@ -211,7 +233,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "24.",
@@ -219,7 +242,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "25.",
@@ -227,7 +251,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "26.",
@@ -235,7 +260,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "27.",
@@ -243,7 +269,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -253,7 +280,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-04-24",
-      "fim": "2026-05-13"
+      "fim": "2026-05-13",
+      "anotacao": ""
     },
     {
       "numero": "1.1",
@@ -261,7 +289,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-04-24",
-      "fim": "2026-05-11"
+      "fim": "2026-05-11",
+      "anotacao": ""
     },
     {
       "numero": "1.2",
@@ -269,7 +298,8 @@
       "responsavel": "A confirmar",
       "status": "Concluído",
       "inicio": "2026-05-13",
-      "fim": "2026-05-13"
+      "fim": "2026-05-13",
+      "anotacao": ""
     },
     {
       "numero": 2,
@@ -277,7 +307,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-05-07",
-      "fim": "2026-05-11"
+      "fim": "2026-05-11",
+      "anotacao": ""
     },
     {
       "numero": 3,
@@ -285,7 +316,8 @@
       "responsavel": "Analytics / Michele",
       "status": "A confirmar",
       "inicio": "2026-05-18",
-      "fim": "2026-06-11"
+      "fim": "2026-06-11",
+      "anotacao": ""
     },
     {
       "numero": "3.1",
@@ -293,7 +325,8 @@
       "responsavel": "Analytics",
       "status": "A confirmar",
       "inicio": "2026-05-18",
-      "fim": "2026-05-25"
+      "fim": "2026-05-25",
+      "anotacao": ""
     },
     {
       "numero": "3.2",
@@ -301,7 +334,8 @@
       "responsavel": "Michele",
       "status": "A confirmar",
       "inicio": "2026-05-25",
-      "fim": "2026-06-11"
+      "fim": "2026-06-11",
+      "anotacao": ""
     },
     {
       "numero": 4,
@@ -309,7 +343,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-06-23",
-      "fim": "2026-07-29"
+      "fim": "2026-07-29",
+      "anotacao": ""
     },
     {
       "numero": "4.1",
@@ -317,7 +352,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-06-23",
-      "fim": "2026-07-17"
+      "fim": "2026-07-17",
+      "anotacao": ""
     },
     {
       "numero": "4.2",
@@ -325,7 +361,8 @@
       "responsavel": "Michele",
       "status": "A confirmar",
       "inicio": "2026-07-17",
-      "fim": "2026-07-29"
+      "fim": "2026-07-29",
+      "anotacao": ""
     },
     {
       "numero": 5,
@@ -333,7 +370,8 @@
       "responsavel": "Fiscalização",
       "status": "A confirmar",
       "inicio": "2026-07-29",
-      "fim": "2026-08-28"
+      "fim": "2026-08-28",
+      "anotacao": ""
     },
     {
       "numero": 6,
@@ -341,7 +379,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 7,
@@ -349,7 +388,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 8,
@@ -357,7 +397,8 @@
       "responsavel": "Ingrid Alcici",
       "status": "Concluído",
       "inicio": "2026-08-28",
-      "fim": "2026-08-28"
+      "fim": "2026-08-28",
+      "anotacao": ""
     }
   ],
   "historico": [],
@@ -2959,6 +3000,6 @@
   "fonte": {
     "arquivo": "LOG-045 - DUIMP – COMEX (Acompanhamento RFP).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-045%20-%20DUIMP%20%E2%80%93%20COMEX%20%28Acompanhamento%20RFP%29.xlsx?web=1",
-    "extraidoEm": "2026-11-03T10:53:27-03:00"
+    "extraidoEm": "2026-11-03T16:29:49-03:00"
   }
 }
