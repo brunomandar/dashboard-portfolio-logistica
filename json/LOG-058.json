@@ -35,7 +35,8 @@
       "responsavel": "Helder Silva / Bruno Mandar Silva",
       "status": 4,
       "inicio": "2026-05-11",
-      "fim": "2026-05-11"
+      "fim": "2026-05-11",
+      "anotacao": ""
     },
     {
       "numero": "02.",
@@ -43,7 +44,8 @@
       "responsavel": "Fabio Costa",
       "status": 4,
       "inicio": "2026-05-11",
-      "fim": "2026-05-20"
+      "fim": "2026-05-20",
+      "anotacao": ""
     },
     {
       "numero": "03.",
@@ -51,7 +53,8 @@
       "responsavel": "Adriana / André",
       "status": 4,
       "inicio": "2026-05-20",
-      "fim": "2026-06-15"
+      "fim": "2026-06-15",
+      "anotacao": ""
     },
     {
       "numero": "04.",
@@ -59,7 +62,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-06-15",
-      "fim": "2026-06-15"
+      "fim": "2026-06-15",
+      "anotacao": ""
     },
     {
       "numero": "05.",
@@ -67,7 +71,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-06-23",
-      "fim": "2026-07-17"
+      "fim": "2026-07-17",
+      "anotacao": ""
     },
     {
       "numero": "06.",
@@ -75,7 +80,8 @@
       "responsavel": "Fabio Costa",
       "status": 4,
       "inicio": "2026-07-08",
-      "fim": "2026-07-17"
+      "fim": "2026-07-17",
+      "anotacao": ""
     },
     {
       "numero": "07.",
@@ -83,7 +89,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-07-17",
-      "fim": "2026-07-29"
+      "fim": "2026-07-29",
+      "anotacao": ""
     },
     {
       "numero": "08.",
@@ -91,7 +98,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-07-28",
-      "fim": "2026-07-29"
+      "fim": "2026-07-29",
+      "anotacao": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -101,7 +109,8 @@
       "responsavel": "Helder Silva / Bruno Mandar Silva",
       "status": 4,
       "inicio": "2026-05-11",
-      "fim": "2026-05-11"
+      "fim": "2026-05-11",
+      "anotacao": ""
     },
     {
       "numero": "1.1",
@@ -109,7 +118,8 @@
       "responsavel": "Helder Silva",
       "status": 4,
       "inicio": "2026-05-11",
-      "fim": "2026-05-11"
+      "fim": "2026-05-11",
+      "anotacao": ""
     },
     {
       "numero": "1.2",
@@ -117,7 +127,8 @@
       "responsavel": "Bruno Mandar Silva",
       "status": 4,
       "inicio": "2026-05-11",
-      "fim": "2026-05-11"
+      "fim": "2026-05-11",
+      "anotacao": ""
     },
     {
       "numero": "2",
@@ -125,7 +136,8 @@
       "responsavel": "Fabio Costa",
       "status": 4,
       "inicio": "2026-05-11",
-      "fim": "2026-05-20"
+      "fim": "2026-05-20",
+      "anotacao": ""
     },
     {
       "numero": "2.1",
@@ -133,7 +145,8 @@
       "responsavel": "Fabio Costa",
       "status": 4,
       "inicio": "2026-05-11",
-      "fim": "2026-05-20"
+      "fim": "2026-05-20",
+      "anotacao": ""
     },
     {
       "numero": "2.2",
@@ -141,7 +154,8 @@
       "responsavel": "Fabio Costa",
       "status": 4,
       "inicio": "2026-05-11",
-      "fim": "2026-05-20"
+      "fim": "2026-05-20",
+      "anotacao": ""
     },
     {
       "numero": "3",
@@ -149,7 +163,8 @@
       "responsavel": "Adriana / André",
       "status": 4,
       "inicio": "2026-05-20",
-      "fim": "2026-06-15"
+      "fim": "2026-06-15",
+      "anotacao": ""
     },
     {
       "numero": "3.1",
@@ -157,7 +172,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-20",
-      "fim": "2026-06-15"
+      "fim": "2026-06-15",
+      "anotacao": ""
     },
     {
       "numero": "3.2",
@@ -165,7 +181,8 @@
       "responsavel": "Adriana",
       "status": 4,
       "inicio": "2026-05-20",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "3.3",
@@ -173,7 +190,8 @@
       "responsavel": "André",
       "status": 4,
       "inicio": "2026-05-20",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "4",
@@ -181,7 +199,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-06-15",
-      "fim": "2026-06-15"
+      "fim": "2026-06-15",
+      "anotacao": ""
     },
     {
       "numero": "5",
@@ -189,7 +208,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-06-23",
-      "fim": "2026-07-17"
+      "fim": "2026-07-17",
+      "anotacao": ""
     },
     {
       "numero": "5.1",
@@ -197,7 +217,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-06-23",
-      "fim": "2026-07-17"
+      "fim": "2026-07-17",
+      "anotacao": ""
     },
     {
       "numero": "5.2",
@@ -205,7 +226,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-06-23",
-      "fim": "2026-07-17"
+      "fim": "2026-07-17",
+      "anotacao": ""
     },
     {
       "numero": "6",
@@ -213,7 +235,8 @@
       "responsavel": "Fabio Costa",
       "status": 4,
       "inicio": "2026-07-08",
-      "fim": "2026-07-17"
+      "fim": "2026-07-17",
+      "anotacao": ""
     },
     {
       "numero": "6.1",
@@ -221,7 +244,8 @@
       "responsavel": "Fabio Costa",
       "status": 4,
       "inicio": "2026-07-08",
-      "fim": "2026-07-17"
+      "fim": "2026-07-17",
+      "anotacao": ""
     },
     {
       "numero": "6.2",
@@ -229,7 +253,8 @@
       "responsavel": "Fabio Costa",
       "status": 4,
       "inicio": "2026-07-08",
-      "fim": "2026-07-08"
+      "fim": "2026-07-08",
+      "anotacao": ""
     },
     {
       "numero": "7",
@@ -237,7 +262,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-07-17",
-      "fim": "2026-07-29"
+      "fim": "2026-07-29",
+      "anotacao": ""
     },
     {
       "numero": "8",
@@ -245,7 +271,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-07-28",
-      "fim": "2026-07-29"
+      "fim": "2026-07-29",
+      "anotacao": ""
     },
     {
       "numero": "8.1",
@@ -253,7 +280,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-07-28",
-      "fim": "2026-07-28"
+      "fim": "2026-07-28",
+      "anotacao": ""
     },
     {
       "numero": "8.2",
@@ -261,7 +289,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-07-29",
-      "fim": "2026-07-29"
+      "fim": "2026-07-29",
+      "anotacao": ""
     }
   ],
   "historico": [],
@@ -2863,6 +2892,6 @@
   "fonte": {
     "arquivo": "LOG-058 - Migração do TELEVENDAS de correios para Expressa.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-058%20-%20Migra%C3%A7%C3%A3o%20do%20TELEVENDAS%20de%20correios%20para%20Expressa.xlsx?web=1",
-    "extraidoEm": "2026-11-03T10:53:52-03:00"
+    "extraidoEm": "2026-11-03T16:30:02-03:00"
   }
 }

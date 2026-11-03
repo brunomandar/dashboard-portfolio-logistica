@@ -35,7 +35,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-05-21",
-      "fim": "2026-05-21"
+      "fim": "2026-05-21",
+      "anotacao": ""
     },
     {
       "numero": "2",
@@ -43,7 +44,8 @@
       "responsavel": "Reparo / CDs",
       "status": 4,
       "inicio": "2026-05-13",
-      "fim": "2026-06-10"
+      "fim": "2026-06-10",
+      "anotacao": ""
     },
     {
       "numero": "3",
@@ -51,7 +53,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-06-30",
-      "fim": "2026-07-31"
+      "fim": "2026-07-31",
+      "anotacao": ""
     },
     {
       "numero": "4",
@@ -59,7 +62,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-09-23"
+      "fim": "2026-09-23",
+      "anotacao": ""
     },
     {
       "numero": "5",
@@ -67,7 +71,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "6",
@@ -75,7 +80,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "7",
@@ -83,7 +89,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-09-22",
-      "fim": "2026-09-29"
+      "fim": "2026-09-29",
+      "anotacao": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -93,7 +100,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-05-21",
-      "fim": "2026-05-21"
+      "fim": "2026-05-21",
+      "anotacao": ""
     },
     {
       "numero": "1.1",
@@ -101,7 +109,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "1.2",
@@ -109,7 +118,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "1.3",
@@ -117,7 +127,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "1.4",
@@ -125,7 +136,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-21",
-      "fim": "2026-05-21"
+      "fim": "2026-05-21",
+      "anotacao": ""
     },
     {
       "numero": "1.5",
@@ -133,7 +145,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-21",
-      "fim": "2026-05-21"
+      "fim": "2026-05-21",
+      "anotacao": ""
     },
     {
       "numero": "2",
@@ -141,7 +154,8 @@
       "responsavel": "Reparo / CDs",
       "status": 4,
       "inicio": "2026-05-13",
-      "fim": "2026-06-10"
+      "fim": "2026-06-10",
+      "anotacao": ""
     },
     {
       "numero": "2.1",
@@ -149,7 +163,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "2.2",
@@ -157,7 +172,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-13",
-      "fim": "2026-06-10"
+      "fim": "2026-06-10",
+      "anotacao": ""
     },
     {
       "numero": "2.3",
@@ -165,7 +181,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-21",
-      "fim": "2026-05-21"
+      "fim": "2026-05-21",
+      "anotacao": ""
     },
     {
       "numero": "2.4",
@@ -173,7 +190,8 @@
       "responsavel": "Reparo",
       "status": 4,
       "inicio": "2026-05-27",
-      "fim": "2026-06-10"
+      "fim": "2026-06-10",
+      "anotacao": ""
     },
     {
       "numero": "2.5",
@@ -181,7 +199,8 @@
       "responsavel": "Reparo / CDs",
       "status": 4,
       "inicio": "2026-06-10",
-      "fim": "2026-06-10"
+      "fim": "2026-06-10",
+      "anotacao": ""
     },
     {
       "numero": "3",
@@ -189,7 +208,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-06-30",
-      "fim": "2026-07-31"
+      "fim": "2026-07-31",
+      "anotacao": ""
     },
     {
       "numero": "3.1",
@@ -197,7 +217,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-06-30",
-      "fim": "2026-06-30"
+      "fim": "2026-06-30",
+      "anotacao": ""
     },
     {
       "numero": "3.2",
@@ -205,7 +226,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-07-17",
-      "fim": "2026-07-31"
+      "fim": "2026-07-31",
+      "anotacao": ""
     },
     {
       "numero": "4",
@@ -213,7 +235,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-09-23"
+      "fim": "2026-09-23",
+      "anotacao": ""
     },
     {
       "numero": "4.1",
@@ -221,7 +244,8 @@
       "responsavel": "Área da Cléria",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-08-17"
+      "fim": "2026-08-17",
+      "anotacao": ""
     },
     {
       "numero": "4.2",
@@ -229,7 +253,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-08-14",
-      "fim": "2026-08-14"
+      "fim": "2026-08-14",
+      "anotacao": ""
     },
     {
       "numero": "4.3",
@@ -237,7 +262,8 @@
       "responsavel": "Time de Liberação de Processos",
       "status": 4,
       "inicio": "2026-08-28",
-      "fim": "2026-08-28"
+      "fim": "2026-08-28",
+      "anotacao": ""
     },
     {
       "numero": "4.4",
@@ -245,7 +271,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-09-23",
-      "fim": "2026-09-23"
+      "fim": "2026-09-23",
+      "anotacao": ""
     },
     {
       "numero": "5",
@@ -253,7 +280,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "5.1",
@@ -261,7 +289,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "5.2",
@@ -269,7 +298,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "5.3",
@@ -277,7 +307,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "5.4",
@@ -285,7 +316,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "5.5",
@@ -293,7 +325,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "5.6",
@@ -301,7 +334,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "5.7",
@@ -309,7 +343,8 @@
       "responsavel": "Planejamento / Reparo / Time R&S",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "6",
@@ -317,7 +352,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "6.1",
@@ -325,7 +361,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "6.2",
@@ -333,7 +370,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "7",
@@ -341,7 +379,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-09-22",
-      "fim": "2026-09-29"
+      "fim": "2026-09-29",
+      "anotacao": ""
     },
     {
       "numero": "7.1",
@@ -349,7 +388,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-09-22",
-      "fim": "2026-09-22"
+      "fim": "2026-09-22",
+      "anotacao": ""
     },
     {
       "numero": "7.2",
@@ -357,7 +397,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-09-24",
-      "fim": "2026-09-24"
+      "fim": "2026-09-24",
+      "anotacao": ""
     },
     {
       "numero": "7.3",
@@ -365,7 +406,8 @@
       "responsavel": "Carlos",
       "status": 4,
       "inicio": "2026-09-29",
-      "fim": "2026-09-29"
+      "fim": "2026-09-29",
+      "anotacao": ""
     }
   ],
   "historico": [],
@@ -2967,6 +3009,6 @@
   "fonte": {
     "arquivo": "LOG-019 - Empresarial – Aumento da Logística Reversa.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-019%20-%20Empresarial%20%E2%80%93%20Aumento%20da%20Log%C3%ADstica%20Reversa.xlsx?web=1",
-    "extraidoEm": "2026-11-03T10:52:40-03:00"
+    "extraidoEm": "2026-11-03T16:29:17-03:00"
   }
 }
