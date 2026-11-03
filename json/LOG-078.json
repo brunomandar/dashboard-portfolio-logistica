@@ -248,8 +248,8 @@
   ],
   "cronogramaDetalhado": [
     {
-      "numero": "1. Entendimento da Nova Regulamentação",
-      "atividade": "",
+      "numero": "1.",
+      "atividade": "Entendimento da Nova Regulamentação",
       "responsavel": "",
       "status": 4,
       "inicio": "2026-10-19",
@@ -296,8 +296,8 @@
       "fim": "2026-10-20"
     },
     {
-      "numero": "2. Estruturação da Apresentação da Regulamentação",
-      "atividade": "",
+      "numero": "2.",
+      "atividade": "Estruturação da Apresentação da Regulamentação",
       "responsavel": "",
       "status": 0,
       "inicio": "",
@@ -344,8 +344,8 @@
       "fim": ""
     },
     {
-      "numero": "3. Elaboração do Cronograma do Projeto",
-      "atividade": "",
+      "numero": "3.",
+      "atividade": "Elaboração do Cronograma do Projeto",
       "responsavel": "",
       "status": 0,
       "inicio": "",
@@ -392,8 +392,8 @@
       "fim": ""
     },
     {
-      "numero": "4. Agenda para Definição dos Próximos Passos",
-      "atividade": "",
+      "numero": "4.",
+      "atividade": "Agenda para Definição dos Próximos Passos",
       "responsavel": "",
       "status": 0,
       "inicio": "",
@@ -440,8 +440,8 @@
       "fim": ""
     },
     {
-      "numero": "5. Elaboração do Plano de Ação",
-      "atividade": "",
+      "numero": "5.",
+      "atividade": "Elaboração do Plano de Ação",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -488,8 +488,8 @@
       "fim": ""
     },
     {
-      "numero": "6. Desenho do Fluxo de Pagamento",
-      "atividade": "",
+      "numero": "6.",
+      "atividade": "Desenho do Fluxo de Pagamento",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -584,8 +584,8 @@
       "fim": ""
     },
     {
-      "numero": "8. Implantação e Acompanhamento",
-      "atividade": "",
+      "numero": "8.",
+      "atividade": "Implantação e Acompanhamento",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -632,8 +632,8 @@
       "fim": ""
     },
     {
-      "numero": "9. Aditivo Contratual com os Transportadores",
-      "atividade": "",
+      "numero": "9.",
+      "atividade": "Aditivo Contratual com os Transportadores",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -680,8 +680,8 @@
       "fim": ""
     },
     {
-      "numero": "10. Comunicado do Novo Processo para as Transportadoras",
-      "atividade": "",
+      "numero": "10.",
+      "atividade": "Comunicado do Novo Processo para as Transportadoras",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -728,8 +728,8 @@
       "fim": ""
     },
     {
-      "numero": "11. Validação do Novo Fluxo com as Áreas",
-      "atividade": "",
+      "numero": "11.",
+      "atividade": "Validação do Novo Fluxo com as Áreas",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -770,278 +770,6 @@
     {
       "numero": "11.5",
       "atividade": "Aprovação final para entrada em operação",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 67,
-      "atividade": "67. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 68,
-      "atividade": "68. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 69,
-      "atividade": "69. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 70,
-      "atividade": "70. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 71,
-      "atividade": "71. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 72,
-      "atividade": "72. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 73,
-      "atividade": "73. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 74,
-      "atividade": "74. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 75,
-      "atividade": "75. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 76,
-      "atividade": "76. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 77,
-      "atividade": "77. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 78,
-      "atividade": "78. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 79,
-      "atividade": "79. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 80,
-      "atividade": "80. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 81,
-      "atividade": "81. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 82,
-      "atividade": "82. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 83,
-      "atividade": "83. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 84,
-      "atividade": "84. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 85,
-      "atividade": "85. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 86,
-      "atividade": "86. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 87,
-      "atividade": "87. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 88,
-      "atividade": "88. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 89,
-      "atividade": "89. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 90,
-      "atividade": "90. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 91,
-      "atividade": "91. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 92,
-      "atividade": "92. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 93,
-      "atividade": "93. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 94,
-      "atividade": "94. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 95,
-      "atividade": "95. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 96,
-      "atividade": "96. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 97,
-      "atividade": "97. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 98,
-      "atividade": "98. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 99,
-      "atividade": "99. ",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": ""
-    },
-    {
-      "numero": 100,
-      "atividade": "100. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -3647,6 +3375,6 @@
   "fonte": {
     "arquivo": "LOG-078 - Regulamentacão do Prazo de Pagamentos (30 Dias úteis).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-078%20-%20Regulamentac%C3%A3o%20do%20Prazo%20de%20Pagamentos%20%2830%20Dias%20%C3%BAteis%29.xlsx?web=1",
-    "extraidoEm": "2026-11-03T09:45:14-03:00"
+    "extraidoEm": "2026-11-03T10:54:47-03:00"
   }
 }

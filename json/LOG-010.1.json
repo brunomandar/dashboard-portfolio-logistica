@@ -1050,14 +1050,29 @@
   ],
   "historico": [
     {
-      "data": "2026-10-19",
-      "acoes": "Comparas/Mck :Receber/revisar as cotações de Engenharia considerando mesorregiões",
-      "detalhe": "Engenharia: BID avançando, mas o aumento de escopo das cotações e as dúvidas sobre mesorregiões podem pressionar o prazo.\nAvaliar distribuição/reequilíbrio das rotas conforme competitividade final"
+      "data": "2026-11-03",
+      "acoes": "Logistica : Apresentar o fluxo de cotação e esteira de canal vermelho",
+      "detalhe": ""
+    },
+    {
+      "data": "2026-10-30",
+      "acoes": "Mck:Agenda chekpoint executivo",
+      "detalhe": "1- Resultado do BID de engenharia e os próximos passos\nRealizada e equalização teve redução para o top rotas. Celistics melhorou. Temos um impacto de 12,5MM\nAgora foi inserido a picadeira, com a cotação por meso, os valores vieram altos, quase todas com penalty\nPode ser que seja necessário realizar uma nova volta com os parceiros com maior volumetria\nTemos que garantir a distribuição no mapa nacional.\nAnálise para validação deste percentual no volume, se for baixo podemos flexibilizar. (Decisão do Fabricio)\nO BID será levado na mesa de frete na próxima terça para só então irmos para o R4 (Last call)"
+    },
+    {
+      "data": "2026-10-30",
+      "acoes": "Mck:Agenda chekpoint executivo",
+      "detalhe": "2- Tema transportadores\nQuais devem permanecer o sair\nIBL\nMcTech\nMarcia sugere uma agenda após a conclusão do mapa final sobre quais fazem sentido ficar e serem desqualificados\nExiste risco, mas é baixo, já que não somo contratante única\nO risco existe e a tomada de decisão tem que ser feita em várias mãos\nUm ponto importante e a adequação/validação dos transportadores na lista final (short list)"
     },
     {
       "data": "2026-10-29",
       "acoes": "Logistica : Iniciativas TMS , Construir fluxo cotação/CV",
-      "detalhe": "Fluxo construido, agendar reunião com a gestão para apresentação do novo fluxo."
+      "detalhe": "Fluxo construido, agendar reunião com a gestão para apresentação do novo fluxo, a ideia é que  agenda do dia 03/11 conclusiva para inicar a abertura do chamado de desenvolvimento"
+    },
+    {
+      "data": "2026-10-19",
+      "acoes": "Comparas/Mck :Receber/revisar as cotações de Engenharia considerando mesorregiões",
+      "detalhe": "Engenharia: BID avançando, mas o aumento de escopo das cotações e as dúvidas sobre mesorregiões podem pressionar o prazo.\nAvaliar distribuição/reequilíbrio das rotas conforme competitividade final"
     },
     {
       "data": "2026-10-19",
@@ -1143,11 +1158,6 @@
       "data": "2026-07-01",
       "acoes": "Logistica : Apresentar a estrura para para Mck",
       "detalhe": "Aqui foi colocado a mesa qual seria o foco do BID"
-    },
-    {
-      "data": "2026-10-30",
-      "acoes": "Mck:Agenda chekpoint executivo",
-      "detalhe": "1- Resultado do BID de engenharia e os próximos passos\nRealizada e equalização teve redução para o top rotas. Celistics melhorou. Temos um impacto de 12,5MM\nAgora foi inserido a picadeira, com a cotação por meso, os valores vieram altos, quase todas com penalty\nPode ser que seja necessário realizar uma nova volta com os parceiros com maior volumetria\nTemos que garantir a distribuição no mapa nacional.\nAnálise para validação deste percentual no volume, se for baixo podemos flexibilizar. (Decisão do Fabricio)\nO BID será levado na mesa de frete na próxima terça para só então irmos para o R4 (Last call)"
     }
   ],
   "statusProjeto": "Risco:\ndata - Pontos relevantes para aquele evento\n30/10/26 -",
@@ -3748,6 +3758,6 @@
   "fonte": {
     "arquivo": "LOG-010.1 - BID Transportes - Engenharia.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.1%20-%20BID%20Transportes%20-%20Engenharia.xlsx?web=1",
-    "extraidoEm": "2026-11-03T09:42:57-03:00"
+    "extraidoEm": "2026-11-03T10:51:51-03:00"
   }
 }
