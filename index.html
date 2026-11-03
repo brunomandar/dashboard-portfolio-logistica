@@ -1339,6 +1339,18 @@ body.project-open .topbar{display:none!important}
 .roadmap-tooltip.info-tooltip dl{display:grid;grid-template-columns:auto auto;gap:3px 14px;margin:0}
 .roadmap-tooltip.info-tooltip dt{color:#bfbfbf;font-weight:600}
 .roadmap-tooltip.info-tooltip dd{margin:0;font-weight:800;text-align:right}
+/* Cronogramas: bloco do mês preenchido proporcionalmente aos dias, na altura inteira */
+#projectSchedule .road-row>.schedule-month-cell{position:relative!important;display:block!important;align-self:stretch!important;height:auto!important;min-height:100%!important;padding:0!important}
+#projectSchedule .road-block.road-fill{position:absolute!important;top:0!important;bottom:0!important;height:auto!important;min-width:2px;margin-right:0!important;cursor:default}
+/* Projeto qualitativo: progresso geral no lugar do gráfico financeiro */
+#projectView .qualitative-progress{display:flex;flex-direction:column}
+#projectView .qualitative-progress .qp-bar-row{display:flex;align-items:center;gap:14px;margin:22px 0 18px}
+#projectView .qualitative-progress .qp-bar{flex:1;height:18px;background:#e9e9e9;border-radius:999px;overflow:hidden}
+#projectView .qualitative-progress .qp-bar i{display:block;height:100%;background:linear-gradient(90deg,#df3232,#c00000);border-radius:999px}
+#projectView .qualitative-progress .qp-pct{font-size:26px;font-weight:850;color:#1f1f1f;min-width:64px;text-align:right}
+#projectView .qualitative-progress .qp-list{display:grid;grid-template-columns:1fr auto;gap:9px 20px;margin:0;font-size:13px}
+#projectView .qualitative-progress .qp-list dt{color:#7f7f7f}
+#projectView .qualitative-progress .qp-list dd{margin:0;font-weight:800;color:#1f1f1f;text-align:right}
 /* Totalizador por gerência */
 .manager-total{text-align:center;font-size:12px;color:#7f7f7f;margin-bottom:18px}
 .manager-total b{color:#1f1f1f}

@@ -125,6 +125,16 @@ def texto_celula(valor):
     return str(valor) if valor != "" else ""
 
 
+def anotacao_linha(ws, linha, col_ini, col_fim=None):
+    """Anotação em qualquer célula da linha da etapa: nº, atividade, responsável, status, datas e gantt."""
+    col_fim = col_fim or ws.max_column
+    for c in range(col_ini, col_fim + 1):
+        texto = anotacao(ws.cell(linha, c))
+        if texto:
+            return texto
+    return ""
+
+
 def anotacao(celula):
     """Texto da anotação (comentário) do Excel na célula, sem o nome do autor."""
     comentario = getattr(celula, "comment", None)
@@ -258,7 +268,7 @@ def ler_one_page(ws):
                 "status": inteiro_ou_texto(ws.cell(r, cAtv + 2).value),
                 "inicio": data_iso(ws.cell(r, cAtv + 4).value),
                 "fim": data_iso(ws.cell(r, cAtv + 5).value),
-                "anotacao": anotacao(ws.cell(r, cAtv)) or anotacao(ws.cell(r, cNum)),
+                "anotacao": anotacao_linha(ws, r, cNum),
             })
             r += 1
     dados["macroAtividades"] = macro
@@ -295,7 +305,7 @@ def ler_cronograma(ws):
             "status": inteiro_ou_texto(ws.cell(r, 5).value),
             "inicio": data_iso(ws.cell(r, 7).value),
             "fim": data_iso(ws.cell(r, 8).value),
-            "anotacao": anotacao(ws.cell(r, 3)) or anotacao(ws.cell(r, 2)),
+            "anotacao": anotacao_linha(ws, r, 2),
         })
     return itens
 
@@ -466,7 +476,10 @@ def main():
             projeto = processar(caminho)
             projetos.append(projeto)
             vistos[pid] = nome
-            print(f"  OK  {pid}  {projeto['projeto']}")
+            reprog = [etapa for etapa in projeto["macroAtividades"] + projeto["cronogramaDetalhado"] if etapa.get("anotacao")]
+            print(f"  OK  {pid}  {projeto['projeto']}" + (f"  [{len(reprog)} etapa(s) reprogramada(s)]" if reprog else ""))
+            for etapa in reprog:
+                print(f"        - {etapa.get('numero')} {etapa.get('atividade')}: {etapa['anotacao']}")
         except Exception as erro:  # segue com os demais projetos
             erros.append(f"{nome}: {erro}")
             print(f"  ERRO {nome}: {erro}")

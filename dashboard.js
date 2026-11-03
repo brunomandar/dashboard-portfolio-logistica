@@ -545,6 +545,26 @@
     return `<g stroke="#e8ebf0" stroke-width="1"><line x1="0" y1="30" x2="900" y2="30"/><line x1="0" y1="83" x2="900" y2="83"/><line x1="0" y1="136" x2="900" y2="136"/><line x1="0" y1="190" x2="900" y2="190"/></g><polyline fill="none" stroke="#bfbfbf" stroke-width="3" points="${points(lines.Budget)}"/><polyline fill="none" stroke="#ed7d31" stroke-width="4" points="${points(lines.Fcst)}"/><polyline fill="none" stroke="#c00000" stroke-width="4" points="${points(lines.Real)}"/>`;
   }
 
+  function isQualitative(project) {
+    return clean(project.ganhoProjeto).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().startsWith('qualitativ');
+  }
+
+  // Projetos qualitativos: progresso geral pelas etapas do macrocronograma
+  function qualitativeProgressCard(project) {
+    const items = scheduleItemsOf(project, 'macro');
+    const total = items.length;
+    const count = code => items.filter(item => effectiveScheduleStatus(item) === code).length;
+    const done = count(4);
+    const percent = total ? Math.round(done * 100 / total) : 0;
+    const rows = [
+      ['Etapas concluídas', `${done} / ${total}`],
+      ['Em andamento', count(1)],
+      ['Em risco', count(2)],
+      ['Atrasadas', count(3)]
+    ];
+    return `<article class="card line-chart project-finance-chart qualitative-progress"><div class="chart-title">Progresso geral do projeto</div><div class="chart-sub">Projeto qualitativo · calculado pelas etapas do macrocronograma</div>${total ? `<div class="qp-bar-row"><div class="qp-bar"><i style="width:${percent}%"></i></div><b class="qp-pct">${percent}%</b></div><dl class="qp-list">${rows.map(([label, value]) => `<dt>${esc(label)}</dt><dd>${esc(value)}</dd>`).join('')}</dl>` : '<div class="empty-state">Macrocronograma sem etapas registradas.</div>'}</article>`;
+  }
+
   function projectFinanceChart(project) {
     const LABELS = ['JAN','FEV','MAR','ABR','MAI','JUN','JUL','AGO','SET','OUT','NOV','DEZ'];
     const endMatch = clean(project.termino).match(/^(\d{4})-(\d{2})/);
@@ -739,6 +759,20 @@
   }
   bindInfoTooltip();
 
+  // v36: parte do mês ocupada pela etapa (proporcional aos dias)
+  function monthFill(item, monthKey) {
+    const [year, month] = monthKey.split('-').map(Number);
+    const days = new Date(year, month, 0).getDate();
+    const start = scheduleDate(item.inicio || item.fim);
+    const end = scheduleDate(item.fim || item.termino || item.inicio);
+    const inMonth = date => date && date.getFullYear() === year && date.getMonth() === month - 1;
+    const from = inMonth(start) ? (start.getDate() - 1) / days : 0;
+    const to = inMonth(end) ? end.getDate() / days : 1;
+    const left = Math.max(0, Math.min(1, from));
+    const width = Math.max(0.02, Math.min(1, to) - left);
+    return { left: (left * 100).toFixed(2), width: (width * 100).toFixed(2) };
+  }
+
   function scheduleDate(value) {
     const match = clean(value).match(/^(\d{4})-(\d{2})(?:-(\d{2}))?/);
     if (!match) return null;
@@ -796,7 +830,12 @@
       const topicLabel = `${topicNumber} · ${activity}`;
       const period = `${formatDate(item.inicio)} → ${formatDate(item.fim || item.termino)}`;
       const barTitle = `${topicLabel} · ${period} · Status ${statusCode}: ${status.label}`;
-      return `<div class="road-row"><div class="road-name" title="${esc(topicLabel)}"><b>${esc(topicNumber)}</b><span>${esc(activity)}${noteTag}</span></div>${months.map(month => overlaps(item, month.key) ? `<div class="road-block ${status.className}" title="${esc(barTitle)}" aria-label="${esc(barTitle)}"></div>` : '<div class="road-cell"></div>').join('')}</div>`;
+      const periodTip = `data-info-tip="${esc(JSON.stringify({ t: 'Período', text: period }))}"`;
+      return `<div class="road-row"><div class="road-name"><b>${esc(topicNumber)}</b><span>${esc(activity)}${noteTag}</span></div>${months.map(month => {
+        if (!overlaps(item, month.key)) return '<div class="road-cell"></div>';
+        const fill = monthFill(item, month.key);
+        return `<div class="road-cell schedule-month-cell"><div class="road-block road-fill ${status.className}" style="margin-left:${fill.left}%;width:${fill.width}%" ${periodTip}></div></div>`;
+      }).join('')}</div>`;
     }).join('');
   }
 
@@ -902,7 +941,7 @@
       <section class="detail-grid"><article class="card detail"><small>Saving Opex 12M</small><b>${moneyMM(savingField(project, 'opex12M'))}</b></article><article class="card detail"><small>Saving Capex 12M</small><b>${moneyMM(savingField(project, 'capex12M'))}</b></article><article class="card detail"><small>Saving total 12M</small><b>${moneyMM(savingField(project, 'total12M'))}</b></article><article class="card detail"><small>Saving 2026</small><b>${moneyMM(savingField(project, 'total2026'))}</b></article></section>
       <section class="section two-col"><article class="card text-card scroll-card"><div class="chart-title">Escopo do projeto</div><p class="scroll-content">${esc(project.escopo || 'Escopo não preenchido no arquivo de origem.')}</p></article><article class="card text-card scroll-card"><div class="chart-title">Principais entregáveis</div><ul class="checklist scroll-content">${deliverables.length ? deliverables.map(item => `<li>${esc(item)}</li>`).join('') : '<li>Entregáveis não preenchidos no arquivo de origem.</li>'}</ul></article></section>
       <section class="section"><div class="section-head"><div><h2>Cronograma do projeto</h2><p>Alternância entre visão executiva e detalhada.</p></div></div><div class="tabs"><button class="tab ${state.scheduleMode === 'macro' ? 'active' : ''}" type="button" ${scheduleSummaryAttr(project, 'macro', 'Resumo do macrocronograma')} onclick="switchSchedule('macro')">Macrocronograma</button>${canOpenDetailed(project) ? `<button class="tab ${state.scheduleMode === 'detalhado' ? 'active' : ''}" type="button" ${scheduleSummaryAttr(project, 'detalhado', 'Resumo do cronograma detalhado')} onclick="switchSchedule('detalhado')">Cronograma detalhado</button>` : `<button class="tab tab-locked" type="button" disabled title="Cronograma detalhado disponível apenas para projetos da gerência de Transportes">🔒 Cronograma detalhado</button>`}</div><article class="card roadmap-card" id="projectSchedule">${scheduleCard(project, state.scheduleMode)}</article></section>
-      <section class="section two-col"><article class="card line-chart project-finance-chart"><div class="chart-title">Desempenho financeiro do projeto</div><div class="chart-sub">${esc(projectFinance.sub)}</div>${projectFinance.body}</article><article class="card timeline"><div class="chart-title" style="margin-bottom:18px">Histórico de atualizações</div>${projectRiskNote(project) ? `<div class="timeline-risk"><b>⚠ Risco</b><p>${esc(projectRiskNote(project))}</p></div>` : ''}${timeline.length ? timeline.map(item => `<div class="time-item"><div class="time-date">${shortDate(item.data)}</div><div class="time-line"></div><div class="time-copy"><b>Atualização registrada</b><p>${esc(item.detalhe)}</p></div></div>`).join('') : '<div class="empty-state">Sem atualizações registradas no Status do Projeto.</div>'}</article></section>`;
+      <section class="section two-col">${isQualitative(project) ? qualitativeProgressCard(project) : `<article class="card line-chart project-finance-chart"><div class="chart-title">Desempenho financeiro do projeto</div><div class="chart-sub">${esc(projectFinance.sub)}</div>${projectFinance.body}</article>`}<article class="card timeline"><div class="chart-title" style="margin-bottom:18px">Histórico de atualizações</div>${projectRiskNote(project) ? `<div class="timeline-risk"><b>⚠ Risco</b><p>${esc(projectRiskNote(project))}</p></div>` : ''}${timeline.length ? timeline.map(item => `<div class="time-item"><div class="time-date">${shortDate(item.data)}</div><div class="time-line"></div><div class="time-copy"><b>Atualização registrada</b><p>${esc(item.detalhe)}</p></div></div>`).join('') : '<div class="empty-state">Sem atualizações registradas no Status do Projeto.</div>'}</article></section>`;
   }
 
   function renderDashboard() {
