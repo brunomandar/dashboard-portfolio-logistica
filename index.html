@@ -1309,6 +1309,36 @@ body.project-open .topbar{display:none!important}
 .manager-bars div{width:auto!important;flex:0 1 64px;min-width:40px}
 .manager-total{margin-bottom:26px!important}
 .manager-legend{margin-top:12px!important}
+/* Tooltips de lista (saúde do portfólio e gerência x fórum): compactos */
+.donut-wrap .legend .legend-item,.bars .bar-group{cursor:default}
+.donut.donut-v2 .donut-arc,.manager-bars>div[data-list-tip]{cursor:pointer}
+.roadmap-tooltip.list-tooltip{min-width:0!important;max-width:300px!important;padding:8px 10px!important;font-size:10.5px!important;line-height:1.25!important;border-radius:9px!important}
+.roadmap-tooltip.list-tooltip>b{font-size:11px!important;margin-bottom:5px!important;padding-bottom:4px!important}
+.roadmap-tooltip.list-tooltip ul{margin:0;padding-left:14px}
+.roadmap-tooltip.list-tooltip li{margin:1px 0;font-weight:600}
+.roadmap-tooltip.list-tooltip .list-more{margin-top:4px;color:#bfbfbf}
+.donut-wrap .legend div{min-width:230px!important}
+/* Macro e cronograma detalhado: cabeçalho "Tópico e etapa" e meses maiores */
+#projectSchedule .months>div{font-size:11.5px!important}
+#projectSchedule .months>div:first-child{font-size:11px!important}
+#projectSchedule .month-label{gap:4px!important}
+#projectSchedule .month-label span{font-size:10px!important}
+/* Projeto individual: cronograma detalhado bloqueado e busca de projetos */
+#projectView .tab.tab-locked{opacity:.55;cursor:not-allowed;background:#f2f2f2!important;color:#7f7f7f!important}
+.project-view .project-topbar .project-search{position:relative}
+.project-view .project-topbar .project-search input{width:280px;height:36px;padding:0 12px;border:1px solid #d9d9d9;border-radius:10px;font-size:12px;background:#fff;outline:none}
+.project-view .project-topbar .project-search input:focus{border-color:#df3232;box-shadow:0 0 0 3px rgba(223,50,50,.12)}
+.project-search-results{display:none;position:absolute;top:40px;left:0;z-index:50;width:420px;max-height:320px;overflow-y:auto;background:#fff;border:1px solid #d9d9d9;border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,.14);padding:4px}
+.project-search-results.show{display:block}
+.project-search-results button{display:block;width:100%;text-align:left;border:0;background:#fff;padding:7px 10px;border-radius:7px;font-size:12px;color:#1f1f1f;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.project-search-results button:hover{background:#fbeaea;color:#c00000}
+.project-search-results .empty{padding:8px 10px;font-size:12px;color:#7f7f7f}
+/* Cronogramas: tag reprogramado e tooltip de resumo */
+#projectSchedule .road-name .reprog-tag{display:inline-block;margin-left:8px;padding:1px 7px;border-radius:999px;background:#fdf0e6;color:#b85a15;font-style:normal;font-size:9.5px;font-weight:800;vertical-align:middle;cursor:help;white-space:nowrap}
+.roadmap-tooltip.info-tooltip .info-text{white-space:pre-line;font-weight:600}
+.roadmap-tooltip.info-tooltip dl{display:grid;grid-template-columns:auto auto;gap:3px 14px;margin:0}
+.roadmap-tooltip.info-tooltip dt{color:#bfbfbf;font-weight:600}
+.roadmap-tooltip.info-tooltip dd{margin:0;font-weight:800;text-align:right}
 /* Totalizador por gerência */
 .manager-total{text-align:center;font-size:12px;color:#7f7f7f;margin-bottom:18px}
 .manager-total b{color:#1f1f1f}

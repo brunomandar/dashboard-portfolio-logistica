@@ -329,15 +329,55 @@
   }
   bindRiskTooltip();
 
+  function bindListTooltip() {
+    if (window.__listTooltipBound) return;
+    window.__listTooltipBound = true;
+    let tip = null;
+    const hostOf = target => target && target.closest ? target.closest('[data-list-tip]') : null;
+    const place = event => {
+      if (!tip) return;
+      const pad = 12, w = tip.offsetWidth, h = tip.offsetHeight;
+      let x = event.clientX + pad, y = event.clientY + pad;
+      if (x + w > window.innerWidth - 8) x = event.clientX - w - pad;
+      if (y + h > window.innerHeight - 8) y = event.clientY - h - pad;
+      tip.style.left = `${Math.max(8, x)}px`;
+      tip.style.top = `${Math.max(8, y)}px`;
+    };
+    document.addEventListener('mouseover', event => {
+      const host = hostOf(event.target);
+      if (!host) return;
+      let list = [];
+      try { list = JSON.parse(host.getAttribute('data-list-tip')); } catch (error) { list = []; }
+      const title = host.getAttribute('data-list-title') || 'Projetos';
+      if (!tip) { tip = document.createElement('div'); tip.className = 'roadmap-tooltip list-tooltip'; document.body.appendChild(tip); }
+      const shown = list.slice(0, 25);
+      tip.innerHTML = `<b>${esc(title)} (${list.length})</b>${list.length ? `<ul>${shown.map(item => `<li>${esc(item)}</li>`).join('')}</ul>${list.length > shown.length ? `<div class="list-more">+ ${list.length - shown.length} projeto(s)</div>` : ''}` : '<div class="list-more">Nenhum projeto.</div>'}`;
+      tip.classList.add('show');
+      place(event);
+    });
+    document.addEventListener('mousemove', event => { if (tip && tip.classList.contains('show')) place(event); });
+    document.addEventListener('mouseout', event => {
+      const host = hostOf(event.target);
+      if (!host || (event.relatedTarget && host.contains(event.relatedTarget))) return;
+      if (tip) tip.classList.remove('show');
+    });
+  }
+  bindListTooltip();
+
   function renderHealth(projects) {
     // Rosca pelo estágio (L) de TODOS os projetos do recorte
     const STAGE_GROUP = { L0: 'Backlog', L1: 'Planejado', L2: 'Planejado', L3: 'Em Execução', L4: 'Em Execução', L5: 'Concluído' };
     const GROUP_COLORS = { 'Backlog': '#bfbfbf', 'Planejado': '#ffc000', 'Em Execução': '#c00000', 'Concluído': '#530b03', 'Sem estágio': '#7f7f7f' };
-    const groupOf = project => STAGE_GROUP[clean(project.status).toUpperCase()] || 'Sem estágio';
-    const situationCounts = countsBy(projects, groupOf);
-    const situations = ['Backlog','Planejado','Em Execução','Concluído','Sem estágio'].filter(value => situationCounts[value]);
+    const groupOf = project => STAGE_GROUP[clean(project.status).toUpperCase()] || '';
+    const staged = projects.filter(project => groupOf(project));
+    const situationCounts = countsBy(staged, groupOf);
+    const situations = ['Backlog','Planejado','Em Execução','Concluído'].filter(value => situationCounts[value]);
+    const GROUP_LABELS = { 'Backlog': 'Backlog - L0', 'Planejado': 'Planejado - L1 e L2', 'Em Execução': 'Em Execução - L3 e L4', 'Concluído': 'Concluído - L5' };
+    const labelOf = key => GROUP_LABELS[key] || key;
     const colorOf = key => GROUP_COLORS[key] || '#7f7f7f';
-    const total = projects.length;
+    const total = staged.length;
+    const listAttr = (title, list) => `data-list-title="${esc(title)}" data-list-tip="${esc(JSON.stringify(list.slice().sort((a, b) => idNumber(a.id) - idNumber(b.id)).map(project => `${project.id} · ${clean(project.projeto)}`)))}"`;
+    const groupAttr = key => listAttr(labelOf(key), staged.filter(project => groupOf(project) === key));
     let cursor = 0;
     const stops = [];
     situations.forEach((key, index) => {
@@ -359,14 +399,14 @@
         const value = situationCounts[key] || 0;
         const length = total ? value * circumference / total : 0;
         const visible = Math.max(0.01, length - gap);
-        const arc = `<circle class="donut-arc" cx="100" cy="100" r="${radius}" fill="none" stroke="${colorOf(key)}" stroke-width="20" stroke-linecap="round" stroke-dasharray="${visible.toFixed(2)} ${circumference.toFixed(2)}" stroke-dashoffset="${(-offset - gap / 2).toFixed(2)}" transform="rotate(-90 100 100)"><title>${esc(key)}: ${value}</title></circle>`;
+        const arc = `<circle class="donut-arc" ${groupAttr(key)} cx="100" cy="100" r="${radius}" fill="none" stroke="${colorOf(key)}" stroke-width="20" stroke-linecap="round" stroke-dasharray="${visible.toFixed(2)} ${circumference.toFixed(2)}" stroke-dashoffset="${(-offset - gap / 2).toFixed(2)}" transform="rotate(-90 100 100)"><title>${esc(key)}: ${value}</title></circle>`;
         offset += length;
         return arc;
       }).join('');
       donut.innerHTML = `<svg viewBox="0 0 200 200" aria-hidden="true"><defs><filter id="donutShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#18212f" flood-opacity=".12"/></filter></defs><circle cx="100" cy="100" r="${radius}" fill="none" stroke="#eef1f5" stroke-width="20"/><g filter="url(#donutShadow)">${arcs}</g><circle cx="100" cy="100" r="58" fill="#fff"/><text x="100" y="99" text-anchor="middle" class="donut-total">${total}</text><text x="100" y="122" text-anchor="middle" class="donut-caption">PROJETOS</text></svg>`;
     }
     const legend = $('.legend');
-    if (legend) legend.innerHTML = situations.map(key => `<div><i style="background:${colorOf(key)}"></i>${esc(key)} <b>${situationCounts[key]}</b><em>${pct(situationCounts[key], total)}%</em></div>`).join('') || '<div>Sem projetos no recorte.</div>';
+    if (legend) legend.innerHTML = situations.map(key => `<div class="legend-item" ${groupAttr(key)}><i style="background:${colorOf(key)}"></i>${esc(labelOf(key))} <b>${situationCounts[key]}</b><em>${pct(situationCounts[key], total)}%</em></div>`).join('') || '<div>Sem projetos no recorte.</div>';
 
     const stageCounts = countsBy(projects, project => project.status);
     const stages = ['L0','L1','L2','L3','L4','L5'];
@@ -376,7 +416,7 @@
     if (bars) bars.innerHTML = stages.map(stage => {
       const value = stageCounts[stage] || 0;
       const height = value ? Math.max(10, value * 100 / max) : 3;
-      return `<div class="bar-group"><div class="vbar" style="--h:${height}%" data-v="${value}"></div><span>${stage}<small class="stage-name">${STAGE_NAMES[stage]}</small></span></div>`;
+      return `<div class="bar-group" ${listAttr(`${stage} · ${STAGE_NAMES[stage]}`, projects.filter(project => clean(project.status).toUpperCase() === stage))}><div class="vbar" style="--h:${height}%" data-v="${value}"></div><span>${stage}<small class="stage-name">${STAGE_NAMES[stage]}</small></span></div>`;
     }).join('');
   }
 
@@ -390,15 +430,21 @@
       .sort((a, b) => b[1] - a[1])
       .slice(0, 3)
       .map(([key]) => key);
+    const isConsultoria = value => clean(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() === 'consultoria';
+    const consultoria = Object.keys(countsBy(valid, forumOf)).find(isConsultoria);
+    if (consultoria && !forums.includes(consultoria)) forums.push(consultoria);
     const managers = Object.entries(countsBy(valid, project => project.area))
       .sort((a, b) => b[1] - a[1])
       .slice(0, 6)
       .map(([key]) => key);
-    const colors = ['#530b03', '#df3232', '#bfbfbf'];
+    const baseColors = ['#530b03', '#df3232', '#bfbfbf'];
+    let colorIndex = 0;
+    const colors = forums.map(forum => isConsultoria(forum) ? '#ed7d31' : baseColors[colorIndex++ % baseColors.length]);
+    const listAttrMF = (title, list) => `data-list-title="${esc(title)}" data-list-tip="${esc(JSON.stringify(list.slice().sort((a, b) => idNumber(a.id) - idNumber(b.id)).map(project => `${project.id} · ${clean(project.projeto)}`)))}"`;
     const max = Math.max(1, ...managers.flatMap(manager => forums.map(forum => valid.filter(project => project.area === manager && forumOf(project) === forum).length)));
     host.innerHTML = `<h3 style="text-align:center;margin-bottom:6px">Demandas por Gerência x Fórum</h3><div class="manager-total">Total: <b>${valid.length}</b> projeto(s) em <b>${managers.length}</b> gerência(s)</div><div class="manager-scroll"><div class="manager-chart">${managers.map(manager => {
       const values = forums.map(forum => valid.filter(project => project.area === manager && forumOf(project) === forum).length);
-      return `<div class="manager-group"><div class="manager-bars">${values.map((value, index) => value <= 0 ? '' : `<div title="${esc(forums[index])}: ${value}" style="position:relative;height:${Math.max(10, value * 150 / max)}px;background:${colors[index]}">${value > 0 ? `<span style="position:absolute;left:50%;top:-24px;transform:translateX(-50%);z-index:5;display:block;font-size:12px;font-weight:800;color:#111827;line-height:1;white-space:nowrap;pointer-events:none">${value}</span>` : ''}</div>`).join('')}</div><span>${esc(manager)}</span><em class="manager-count">${valid.filter(project => project.area === manager).length} projeto(s)</em></div>`;
+      return `<div class="manager-group"><div class="manager-bars">${values.map((value, index) => value <= 0 ? '' : `<div ${listAttrMF(`${manager} · ${forums[index]}`, valid.filter(project => project.area === manager && forumOf(project) === forums[index]))} style="position:relative;height:${Math.max(10, value * 150 / max)}px;background:${colors[index]}">${value > 0 ? `<span style="position:absolute;left:50%;top:-24px;transform:translateX(-50%);z-index:5;display:block;font-size:12px;font-weight:800;color:#111827;line-height:1;white-space:nowrap;pointer-events:none">${value}</span>` : ''}</div>`).join('')}</div><span>${esc(manager)}</span><em class="manager-count">${valid.filter(project => project.area === manager).length} projeto(s)</em></div>`;
     }).join('')}</div></div><div class="manager-legend">${forums.map((forum, index) => `<div><span style="background:${colors[index]}"></span>${esc(forum)}</div>`).join('') || '<div>Sem fóruns disponíveis no recorte.</div>'}</div>`;
   }
 
@@ -623,6 +669,76 @@
     return 0;
   }
 
+  // Anotação da etapa (comentário do Excel) = data reprogramada
+  function scheduleNote(item) {
+    return clean(first(item, ['anotacao', 'anotação', 'comentario', 'comentário', 'reprogramacao', 'reprogramação']));
+  }
+
+  // Status exibido: se a data final já passou e a etapa não está concluída, vira 3 · Atrasado
+  function effectiveScheduleStatus(item) {
+    const code = scheduleStatusCode(item);
+    if (code === 4) return 4;
+    const end = scheduleDate(item.fim || item.termino);
+    if (!end) return code;
+    const today = new Date();
+    const todayNoon = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 12);
+    return end < todayNoon ? 3 : code;
+  }
+
+  function scheduleItemsOf(project, mode) {
+    const source = mode === 'detalhado' ? arrayOf(project.cronogramaDetalhado) : arrayOf(project.macroAtividades);
+    return source.filter(item => item && item.atividade && item.atividade !== 0 && item.atividade !== '0');
+  }
+
+  function scheduleSummaryAttr(project, mode, title) {
+    const items = scheduleItemsOf(project, mode);
+    const count = code => items.filter(item => effectiveScheduleStatus(item) === code).length;
+    const lines = items.length ? [
+      ['Total de etapas', items.length],
+      ['Concluídas', count(4)],
+      ['Iniciadas', count(1)],
+      ['Em risco', count(2)],
+      ['Atrasadas', count(3)],
+      ['Não iniciadas', count(0)],
+      ['Reprogramadas', items.filter(item => scheduleNote(item)).length]
+    ] : [['Sem etapas registradas', '']];
+    return `data-info-tip="${esc(JSON.stringify({ t: title, lines }))}"`;
+  }
+
+  function bindInfoTooltip() {
+    if (window.__infoTooltipBound) return;
+    window.__infoTooltipBound = true;
+    let tip = null;
+    const hostOf = target => target && target.closest ? target.closest('[data-info-tip]') : null;
+    const place = event => {
+      if (!tip) return;
+      const pad = 12, w = tip.offsetWidth, h = tip.offsetHeight;
+      let x = event.clientX + pad, y = event.clientY + pad;
+      if (x + w > window.innerWidth - 8) x = event.clientX - w - pad;
+      if (y + h > window.innerHeight - 8) y = event.clientY - h - pad;
+      tip.style.left = `${Math.max(8, x)}px`;
+      tip.style.top = `${Math.max(8, y)}px`;
+    };
+    document.addEventListener('mouseover', event => {
+      const host = hostOf(event.target);
+      if (!host) return;
+      let data = {};
+      try { data = JSON.parse(host.getAttribute('data-info-tip')); } catch (error) { data = {}; }
+      if (!tip) { tip = document.createElement('div'); tip.className = 'roadmap-tooltip list-tooltip info-tooltip'; document.body.appendChild(tip); }
+      const lines = Array.isArray(data.lines) ? data.lines : [];
+      tip.innerHTML = `<b>${esc(data.t || '')}</b>${data.text ? `<div class="info-text">${esc(data.text)}</div>` : ''}${lines.length ? `<dl>${lines.map(([label, value]) => `<dt>${esc(label)}</dt><dd>${esc(value)}</dd>`).join('')}</dl>` : ''}`;
+      tip.classList.add('show');
+      place(event);
+    });
+    document.addEventListener('mousemove', event => { if (tip && tip.classList.contains('show')) place(event); });
+    document.addEventListener('mouseout', event => {
+      const host = hostOf(event.target);
+      if (!host || (event.relatedTarget && host.contains(event.relatedTarget))) return;
+      if (tip) tip.classList.remove('show');
+    });
+  }
+  bindInfoTooltip();
+
   function scheduleDate(value) {
     const match = clean(value).match(/^(\d{4})-(\d{2})(?:-(\d{2}))?/);
     if (!match) return null;
@@ -672,13 +788,15 @@
   function projectScheduleRows(items, months) {
     return items.map((item, index) => {
       const topicNumber = scheduleTopicNumber(item, index);
-      const statusCode = scheduleStatusCode(item);
+      const statusCode = effectiveScheduleStatus(item);
       const status = SCHEDULE_STATUS[statusCode];
+      const note = scheduleNote(item);
+      const noteTag = note ? ` <em class="reprog-tag" data-info-tip="${esc(JSON.stringify({ t: 'Data reprogramada', text: note }))}">reprogramado</em>` : '';
       const activity = clean(item.projeto) || 'Tópico sem descrição';
       const topicLabel = `${topicNumber} · ${activity}`;
       const period = `${formatDate(item.inicio)} → ${formatDate(item.fim || item.termino)}`;
       const barTitle = `${topicLabel} · ${period} · Status ${statusCode}: ${status.label}`;
-      return `<div class="road-row"><div class="road-name" title="${esc(topicLabel)}"><b>${esc(topicNumber)}</b><span>${esc(activity)}</span></div>${months.map(month => overlaps(item, month.key) ? `<div class="road-block ${status.className}" title="${esc(barTitle)}" aria-label="${esc(barTitle)}"></div>` : '<div class="road-cell"></div>').join('')}</div>`;
+      return `<div class="road-row"><div class="road-name" title="${esc(topicLabel)}"><b>${esc(topicNumber)}</b><span>${esc(activity)}${noteTag}</span></div>${months.map(month => overlaps(item, month.key) ? `<div class="road-block ${status.className}" title="${esc(barTitle)}" aria-label="${esc(barTitle)}"></div>` : '<div class="road-cell"></div>').join('')}</div>`;
     }).join('');
   }
 
@@ -687,9 +805,7 @@
   }
 
   function scheduleCard(project, mode) {
-    const source = mode === 'detalhado' ? arrayOf(project.cronogramaDetalhado) : arrayOf(project.macroAtividades);
-    const items = source
-      .filter(item => item && item.atividade && item.atividade !== 0 && item.atividade !== '0')
+    const items = scheduleItemsOf(project, mode)
       .map(item => ({ ...item, projeto: item.atividade, fim: item.fim || item.termino }));
     const months = scheduleMonths(project, items);
     const rows = projectScheduleRows(items, months);
@@ -780,12 +896,12 @@
     const projectFinance = projectFinanceChart(project);
     const initiative = clean(first(project, ['iniciativa','forum','fórum'])) || 'Iniciativa não informada';
     view.innerHTML = `
-      <div class="project-topbar"><button class="back" type="button" onclick="closeProject()">← Voltar ao portfólio</button><select class="project-selector" onchange="openProject(this.value)">${state.projects.map(item => `<option value="${esc(item.id)}" ${item.id === project.id ? 'selected' : ''}>${esc(item.id)} · ${esc(item.projeto)}</option>`).join('')}</select></div>
+      <div class="project-topbar"><button class="back" type="button" onclick="closeProject()">← Voltar ao portfólio</button><select class="project-selector" onchange="openProject(this.value)">${state.projects.map(item => `<option value="${esc(item.id)}" ${item.id === project.id ? 'selected' : ''}>${esc(item.id)} · ${esc(item.projeto)}</option>`).join('')}</select><div class="project-search"><input type="search" id="projectSearch" placeholder="Buscar projeto por nome ou LOG..." autocomplete="off" oninput="searchProjects(this.value)" onkeydown="if(event.key==='Enter'){const f=document.querySelector('#projectSearchResults [data-id]');if(f)openProject(f.dataset.id);}"><div id="projectSearchResults" class="project-search-results"></div></div></div>
       <section class="project-hero hero-v9"><div class="hero-main"><div class="pid">${esc(project.id)} · ${esc(project.area || 'Não informado')} · ${esc(initiative)}</div><h1>${esc(project.projeto || 'Projeto sem nome')}</h1><div class="hero-tags-row"><div class="meta-row"><span class="chip">${esc(project.status || 'Sem stage')}</span><span class="chip">${esc(project.prioridade || 'S/P')}</span><span class="chip green">${esc(project.ganhoProjeto || 'Não informado')}</span><span class="chip risk-tag risk-${clean(project.risco || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z]/g, '') || 'na'}">Risco - ${esc(project.risco || 'Não informado')}</span></div></div></div></section>
       <section class="detail-grid"><article class="card detail"><small>Início</small><b>${formatDate(project.inicio)}</b></article><article class="card detail"><small>Término</small><b>${formatDate(project.termino)}</b></article><article class="card detail"><small>Ponto focal</small><b title="${esc(project.pontoFocal)}">${esc(compact(project.pontoFocal || 'Não informado', 25))}</b></article><article class="card detail"><small>PMO</small><b title="${esc(project.pmo)}">${esc(compact(project.pmo || 'Não informado', 25))}</b></article></section>
       <section class="detail-grid"><article class="card detail"><small>Saving Opex 12M</small><b>${moneyMM(savingField(project, 'opex12M'))}</b></article><article class="card detail"><small>Saving Capex 12M</small><b>${moneyMM(savingField(project, 'capex12M'))}</b></article><article class="card detail"><small>Saving total 12M</small><b>${moneyMM(savingField(project, 'total12M'))}</b></article><article class="card detail"><small>Saving 2026</small><b>${moneyMM(savingField(project, 'total2026'))}</b></article></section>
       <section class="section two-col"><article class="card text-card scroll-card"><div class="chart-title">Escopo do projeto</div><p class="scroll-content">${esc(project.escopo || 'Escopo não preenchido no arquivo de origem.')}</p></article><article class="card text-card scroll-card"><div class="chart-title">Principais entregáveis</div><ul class="checklist scroll-content">${deliverables.length ? deliverables.map(item => `<li>${esc(item)}</li>`).join('') : '<li>Entregáveis não preenchidos no arquivo de origem.</li>'}</ul></article></section>
-      <section class="section"><div class="section-head"><div><h2>Cronograma do projeto</h2><p>Alternância entre visão executiva e detalhada.</p></div></div><div class="tabs"><button class="tab ${state.scheduleMode === 'macro' ? 'active' : ''}" type="button" onclick="switchSchedule('macro')">Macrocronograma</button><button class="tab ${state.scheduleMode === 'detalhado' ? 'active' : ''}" type="button" onclick="switchSchedule('detalhado')">Cronograma detalhado</button></div><article class="card roadmap-card" id="projectSchedule">${scheduleCard(project, state.scheduleMode)}</article></section>
+      <section class="section"><div class="section-head"><div><h2>Cronograma do projeto</h2><p>Alternância entre visão executiva e detalhada.</p></div></div><div class="tabs"><button class="tab ${state.scheduleMode === 'macro' ? 'active' : ''}" type="button" ${scheduleSummaryAttr(project, 'macro', 'Resumo do macrocronograma')} onclick="switchSchedule('macro')">Macrocronograma</button>${canOpenDetailed(project) ? `<button class="tab ${state.scheduleMode === 'detalhado' ? 'active' : ''}" type="button" ${scheduleSummaryAttr(project, 'detalhado', 'Resumo do cronograma detalhado')} onclick="switchSchedule('detalhado')">Cronograma detalhado</button>` : `<button class="tab tab-locked" type="button" disabled title="Cronograma detalhado disponível apenas para projetos da gerência de Transportes">🔒 Cronograma detalhado</button>`}</div><article class="card roadmap-card" id="projectSchedule">${scheduleCard(project, state.scheduleMode)}</article></section>
       <section class="section two-col"><article class="card line-chart project-finance-chart"><div class="chart-title">Desempenho financeiro do projeto</div><div class="chart-sub">${esc(projectFinance.sub)}</div>${projectFinance.body}</article><article class="card timeline"><div class="chart-title" style="margin-bottom:18px">Histórico de atualizações</div>${projectRiskNote(project) ? `<div class="timeline-risk"><b>⚠ Risco</b><p>${esc(projectRiskNote(project))}</p></div>` : ''}${timeline.length ? timeline.map(item => `<div class="time-item"><div class="time-date">${shortDate(item.data)}</div><div class="time-line"></div><div class="time-copy"><b>Atualização registrada</b><p>${esc(item.detalhe)}</p></div></div>`).join('') : '<div class="empty-state">Sem atualizações registradas no Status do Projeto.</div>'}</article></section>`;
   }
 
@@ -816,6 +932,11 @@
   window.filterPortfolioTable = renderTable;
   window.filterTable = renderTable;
 
+  function canOpenDetailed(project) {
+    const area = clean(project?.area).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    return area.startsWith('transporte');
+  }
+
   window.openProject = id => {
     const project = state.projects.find(item => item.id === id) || state.projects[0];
     if (!project) return;
@@ -830,6 +951,22 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  window.searchProjects = value => {
+    const box = $('#projectSearchResults');
+    if (!box) return;
+    const norm = text => clean(text).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const query = norm(value);
+    if (!query) { box.innerHTML = ''; box.classList.remove('show'); return; }
+    const found = state.projects.filter(item => norm(`${item.id} ${item.projeto}`).includes(query)).slice(0, 12);
+    box.innerHTML = found.length
+      ? found.map(item => `<button type="button" data-id="${esc(item.id)}" onmousedown="event.preventDefault();openProject(this.dataset.id)"><b>${esc(item.id)}</b> · ${esc(item.projeto)}</button>`).join('')
+      : '<div class="empty">Nenhum projeto encontrado.</div>';
+    box.classList.add('show');
+  };
+  document.addEventListener('focusout', event => {
+    if (event.target && event.target.id === 'projectSearch') setTimeout(() => $('#projectSearchResults')?.classList.remove('show'), 150);
+  });
+
   window.closeProject = () => {
     document.body.classList.remove('project-open');
     $('#home')?.classList.remove('hide');
@@ -840,8 +977,8 @@
   };
 
   window.switchSchedule = mode => {
-    state.scheduleMode = mode === 'detalhado' ? 'detalhado' : 'macro';
     const project = state.projects.find(item => item.id === state.selectedId);
+    state.scheduleMode = mode === 'detalhado' && canOpenDetailed(project) ? 'detalhado' : 'macro';
     if (project) renderProject(project);
   };
 

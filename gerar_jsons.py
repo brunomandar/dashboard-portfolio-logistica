@@ -10,6 +10,7 @@ O script:
   2. Gera um json/LOG-xxx.json por projeto (ID sempre com 3 dígitos; extensões viram LOG-xxx.y.json);
   3. Recria projects.index.json, projects.index.js, portfolio.json, projects.data.js e MANIFESTO.txt;
   4. Remove da pasta json os LOG-xx.json antigos que não correspondem mais a nenhum Excel.
+  5. Leva para o JSON a anotação (comentário do Excel) feita na etapa do cronograma = data reprogramada.
 """
 import datetime as dt
 import glob
@@ -124,6 +125,20 @@ def texto_celula(valor):
     return str(valor) if valor != "" else ""
 
 
+def anotacao(celula):
+    """Texto da anotação (comentário) do Excel na célula, sem o nome do autor."""
+    comentario = getattr(celula, "comment", None)
+    if not comentario or not comentario.text:
+        return ""
+    texto = str(comentario.text).replace("\r", "")
+    texto = re.sub(r"^\[Threaded comment\].*?Comment:\s*", "", texto, flags=re.S | re.I)
+    linhas = [l.strip() for l in texto.split("\n")]
+    autor = (getattr(comentario, "author", "") or "").strip()
+    if linhas and (linhas[0].endswith(":") and (not autor or linhas[0][:-1].strip().lower() == autor.lower() or len(linhas) > 1)):
+        linhas = linhas[1:]
+    return "\n".join(l for l in linhas if l).strip()
+
+
 # ---------------------------------------------------------------------------
 # Leitura das abas
 # ---------------------------------------------------------------------------
@@ -173,7 +188,6 @@ def ler_status_projeto(ws):
         return ""
     r0, c0 = posicao
     linhas = []
-    # Texto que esteja na mesma célula do rótulo, após a primeira linha
     resto = str(ws.cell(r0, c0).value).split("\n", 1)
     if len(resto) > 1 and resto[1].strip():
         linhas.append(resto[1].strip())
@@ -244,6 +258,7 @@ def ler_one_page(ws):
                 "status": inteiro_ou_texto(ws.cell(r, cAtv + 2).value),
                 "inicio": data_iso(ws.cell(r, cAtv + 4).value),
                 "fim": data_iso(ws.cell(r, cAtv + 5).value),
+                "anotacao": anotacao(ws.cell(r, cAtv)) or anotacao(ws.cell(r, cNum)),
             })
             r += 1
     dados["macroAtividades"] = macro
@@ -280,6 +295,7 @@ def ler_cronograma(ws):
             "status": inteiro_ou_texto(ws.cell(r, 5).value),
             "inicio": data_iso(ws.cell(r, 7).value),
             "fim": data_iso(ws.cell(r, 8).value),
+            "anotacao": anotacao(ws.cell(r, 3)) or anotacao(ws.cell(r, 2)),
         })
     return itens
 
@@ -467,7 +483,6 @@ def main():
         with open(os.path.join(PASTA_JSON, nome), "w", encoding="utf-8") as f:
             json.dump(projeto, f, ensure_ascii=False, indent=2)
 
-    # Remove JSONs de projetos que não existem mais (ex.: antigos LOG-15.json)
     removidos = []
     for antigo in glob.glob(os.path.join(PASTA_JSON, "LOG-*.json")):
         if os.path.basename(antigo) not in nomes_json:
