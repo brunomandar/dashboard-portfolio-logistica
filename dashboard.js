@@ -74,7 +74,7 @@
       minimumFractionDigits: absolute < 10 ? 2 : 1,
       maximumFractionDigits: 2
     });
-    return `${amount < 0 ? '- ' : ''}R$ ${formatted}M`;
+    return `R$ ${formatted}M`;
   }
 
   function savingField(project, field) {
@@ -285,7 +285,8 @@
     const grid = $('.kpi-grid');
     if (!grid) return;
     const active = projects.filter(project => !isInactive(project));
-    const risk = active.filter(isRisk);
+    const priorityBlocksRisk = project => /^(cancelad|congelad|concluid)/.test(clean(project.prioridade).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase());
+    const risk = active.filter(project => isRisk(project) && clean(project.status).toUpperCase() !== 'L5' && !priorityBlocksRisk(project));
     const done = projects.filter(isDone);
     const saving = projects.reduce((sum, project) => sum + savingField(project, 'total12M'), 0);
     const savingOpex = projects.reduce((sum, project) => sum + savingField(project, 'opex12M'), 0);
@@ -525,7 +526,7 @@
     projects.forEach(project => arrayOf(project.financeiro).forEach(record => {
       if (Number(record?.ano) !== 2026 || clean(record?.tipoDespesa) !== 'Total' || !(record?.icg in series)) return;
       const index = MONTH_ORDER[record.mes];
-      if (index !== undefined) series[record.icg][index] += n(record.resultado);
+      if (index !== undefined) series[record.icg][index] += Math.abs(n(record.resultado));
     }));
     return series;
   }
@@ -567,9 +568,10 @@
 
   function projectFinanceChart(project) {
     const LABELS = ['JAN','FEV','MAR','ABR','MAI','JUN','JUL','AGO','SET','OUT','NOV','DEZ'];
-    const endMatch = clean(project.termino).match(/^(\d{4})-(\d{2})/);
-    const end = endMatch ? new Date(Number(endMatch[1]), Number(endMatch[2]) - 1, 1) : null;
-    const base = end ? new Date(end.getFullYear(), end.getMonth() + 1, 1) : new Date(new Date().getFullYear(), 0, 1);
+    const monthOf = value => { const m = clean(value).match(/^(\d{4})-(\d{2})/); return m ? new Date(Number(m[1]), Number(m[2]) - 1, 1) : null; };
+    const capture = monthOf(project.inicioCaptura);
+    const end = monthOf(project.termino);
+    const base = capture || (end ? new Date(end.getFullYear(), end.getMonth() + 1, 1) : new Date(new Date().getFullYear(), 0, 1));
     const months = Array.from({ length: 12 }, (_, index) => {
       const date = new Date(base.getFullYear(), base.getMonth() + index, 1);
       return { key: `${date.getFullYear()}-${date.getMonth()}`, label: LABELS[date.getMonth()], year: String(date.getFullYear()).slice(-2) };
@@ -584,32 +586,120 @@
       return '';
     };
     const series = { meta: Array(12).fill(0), real: Array(12).fill(0), fcst: Array(12).fill(0), base: Array(12).fill(0) };
-    const has = { meta: false, real: false, fcst: false, base: false };
+    let hasBase = false;
     arrayOf(project.financeiro).forEach(record => {
       if (clean(record?.tipoDespesa) && clean(record?.tipoDespesa) !== 'Total') return;
       const kind = kindOf(record?.icg);
       const month = MONTH_ORDER[clean(record?.mes).slice(0, 1).toUpperCase() + clean(record?.mes).slice(1, 3).toLowerCase()];
       const index = indexOf[`${Number(record?.ano)}-${month}`];
       if (!kind || index === undefined) return;
-      series[kind][index] += n(record.resultado);
-      has[kind] = true;
+      series[kind][index] += Math.abs(n(record.resultado));
+      if (kind === 'base') hasBase = true;
     });
-    const lines = { meta: cumulative(series.meta), real: cumulative(series.real), fcst: cumulative(series.fcst), base: cumulative(series.base) };
-    const visible = ['meta','real','fcst'].concat(has.base ? ['base'] : []);
-    const values = visible.map(key => lines[key]).flat();
-    const min = Math.min(0, ...values);
-    let max = Math.max(0, ...values);
-    if (max === min) max = min + 1;
-    const x = index => (index + 0.5) * 900 / 12;
-    const points = list => list.map((value, index) => `${x(index).toFixed(1)},${(190 - (value - min) * 160 / (max - min)).toFixed(1)}`).join(' ');
-    const COLORS = { meta: '#2f6fe4', real: '#111111', fcst: '#17875b', base: '#f08a00' };
-    const NAMES = { meta: 'Meta', real: 'Realizado', fcst: 'Forecast', base: 'Baseline / ano anterior' };
-    const svg = `<svg viewBox="0 0 900 200" preserveAspectRatio="none"><g stroke="#e8ebf0" stroke-width="1"><line x1="0" y1="30" x2="900" y2="30"/><line x1="0" y1="83" x2="900" y2="83"/><line x1="0" y1="136" x2="900" y2="136"/><line x1="0" y1="190" x2="900" y2="190"/></g>${visible.slice().reverse().map(key => `<polyline fill="none" stroke="${COLORS[key]}" stroke-width="3" vector-effect="non-scaling-stroke" points="${points(lines[key])}"/>`).join('')}</svg>`;
-    const legend = `<div class="pf-legend">${visible.map(key => `<span><i style="background:${COLORS[key]}"></i>${NAMES[key]}</span>`).join('')}</div>`;
-    const axis = `<div class="pf-axis">${months.map(month => `<span>${month.label}<small>${month.year}</small></span>`).join('')}</div>`;
-    const sub = end ? `Captura de 12 meses após o término previsto (${months[0].label}/${months[0].year} a ${months[11].label}/${months[11].year})` : 'Término não informado · exibindo o ano corrente';
-    return { sub, body: `${legend}${svg}${axis}` };
+    const body = financeChartSVG({ labels: months.map(m => m.label), years: months.map(m => m.year), real: series.real, fcst: series.fcst, meta: series.meta, base: hasBase ? series.base : null, id: `p${clean(project.id).replace(/[^a-z0-9]/gi, '')}` });
+    const period = `${months[0].label}/${months[0].year} a ${months[11].label}/${months[11].year}`;
+    const sub = capture ? `12 meses a partir do início da captura (${period})` : end ? `Início da captura não informado · 12 meses após o término (${period})` : 'Início da captura não informado · exibindo o ano corrente';
+    return { sub, body };
   }
+
+
+  // Gráfico financeiro padrão (Home e projeto): Realizado e Forecast em barras lado a lado, desvio entre eles e Meta em linha azul
+  function financeChartSVG({ labels, years, real, fcst, meta, base, id, width, fs = 1 }) {
+    const abs = list => (list || []).map(value => Math.abs(n(value)));
+    real = abs(real); fcst = abs(fcst); meta = abs(meta); base = base ? abs(base) : null;
+    const count = labels.length;
+    const max = Math.max(0.0001, ...real, ...fcst, ...meta, ...(base || [])) * 1.45;
+    const occupied = labels.map(() => Infinity);
+    const W = width || 960, H = 340, left = 20, right = 20, top = 56, bottom = 46;
+    const plotH = H - top - bottom;
+    const slot = (W - left - right) / count;
+    const x = index => left + slot * index + slot / 2;
+    const y = value => top + plotH - (value / max) * plotH;
+    const fmt = value => value ? `${value.toLocaleString('pt-BR', { maximumFractionDigits: value < 10 ? 2 : 1 })}M` : '0M';
+    const grid = [0, 0.25, 0.5, 0.75, 1].map(step => `<line x1="${left}" x2="${W - right}" y1="${(top + plotH * step).toFixed(1)}" y2="${(top + plotH * step).toFixed(1)}" stroke="#eceef2" stroke-width="1"/>`).join('');
+    const columns = labels.map((label, index) => `<rect x="${(left + slot * index).toFixed(1)}" y="${top}" width="${slot.toFixed(1)}" height="${plotH}" fill="${index % 2 ? '#fafafa' : '#ffffff'}"/>`).join('');
+    const barW = Math.min(28, slot * 0.36);
+    const gap = 3;
+    const floor = top + plotH;
+    const pairs = labels.map((label, index) => {
+      const r = real[index], f = fcst[index];
+      const rx = x(index) - gap / 2 - barW, fx = x(index) + gap / 2;
+      let out = '';
+      const floorY = top + plotH;
+      let rLabelY = r ? y(r) - 6 : null;
+      let fLabelY = f ? y(f) - 6 : null;
+      if (rLabelY !== null && fLabelY !== null && Math.abs(rLabelY - fLabelY) < 12 * fs) {
+        if (rLabelY <= fLabelY) rLabelY -= 12 * fs; else fLabelY -= 12 * fs;
+      }
+      if (r) out += `<rect x="${rx.toFixed(1)}" y="${y(r).toFixed(1)}" width="${barW.toFixed(1)}" height="${(floor - y(r)).toFixed(1)}" rx="4" fill="url(#${id}Real)"><title>Realizado ${label}: R$ ${fmt(r)}</title></rect><text x="${(rx + barW / 2).toFixed(1)}" y="${rLabelY.toFixed(1)}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#1f1f1f">${fmt(r)}</text>`;
+      if (f) out += `<rect x="${fx.toFixed(1)}" y="${y(f).toFixed(1)}" width="${barW.toFixed(1)}" height="${(floor - y(f)).toFixed(1)}" rx="4" fill="url(#${id}Fcst)"><title>Forecast ${label}: R$ ${fmt(f)}</title></rect><text x="${(fx + barW / 2).toFixed(1)}" y="${fLabelY.toFixed(1)}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#15803d">${fmt(f)}</text>`;
+      [rLabelY, fLabelY].forEach(value => { if (value !== null) occupied[index] = Math.min(occupied[index], value - 11 * fs); });
+      if (floorY && occupied[index] === Infinity) occupied[index] = floorY;
+      if (r && f) {
+        const diff = r - f;
+        const upY = Math.min(rLabelY, fLabelY) - 30 * fs;
+        occupied[index] = Math.min(occupied[index], upY - 2);
+        const good = diff >= 0;
+        const color = good ? '#15803d' : '#c00000';
+        const bg = good ? '#e8f7ee' : '#fbeaea';
+        const text = `${good ? '▲' : '▼'} ${fmt(Math.abs(diff))}`;
+        const pw = (text.length * 5.6 + 8) * fs;
+        out += `<g><title>Desvio Realizado x Forecast ${label}: ${good ? 'acima' : 'abaixo'} em R$ ${fmt(Math.abs(diff))}</title><rect x="${(x(index) - pw / 2).toFixed(1)}" y="${(upY - 1).toFixed(1)}" width="${pw.toFixed(1)}" height="${(15 * fs).toFixed(1)}" rx="${(7.5 * fs).toFixed(1)}" fill="${bg}" stroke="${color}" stroke-width="1"/><text x="${x(index).toFixed(1)}" y="${(upY + 10.5 * fs).toFixed(1)}" text-anchor="middle" font-size="${(9 * fs).toFixed(1)}" font-weight="800" fill="${color}">${text}</text></g>`;
+      }
+      return out;
+    }).join('');
+    const path = list => list.map((value, index) => `${index ? 'L' : 'M'}${x(index).toFixed(1)},${y(value).toFixed(1)}`).join(' ');
+    const dots = (list, color, name) => list.map((value, index) => `<circle cx="${x(index).toFixed(1)}" cy="${y(value).toFixed(1)}" r="4.5" fill="#fff" stroke="${color}" stroke-width="2.5"><title>${name} ${labels[index]}: R$ ${fmt(value)}</title></circle>`).join('');
+    // Meta: caixinha azul pequena; se o ponto estiver perto dos valores das barras, sobe acima de tudo com linha de ligação
+    const metaLabels = meta.map((value, index) => {
+      if (!value) return '';
+      const text = fmt(value);
+      const bw = (text.length * 6 + 10) * fs, bh = 15 * fs;
+      const cx = x(index), py = y(value);
+      const limit = occupied[index];
+      let by = py - bh - 8;
+      let leader = false;
+      if (by + bh > limit - 3) {
+        by = limit - bh - 10;
+        leader = true;
+      }
+      by = Math.max(2, by);
+      const line = leader ? `<line x1="${cx.toFixed(1)}" y1="${py.toFixed(1)}" x2="${cx.toFixed(1)}" y2="${(by + bh).toFixed(1)}" stroke="#2563eb" stroke-width="1" stroke-dasharray="2 2"/>` : '';
+      return `${line}<rect x="${(cx - bw / 2).toFixed(1)}" y="${by.toFixed(1)}" width="${bw.toFixed(1)}" height="${bh.toFixed(1)}" rx="3" fill="#fff" stroke="#2563eb" stroke-width="1.2"/><text x="${cx.toFixed(1)}" y="${(by + 11 * fs).toFixed(1)}" text-anchor="middle" font-size="${(9.5 * fs).toFixed(1)}" font-weight="800" fill="#1d4ed8">${text}</text>`;
+    }).join('');
+    const baseLine = base ? `<path d="${path(base)}" fill="none" stroke="#f08a00" stroke-width="2.5"/>${dots(base, '#f08a00', 'Baseline')}` : '';
+    const axis = labels.map((label, index) => `<text x="${x(index).toFixed(1)}" y="${H - 22}" text-anchor="middle" font-size="${(12 * fs).toFixed(1)}" font-weight="800" fill="#1f1f1f">${label}</text><text x="${x(index).toFixed(1)}" y="${H - 7}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" fill="#7f7f7f">${years[index]}</text>`).join('');
+    const defs = `<defs><linearGradient id="${id}Real" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b4f57"/><stop offset="1" stop-color="#15171b"/></linearGradient><linearGradient id="${id}Fcst" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34c26b"/><stop offset="1" stop-color="#15803d"/></linearGradient></defs>`;
+    const svg = `<svg class="fin-chart" viewBox="0 0 ${W} ${H}" role="img">${defs}${columns}${grid}${pairs}${baseLine}<path d="${path(meta)}" fill="none" stroke="#2563eb" stroke-width="3"/>${dots(meta, '#2563eb', 'Meta')}${metaLabels}${axis}</svg>`;
+    const legend = `<div class="fin-legend"><span><i class="lg-bar"></i>Realizado</span><span><i class="lg-bar fcst"></i>Forecast</span><span><i class="lg-line"></i>Meta</span>${base ? '<span><i class="lg-line base"></i>Baseline / ano anterior</span>' : ''}<span><i class="lg-dev">▲▼</i>Desvio Realizado x Forecast</span></div>`;
+    const sum = list => list.reduce((acc, value) => acc + value, 0);
+    const tReal = sum(real), tFcst = sum(fcst), tMeta = sum(meta);
+    const gapBox = (a, b) => { const d = a - b; return `<b class="${d >= 0 ? 'pos' : 'neg'}">${d >= 0 ? '▲' : '▼'} ${fmt(Math.abs(d))}</b>`; };
+    const minis = `<div class="fin-mini"><div><small>Meta</small><b>${fmt(tMeta)}</b></div><div><small>Forecast</small><b>${fmt(tFcst)}</b></div><div><small>Realizado</small><b>${fmt(tReal)}</b></div><div><small>Real x Meta</small>${gapBox(tReal, tMeta)}</div><div><small>Real x Forecast</small>${gapBox(tReal, tFcst)}</div></div>`;
+    return `<div class="fin-top">${legend}${minis}</div>${svg}`;
+  }
+
+  // Home: busca de projeto dentro do gráfico (vazio = visão geral)
+  function filterFinanceChart(value) {
+    const body = $('#finBody');
+    const sub = $('#finSub');
+    if (!body) return;
+    const norm = text => clean(text).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const query = norm(value);
+    const pool = Array.isArray(state.finProjects) ? state.finProjects : [];
+    const list = query ? pool.filter(project => norm(`${project.id} ${project.projeto}`).includes(query)) : pool;
+    const LABELS = ['JAN','FEV','MAR','ABR','MAI','JUN','JUL','AGO','SET','OUT','NOV','DEZ'];
+    if (sub) sub.textContent = !query ? '2026 · valores mensais de Realizado, Forecast e Meta · visão geral'
+      : list.length === 1 ? `2026 · ${list[0].id} · ${clean(list[0].projeto)}`
+      : list.length ? `2026 · ${list.length} projetos encontrados` : 'Nenhum projeto encontrado';
+    if (query && !list.length) { body.innerHTML = '<div class="empty-state">Nenhum projeto encontrado para a busca.</div>'; $('#finMiniSlot')?.replaceChildren(); return; }
+    const series = aggregateFinancial(list);
+    body.innerHTML = financeChartSVG({ labels: LABELS, years: LABELS.map(() => '26'), real: series.Real, fcst: series.Fcst, meta: series.Budget, id: 'home', width: 1150, fs: 1.3 });
+    const slot = $('#finMiniSlot');
+    const mini = body.querySelector('.fin-mini');
+    if (slot) slot.replaceChildren(...(mini ? [mini] : []));
+  }
+  window.filterFinanceChart = filterFinanceChart;
 
   function renderFinance(projects) {
     const series = aggregateFinancial(projects);
@@ -625,8 +715,12 @@
     const year = projects.reduce((sum, project) => sum + savingField(project, 'total2026'), 0);
     const grid = $('#financeiro .finance-grid');
     if (grid) grid.innerHTML = `<article class="card finance-kpi"><small>Meta</small><b>${moneyMM(budget)}</b></article><article class="card finance-kpi"><small>Forecast</small><b>${moneyMM(forecast)}</b></article><article class="card finance-kpi"><small>Realizado</small><b>${moneyMM(real)}</b></article><article class="card finance-kpi gap-kpi"><div class="gap-split"><div><span>Real x Meta</span><b style="color:${gapMeta < 0 ? 'var(--claro)' : 'var(--green)'}">${moneyMM(gapMeta)}</b></div><div><span>Real x Forecast</span><b style="color:${gapForecast < 0 ? 'var(--claro)' : 'var(--green)'}">${moneyMM(gapForecast)}</b></div></div></article><article class="card finance-kpi"><small>Saving Opex</small><b>${moneyMM(opex)}</b></article><article class="card finance-kpi"><small>Saving Capex</small><b>${moneyMM(capex)}</b></article><article class="card finance-kpi"><small>Saving Total</small><b>${moneyMM(all)}</b></article><article class="card finance-kpi"><small>Saving 2026</small><b>${moneyMM(year)}</b></article>`;
-    const svg = $('#financeiro .line-chart svg');
-    if (svg) svg.innerHTML = chartPolyline(series);
+    state.finProjects = projects;
+    const card = $('#financeiro .line-chart');
+    if (card) {
+      if (!card.querySelector('#finSearch')) card.innerHTML = `<div class="fin-head"><div><div class="chart-title">Evolução mensal</div><div class="chart-sub" id="finSub"></div></div><div class="fin-head-right"><div id="finMiniSlot"></div><input id="finSearch" class="fin-search" type="search" placeholder="Buscar projeto por nome ou LOG..." autocomplete="off" oninput="filterFinanceChart(this.value)"></div></div><div id="finBody"></div>`;
+      filterFinanceChart(card.querySelector('#finSearch').value);
+    }
   }
 
   function riskClass(risk) {
@@ -759,7 +853,7 @@
   }
   bindInfoTooltip();
 
-  // v36: parte do mês ocupada pela etapa (proporcional aos dias)
+  // Parte do mês ocupada pela etapa (proporcional aos dias)
   function monthFill(item, monthKey) {
     const [year, month] = monthKey.split('-').map(Number);
     const days = new Date(year, month, 0).getDate();
