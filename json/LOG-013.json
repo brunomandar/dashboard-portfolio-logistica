@@ -18,7 +18,10 @@
   "entregaveis": [
     "Nova metodologia e algoritmo de análise da rotatividade.",
     "Análises técnicas e laboratoriais de terminais com alta troca.",
-    "Relatório de modelos críticos e causas de troca."
+    "Relatório de modelos críticos e causas de troca. Status do Projeto 08/10/26 - Nova Blacklist gerada pelo Time de Serviços Técnicos (WIFI 3.1 + GPON). 21/08/26 - Previsão de 30/08/26 para cruzar com a base de jigas de testes e rodar a 1ª Blacklist pelo Extrator. 21/08/26 - Previsão de 15/09/26 para cruzar com as OS geradas por VT. 21/08/26 - Previsão de 30/09/26 para implementar a rotina de Blacklist mensal para o fluxo de descarte. 14/08/26 - Definido que até setembro haverá lista mensal automatizada por serviços de campo, com medição a criar e QuickWin a informar. 28/07/26 - Previsão de 15/08/26 para identificar os motivos de baixas não ligados ao terminal. 17/06/26 - Escopo de métricas de consulta da jornada dos terminais para Scrap por rotatividade, com previsão para 23/06/26. 09/06/26 - Relatórios e testes apresentados ao Demis, com conclusão de que novos parâmetros e estudos são necessários. 09/06/26 - Jackson e Mauricio vão alinhar as novas fases e a distribuição de tarefas do novo estudo. 26/05/26 - Previsão de 08/06/26 para definir e estudar novas diretrizes para investigações. 25/05/26 - Levantamento parado, com previsão de retomada em 01/06/26. 15/05/26 - Mauricio levantará terminais novos de 2 anos e índice de troca; divergência entre 48 meses e dados maiores, com retorno previsto em 22/05/26. 06/05/26 - Estudos, relatórios e laudos enviados ao Mauricio, aguardando validação para as próximas etapas.",
+    "Recomendações de descarte, reutilização e renovação do parque.",
+    "Blacklist de terminais (WIFI 3.1 + GPON) gerada.",
+    "Rotina mensal de Blacklist no fluxo de descarte."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -3171,6 +3174,6 @@
   "fonte": {
     "arquivo": "LOG-013 - Ciclo de Vida.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-013%20-%20Ciclo%20de%20Vida.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:25:40-03:00"
+    "extraidoEm": "2026-11-04T16:58:51-03:00"
   }
 }

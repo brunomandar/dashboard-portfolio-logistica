@@ -18,7 +18,9 @@
   "entregaveis": [
     "Desenvolvimento de uma solução para ativação via E-sim no consumo , PME e GE",
     "Redução de despesas operacionais (Opex)",
-    "Redução de despesas para aquisição de Sim Card  (Capex)"
+    "Redução de despesas para aquisição de Sim Card (Capex) Status do Projeto Risco: 04/11/2026 Atraso na implementação da SD 234435| OS 232024.(Depende de orçamento) Risco: 30/10/2026 Transferência Rápida:Identificados casos isolados de aparelhos importados incompatíveis com eSIM. Contingência operacional definida (chip físico) e validação pré-venda em implementação. Potencial impacto no rollout. 04/11/2026 - Antecipação da Janela de Portabilidade: Testes de portabilidade aguardam nova massa de dados. Pendente início do B-SIM e implementação da OS 232024. Como contingência, será realizado teste em produção com 1 vendedor até 05/12. 04/11/2026 - Televendas Receptivo (B-SIM): 18 pedidos com eSIM. SD 234435 aberta; pendente alinhamento da solução e aprovação de verba. Melhoria crítica para o rollout. 30/10/2026 - As implantações de LP, ALS e Transferência Rápida foram concluídas conforme planejado, porém a frente de Transferência Rápida permanece sob monitoramento devido à dependência da correção do bundle Motorola, que pode impactar os próximos marcos comerciais da implementação do E-SIM. 21/10/2026 - Teste de migração do eSIM para o televendas concluídos para novos clientes. Nos casos de portabilidade estão verificando jornada no solar, prazo 30/10.",
+    "Melhoria da experiência do cliente com ativação digital",
+    "Redução de perdas e avarias"
   ],
   "saving": {
     "opex12M": 0.0,
@@ -3802,6 +3804,6 @@
   "fonte": {
     "arquivo": "LOG-008 - Massificação eSIM (Saving Logístico).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-008%20-%20Massifica%C3%A7%C3%A3o%20eSIM%20%28Saving%20Log%C3%ADstico%29.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:25:07-03:00"
+    "extraidoEm": "2026-11-04T16:58:12-03:00"
   }
 }

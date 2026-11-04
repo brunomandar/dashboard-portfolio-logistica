@@ -18,7 +18,10 @@
   "entregaveis": [
     "Sistema automatizado de inventário.",
     "KPIs de monitoramento do inventário.",
-    "Integração com o HUB AMX."
+    "Integração com o HUB AMX.",
+    "Solução de contagem por drones em Campinas e Palhoça.",
+    "Solução de contagem com coletores (MWS/TOTVS/Celistics).",
+    "Processo de totalização de pallet validado e concluído."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -2964,6 +2967,6 @@
   "fonte": {
     "arquivo": "LOG-027 - Inv. Automatizado e Inv. Equipamentos.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-027%20-%20Inv.%20Automatizado%20e%20Inv.%20Equipamentos.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:25:58-03:00"
+    "extraidoEm": "2026-11-04T16:59:10-03:00"
   }
 }

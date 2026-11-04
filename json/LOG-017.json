@@ -18,7 +18,10 @@
   "entregaveis": [
     "Padrão de pedidos mínimos e múltiplos de caixas implementado",
     "Processo de separação e expedição ajustado",
-    "Horários de corte e input de pedidos definidos"
+    "Horários de corte e input de pedidos definidos",
+    "Analytics de miscelâneas padronizado",
+    "Implantação nos demais CDs concluída",
+    "Projeto implantado em todas as regionais."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -2883,6 +2886,6 @@
   "fonte": {
     "arquivo": "LOG-017 - Distribuição e Pedido Minimo.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-017%20-%20Distribui%C3%A7%C3%A3o%20e%20Pedido%20Minimo.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:25:47-03:00"
+    "extraidoEm": "2026-11-04T16:58:58-03:00"
   }
 }

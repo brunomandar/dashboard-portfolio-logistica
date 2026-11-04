@@ -18,7 +18,9 @@
   "entregaveis": [
     "Site de visibilidade completa dos estoques empresariais PM/MM em produção",
     "Relatórios gerenciais de estoque",
-    "Padronização de processos e do uso do SAP para PM/MM"
+    "Padronização de processos e do uso do SAP para PM/MM",
+    "Integração com o WMS, incluindo visão de ocupação dos EAs em tempo real",
+    "Expansão dos depósitos para os centros migrados de PM para MM (BSR – OS 162304)."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -2892,6 +2894,6 @@
   "fonte": {
     "arquivo": "LOG-020 - EE - Visão de Estoques.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-020%20-%20EE%20-%20Vis%C3%A3o%20de%20Estoques.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:25:50-03:00"
+    "extraidoEm": "2026-11-04T16:59:02-03:00"
   }
 }

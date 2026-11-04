@@ -18,7 +18,10 @@
   "entregaveis": [
     "Checklist de integração definido.",
     "Cadastro de fornecedor (Ariba e SAP).",
-    "Integração TMS com transportadores."
+    "Integração TMS com transportadores. Status do Projeto 17/06/26 - Demanda encerrada. 07/05/26 - Demanda enviada ao backlog para tratativa em julho. 05/05/26 - Atualização do projeto solicitada a Lencione e Helder.",
+    "Treinamento dos transportadores.",
+    "Acessos aos portais liberados.",
+    "Diagnóstico AS-IS/TO BE consolidado."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -3774,6 +3777,6 @@
   "fonte": {
     "arquivo": "LOG-052 - Checklist Jornada de Integração e Tracking de Transportadores.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-052%20-%20Checklist%20Jornada%20de%20Integra%C3%A7%C3%A3o%20e%20Tracking%20de%20Transportadores.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:26:35-03:00"
+    "extraidoEm": "2026-11-04T16:59:54-03:00"
   }
 }
