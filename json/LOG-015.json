@@ -37,8 +37,7 @@
       "responsavel": "",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-06-21",
-      "anotacao": ""
+      "fim": "2026-06-21"
     },
     {
       "numero": "02.",
@@ -46,8 +45,7 @@
       "responsavel": "",
       "status": 4,
       "inicio": "2026-06-26",
-      "fim": "2026-07-01",
-      "anotacao": ""
+      "fim": "2026-07-01"
     },
     {
       "numero": "03.",
@@ -55,8 +53,7 @@
       "responsavel": "",
       "status": 4,
       "inicio": "2026-06-30",
-      "fim": "2026-07-03",
-      "anotacao": ""
+      "fim": "2026-07-03"
     },
     {
       "numero": "04.",
@@ -64,8 +61,7 @@
       "responsavel": "",
       "status": 1,
       "inicio": "2026-08-01",
-      "fim": "2026-10-31",
-      "anotacao": ""
+      "fim": "2026-11-10"
     },
     {
       "numero": "05.",
@@ -73,8 +69,7 @@
       "responsavel": "",
       "status": 1,
       "inicio": "2026-10-20",
-      "fim": "2026-11-25",
-      "anotacao": ""
+      "fim": "2026-11-25"
     },
     {
       "numero": "06.",
@@ -82,8 +77,7 @@
       "responsavel": "",
       "status": 1,
       "inicio": "2026-09-10",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "07.",
@@ -91,8 +85,7 @@
       "responsavel": "",
       "status": 1,
       "inicio": "2026-09-16",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "fim": "2026-09-30"
     },
     {
       "numero": "08.",
@@ -100,8 +93,7 @@
       "responsavel": "",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "09.",
@@ -109,8 +101,7 @@
       "responsavel": "",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "10.",
@@ -118,8 +109,7 @@
       "responsavel": "",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -129,8 +119,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-07-02",
-      "anotacao": ""
+      "fim": "2026-07-02"
     },
     {
       "numero": "1.1",
@@ -138,8 +127,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-06-21",
-      "anotacao": ""
+      "fim": "2026-06-21"
     },
     {
       "numero": "1.2",
@@ -147,8 +135,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-06-25",
-      "anotacao": ""
+      "fim": "2026-06-25"
     },
     {
       "numero": "1.3",
@@ -156,8 +143,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-06-30",
-      "anotacao": ""
+      "fim": "2026-06-30"
     },
     {
       "numero": "1.4",
@@ -165,8 +151,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-06-30",
-      "anotacao": ""
+      "fim": "2026-06-30"
     },
     {
       "numero": "1.5",
@@ -174,8 +159,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-07-02",
-      "anotacao": ""
+      "fim": "2026-07-02"
     },
     {
       "numero": 2,
@@ -183,8 +167,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-06-26",
-      "fim": "2026-08-07",
-      "anotacao": ""
+      "fim": "2026-08-07"
     },
     {
       "numero": "2.1",
@@ -192,8 +175,7 @@
       "responsavel": "Time Transportes",
       "status": 5,
       "inicio": "2026-06-26",
-      "fim": "2026-07-01",
-      "anotacao": ""
+      "fim": "2026-07-01"
     },
     {
       "numero": "2.2",
@@ -201,8 +183,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-06-30",
-      "fim": "2026-07-03",
-      "anotacao": ""
+      "fim": "2026-07-03"
     },
     {
       "numero": "2.3",
@@ -210,8 +191,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-07-20",
-      "fim": "2026-08-05",
-      "anotacao": ""
+      "fim": "2026-08-05"
     },
     {
       "numero": "2.4",
@@ -219,8 +199,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-07-20",
-      "fim": "2026-07-30",
-      "anotacao": ""
+      "fim": "2026-07-30"
     },
     {
       "numero": "2.5",
@@ -228,8 +207,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-07-27",
-      "fim": "2026-08-02",
-      "anotacao": ""
+      "fim": "2026-08-02"
     },
     {
       "numero": "2.6",
@@ -237,8 +215,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-07-25",
-      "fim": "2026-08-07",
-      "anotacao": ""
+      "fim": "2026-08-07"
     },
     {
       "numero": 3,
@@ -246,8 +223,7 @@
       "responsavel": "Time Transportes / Compras",
       "status": 1,
       "inicio": "2026-08-01",
-      "fim": "2026-11-25",
-      "anotacao": ""
+      "fim": "2026-11-25"
     },
     {
       "numero": "3.1",
@@ -255,8 +231,7 @@
       "responsavel": "Time Transportes",
       "status": 1,
       "inicio": "2026-08-01",
-      "fim": "2026-10-31",
-      "anotacao": ""
+      "fim": "2026-10-31"
     },
     {
       "numero": "3.2",
@@ -264,8 +239,7 @@
       "responsavel": "Time Compras",
       "status": 1,
       "inicio": "2026-10-01",
-      "fim": "2026-11-01",
-      "anotacao": ""
+      "fim": "2026-11-01"
     },
     {
       "numero": "3.3",
@@ -273,8 +247,7 @@
       "responsavel": "Time Compras",
       "status": 1,
       "inicio": "2026-10-20",
-      "fim": "2026-11-25",
-      "anotacao": ""
+      "fim": "2026-11-25"
     },
     {
       "numero": 4,
@@ -282,8 +255,7 @@
       "responsavel": "Time Transportes / Catalde",
       "status": 1,
       "inicio": "2026-09-01",
-      "fim": "2026-10-01",
-      "anotacao": ""
+      "fim": "2026-10-01"
     },
     {
       "numero": "4.1",
@@ -291,8 +263,7 @@
       "responsavel": "Time Transportes / Catalde",
       "status": 4,
       "inicio": "2026-09-01",
-      "fim": "2026-09-15",
-      "anotacao": ""
+      "fim": "2026-09-15"
     },
     {
       "numero": "4.2",
@@ -300,8 +271,7 @@
       "responsavel": "Time Transportes / Catalde",
       "status": 1,
       "inicio": "2026-09-10",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "4.3",
@@ -309,8 +279,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-09-20",
-      "fim": "2026-10-10",
-      "anotacao": ""
+      "fim": "2026-10-10"
     },
     {
       "numero": "4.4",
@@ -318,8 +287,7 @@
       "responsavel": "Reversa",
       "status": 4,
       "inicio": "2026-09-10",
-      "fim": "2026-09-20",
-      "anotacao": ""
+      "fim": "2026-09-20"
     },
     {
       "numero": "4.5",
@@ -327,8 +295,7 @@
       "responsavel": "Time Transportes/Reversa",
       "status": 4,
       "inicio": "2026-09-10",
-      "fim": "2026-09-20",
-      "anotacao": ""
+      "fim": "2026-09-20"
     },
     {
       "numero": "4.6",
@@ -336,8 +303,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-09-16",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "fim": "2026-09-30"
     },
     {
       "numero": "4.7",
@@ -345,8 +311,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-09-18",
-      "fim": "2026-10-01",
-      "anotacao": ""
+      "fim": "2026-10-01"
     },
     {
       "numero": 5,
@@ -354,8 +319,7 @@
       "responsavel": "Time Transportes",
       "status": 1,
       "inicio": "2026-10-01",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "5.1",
@@ -363,8 +327,7 @@
       "responsavel": "Time Transportes",
       "status": 1,
       "inicio": "2026-10-01",
-      "fim": "2026-10-20",
-      "anotacao": ""
+      "fim": "2026-10-20"
     },
     {
       "numero": "5.2",
@@ -372,8 +335,7 @@
       "responsavel": "Time Transportes",
       "status": 1,
       "inicio": "2026-10-05",
-      "fim": "2026-10-17",
-      "anotacao": ""
+      "fim": "2026-10-17"
     },
     {
       "numero": "5.3",
@@ -381,8 +343,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "5.4",
@@ -390,8 +351,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "5.5",
@@ -399,8 +359,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "5.6",
@@ -408,8 +367,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 6,
@@ -417,8 +375,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.1",
@@ -426,8 +383,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.2",
@@ -435,8 +391,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.3",
@@ -444,8 +399,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.4",
@@ -453,8 +407,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.5",
@@ -462,8 +415,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.6",
@@ -471,8 +423,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     }
   ],
   "historico": [
@@ -3200,6 +3151,6 @@
   "fonte": {
     "arquivo": "LOG-015 - Milk Run.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-015%20-%20Milk%20Run.xlsx?web=1",
-    "extraidoEm": "2026-11-04T14:27:27-03:00"
+    "extraidoEm": "2026-11-04T15:59:00-03:00"
   }
 }

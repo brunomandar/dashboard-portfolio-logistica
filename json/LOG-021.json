@@ -35,8 +35,7 @@
       "responsavel": "Cleria Plaster",
       "status": 4,
       "inicio": "2026-04-01",
-      "fim": "2026-04-15",
-      "anotacao": ""
+      "fim": "2026-04-15"
     },
     {
       "numero": "2",
@@ -44,8 +43,7 @@
       "responsavel": "Cleria Plaster / Gerências de Logística",
       "status": 4,
       "inicio": "2026-04-13",
-      "fim": "2026-08-07",
-      "anotacao": ""
+      "fim": "2026-08-07"
     },
     {
       "numero": "3",
@@ -53,8 +51,7 @@
       "responsavel": "Áreas de Logística",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-08-21",
-      "anotacao": ""
+      "fim": "2026-08-21"
     },
     {
       "numero": "4",
@@ -62,8 +59,7 @@
       "responsavel": "SIC / Cleria Plaster",
       "status": 4,
       "inicio": "2026-06-10",
-      "fim": "2026-08-31",
-      "anotacao": ""
+      "fim": "2026-08-31"
     },
     {
       "numero": "5",
@@ -71,8 +67,7 @@
       "responsavel": "Cleria Plaster / Gerências",
       "status": 2,
       "inicio": "2026-08-21",
-      "fim": "2026-10-15",
-      "anotacao": ""
+      "fim": "2026-10-15"
     },
     {
       "numero": "6",
@@ -80,8 +75,7 @@
       "responsavel": "Cleria Plaster / SIC",
       "status": 1,
       "inicio": "2026-09-29",
-      "fim": "2026-10-31",
-      "anotacao": ""
+      "fim": "2026-10-31"
     },
     {
       "numero": "7",
@@ -89,8 +83,7 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "8",
@@ -98,8 +91,7 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": "2026-12-31",
-      "anotacao": ""
+      "fim": "2026-12-31"
     }
   ],
   "cronogramaDetalhado": [
@@ -109,8 +101,7 @@
       "responsavel": "Cleria Plaster",
       "status": 4,
       "inicio": "2026-04-01",
-      "fim": "2026-04-15",
-      "anotacao": ""
+      "fim": "2026-04-15"
     },
     {
       "numero": "1.1",
@@ -118,8 +109,7 @@
       "responsavel": "Cleria Plaster / SIC",
       "status": 4,
       "inicio": "2026-04-01",
-      "fim": "2026-04-15",
-      "anotacao": ""
+      "fim": "2026-04-15"
     },
     {
       "numero": "1.2",
@@ -127,8 +117,7 @@
       "responsavel": "Cleria Plaster",
       "status": 4,
       "inicio": "2026-04-15",
-      "fim": "2026-04-15",
-      "anotacao": ""
+      "fim": "2026-04-15"
     },
     {
       "numero": "2",
@@ -136,8 +125,7 @@
       "responsavel": "Cleria Plaster / Gerências de Logística",
       "status": 4,
       "inicio": "2026-04-13",
-      "fim": "2026-08-07",
-      "anotacao": ""
+      "fim": "2026-08-07"
     },
     {
       "numero": "2.1",
@@ -145,8 +133,7 @@
       "responsavel": "Cleria Plaster",
       "status": 4,
       "inicio": "2026-04-13",
-      "fim": "2026-04-17",
-      "anotacao": ""
+      "fim": "2026-04-17"
     },
     {
       "numero": "2.2",
@@ -154,8 +141,7 @@
       "responsavel": "Gerências de Logística",
       "status": 4,
       "inicio": "2026-04-15",
-      "fim": "2026-05-06",
-      "anotacao": ""
+      "fim": "2026-05-06"
     },
     {
       "numero": "2.3",
@@ -163,8 +149,7 @@
       "responsavel": "Cleria Plaster / Áreas de Logística",
       "status": 4,
       "inicio": "2026-05-06",
-      "fim": "2026-08-07",
-      "anotacao": ""
+      "fim": "2026-08-07"
     },
     {
       "numero": "3",
@@ -172,8 +157,7 @@
       "responsavel": "Áreas de Logística",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-08-21",
-      "anotacao": ""
+      "fim": "2026-08-21"
     },
     {
       "numero": "3.1",
@@ -181,8 +165,7 @@
       "responsavel": "Cleria Plaster / Áreas de Logística",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-08-21",
-      "anotacao": ""
+      "fim": "2026-08-21"
     },
     {
       "numero": "3.2",
@@ -190,8 +173,7 @@
       "responsavel": "Áreas de Logística",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-08-21",
-      "anotacao": ""
+      "fim": "2026-08-21"
     },
     {
       "numero": "3.3",
@@ -199,8 +181,7 @@
       "responsavel": "Áreas de Logística",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-08-21",
-      "anotacao": ""
+      "fim": "2026-08-21"
     },
     {
       "numero": "4",
@@ -208,8 +189,7 @@
       "responsavel": "SIC / Cleria Plaster",
       "status": 4,
       "inicio": "2026-06-10",
-      "fim": "2026-08-31",
-      "anotacao": ""
+      "fim": "2026-08-31"
     },
     {
       "numero": "4.1",
@@ -217,8 +197,7 @@
       "responsavel": "SIC / Cleria Plaster",
       "status": 4,
       "inicio": "2026-06-10",
-      "fim": "2026-06-10",
-      "anotacao": ""
+      "fim": "2026-06-10"
     },
     {
       "numero": "4.2",
@@ -226,8 +205,7 @@
       "responsavel": "SIC / Áreas de Logística",
       "status": 4,
       "inicio": "2026-06-27",
-      "fim": "2026-08-21",
-      "anotacao": ""
+      "fim": "2026-08-21"
     },
     {
       "numero": "4.3",
@@ -235,8 +213,7 @@
       "responsavel": "SIC",
       "status": 4,
       "inicio": "2026-08-21",
-      "fim": "2026-08-31",
-      "anotacao": ""
+      "fim": "2026-08-31"
     },
     {
       "numero": "5",
@@ -244,8 +221,7 @@
       "responsavel": "Cleria Plaster / Gerências",
       "status": 2,
       "inicio": "2026-08-21",
-      "fim": "2026-10-15",
-      "anotacao": ""
+      "fim": "2026-10-15"
     },
     {
       "numero": "5.1",
@@ -253,8 +229,7 @@
       "responsavel": "Cleria Plaster",
       "status": 5,
       "inicio": "2026-08-21",
-      "fim": "2026-08-21",
-      "anotacao": ""
+      "fim": "2026-08-21"
     },
     {
       "numero": "5.2",
@@ -262,8 +237,7 @@
       "responsavel": "Cleria Plaster / Áreas de Logística",
       "status": 5,
       "inicio": "2026-08-21",
-      "fim": "2026-09-29",
-      "anotacao": ""
+      "fim": "2026-09-29"
     },
     {
       "numero": "5.3",
@@ -271,8 +245,7 @@
       "responsavel": "Gerências de Logística",
       "status": 2,
       "inicio": "2026-09-29",
-      "fim": "2026-10-15",
-      "anotacao": ""
+      "fim": "2026-10-15"
     },
     {
       "numero": "6",
@@ -280,8 +253,7 @@
       "responsavel": "Cleria Plaster / SIC",
       "status": 1,
       "inicio": "2026-09-29",
-      "fim": "2026-10-31",
-      "anotacao": ""
+      "fim": "2026-10-31"
     },
     {
       "numero": "6.1",
@@ -289,8 +261,7 @@
       "responsavel": "Cleria Plaster",
       "status": 1,
       "inicio": "2026-09-29",
-      "fim": "2026-10-31",
-      "anotacao": ""
+      "fim": "2026-10-31"
     },
     {
       "numero": "6.2",
@@ -298,8 +269,7 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.3",
@@ -307,8 +277,7 @@
       "responsavel": "SIC",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "7",
@@ -316,8 +285,7 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "7.1",
@@ -325,8 +293,7 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "7.2",
@@ -334,8 +301,7 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "7.3",
@@ -343,8 +309,7 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "8",
@@ -352,8 +317,7 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": "2026-12-31",
-      "anotacao": ""
+      "fim": "2026-12-31"
     },
     {
       "numero": "8.1",
@@ -361,8 +325,7 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "8.2",
@@ -370,8 +333,7 @@
       "responsavel": "SIC",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "8.3",
@@ -379,8 +341,7 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "8.4",
@@ -388,8 +349,7 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": "2026-12-31",
-      "anotacao": ""
+      "fim": "2026-12-31"
     }
   ],
   "historico": [],
@@ -2991,6 +2951,6 @@
   "fonte": {
     "arquivo": "LOG-021 - Gestão de Risco.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-021%20-%20Gest%C3%A3o%20de%20Risco.xlsx?web=1",
-    "extraidoEm": "2026-11-04T14:27:37-03:00"
+    "extraidoEm": "2026-11-04T15:59:08-03:00"
   }
 }
