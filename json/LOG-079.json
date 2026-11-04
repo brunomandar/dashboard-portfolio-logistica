@@ -19,7 +19,7 @@
     "Integração SailPoint e TMS implantada em produção e Técnicos",
     "Catálogo de perfis do TMS cadastrado no SailPoint",
     "Provisionamento automático de acessos funcionando",
-    "Revogação automática de acessos implementada Status do Projeto 29/10/2026 - A relação de requisitos de segurança serão necessários para a renovação do contrato da Catalde junto ao time de compras 23/10/2026 - Andreia encaminhou Blueprint IGA que precisa ser preenchido pelo time Catalde",
+    "Revogação automática de acessos implementada",
     "Fluxo de aprovação configurado e homologado",
     "Certificação periódica de acessos habilitada",
     "Documentação técnica e operacional concluída",
@@ -3790,6 +3790,6 @@
   "fonte": {
     "arquivo": "LOG-079 - Segundo Fator de Autenticação TMS (PING e IGA).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-079%20-%20Segundo%20Fator%20de%20Autentica%C3%A7%C3%A3o%20TMS%20%28PING%20e%20IGA%29.xlsx?web=1",
-    "extraidoEm": "2026-11-04T17:00:37-03:00"
+    "extraidoEm": "2026-11-04T17:55:54-03:00"
   }
 }
