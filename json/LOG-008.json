@@ -35,8 +35,7 @@
       "responsavel": "Negócios",
       "status": 1,
       "inicio": "2026-07-02",
-      "fim": "2026-07-02",
-      "anotacao": ""
+      "fim": "2026-07-02"
     },
     {
       "numero": "02.",
@@ -44,8 +43,7 @@
       "responsavel": "Negócios",
       "status": 4,
       "inicio": "2026-08-24",
-      "fim": "2026-10-16",
-      "anotacao": ""
+      "fim": "2026-10-16"
     },
     {
       "numero": "03.",
@@ -53,8 +51,7 @@
       "responsavel": "Negócios",
       "status": 4,
       "inicio": "2026-10-06",
-      "fim": "2026-11-17",
-      "anotacao": ""
+      "fim": "2026-11-17"
     },
     {
       "numero": "04.",
@@ -62,8 +59,7 @@
       "responsavel": "Negócios",
       "status": 4,
       "inicio": "2026-11-17",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "05.",
@@ -71,8 +67,7 @@
       "responsavel": "Negócios",
       "status": 4,
       "inicio": "2026-03-31",
-      "fim": "2026-04-02",
-      "anotacao": ""
+      "fim": "2026-04-02"
     },
     {
       "numero": "06.",
@@ -80,8 +75,7 @@
       "responsavel": "Negócios",
       "status": 4,
       "inicio": "2026-07-10",
-      "fim": "2026-07-28",
-      "anotacao": ""
+      "fim": "2026-07-28"
     },
     {
       "numero": "07.",
@@ -89,8 +83,7 @@
       "responsavel": "Negócios",
       "status": 4,
       "inicio": "2026-08-12",
-      "fim": "2026-10-23",
-      "anotacao": ""
+      "fim": "2026-10-23"
     },
     {
       "numero": "08.",
@@ -98,26 +91,23 @@
       "responsavel": "Negócios",
       "status": 4,
       "inicio": "2026-09-01",
-      "fim": "2026-10-21",
-      "anotacao": ""
+      "fim": "2026-10-21"
     },
     {
       "numero": "09.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "atividade": "Desenvolvimento da Solução de Antecipação da Janela de Portabilidade",
+      "responsavel": "TI",
+      "status": 2,
+      "inicio": "2026-10-30",
+      "fim": ""
     },
     {
       "numero": "10.",
-      "atividade": "",
-      "responsavel": "",
+      "atividade": "Televendas Receptivo - Desenvolvimento de Melhorias no Solar",
+      "responsavel": "TI",
       "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "inicio": "2026-10-28",
+      "fim": ""
     },
     {
       "numero": "11.",
@@ -125,8 +115,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "12.",
@@ -134,8 +123,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "13.",
@@ -143,8 +131,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "14.",
@@ -152,8 +139,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "15.",
@@ -161,8 +147,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "16.",
@@ -170,8 +155,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "17.",
@@ -179,8 +163,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "18.",
@@ -188,8 +171,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "19.",
@@ -197,8 +179,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "20.",
@@ -206,8 +187,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "21.",
@@ -215,8 +195,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "22.",
@@ -224,8 +203,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "23.",
@@ -233,8 +211,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "24.",
@@ -242,8 +219,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "25.",
@@ -251,8 +227,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "26.",
@@ -260,8 +235,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "27.",
@@ -269,8 +243,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -280,8 +253,7 @@
       "responsavel": "",
       "status": 1,
       "inicio": "2026-01-14",
-      "fim": "2028-01-31",
-      "anotacao": ""
+      "fim": "2028-01-31"
     },
     {
       "numero": "1.1",
@@ -289,8 +261,7 @@
       "responsavel": "TI",
       "status": 4,
       "inicio": "2026-06-29",
-      "fim": "2026-06-30",
-      "anotacao": ""
+      "fim": "2026-06-30"
     },
     {
       "numero": "1.2",
@@ -298,8 +269,7 @@
       "responsavel": "Daniela Rabelo",
       "status": 4,
       "inicio": "2026-07-02",
-      "fim": "2026-07-02",
-      "anotacao": ""
+      "fim": "2026-07-02"
     },
     {
       "numero": "1.3",
@@ -307,8 +277,7 @@
       "responsavel": "TI / Canal",
       "status": 4,
       "inicio": "2026-06-16",
-      "fim": "2026-07-15",
-      "anotacao": ""
+      "fim": "2026-07-15"
     },
     {
       "numero": "1.4",
@@ -316,8 +285,7 @@
       "responsavel": "TI",
       "status": 4,
       "inicio": "2026-07-22",
-      "fim": "2026-07-22",
-      "anotacao": ""
+      "fim": "2026-07-22"
     },
     {
       "numero": "1.5",
@@ -325,8 +293,7 @@
       "responsavel": "TI",
       "status": 4,
       "inicio": "2026-07-26",
-      "fim": "2026-07-26",
-      "anotacao": ""
+      "fim": "2026-07-26"
     },
     {
       "numero": "1.6",
@@ -334,8 +301,7 @@
       "responsavel": "TI",
       "status": 4,
       "inicio": "2026-08-15",
-      "fim": "2026-08-15",
-      "anotacao": ""
+      "fim": "2026-08-15"
     },
     {
       "numero": "1.7",
@@ -343,8 +309,7 @@
       "responsavel": "Renato Martins",
       "status": 4,
       "inicio": "2026-08-20",
-      "fim": "2026-08-20",
-      "anotacao": ""
+      "fim": "2026-08-20"
     },
     {
       "numero": "1.8",
@@ -352,8 +317,7 @@
       "responsavel": "TI",
       "status": 4,
       "inicio": "2026-08-17",
-      "fim": "2026-09-23",
-      "anotacao": ""
+      "fim": "2026-09-23"
     },
     {
       "numero": "1.9",
@@ -361,8 +325,7 @@
       "responsavel": "TI",
       "status": 4,
       "inicio": "2026-09-22",
-      "fim": "2026-09-22",
-      "anotacao": ""
+      "fim": "2026-09-22"
     },
     {
       "numero": "1.10",
@@ -370,8 +333,7 @@
       "responsavel": "Comercial / Treinamento",
       "status": 4,
       "inicio": "2026-08-24",
-      "fim": "2026-10-16",
-      "anotacao": ""
+      "fim": "2026-10-16"
     },
     {
       "numero": "1.11",
@@ -379,8 +341,7 @@
       "responsavel": "Canal TLV",
       "status": 1,
       "inicio": "2026-10-06",
-      "fim": "2026-11-17",
-      "anotacao": ""
+      "fim": "2026-11-17"
     },
     {
       "numero": "1.12",
@@ -388,8 +349,7 @@
       "responsavel": "Canal TLV",
       "status": 2,
       "inicio": "2026-01-14",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 2,
@@ -397,8 +357,7 @@
       "responsavel": "",
       "status": 1,
       "inicio": "2026-07-10",
-      "fim": "2026-10-26",
-      "anotacao": ""
+      "fim": "2026-10-26"
     },
     {
       "numero": "2.1",
@@ -406,8 +365,7 @@
       "responsavel": "Canal",
       "status": 4,
       "inicio": "2026-07-10",
-      "fim": "2026-07-28",
-      "anotacao": ""
+      "fim": "2026-07-28"
     },
     {
       "numero": "2.2",
@@ -415,8 +373,7 @@
       "responsavel": "TI",
       "status": 4,
       "inicio": "2026-07-24",
-      "fim": "2026-07-27",
-      "anotacao": ""
+      "fim": "2026-07-27"
     },
     {
       "numero": "2.3",
@@ -424,8 +381,7 @@
       "responsavel": "Canal",
       "status": 4,
       "inicio": "2026-08-18",
-      "fim": "2026-08-18",
-      "anotacao": ""
+      "fim": "2026-08-18"
     },
     {
       "numero": "2.4",
@@ -433,8 +389,7 @@
       "responsavel": "TI",
       "status": 4,
       "inicio": "2026-09-15",
-      "fim": "2026-09-17",
-      "anotacao": ""
+      "fim": "2026-09-17"
     },
     {
       "numero": "2.5",
@@ -442,8 +397,7 @@
       "responsavel": "Canais",
       "status": 4,
       "inicio": "2026-09-18",
-      "fim": "2026-09-18",
-      "anotacao": ""
+      "fim": "2026-09-18"
     },
     {
       "numero": "2.6",
@@ -451,8 +405,7 @@
       "responsavel": "TI",
       "status": 4,
       "inicio": "2026-09-26",
-      "fim": "2026-10-19",
-      "anotacao": ""
+      "fim": "2026-10-19"
     },
     {
       "numero": "2.7",
@@ -460,8 +413,7 @@
       "responsavel": "Canal",
       "status": 1,
       "inicio": "2026-08-12",
-      "fim": "2026-10-23",
-      "anotacao": ""
+      "fim": "2026-10-23"
     },
     {
       "numero": "2.8",
@@ -469,8 +421,7 @@
       "responsavel": "Canal",
       "status": 1,
       "inicio": "2026-09-01",
-      "fim": "2026-10-26",
-      "anotacao": ""
+      "fim": "2026-10-26"
     },
     {
       "numero": "4.1",
@@ -478,8 +429,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "4.2",
@@ -487,8 +437,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "4.3",
@@ -496,8 +445,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "4.4",
@@ -505,8 +453,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "4.5",
@@ -514,8 +461,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "4.6",
@@ -523,8 +469,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 5,
@@ -532,8 +477,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "5.1",
@@ -541,8 +485,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "5.2",
@@ -550,8 +493,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "5.3",
@@ -559,8 +501,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "5.4",
@@ -568,8 +509,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "5.5",
@@ -577,8 +517,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "5.6",
@@ -586,8 +525,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 6,
@@ -595,8 +533,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.1",
@@ -604,8 +541,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.2",
@@ -613,8 +549,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.3",
@@ -622,8 +557,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.4",
@@ -631,8 +565,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.5",
@@ -640,8 +573,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.6",
@@ -649,8 +581,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 7,
@@ -658,8 +589,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "7.1",
@@ -667,8 +597,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "7.3",
@@ -676,8 +605,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "7.4",
@@ -685,8 +613,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "7.5",
@@ -694,8 +621,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "7.6",
@@ -703,8 +629,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 8,
@@ -712,8 +637,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 9,
@@ -721,8 +645,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 10,
@@ -730,8 +653,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 11,
@@ -739,8 +661,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 12,
@@ -748,8 +669,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 13,
@@ -757,8 +677,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 14,
@@ -766,8 +685,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 15,
@@ -775,8 +693,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 16,
@@ -784,8 +701,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 17,
@@ -793,8 +709,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 18,
@@ -802,8 +717,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 19,
@@ -811,8 +725,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 20,
@@ -820,8 +733,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 21,
@@ -829,8 +741,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 22,
@@ -838,8 +749,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 23,
@@ -847,8 +757,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 24,
@@ -856,8 +765,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 25,
@@ -865,8 +773,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 26,
@@ -874,8 +781,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 27,
@@ -883,8 +789,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 28,
@@ -892,8 +797,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 29,
@@ -901,8 +805,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 30,
@@ -910,8 +813,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 31,
@@ -919,8 +821,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 32,
@@ -928,8 +829,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 33,
@@ -937,8 +837,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 34,
@@ -946,8 +845,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 35,
@@ -955,8 +853,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 36,
@@ -964,8 +861,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 37,
@@ -973,8 +869,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 38,
@@ -982,8 +877,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 39,
@@ -991,8 +885,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 40,
@@ -1000,8 +893,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 41,
@@ -1009,8 +901,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 42,
@@ -1018,8 +909,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 43,
@@ -1027,8 +917,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 44,
@@ -1036,8 +925,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 45,
@@ -1045,8 +933,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 46,
@@ -1054,8 +941,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 47,
@@ -1063,8 +949,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 48,
@@ -1072,8 +957,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 49,
@@ -1081,8 +965,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 50,
@@ -1090,8 +973,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 51,
@@ -1099,8 +981,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 52,
@@ -1108,8 +989,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 53,
@@ -1117,8 +997,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 54,
@@ -1126,8 +1005,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 55,
@@ -1135,8 +1013,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 56,
@@ -1144,8 +1021,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 57,
@@ -1153,11 +1029,15 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     }
   ],
   "historico": [
+    {
+      "data": "2026-11-04",
+      "acoes": "Televendas Receptivo - Bsim em andamento houve 18 pedidos com eSIM no canal de Televendas Receptivo\n\n\nBSIM -Televendas Receptivo. Será realizado teste em produção com 1 vendedor até nov/2026",
+      "detalhe": "Televendas Receptivo - Bsim houve 18 pedidos com eSIM no canal de Televendas Receptivo. A SD 234435 foi aberta para implementação das melhorias necessárias na jornada, com previsão de conclusão até 28/10. A abertura foi realizada, porém a iniciativa permanece pendente de alinhamento da solução e aprovação de verba. Trata-se de uma melhoria indispensável para viabilizar o rollout da operação.\n\nTelevendas Ativo: Teste concluído em 08/10/2026. A execução dos testes de portabilidade aguarda disponibilização de nova massa de dados, prevista para 30/10/2026. Permanecem pendentes o início do B-SIM e a implementação da OS 232024 para viabilizar a solução de Antecipação da Janela de Portabilidade.\nComo alternativa será realizado teste em produção com 1 vendedor até 05/12\n\neSIM | Canal de Distribuição: Validação das regras de comissionamento em andamento junto ao Jurídico. A conclusão desta etapa é pré-requisito para evolução da iniciativa. Responsáveis: Thiago Avila (Canal Recarga) e Marcelle Dantas (Jurídico). Previsão: 12/11."
+    },
     {
       "data": "2026-10-28",
       "acoes": "Ganhos projeto E-sim",
@@ -1199,7 +1079,7 @@
       "detalhe": "Realizar levantamento de volume de SIMcards distribuídos por canal/segmento"
     }
   ],
-  "statusProjeto": "Risco: 30/10/2026  Transferência Rápida:Identificados casos isolados de aparelhos importados incompatíveis com eSIM. Contingência operacional definida (chip físico) e validação pré-venda em implementação. Potencial impacto no rollout.\n30/10/2026 - As implantações de LP, ALS e Transferência Rápida foram concluídas conforme planejado, porém a frente de Transferência Rápida permanece sob monitoramento devido à dependência da correção do bundle Motorola, que pode impactar os próximos marcos comerciais da implementação do E-SIM.\n21/10/2026 - Teste de migração do eSIM para o televendas concluídos para novos clientes. Nos casos de portabilidade estão verificando jornada no solar, prazo 30/10.",
+  "statusProjeto": "Risco: 04/11/2026  Atraso na implementação da SD 234435| OS 232024.(Depende de orçamento)\nRisco: 30/10/2026  Transferência Rápida:Identificados casos isolados de aparelhos importados incompatíveis com eSIM. Contingência operacional definida (chip físico) e validação pré-venda em implementação. Potencial impacto no rollout.\n04/11/2026 - Antecipação da Janela de Portabilidade: Testes de portabilidade aguardam nova massa de dados. Pendente início do B-SIM e implementação da OS 232024. Como contingência, será realizado teste em produção com 1 vendedor até 05/12.\n04/11/2026 - Televendas Receptivo (B-SIM): 18 pedidos com eSIM. SD 234435 aberta; pendente alinhamento da solução e aprovação de verba. Melhoria crítica para o rollout.\n30/10/2026 - As implantações de LP, ALS e Transferência Rápida foram concluídas conforme planejado, porém a frente de Transferência Rápida permanece sob monitoramento devido à dependência da correção do bundle Motorola, que pode impactar os próximos marcos comerciais da implementação do E-SIM.\n21/10/2026 - Teste de migração do eSIM para o televendas concluídos para novos clientes. Nos casos de portabilidade estão verificando jornada no solar, prazo 30/10.",
   "financeiro": [
     {
       "id": "LOG-008",
@@ -3797,6 +3677,6 @@
   "fonte": {
     "arquivo": "LOG-008 - Massificação eSIM (Saving Logístico).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-008%20-%20Massifica%C3%A7%C3%A3o%20eSIM%20%28Saving%20Log%C3%ADstico%29.xlsx?web=1",
-    "extraidoEm": "2026-11-04T14:26:41-03:00"
+    "extraidoEm": "2026-11-04T15:58:29-03:00"
   }
 }
