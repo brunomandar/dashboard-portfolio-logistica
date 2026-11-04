@@ -35,7 +35,8 @@
       "responsavel": "Time Claro",
       "status": 4,
       "inicio": "2026-09-02",
-      "fim": "2026-09-18"
+      "fim": "2026-09-18",
+      "anotacao": ""
     },
     {
       "numero": "02.",
@@ -43,7 +44,8 @@
       "responsavel": "Time Claro",
       "status": 2,
       "inicio": "2026-09-14",
-      "fim": "2026-10-23"
+      "fim": "2026-10-23",
+      "anotacao": ""
     },
     {
       "numero": "03.",
@@ -51,7 +53,8 @@
       "responsavel": "Time Claro",
       "status": 2,
       "inicio": "2026-09-21",
-      "fim": "2026-12-11"
+      "fim": "2026-12-11",
+      "anotacao": ""
     },
     {
       "numero": "04.",
@@ -59,7 +62,8 @@
       "responsavel": "Time Claro / Catalde",
       "status": 2,
       "inicio": "2026-09-21",
-      "fim": "2026-12-11"
+      "fim": "2026-12-11",
+      "anotacao": ""
     },
     {
       "numero": "05.",
@@ -67,7 +71,8 @@
       "responsavel": "Time Claro",
       "status": 2,
       "inicio": "2026-09-14",
-      "fim": "2026-12-18"
+      "fim": "2026-12-18",
+      "anotacao": ""
     },
     {
       "numero": "06.",
@@ -75,7 +80,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2026-11-02",
-      "fim": "2026-12-23"
+      "fim": "2026-12-23",
+      "anotacao": ""
     },
     {
       "numero": "07.",
@@ -83,7 +89,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2027-01-01",
-      "fim": "2027-03-31"
+      "fim": "2027-03-31",
+      "anotacao": ""
     },
     {
       "numero": "08.",
@@ -91,7 +98,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "09.",
@@ -99,7 +107,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "10.",
@@ -107,7 +116,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "11.",
@@ -115,7 +125,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "12.",
@@ -123,7 +134,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "13.",
@@ -131,7 +143,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "14.",
@@ -139,7 +152,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "15.",
@@ -147,7 +161,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "16.",
@@ -155,7 +170,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "17.",
@@ -163,7 +179,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "18.",
@@ -171,7 +188,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "19.",
@@ -179,7 +197,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "20.",
@@ -187,7 +206,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "21.",
@@ -195,7 +215,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "22.",
@@ -203,7 +224,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "23.",
@@ -211,7 +233,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "24.",
@@ -219,7 +242,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "25.",
@@ -227,7 +251,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "26.",
@@ -235,7 +260,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "27.",
@@ -243,17 +269,19 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     }
   ],
   "cronogramaDetalhado": [
     {
       "numero": 1,
-      "atividade": "1. GOVERNANÇA E BASE REGULATÓRIA",
+      "atividade": "GOVERNANÇA E BASE REGULATÓRIA",
       "responsavel": "Time Claro",
       "status": 4,
       "inicio": "2026-09-02",
-      "fim": "2026-09-18"
+      "fim": "2026-09-18",
+      "anotacao": ""
     },
     {
       "numero": "1.1",
@@ -261,7 +289,8 @@
       "responsavel": "Time Claro",
       "status": 4,
       "inicio": "2026-09-02",
-      "fim": "2026-09-11"
+      "fim": "2026-09-11",
+      "anotacao": ""
     },
     {
       "numero": "1.2",
@@ -269,7 +298,8 @@
       "responsavel": "Time Claro",
       "status": 4,
       "inicio": "2026-09-02",
-      "fim": "2026-09-18"
+      "fim": "2026-09-18",
+      "anotacao": ""
     },
     {
       "numero": "1.3",
@@ -277,7 +307,8 @@
       "responsavel": "Time Claro",
       "status": 4,
       "inicio": "2026-09-08",
-      "fim": "2026-09-18"
+      "fim": "2026-09-18",
+      "anotacao": ""
     },
     {
       "numero": "1.4",
@@ -285,7 +316,8 @@
       "responsavel": "Time Claro",
       "status": 4,
       "inicio": "2026-09-08",
-      "fim": "2026-09-11"
+      "fim": "2026-09-11",
+      "anotacao": ""
     },
     {
       "numero": "1.5",
@@ -293,15 +325,17 @@
       "responsavel": "Time Claro",
       "status": 4,
       "inicio": "2026-09-08",
-      "fim": "2026-09-18"
+      "fim": "2026-09-18",
+      "anotacao": ""
     },
     {
       "numero": 2,
-      "atividade": "2. DIAGNÓSTICO E DESENHO TRIBUTÁRIO LOGÍSTICO",
+      "atividade": "DIAGNÓSTICO E DESENHO TRIBUTÁRIO LOGÍSTICO",
       "responsavel": "Time Claro",
       "status": 2,
       "inicio": "2026-09-14",
-      "fim": "2026-10-23"
+      "fim": "2026-10-23",
+      "anotacao": ""
     },
     {
       "numero": "2.1",
@@ -309,7 +343,8 @@
       "responsavel": "Time Claro",
       "status": 4,
       "inicio": "2026-09-14",
-      "fim": "2026-10-02"
+      "fim": "2026-10-02",
+      "anotacao": ""
     },
     {
       "numero": "2.2",
@@ -317,7 +352,8 @@
       "responsavel": "Time Claro",
       "status": 4,
       "inicio": "2026-09-14",
-      "fim": "2026-10-09"
+      "fim": "2026-10-09",
+      "anotacao": ""
     },
     {
       "numero": "2.3",
@@ -325,7 +361,8 @@
       "responsavel": "Time Claro",
       "status": 4,
       "inicio": "2026-09-21",
-      "fim": "2026-10-09"
+      "fim": "2026-10-09",
+      "anotacao": ""
     },
     {
       "numero": "2.4",
@@ -333,7 +370,8 @@
       "responsavel": "Time Claro",
       "status": 1,
       "inicio": "2026-09-21",
-      "fim": "2026-10-16"
+      "fim": "2026-10-16",
+      "anotacao": ""
     },
     {
       "numero": "2.5",
@@ -341,7 +379,8 @@
       "responsavel": "Time Claro",
       "status": 1,
       "inicio": "2026-09-28",
-      "fim": "2026-10-16"
+      "fim": "2026-10-16",
+      "anotacao": ""
     },
     {
       "numero": "2.6",
@@ -349,15 +388,17 @@
       "responsavel": "Time Claro",
       "status": 1,
       "inicio": "2026-10-19",
-      "fim": "2026-10-23"
+      "fim": "2026-10-23",
+      "anotacao": ""
     },
     {
       "numero": 3,
-      "atividade": "3. ADEQUAÇÃO DO SAP E SISTEMAS FISCAIS",
+      "atividade": "ADEQUAÇÃO DO SAP E SISTEMAS FISCAIS",
       "responsavel": "Time Claro",
       "status": 2,
       "inicio": "2026-09-21",
-      "fim": "2026-12-11"
+      "fim": "2026-12-11",
+      "anotacao": ""
     },
     {
       "numero": "3.1",
@@ -365,7 +406,8 @@
       "responsavel": "Time Claro",
       "status": 4,
       "inicio": "2026-09-21",
-      "fim": "2026-10-09"
+      "fim": "2026-10-09",
+      "anotacao": ""
     },
     {
       "numero": "3.2",
@@ -373,7 +415,8 @@
       "responsavel": "Time Claro",
       "status": 1,
       "inicio": "2026-10-05",
-      "fim": "2026-10-23"
+      "fim": "2026-10-23",
+      "anotacao": ""
     },
     {
       "numero": "3.3",
@@ -381,7 +424,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2026-10-26",
-      "fim": "2026-11-20"
+      "fim": "2026-11-20",
+      "anotacao": ""
     },
     {
       "numero": "3.4",
@@ -389,7 +433,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2026-10-26",
-      "fim": "2026-11-27"
+      "fim": "2026-11-27",
+      "anotacao": ""
     },
     {
       "numero": "3.5",
@@ -397,7 +442,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2026-11-09",
-      "fim": "2026-12-04"
+      "fim": "2026-12-04",
+      "anotacao": ""
     },
     {
       "numero": "3.6",
@@ -405,15 +451,17 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2026-11-23",
-      "fim": "2026-12-11"
+      "fim": "2026-12-11",
+      "anotacao": ""
     },
     {
       "numero": 4,
-      "atividade": "4. ADEQUAÇÃO DO TMS E DOCUMENTOS DE TRANSPORTE",
+      "atividade": "ADEQUAÇÃO DO TMS E DOCUMENTOS DE TRANSPORTE",
       "responsavel": "Time Claro / Catalde",
       "status": 2,
       "inicio": "2026-09-21",
-      "fim": "2026-12-11"
+      "fim": "2026-12-11",
+      "anotacao": ""
     },
     {
       "numero": "4.1",
@@ -421,7 +469,8 @@
       "responsavel": "Time Claro / Catalde",
       "status": 4,
       "inicio": "2026-09-21",
-      "fim": "2026-10-09"
+      "fim": "2026-10-09",
+      "anotacao": ""
     },
     {
       "numero": "4.2",
@@ -429,7 +478,8 @@
       "responsavel": "Time Claro / Catalde",
       "status": 2,
       "inicio": "2026-10-05",
-      "fim": "2026-10-23"
+      "fim": "2026-10-23",
+      "anotacao": ""
     },
     {
       "numero": "4.3",
@@ -437,7 +487,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2026-10-26",
-      "fim": "2026-11-27"
+      "fim": "2026-11-27",
+      "anotacao": ""
     },
     {
       "numero": "4.4",
@@ -445,7 +496,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2026-10-26",
-      "fim": "2026-11-27"
+      "fim": "2026-11-27",
+      "anotacao": ""
     },
     {
       "numero": "4.5",
@@ -453,7 +505,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2026-11-09",
-      "fim": "2026-12-04"
+      "fim": "2026-12-04",
+      "anotacao": ""
     },
     {
       "numero": "4.6",
@@ -461,15 +514,17 @@
       "responsavel": "Time Claro / Catalde",
       "status": 0,
       "inicio": "2026-11-23",
-      "fim": "2026-12-11"
+      "fim": "2026-12-11",
+      "anotacao": ""
     },
     {
       "numero": 5,
-      "atividade": "5. ADEQUAÇÃO DOS TRANSPORTADORES E CONTRATOS",
+      "atividade": "ADEQUAÇÃO DOS TRANSPORTADORES E CONTRATOS",
       "responsavel": "Time Claro",
       "status": 2,
       "inicio": "2026-09-14",
-      "fim": "2026-12-18"
+      "fim": "2026-12-18",
+      "anotacao": ""
     },
     {
       "numero": "5.1",
@@ -477,7 +532,8 @@
       "responsavel": "Time Claro",
       "status": 4,
       "inicio": "2026-09-14",
-      "fim": "2026-09-25"
+      "fim": "2026-09-25",
+      "anotacao": ""
     },
     {
       "numero": "5.2",
@@ -485,7 +541,8 @@
       "responsavel": "Time Claro",
       "status": 2,
       "inicio": "2026-09-28",
-      "fim": "2026-10-23"
+      "fim": "2026-10-23",
+      "anotacao": ""
     },
     {
       "numero": "5.3",
@@ -493,7 +550,8 @@
       "responsavel": "Time Claro",
       "status": 2,
       "inicio": "2026-10-05",
-      "fim": "2026-10-23"
+      "fim": "2026-10-23",
+      "anotacao": ""
     },
     {
       "numero": "5.4",
@@ -501,7 +559,8 @@
       "responsavel": "Time Claro",
       "status": 2,
       "inicio": "2026-10-12",
-      "fim": "2026-11-13"
+      "fim": "2026-11-13",
+      "anotacao": ""
     },
     {
       "numero": "5.5",
@@ -509,7 +568,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2026-11-16",
-      "fim": "2026-12-18"
+      "fim": "2026-12-18",
+      "anotacao": ""
     },
     {
       "numero": "5.6",
@@ -517,15 +577,17 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2026-11-30",
-      "fim": "2026-12-18"
+      "fim": "2026-12-18",
+      "anotacao": ""
     },
     {
       "numero": 6,
-      "atividade": "6. TESTES INTEGRADOS E READINESS 2026",
+      "atividade": "TESTES INTEGRADOS E READINESS 2026",
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2026-11-02",
-      "fim": "2026-12-23"
+      "fim": "2026-12-23",
+      "anotacao": ""
     },
     {
       "numero": "6.1",
@@ -533,7 +595,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2026-11-02",
-      "fim": "2026-11-20"
+      "fim": "2026-11-20",
+      "anotacao": ""
     },
     {
       "numero": "6.2",
@@ -541,7 +604,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2026-12-01",
-      "fim": "2026-12-18"
+      "fim": "2026-12-18",
+      "anotacao": ""
     },
     {
       "numero": "6.3",
@@ -549,7 +613,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2026-12-01",
-      "fim": "2026-12-18"
+      "fim": "2026-12-18",
+      "anotacao": ""
     },
     {
       "numero": "6.4",
@@ -557,7 +622,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2026-12-07",
-      "fim": "2026-12-18"
+      "fim": "2026-12-18",
+      "anotacao": ""
     },
     {
       "numero": "6.5",
@@ -565,7 +631,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2026-12-14",
-      "fim": "2026-12-23"
+      "fim": "2026-12-23",
+      "anotacao": ""
     },
     {
       "numero": "6.6",
@@ -573,15 +640,17 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2026-12-21",
-      "fim": "2026-12-23"
+      "fim": "2026-12-23",
+      "anotacao": ""
     },
     {
       "numero": 7,
-      "atividade": "7. ENTRADA 2027, ESTABILIZAÇÃO E BENEFÍCIOS",
+      "atividade": "ENTRADA 2027, ESTABILIZAÇÃO E BENEFÍCIOS",
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2027-01-01",
-      "fim": "2027-03-31"
+      "fim": "2027-03-31",
+      "anotacao": ""
     },
     {
       "numero": "7.1",
@@ -589,7 +658,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2027-01-01",
-      "fim": "2027-01-04"
+      "fim": "2027-01-04",
+      "anotacao": ""
     },
     {
       "numero": "7.2",
@@ -597,7 +667,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2027-01-04",
-      "fim": "2027-01-29"
+      "fim": "2027-01-29",
+      "anotacao": ""
     },
     {
       "numero": "7.3",
@@ -605,7 +676,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2027-01-04",
-      "fim": "2027-02-12"
+      "fim": "2027-02-12",
+      "anotacao": ""
     },
     {
       "numero": "7.4",
@@ -613,7 +685,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2027-01-04",
-      "fim": "2027-02-26"
+      "fim": "2027-02-26",
+      "anotacao": ""
     },
     {
       "numero": "7.5",
@@ -621,7 +694,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2027-02-01",
-      "fim": "2027-03-31"
+      "fim": "2027-03-31",
+      "anotacao": ""
     },
     {
       "numero": "7.6",
@@ -629,7 +703,8 @@
       "responsavel": "Time Claro",
       "status": 0,
       "inicio": "2027-03-01",
-      "fim": "2027-03-31"
+      "fim": "2027-03-31",
+      "anotacao": ""
     }
   ],
   "historico": [],
@@ -3231,6 +3306,6 @@
   "fonte": {
     "arquivo": "LOG-069 - Reforma Tributária.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-069%20-%20Reforma%20Tribut%C3%A1ria.xlsx?web=1",
-    "extraidoEm": "2026-11-04T15:59:54-03:00"
+    "extraidoEm": "2026-11-04T16:26:58-03:00"
   }
 }

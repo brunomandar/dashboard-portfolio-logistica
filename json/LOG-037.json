@@ -35,7 +35,8 @@
       "responsavel": "Planejamento",
       "status": 4,
       "inicio": "2026-01-14",
-      "fim": "2026-01-15"
+      "fim": "2026-01-15",
+      "anotacao": ""
     },
     {
       "numero": "02.",
@@ -43,7 +44,8 @@
       "responsavel": "TCIA",
       "status": 4,
       "inicio": "2026-01-22",
-      "fim": "2026-02-25"
+      "fim": "2026-02-25",
+      "anotacao": ""
     },
     {
       "numero": "03.",
@@ -51,7 +53,8 @@
       "responsavel": "TCIA",
       "status": 4,
       "inicio": "2026-03-05",
-      "fim": "2026-03-31"
+      "fim": "2026-03-31",
+      "anotacao": ""
     },
     {
       "numero": "04.",
@@ -59,7 +62,8 @@
       "responsavel": "TCIA / Planejamento / Operações",
       "status": 3,
       "inicio": "2026-09-15",
-      "fim": "2026-09-30"
+      "fim": "2026-09-30",
+      "anotacao": ""
     },
     {
       "numero": "05.",
@@ -67,7 +71,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "06.",
@@ -75,7 +80,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "07.",
@@ -83,7 +89,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "08.",
@@ -91,7 +98,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "09.",
@@ -99,7 +107,8 @@
       "responsavel": "TCIA / Planejamento / Operações",
       "status": 0,
       "inicio": "2026-11-27",
-      "fim": "2026-12-20"
+      "fim": "2026-12-20",
+      "anotacao": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -109,7 +118,8 @@
       "responsavel": "Planejamento",
       "status": 4,
       "inicio": "2026-01-14",
-      "fim": "2026-01-15"
+      "fim": "2026-01-15",
+      "anotacao": ""
     },
     {
       "numero": "2",
@@ -117,7 +127,8 @@
       "responsavel": "TCIA",
       "status": 4,
       "inicio": "2026-01-22",
-      "fim": "2026-02-25"
+      "fim": "2026-02-25",
+      "anotacao": ""
     },
     {
       "numero": "2.1",
@@ -125,7 +136,8 @@
       "responsavel": "TCIA",
       "status": 4,
       "inicio": "2026-01-23",
-      "fim": "2026-01-28"
+      "fim": "2026-01-28",
+      "anotacao": ""
     },
     {
       "numero": "2.2",
@@ -133,7 +145,8 @@
       "responsavel": "TCIA",
       "status": 4,
       "inicio": "2026-01-29",
-      "fim": "2026-02-03"
+      "fim": "2026-02-03",
+      "anotacao": ""
     },
     {
       "numero": "2.3",
@@ -141,7 +154,8 @@
       "responsavel": "TCIA",
       "status": 4,
       "inicio": "2026-02-04",
-      "fim": "2026-02-11"
+      "fim": "2026-02-11",
+      "anotacao": ""
     },
     {
       "numero": "2.4",
@@ -149,7 +163,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-02-12",
-      "fim": "2026-02-25"
+      "fim": "2026-02-25",
+      "anotacao": ""
     },
     {
       "numero": "3",
@@ -157,7 +172,8 @@
       "responsavel": "TCIA",
       "status": 4,
       "inicio": "2026-03-05",
-      "fim": "2026-03-31"
+      "fim": "2026-03-31",
+      "anotacao": ""
     },
     {
       "numero": "3.1",
@@ -165,7 +181,8 @@
       "responsavel": "TCIA",
       "status": 4,
       "inicio": "2026-03-05",
-      "fim": "2026-03-11"
+      "fim": "2026-03-11",
+      "anotacao": ""
     },
     {
       "numero": "3.2",
@@ -173,7 +190,8 @@
       "responsavel": "TCIA",
       "status": 4,
       "inicio": "2026-03-12",
-      "fim": "2026-03-20"
+      "fim": "2026-03-20",
+      "anotacao": ""
     },
     {
       "numero": "3.3",
@@ -181,7 +199,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-03-23",
-      "fim": "2026-03-31"
+      "fim": "2026-03-31",
+      "anotacao": ""
     },
     {
       "numero": "4",
@@ -189,7 +208,8 @@
       "responsavel": "TCIA / Planejamento / Operações",
       "status": 3,
       "inicio": "2026-09-15",
-      "fim": "2026-09-30"
+      "fim": "2026-09-30",
+      "anotacao": ""
     },
     {
       "numero": "5",
@@ -197,7 +217,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "6",
@@ -205,7 +226,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "7",
@@ -213,7 +235,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "8",
@@ -221,7 +244,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "9",
@@ -229,7 +253,8 @@
       "responsavel": "TCIA / Planejamento / Operações",
       "status": 0,
       "inicio": "2026-11-27",
-      "fim": "2026-12-20"
+      "fim": "2026-12-20",
+      "anotacao": ""
     }
   ],
   "historico": [],
@@ -2831,6 +2856,6 @@
   "fonte": {
     "arquivo": "LOG-037 - Controle de estoque PEP.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-037%20-%20Controle%20de%20estoque%20PEP.xlsx?web=1",
-    "extraidoEm": "2026-11-04T15:59:26-03:00"
+    "extraidoEm": "2026-11-04T16:26:14-03:00"
   }
 }

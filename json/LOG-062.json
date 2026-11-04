@@ -35,7 +35,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "2",
@@ -43,7 +44,8 @@
       "responsavel": "Desconexão",
       "status": 3,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "3",
@@ -51,7 +53,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-28",
-      "fim": "2026-06-17"
+      "fim": "2026-06-17",
+      "anotacao": ""
     },
     {
       "numero": "4",
@@ -59,7 +62,8 @@
       "responsavel": "Desconexão",
       "status": 3,
       "inicio": "2026-07-21",
-      "fim": "2026-07-27"
+      "fim": "2026-07-27",
+      "anotacao": ""
     },
     {
       "numero": "5",
@@ -67,7 +71,8 @@
       "responsavel": "Desconexão",
       "status": 3,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "6",
@@ -75,7 +80,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-09-23",
-      "fim": "2026-09-23"
+      "fim": "2026-09-23",
+      "anotacao": ""
     },
     {
       "numero": "7",
@@ -83,7 +89,8 @@
       "responsavel": "Edgar",
       "status": 2,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "8",
@@ -91,7 +98,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "9",
@@ -99,7 +107,8 @@
       "responsavel": "TI / Jurídico / Cobrança",
       "status": "A confirmar",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -109,7 +118,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "1.1",
@@ -117,7 +127,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "1.2",
@@ -125,7 +136,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "2",
@@ -133,7 +145,8 @@
       "responsavel": "Desconexão",
       "status": 3,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "2.1",
@@ -141,7 +154,8 @@
       "responsavel": "Desconexão",
       "status": 3,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "3",
@@ -149,7 +163,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-28",
-      "fim": "2026-06-17"
+      "fim": "2026-06-17",
+      "anotacao": ""
     },
     {
       "numero": "3.1",
@@ -157,7 +172,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-05-28",
-      "fim": "2026-06-11"
+      "fim": "2026-06-11",
+      "anotacao": ""
     },
     {
       "numero": "3.2",
@@ -165,7 +181,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-06-17",
-      "fim": "2026-06-17"
+      "fim": "2026-06-17",
+      "anotacao": ""
     },
     {
       "numero": "3.3",
@@ -173,7 +190,8 @@
       "responsavel": "Desconexão",
       "status": 4,
       "inicio": "2026-06-17",
-      "fim": "2026-06-17"
+      "fim": "2026-06-17",
+      "anotacao": ""
     },
     {
       "numero": "4",
@@ -181,7 +199,8 @@
       "responsavel": "Desconexão",
       "status": 3,
       "inicio": "2026-07-21",
-      "fim": "2026-07-27"
+      "fim": "2026-07-27",
+      "anotacao": ""
     },
     {
       "numero": "4.1",
@@ -189,7 +208,8 @@
       "responsavel": "Desconexão",
       "status": 3,
       "inicio": "2026-07-21",
-      "fim": "2026-07-27"
+      "fim": "2026-07-27",
+      "anotacao": ""
     },
     {
       "numero": "5",
@@ -197,7 +217,8 @@
       "responsavel": "Desconexão",
       "status": 3,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "5.1",
@@ -205,7 +226,8 @@
       "responsavel": "Desconexão",
       "status": 3,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "6",
@@ -213,7 +235,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-09-23",
-      "fim": "2026-09-23"
+      "fim": "2026-09-23",
+      "anotacao": ""
     },
     {
       "numero": "6.1",
@@ -221,7 +244,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-09-23",
-      "fim": "2026-09-23"
+      "fim": "2026-09-23",
+      "anotacao": ""
     },
     {
       "numero": "6.2",
@@ -229,7 +253,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "7",
@@ -237,7 +262,8 @@
       "responsavel": "Edgar",
       "status": 2,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "7.1",
@@ -245,7 +271,8 @@
       "responsavel": "Edgar",
       "status": 2,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "7.2",
@@ -253,7 +280,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "8",
@@ -261,7 +289,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "8.1",
@@ -269,7 +298,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "8.2",
@@ -277,7 +307,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "9",
@@ -285,7 +316,8 @@
       "responsavel": "TI / Jurídico / Cobrança",
       "status": "A confirmar",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "9.1",
@@ -293,7 +325,8 @@
       "responsavel": "TI",
       "status": "A confirmar",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "9.2",
@@ -301,7 +334,8 @@
       "responsavel": "Jurídico / Cobrança",
       "status": "A confirmar",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "9.3",
@@ -309,7 +343,8 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     }
   ],
   "historico": [],
@@ -2911,6 +2946,6 @@
   "fonte": {
     "arquivo": "LOG-062 - Claro Go (Projeto Beon) - contratação de autônomo.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-062%20-%20Claro%20Go%20%28Projeto%20Beon%29%20-%20contrata%C3%A7%C3%A3o%20de%20aut%C3%B4nomo.xlsx?web=1",
-    "extraidoEm": "2026-11-04T15:59:45-03:00"
+    "extraidoEm": "2026-11-04T16:26:46-03:00"
   }
 }
