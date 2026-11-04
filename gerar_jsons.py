@@ -125,7 +125,7 @@ def texto_celula(valor):
 
 
 def anotacao(celula):
-    """Texto da anotação (comentário) do Excel na célula, sem o nome do autor."""
+    """Texto da anotação/comentário do Excel na célula, sem o nome do autor."""
     comentario = getattr(celula, "comment", None)
     if not comentario or not comentario.text:
         return ""
@@ -133,7 +133,7 @@ def anotacao(celula):
     texto = re.sub(r"^\[Threaded comment\].*?Comment:\s*", "", texto, flags=re.S | re.I)
     linhas = [l.strip() for l in texto.split("\n")]
     autor = (getattr(comentario, "author", "") or "").strip()
-    if linhas and (linhas[0].endswith(":") and (not autor or linhas[0][:-1].strip().lower() == autor.lower() or len(linhas) > 1)):
+    if linhas and linhas[0].endswith(":") and (not autor or linhas[0][:-1].strip().lower() == autor.lower() or len(linhas) > 1):
         linhas = linhas[1:]
     return "\n".join(l for l in linhas if l).strip()
 
@@ -141,7 +141,7 @@ def anotacao(celula):
 def anotacao_linha(ws, linha, col_ini, col_fim=None):
     """Anotação em qualquer célula da linha da etapa: nº, atividade, responsável, status, datas e gantt."""
     col_fim = col_fim or ws.max_column
-    for c in range(col_ini, col_fim + 1):
+    for c in range(max(1, col_ini), col_fim + 1):
         texto = anotacao(ws.cell(linha, c))
         if texto:
             return texto
@@ -296,8 +296,8 @@ def ler_cronograma(ws):
         vazias = 0
         num = inteiro_ou_texto(num)
         atividade = texto_celula(atividade)
-        if isinstance(num, int):  # tópico principal (1, 2, 3...)
-            atividade = f"{num}. {atividade}"
+        # tópico principal: remove número repetido no início do nome (ex.: "1. Contrato" -> "Contrato")
+        atividade = re.sub(r"^\s*\d+(?:\.\d+)*\s*[.)\-–]\s*", "", atividade) or atividade
         itens.append({
             "numero": num if isinstance(num, int) else texto_celula(num),
             "atividade": atividade,
@@ -305,7 +305,7 @@ def ler_cronograma(ws):
             "status": inteiro_ou_texto(ws.cell(r, 5).value),
             "inicio": data_iso(ws.cell(r, 7).value),
             "fim": data_iso(ws.cell(r, 8).value),
-            "anotacao": anotacao_linha(ws, r, 2),
+            "anotacao": anotacao_linha(ws, r, 1),
         })
     return itens
 
