@@ -148,6 +148,66 @@ def anotacao_linha(ws, linha, col_ini, col_fim=None):
     return ""
 
 
+def ler_entregaveis(ws, rotulos):
+    """
+    Lê TODOS os entregáveis do quadro 'Entregáveis do Projeto:', em qualquer coluna do quadro
+    (ex.: 1 a 3 na coluna B e 4 a 6 na coluna E). Linhas que continuam um item são juntadas a ele.
+    """
+    pos = rotulos.get(chave("Entregáveis do Projeto:"))
+    if not pos:
+        return []
+    r0, c0 = pos
+    # só as colunas do quadro (B a G); o macrocronograma começa depois
+    colunas = range(c0, min(ws.max_column, c0 + 5) + 1)
+    secoes = ("statusdoprojeto", "risco", "escopo", "macroatividades", "entregaveisdoprojeto", "observacoes", "proximospassos")
+    eh_secao = lambda texto: any(chave(str(texto).split("\n")[0]).startswith(s) for s in secoes)
+    # fim do quadro: próxima seção (ex.: "Status do Projeto", com ou sem ':') ou 2 linhas vazias seguidas
+    fim, vazias = r0, 0
+    for r in range(r0 + 1, min(ws.max_row, r0 + 25) + 1):
+        valores = [ws.cell(r, c).value for c in colunas]
+        textos = [str(v).strip() for v in valores if v not in (None, "")]
+        if any(eh_secao(t) or (t.endswith(":") and len(t) < 40 and "\n" not in t) for t in textos):
+            break
+        if not textos:
+            vazias += 1
+            if vazias >= 2:
+                break
+            continue
+        vazias = 0
+        fim = r
+    itens = []
+    for c in colunas:
+        atual = None
+        for r in range(r0 + 1, fim + 1):
+            valor = ws.cell(r, c).value
+            if valor in (None, ""):
+                continue
+            for linha in str(valor).replace("\r", "").split("\n"):
+                linha = linha.strip()
+                if not linha or limpar(linha) == "":
+                    continue
+                if eh_secao(linha):
+                    break
+                m = re.match(r"^\s*(\d+)\s*[.)\-–]\s*(.*)$", linha)
+                if m:
+                    atual = {"n": int(m.group(1)), "t": m.group(2).strip()}
+                    itens.append(atual)
+                elif atual is not None:
+                    atual["t"] = f'{atual["t"]} {linha}'.strip()
+                else:
+                    atual = {"n": None, "t": linha}
+                    itens.append(atual)
+    numerados = sorted([i for i in itens if i["n"] is not None], key=lambda i: i["n"])
+    outros = [i for i in itens if i["n"] is None]
+    vistos, saida = set(), []
+    for item in numerados + outros:
+        texto = re.sub(r"\s+", " ", item["t"]).strip().rstrip(";").strip()
+        if texto and texto.lower() not in vistos:
+            vistos.add(texto.lower())
+            saida.append(texto)
+    return saida
+
+
 # ---------------------------------------------------------------------------
 # Leitura das abas
 # ---------------------------------------------------------------------------
@@ -231,7 +291,7 @@ def ler_one_page(ws):
         "prioridade": valor_ao_lado(ws, rot, "Prioridade:"),
         "ganhoProjeto": valor_ao_lado(ws, rot, "Ganho Projeto:"),
         "escopo": valor_abaixo(ws, rot, "Escopo:"),
-        "entregaveisTexto": valor_abaixo(ws, rot, "Entregáveis do Projeto:"),
+        "entregaveisLista": ler_entregaveis(ws, rot),
         "statusProjeto": ler_status_projeto(ws),
         "saving": {
             "opex12M": numero(valor_ao_lado(ws, rot, "S. Opex 12M:")),
@@ -412,7 +472,7 @@ def processar(caminho):
         "ganhoProjeto": one["ganhoProjeto"],
         "tipos": tipos,
         "escopo": one["escopo"],
-        "entregaveis": entregaveis_de(one["entregaveisTexto"]),
+        "entregaveis": one["entregaveisLista"],
         "saving": saving,
         "macroAtividades": one["macroAtividades"],
         "cronogramaDetalhado": ler_cronograma(ws_cron) if ws_cron is not None else [],
@@ -477,7 +537,7 @@ def main():
             projetos.append(projeto)
             vistos[pid] = nome
             reprog = [etapa for etapa in projeto["macroAtividades"] + projeto["cronogramaDetalhado"] if etapa.get("anotacao")]
-            print(f"  OK  {pid}  {projeto['projeto']}" + (f"  [{len(reprog)} etapa(s) reprogramada(s)]" if reprog else ""))
+            print(f"  OK  {pid}  {projeto['projeto']}  [{len(projeto['entregaveis'])} entregável(is)]" + (f"  [{len(reprog)} etapa(s) reprogramada(s)]" if reprog else ""))
             for etapa in reprog:
                 print(f"        - {etapa.get('numero')} {etapa.get('atividade')}: {etapa['anotacao']}")
         except Exception as erro:  # segue com os demais projetos

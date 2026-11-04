@@ -1055,7 +1055,7 @@ body.project-open .topbar{display:none!important}
       <div class="project-view" id="projectView">
         <button class="back" onclick="closeProject()">← Voltar ao portfólio</button>
         <section class="project-hero"><div><div class="pid">LOG-09 · TRANSPORTES</div><h1>Unificação da Malha Expressa</h1><p class="chart-sub">Single x Combo Multi</p><div class="meta-row"><span class="chip">L4</span><span class="chip red">Risco alto</span><span class="chip">Estratégico</span><span class="chip green">Quantitativo</span></div></div><select class="project-selector"><option>LOG-09 · Unificação da Malha</option><option>LOG-14 · eSIM</option><option>LOG-21 · Reforma Tributária</option></select></section>
-        <section class="detail-grid"><article class="card detail"><small>Início</small><b>01/06/2026</b></article><article class="card detail"><small>Término</small><b>31/12/2026</b></article><article class="card detail"><small>Ponto focal</small><b>Fábio Costa</b></article><article class="card detail"><small>PMO</small><b>Bruno / Edinalva</b></article></section>
+        <section class="detail-grid"><article class="card detail"><small>Início</small><b>01/06/2026</b></article><article class="card detail"><small>Término</small><b>31/12/2026</b></article><article class="card detail"><small>Ponto focal</small><b>Fábio Costa</b></article><article class="card detail"><small>Focal Acompanhamento</small><b>Bruno / Edinalva</b></article></section>
         <section class="detail-grid"><article class="card detail"><small>Saving Opex 12M</small><b>R$ 28,2M</b></article><article class="card detail"><small>Saving Capex 12M</small><b>R$ 0,0M</b></article><article class="card detail"><small>Saving total 12M</small><b>R$ 28,2M</b></article><article class="card detail"><small>Saving 2026</small><b>R$ 0,77M</b></article></section>
         <section class="section two-col"><article class="card text-card scroll-card"><div class="chart-title">Escopo do projeto</div><p class="scroll-content">Unificar os estoques de SIM Cards Single e Combo Multi, integrar a malha expressa via motoboy e otimizar rotas para elevar a eficiência operacional.</p></article><article class="card text-card scroll-card"><div class="chart-title">Principais entregáveis</div><ul class="checklist scroll-content"><li>Unificação de estoque</li><li>Contrato com fornecedor</li><li>Nova malha logística integrada</li></ul></article></section>
         <section class="section"><div class="section-head"><div><h2>Cronograma do projeto</h2><p>Alternância entre visão executiva e detalhada.</p></div></div><div class="tabs"><button class="tab active">Macrocronograma</button><button class="tab">Cronograma detalhado</button></div><article class="card roadmap-card"><div class="months"><div></div><div>JUN</div><div>JUL</div><div>AGO</div><div>SET</div><div>OUT</div><div>NOV</div><div>DEZ</div></div><div class="road-row"><div class="road-name">Planejamento e preparação</div><div class="road-block blue"></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="road-row"><div class="road-name">Unificação dos estoques</div><div class="road-block"></div><div class="road-block"></div><div></div><div></div><div></div><div></div><div></div></div><div class="road-row"><div class="road-name">Conclusão dos habilitadores</div><div></div><div class="road-block green"></div><div class="road-block green"></div><div></div><div></div><div></div><div></div></div><div class="road-row"><div class="road-name">Implantação 1ª onda</div><div></div><div></div><div></div><div class="road-block"></div><div class="road-block"></div><div></div><div></div></div><div class="road-row"><div class="road-name">Implantação 2ª onda</div><div></div><div></div><div></div><div class="road-block blue"></div><div class="road-block blue"></div><div class="road-block blue"></div><div></div></div><div class="road-row"><div class="road-name">Encerramento e aceite</div><div></div><div></div><div></div><div></div><div></div><div class="road-block green"></div><div class="road-block green"></div></div></article></section>
@@ -1309,7 +1309,7 @@ body.project-open .topbar{display:none!important}
 .manager-bars div{width:auto!important;flex:0 1 64px;min-width:40px}
 .manager-total{margin-bottom:26px!important}
 .manager-legend{margin-top:12px!important}
-/* Tooltips de lista (saúde do portfólio e gerência x fórum): compactos */
+/* ===== v29–v49: estilos acumulados (tooltips, cronogramas, qualitativo, gráficos financeiros) ===== */
 .donut-wrap .legend .legend-item,.bars .bar-group{cursor:default}
 .donut.donut-v2 .donut-arc,.manager-bars>div[data-list-tip]{cursor:pointer}
 .roadmap-tooltip.list-tooltip{min-width:0!important;max-width:300px!important;padding:8px 10px!important;font-size:10.5px!important;line-height:1.25!important;border-radius:9px!important}
@@ -1318,12 +1318,10 @@ body.project-open .topbar{display:none!important}
 .roadmap-tooltip.list-tooltip li{margin:1px 0;font-weight:600}
 .roadmap-tooltip.list-tooltip .list-more{margin-top:4px;color:#bfbfbf}
 .donut-wrap .legend div{min-width:230px!important}
-/* Macro e cronograma detalhado: cabeçalho "Tópico e etapa" e meses maiores */
 #projectSchedule .months>div{font-size:11.5px!important}
 #projectSchedule .months>div:first-child{font-size:11px!important}
 #projectSchedule .month-label{gap:4px!important}
 #projectSchedule .month-label span{font-size:10px!important}
-/* Projeto individual: cronograma detalhado bloqueado e busca de projetos */
 #projectView .tab.tab-locked{opacity:.55;cursor:not-allowed;background:#f2f2f2!important;color:#7f7f7f!important}
 .project-view .project-topbar .project-search{position:relative}
 .project-view .project-topbar .project-search input{width:280px;height:36px;padding:0 12px;border:1px solid #d9d9d9;border-radius:10px;font-size:12px;background:#fff;outline:none}
@@ -1333,16 +1331,13 @@ body.project-open .topbar{display:none!important}
 .project-search-results button{display:block;width:100%;text-align:left;border:0;background:#fff;padding:7px 10px;border-radius:7px;font-size:12px;color:#1f1f1f;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .project-search-results button:hover{background:#fbeaea;color:#c00000}
 .project-search-results .empty{padding:8px 10px;font-size:12px;color:#7f7f7f}
-/* Cronogramas: tag reprogramado e tooltip de resumo */
 #projectSchedule .road-name .reprog-tag{display:inline-block;margin-left:8px;padding:1px 7px;border-radius:999px;background:#fdf0e6;color:#b85a15;font-style:normal;font-size:9.5px;font-weight:800;vertical-align:middle;cursor:help;white-space:nowrap}
 .roadmap-tooltip.info-tooltip .info-text{white-space:pre-line;font-weight:600}
 .roadmap-tooltip.info-tooltip dl{display:grid;grid-template-columns:auto auto;gap:3px 14px;margin:0}
 .roadmap-tooltip.info-tooltip dt{color:#bfbfbf;font-weight:600}
 .roadmap-tooltip.info-tooltip dd{margin:0;font-weight:800;text-align:right}
-/* Cronogramas: bloco do mês preenchido proporcionalmente aos dias, na altura inteira */
 #projectSchedule .road-row>.schedule-month-cell{position:relative!important;display:block!important;align-self:stretch!important;height:auto!important;min-height:100%!important;padding:0!important}
 #projectSchedule .road-block.road-fill{position:absolute!important;top:0!important;bottom:0!important;height:auto!important;min-width:2px;margin-right:0!important;cursor:default}
-/* Projeto qualitativo: progresso geral no lugar do gráfico financeiro */
 #projectView .qualitative-progress{display:flex;flex-direction:column}
 #projectView .qualitative-progress .qp-bar-row{display:flex;align-items:center;gap:14px;margin:22px 0 18px}
 #projectView .qualitative-progress .qp-bar{flex:1;height:18px;background:#e9e9e9;border-radius:999px;overflow:hidden}
@@ -1351,8 +1346,8 @@ body.project-open .topbar{display:none!important}
 #projectView .qualitative-progress .qp-list{display:grid;grid-template-columns:1fr auto;gap:9px 20px;margin:0;font-size:13px}
 #projectView .qualitative-progress .qp-list dt{color:#7f7f7f}
 #projectView .qualitative-progress .qp-list dd{margin:0;font-weight:800;color:#1f1f1f;text-align:right}
-/* Gráficos financeiros (Home e projeto): padrão único */
-#financeiro .line-chart{height:auto!important;overflow:visible!important}
+/* Gráficos financeiros (Home e projeto) */
+#financeiro .line-chart{height:auto!important;overflow:visible!important;position:relative!important}
 .fin-legend{display:flex;flex-wrap:wrap;gap:16px;margin:8px 0 4px;font-size:12px;font-weight:600;color:#1f1f1f}
 .fin-legend span{display:inline-flex;align-items:center;gap:7px}
 .fin-legend .lg-bar{display:inline-block;width:13px;height:13px;border-radius:3px;background:linear-gradient(180deg,#4b4f57,#15171b)}
@@ -1361,25 +1356,11 @@ body.project-open .topbar{display:none!important}
 .fin-legend .lg-line.base{border-top-color:#f08a00}
 .fin-legend .lg-dev{font-style:normal;font-size:10px;font-weight:800;color:#15803d;background:#e8f7ee;border:1px solid #15803d;border-radius:999px;padding:0 6px}
 svg.fin-chart{width:100%!important;height:auto!important;margin-top:4px!important;display:block}
-#financeiro .fin-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}
-#financeiro .fin-search{width:280px;height:34px;padding:0 12px;border:1px solid #d9d9d9;border-radius:10px;font-size:12px;background:#fff;outline:none}
+#financeiro .fin-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+#financeiro .fin-head-right{display:flex;align-items:center;gap:14px}
+#financeiro .fin-search{width:280px;height:36px;padding:0 12px;border:1px solid #d9d9d9;border-radius:10px;font-size:12px;background:#fff;outline:none}
 #financeiro .fin-search:focus{border-color:#df3232;box-shadow:0 0 0 3px rgba(223,50,50,.12)}
-/* v44: financeiro e histórico com a altura do conteúdo, sem espaço em branco */
-#projectView .section.two-col:has(.project-finance-chart){align-items:stretch!important}
-#projectView .project-finance-chart,#projectView .two-col>.card.timeline{height:auto!important;min-height:0!important;max-height:none!important}
-#projectView .project-finance-chart:not(.qualitative-progress){padding-bottom:12px!important}
-#projectView .two-col>.card.timeline{overflow-y:auto!important}
-#projectView .project-finance-chart svg.fin-chart{width:100%!important;height:auto!important;max-height:none!important;margin-top:4px!important;display:block}
-#projectView .project-finance-chart .fin-legend{font-size:11.5px;margin:6px 0 2px}
-/* v45: reforço — financeiro e histórico sem altura fixa (vence regras antigas) */
-.project-view.show>.section.two-col:last-of-type{align-items:stretch!important;grid-auto-rows:auto!important}
-.project-view.show>.section.two-col:last-of-type>.card,
-.project-view.show>.section.two-col:last-of-type .line-chart,
-.project-view.show>.section.two-col:last-of-type .timeline,
-#projectView .section.two-col:last-of-type>.card{height:auto!important;min-height:0!important;max-height:none!important}
-.project-view.show>.section.two-col:last-of-type .line-chart svg.fin-chart{height:auto!important;min-height:0!important;max-height:none!important;margin-bottom:0!important}
-.project-view.show>.section.two-col:last-of-type .project-finance-chart:not(.qualitative-progress){padding-bottom:10px!important}
-/* v46: mini cards totalizadores nos gráficos financeiros */
+#financeiro .line-chart svg.fin-chart{max-height:calc(100vh - 250px)!important;width:100%!important}
 .fin-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .fin-top .fin-legend{margin:6px 0 2px!important}
 .fin-mini{display:flex;gap:6px;flex-wrap:wrap;margin:4px 0}
@@ -1388,19 +1369,24 @@ svg.fin-chart{width:100%!important;height:auto!important;margin-top:4px!importan
 .fin-mini b{display:block;font-size:12px;font-weight:850;color:#1f1f1f;white-space:nowrap}
 .fin-mini b.pos{color:#15803d}
 .fin-mini b.neg{color:#c00000}
-/* v47: mini cards no canto superior direito do card (ao lado do título) */
-#financeiro .line-chart,#projectView .project-finance-chart{position:relative!important}
-#financeiro .line-chart #finBody,#financeiro .line-chart .fin-top,#projectView .project-finance-chart .fin-top{position:static!important}
-#financeiro .fin-head-right{display:flex;align-items:center;gap:14px}
 #financeiro .line-chart .fin-mini{position:static!important;height:36px;align-items:stretch;margin:0!important;flex-wrap:nowrap!important}
 #financeiro .line-chart .fin-mini>div{display:flex;flex-direction:column;justify-content:center;padding:2px 8px!important}
-#financeiro .fin-head{align-items:center!important}
-#financeiro .fin-search{height:36px!important}
-#financeiro .line-chart{--fin-search-top:20px}
-#financeiro .line-chart svg.fin-chart{max-height:calc(100vh - 250px)!important;width:100%!important}
+/* Projeto individual: gráfico e histórico sem espaço em branco */
+#projectView .project-finance-chart{position:relative!important}
+#projectView .project-finance-chart .fin-top{position:static!important}
 #projectView .project-finance-chart .fin-mini{position:absolute!important;top:16px;right:18px;margin:0!important;flex-wrap:nowrap!important}
-#financeiro .fin-head{min-height:0}
-@media(max-width:1100px){#financeiro .line-chart .fin-mini,#projectView .project-finance-chart .fin-mini{position:static!important;flex-wrap:wrap!important;margin:6px 0!important}}
+#projectView .project-finance-chart .fin-legend{font-size:11.5px;margin:6px 0 2px}
+#projectView .project-finance-chart svg.fin-chart{width:100%!important;height:auto!important;max-height:none!important;margin-top:4px!important;display:block}
+#projectView .section.two-col:has(.project-finance-chart){align-items:stretch!important}
+#projectView .project-finance-chart,#projectView .two-col>.card.timeline{height:auto!important;min-height:0!important;max-height:none!important}
+#projectView .project-finance-chart:not(.qualitative-progress){padding-bottom:10px!important}
+#projectView .two-col>.card.timeline{overflow-y:auto!important}
+.project-view.show>.section.two-col:last-of-type{align-items:stretch!important;grid-auto-rows:auto!important}
+.project-view.show>.section.two-col:last-of-type>.card,
+.project-view.show>.section.two-col:last-of-type .line-chart,
+.project-view.show>.section.two-col:last-of-type .timeline{height:auto!important;min-height:0!important;max-height:none!important}
+.project-view.show>.section.two-col:last-of-type .line-chart svg.fin-chart{height:auto!important;min-height:0!important;max-height:none!important;margin-bottom:0!important}
+@media(max-width:1100px){#projectView .project-finance-chart .fin-mini{position:static!important;flex-wrap:wrap!important;margin:6px 0!important}#financeiro .line-chart .fin-mini{flex-wrap:wrap!important;height:auto}}
 /* Totalizador por gerência */
 .manager-total{text-align:center;font-size:12px;color:#7f7f7f;margin-bottom:18px}
 .manager-total b{color:#1f1f1f}
