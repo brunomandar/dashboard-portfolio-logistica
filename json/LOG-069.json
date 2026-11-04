@@ -18,7 +18,10 @@
   "entregaveis": [
     "Desenho tributário logístico aprovado.",
     "SAP e sistemas fiscais adequados à CBS/IBS.",
-    "TMS e documentos de transporte adequados à CBS/IBS."
+    "TMS e documentos de transporte adequados à CBS/IBS. Status do Projeto 29/09/26 - Cobrança da inclusão do IBS nos CT-e enviada às transportadoras; retorno aguardado. 29/09/26 - Tratativa de importação As Is vs To Be acompanhada por e-mail; análise e retorno da importadora aguardados. 18/09/26 - Reunião com transportadores prevista para 23/09 para alinhar mudanças e testes da Reforma Tributária. 10/09/26 - Alinhamento com Luiz Viana iniciado para agendar reunião sobre mudanças e testes com os transportadores. 09/09/26 - Agenda realizada com Catalde e equipe da Claro para verificar as mudanças da Reforma Tributária. 03/09/26 - Nova agenda de importação aguardada para entender as definições e encaminhá-las ao parceiro da área. 03/09/26 - Envolvimento dos responsáveis por faturamento solicitado para entender o fluxo inicial e as principais mudanças de Intercompany. 27/08/26 - Agenda realizada para tratar SAP, Nota de Débito, Nota de Crédito e eventos. 26/08/26 - Agenda realizada para tratar SD e importação de materiais. 24/08/26 - Kick-off sobre Reforma Tributária realizado.",
+    "Transportadores críticos homologados e contratos revisados.",
+    "Testes integrados concluídos e go/no-go realizado.",
+    "Operação 2027 ativada e estabilizada."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -3306,6 +3309,6 @@
   "fonte": {
     "arquivo": "LOG-069 - Reforma Tributária.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-069%20-%20Reforma%20Tribut%C3%A1ria.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:26:58-03:00"
+    "extraidoEm": "2026-11-04T16:56:01-03:00"
   }
 }

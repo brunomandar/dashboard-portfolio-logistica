@@ -18,7 +18,10 @@
   "entregaveis": [
     "Definição dos casos de uso de IA aplicados à cadeia logística.",
     "Mapeamento de oportunidades de monitoramento inteligente na operação.",
-    "Arquitetura da solução analítica e de inteligência artificial definida."
+    "Arquitetura da solução analítica e de inteligência artificial definida. Status do Projeto 23/06/26 - Postergado para 2027 23/06/26 - Informado por Ingrid que o projeto permanece sem atualizações e aguarda definição para continuidade. 31/05/26 - Realizado workshop de Copilot para a Diretoria de Logística como parte das avaliações de aplicação de IA na operação. 19/05/26 - Continuidade da validação da SOL na Torre de Controle para avaliação de oportunidades de monitoramento inteligente. 13/05/26 - Ingrid informou que atualizaria o Planner com o portfólio de projetos da área de Inteligência Logística. 05/05/26 - Projeto em acompanhamento aguardando direcionamento e atualização da coordenação responsável.",
+    "Estrutura de monitoramento inteligente com alertas preditivos especificada.",
+    "Modelo de integração com sistemas e fontes de dados da cadeia logística.",
+    "Proposta de evolução da torre de controle para atuação orientada por IA."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -3774,6 +3777,6 @@
   "fonte": {
     "arquivo": "LOG-042 - Agentes de IA para Monitorar a Cadeia (Prospecção).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-042%20-%20Agentes%20de%20IA%20para%20Monitorar%20a%20Cadeia%20%28Prospec%C3%A7%C3%A3o%29.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:26:16-03:00"
+    "extraidoEm": "2026-11-04T16:55:26-03:00"
   }
 }

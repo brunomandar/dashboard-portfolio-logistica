@@ -18,7 +18,10 @@
   "entregaveis": [
     "Banco de dados operacional estruturado a partir das interações e eventos das rotas.",
     "Ambiente de monitoramento por comando de voz configurado e operacional.",
-    "Execução do projeto piloto."
+    "Execução do projeto piloto. Status do Projeto 04/11/26: Segunda a Paula do Jurídico, previsão de conclusão em 06/11. Processo sendo conduzido pelo Dr. Guilherme 23/10/26: Encaminhado ao Jurídico da Claro para avaliar NDA 20/10/26: Solicitado documento NDA 19/10/26: Passado informação para criação do projeto",
+    "Relatórios e indicadores gerados com dados coletados",
+    "Avaliação dos ganhos operacionais e potenciais aplicações de IA concluída.",
+    "Recomendação técnica para expansão, ajustes ou continuidade da solução."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -3785,6 +3788,6 @@
   "fonte": {
     "arquivo": "LOG-077 - POC Zello.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-077%20-%20POC%20Zello.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:27:13-03:00"
+    "extraidoEm": "2026-11-04T16:56:17-03:00"
   }
 }

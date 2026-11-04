@@ -18,9 +18,9 @@
   ],
   "escopo": "Otimização do fluxo logístico via parqueamento e modelo Milk Run, com o foco na redução de tempo de coleta e aumento de produtividade trazendo a melhoria do controle operacional nos CDs. Piloto iniciando no CD de Campinas com a projeção de abrir para o restante do Brasil após sucesso do modelo. \nSaving de um único CD trabalhando nesse modelo é de 400 mil por ano.",
   "entregaveis": [
-    "Implementação de modelo de parqueamento nos CDs",
+    "Implementação de modelo de parqueamento nos CDs;​",
     "Estruturação do modelo Milk Run",
-    "Padronização do fluxo de veículos e expedição"
+    "Padronização do fluxo de veículos e expedição;​"
   ],
   "saving": {
     "opex12M": 0.4,
@@ -64,8 +64,8 @@
       "responsavel": "",
       "status": 1,
       "inicio": "2026-08-01",
-      "fim": "2026-11-10",
-      "anotacao": "data inicial:01/08 a 31/10"
+      "fim": "2026-10-31",
+      "anotacao": ""
     },
     {
       "numero": "05.",
@@ -3200,6 +3200,6 @@
   "fonte": {
     "arquivo": "LOG-015 - Milk Run.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-015%20-%20Milk%20Run.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:25:43-03:00"
+    "extraidoEm": "2026-11-04T16:54:53-03:00"
   }
 }

@@ -18,7 +18,9 @@
   "entregaveis": [
     "Democratização da informação das tratativas.",
     "Redução do fluxo de emails.",
-    "Evitar tratativas paralelas e perda de informações."
+    "Evitar tratativas paralelas e perda de informações. Status do Projeto Risco: Atualmente o projeto está em fase final de desenvolvimento dos requisitos funcionais para abertura de demanda junto ao fornecedor.",
+    "Armazenamento de dados no TMS (amplo acesso).",
+    "Melhor eficiência em cumprimento de prazos"
   ],
   "saving": {
     "opex12M": 0.0,
@@ -2971,6 +2973,6 @@
   "fonte": {
     "arquivo": "LOG-080 - Sinistro no TMS.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-080%20-%20Sinistro%20no%20TMS.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:27:20-03:00"
+    "extraidoEm": "2026-11-04T16:56:23-03:00"
   }
 }

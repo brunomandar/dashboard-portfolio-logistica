@@ -18,7 +18,9 @@
   "entregaveis": [
     "Processo de controle de entrada versus consumo estruturado.",
     "Gestão e venda de ativos operacionalizadas.",
-    "BI de estoques estruturado para giro, slow moving e Marketing."
+    "BI de estoques estruturado para giro, slow moving e Marketing.",
+    "Redução do estoque obsoleto.",
+    "Estrutura de controle dos estoques de Marketing implantada."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -2946,6 +2948,6 @@
   "fonte": {
     "arquivo": "LOG-014 - RAI de Estoques.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-014%20-%20RAI%20de%20Estoques.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:25:41-03:00"
+    "extraidoEm": "2026-11-04T16:54:51-03:00"
   }
 }

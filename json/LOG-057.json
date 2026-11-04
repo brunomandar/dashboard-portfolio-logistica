@@ -18,7 +18,10 @@
   "entregaveis": [
     "Serviços e operações da Telmex e da Americel migrados para as empresas incorporadoras.",
     "Sistemas SAP, Mastersaf, faturamento, arrecadação e interfaces corporativas adequados.",
-    "Ativos, estoques, cadastros, contratos e dados financeiros migrados."
+    "Ativos, estoques, cadastros, contratos e dados financeiros migrados. Status do Projeto 22/09/26 - Conclusão do projeto informada pela Ingrid. 04/08/26 - Americel em configuração do ambiente de testes para validar cargas de estoque e emissão de NF-e; conclusão da incorporação prevista para 04/08. 04/08/26 - Incorporação da Americel concluída, com acompanhamento pós-implantação em andamento. 09/07/26 - Aguardando criação do cronograma, a ser enviado pela área tributária, para acompanhamento da demanda. 01/07/26 - Migração da Telmex realizada, com todos os centros liberados em ambiente produtivo e acompanhamento pós-implantação. 12/05/26 - Criação de centro Americel e CNPJs em andamento para evidenciar o de/para em auditoria e evitar problemas de comprovação da migração do estoque. 06/05/26 - Aguardando conclusão da SD e envio do cronograma.",
+    "Processos homologados e validados pelas áreas impactadas, com operação estável.",
+    "Incorporação da Telmex concluída, com migração em 01/07 e centros liberados em ambiente produtivo.",
+    "Incorporação da Americel concluída em 04/08."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -3774,6 +3777,6 @@
   "fonte": {
     "arquivo": "LOG-057 - Incorporação TELMEX_AMERICEL.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-057%20-%20Incorpora%C3%A7%C3%A3o%20TELMEX_AMERICEL.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:26:40-03:00"
+    "extraidoEm": "2026-11-04T16:55:44-03:00"
   }
 }

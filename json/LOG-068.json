@@ -20,7 +20,10 @@
   "entregaveis": [
     "Estudo de volumetria e ganhos do retorno da entrega para EPO concluído.",
     "Análise de viabilidade EPO x Expressa revisada e reavaliação de SPI (16/10) concluídas.",
-    "Direcionamento: unificação da malha atende a demanda nacional, exceto SP Capital e interior."
+    "Direcionamento: unificação da malha atende a demanda nacional, exceto SP Capital e interior.",
+    "Decisão sobre o retorno da entrega para EPO em SP Capital e interior.",
+    "Piloto controlado em SP.",
+    "Tabela de custos vigente validada, incl. 22 cidades de SPI, e saving consolidado revisado."
   ],
   "saving": {
     "opex12M": 0.174,
@@ -2947,6 +2950,6 @@
   "fonte": {
     "arquivo": "LOG-068 - Retornar Entrega de Simcard e ComboMulti para EPO.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-068%20-%20Retornar%20Entrega%20de%20Simcard%20e%20ComboMulti%20para%20EPO.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:26:56-03:00"
+    "extraidoEm": "2026-11-04T16:55:59-03:00"
   }
 }

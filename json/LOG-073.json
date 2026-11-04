@@ -18,7 +18,8 @@
   ],
   "escopo": "Realizar análise comparativa das tabelas tarifárias LTL da MCTECH e DSLOG, considerando as rotas com origem e destino no estado de São Paulo, com o objetivo de identificar oportunidades de redução de custos e avaliar os impactos financeiros da substituição do fornecedor.",
   "entregaveis": [
-    "Apuração do saving gerado  por período."
+    "Apuração do saving gerado por período.",
+    "Status do Projeto data -"
   ],
   "saving": {
     "opex12M": 0.34,
@@ -3774,6 +3775,6 @@
   "fonte": {
     "arquivo": "LOG-073 - Saving Compras  Bid Mctech - SP.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-073%20-%20Saving%20Compras%20%20Bid%20Mctech%20-%20SP.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:27:06-03:00"
+    "extraidoEm": "2026-11-04T16:56:09-03:00"
   }
 }

@@ -18,7 +18,9 @@
   "entregaveis": [
     "Tabela para atendimento de canal vermelho",
     "Tabela direta e reversa para todas as transportadoras",
-    "Cobertura de 100% das rotas mitigando a necessidade de cotação"
+    "Cobertura de 100% das rotas mitigando a necessidade de cotação Status do Projeto - Em andamento Risco: Processo de negocição e retorno das transportadoras 30/10/2026: Retorno Rodada 2",
+    "Ter mais de 2 portadores atendendo a mesma região",
+    "Sistema adequado para recebr o BID (TMS)"
   ],
   "saving": {
     "opex12M": 0.0,
@@ -3749,6 +3751,6 @@
   "fonte": {
     "arquivo": "LOG-010.3 - BID Transportes - Movel.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.3%20-%20BID%20Transportes%20-%20Movel.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:25:33-03:00"
+    "extraidoEm": "2026-11-04T16:54:43-03:00"
   }
 }
