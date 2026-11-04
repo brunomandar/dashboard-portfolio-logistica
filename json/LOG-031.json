@@ -35,7 +35,8 @@
       "responsavel": "Evandro Felix",
       "status": 5,
       "inicio": "2026-01-19",
-      "fim": "2026-03-10"
+      "fim": "2026-03-10",
+      "anotacao": ""
     },
     {
       "numero": "2",
@@ -43,7 +44,8 @@
       "responsavel": "Reparo / SAP / Fiscal",
       "status": 3,
       "inicio": "2026-04-13",
-      "fim": "2026-04-24"
+      "fim": "2026-04-24",
+      "anotacao": ""
     },
     {
       "numero": "3",
@@ -51,7 +53,8 @@
       "responsavel": "Evandro Felix",
       "status": 3,
       "inicio": "2026-05-06",
-      "fim": "2026-07-20"
+      "fim": "2026-07-20",
+      "anotacao": ""
     },
     {
       "numero": "4",
@@ -59,7 +62,8 @@
       "responsavel": "A confirmar",
       "status": 1,
       "inicio": "2026-07-21",
-      "fim": "2026-10-30"
+      "fim": "2026-10-30",
+      "anotacao": ""
     },
     {
       "numero": "5",
@@ -67,7 +71,8 @@
       "responsavel": "DPR / Evandro Felix",
       "status": 1,
       "inicio": "2026-09-21",
-      "fim": "2026-10-20"
+      "fim": "2026-10-20",
+      "anotacao": ""
     },
     {
       "numero": "6",
@@ -75,7 +80,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-10-21",
-      "fim": "2026-12-18"
+      "fim": "2026-12-18",
+      "anotacao": ""
     },
     {
       "numero": "7",
@@ -83,7 +89,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-12-01",
-      "fim": "2027-03-31"
+      "fim": "2027-03-31",
+      "anotacao": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -93,7 +100,8 @@
       "responsavel": "Evandro Felix",
       "status": 5,
       "inicio": "2026-01-19",
-      "fim": "2026-03-10"
+      "fim": "2026-03-10",
+      "anotacao": ""
     },
     {
       "numero": "1.1",
@@ -101,7 +109,8 @@
       "responsavel": "Evandro Felix",
       "status": 5,
       "inicio": "2026-01-19",
-      "fim": "2026-01-19"
+      "fim": "2026-01-19",
+      "anotacao": ""
     },
     {
       "numero": "1.2",
@@ -109,7 +118,8 @@
       "responsavel": "Evandro Felix",
       "status": 5,
       "inicio": "2026-01-27",
-      "fim": "2026-01-27"
+      "fim": "2026-01-27",
+      "anotacao": ""
     },
     {
       "numero": "1.3",
@@ -117,7 +127,8 @@
       "responsavel": "Evandro Felix",
       "status": 5,
       "inicio": "2026-02-06",
-      "fim": "2026-02-06"
+      "fim": "2026-02-06",
+      "anotacao": ""
     },
     {
       "numero": "1.4",
@@ -125,7 +136,8 @@
       "responsavel": "Evandro Felix",
       "status": 5,
       "inicio": "2026-02-26",
-      "fim": "2026-02-26"
+      "fim": "2026-02-26",
+      "anotacao": ""
     },
     {
       "numero": "1.5",
@@ -133,7 +145,8 @@
       "responsavel": "Evandro Felix",
       "status": 5,
       "inicio": "2026-03-02",
-      "fim": "2026-03-02"
+      "fim": "2026-03-02",
+      "anotacao": ""
     },
     {
       "numero": "1.6",
@@ -141,7 +154,8 @@
       "responsavel": "Evandro Felix",
       "status": 5,
       "inicio": "2026-03-10",
-      "fim": "2026-03-10"
+      "fim": "2026-03-10",
+      "anotacao": ""
     },
     {
       "numero": "2",
@@ -149,7 +163,8 @@
       "responsavel": "Reparo / SAP / Fiscal",
       "status": 3,
       "inicio": "2026-04-13",
-      "fim": "2026-04-24"
+      "fim": "2026-04-24",
+      "anotacao": ""
     },
     {
       "numero": "2.1",
@@ -157,7 +172,8 @@
       "responsavel": "Reparo / SAP / Tributário",
       "status": 5,
       "inicio": "2026-04-13",
-      "fim": "2026-04-13"
+      "fim": "2026-04-13",
+      "anotacao": ""
     },
     {
       "numero": "2.2",
@@ -165,7 +181,8 @@
       "responsavel": "Reparo / SAP",
       "status": 5,
       "inicio": "2026-04-14",
-      "fim": "2026-04-14"
+      "fim": "2026-04-14",
+      "anotacao": ""
     },
     {
       "numero": "2.3",
@@ -173,7 +190,8 @@
       "responsavel": "Reparo / SAP / Fiscal",
       "status": 3,
       "inicio": "2026-04-15",
-      "fim": "2026-04-24"
+      "fim": "2026-04-24",
+      "anotacao": ""
     },
     {
       "numero": "3",
@@ -181,7 +199,8 @@
       "responsavel": "Evandro Felix",
       "status": 3,
       "inicio": "2026-05-06",
-      "fim": "2026-07-20"
+      "fim": "2026-07-20",
+      "anotacao": ""
     },
     {
       "numero": "3.1",
@@ -189,7 +208,8 @@
       "responsavel": "Diretoria / Evandro Felix",
       "status": 5,
       "inicio": "2026-05-06",
-      "fim": "2026-05-06"
+      "fim": "2026-05-06",
+      "anotacao": ""
     },
     {
       "numero": "3.2",
@@ -197,7 +217,8 @@
       "responsavel": "Evandro Felix / DPR",
       "status": 5,
       "inicio": "2026-06-05",
-      "fim": "2026-06-05"
+      "fim": "2026-06-05",
+      "anotacao": ""
     },
     {
       "numero": "3.3",
@@ -205,7 +226,8 @@
       "responsavel": "Evandro Felix / DPR",
       "status": 5,
       "inicio": "2026-06-19",
-      "fim": "2026-06-19"
+      "fim": "2026-06-19",
+      "anotacao": ""
     },
     {
       "numero": "3.4",
@@ -213,7 +235,8 @@
       "responsavel": "DPR / Evandro Felix",
       "status": 3,
       "inicio": "2026-07-06",
-      "fim": "2026-07-06"
+      "fim": "2026-07-06",
+      "anotacao": ""
     },
     {
       "numero": "3.5",
@@ -221,7 +244,8 @@
       "responsavel": "Evandro Felix / Ecoboxes",
       "status": 5,
       "inicio": "2026-07-20",
-      "fim": "2026-07-20"
+      "fim": "2026-07-20",
+      "anotacao": ""
     },
     {
       "numero": "4",
@@ -229,7 +253,8 @@
       "responsavel": "A confirmar",
       "status": 1,
       "inicio": "2026-07-21",
-      "fim": "2026-10-30"
+      "fim": "2026-10-30",
+      "anotacao": ""
     },
     {
       "numero": "4.1",
@@ -237,7 +262,8 @@
       "responsavel": "Evandro Felix / Financeiro",
       "status": 5,
       "inicio": "2026-07-21",
-      "fim": "2026-07-28"
+      "fim": "2026-07-28",
+      "anotacao": ""
     },
     {
       "numero": "4.2",
@@ -245,7 +271,8 @@
       "responsavel": "Evandro Felix / Financeiro",
       "status": 5,
       "inicio": "2026-07-28",
-      "fim": "2026-07-28"
+      "fim": "2026-07-28",
+      "anotacao": ""
     },
     {
       "numero": "4.3",
@@ -253,7 +280,8 @@
       "responsavel": "Evandro Felix / Financeiro",
       "status": 1,
       "inicio": "2026-07-29",
-      "fim": "2026-10-30"
+      "fim": "2026-10-30",
+      "anotacao": ""
     },
     {
       "numero": "4.4",
@@ -261,7 +289,8 @@
       "responsavel": "Logística / Transportes",
       "status": 1,
       "inicio": "2026-07-29",
-      "fim": "2026-10-30"
+      "fim": "2026-10-30",
+      "anotacao": ""
     },
     {
       "numero": "5",
@@ -269,7 +298,8 @@
       "responsavel": "DPR / Evandro Felix",
       "status": 1,
       "inicio": "2026-09-21",
-      "fim": "2026-10-20"
+      "fim": "2026-10-20",
+      "anotacao": ""
     },
     {
       "numero": "5.1",
@@ -277,7 +307,8 @@
       "responsavel": "Claro / DPR",
       "status": 5,
       "inicio": "2026-09-21",
-      "fim": "2026-09-28"
+      "fim": "2026-09-28",
+      "anotacao": ""
     },
     {
       "numero": "5.2",
@@ -285,7 +316,8 @@
       "responsavel": "Claro / DPR",
       "status": 5,
       "inicio": "2026-09-29",
-      "fim": "2026-09-29"
+      "fim": "2026-09-29",
+      "anotacao": ""
     },
     {
       "numero": "5.3",
@@ -293,7 +325,8 @@
       "responsavel": "DPR",
       "status": 1,
       "inicio": "2026-09-29",
-      "fim": "2026-10-20"
+      "fim": "2026-10-20",
+      "anotacao": ""
     },
     {
       "numero": "5.4",
@@ -301,7 +334,8 @@
       "responsavel": "DPR / Evandro Felix",
       "status": 0,
       "inicio": "2026-10-20",
-      "fim": "2026-10-20"
+      "fim": "2026-10-20",
+      "anotacao": ""
     },
     {
       "numero": "6",
@@ -309,7 +343,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-10-21",
-      "fim": "2026-12-18"
+      "fim": "2026-12-18",
+      "anotacao": ""
     },
     {
       "numero": "6.1",
@@ -317,7 +352,8 @@
       "responsavel": "Evandro Felix",
       "status": 0,
       "inicio": "2026-10-21",
-      "fim": "2026-10-30"
+      "fim": "2026-10-30",
+      "anotacao": ""
     },
     {
       "numero": "6.2",
@@ -325,7 +361,8 @@
       "responsavel": "Evandro Felix / Financeiro",
       "status": 0,
       "inicio": "2026-10-26",
-      "fim": "2026-11-06"
+      "fim": "2026-11-06",
+      "anotacao": ""
     },
     {
       "numero": "6.3",
@@ -333,7 +370,8 @@
       "responsavel": "Financeiro / Logística",
       "status": 0,
       "inicio": "2026-11-09",
-      "fim": "2026-11-13"
+      "fim": "2026-11-13",
+      "anotacao": ""
     },
     {
       "numero": "6.4",
@@ -341,7 +379,8 @@
       "responsavel": "Demis Lamego / Evandro Felix",
       "status": 0,
       "inicio": "2026-11-16",
-      "fim": "2026-11-20"
+      "fim": "2026-11-20",
+      "anotacao": ""
     },
     {
       "numero": "6.5",
@@ -349,7 +388,8 @@
       "responsavel": "Compras / Jurídico",
       "status": 0,
       "inicio": "2026-11-23",
-      "fim": "2026-12-18"
+      "fim": "2026-12-18",
+      "anotacao": ""
     },
     {
       "numero": "7",
@@ -357,7 +397,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-12-01",
-      "fim": "2027-03-31"
+      "fim": "2027-03-31",
+      "anotacao": ""
     },
     {
       "numero": "7.1",
@@ -365,7 +406,8 @@
       "responsavel": "Reparo / Operação",
       "status": 0,
       "inicio": "2026-12-01",
-      "fim": "2026-12-18"
+      "fim": "2026-12-18",
+      "anotacao": ""
     },
     {
       "numero": "7.2",
@@ -373,7 +415,8 @@
       "responsavel": "Fornecedor / Operação",
       "status": 0,
       "inicio": "2027-01-04",
-      "fim": "2027-01-29"
+      "fim": "2027-01-29",
+      "anotacao": ""
     },
     {
       "numero": "7.3",
@@ -381,7 +424,8 @@
       "responsavel": "Financeiro / PMO",
       "status": 0,
       "inicio": "2027-01-04",
-      "fim": "2027-01-29"
+      "fim": "2027-01-29",
+      "anotacao": ""
     },
     {
       "numero": "7.4",
@@ -389,7 +433,8 @@
       "responsavel": "Reparo / PMO",
       "status": 0,
       "inicio": "2027-01-04",
-      "fim": "2027-03-31"
+      "fim": "2027-03-31",
+      "anotacao": ""
     },
     {
       "numero": "7.5",
@@ -397,7 +442,8 @@
       "responsavel": "Reparo / PMO",
       "status": 0,
       "inicio": "2027-03-31",
-      "fim": "2027-03-31"
+      "fim": "2027-03-31",
+      "anotacao": ""
     }
   ],
   "historico": [],
@@ -2999,6 +3045,6 @@
   "fonte": {
     "arquivo": "LOG-031 - Ampliação da Ecobox.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-031%20-%20Amplia%C3%A7%C3%A3o%20da%20Ecobox.xlsx?web=1",
-    "extraidoEm": "2026-11-04T15:59:18-03:00"
+    "extraidoEm": "2026-11-04T16:26:03-03:00"
   }
 }
