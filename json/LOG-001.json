@@ -18,8 +18,7 @@
   ],
   "escopo": "Desenvolvimento de RPA para ampliar a eficiência no processo de devolução dos equipamentos, possibilitando a redução de posições de atendimento. \nHoje o tratamento de baixa de terminais é realizado de forma manual pela telemática e o projeto automatizará  o tratamento, refletindo na redução de PA'S",
   "entregaveis": [
-    "Redução do HC de 50 para 35 posições, gerando economia recorrente em OPEX.",
-    "Status do Projeto Sem atividades sob gestão desta frente. Realizado acompanhamento mensal dos resultados e reporte executivo no ICG."
+    "Redução do HC de 50 para 35 posições, gerando economia recorrente em OPEX."
   ],
   "saving": {
     "opex12M": 2.34,
@@ -3781,6 +3780,6 @@
   "fonte": {
     "arquivo": "LOG-001 - Eficiência Desconexão - RPA Terminais Presos.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-001%20-%20Efici%C3%AAncia%20Desconex%C3%A3o%20-%20RPA%20Terminais%20Presos.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:57:57-03:00"
+    "extraidoEm": "2026-11-04T17:53:24-03:00"
   }
 }

@@ -19,8 +19,7 @@
   ],
   "escopo": "Otimização de custos por meio da migração do frete FTL (carga fechada) para LTL (carga fracionada), com a transportadora MCTECH  40 principais rotas do Brasil, foram negociadas com a Mctech",
   "entregaveis": [
-    "Apuração do saving gerado por período.",
-    "Status do Projeto"
+    "Apuração do saving gerado por período."
   ],
   "saving": {
     "opex12M": 0.36,
@@ -3782,6 +3781,6 @@
   "fonte": {
     "arquivo": "LOG-010.4 - Top Rotas  - Mctech.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.4%20-%20Top%20Rotas%20%20-%20Mctech.xlsx?web=1",
-    "extraidoEm": "2026-11-04T16:58:47-03:00"
+    "extraidoEm": "2026-11-04T17:54:08-03:00"
   }
 }
