@@ -1177,6 +1177,11 @@
   ],
   "historico": [
     {
+      "data": "2026-11-04",
+      "acoes": "-",
+      "detalhe": "Falei com a Paula Araujo sobre o NDA e ela me informou que o Guilherme Strazzer Novais que está tratando esse assunto, que até sexta dia 06/11 ele me da um retorno."
+    },
+    {
       "data": "2026-10-20",
       "acoes": "-",
       "detalhe": "Esse aplicativo do zello ele é por comando de voz,  a ideia do zello é trabalhar em paralelo junto com as entregas da bring (Modelo bring de estoque avançado dos chips, monitoramento das rotas)\nDiario de bordo por comando de voz\nQuestao operacional - precido de 5 pessoas para testar, o fornecedor (transportadora) falou que não tem problema\nO que precisa de informações? Que dia vai fazer,  qual o periodo, etc?\nQuestao contratual - NDA"
@@ -3780,6 +3785,6 @@
   "fonte": {
     "arquivo": "LOG-077 - POC Zello.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-077%20-%20POC%20Zello.xlsx?web=1",
-    "extraidoEm": "2026-11-03T17:50:34-03:00"
+    "extraidoEm": "2026-11-04T14:28:57-03:00"
   }
 }
