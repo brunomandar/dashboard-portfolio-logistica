@@ -18,7 +18,9 @@
   "entregaveis": [
     "Mapear da jornada PME em Logistica",
     "Mapear e Endereçar os erros identificados na esteira",
-    "Desevolver indicador para mensuração dos erros."
+    "Desevolver indicador para mensuração dos erros.",
+    "Padronizar fluxo de tratamento de pendências.",
+    "Melhorar a comunicação entre áreas e cliente final"
   ],
   "saving": {
     "opex12M": 0.0,
@@ -35,7 +37,8 @@
       "responsavel": "Transporte",
       "status": 4,
       "inicio": "2026-08-13",
-      "fim": "2026-08-13"
+      "fim": "2026-08-13",
+      "anotacao": ""
     },
     {
       "numero": "02.",
@@ -43,7 +46,8 @@
       "responsavel": "Transporte",
       "status": 4,
       "inicio": "2026-10-08",
-      "fim": "2026-10-12"
+      "fim": "2026-10-12",
+      "anotacao": ""
     },
     {
       "numero": "03.",
@@ -51,7 +55,8 @@
       "responsavel": "Transporte",
       "status": 4,
       "inicio": "2026-10-08",
-      "fim": "2026-10-14"
+      "fim": "2026-10-14",
+      "anotacao": ""
     },
     {
       "numero": "04.",
@@ -59,7 +64,8 @@
       "responsavel": "CD/Operações",
       "status": 1,
       "inicio": "2026-10-08",
-      "fim": "2026-11-04"
+      "fim": "2026-11-04",
+      "anotacao": ""
     },
     {
       "numero": "05.",
@@ -67,7 +73,8 @@
       "responsavel": "CD/Transporte",
       "status": 1,
       "inicio": "2026-10-19",
-      "fim": "2026-11-20"
+      "fim": "2026-11-20",
+      "anotacao": ""
     },
     {
       "numero": "06.",
@@ -75,7 +82,8 @@
       "responsavel": "TI",
       "status": 0,
       "inicio": "2026-12-01",
-      "fim": "2026-12-30"
+      "fim": "2026-12-30",
+      "anotacao": ""
     },
     {
       "numero": "07.",
@@ -83,7 +91,8 @@
       "responsavel": "CD",
       "status": 0,
       "inicio": "2027-01-04",
-      "fim": "2027-01-22"
+      "fim": "2027-01-22",
+      "anotacao": ""
     },
     {
       "numero": "08.",
@@ -91,7 +100,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "09.",
@@ -99,7 +109,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "10.",
@@ -107,7 +118,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "11.",
@@ -115,7 +127,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "12.",
@@ -123,7 +136,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "13.",
@@ -131,7 +145,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "14.",
@@ -139,7 +154,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "15.",
@@ -147,7 +163,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "16.",
@@ -155,7 +172,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "17.",
@@ -163,7 +181,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "18.",
@@ -171,7 +190,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "19.",
@@ -179,7 +199,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "20.",
@@ -187,7 +208,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "21.",
@@ -195,7 +217,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "22.",
@@ -203,7 +226,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "23.",
@@ -211,7 +235,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "24.",
@@ -219,7 +244,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "25.",
@@ -227,7 +253,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "26.",
@@ -235,7 +262,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "27.",
@@ -243,17 +271,19 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     }
   ],
   "cronogramaDetalhado": [
     {
       "numero": 1,
-      "atividade": "1. IDENTIFICAR AS DORES DO CANAL PME",
+      "atividade": "IDENTIFICAR AS DORES DO CANAL PME",
       "responsavel": "Transporte",
       "status": 4,
       "inicio": "2026-08-13",
-      "fim": "2026-08-13"
+      "fim": "2026-08-13",
+      "anotacao": ""
     },
     {
       "numero": "1.1",
@@ -261,15 +291,17 @@
       "responsavel": "Transporte",
       "status": 4,
       "inicio": "2026-08-13",
-      "fim": "2026-08-13"
+      "fim": "2026-08-13",
+      "anotacao": ""
     },
     {
       "numero": 2,
-      "atividade": "2. ESTRUTURAR O PROJETO",
+      "atividade": "ESTRUTURAR O PROJETO",
       "responsavel": "Transporte",
       "status": 4,
       "inicio": "2026-10-08",
-      "fim": "2026-10-12"
+      "fim": "2026-10-12",
+      "anotacao": ""
     },
     {
       "numero": "2.1",
@@ -277,15 +309,17 @@
       "responsavel": "Transporte",
       "status": 4,
       "inicio": "2026-10-08",
-      "fim": "2026-10-12"
+      "fim": "2026-10-12",
+      "anotacao": ""
     },
     {
       "numero": 3,
-      "atividade": "3. DESENVOLVER O CRONOGRAMA",
+      "atividade": "DESENVOLVER O CRONOGRAMA",
       "responsavel": "Transporte",
       "status": 4,
       "inicio": "2026-10-08",
-      "fim": "2026-10-14"
+      "fim": "2026-10-14",
+      "anotacao": ""
     },
     {
       "numero": "3.1",
@@ -293,15 +327,17 @@
       "responsavel": "Transporte",
       "status": 4,
       "inicio": "2026-10-08",
-      "fim": "2026-10-14"
+      "fim": "2026-10-14",
+      "anotacao": ""
     },
     {
       "numero": 4,
-      "atividade": "4. MAPEAR FLUXO PME",
+      "atividade": "MAPEAR FLUXO PME",
       "responsavel": "CD/Operações",
       "status": 1,
       "inicio": "2026-10-08",
-      "fim": "2026-12-01"
+      "fim": "2026-12-01",
+      "anotacao": ""
     },
     {
       "numero": "4.1",
@@ -309,7 +345,8 @@
       "responsavel": "CD/Operações",
       "status": 1,
       "inicio": "2026-10-08",
-      "fim": "2026-10-14"
+      "fim": "2026-10-14",
+      "anotacao": ""
     },
     {
       "numero": "4.2",
@@ -317,7 +354,8 @@
       "responsavel": "Tributário",
       "status": 0,
       "inicio": "2026-11-06",
-      "fim": "2026-11-19"
+      "fim": "2026-11-19",
+      "anotacao": ""
     },
     {
       "numero": "4.3",
@@ -325,7 +363,8 @@
       "responsavel": "Cadastro Cliente",
       "status": 1,
       "inicio": "2026-10-27",
-      "fim": "2026-11-06"
+      "fim": "2026-11-06",
+      "anotacao": ""
     },
     {
       "numero": "4.4",
@@ -333,7 +372,8 @@
       "responsavel": "CD/Operações",
       "status": 0,
       "inicio": "2026-10-08",
-      "fim": "2026-10-14"
+      "fim": "2026-10-14",
+      "anotacao": ""
     },
     {
       "numero": "4.5",
@@ -341,7 +381,8 @@
       "responsavel": "CD/Operações",
       "status": 0,
       "inicio": "2026-11-06",
-      "fim": "2026-11-19"
+      "fim": "2026-11-19",
+      "anotacao": ""
     },
     {
       "numero": "4.6",
@@ -349,7 +390,8 @@
       "responsavel": "CD/Operações",
       "status": 0,
       "inicio": "2026-11-20",
-      "fim": "2026-11-26"
+      "fim": "2026-11-26",
+      "anotacao": ""
     },
     {
       "numero": "4.7",
@@ -357,7 +399,8 @@
       "responsavel": "CD/Operações",
       "status": 0,
       "inicio": "2026-11-20",
-      "fim": "2026-11-26"
+      "fim": "2026-11-26",
+      "anotacao": ""
     },
     {
       "numero": "4.8",
@@ -365,7 +408,8 @@
       "responsavel": "CD/Operações",
       "status": 0,
       "inicio": "2026-11-20",
-      "fim": "2026-11-26"
+      "fim": "2026-11-26",
+      "anotacao": ""
     },
     {
       "numero": "4.9",
@@ -373,7 +417,8 @@
       "responsavel": "CD/Operações",
       "status": 0,
       "inicio": "2026-11-20",
-      "fim": "2026-11-26"
+      "fim": "2026-11-26",
+      "anotacao": ""
     },
     {
       "numero": "4.10",
@@ -381,15 +426,17 @@
       "responsavel": "CD/Operações",
       "status": 0,
       "inicio": "2026-11-27",
-      "fim": "2026-12-01"
+      "fim": "2026-12-01",
+      "anotacao": ""
     },
     {
       "numero": 5,
-      "atividade": "5. CONSTRUIR A MATRIZ DE ERROS E RESPONSABILIDADES",
+      "atividade": "CONSTRUIR A MATRIZ DE ERROS E RESPONSABILIDADES",
       "responsavel": "CD/Transporte",
       "status": 1,
       "inicio": "2026-10-19",
-      "fim": "2026-11-20"
+      "fim": "2026-11-20",
+      "anotacao": ""
     },
     {
       "numero": "5.1",
@@ -397,7 +444,8 @@
       "responsavel": "CD/Transporte",
       "status": 1,
       "inicio": "2026-10-19",
-      "fim": "2026-10-26"
+      "fim": "2026-10-26",
+      "anotacao": ""
     },
     {
       "numero": "5.2",
@@ -405,7 +453,8 @@
       "responsavel": "CD/Transporte",
       "status": 1,
       "inicio": "2026-10-27",
-      "fim": "2026-11-16"
+      "fim": "2026-11-16",
+      "anotacao": ""
     },
     {
       "numero": "5.3",
@@ -413,15 +462,17 @@
       "responsavel": "CD/Transporte",
       "status": 0,
       "inicio": "2026-11-17",
-      "fim": "2026-11-20"
+      "fim": "2026-11-20",
+      "anotacao": ""
     },
     {
       "numero": 6,
-      "atividade": "6. DESENVOLVER TRANSFORMAÇÃO DIGITAL",
+      "atividade": "DESENVOLVER TRANSFORMAÇÃO DIGITAL",
       "responsavel": "TI",
       "status": 0,
       "inicio": "2026-12-01",
-      "fim": "2026-12-30"
+      "fim": "2026-12-30",
+      "anotacao": ""
     },
     {
       "numero": "6.1",
@@ -429,7 +480,8 @@
       "responsavel": "TI",
       "status": 0,
       "inicio": "2026-12-01",
-      "fim": "2026-12-30"
+      "fim": "2026-12-30",
+      "anotacao": ""
     },
     {
       "numero": "6.2",
@@ -437,7 +489,8 @@
       "responsavel": "TI",
       "status": 0,
       "inicio": "2026-12-01",
-      "fim": "2026-12-30"
+      "fim": "2026-12-30",
+      "anotacao": ""
     },
     {
       "numero": "6.3",
@@ -445,15 +498,17 @@
       "responsavel": "TI",
       "status": 0,
       "inicio": "2026-12-01",
-      "fim": "2026-12-30"
+      "fim": "2026-12-30",
+      "anotacao": ""
     },
     {
       "numero": 7,
-      "atividade": "7. PADRONIZAR NACIONALMENTE O ATENDIMENTO PME",
+      "atividade": "PADRONIZAR NACIONALMENTE O ATENDIMENTO PME",
       "responsavel": "CD",
       "status": 0,
       "inicio": "2027-01-04",
-      "fim": "2027-01-22"
+      "fim": "2027-01-22",
+      "anotacao": ""
     },
     {
       "numero": "7.1",
@@ -461,7 +516,8 @@
       "responsavel": "CD",
       "status": 0,
       "inicio": "2027-01-04",
-      "fim": "2027-01-22"
+      "fim": "2027-01-22",
+      "anotacao": ""
     },
     {
       "numero": "7.2",
@@ -469,583 +525,656 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 29,
-      "atividade": "29. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 30,
-      "atividade": "30. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 31,
-      "atividade": "31. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 32,
-      "atividade": "32. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 33,
-      "atividade": "33. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 34,
-      "atividade": "34. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 35,
-      "atividade": "35. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 36,
-      "atividade": "36. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 37,
-      "atividade": "37. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 38,
-      "atividade": "38. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 39,
-      "atividade": "39. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 40,
-      "atividade": "40. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 41,
-      "atividade": "41. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 42,
-      "atividade": "42. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 43,
-      "atividade": "43. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 44,
-      "atividade": "44. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 45,
-      "atividade": "45. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 46,
-      "atividade": "46. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 47,
-      "atividade": "47. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 48,
-      "atividade": "48. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 49,
-      "atividade": "49. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 50,
-      "atividade": "50. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 51,
-      "atividade": "51. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 52,
-      "atividade": "52. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 53,
-      "atividade": "53. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 54,
-      "atividade": "54. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 55,
-      "atividade": "55. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 56,
-      "atividade": "56. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 57,
-      "atividade": "57. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 58,
-      "atividade": "58. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 59,
-      "atividade": "59. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 60,
-      "atividade": "60. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 61,
-      "atividade": "61. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 62,
-      "atividade": "62. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 63,
-      "atividade": "63. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 64,
-      "atividade": "64. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 65,
-      "atividade": "65. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 66,
-      "atividade": "66. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 67,
-      "atividade": "67. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 68,
-      "atividade": "68. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 69,
-      "atividade": "69. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 70,
-      "atividade": "70. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 71,
-      "atividade": "71. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 72,
-      "atividade": "72. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 73,
-      "atividade": "73. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 74,
-      "atividade": "74. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 75,
-      "atividade": "75. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 76,
-      "atividade": "76. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 77,
-      "atividade": "77. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 78,
-      "atividade": "78. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 79,
-      "atividade": "79. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 80,
-      "atividade": "80. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 81,
-      "atividade": "81. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 82,
-      "atividade": "82. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 83,
-      "atividade": "83. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 84,
-      "atividade": "84. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 85,
-      "atividade": "85. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 86,
-      "atividade": "86. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 87,
-      "atividade": "87. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 88,
-      "atividade": "88. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 89,
-      "atividade": "89. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 90,
-      "atividade": "90. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 91,
-      "atividade": "91. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 92,
-      "atividade": "92. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 93,
-      "atividade": "93. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 94,
-      "atividade": "94. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 95,
-      "atividade": "95. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 96,
-      "atividade": "96. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 97,
-      "atividade": "97. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 98,
-      "atividade": "98. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 99,
-      "atividade": "99. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 100,
-      "atividade": "100. ",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     }
   ],
   "historico": [
@@ -3713,6 +3842,6 @@
   "fonte": {
     "arquivo": "LOG-065 - Imersão na Esteira PME.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-065%20-%20Imers%C3%A3o%20na%20Esteira%20PME.xlsx?web=1",
-    "extraidoEm": "2026-11-05T17:10:03-03:00"
+    "extraidoEm": "2026-11-05T17:49:48-03:00"
   }
 }

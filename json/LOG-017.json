@@ -18,7 +18,10 @@
   "entregaveis": [
     "Padrão de pedidos mínimos e múltiplos de caixas implementado",
     "Processo de separação e expedição ajustado",
-    "Horários de corte e input de pedidos definidos"
+    "Horários de corte e input de pedidos definidos",
+    "Analytics de miscelâneas padronizado",
+    "Implantação nos demais CDs concluída",
+    "Projeto implantado em todas as regionais."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -35,7 +38,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-03-01",
-      "fim": "2026-03-01"
+      "fim": "2026-03-01",
+      "anotacao": ""
     },
     {
       "numero": "2",
@@ -43,7 +47,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "3",
@@ -51,7 +56,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "4",
@@ -59,7 +65,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "5",
@@ -67,7 +74,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-06",
-      "fim": "2026-05-26"
+      "fim": "2026-05-26",
+      "anotacao": ""
     },
     {
       "numero": "6",
@@ -75,7 +83,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-07",
-      "fim": "2026-05-18"
+      "fim": "2026-05-18",
+      "anotacao": ""
     },
     {
       "numero": "7",
@@ -83,7 +92,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-19",
-      "fim": "2026-05-25"
+      "fim": "2026-05-25",
+      "anotacao": ""
     },
     {
       "numero": "8",
@@ -91,7 +101,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-26",
-      "fim": "2026-05-26"
+      "fim": "2026-05-26",
+      "anotacao": ""
     },
     {
       "numero": "9",
@@ -99,7 +110,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-07-06",
-      "fim": "2026-07-08"
+      "fim": "2026-07-08",
+      "anotacao": ""
     },
     {
       "numero": "10",
@@ -107,7 +119,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-07-08",
-      "fim": "2026-07-08"
+      "fim": "2026-07-08",
+      "anotacao": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -117,7 +130,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-03-01",
-      "fim": "2026-03-01"
+      "fim": "2026-03-01",
+      "anotacao": ""
     },
     {
       "numero": "2",
@@ -125,7 +139,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "2.1",
@@ -133,7 +148,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "2.2",
@@ -141,7 +157,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "3",
@@ -149,7 +166,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "3.1",
@@ -157,7 +175,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "3.2",
@@ -165,7 +184,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "4",
@@ -173,7 +193,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "4.1",
@@ -181,7 +202,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "4.2",
@@ -189,7 +211,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "5",
@@ -197,7 +220,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-06",
-      "fim": "2026-05-26"
+      "fim": "2026-05-26",
+      "anotacao": ""
     },
     {
       "numero": "5.1",
@@ -205,7 +229,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-06",
-      "fim": "2026-05-06"
+      "fim": "2026-05-06",
+      "anotacao": ""
     },
     {
       "numero": "5.2",
@@ -213,7 +238,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-06",
-      "fim": "2026-05-26"
+      "fim": "2026-05-26",
+      "anotacao": ""
     },
     {
       "numero": "6",
@@ -221,7 +247,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-07",
-      "fim": "2026-05-18"
+      "fim": "2026-05-18",
+      "anotacao": ""
     },
     {
       "numero": "7",
@@ -229,7 +256,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-19",
-      "fim": "2026-05-25"
+      "fim": "2026-05-25",
+      "anotacao": ""
     },
     {
       "numero": "8",
@@ -237,7 +265,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-26",
-      "fim": "2026-05-26"
+      "fim": "2026-05-26",
+      "anotacao": ""
     },
     {
       "numero": "9",
@@ -245,7 +274,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-07-06",
-      "fim": "2026-07-08"
+      "fim": "2026-07-08",
+      "anotacao": ""
     },
     {
       "numero": "10",
@@ -253,7 +283,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-07-08",
-      "fim": "2026-07-08"
+      "fim": "2026-07-08",
+      "anotacao": ""
     }
   ],
   "historico": [],
@@ -2855,6 +2886,6 @@
   "fonte": {
     "arquivo": "LOG-017 - Distribuição e Pedido Minimo.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-017%20-%20Distribui%C3%A7%C3%A3o%20e%20Pedido%20Minimo.xlsx?web=1",
-    "extraidoEm": "2026-11-05T17:09:16-03:00"
+    "extraidoEm": "2026-11-05T17:48:42-03:00"
   }
 }

@@ -18,7 +18,10 @@
   "entregaveis": [
     "Nova metodologia e algoritmo de análise da rotatividade.",
     "Análises técnicas e laboratoriais de terminais com alta troca.",
-    "Relatório de modelos críticos e causas de troca."
+    "Relatório de modelos críticos e causas de troca.",
+    "Recomendações de descarte, reutilização e renovação do parque.",
+    "Blacklist de terminais (WIFI 3.1 + GPON) gerada.",
+    "Rotina mensal de Blacklist no fluxo de descarte."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -35,7 +38,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-01-01",
-      "fim": "2026-01-30"
+      "fim": "2026-01-30",
+      "anotacao": ""
     },
     {
       "numero": "02.",
@@ -43,7 +47,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-02-02",
-      "fim": "2026-02-27"
+      "fim": "2026-02-27",
+      "anotacao": ""
     },
     {
       "numero": "03.",
@@ -51,7 +56,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-03-02",
-      "fim": "2026-03-31"
+      "fim": "2026-03-31",
+      "anotacao": ""
     },
     {
       "numero": "04.",
@@ -59,7 +65,8 @@
       "responsavel": "Mauricio (validação)",
       "status": 1,
       "inicio": "2026-05-04",
-      "fim": "2026-05-29"
+      "fim": "2026-05-29",
+      "anotacao": ""
     },
     {
       "numero": "05.",
@@ -67,7 +74,8 @@
       "responsavel": "Jackson / Mauricio",
       "status": 1,
       "inicio": "2026-05-26",
-      "fim": "2026-06-23"
+      "fim": "2026-06-23",
+      "anotacao": ""
     },
     {
       "numero": "06.",
@@ -75,7 +83,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-07-01",
-      "fim": "2026-07-31"
+      "fim": "2026-07-31",
+      "anotacao": ""
     },
     {
       "numero": "07.",
@@ -83,7 +92,8 @@
       "responsavel": "A confirmar",
       "status": 1,
       "inicio": "2026-07-28",
-      "fim": "2026-09-30"
+      "fim": "2026-09-30",
+      "anotacao": ""
     },
     {
       "numero": "08.",
@@ -91,7 +101,8 @@
       "responsavel": "A confirmar",
       "status": 1,
       "inicio": "2026-08-14",
-      "fim": "2026-09-30"
+      "fim": "2026-09-30",
+      "anotacao": ""
     },
     {
       "numero": "09.",
@@ -99,7 +110,8 @@
       "responsavel": "Evandro / Jackson",
       "status": 1,
       "inicio": "2026-10-08",
-      "fim": "2026-11-10"
+      "fim": "2026-11-10",
+      "anotacao": ""
     },
     {
       "numero": "10.",
@@ -107,7 +119,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "11.",
@@ -115,7 +128,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "12.",
@@ -123,7 +137,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "13.",
@@ -131,7 +146,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "14.",
@@ -139,7 +155,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "15.",
@@ -147,7 +164,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "16.",
@@ -155,7 +173,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "17.",
@@ -163,7 +182,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "18.",
@@ -171,7 +191,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "19.",
@@ -179,7 +200,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "20.",
@@ -187,7 +209,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "21.",
@@ -195,7 +218,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "22.",
@@ -203,7 +227,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "23.",
@@ -211,7 +236,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "24.",
@@ -219,7 +245,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "25.",
@@ -227,7 +254,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "26.",
@@ -235,7 +263,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "27.",
@@ -243,7 +272,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -253,7 +283,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-01-01",
-      "fim": "2026-01-30"
+      "fim": "2026-01-30",
+      "anotacao": ""
     },
     {
       "numero": "1.1",
@@ -261,7 +292,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-01-01",
-      "fim": "2026-01-30"
+      "fim": "2026-01-30",
+      "anotacao": ""
     },
     {
       "numero": "1.2",
@@ -269,7 +301,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-01-01",
-      "fim": "2026-01-30"
+      "fim": "2026-01-30",
+      "anotacao": ""
     },
     {
       "numero": "2.",
@@ -277,7 +310,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-02-02",
-      "fim": "2026-02-27"
+      "fim": "2026-02-27",
+      "anotacao": ""
     },
     {
       "numero": "2.1",
@@ -285,7 +319,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-02-02",
-      "fim": "2026-02-27"
+      "fim": "2026-02-27",
+      "anotacao": ""
     },
     {
       "numero": "2.2",
@@ -293,7 +328,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-02-02",
-      "fim": "2026-02-27"
+      "fim": "2026-02-27",
+      "anotacao": ""
     },
     {
       "numero": "3.",
@@ -301,7 +337,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-03-02",
-      "fim": "2026-03-31"
+      "fim": "2026-03-31",
+      "anotacao": ""
     },
     {
       "numero": "3.1",
@@ -309,7 +346,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-03-02",
-      "fim": "2026-03-31"
+      "fim": "2026-03-31",
+      "anotacao": ""
     },
     {
       "numero": "3.2",
@@ -317,7 +355,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-03-02",
-      "fim": "2026-03-31"
+      "fim": "2026-03-31",
+      "anotacao": ""
     },
     {
       "numero": "4.",
@@ -325,7 +364,8 @@
       "responsavel": "Mauricio (validação)",
       "status": 1,
       "inicio": "2026-05-04",
-      "fim": "2026-05-29"
+      "fim": "2026-05-29",
+      "anotacao": ""
     },
     {
       "numero": "4.1",
@@ -333,7 +373,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-05-04",
-      "fim": "2026-05-29"
+      "fim": "2026-05-29",
+      "anotacao": ""
     },
     {
       "numero": "4.2",
@@ -341,7 +382,8 @@
       "responsavel": "Mauricio (validação)",
       "status": 5,
       "inicio": "2026-05-06",
-      "fim": "2026-05-06"
+      "fim": "2026-05-06",
+      "anotacao": ""
     },
     {
       "numero": "4.3",
@@ -349,7 +391,8 @@
       "responsavel": "Mauricio",
       "status": "",
       "inicio": "2026-05-15",
-      "fim": "2026-05-22"
+      "fim": "2026-05-22",
+      "anotacao": ""
     },
     {
       "numero": "5.",
@@ -357,7 +400,8 @@
       "responsavel": "Jackson / Mauricio",
       "status": 1,
       "inicio": "2026-05-26",
-      "fim": "2026-06-23"
+      "fim": "2026-06-23",
+      "anotacao": ""
     },
     {
       "numero": "5.1",
@@ -365,7 +409,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-05-26",
-      "fim": "2026-06-08"
+      "fim": "2026-06-08",
+      "anotacao": ""
     },
     {
       "numero": "5.2",
@@ -373,7 +418,8 @@
       "responsavel": "Jackson / Mauricio",
       "status": 5,
       "inicio": "2026-06-09",
-      "fim": "2026-06-09"
+      "fim": "2026-06-09",
+      "anotacao": ""
     },
     {
       "numero": "5.3",
@@ -381,7 +427,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-06-17",
-      "fim": "2026-06-23"
+      "fim": "2026-06-23",
+      "anotacao": ""
     },
     {
       "numero": "5.4",
@@ -389,7 +436,8 @@
       "responsavel": "Jackson / Mauricio",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "6.",
@@ -397,7 +445,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-07-01",
-      "fim": "2026-07-31"
+      "fim": "2026-07-31",
+      "anotacao": ""
     },
     {
       "numero": "6.1",
@@ -405,7 +454,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-07-01",
-      "fim": "2026-07-31"
+      "fim": "2026-07-31",
+      "anotacao": ""
     },
     {
       "numero": "7.",
@@ -413,7 +463,8 @@
       "responsavel": "A confirmar",
       "status": 1,
       "inicio": "2026-07-28",
-      "fim": "2026-09-30"
+      "fim": "2026-09-30",
+      "anotacao": ""
     },
     {
       "numero": "7.1",
@@ -421,7 +472,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "7.2",
@@ -429,7 +481,8 @@
       "responsavel": "A confirmar",
       "status": 1,
       "inicio": "2026-07-28",
-      "fim": "2026-08-14"
+      "fim": "2026-08-14",
+      "anotacao": ""
     },
     {
       "numero": "7.3",
@@ -437,7 +490,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-08-17",
-      "fim": "2026-08-21"
+      "fim": "2026-08-21",
+      "anotacao": ""
     },
     {
       "numero": "7.4",
@@ -445,7 +499,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-08-21",
-      "fim": "2026-08-28"
+      "fim": "2026-08-28",
+      "anotacao": ""
     },
     {
       "numero": "7.5",
@@ -453,7 +508,8 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "2026-09-30",
-      "fim": "2026-09-30"
+      "fim": "2026-09-30",
+      "anotacao": ""
     },
     {
       "numero": "7.6",
@@ -461,7 +517,8 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "2026-09-30",
-      "fim": "2026-09-30"
+      "fim": "2026-09-30",
+      "anotacao": ""
     },
     {
       "numero": "8.",
@@ -469,7 +526,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-08-14",
-      "fim": "2026-09-30"
+      "fim": "2026-09-30",
+      "anotacao": ""
     },
     {
       "numero": "8.1",
@@ -477,7 +535,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-08-21",
-      "fim": "2026-09-15"
+      "fim": "2026-09-15",
+      "anotacao": ""
     },
     {
       "numero": "8.2",
@@ -485,7 +544,8 @@
       "responsavel": "Serviços de campo",
       "status": "",
       "inicio": "2026-08-14",
-      "fim": "2026-09-30"
+      "fim": "2026-09-30",
+      "anotacao": ""
     },
     {
       "numero": "8.3",
@@ -493,7 +553,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-08-21",
-      "fim": "2026-09-30"
+      "fim": "2026-09-30",
+      "anotacao": ""
     },
     {
       "numero": "9.",
@@ -501,7 +562,8 @@
       "responsavel": "Evandro / Jackson",
       "status": 1,
       "inicio": "2026-10-08",
-      "fim": "2026-10-20"
+      "fim": "2026-10-20",
+      "anotacao": ""
     },
     {
       "numero": "9.1",
@@ -509,7 +571,8 @@
       "responsavel": "Evandro / Jackson",
       "status": 1,
       "inicio": "2026-10-08",
-      "fim": "2026-10-20"
+      "fim": "2026-10-20",
+      "anotacao": ""
     }
   ],
   "historico": [],
@@ -3111,6 +3174,6 @@
   "fonte": {
     "arquivo": "LOG-013 - Ciclo de Vida.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-013%20-%20Ciclo%20de%20Vida.xlsx?web=1",
-    "extraidoEm": "2026-11-05T17:09:10-03:00"
+    "extraidoEm": "2026-11-05T17:48:35-03:00"
   }
 }

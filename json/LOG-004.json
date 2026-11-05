@@ -35,7 +35,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "02.",
@@ -43,7 +44,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "03.",
@@ -51,7 +53,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-04-02",
-      "fim": "2026-04-02"
+      "fim": "2026-04-02",
+      "anotacao": ""
     },
     {
       "numero": "04.",
@@ -59,7 +62,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-04-14",
-      "fim": "2026-05-12"
+      "fim": "2026-05-12",
+      "anotacao": ""
     },
     {
       "numero": "05.",
@@ -67,7 +71,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-06",
-      "fim": "2026-05-08"
+      "fim": "2026-05-08",
+      "anotacao": ""
     },
     {
       "numero": "06.",
@@ -75,7 +80,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-11",
-      "fim": "2026-08-28"
+      "fim": "2026-08-28",
+      "anotacao": ""
     },
     {
       "numero": "07.",
@@ -83,7 +89,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "08.",
@@ -91,7 +98,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "09.",
@@ -99,7 +107,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "10.",
@@ -107,7 +116,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "11.",
@@ -115,7 +125,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "12.",
@@ -123,7 +134,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "13.",
@@ -131,7 +143,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "14.",
@@ -139,7 +152,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "15.",
@@ -147,7 +161,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "16.",
@@ -155,7 +170,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "17.",
@@ -163,7 +179,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "18.",
@@ -171,7 +188,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "19.",
@@ -179,7 +197,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "20.",
@@ -187,7 +206,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "21.",
@@ -195,7 +215,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "22.",
@@ -203,7 +224,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "23.",
@@ -211,7 +233,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "24.",
@@ -219,7 +242,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "25.",
@@ -227,7 +251,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "26.",
@@ -235,7 +260,8 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "27.",
@@ -243,41 +269,46 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     }
   ],
   "cronogramaDetalhado": [
     {
       "numero": 1,
-      "atividade": "1. Revisão e renegociação das tabelas de frete",
+      "atividade": "Revisão e renegociação das tabelas de frete",
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 2,
-      "atividade": "2. Implantação da trava de frete mínimo",
+      "atividade": "Implantação da trava de frete mínimo",
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": 3,
-      "atividade": "3. Ajuste do FCST em função do aumento do combustível",
+      "atividade": "Ajuste do FCST em função do aumento do combustível",
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-04-02",
-      "fim": "2026-04-02"
+      "fim": "2026-04-02",
+      "anotacao": ""
     },
     {
       "numero": 4,
-      "atividade": "4. Evolução de stage do projeto (L3 para L5)",
+      "atividade": "Evolução de stage do projeto (L3 para L5)",
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-04-14",
-      "fim": "2026-05-12"
+      "fim": "2026-05-12",
+      "anotacao": ""
     },
     {
       "numero": "4.1",
@@ -285,7 +316,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-04-14",
-      "fim": "2026-05-12"
+      "fim": "2026-05-12",
+      "anotacao": ""
     },
     {
       "numero": "4.2",
@@ -293,15 +325,17 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-12",
-      "fim": "2026-05-12"
+      "fim": "2026-05-12",
+      "anotacao": ""
     },
     {
       "numero": 5,
-      "atividade": "5. Apuração do resultado de abril/26",
+      "atividade": "Apuração do resultado de abril/26",
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-06",
-      "fim": "2026-05-08"
+      "fim": "2026-05-08",
+      "anotacao": ""
     },
     {
       "numero": "5.1",
@@ -309,7 +343,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-06",
-      "fim": "2026-05-06"
+      "fim": "2026-05-06",
+      "anotacao": ""
     },
     {
       "numero": "5.2",
@@ -317,15 +352,17 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-08",
-      "fim": "2026-05-08"
+      "fim": "2026-05-08",
+      "anotacao": ""
     },
     {
       "numero": 6,
-      "atividade": "6. Report final e medição dos ganhos",
+      "atividade": "Report final e medição dos ganhos",
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-11",
-      "fim": "2026-08-28"
+      "fim": "2026-08-28",
+      "anotacao": ""
     },
     {
       "numero": "6.1",
@@ -333,7 +370,8 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-05-11",
-      "fim": "2026-08-28"
+      "fim": "2026-08-28",
+      "anotacao": ""
     },
     {
       "numero": "6.2",
@@ -341,15 +379,17 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-08-28",
-      "fim": "2026-08-28"
+      "fim": "2026-08-28",
+      "anotacao": ""
     },
     {
       "numero": 7,
-      "atividade": "7. Encerramento do projeto (status ENCERRADO, stage L5)",
+      "atividade": "Encerramento do projeto (status ENCERRADO, stage L5)",
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     }
   ],
   "historico": [],
@@ -2951,6 +2991,6 @@
   "fonte": {
     "arquivo": "LOG-004 - OBZ Transporte (Carry Over).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-004%20-%20OBZ%20Transporte%20%28Carry%20Over%29.xlsx?web=1",
-    "extraidoEm": "2026-11-05T17:08:34-03:00"
+    "extraidoEm": "2026-11-05T17:47:34-03:00"
   }
 }

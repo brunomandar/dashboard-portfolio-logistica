@@ -18,7 +18,9 @@
   "entregaveis": [
     "Processo de controle de entrada versus consumo estruturado.",
     "Gestão e venda de ativos operacionalizadas.",
-    "BI de estoques estruturado para giro, slow moving e Marketing."
+    "BI de estoques estruturado para giro, slow moving e Marketing.",
+    "Redução do estoque obsoleto.",
+    "Estrutura de controle dos estoques de Marketing implantada."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -35,7 +37,8 @@
       "responsavel": "A confirmar",
       "status": 2,
       "inicio": "2026-02-10",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "2",
@@ -43,7 +46,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-04-30",
-      "fim": "2026-05-12"
+      "fim": "2026-05-12",
+      "anotacao": ""
     },
     {
       "numero": "3",
@@ -51,7 +55,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-05-08",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "4",
@@ -59,7 +64,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-05-25",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "5",
@@ -67,7 +73,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-06-03",
-      "fim": "2026-06-03"
+      "fim": "2026-06-03",
+      "anotacao": ""
     },
     {
       "numero": "6",
@@ -75,7 +82,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-07-28",
-      "fim": "2026-07-28"
+      "fim": "2026-07-28",
+      "anotacao": ""
     },
     {
       "numero": "7",
@@ -83,7 +91,8 @@
       "responsavel": "Gustavo Mendes",
       "status": 1,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "8",
@@ -91,7 +100,8 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "2026-08-14",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "9",
@@ -99,7 +109,8 @@
       "responsavel": "Gustavo Mendes",
       "status": 1,
       "inicio": "2026-09-29",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -109,7 +120,8 @@
       "responsavel": "A confirmar",
       "status": 2,
       "inicio": "2026-02-10",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "1.1",
@@ -117,7 +129,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-02-10",
-      "fim": "2026-02-10"
+      "fim": "2026-02-10",
+      "anotacao": ""
     },
     {
       "numero": "1.2",
@@ -125,7 +138,8 @@
       "responsavel": "México / AMX",
       "status": 2,
       "inicio": "2026-02-10",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "2",
@@ -133,7 +147,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-04-30",
-      "fim": "2026-05-12"
+      "fim": "2026-05-12",
+      "anotacao": ""
     },
     {
       "numero": "2.1",
@@ -141,7 +156,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-04-30",
-      "fim": "2026-04-30"
+      "fim": "2026-04-30",
+      "anotacao": ""
     },
     {
       "numero": "2.2",
@@ -149,7 +165,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-05-08",
-      "fim": "2026-05-12"
+      "fim": "2026-05-12",
+      "anotacao": ""
     },
     {
       "numero": "3",
@@ -157,7 +174,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-05-08",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "3.1",
@@ -165,7 +183,8 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-05-08",
-      "fim": "2026-05-30"
+      "fim": "2026-05-30",
+      "anotacao": ""
     },
     {
       "numero": "3.2",
@@ -173,7 +192,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-05-30",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "3.3",
@@ -181,7 +201,8 @@
       "responsavel": "A confirmar",
       "status": 1,
       "inicio": "2026-06-01",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "4",
@@ -189,7 +210,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-05-25",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "4.1",
@@ -197,7 +219,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-05-25",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "4.2",
@@ -205,7 +228,8 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "5",
@@ -213,7 +237,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-06-03",
-      "fim": "2026-06-03"
+      "fim": "2026-06-03",
+      "anotacao": ""
     },
     {
       "numero": "5.1",
@@ -221,7 +246,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-06-03",
-      "fim": "2026-06-03"
+      "fim": "2026-06-03",
+      "anotacao": ""
     },
     {
       "numero": "5.2",
@@ -229,7 +255,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-06-03",
-      "fim": "2026-06-03"
+      "fim": "2026-06-03",
+      "anotacao": ""
     },
     {
       "numero": "6",
@@ -237,7 +264,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-07-28",
-      "fim": "2026-07-28"
+      "fim": "2026-07-28",
+      "anotacao": ""
     },
     {
       "numero": "6.1",
@@ -245,7 +273,8 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-07-28",
-      "fim": "2026-07-28"
+      "fim": "2026-07-28",
+      "anotacao": ""
     },
     {
       "numero": "7",
@@ -253,7 +282,8 @@
       "responsavel": "Gustavo Mendes",
       "status": 1,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "7.1",
@@ -261,7 +291,8 @@
       "responsavel": "Gustavo Mendes",
       "status": 5,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "7.2",
@@ -269,7 +300,8 @@
       "responsavel": "Gustavo Mendes",
       "status": 1,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "8",
@@ -277,7 +309,8 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "2026-08-14",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "8.1",
@@ -285,7 +318,8 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "2026-08-14",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "9",
@@ -293,7 +327,8 @@
       "responsavel": "Gustavo Mendes",
       "status": 1,
       "inicio": "2026-09-29",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "9.1",
@@ -301,7 +336,8 @@
       "responsavel": "Gustavo Mendes",
       "status": 1,
       "inicio": "2026-09-29",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     },
     {
       "numero": "9.2",
@@ -309,7 +345,8 @@
       "responsavel": "Gustavo Mendes",
       "status": 0,
       "inicio": "",
-      "fim": ""
+      "fim": "",
+      "anotacao": ""
     }
   ],
   "historico": [],
@@ -2911,6 +2948,6 @@
   "fonte": {
     "arquivo": "LOG-014 - RAI de Estoques.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-014%20-%20RAI%20de%20Estoques.xlsx?web=1",
-    "extraidoEm": "2026-11-05T17:09:11-03:00"
+    "extraidoEm": "2026-11-05T17:48:37-03:00"
   }
 }
