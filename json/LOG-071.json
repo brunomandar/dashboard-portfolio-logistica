@@ -7,7 +7,7 @@
   "termino": "2026-10-19",
   "inicioCaptura": "",
   "iniciativa": "Op. Transporte",
-  "pmo": "Karolina",
+  "pmo": "Mateus",
   "risco": "Alto",
   "status": "L5",
   "situacao": "Concluído",
@@ -18,9 +18,7 @@
   "entregaveis": [
     "Estudo de frete e viabilidade logística.",
     "Abastecimento de lojas e CD estruturado.",
-    "Transportador do piloto definido (BRSAMUR).",
-    "Venda de TVs iniciada na Loja Online.",
-    "Venda iniciada nas 10 lojas da Regional CO."
+    "Transportador do piloto definido (BRSAMUR)."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -37,8 +35,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-08-25",
-      "fim": "2026-08-26",
-      "anotacao": ""
+      "fim": "2026-08-26"
     },
     {
       "numero": "2",
@@ -46,8 +43,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-08-26",
-      "fim": "2026-10-19",
-      "anotacao": ""
+      "fim": "2026-10-19"
     },
     {
       "numero": "3",
@@ -55,8 +51,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-09-02",
-      "fim": "2026-09-11",
-      "anotacao": ""
+      "fim": "2026-09-11"
     },
     {
       "numero": "4",
@@ -64,8 +59,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-09-02",
-      "fim": "2026-10-19",
-      "anotacao": ""
+      "fim": "2026-10-19"
     },
     {
       "numero": "5",
@@ -73,8 +67,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-09-10",
-      "fim": "2026-09-17",
-      "anotacao": ""
+      "fim": "2026-09-17"
     },
     {
       "numero": "6",
@@ -82,8 +75,7 @@
       "responsavel": "Comercial",
       "status": 0,
       "inicio": "2026-08-25",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "7",
@@ -91,8 +83,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-10-19",
-      "fim": "2026-10-19",
-      "anotacao": ""
+      "fim": "2026-10-19"
     }
   ],
   "cronogramaDetalhado": [
@@ -102,8 +93,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-08-25",
-      "fim": "2026-08-26",
-      "anotacao": ""
+      "fim": "2026-08-26"
     },
     {
       "numero": "1.1",
@@ -111,8 +101,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-08-25",
-      "fim": "2026-08-25",
-      "anotacao": ""
+      "fim": "2026-08-25"
     },
     {
       "numero": "1.2",
@@ -120,8 +109,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-08-26",
-      "fim": "2026-08-26",
-      "anotacao": ""
+      "fim": "2026-08-26"
     },
     {
       "numero": "1.3",
@@ -129,8 +117,7 @@
       "responsavel": "Projetos",
       "status": 4,
       "inicio": "2026-08-26",
-      "fim": "2026-08-26",
-      "anotacao": ""
+      "fim": "2026-08-26"
     },
     {
       "numero": "2",
@@ -138,8 +125,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-08-26",
-      "fim": "2026-10-19",
-      "anotacao": ""
+      "fim": "2026-10-19"
     },
     {
       "numero": "2.1",
@@ -147,8 +133,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-08-26",
-      "fim": "2026-10-19",
-      "anotacao": ""
+      "fim": "2026-10-19"
     },
     {
       "numero": "2.2",
@@ -156,8 +141,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-08-26",
-      "fim": "2026-09-01",
-      "anotacao": ""
+      "fim": "2026-09-01"
     },
     {
       "numero": "2.3",
@@ -165,8 +149,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-09-03",
-      "fim": "2026-09-03",
-      "anotacao": ""
+      "fim": "2026-09-03"
     },
     {
       "numero": "3",
@@ -174,8 +157,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-09-02",
-      "fim": "2026-09-11",
-      "anotacao": ""
+      "fim": "2026-09-11"
     },
     {
       "numero": "3.1",
@@ -183,8 +165,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-09-02",
-      "fim": "2026-09-02",
-      "anotacao": ""
+      "fim": "2026-09-02"
     },
     {
       "numero": "3.2",
@@ -192,8 +173,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-09-09",
-      "fim": "2026-09-09",
-      "anotacao": ""
+      "fim": "2026-09-09"
     },
     {
       "numero": "4",
@@ -201,8 +181,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-09-02",
-      "fim": "2026-10-19",
-      "anotacao": ""
+      "fim": "2026-10-19"
     },
     {
       "numero": "4.1",
@@ -210,8 +189,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-09-02",
-      "fim": "2026-10-14",
-      "anotacao": ""
+      "fim": "2026-10-14"
     },
     {
       "numero": "4.2",
@@ -219,8 +197,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-09-02",
-      "fim": "2026-10-19",
-      "anotacao": ""
+      "fim": "2026-10-19"
     },
     {
       "numero": "5",
@@ -228,8 +205,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-09-10",
-      "fim": "2026-09-17",
-      "anotacao": ""
+      "fim": "2026-09-17"
     },
     {
       "numero": "5.1",
@@ -237,8 +213,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-09-10",
-      "fim": "2026-09-10",
-      "anotacao": ""
+      "fim": "2026-09-10"
     },
     {
       "numero": "5.2",
@@ -246,8 +221,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-09-15",
-      "fim": "2026-09-15",
-      "anotacao": ""
+      "fim": "2026-09-15"
     },
     {
       "numero": "6",
@@ -255,8 +229,7 @@
       "responsavel": "Comercial",
       "status": 0,
       "inicio": "2026-08-25",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.1",
@@ -264,8 +237,7 @@
       "responsavel": "Comercial",
       "status": 0,
       "inicio": "2026-08-25",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.2",
@@ -273,8 +245,7 @@
       "responsavel": "Comercial",
       "status": 0,
       "inicio": "2026-08-25",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.3",
@@ -282,8 +253,7 @@
       "responsavel": "Comercial",
       "status": 0,
       "inicio": "2026-09-10",
-      "fim": "2026-09-10",
-      "anotacao": ""
+      "fim": "2026-09-10"
     },
     {
       "numero": "7",
@@ -291,8 +261,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-10-19",
-      "fim": "2026-10-19",
-      "anotacao": ""
+      "fim": "2026-10-19"
     },
     {
       "numero": "7.1",
@@ -300,8 +269,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-10-19",
-      "fim": "2026-10-19",
-      "anotacao": ""
+      "fim": "2026-10-19"
     }
   ],
   "historico": [],
@@ -2903,6 +2871,6 @@
   "fonte": {
     "arquivo": "LOG-071 - Piloto Venda de TV (Distribuição Loja).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-071%20-%20Piloto%20Venda%20de%20TV%20%28Distribui%C3%A7%C3%A3o%20Loja%29.xlsx?web=1",
-    "extraidoEm": "2026-11-04T18:21:34-03:00"
+    "extraidoEm": "2026-11-05T17:10:11-03:00"
   }
 }

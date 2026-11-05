@@ -35,8 +35,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "02.",
@@ -44,8 +43,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "03.",
@@ -53,8 +51,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "04.",
@@ -62,8 +59,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "05.",
@@ -71,8 +67,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "06.",
@@ -80,8 +75,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "07.",
@@ -89,8 +83,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "08.",
@@ -98,8 +91,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "09.",
@@ -107,8 +99,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "10.",
@@ -116,8 +107,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "11.",
@@ -125,8 +115,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "12.",
@@ -134,8 +123,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "13.",
@@ -143,8 +131,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "14.",
@@ -152,8 +139,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "15.",
@@ -161,8 +147,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "16.",
@@ -170,8 +155,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "17.",
@@ -179,8 +163,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "18.",
@@ -188,8 +171,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "19.",
@@ -197,8 +179,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "20.",
@@ -206,8 +187,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "21.",
@@ -215,8 +195,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "22.",
@@ -224,8 +203,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "23.",
@@ -233,8 +211,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "24.",
@@ -242,8 +219,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "25.",
@@ -251,8 +227,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "26.",
@@ -260,8 +235,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "27.",
@@ -269,910 +243,809 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     }
   ],
   "cronogramaDetalhado": [
     {
       "numero": 1,
-      "atividade": "",
+      "atividade": "1. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 2,
-      "atividade": "",
+      "atividade": "2. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 3,
-      "atividade": "",
+      "atividade": "3. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 4,
-      "atividade": "",
+      "atividade": "4. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 5,
-      "atividade": "",
+      "atividade": "5. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 6,
-      "atividade": "",
+      "atividade": "6. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 7,
-      "atividade": "",
+      "atividade": "7. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 8,
-      "atividade": "",
+      "atividade": "8. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 9,
-      "atividade": "",
+      "atividade": "9. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 10,
-      "atividade": "",
+      "atividade": "10. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 11,
-      "atividade": "",
+      "atividade": "11. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 12,
-      "atividade": "",
+      "atividade": "12. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 13,
-      "atividade": "",
+      "atividade": "13. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 14,
-      "atividade": "",
+      "atividade": "14. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 15,
-      "atividade": "",
+      "atividade": "15. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 16,
-      "atividade": "",
+      "atividade": "16. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 17,
-      "atividade": "",
+      "atividade": "17. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 18,
-      "atividade": "",
+      "atividade": "18. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 19,
-      "atividade": "",
+      "atividade": "19. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 20,
-      "atividade": "",
+      "atividade": "20. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 21,
-      "atividade": "",
+      "atividade": "21. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 22,
-      "atividade": "",
+      "atividade": "22. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 23,
-      "atividade": "",
+      "atividade": "23. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 24,
-      "atividade": "",
+      "atividade": "24. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 25,
-      "atividade": "",
+      "atividade": "25. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 26,
-      "atividade": "",
+      "atividade": "26. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 27,
-      "atividade": "",
+      "atividade": "27. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 28,
-      "atividade": "",
+      "atividade": "28. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 29,
-      "atividade": "",
+      "atividade": "29. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 30,
-      "atividade": "",
+      "atividade": "30. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 31,
-      "atividade": "",
+      "atividade": "31. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 32,
-      "atividade": "",
+      "atividade": "32. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 33,
-      "atividade": "",
+      "atividade": "33. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 34,
-      "atividade": "",
+      "atividade": "34. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 35,
-      "atividade": "",
+      "atividade": "35. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 36,
-      "atividade": "",
+      "atividade": "36. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 37,
-      "atividade": "",
+      "atividade": "37. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 38,
-      "atividade": "",
+      "atividade": "38. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 39,
-      "atividade": "",
+      "atividade": "39. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 40,
-      "atividade": "",
+      "atividade": "40. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 41,
-      "atividade": "",
+      "atividade": "41. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 42,
-      "atividade": "",
+      "atividade": "42. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 43,
-      "atividade": "",
+      "atividade": "43. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 44,
-      "atividade": "",
+      "atividade": "44. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 45,
-      "atividade": "",
+      "atividade": "45. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 46,
-      "atividade": "",
+      "atividade": "46. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 47,
-      "atividade": "",
+      "atividade": "47. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 48,
-      "atividade": "",
+      "atividade": "48. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 49,
-      "atividade": "",
+      "atividade": "49. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 50,
-      "atividade": "",
+      "atividade": "50. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 51,
-      "atividade": "",
+      "atividade": "51. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 52,
-      "atividade": "",
+      "atividade": "52. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 53,
-      "atividade": "",
+      "atividade": "53. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 54,
-      "atividade": "",
+      "atividade": "54. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 55,
-      "atividade": "",
+      "atividade": "55. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 56,
-      "atividade": "",
+      "atividade": "56. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 57,
-      "atividade": "",
+      "atividade": "57. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 58,
-      "atividade": "",
+      "atividade": "58. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 59,
-      "atividade": "",
+      "atividade": "59. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 60,
-      "atividade": "",
+      "atividade": "60. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 61,
-      "atividade": "",
+      "atividade": "61. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 62,
-      "atividade": "",
+      "atividade": "62. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 63,
-      "atividade": "",
+      "atividade": "63. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 64,
-      "atividade": "",
+      "atividade": "64. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 65,
-      "atividade": "",
+      "atividade": "65. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 66,
-      "atividade": "",
+      "atividade": "66. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 67,
-      "atividade": "",
+      "atividade": "67. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 68,
-      "atividade": "",
+      "atividade": "68. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 69,
-      "atividade": "",
+      "atividade": "69. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 70,
-      "atividade": "",
+      "atividade": "70. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 71,
-      "atividade": "",
+      "atividade": "71. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 72,
-      "atividade": "",
+      "atividade": "72. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 73,
-      "atividade": "",
+      "atividade": "73. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 74,
-      "atividade": "",
+      "atividade": "74. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 75,
-      "atividade": "",
+      "atividade": "75. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 76,
-      "atividade": "",
+      "atividade": "76. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 77,
-      "atividade": "",
+      "atividade": "77. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 78,
-      "atividade": "",
+      "atividade": "78. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 79,
-      "atividade": "",
+      "atividade": "79. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 80,
-      "atividade": "",
+      "atividade": "80. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 81,
-      "atividade": "",
+      "atividade": "81. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 82,
-      "atividade": "",
+      "atividade": "82. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 83,
-      "atividade": "",
+      "atividade": "83. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 84,
-      "atividade": "",
+      "atividade": "84. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 85,
-      "atividade": "",
+      "atividade": "85. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 86,
-      "atividade": "",
+      "atividade": "86. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 87,
-      "atividade": "",
+      "atividade": "87. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 88,
-      "atividade": "",
+      "atividade": "88. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 89,
-      "atividade": "",
+      "atividade": "89. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 90,
-      "atividade": "",
+      "atividade": "90. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 91,
-      "atividade": "",
+      "atividade": "91. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 92,
-      "atividade": "",
+      "atividade": "92. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 93,
-      "atividade": "",
+      "atividade": "93. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 94,
-      "atividade": "",
+      "atividade": "94. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 95,
-      "atividade": "",
+      "atividade": "95. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 96,
-      "atividade": "",
+      "atividade": "96. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 97,
-      "atividade": "",
+      "atividade": "97. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 98,
-      "atividade": "",
+      "atividade": "98. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 99,
-      "atividade": "",
+      "atividade": "99. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 100,
-      "atividade": "",
+      "atividade": "100. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     }
   ],
   "historico": [
@@ -3780,6 +3653,6 @@
   "fonte": {
     "arquivo": "LOG-001 - Eficiência Desconexão - RPA Terminais Presos.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-001%20-%20Efici%C3%AAncia%20Desconex%C3%A3o%20-%20RPA%20Terminais%20Presos.xlsx?web=1",
-    "extraidoEm": "2026-11-04T18:19:20-03:00"
+    "extraidoEm": "2026-11-05T17:08:30-03:00"
   }
 }

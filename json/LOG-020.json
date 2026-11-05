@@ -5,12 +5,12 @@
   "pontoFocal": "Fabio Delduque",
   "inicio": "2026-01-01",
   "termino": "2027-01-20",
-  "inicioCaptura": "2026-01-01",
+  "inicioCaptura": "",
   "iniciativa": "Op. Logística",
   "pmo": "Bruno",
-  "risco": "A validar",
-  "status": "L5",
-  "situacao": "Concluído",
+  "risco": "Médio",
+  "status": "L4",
+  "situacao": "Atenção",
   "prioridade": "P0",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
@@ -18,9 +18,7 @@
   "entregaveis": [
     "Site de visibilidade completa dos estoques empresariais PM/MM em produção",
     "Relatórios gerenciais de estoque",
-    "Padronização de processos e do uso do SAP para PM/MM",
-    "Integração com o WMS, incluindo visão de ocupação dos EAs em tempo real",
-    "Expansão dos depósitos para os centros migrados de PM para MM (BSR – OS 162304)."
+    "Padronização de processos e do uso do SAP para PM/MM"
   ],
   "saving": {
     "opex12M": 0.0,
@@ -37,8 +35,7 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-01-01",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "2",
@@ -46,8 +43,7 @@
       "responsavel": "TCIA",
       "status": 4,
       "inicio": "2026-05-06",
-      "fim": "2026-10-02",
-      "anotacao": ""
+      "fim": "2026-10-02"
     },
     {
       "numero": "3",
@@ -55,8 +51,7 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "2026-06-27",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "4",
@@ -64,8 +59,7 @@
       "responsavel": "BSR",
       "status": "",
       "inicio": "2026-07-17",
-      "fim": "2026-08-05",
-      "anotacao": ""
+      "fim": "2026-08-05"
     },
     {
       "numero": "5",
@@ -73,8 +67,7 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "2026-08-14",
-      "fim": "2026-08-31",
-      "anotacao": ""
+      "fim": "2026-08-31"
     },
     {
       "numero": "6",
@@ -82,8 +75,7 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "fim": "2026-09-30"
     },
     {
       "numero": "7",
@@ -91,8 +83,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-10-02",
-      "fim": "2026-10-02",
-      "anotacao": ""
+      "fim": "2026-10-02"
     },
     {
       "numero": "8",
@@ -100,8 +91,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-09-09",
-      "fim": "2026-10-02",
-      "anotacao": ""
+      "fim": "2026-10-02"
     }
   ],
   "cronogramaDetalhado": [
@@ -111,8 +101,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-01-01",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "1.1",
@@ -120,8 +109,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-01-01",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "1.2",
@@ -129,8 +117,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "1.3",
@@ -138,8 +125,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "2",
@@ -147,8 +133,7 @@
       "responsavel": "TCIA",
       "status": 5,
       "inicio": "2026-05-06",
-      "fim": "2026-10-02",
-      "anotacao": ""
+      "fim": "2026-10-02"
     },
     {
       "numero": "2.1",
@@ -156,8 +141,7 @@
       "responsavel": "TCIA",
       "status": 5,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "2.2",
@@ -165,8 +149,7 @@
       "responsavel": "TCIA",
       "status": 5,
       "inicio": "2026-05-06",
-      "fim": "2026-06-15",
-      "anotacao": ""
+      "fim": "2026-06-15"
     },
     {
       "numero": "2.3",
@@ -174,8 +157,7 @@
       "responsavel": "TCIA",
       "status": 5,
       "inicio": "2026-06-15",
-      "fim": "2026-10-02",
-      "anotacao": ""
+      "fim": "2026-10-02"
     },
     {
       "numero": "3",
@@ -183,8 +165,7 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "2026-06-27",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "3.1",
@@ -192,8 +173,7 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "2026-06-27",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "4",
@@ -201,8 +181,7 @@
       "responsavel": "BSR",
       "status": "",
       "inicio": "2026-07-17",
-      "fim": "2026-08-05",
-      "anotacao": ""
+      "fim": "2026-08-05"
     },
     {
       "numero": "4.1",
@@ -210,8 +189,7 @@
       "responsavel": "BSR",
       "status": "",
       "inicio": "2026-07-17",
-      "fim": "2026-08-05",
-      "anotacao": ""
+      "fim": "2026-08-05"
     },
     {
       "numero": "5",
@@ -219,8 +197,7 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "2026-08-14",
-      "fim": "2026-08-31",
-      "anotacao": ""
+      "fim": "2026-08-31"
     },
     {
       "numero": "5.1",
@@ -228,8 +205,7 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "2026-08-14",
-      "fim": "2026-08-31",
-      "anotacao": ""
+      "fim": "2026-08-31"
     },
     {
       "numero": "6",
@@ -237,8 +213,7 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "fim": "2026-09-30"
     },
     {
       "numero": "6.1",
@@ -246,8 +221,7 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "fim": "2026-09-30"
     },
     {
       "numero": "6.2",
@@ -255,8 +229,7 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "fim": "2026-09-30"
     },
     {
       "numero": "7",
@@ -264,8 +237,7 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-10-02",
-      "fim": "2026-10-02",
-      "anotacao": ""
+      "fim": "2026-10-02"
     },
     {
       "numero": "7.1",
@@ -273,8 +245,7 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-10-02",
-      "fim": "2026-10-02",
-      "anotacao": ""
+      "fim": "2026-10-02"
     },
     {
       "numero": "8",
@@ -282,8 +253,7 @@
       "responsavel": "A confirmar",
       "status": 4,
       "inicio": "2026-09-09",
-      "fim": "2026-10-02",
-      "anotacao": ""
+      "fim": "2026-10-02"
     },
     {
       "numero": "8.1",
@@ -291,12 +261,11 @@
       "responsavel": "Fabio Delduque",
       "status": 4,
       "inicio": "2026-09-09",
-      "fim": "2026-09-09",
-      "anotacao": ""
+      "fim": "2026-09-09"
     }
   ],
   "historico": [],
-  "statusProjeto": "02/10/26 - Site em produção com visibilidade completa dos estoques do Empresarial.\n09/09/26 - Fabio Delduque informou, via Planner, que o projeto foi concluído.\n14/08/26 - Base SIAK não está correta e está em atraso; correção buscada até o fim do mês (31/08); EA previsto para migrar até o fim do ano.\n04/08/26 - Expansão dos depósitos para os centros migrados do PM para o MM (BSR – OS 162304) com conclusão reprogramada para 05/08.\n17/07/26 - Expansão dos depósitos para os centros migrados do PM para o MM tratada pela BSR (OS 162304), com conclusão prevista para 28/07.\n27/06/26 - WMS Estendido: sistema de gestão operacional dos EAs com visão de ocupação em tempo real em desenvolvimento.\n12/05/26 - TCIA adiou a entrega do sistema de informações gerenciais e visibilidade do estoque para 15/06.\n07/05/26 - Alinhada com a TCIA a entrega do sistema, com prazo para 15/05.\n06/05/26 - TCIA finalizando o sistema de visibilidade do estoque PM e MM; reunião marcada para 06/05.",
+  "statusProjeto": "15/11/26 - Site em produção com visibilidade completa dos estoques do Empresarial.\n09/09/26 - Fabio Delduque informou, via Planner, que o projeto foi concluído.\n14/08/26 - Base SIAK não está correta e está em atraso; correção buscada até o fim do mês (31/08); EA previsto para migrar até o fim do ano.\n04/08/26 - Expansão dos depósitos para os centros migrados do PM para o MM (BSR – OS 162304) com conclusão reprogramada para 05/08.\n17/07/26 - Expansão dos depósitos para os centros migrados do PM para o MM tratada pela BSR (OS 162304), com conclusão prevista para 28/07.\n27/06/26 - WMS Estendido: sistema de gestão operacional dos EAs com visão de ocupação em tempo real em desenvolvimento.\n12/05/26 - TCIA adiou a entrega do sistema de informações gerenciais e visibilidade do estoque para 15/06.\n07/05/26 - Alinhada com a TCIA a entrega do sistema, com prazo para 15/05.\n06/05/26 - TCIA finalizando o sistema de visibilidade do estoque PM e MM; reunião marcada para 06/05.",
   "financeiro": [
     {
       "id": "LOG-020",
@@ -2894,6 +2863,6 @@
   "fonte": {
     "arquivo": "LOG-020 - EE - Visão de Estoques.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-020%20-%20EE%20-%20Vis%C3%A3o%20de%20Estoques.xlsx?web=1",
-    "extraidoEm": "2026-11-04T18:20:22-03:00"
+    "extraidoEm": "2026-11-05T17:09:20-03:00"
   }
 }

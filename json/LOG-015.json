@@ -11,16 +11,16 @@
   "risco": "Médio",
   "status": "L4",
   "situacao": "Atenção",
-  "prioridade": "P1",
+  "prioridade": "Congelado",
   "ganhoProjeto": "Quantitativo",
   "tipos": [
     "Opex"
   ],
   "escopo": "Otimização do fluxo logístico via parqueamento e modelo Milk Run, com o foco na redução de tempo de coleta e aumento de produtividade trazendo a melhoria do controle operacional nos CDs. Piloto iniciando no CD de Campinas com a projeção de abrir para o restante do Brasil após sucesso do modelo. \nSaving de um único CD trabalhando nesse modelo é de 400 mil por ano.",
   "entregaveis": [
-    "Implementação de modelo de parqueamento nos CDs;​",
+    "Implementação de modelo de parqueamento nos CDs",
     "Estruturação do modelo Milk Run",
-    "Padronização do fluxo de veículos e expedição;​"
+    "Padronização do fluxo de veículos e expedição"
   ],
   "saving": {
     "opex12M": 0.4,
@@ -37,8 +37,7 @@
       "responsavel": "",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-06-21",
-      "anotacao": ""
+      "fim": "2026-06-21"
     },
     {
       "numero": "02.",
@@ -46,8 +45,7 @@
       "responsavel": "",
       "status": 4,
       "inicio": "2026-06-26",
-      "fim": "2026-07-01",
-      "anotacao": ""
+      "fim": "2026-07-01"
     },
     {
       "numero": "03.",
@@ -55,8 +53,7 @@
       "responsavel": "",
       "status": 4,
       "inicio": "2026-06-30",
-      "fim": "2026-07-03",
-      "anotacao": ""
+      "fim": "2026-07-03"
     },
     {
       "numero": "04.",
@@ -64,8 +61,7 @@
       "responsavel": "",
       "status": 1,
       "inicio": "2026-08-01",
-      "fim": "2026-10-31",
-      "anotacao": ""
+      "fim": "2026-10-31"
     },
     {
       "numero": "05.",
@@ -73,8 +69,7 @@
       "responsavel": "",
       "status": 1,
       "inicio": "2026-10-20",
-      "fim": "2026-11-25",
-      "anotacao": ""
+      "fim": "2026-11-25"
     },
     {
       "numero": "06.",
@@ -82,8 +77,7 @@
       "responsavel": "",
       "status": 1,
       "inicio": "2026-09-10",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "07.",
@@ -91,8 +85,7 @@
       "responsavel": "",
       "status": 1,
       "inicio": "2026-09-16",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "fim": "2026-09-30"
     },
     {
       "numero": "08.",
@@ -100,8 +93,7 @@
       "responsavel": "",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "09.",
@@ -109,8 +101,7 @@
       "responsavel": "",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "10.",
@@ -118,19 +109,17 @@
       "responsavel": "",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     }
   ],
   "cronogramaDetalhado": [
     {
       "numero": 1,
-      "atividade": "PLANEJAMENTO E DESENHO OPERACIONAL",
+      "atividade": "1. PLANEJAMENTO E DESENHO OPERACIONAL",
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-07-02",
-      "anotacao": ""
+      "fim": "2026-07-02"
     },
     {
       "numero": "1.1",
@@ -138,8 +127,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-06-21",
-      "anotacao": ""
+      "fim": "2026-06-21"
     },
     {
       "numero": "1.2",
@@ -147,8 +135,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-06-25",
-      "anotacao": ""
+      "fim": "2026-06-25"
     },
     {
       "numero": "1.3",
@@ -156,8 +143,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-06-30",
-      "anotacao": ""
+      "fim": "2026-06-30"
     },
     {
       "numero": "1.4",
@@ -165,8 +151,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-06-30",
-      "anotacao": ""
+      "fim": "2026-06-30"
     },
     {
       "numero": "1.5",
@@ -174,17 +159,15 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-06-01",
-      "fim": "2026-07-02",
-      "anotacao": ""
+      "fim": "2026-07-02"
     },
     {
       "numero": 2,
-      "atividade": "COTAÇÃO E ANÁLISE DE VIABILIDADE",
+      "atividade": "2. COTAÇÃO E ANÁLISE DE VIABILIDADE",
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-06-26",
-      "fim": "2026-08-07",
-      "anotacao": ""
+      "fim": "2026-08-07"
     },
     {
       "numero": "2.1",
@@ -192,8 +175,7 @@
       "responsavel": "Time Transportes",
       "status": 5,
       "inicio": "2026-06-26",
-      "fim": "2026-07-01",
-      "anotacao": ""
+      "fim": "2026-07-01"
     },
     {
       "numero": "2.2",
@@ -201,8 +183,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-06-30",
-      "fim": "2026-07-03",
-      "anotacao": ""
+      "fim": "2026-07-03"
     },
     {
       "numero": "2.3",
@@ -210,8 +191,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-07-20",
-      "fim": "2026-08-05",
-      "anotacao": ""
+      "fim": "2026-08-05"
     },
     {
       "numero": "2.4",
@@ -219,8 +199,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-07-20",
-      "fim": "2026-07-30",
-      "anotacao": ""
+      "fim": "2026-07-30"
     },
     {
       "numero": "2.5",
@@ -228,8 +207,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-07-27",
-      "fim": "2026-08-02",
-      "anotacao": ""
+      "fim": "2026-08-02"
     },
     {
       "numero": "2.6",
@@ -237,17 +215,15 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-07-25",
-      "fim": "2026-08-07",
-      "anotacao": ""
+      "fim": "2026-08-07"
     },
     {
       "numero": 3,
-      "atividade": "CONTRATAÇÃO",
+      "atividade": "3. CONTRATAÇÃO",
       "responsavel": "Time Transportes / Compras",
       "status": 1,
       "inicio": "2026-08-01",
-      "fim": "2026-11-25",
-      "anotacao": ""
+      "fim": "2026-11-25"
     },
     {
       "numero": "3.1",
@@ -255,8 +231,7 @@
       "responsavel": "Time Transportes",
       "status": 1,
       "inicio": "2026-08-01",
-      "fim": "2026-10-31",
-      "anotacao": ""
+      "fim": "2026-10-31"
     },
     {
       "numero": "3.2",
@@ -264,8 +239,7 @@
       "responsavel": "Time Compras",
       "status": 1,
       "inicio": "2026-10-01",
-      "fim": "2026-11-01",
-      "anotacao": ""
+      "fim": "2026-11-01"
     },
     {
       "numero": "3.3",
@@ -273,17 +247,15 @@
       "responsavel": "Time Compras",
       "status": 1,
       "inicio": "2026-10-20",
-      "fim": "2026-11-25",
-      "anotacao": ""
+      "fim": "2026-11-25"
     },
     {
       "numero": 4,
-      "atividade": "PREPARAÇÃO SISTÊMICA E OPERACIONAL",
+      "atividade": "4. PREPARAÇÃO SISTÊMICA E OPERACIONAL",
       "responsavel": "Time Transportes / Catalde",
       "status": 1,
       "inicio": "2026-09-01",
-      "fim": "2026-10-01",
-      "anotacao": ""
+      "fim": "2026-10-01"
     },
     {
       "numero": "4.1",
@@ -291,8 +263,7 @@
       "responsavel": "Time Transportes / Catalde",
       "status": 4,
       "inicio": "2026-09-01",
-      "fim": "2026-09-15",
-      "anotacao": ""
+      "fim": "2026-09-15"
     },
     {
       "numero": "4.2",
@@ -300,8 +271,7 @@
       "responsavel": "Time Transportes / Catalde",
       "status": 1,
       "inicio": "2026-09-10",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "4.3",
@@ -309,8 +279,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-09-20",
-      "fim": "2026-10-10",
-      "anotacao": ""
+      "fim": "2026-10-10"
     },
     {
       "numero": "4.4",
@@ -318,8 +287,7 @@
       "responsavel": "Reversa",
       "status": 4,
       "inicio": "2026-09-10",
-      "fim": "2026-09-20",
-      "anotacao": ""
+      "fim": "2026-09-20"
     },
     {
       "numero": "4.5",
@@ -327,8 +295,7 @@
       "responsavel": "Time Transportes/Reversa",
       "status": 4,
       "inicio": "2026-09-10",
-      "fim": "2026-09-20",
-      "anotacao": ""
+      "fim": "2026-09-20"
     },
     {
       "numero": "4.6",
@@ -336,8 +303,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-09-16",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "fim": "2026-09-30"
     },
     {
       "numero": "4.7",
@@ -345,17 +311,15 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-09-18",
-      "fim": "2026-10-01",
-      "anotacao": ""
+      "fim": "2026-10-01"
     },
     {
       "numero": 5,
-      "atividade": "PILOTO E ROLLOUT",
+      "atividade": "5. PILOTO E ROLLOUT",
       "responsavel": "Time Transportes",
       "status": 1,
       "inicio": "2026-10-01",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "5.1",
@@ -363,8 +327,7 @@
       "responsavel": "Time Transportes",
       "status": 1,
       "inicio": "2026-10-01",
-      "fim": "2026-10-20",
-      "anotacao": ""
+      "fim": "2026-10-20"
     },
     {
       "numero": "5.2",
@@ -372,8 +335,7 @@
       "responsavel": "Time Transportes",
       "status": 1,
       "inicio": "2026-10-05",
-      "fim": "2026-10-17",
-      "anotacao": ""
+      "fim": "2026-10-17"
     },
     {
       "numero": "5.3",
@@ -381,8 +343,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "5.4",
@@ -390,8 +351,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "5.5",
@@ -399,8 +359,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "5.6",
@@ -408,17 +367,15 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 6,
-      "atividade": "ESTABILIZAÇÃO E CAPTURA DE BENEFÍCIOS",
+      "atividade": "6. ESTABILIZAÇÃO E CAPTURA DE BENEFÍCIOS",
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.1",
@@ -426,8 +383,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.2",
@@ -435,8 +391,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.3",
@@ -444,8 +399,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.4",
@@ -453,8 +407,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.5",
@@ -462,8 +415,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.6",
@@ -471,8 +423,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     }
   ],
   "historico": [
@@ -602,7 +553,7 @@
       "detalhe": "Contratação > SR Cancelada.\n\nContratação > Conforme alinhamento realizado, projeto irá ficar em stand by até a conclusão do BID de transportes que deve finalizar o processo no fim de novembro."
     }
   ],
-  "statusProjeto": "30/09/26 - Conforme alinhamento realizado, projeto irá ficar em stand by até a conclusão do BID de transportes que deve finalizar o processo no fim de novembro.\n29/09/26 - Acompanhando processo em compras ate assinatura de contrato.\n16/09/26 - Feita a agenda com time da Catalde onde ficou definido a volta trazendo algumas informações relevantes em 16/09.\n10/09/26 - Agenda com os times envolvidos na adequação do TMS.\n01/09/26 - Definido os dias de roteirização com o time da reversa (calendarização de rotas).\n28/08/26 - Foi aberta a SR em compras: SR 2369826452.\n26/08/26 - Refinamento da proposta técnica para endereçar a compras.\n15/08/26 - Aguardando Fabricio validar o estudo feito e propostas recebidas, após a validação, entrara na etapa de abertura e negociação em compras.\n08/08/26 - Após a conclusão do estudo inicial, definição do Baseline e primeira rodada de cotação com transportadoras, seguimos com a segunda rodada de cotação considerando veículos de maior capacidade.\n29/07/26 - Após validação do Fabricio o relatorio foi atualizado e incorporado com mais informações relevantes dentro do estudo, Raquel contribuindo para a ampliação do estudo.\n17/07/26 - Validação com Fabricio do estudo feito e definição do segmento da estrategia, se seria alinhado semanalmente com transportadores ou atraves de BID.\n03/07/26 - Reunião agendada com Leandro e Thiago para entendimento dos proximos passos, com as analises das rotas enviadas pelos transportadores.\n26/06/26 - Prazo final de analise do material enviado pelos transportadores.\n14/06/26 - Aguardando novo estudo para atender a reversa das bases de maior volumetria, aguardando retorno dos transportadores: MCTECH, DSLOG, RHOMEGA e VERKO.\n27/05/26 - Reunião com Leandro para entendimento do andamento da demanda.\n25/05/26 - Leandro avaliar RAMPUP para MilkRUN (POC). Definir as regionais que podemos iniciar, que possua volume. Sugestão 3.1.\n14/05/26 - Leandro informou que esta aguardando analise dos custos em relação ao Milk run X fracionado atual.",
+  "statusProjeto": "30/11/26 - Conforme alinhamento realizado, projeto irá ficar em stand by até a conclusão do BID de transportes que deve finalizar o processo no fim de novembro.\n29/09/26 - Acompanhando processo em compras ate assinatura de contrato.\n16/09/26 - Feita a agenda com time da Catalde onde ficou definido a volta trazendo algumas informações relevantes em 16/09.\n10/09/26 - Agenda com os times envolvidos na adequação do TMS.\n01/09/26 - Definido os dias de roteirização com o time da reversa (calendarização de rotas).\n28/08/26 - Foi aberta a SR em compras: SR 2369826452.\n26/08/26 - Refinamento da proposta técnica para endereçar a compras.\n15/08/26 - Aguardando Fabricio validar o estudo feito e propostas recebidas, após a validação, entrara na etapa de abertura e negociação em compras.\n08/08/26 - Após a conclusão do estudo inicial, definição do Baseline e primeira rodada de cotação com transportadoras, seguimos com a segunda rodada de cotação considerando veículos de maior capacidade.\n29/07/26 - Após validação do Fabricio o relatorio foi atualizado e incorporado com mais informações relevantes dentro do estudo, Raquel contribuindo para a ampliação do estudo.\n17/07/26 - Validação com Fabricio do estudo feito e definição do segmento da estrategia, se seria alinhado semanalmente com transportadores ou atraves de BID.\n03/07/26 - Reunião agendada com Leandro e Thiago para entendimento dos proximos passos, com as analises das rotas enviadas pelos transportadores.\n26/06/26 - Prazo final de analise do material enviado pelos transportadores.\n14/06/26 - Aguardando novo estudo para atender a reversa das bases de maior volumetria, aguardando retorno dos transportadores: MCTECH, DSLOG, RHOMEGA e VERKO.\n27/05/26 - Reunião com Leandro para entendimento do andamento da demanda.\n25/05/26 - Leandro avaliar RAMPUP para MilkRUN (POC). Definir as regionais que podemos iniciar, que possua volume. Sugestão 3.1.\n14/05/26 - Leandro informou que esta aguardando analise dos custos em relação ao Milk run X fracionado atual.",
   "financeiro": [
     {
       "id": "LOG-015",
@@ -3200,6 +3151,6 @@
   "fonte": {
     "arquivo": "LOG-015 - Milk Run.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-015%20-%20Milk%20Run.xlsx?web=1",
-    "extraidoEm": "2026-11-04T18:20:15-03:00"
+    "extraidoEm": "2026-11-05T17:09:13-03:00"
   }
 }

@@ -3,8 +3,8 @@
   "projeto": "Integração TMS - Logística",
   "area": "Transportes",
   "pontoFocal": "Wagner",
-  "inicio": "2026-10-23",
-  "termino": "2026-01-25",
+  "inicio": "2026-10-15",
+  "termino": "2026-01-15",
   "inicioCaptura": "",
   "iniciativa": "Op. Logística",
   "pmo": "Rogério Salaroli",
@@ -19,11 +19,7 @@
     "Integração SailPoint e TMS implantada em produção e Técnicos",
     "Catálogo de perfis do TMS cadastrado no SailPoint",
     "Provisionamento automático de acessos funcionando",
-    "Revogação automática de acessos implementada",
-    "Fluxo de aprovação configurado e homologado",
-    "Certificação periódica de acessos habilitada",
-    "Documentação técnica e operacional concluída",
-    "Aceite formal da área de negócio e Segurança da Informação"
+    "Revogação automática de acessos implementada"
   ],
   "saving": {
     "opex12M": 0.0,
@@ -36,66 +32,59 @@
   "macroAtividades": [
     {
       "numero": "01.",
-      "atividade": "Encaminhar o Blueprint IGA",
-      "responsavel": "Andréia ( Segurança da informação)",
+      "atividade": "LEVANTAMENTO INFORMAÇÕES TÉCNICAS",
+      "responsavel": "SI /logisitica/ Catalde",
       "status": 4,
-      "inicio": "2026-10-23",
-      "fim": "2026-10-23",
-      "anotacao": ""
+      "inicio": "2026-10-15",
+      "fim": "2026-10-30"
     },
     {
       "numero": "02.",
-      "atividade": "Preencher e encaminhar a planilha excel de GA.",
-      "responsavel": "Catalde e Logistica",
-      "status": 4,
-      "inicio": "2026-10-26",
-      "fim": "2026-10-30",
-      "anotacao": ""
+      "atividade": "ABERTURAS CHAMADOS SMART TI",
+      "responsavel": "Logistisca",
+      "status": 1,
+      "inicio": "2026-11-04",
+      "fim": "2026-11-24"
     },
     {
       "numero": "03.",
-      "atividade": "Solicitar a inclusão do sistema no CMDB da Claro (SmarTI) por meio de abertura de chamado JIRA.",
-      "responsavel": "Logistica",
+      "atividade": "DESENVOLVIMENTO GA",
+      "responsavel": "Consultor de SI - Projetos/ Time GA",
       "status": 1,
-      "inicio": "2026-11-03",
-      "fim": "2026-11-09",
-      "anotacao": ""
+      "inicio": "2026-11-09",
+      "fim": "2026-12-15"
     },
     {
       "numero": "04.",
-      "atividade": "Informar, por e-mail para GA (Bianca), o volume mensal de novos usuários criados na aplicação.",
-      "responsavel": "Logistica",
-      "status": 5,
-      "inicio": "2026-10-30",
-      "fim": "2026-10-30",
-      "anotacao": ""
+      "atividade": "IMPLATAÇÃO PING, ACTIVE DIRECTORY E MFA",
+      "responsavel": "PING Arquiteto SI + logistica / Catalde",
+      "status": 1,
+      "inicio": "2026-11-04",
+      "fim": "2027-01-15"
     },
     {
       "numero": "05.",
-      "atividade": "Criar usuários SGT3 para o time técnico da Catalde, viabilizando acesso ao TEAMS para  comunicação  das implementações.",
-      "responsavel": "Logistica",
-      "status": 0,
-      "inicio": "2026-11-03",
-      "fim": "2027-01-25",
-      "anotacao": ""
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": "06.",
-      "atividade": "Validar se todos os usuários possuem login no SGT3 e providenciar a criação para os casos pendentes.",
-      "responsavel": "Logistica",
-      "status": 0,
-      "inicio": "2026-11-03",
-      "fim": "2026-12-14",
-      "anotacao": ""
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": "07.",
-      "atividade": "Encaminhar as informações técnicas da aplicação (URL de Callback, Claims e demais parâmetros necessários) para início da implementação do PING Identity.",
-      "responsavel": "Catalde e Logistica",
-      "status": 4,
-      "inicio": "2026-10-26",
-      "fim": "2026-10-28",
-      "anotacao": ""
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": ""
     },
     {
       "numero": "08.",
@@ -103,8 +92,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "09.",
@@ -112,8 +100,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "10.",
@@ -121,8 +108,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "11.",
@@ -130,8 +116,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "12.",
@@ -139,8 +124,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "13.",
@@ -148,8 +132,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "14.",
@@ -157,8 +140,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "15.",
@@ -166,8 +148,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "16.",
@@ -175,8 +156,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "17.",
@@ -184,8 +164,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "18.",
@@ -193,8 +172,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "19.",
@@ -202,8 +180,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "20.",
@@ -211,8 +188,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "21.",
@@ -220,8 +196,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "22.",
@@ -229,8 +204,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "23.",
@@ -238,8 +212,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "24.",
@@ -247,8 +220,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "25.",
@@ -256,8 +228,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "26.",
@@ -265,8 +236,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "27.",
@@ -274,910 +244,809 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     }
   ],
   "cronogramaDetalhado": [
     {
       "numero": 1,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "atividade": "1. LEVANTAMENTO INFORMAÇÕES TÉCNICAS",
+      "responsavel": "SI /logisitica/ Catalde",
+      "status": 4,
+      "inicio": "2026-10-15",
+      "fim": "2026-10-30"
+    },
+    {
+      "numero": "1.1",
+      "atividade": "Enviar Blueprint Do PING e Planilha de GA",
+      "responsavel": "Consultor de SI - Projetos",
+      "status": 4,
+      "inicio": "2026-10-15",
+      "fim": "2026-10-22"
+    },
+    {
+      "numero": "1.2",
+      "atividade": "Realizar reunião de alinhamento técnico",
+      "responsavel": "(SI /Logistica / Catalde",
+      "status": 4,
+      "inicio": "2026-10-23",
+      "fim": "2026-10-23"
+    },
+    {
+      "numero": "1.3",
+      "atividade": "Preenchimento do levantamento de perfis da aplicação (Planilha excel)",
+      "responsavel": "Logistisca / Catalde",
+      "status": 4,
+      "inicio": "2026-10-26",
+      "fim": "2026-10-30"
+    },
+    {
+      "numero": "1.4",
+      "atividade": "Preenchimento de Perguntas obrigatórias (Planilha excel)",
+      "responsavel": "Logistisca / Catalde",
+      "status": 4,
+      "inicio": "2026-10-30",
+      "fim": "2026-10-30"
+    },
+    {
+      "numero": "1.5",
+      "atividade": "Envio da Planilha de GA preenchida",
+      "responsavel": "Logistisca / Catalde",
+      "status": 4,
+      "inicio": "2026-10-30",
+      "fim": "2026-10-30"
+    },
+    {
+      "numero": "1.6",
+      "atividade": "Receber informações da aplicação (URL de Callback, Claims)",
+      "responsavel": "Logistisca / Catalde",
+      "status": 4,
+      "inicio": "2026-10-26",
+      "fim": "2026-10-28"
     },
     {
       "numero": 2,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "atividade": "2. ABERTURAS CHAMADOS SMART TI",
+      "responsavel": "Logistisca",
+      "status": 1,
+      "inicio": "2026-11-04",
+      "fim": "2026-11-24"
+    },
+    {
+      "numero": "2.1",
+      "atividade": "Criação do sistema TMS no CMDB",
+      "responsavel": "Logistisca",
+      "status": 1,
+      "inicio": "2026-11-04",
+      "fim": "2026-11-10"
+    },
+    {
+      "numero": "2.2",
+      "atividade": "Criação Perfil x Information Onwer",
+      "responsavel": "Logistisca",
+      "status": 1,
+      "inicio": "2026-11-05",
+      "fim": "2026-11-09"
+    },
+    {
+      "numero": "2.3",
+      "atividade": "Criação do servidor TMS no CMDB",
+      "responsavel": "Logistisca",
+      "status": 0,
+      "inicio": "2026-11-11",
+      "fim": "2026-11-17"
+    },
+    {
+      "numero": "2.4",
+      "atividade": "Soliciar inclusão sistema TMS no CMDB",
+      "responsavel": "Logistisca",
+      "status": 0,
+      "inicio": "2026-11-18",
+      "fim": "2026-11-24"
     },
     {
       "numero": 3,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "atividade": "3. DESENVOLVIMENTO GA",
+      "responsavel": "Consultor de SI - Projetos/ Time GA",
+      "status": 1,
+      "inicio": "2026-11-09",
+      "fim": "2026-12-15"
+    },
+    {
+      "numero": "3.1",
+      "atividade": "Validação da Planilha de GA",
+      "responsavel": "Time GA",
+      "status": 0,
+      "inicio": "2026-11-09",
+      "fim": "2026-11-13"
+    },
+    {
+      "numero": "3.2",
+      "atividade": "Liberação de acesso ao ambiente ou grupos de AD necessários para a gestão",
+      "responsavel": "Time GA",
+      "status": 0,
+      "inicio": "2026-11-24",
+      "fim": "2026-11-25"
+    },
+    {
+      "numero": "3.3",
+      "atividade": "Criação das filas e fluxos de aprovação no SmarTI",
+      "responsavel": "Time GA",
+      "status": 0,
+      "inicio": "2026-11-26",
+      "fim": "2026-11-27"
+    },
+    {
+      "numero": "3.4",
+      "atividade": "Criação dos acessos para os analistas de Gestão de Acesso (se aplicável)",
+      "responsavel": "Time GA",
+      "status": 0,
+      "inicio": "2026-11-30",
+      "fim": "2026-12-02"
+    },
+    {
+      "numero": "3.5",
+      "atividade": "Recebimento e validação dos procedimentos operacionais",
+      "responsavel": "Time GA",
+      "status": 0,
+      "inicio": "2026-12-03",
+      "fim": "2026-12-07"
+    },
+    {
+      "numero": "3.6",
+      "atividade": "Realização do repasse de conhecimento pela área atualmente responsável",
+      "responsavel": "Time GA",
+      "status": 0,
+      "inicio": "2026-12-08",
+      "fim": "2026-12-10"
+    },
+    {
+      "numero": "3.7",
+      "atividade": "Execução do handover formal da atividade",
+      "responsavel": "Time GA",
+      "status": 0,
+      "inicio": "2026-12-11",
+      "fim": "2026-12-15"
+    },
+    {
+      "numero": "3.8",
+      "atividade": "Criar Chat TEAMS para implementação do PING",
+      "responsavel": "Consultor de SI - Projetos",
+      "status": 1,
+      "inicio": "2026-12-04",
+      "fim": "2026-12-07"
     },
     {
       "numero": 4,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "atividade": "4. IMPLATAÇÃO PING, ACTIVE DIRECTORY E MFA",
+      "responsavel": "PING Arquiteto SI + logistica / Catalde",
+      "status": 1,
+      "inicio": "2026-11-04",
+      "fim": "2027-01-15"
+    },
+    {
+      "numero": "4.1",
+      "atividade": "Validação das informações e alinhar perfis",
+      "responsavel": "PING Arquiteto SI",
+      "status": 1,
+      "inicio": "2026-11-04",
+      "fim": "2026-11-10"
+    },
+    {
+      "numero": "4.2",
+      "atividade": "Criar ambiente de homologação e fazer o cadastro da aplicação no PingFederate",
+      "responsavel": "PING Arquiteto SI",
+      "status": 0,
+      "inicio": "2026-11-11",
+      "fim": "2026-11-13"
+    },
+    {
+      "numero": "4.3",
+      "atividade": "Gerar Client ID e Client Secret",
+      "responsavel": "PING Arquiteto SI",
+      "status": 0,
+      "inicio": "2026-11-16",
+      "fim": "2026-11-18"
+    },
+    {
+      "numero": "4.4",
+      "atividade": "Disponibilizar Endpoints OIDC (Authorization, Token, UserInfo e Logout)",
+      "responsavel": "PING Arquiteto SI",
+      "status": 0,
+      "inicio": "2026-11-19",
+      "fim": "2026-11-23"
+    },
+    {
+      "numero": "4.5",
+      "atividade": "Configurar autenticação OpenID Connect na aplicação",
+      "responsavel": "logistica / Catalde",
+      "status": 0,
+      "inicio": "2026-11-24",
+      "fim": "2026-11-30"
+    },
+    {
+      "numero": "4.6",
+      "atividade": "Implementar fluxo Authorization Code Flow",
+      "responsavel": "logistica / Catalde",
+      "status": 0,
+      "inicio": "2026-12-01",
+      "fim": "2026-12-07"
+    },
+    {
+      "numero": "4.7",
+      "atividade": "Implementar validação do ID Token e Access Token",
+      "responsavel": "logistica / Catalde",
+      "status": 0,
+      "inicio": "2026-12-08",
+      "fim": "2026-12-14"
+    },
+    {
+      "numero": "4.8",
+      "atividade": "Validar configuração da aplicação",
+      "responsavel": "PING Arquiteto SI",
+      "status": 0,
+      "inicio": "2026-12-15",
+      "fim": "2026-12-21"
+    },
+    {
+      "numero": "4.9",
+      "atividade": "Realizar testes integrados",
+      "responsavel": "PING Arquiteto SI + logistica / Catalde",
+      "status": 0,
+      "inicio": "2026-12-22",
+      "fim": "2026-12-28"
+    },
+    {
+      "numero": "4.10",
+      "atividade": "Homologação",
+      "responsavel": "PING Arquiteto SI + logistica / Catalde",
+      "status": 0,
+      "inicio": "2026-12-29",
+      "fim": "2026-12-30"
+    },
+    {
+      "numero": "4.11",
+      "atividade": "Validação da homologação por e-mail",
+      "responsavel": "PING Arquiteto SI + logistica / Catalde",
+      "status": 0,
+      "inicio": "2026-12-31",
+      "fim": "2027-01-01"
+    },
+    {
+      "numero": "4.12",
+      "atividade": "Abertura RDM para implantação em produção",
+      "responsavel": "PING Arquiteto SI + logistica / Catalde",
+      "status": 0,
+      "inicio": "2027-01-04",
+      "fim": "2027-01-05"
+    },
+    {
+      "numero": "4.13",
+      "atividade": "Defesa da mudança no Comitê de GMUD",
+      "responsavel": "PING Arquiteto SI",
+      "status": 0,
+      "inicio": "2027-01-06",
+      "fim": "2027-01-07"
+    },
+    {
+      "numero": "4.14",
+      "atividade": "Implantação em Produção",
+      "responsavel": "PING Arquiteto SI + logistica / Catalde",
+      "status": 0,
+      "inicio": "2027-01-08",
+      "fim": "2027-01-11"
+    },
+    {
+      "numero": "4.15",
+      "atividade": "Validação pós-produção",
+      "responsavel": "PING Arquiteto SI + logistica / Catalde",
+      "status": 0,
+      "inicio": "2027-01-12",
+      "fim": "2027-01-13"
+    },
+    {
+      "numero": "4.16",
+      "atividade": "Integração de  todos usuários ( claro e terceiros) ao Active Directory utilizando MFA",
+      "responsavel": "PING Arquiteto SI + logistica / Catalde",
+      "status": 0,
+      "inicio": "2027-01-14",
+      "fim": "2027-01-15"
     },
     {
       "numero": 5,
-      "atividade": "",
+      "atividade": "5. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 6,
-      "atividade": "",
+      "atividade": "6. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 7,
-      "atividade": "",
+      "atividade": "7. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 8,
-      "atividade": "",
+      "atividade": "8. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 9,
-      "atividade": "",
+      "atividade": "9. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 10,
-      "atividade": "",
+      "atividade": "10. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 11,
-      "atividade": "",
+      "atividade": "11. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 12,
-      "atividade": "",
+      "atividade": "12. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 13,
-      "atividade": "",
+      "atividade": "13. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 14,
-      "atividade": "",
+      "atividade": "14. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 15,
-      "atividade": "",
+      "atividade": "15. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 16,
-      "atividade": "",
+      "atividade": "16. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 17,
-      "atividade": "",
+      "atividade": "17. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 18,
-      "atividade": "",
+      "atividade": "18. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 19,
-      "atividade": "",
+      "atividade": "19. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 20,
-      "atividade": "",
+      "atividade": "20. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 21,
-      "atividade": "",
+      "atividade": "21. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 22,
-      "atividade": "",
+      "atividade": "22. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 23,
-      "atividade": "",
+      "atividade": "23. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 24,
-      "atividade": "",
+      "atividade": "24. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 25,
-      "atividade": "",
+      "atividade": "25. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 26,
-      "atividade": "",
+      "atividade": "26. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 27,
-      "atividade": "",
+      "atividade": "27. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 28,
-      "atividade": "",
+      "atividade": "28. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 29,
-      "atividade": "",
+      "atividade": "29. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 30,
-      "atividade": "",
+      "atividade": "30. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 31,
-      "atividade": "",
+      "atividade": "31. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 32,
-      "atividade": "",
+      "atividade": "32. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 33,
-      "atividade": "",
+      "atividade": "33. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 34,
-      "atividade": "",
+      "atividade": "34. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 35,
-      "atividade": "",
+      "atividade": "35. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 36,
-      "atividade": "",
+      "atividade": "36. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 37,
-      "atividade": "",
+      "atividade": "37. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 38,
-      "atividade": "",
+      "atividade": "38. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 39,
-      "atividade": "",
+      "atividade": "39. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 40,
-      "atividade": "",
+      "atividade": "40. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 41,
-      "atividade": "",
+      "atividade": "41. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 42,
-      "atividade": "",
+      "atividade": "42. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 43,
-      "atividade": "",
+      "atividade": "43. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 44,
-      "atividade": "",
+      "atividade": "44. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 45,
-      "atividade": "",
+      "atividade": "45. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 46,
-      "atividade": "",
+      "atividade": "46. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 47,
-      "atividade": "",
+      "atividade": "47. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 48,
-      "atividade": "",
+      "atividade": "48. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 49,
-      "atividade": "",
+      "atividade": "49. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 50,
-      "atividade": "",
+      "atividade": "50. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 51,
-      "atividade": "",
+      "atividade": "51. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 52,
-      "atividade": "",
+      "atividade": "52. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 53,
-      "atividade": "",
+      "atividade": "53. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 54,
-      "atividade": "",
+      "atividade": "54. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 55,
-      "atividade": "",
+      "atividade": "55. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 56,
-      "atividade": "",
+      "atividade": "56. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 57,
-      "atividade": "",
+      "atividade": "57. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 58,
-      "atividade": "",
+      "atividade": "58. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 59,
-      "atividade": "",
+      "atividade": "59. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 60,
-      "atividade": "",
+      "atividade": "60. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 61,
-      "atividade": "",
+      "atividade": "61. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 62,
-      "atividade": "",
+      "atividade": "62. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 63,
-      "atividade": "",
+      "atividade": "63. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 64,
-      "atividade": "",
+      "atividade": "64. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 65,
-      "atividade": "",
+      "atividade": "65. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 66,
-      "atividade": "",
+      "atividade": "66. ",
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 67,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 68,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 69,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 70,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 71,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 72,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 73,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 74,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 75,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 76,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 77,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 78,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 79,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 80,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 81,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 82,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 83,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 84,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 85,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 86,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 87,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 88,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 89,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 90,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 91,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 92,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 93,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 94,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 95,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 96,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 97,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 98,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 99,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 100,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     }
   ],
   "historico": [
@@ -1188,11 +1057,41 @@
     },
     {
       "data": "2026-10-23",
-      "acoes": "- Catalde deve realizar o preenchimento da lista de documentos enviadas pelas Andreia",
+      "acoes": "Catalde deve realizar o preenchimento da lista de documentos enviadas pelas Andreia",
       "detalhe": "- Foi mencionado que, na reunião realizada em 22/10/2026, foram encaminhados pela Andreia, o Blueprint do PING Identity e a planilha de GA. Hoje foi informado que o Blueprint IGA será compartilhado com os participantes.\n - Alex informou que a aplicação possui aproximadamente 1.500 usuários ativos.\n -Foi esclarecido por Alex que nem todos os usuários da aplicação possuem login no SGT3.\n - Bianca solicitou o levantamento do volume mensal de criação de novos usuários e a quantidade de chamados relacionados à aplicação, com o objetivo de compreender a demanda operacional e avaliar a capacidade de absorção do processo.\n - Alex e Cícero informaram que a aplicação possui perfis e controles de acesso internos.\n - Cícero comunicou que, no contexto da implementação do PING Identity, a aplicação passará a utilizar o protocolo OpenID.\n - Rafael Felix questionou sobre a compatibilidade da aplicação com o processo de provisionamento automático via JIT (Just-In-Time). Em resposta, Cícero informou que atualmente a aplicação utiliza mecanismo de autocadastro.\n - Cícero confirmou que a aplicação dispõe de ambiente específico para testes.\n - Marcos Damasceno destacou a necessidade de recebimento das informações técnicas da aplicação, incluindo URL de Callback, Claims e demais parâmetros informados no quadro compartilhado via Teams, para viabilizar o início das atividades de integração."
+    },
+    {
+      "data": "2026-11-05",
+      "acoes": "Inclusão da aplicação no CMDB (inventário de ativos) da Claro",
+      "detalhe": "Foi informado que o processo de cadastramento da aplicação no CMDB corporativo já está em andamento, com três chamados atualmente abertos no SmarTI para tratamento e conclusão da atividade.\nResponsável: Wagner"
+    },
+    {
+      "data": "2026-11-05",
+      "acoes": "Mapeamento de Perfis x Owners",
+      "detalhe": "Elaborar planilha contendo os responsáveis pela aprovação de cada perfil de acesso, garantindo a definição clara dos aprovadores e das respectivas responsabilidades. Responsável: Rogério e time Catalde"
+    },
+    {
+      "data": "2026-11-05",
+      "acoes": "Criação dos grupos de aprovadores",
+      "detalhe": "Definir e estruturar os grupos que serão utilizados no fluxo de aprovação de acessos. Ficou acordado que cada grupo deverá possuir, no mínimo, dois aprovadores, assegurando a continuidade do processo em situações de ausência ou indisponibilidade de um dos responsáveis.Rogério e time Catalde"
+    },
+    {
+      "data": "2026-11-05",
+      "acoes": "Definições para o Ambiente de Homologação do PING",
+      "detalhe": "Ficou acordado a criação de um ambiente de homologação do PING para validação das configurações, perfis e regras de acesso levantados durante o projeto. Como premissa inicial, serão utilizados nesse ambiente os mesmos perfis definidos na planilha de perfis do GA, permitindo maior aderência entre os cenários de homologação e operação. Responsável: SI - Marcos Damasceno"
+    },
+    {
+      "data": "2026-11-05",
+      "acoes": "Definições para o Ambiente de Homologação do PING",
+      "detalhe": "Adicionalmente, a área de negócios e o time técnico da Catalde realizarão uma avaliação para confirmar a necessidade de permanência do perfil \"EXPEDIDOR\" no ambiente produtivo do PING, considerando os requisitos operacionais e as regras de segregação de acesso discutidas em reunião. Responsável: Rogério e time Catalde"
+    },
+    {
+      "data": "2026-11-05",
+      "acoes": "Avaliação de Regra de Negócio para grupos/perfil de usuários conforme região geográfica",
+      "detalhe": "Permanece em análise a definição do processo de provisionamento de usuários no fluxo de concessão de acessos do GIA. A proposta discutida prevê que o usuário seja criado já com o respectivo grupo/perfil de acesso e com sua região de atuação previamente associada durante o processo inicial de concessão.\nFoi proposto que eventuais alterações futuras na alocação regional do usuário deverão ser realizadas diretamente pela área de Logística, garantindo maior autonomia operacional e reduzindo impactos no processo de concessão de acessos.\nResponsável pelo alinhamento: Rogério e time Catalde"
     }
   ],
-  "statusProjeto": "29/10/2026 - A relação de requisitos de segurança serão necessários para a renovação do contrato da Catalde junto ao time de compras\n23/10/2026 - Andreia encaminhou Blueprint IGA que precisa ser preenchido pelo time Catalde",
+  "statusProjeto": "05/10/2026- Abertura chamados para Inclusão da aplicação no CMDB (inventário de ativos) da Claro: Resp- Wagner\n05/10/2026- Mapeamento de Perfis x Owners- Responsável: Rogério e time Catalde\n05/10/2026- Criação dos grupos de aprovadores\n05/10/2026- Definições para o Ambiente de Homologação do PING",
   "financeiro": [
     {
       "id": "LOG-079",
@@ -3790,6 +3689,6 @@
   "fonte": {
     "arquivo": "LOG-079 - Segundo Fator de Autenticação TMS (PING e IGA).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-079%20-%20Segundo%20Fator%20de%20Autentica%C3%A7%C3%A3o%20TMS%20%28PING%20e%20IGA%29.xlsx?web=1",
-    "extraidoEm": "2026-11-04T18:21:51-03:00"
+    "extraidoEm": "2026-11-05T17:10:23-03:00"
   }
 }

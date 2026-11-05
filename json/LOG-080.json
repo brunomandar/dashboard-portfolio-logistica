@@ -2,12 +2,12 @@
   "id": "LOG-080",
   "projeto": "Tratativa Sinistro pelo TMS",
   "area": "Transportes",
-  "pontoFocal": "ROGERIO SALAROLI",
+  "pontoFocal": "CAMILA SALUSTIANO",
   "inicio": "",
   "termino": "",
   "inicioCaptura": "",
   "iniciativa": "Op. Transporte",
-  "pmo": "CAMILA SALUSTIANO",
+  "pmo": "Rogerio",
   "risco": "Baixo",
   "status": "",
   "situacao": "Em execução",
@@ -18,9 +18,7 @@
   "entregaveis": [
     "Democratização da informação das tratativas.",
     "Redução do fluxo de emails.",
-    "Evitar tratativas paralelas e perda de informações.",
-    "Armazenamento de dados no TMS (amplo acesso).",
-    "Melhor eficiência em cumprimento de prazos"
+    "Evitar tratativas paralelas e perda de informações."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -37,8 +35,7 @@
       "responsavel": "Rogério, Camila",
       "status": 4,
       "inicio": "2026-06-13",
-      "fim": "2026-10-30",
-      "anotacao": ""
+      "fim": "2026-10-30"
     },
     {
       "numero": "02.",
@@ -46,8 +43,7 @@
       "responsavel": "Fabrício",
       "status": 4,
       "inicio": "2026-11-02",
-      "fim": "2027-01-25",
-      "anotacao": ""
+      "fim": "2027-01-25"
     },
     {
       "numero": "03.",
@@ -55,8 +51,7 @@
       "responsavel": "Rogério, Camila",
       "status": 1,
       "inicio": "2027-01-26",
-      "fim": "2027-03-08",
-      "anotacao": ""
+      "fim": "2027-03-08"
     },
     {
       "numero": "04.",
@@ -64,8 +59,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "05.",
@@ -73,8 +67,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "06.",
@@ -82,8 +75,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "07.",
@@ -91,8 +83,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "08.",
@@ -100,8 +91,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "09.",
@@ -109,8 +99,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "10.",
@@ -118,8 +107,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "11.",
@@ -127,8 +115,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "12.",
@@ -136,8 +123,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "13.",
@@ -145,8 +131,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "14.",
@@ -154,8 +139,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "15.",
@@ -163,8 +147,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "16.",
@@ -172,8 +155,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "17.",
@@ -181,8 +163,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "18.",
@@ -190,8 +171,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "19.",
@@ -199,8 +179,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "20.",
@@ -208,8 +187,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "21.",
@@ -217,8 +195,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "22.",
@@ -226,8 +203,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "23.",
@@ -235,8 +211,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "24.",
@@ -244,8 +219,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "25.",
@@ -253,8 +227,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "26.",
@@ -262,8 +235,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "27.",
@@ -271,19 +243,17 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     }
   ],
   "cronogramaDetalhado": [
     {
       "numero": 1,
-      "atividade": "Estudo de fluxo e ajuste para internalização para TMS",
+      "atividade": "1. Estudo de fluxo e ajuste para internalização para TMS",
       "responsavel": "Rogério, Camila",
       "status": 4,
       "inicio": "2026-06-13",
-      "fim": "2026-06-13",
-      "anotacao": ""
+      "fim": "2026-06-13"
     },
     {
       "numero": "1.1",
@@ -291,8 +261,7 @@
       "responsavel": "Rogério, Camila",
       "status": 4,
       "inicio": "2026-06-15",
-      "fim": "2026-08-07",
-      "anotacao": ""
+      "fim": "2026-08-07"
     },
     {
       "numero": "1.2",
@@ -300,8 +269,7 @@
       "responsavel": "Leandro",
       "status": 1,
       "inicio": "2026-08-10",
-      "fim": "2026-08-10",
-      "anotacao": ""
+      "fim": "2026-08-10"
     },
     {
       "numero": "1.3",
@@ -309,8 +277,7 @@
       "responsavel": "Rogério, Camila",
       "status": 0,
       "inicio": "2026-08-11",
-      "fim": "2026-08-26",
-      "anotacao": ""
+      "fim": "2026-08-26"
     },
     {
       "numero": "1.4",
@@ -318,8 +285,7 @@
       "responsavel": "Fabrício",
       "status": 0,
       "inicio": "2026-08-27",
-      "fim": "2026-08-27",
-      "anotacao": ""
+      "fim": "2026-08-27"
     },
     {
       "numero": "1.5",
@@ -327,17 +293,15 @@
       "responsavel": "Rogério",
       "status": 0,
       "inicio": "2026-08-28",
-      "fim": "2026-10-30",
-      "anotacao": ""
+      "fim": "2026-10-30"
     },
     {
       "numero": 2,
-      "atividade": "Desenvolvimento no TMS",
+      "atividade": "2. Desenvolvimento no TMS",
       "responsavel": "Catalde",
       "status": 0,
       "inicio": "2026-11-02",
-      "fim": "2026-11-02",
-      "anotacao": ""
+      "fim": "2026-11-02"
     },
     {
       "numero": "2.1",
@@ -345,17 +309,15 @@
       "responsavel": "Catalde",
       "status": 0,
       "inicio": "2026-11-03",
-      "fim": "2027-01-25",
-      "anotacao": ""
+      "fim": "2027-01-25"
     },
     {
       "numero": 3,
-      "atividade": "Migração assistida",
+      "atividade": "3. Migração assistida",
       "responsavel": "Rogério, Camila",
       "status": 0,
       "inicio": "2027-01-26",
-      "fim": "2027-03-08",
-      "anotacao": ""
+      "fim": "2027-03-08"
     }
   ],
   "historico": [
@@ -2973,6 +2935,6 @@
   "fonte": {
     "arquivo": "LOG-080 - Sinistro no TMS.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-080%20-%20Sinistro%20no%20TMS.xlsx?web=1",
-    "extraidoEm": "2026-11-04T18:21:53-03:00"
+    "extraidoEm": "2026-11-05T17:10:25-03:00"
   }
 }

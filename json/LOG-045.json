@@ -7,11 +7,11 @@
   "termino": "2026-12-31",
   "inicioCaptura": "",
   "iniciativa": "Op. Logística",
-  "pmo": "Karolina / Helder",
+  "pmo": "Bruno",
   "risco": "Baixo",
   "status": "L5",
   "situacao": "Concluído",
-  "prioridade": "P1",
+  "prioridade": "Concluído",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O projeto integra o sistema logístico ao novo modelo aduaneiro (DUIMP), com automação da integração ao SISCOMEX, para garantir a rastreabilidade das importações e atender à nova exigência regulatória. A iniciativa tem como premissas a continuidade da mudança regulatória e a viabilidade da integração sistêmica, com dependência de TI, segurança e definição de escopo.",
@@ -35,8 +35,7 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-04-24",
-      "fim": "2026-05-13",
-      "anotacao": ""
+      "fim": "2026-05-13"
     },
     {
       "numero": "02.",
@@ -44,8 +43,7 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-05-07",
-      "fim": "2026-05-11",
-      "anotacao": ""
+      "fim": "2026-05-11"
     },
     {
       "numero": "03.",
@@ -53,8 +51,7 @@
       "responsavel": "Analytics / Michele",
       "status": "A confirmar",
       "inicio": "2026-05-18",
-      "fim": "2026-06-11",
-      "anotacao": ""
+      "fim": "2026-06-11"
     },
     {
       "numero": "04.",
@@ -62,8 +59,7 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-06-23",
-      "fim": "2026-07-29",
-      "anotacao": ""
+      "fim": "2026-07-29"
     },
     {
       "numero": "05.",
@@ -71,8 +67,7 @@
       "responsavel": "Fiscalização",
       "status": "A confirmar",
       "inicio": "2026-07-29",
-      "fim": "2026-08-28",
-      "anotacao": ""
+      "fim": "2026-08-28"
     },
     {
       "numero": "06.",
@@ -80,8 +75,7 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "07.",
@@ -89,8 +83,7 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "08.",
@@ -98,8 +91,7 @@
       "responsavel": "Ingrid Alcici",
       "status": "Concluído",
       "inicio": "2026-08-28",
-      "fim": "2026-08-28",
-      "anotacao": ""
+      "fim": "2026-08-28"
     },
     {
       "numero": "09.",
@@ -107,8 +99,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "10.",
@@ -116,8 +107,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "11.",
@@ -125,8 +115,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "12.",
@@ -134,8 +123,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "13.",
@@ -143,8 +131,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "14.",
@@ -152,8 +139,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "15.",
@@ -161,8 +147,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "16.",
@@ -170,8 +155,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "17.",
@@ -179,8 +163,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "18.",
@@ -188,8 +171,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "19.",
@@ -197,8 +179,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "20.",
@@ -206,8 +187,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "21.",
@@ -215,8 +195,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "22.",
@@ -224,8 +203,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "23.",
@@ -233,8 +211,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "24.",
@@ -242,8 +219,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "25.",
@@ -251,8 +227,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "26.",
@@ -260,8 +235,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "27.",
@@ -269,19 +243,17 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     }
   ],
   "cronogramaDetalhado": [
     {
       "numero": 1,
-      "atividade": "Alinhamento de comunicação e definição de escopo",
+      "atividade": "1. Alinhamento de comunicação e definição de escopo",
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-04-24",
-      "fim": "2026-05-13",
-      "anotacao": ""
+      "fim": "2026-05-13"
     },
     {
       "numero": "1.1",
@@ -289,8 +261,7 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-04-24",
-      "fim": "2026-05-11",
-      "anotacao": ""
+      "fim": "2026-05-11"
     },
     {
       "numero": "1.2",
@@ -298,26 +269,23 @@
       "responsavel": "A confirmar",
       "status": "Concluído",
       "inicio": "2026-05-13",
-      "fim": "2026-05-13",
-      "anotacao": ""
+      "fim": "2026-05-13"
     },
     {
       "numero": 2,
-      "atividade": "Criar integração via API para DUIMP – atualização do Rastreabilidade",
+      "atividade": "2. Criar integração via API para DUIMP – atualização do Rastreabilidade",
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-05-07",
-      "fim": "2026-05-11",
-      "anotacao": ""
+      "fim": "2026-05-11"
     },
     {
       "numero": 3,
-      "atividade": "API de pagamentos de impostos à Receita Federal",
+      "atividade": "3. API de pagamentos de impostos à Receita Federal",
       "responsavel": "Analytics / Michele",
       "status": "A confirmar",
       "inicio": "2026-05-18",
-      "fim": "2026-06-11",
-      "anotacao": ""
+      "fim": "2026-06-11"
     },
     {
       "numero": "3.1",
@@ -325,8 +293,7 @@
       "responsavel": "Analytics",
       "status": "A confirmar",
       "inicio": "2026-05-18",
-      "fim": "2026-05-25",
-      "anotacao": ""
+      "fim": "2026-05-25"
     },
     {
       "numero": "3.2",
@@ -334,17 +301,15 @@
       "responsavel": "Michele",
       "status": "A confirmar",
       "inicio": "2026-05-25",
-      "fim": "2026-06-11",
-      "anotacao": ""
+      "fim": "2026-06-11"
     },
     {
       "numero": 4,
-      "atividade": "Procuração ao Catalão",
+      "atividade": "4. Procuração ao Catalão",
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-06-23",
-      "fim": "2026-07-29",
-      "anotacao": ""
+      "fim": "2026-07-29"
     },
     {
       "numero": "4.1",
@@ -352,8 +317,7 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-06-23",
-      "fim": "2026-07-17",
-      "anotacao": ""
+      "fim": "2026-07-17"
     },
     {
       "numero": "4.2",
@@ -361,44 +325,39 @@
       "responsavel": "Michele",
       "status": "A confirmar",
       "inicio": "2026-07-17",
-      "fim": "2026-07-29",
-      "anotacao": ""
+      "fim": "2026-07-29"
     },
     {
       "numero": 5,
-      "atividade": "Acesso do despachante ao Portal Único – agendar verificação de acessos com a Fiscalização",
+      "atividade": "5. Acesso do despachante ao Portal Único – agendar verificação de acessos com a Fiscalização",
       "responsavel": "Fiscalização",
       "status": "A confirmar",
       "inicio": "2026-07-29",
-      "fim": "2026-08-28",
-      "anotacao": ""
+      "fim": "2026-08-28"
     },
     {
       "numero": 6,
-      "atividade": "Adequação ao novo fluxo DUIMP",
+      "atividade": "6. Adequação ao novo fluxo DUIMP",
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 7,
-      "atividade": "Integração com o sistema Fenícia",
+      "atividade": "7. Integração com o sistema Fenícia",
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": 8,
-      "atividade": "Encerramento do projeto – conclusão informada pela Ingrid",
+      "atividade": "8. Encerramento do projeto – conclusão informada pela Ingrid",
       "responsavel": "Ingrid Alcici",
       "status": "Concluído",
       "inicio": "2026-08-28",
-      "fim": "2026-08-28",
-      "anotacao": ""
+      "fim": "2026-08-28"
     }
   ],
   "historico": [],
@@ -3000,6 +2959,6 @@
   "fonte": {
     "arquivo": "LOG-045 - DUIMP – COMEX (Acompanhamento RFP).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-045%20-%20DUIMP%20%E2%80%93%20COMEX%20%28Acompanhamento%20RFP%29.xlsx?web=1",
-    "extraidoEm": "2026-11-04T18:20:53-03:00"
+    "extraidoEm": "2026-11-05T17:09:42-03:00"
   }
 }

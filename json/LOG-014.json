@@ -5,22 +5,20 @@
   "pontoFocal": "Gustavo Mendes",
   "inicio": "2026-01-01",
   "termino": "2026-12-31",
-  "inicioCaptura": "2026-01-01",
+  "inicioCaptura": "",
   "iniciativa": "Op. Logística",
   "pmo": "Bruno",
   "risco": "A validar",
-  "status": "L1",
-  "situacao": "Planejado",
+  "status": "L3",
+  "situacao": "Em execução",
   "prioridade": "P1",
-  "ganhoProjeto": "",
+  "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O projeto estrutura a gestão ativa dos estoques via RAI, com processos de controle de entrada, consumo e giro e uso de BI para ampliar a visibilidade, reduzir excedentes e obsolescência e melhorar a utilização e monetização dos ativos. A iniciativa pressupõe integração entre Marketing, Operações e Planejamento, validação do BI, adesão aos processos implantados e aprovações internas aplicáveis.",
   "entregaveis": [
     "Processo de controle de entrada versus consumo estruturado.",
     "Gestão e venda de ativos operacionalizadas.",
-    "BI de estoques estruturado para giro, slow moving e Marketing.",
-    "Redução do estoque obsoleto.",
-    "Estrutura de controle dos estoques de Marketing implantada."
+    "BI de estoques estruturado para giro, slow moving e Marketing."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -37,8 +35,7 @@
       "responsavel": "A confirmar",
       "status": 2,
       "inicio": "2026-02-10",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "2",
@@ -46,8 +43,7 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-04-30",
-      "fim": "2026-05-12",
-      "anotacao": ""
+      "fim": "2026-05-12"
     },
     {
       "numero": "3",
@@ -55,8 +51,7 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-05-08",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "4",
@@ -64,8 +59,7 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-05-25",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "5",
@@ -73,8 +67,7 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-06-03",
-      "fim": "2026-06-03",
-      "anotacao": ""
+      "fim": "2026-06-03"
     },
     {
       "numero": "6",
@@ -82,8 +75,7 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-07-28",
-      "fim": "2026-07-28",
-      "anotacao": ""
+      "fim": "2026-07-28"
     },
     {
       "numero": "7",
@@ -91,8 +83,7 @@
       "responsavel": "Gustavo Mendes",
       "status": 1,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "8",
@@ -100,8 +91,7 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "2026-08-14",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "9",
@@ -109,8 +99,7 @@
       "responsavel": "Gustavo Mendes",
       "status": 1,
       "inicio": "2026-09-29",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -120,8 +109,7 @@
       "responsavel": "A confirmar",
       "status": 2,
       "inicio": "2026-02-10",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "1.1",
@@ -129,8 +117,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-02-10",
-      "fim": "2026-02-10",
-      "anotacao": ""
+      "fim": "2026-02-10"
     },
     {
       "numero": "1.2",
@@ -138,8 +125,7 @@
       "responsavel": "México / AMX",
       "status": 2,
       "inicio": "2026-02-10",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "2",
@@ -147,8 +133,7 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-04-30",
-      "fim": "2026-05-12",
-      "anotacao": ""
+      "fim": "2026-05-12"
     },
     {
       "numero": "2.1",
@@ -156,8 +141,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-04-30",
-      "fim": "2026-04-30",
-      "anotacao": ""
+      "fim": "2026-04-30"
     },
     {
       "numero": "2.2",
@@ -165,8 +149,7 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-05-08",
-      "fim": "2026-05-12",
-      "anotacao": ""
+      "fim": "2026-05-12"
     },
     {
       "numero": "3",
@@ -174,8 +157,7 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-05-08",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "3.1",
@@ -183,8 +165,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-05-08",
-      "fim": "2026-05-30",
-      "anotacao": ""
+      "fim": "2026-05-30"
     },
     {
       "numero": "3.2",
@@ -192,8 +173,7 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-05-30",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "3.3",
@@ -201,8 +181,7 @@
       "responsavel": "A confirmar",
       "status": 1,
       "inicio": "2026-06-01",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "4",
@@ -210,8 +189,7 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-05-25",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "4.1",
@@ -219,8 +197,7 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "2026-05-25",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "4.2",
@@ -228,8 +205,7 @@
       "responsavel": "A confirmar",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "5",
@@ -237,8 +213,7 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-06-03",
-      "fim": "2026-06-03",
-      "anotacao": ""
+      "fim": "2026-06-03"
     },
     {
       "numero": "5.1",
@@ -246,8 +221,7 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-06-03",
-      "fim": "2026-06-03",
-      "anotacao": ""
+      "fim": "2026-06-03"
     },
     {
       "numero": "5.2",
@@ -255,8 +229,7 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-06-03",
-      "fim": "2026-06-03",
-      "anotacao": ""
+      "fim": "2026-06-03"
     },
     {
       "numero": "6",
@@ -264,8 +237,7 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-07-28",
-      "fim": "2026-07-28",
-      "anotacao": ""
+      "fim": "2026-07-28"
     },
     {
       "numero": "6.1",
@@ -273,8 +245,7 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-07-28",
-      "fim": "2026-07-28",
-      "anotacao": ""
+      "fim": "2026-07-28"
     },
     {
       "numero": "7",
@@ -282,8 +253,7 @@
       "responsavel": "Gustavo Mendes",
       "status": 1,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "7.1",
@@ -291,8 +261,7 @@
       "responsavel": "Gustavo Mendes",
       "status": 5,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "7.2",
@@ -300,8 +269,7 @@
       "responsavel": "Gustavo Mendes",
       "status": 1,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "8",
@@ -309,8 +277,7 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "2026-08-14",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "8.1",
@@ -318,8 +285,7 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "2026-08-14",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "9",
@@ -327,8 +293,7 @@
       "responsavel": "Gustavo Mendes",
       "status": 1,
       "inicio": "2026-09-29",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "9.1",
@@ -336,8 +301,7 @@
       "responsavel": "Gustavo Mendes",
       "status": 1,
       "inicio": "2026-09-29",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "9.2",
@@ -345,12 +309,11 @@
       "responsavel": "Gustavo Mendes",
       "status": 0,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     }
   ],
   "historico": [],
-  "statusProjeto": "03/10/26 - Previsão da ferramenta de controle dos estoques de Marketing (End to End) definida para Mar/27.\n29/09/26 - Desenvolvimento de ferramenta para controle dos estoques de Marketing (End to End) registrado como ação, com prazo a definir (TBD).\n14/08/26 - Nova governança a ser marcada para Catalão, para puxar o tema.\n14/08/26 - Estoque de junho fechou em 1,4 BI, contra meta de 1,2 BI (Revenda Celular, GPON, HFC).\n08/06/26 - Revisão do FCST, com plano de ação para redução, prevista para a próxima reunião, em 28/07.\n01/06/26 - Revisão do TO BE e reunião com a TCIA previstas para 03/06 (antes 20/05).\n01/06/26 - PR em estudo.\n01/06/26 - Próximos passos para SPI, Centro-Oeste, Norte e Nordeste programados para 2027, sem verba.\n30/05/26 - RS finalizado, pendente de verba para pagamento.\n25/05/26 - Próximos passos para SPI, Centro-Oeste, Norte e Nordeste ainda a definir (TBD).\n13/05/26 - Revisão do TO BE e reunião com a TCIA previstas para 20/05.\n08/05/26 - Reunião marcada com Gustavo Mendes para atualização do projeto.\n08/05/26 - Prazo de 12/05 definido para criação do relatório Slow Moving, para acompanhamento do STK.\n08/05/26 - PR e RS em andamento, com prazo de 30/05.\n07/05/26 - Nova cobrança feita ao Gustavo para atualização via Teams.\n06/05/26 - Aguardando retorno do Gustavo para atualização dos próximos passos.\n30/04/26 - BI Slow Moving / Giro de estoque criado.\n10/02/26 - Processo enviado à AMX e e-mail enviado à Jéssica Morales; aguardando aprovação do México.",
+  "statusProjeto": "30/03/27 - Previsão da ferramenta de controle dos estoques de Marketing (End to End) definida para Mar/27.\n29/09/26 - Desenvolvimento de ferramenta para controle dos estoques de Marketing (End to End) registrado como ação, com prazo a definir (TBD).\n14/08/26 - Nova governança a ser marcada para Catalão, para puxar o tema.\n14/08/26 - Estoque de junho fechou em 1,4 BI, contra meta de 1,2 BI (Revenda Celular, GPON, HFC).\n08/06/26 - Revisão do FCST, com plano de ação para redução, prevista para a próxima reunião, em 28/07.\n01/06/26 - Revisão do TO BE e reunião com a TCIA previstas para 03/06 (antes 20/05).\n01/06/26 - PR em estudo.\n01/06/26 - Próximos passos para SPI, Centro-Oeste, Norte e Nordeste programados para 2027, sem verba.\n30/05/26 - RS finalizado, pendente de verba para pagamento.\n25/05/26 - Próximos passos para SPI, Centro-Oeste, Norte e Nordeste ainda a definir (TBD).\n13/05/26 - Revisão do TO BE e reunião com a TCIA previstas para 20/05.\n08/05/26 - Reunião marcada com Gustavo Mendes para atualização do projeto.\n08/05/26 - Prazo de 12/05 definido para criação do relatório Slow Moving, para acompanhamento do STK.\n08/05/26 - PR e RS em andamento, com prazo de 30/05.\n07/05/26 - Nova cobrança feita ao Gustavo para atualização via Teams.\n06/05/26 - Aguardando retorno do Gustavo para atualização dos próximos passos.\n30/04/26 - BI Slow Moving / Giro de estoque criado.\n10/02/26 - Processo enviado à AMX e e-mail enviado à Jéssica Morales; aguardando aprovação do México.",
   "financeiro": [
     {
       "id": "LOG-014",
@@ -2948,6 +2911,6 @@
   "fonte": {
     "arquivo": "LOG-014 - RAI de Estoques.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-014%20-%20RAI%20de%20Estoques.xlsx?web=1",
-    "extraidoEm": "2026-11-04T18:20:13-03:00"
+    "extraidoEm": "2026-11-05T17:09:11-03:00"
   }
 }

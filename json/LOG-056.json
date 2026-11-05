@@ -18,10 +18,7 @@
   "entregaveis": [
     "Fluxo operacional do VPO definido e validado.",
     "Requisitos técnicos e de APIs formalizados.",
-    "Contratação da REPOM e aditivo da Catalde formalizados.",
-    "Módulo VPO e interfaces com o gerenciador do vale-pedágio implantados no TMS.",
-    "Transportadores adequados ao novo fluxo",
-    "Testes integrados e liberação em produção concluídos."
+    "Contratação da REPOM e aditivo da Catalde formalizados."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -38,8 +35,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-08-06",
-      "fim": "2026-08-31",
-      "anotacao": ""
+      "fim": "2026-08-31"
     },
     {
       "numero": "2",
@@ -47,8 +43,7 @@
       "responsavel": "Time Transportes / Catalde / Transportadores",
       "status": 4,
       "inicio": "2026-09-01",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "fim": "2026-09-30"
     },
     {
       "numero": "3",
@@ -56,8 +51,7 @@
       "responsavel": "Catalde",
       "status": 1,
       "inicio": "2026-10-01",
-      "fim": "2026-11-05",
-      "anotacao": ""
+      "fim": "2026-11-05"
     },
     {
       "numero": "4",
@@ -65,8 +59,7 @@
       "responsavel": "Compras",
       "status": 1,
       "inicio": "2026-10-21",
-      "fim": "2026-11-30",
-      "anotacao": ""
+      "fim": "2026-11-30"
     },
     {
       "numero": "5",
@@ -74,8 +67,7 @@
       "responsavel": "Time Transportes / Catalde / Transportadores",
       "status": 1,
       "inicio": "2026-12-01",
-      "fim": "2026-12-15",
-      "anotacao": ""
+      "fim": "2026-12-15"
     },
     {
       "numero": "6",
@@ -83,8 +75,7 @@
       "responsavel": "Claro",
       "status": 0,
       "inicio": "2026-12-16",
-      "fim": "2026-12-31",
-      "anotacao": ""
+      "fim": "2026-12-31"
     },
     {
       "numero": "7",
@@ -92,8 +83,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "8",
@@ -101,8 +91,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "9",
@@ -110,8 +99,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "10",
@@ -119,8 +107,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "11",
@@ -128,8 +115,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "12",
@@ -137,8 +123,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "13",
@@ -146,8 +131,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "14",
@@ -155,8 +139,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "15",
@@ -164,8 +147,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "16",
@@ -173,8 +155,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "17",
@@ -182,8 +163,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "18",
@@ -191,8 +171,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "19",
@@ -200,8 +179,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "20",
@@ -209,8 +187,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "21",
@@ -218,8 +195,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "22",
@@ -227,8 +203,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "23",
@@ -236,8 +211,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "24",
@@ -245,8 +219,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "25",
@@ -254,8 +227,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "26",
@@ -263,8 +235,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "27",
@@ -272,8 +243,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -283,8 +253,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-08-06",
-      "fim": "2026-08-31",
-      "anotacao": ""
+      "fim": "2026-08-31"
     },
     {
       "numero": "1.1",
@@ -292,8 +261,7 @@
       "responsavel": "Time Transportes / Catalde",
       "status": 4,
       "inicio": "2026-08-06",
-      "fim": "2026-08-21",
-      "anotacao": ""
+      "fim": "2026-08-21"
     },
     {
       "numero": "1.2",
@@ -301,8 +269,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-08-06",
-      "fim": "2026-08-30",
-      "anotacao": ""
+      "fim": "2026-08-30"
     },
     {
       "numero": "2",
@@ -310,8 +277,7 @@
       "responsavel": "Time Transportes / Catalde / Transportadores",
       "status": 4,
       "inicio": "2026-08-10",
-      "fim": "2026-10-07",
-      "anotacao": ""
+      "fim": "2026-10-07"
     },
     {
       "numero": "2.1",
@@ -319,8 +285,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-09-09",
-      "fim": "2026-09-09",
-      "anotacao": ""
+      "fim": "2026-09-09"
     },
     {
       "numero": "2.2",
@@ -328,8 +293,7 @@
       "responsavel": "Time Transportes / Catalde",
       "status": 4,
       "inicio": "2026-09-01",
-      "fim": "2026-09-03",
-      "anotacao": ""
+      "fim": "2026-09-03"
     },
     {
       "numero": "2.3",
@@ -337,8 +301,7 @@
       "responsavel": "Catalde",
       "status": 4,
       "inicio": "2026-09-01",
-      "fim": "2026-09-03",
-      "anotacao": ""
+      "fim": "2026-09-03"
     },
     {
       "numero": "2.4",
@@ -346,8 +309,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-09-01",
-      "fim": "2026-09-03",
-      "anotacao": ""
+      "fim": "2026-09-03"
     },
     {
       "numero": "2.5",
@@ -355,8 +317,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-08-31",
-      "fim": "2026-09-01",
-      "anotacao": ""
+      "fim": "2026-09-01"
     },
     {
       "numero": "2.6",
@@ -364,8 +325,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-09-01",
-      "fim": "2026-10-07",
-      "anotacao": ""
+      "fim": "2026-10-07"
     },
     {
       "numero": "2.6.1",
@@ -373,8 +333,7 @@
       "responsavel": "Time Transportes",
       "status": 4,
       "inicio": "2026-08-31",
-      "fim": "2026-10-07",
-      "anotacao": ""
+      "fim": "2026-10-07"
     },
     {
       "numero": "2.7",
@@ -382,8 +341,7 @@
       "responsavel": "Transportadores",
       "status": 4,
       "inicio": "2026-08-31",
-      "fim": "2026-10-07",
-      "anotacao": ""
+      "fim": "2026-10-07"
     },
     {
       "numero": "2.8",
@@ -391,8 +349,7 @@
       "responsavel": "Time Transportes / Catalde",
       "status": 4,
       "inicio": "2026-08-31",
-      "fim": "2026-10-07",
-      "anotacao": ""
+      "fim": "2026-10-07"
     },
     {
       "numero": "3",
@@ -400,8 +357,7 @@
       "responsavel": "Compras",
       "status": 1,
       "inicio": "2026-08-31",
-      "fim": "2027-01-04",
-      "anotacao": ""
+      "fim": "2027-01-04"
     },
     {
       "numero": "3.1",
@@ -409,8 +365,7 @@
       "responsavel": "Compras",
       "status": 1,
       "inicio": "2026-09-09",
-      "fim": "2026-12-07",
-      "anotacao": ""
+      "fim": "2026-12-07"
     },
     {
       "numero": "3.1.1",
@@ -418,8 +373,7 @@
       "responsavel": "Compras",
       "status": 1,
       "inicio": "2026-09-09",
-      "fim": "2026-12-07",
-      "anotacao": ""
+      "fim": "2026-12-07"
     },
     {
       "numero": "3.1.2",
@@ -427,8 +381,7 @@
       "responsavel": "Compras",
       "status": 1,
       "inicio": "2026-09-09",
-      "fim": "2026-12-07",
-      "anotacao": ""
+      "fim": "2026-12-07"
     },
     {
       "numero": "3.1.3",
@@ -436,8 +389,7 @@
       "responsavel": "Compras",
       "status": 1,
       "inicio": "2026-09-09",
-      "fim": "2026-12-07",
-      "anotacao": ""
+      "fim": "2026-12-07"
     },
     {
       "numero": "3.1.4",
@@ -445,8 +397,7 @@
       "responsavel": "Compras / Fornecedor",
       "status": 1,
       "inicio": "2026-09-09",
-      "fim": "2026-12-07",
-      "anotacao": ""
+      "fim": "2026-12-07"
     },
     {
       "numero": "3.1.5",
@@ -454,8 +405,7 @@
       "responsavel": "Compras / Fornecedor",
       "status": 1,
       "inicio": "2026-09-09",
-      "fim": "2026-12-07",
-      "anotacao": ""
+      "fim": "2026-12-07"
     },
     {
       "numero": "3.1.6",
@@ -463,8 +413,7 @@
       "responsavel": "Claro",
       "status": 1,
       "inicio": "2026-10-01",
-      "fim": "2026-11-15",
-      "anotacao": ""
+      "fim": "2026-11-15"
     },
     {
       "numero": "3.2",
@@ -472,8 +421,7 @@
       "responsavel": "Time Transportes",
       "status": 1,
       "inicio": "2026-10-07",
-      "fim": "2027-01-04",
-      "anotacao": ""
+      "fim": "2027-01-04"
     },
     {
       "numero": "3.2.1",
@@ -481,8 +429,7 @@
       "responsavel": "Compras",
       "status": 1,
       "inicio": "2026-10-07",
-      "fim": "2027-01-04",
-      "anotacao": ""
+      "fim": "2027-01-04"
     },
     {
       "numero": "3.2.2",
@@ -490,8 +437,7 @@
       "responsavel": "Compras",
       "status": 1,
       "inicio": "2026-10-07",
-      "fim": "2027-01-04",
-      "anotacao": ""
+      "fim": "2027-01-04"
     },
     {
       "numero": "3.2.3",
@@ -499,8 +445,7 @@
       "responsavel": "Compras",
       "status": 1,
       "inicio": "2026-10-07",
-      "fim": "2027-01-04",
-      "anotacao": ""
+      "fim": "2027-01-04"
     },
     {
       "numero": "3.2.4",
@@ -508,8 +453,7 @@
       "responsavel": "Compras / Fornecedor",
       "status": 1,
       "inicio": "2026-10-07",
-      "fim": "2027-01-04",
-      "anotacao": ""
+      "fim": "2027-01-04"
     },
     {
       "numero": "3.2.5",
@@ -517,8 +461,7 @@
       "responsavel": "Compras / Fornecedor",
       "status": 1,
       "inicio": "2026-10-07",
-      "fim": "2027-01-04",
-      "anotacao": ""
+      "fim": "2027-01-04"
     },
     {
       "numero": "4",
@@ -526,8 +469,7 @@
       "responsavel": "Catalde",
       "status": 1,
       "inicio": "2026-09-11",
-      "fim": "2026-11-30",
-      "anotacao": ""
+      "fim": "2026-11-30"
     },
     {
       "numero": "4.1",
@@ -535,8 +477,7 @@
       "responsavel": "Catalde",
       "status": 1,
       "inicio": "2026-09-11",
-      "fim": "2026-10-30",
-      "anotacao": ""
+      "fim": "2026-10-30"
     },
     {
       "numero": "4.1.1",
@@ -544,8 +485,7 @@
       "responsavel": "Catalde",
       "status": 1,
       "inicio": "2026-10-20",
-      "fim": "2026-11-15",
-      "anotacao": ""
+      "fim": "2026-11-15"
     },
     {
       "numero": "4.1.2",
@@ -553,8 +493,7 @@
       "responsavel": "Catalde",
       "status": 1,
       "inicio": "2026-10-20",
-      "fim": "2026-11-15",
-      "anotacao": ""
+      "fim": "2026-11-15"
     },
     {
       "numero": "4.1.3",
@@ -562,8 +501,7 @@
       "responsavel": "Catalde",
       "status": 0,
       "inicio": "2026-11-01",
-      "fim": "2026-11-30",
-      "anotacao": ""
+      "fim": "2026-11-30"
     },
     {
       "numero": "4.1.4",
@@ -571,8 +509,7 @@
       "responsavel": "Catalde",
       "status": 0,
       "inicio": "2026-11-01",
-      "fim": "2026-11-30",
-      "anotacao": ""
+      "fim": "2026-11-30"
     },
     {
       "numero": "4.2",
@@ -580,8 +517,7 @@
       "responsavel": "Catalde",
       "status": 1,
       "inicio": "2026-09-11",
-      "fim": "2026-11-30",
-      "anotacao": ""
+      "fim": "2026-11-30"
     },
     {
       "numero": "4.2.1",
@@ -589,8 +525,7 @@
       "responsavel": "Catalde",
       "status": 1,
       "inicio": "2026-09-11",
-      "fim": "2026-10-30",
-      "anotacao": ""
+      "fim": "2026-10-30"
     },
     {
       "numero": "4.2.2",
@@ -598,8 +533,7 @@
       "responsavel": "Catalde",
       "status": 1,
       "inicio": "2026-10-20",
-      "fim": "2026-11-15",
-      "anotacao": ""
+      "fim": "2026-11-15"
     },
     {
       "numero": "4.2.3",
@@ -607,8 +541,7 @@
       "responsavel": "Catalde",
       "status": 1,
       "inicio": "2026-10-20",
-      "fim": "2026-11-30",
-      "anotacao": ""
+      "fim": "2026-11-30"
     },
     {
       "numero": "4.3",
@@ -616,8 +549,7 @@
       "responsavel": "Catalde / Transportadores",
       "status": 1,
       "inicio": "2026-10-20",
-      "fim": "2026-11-30",
-      "anotacao": ""
+      "fim": "2026-11-30"
     },
     {
       "numero": "5",
@@ -625,8 +557,7 @@
       "responsavel": "Time Transportes / Catalde / Transportadores",
       "status": 0,
       "inicio": "2026-12-01",
-      "fim": "2026-12-31",
-      "anotacao": ""
+      "fim": "2026-12-31"
     },
     {
       "numero": "5.1",
@@ -634,8 +565,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "2026-12-01",
-      "fim": "2026-12-31",
-      "anotacao": ""
+      "fim": "2026-12-31"
     },
     {
       "numero": "5.1.1",
@@ -643,8 +573,7 @@
       "responsavel": "Time Transportes / Catalde",
       "status": 0,
       "inicio": "2026-12-01",
-      "fim": "2026-12-31",
-      "anotacao": ""
+      "fim": "2026-12-31"
     },
     {
       "numero": "5.1.2",
@@ -652,8 +581,7 @@
       "responsavel": "Time Transportes / Catalde / Transportadores",
       "status": 0,
       "inicio": "2026-12-01",
-      "fim": "2026-12-31",
-      "anotacao": ""
+      "fim": "2026-12-31"
     },
     {
       "numero": "6",
@@ -661,8 +589,7 @@
       "responsavel": "Claro",
       "status": 0,
       "inicio": "2026-12-01",
-      "fim": "2026-12-31",
-      "anotacao": ""
+      "fim": "2026-12-31"
     },
     {
       "numero": "6.1",
@@ -670,8 +597,7 @@
       "responsavel": "Time Transportes",
       "status": 0,
       "inicio": "2026-12-01",
-      "fim": "2026-12-31",
-      "anotacao": ""
+      "fim": "2026-12-31"
     },
     {
       "numero": "6.2",
@@ -679,12 +605,11 @@
       "responsavel": "Claro",
       "status": 0,
       "inicio": "2026-12-01",
-      "fim": "2026-12-31",
-      "anotacao": ""
+      "fim": "2026-12-31"
     }
   ],
   "historico": [],
-  "statusProjeto": "04/11/26 - Resumo da solicitação: 100% frota própria - Aerotrafic e Liderfast. 100% subcontratados - Celistics, Hexpress, Prestex e Aerosoft. Operação mista - Rhomega, Dslog, Mctech, Verko. Sem retorno -  IBR Logistica e BR Logistica.  Tema escalado para apoio do time da operação, solicitando ajuda com as devolutivas em aberto.\n30/10/26 - Data final para envio dos tipos de operação adotados por cada uma das transportadoras, para implementação do vale-pedagio.\n21/10/26 - Demanda TMS avançou para o gerente responsável em compras.\n20/10/26 - Repom recebeu proposta comercial, mas time de compras está buscando custo zero para operação. Repom ficou de realizar nova volta com a Claro.\n09/09/26 - Transportadores solicitaram alterações e atualizações de layout para dar continuidade.\n03/09/26 - Chamado 46665 aberto com a Catalde para customização dos novos EDIs e fluxo de dados Pré-MDF.\n03/09/26 - Novo módulo de VPO previsto com franquia e bilhetagem por transação com a REPOM.\n03/09/26 - Definido que o contrato da REPOM será com a Claro e a Catalde atuará como integradora.\n03/09/26 - Definido que o mesmo caminhão responsável pela coleta realizará a entrega.\n03/09/26 - Cícero ficou responsável por levantar a bilhetagem dos últimos 12 meses.\n03/09/26 - SR para contratação do fornecedor permaneceu com data a definir.\n01/09/26 - Requisitos da Catalde informados aos transportadores.\n21/08/26 - Endered apresentou seus serviços e foi iniciado estudo com a Catalde para adoção pela Claro.\n06/05/26 - Projeto mantido em backlog por baixo risco, com prazo previsto até 24/05.",
+  "statusProjeto": "13/11/26 - Resumo da solicitação: 100% frota própria - Aerotrafic e Liderfast. 100% subcontratados - Celistics, Hexpress, Prestex e Aerosoft. Operação mista - Rhomega, Dslog, Mctech, Verko. Sem retorno -  IBR Logistica e BR Logistica.  Tema escalado para apoio do time da operação, solicitando ajuda com as devolutivas em aberto.\n30/10/26 - Data final para envio dos tipos de operação adotados por cada uma das transportadoras, para implementação do vale-pedagio.\n21/10/26 - Demanda TMS avançou para o gerente responsável em compras.\n20/10/26 - Repom recebeu proposta comercial, mas time de compras está buscando custo zero para operação. Repom ficou de realizar nova volta com a Claro.\n09/09/26 - Transportadores solicitaram alterações e atualizações de layout para dar continuidade.\n03/09/26 - Chamado 46665 aberto com a Catalde para customização dos novos EDIs e fluxo de dados Pré-MDF.\n03/09/26 - Novo módulo de VPO previsto com franquia e bilhetagem por transação com a REPOM.\n03/09/26 - Definido que o contrato da REPOM será com a Claro e a Catalde atuará como integradora.\n03/09/26 - Definido que o mesmo caminhão responsável pela coleta realizará a entrega.\n03/09/26 - Cícero ficou responsável por levantar a bilhetagem dos últimos 12 meses.\n03/09/26 - SR para contratação do fornecedor permaneceu com data a definir.\n01/09/26 - Requisitos da Catalde informados aos transportadores.\n21/08/26 - Endered apresentou seus serviços e foi iniciado estudo com a Catalde para adoção pela Claro.\n06/05/26 - Projeto mantido em backlog por baixo risco, com prazo previsto até 24/05.",
   "financeiro": [
     {
       "id": "LOG-056",
@@ -3282,6 +3207,6 @@
   "fonte": {
     "arquivo": "LOG-056 - Vale Pedagio.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-056%20-%20Vale%20Pedagio.xlsx?web=1",
-    "extraidoEm": "2026-11-04T18:21:09-03:00"
+    "extraidoEm": "2026-11-05T17:09:52-03:00"
   }
 }

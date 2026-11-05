@@ -6,22 +6,19 @@
   "inicio": "2026-01-01",
   "termino": "2026-09-30",
   "inicioCaptura": "2026-01-01",
-  "iniciativa": "Operação Logística",
+  "iniciativa": "Op. Logística",
   "pmo": "Bruno",
   "risco": "Sim",
   "status": "L0",
   "situacao": "Planejado",
   "prioridade": "P1",
-  "ganhoProjeto": "",
+  "ganhoProjeto": "Quantitativo",
   "tipos": [],
   "escopo": "O projeto revisa a metodologia de análise da alta rotatividade de terminais, com nova lógica baseada em pedidos de troca e visitas técnicas, para identificar as causas reais das trocas e eliminar distorções nos indicadores de qualidade, gerando inteligência para decisões de manutenção, reutilização, descarte e renovação dos equipamentos. A iniciativa tem como premissas que a idade técnica e a recirculação excessiva elevam as trocas e que a maioria dos terminais substituídos não apresenta falha crítica, com expectativa de reduzir trocas desnecessárias e melhorar a gestão dos ativos.",
   "entregaveis": [
     "Nova metodologia e algoritmo de análise da rotatividade.",
     "Análises técnicas e laboratoriais de terminais com alta troca.",
-    "Relatório de modelos críticos e causas de troca.",
-    "Recomendações de descarte, reutilização e renovação do parque.",
-    "Blacklist de terminais (WIFI 3.1 + GPON) gerada.",
-    "Rotina mensal de Blacklist no fluxo de descarte."
+    "Relatório de modelos críticos e causas de troca."
   ],
   "saving": {
     "opex12M": 0.0,
@@ -38,8 +35,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-01-01",
-      "fim": "2026-01-30",
-      "anotacao": ""
+      "fim": "2026-01-30"
     },
     {
       "numero": "02.",
@@ -47,8 +43,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-02-02",
-      "fim": "2026-02-27",
-      "anotacao": ""
+      "fim": "2026-02-27"
     },
     {
       "numero": "03.",
@@ -56,8 +51,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-03-02",
-      "fim": "2026-03-31",
-      "anotacao": ""
+      "fim": "2026-03-31"
     },
     {
       "numero": "04.",
@@ -65,8 +59,7 @@
       "responsavel": "Mauricio (validação)",
       "status": 1,
       "inicio": "2026-05-04",
-      "fim": "2026-05-29",
-      "anotacao": ""
+      "fim": "2026-05-29"
     },
     {
       "numero": "05.",
@@ -74,8 +67,7 @@
       "responsavel": "Jackson / Mauricio",
       "status": 1,
       "inicio": "2026-05-26",
-      "fim": "2026-06-23",
-      "anotacao": ""
+      "fim": "2026-06-23"
     },
     {
       "numero": "06.",
@@ -83,8 +75,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-07-01",
-      "fim": "2026-07-31",
-      "anotacao": ""
+      "fim": "2026-07-31"
     },
     {
       "numero": "07.",
@@ -92,8 +83,7 @@
       "responsavel": "A confirmar",
       "status": 1,
       "inicio": "2026-07-28",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "fim": "2026-09-30"
     },
     {
       "numero": "08.",
@@ -101,8 +91,7 @@
       "responsavel": "A confirmar",
       "status": 1,
       "inicio": "2026-08-14",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "fim": "2026-09-30"
     },
     {
       "numero": "09.",
@@ -110,8 +99,7 @@
       "responsavel": "Evandro / Jackson",
       "status": 1,
       "inicio": "2026-10-08",
-      "fim": "2026-10-20",
-      "anotacao": ""
+      "fim": "2026-11-10"
     },
     {
       "numero": "10.",
@@ -119,8 +107,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "11.",
@@ -128,8 +115,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "12.",
@@ -137,8 +123,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "13.",
@@ -146,8 +131,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "14.",
@@ -155,8 +139,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "15.",
@@ -164,8 +147,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "16.",
@@ -173,8 +155,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "17.",
@@ -182,8 +163,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "18.",
@@ -191,8 +171,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "19.",
@@ -200,8 +179,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "20.",
@@ -209,8 +187,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "21.",
@@ -218,8 +195,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "22.",
@@ -227,8 +203,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "23.",
@@ -236,8 +211,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "24.",
@@ -245,8 +219,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "25.",
@@ -254,8 +227,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "26.",
@@ -263,8 +235,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "27.",
@@ -272,8 +243,7 @@
       "responsavel": "",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     }
   ],
   "cronogramaDetalhado": [
@@ -283,8 +253,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-01-01",
-      "fim": "2026-01-30",
-      "anotacao": ""
+      "fim": "2026-01-30"
     },
     {
       "numero": "1.1",
@@ -292,8 +261,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-01-01",
-      "fim": "2026-01-30",
-      "anotacao": ""
+      "fim": "2026-01-30"
     },
     {
       "numero": "1.2",
@@ -301,8 +269,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-01-01",
-      "fim": "2026-01-30",
-      "anotacao": ""
+      "fim": "2026-01-30"
     },
     {
       "numero": "2.",
@@ -310,8 +277,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-02-02",
-      "fim": "2026-02-27",
-      "anotacao": ""
+      "fim": "2026-02-27"
     },
     {
       "numero": "2.1",
@@ -319,8 +285,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-02-02",
-      "fim": "2026-02-27",
-      "anotacao": ""
+      "fim": "2026-02-27"
     },
     {
       "numero": "2.2",
@@ -328,8 +293,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-02-02",
-      "fim": "2026-02-27",
-      "anotacao": ""
+      "fim": "2026-02-27"
     },
     {
       "numero": "3.",
@@ -337,8 +301,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-03-02",
-      "fim": "2026-03-31",
-      "anotacao": ""
+      "fim": "2026-03-31"
     },
     {
       "numero": "3.1",
@@ -346,8 +309,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-03-02",
-      "fim": "2026-03-31",
-      "anotacao": ""
+      "fim": "2026-03-31"
     },
     {
       "numero": "3.2",
@@ -355,8 +317,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-03-02",
-      "fim": "2026-03-31",
-      "anotacao": ""
+      "fim": "2026-03-31"
     },
     {
       "numero": "4.",
@@ -364,8 +325,7 @@
       "responsavel": "Mauricio (validação)",
       "status": 1,
       "inicio": "2026-05-04",
-      "fim": "2026-05-29",
-      "anotacao": ""
+      "fim": "2026-05-29"
     },
     {
       "numero": "4.1",
@@ -373,8 +333,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-05-04",
-      "fim": "2026-05-29",
-      "anotacao": ""
+      "fim": "2026-05-29"
     },
     {
       "numero": "4.2",
@@ -382,8 +341,7 @@
       "responsavel": "Mauricio (validação)",
       "status": 5,
       "inicio": "2026-05-06",
-      "fim": "2026-05-06",
-      "anotacao": ""
+      "fim": "2026-05-06"
     },
     {
       "numero": "4.3",
@@ -391,8 +349,7 @@
       "responsavel": "Mauricio",
       "status": "",
       "inicio": "2026-05-15",
-      "fim": "2026-05-22",
-      "anotacao": ""
+      "fim": "2026-05-22"
     },
     {
       "numero": "5.",
@@ -400,8 +357,7 @@
       "responsavel": "Jackson / Mauricio",
       "status": 1,
       "inicio": "2026-05-26",
-      "fim": "2026-06-23",
-      "anotacao": ""
+      "fim": "2026-06-23"
     },
     {
       "numero": "5.1",
@@ -409,8 +365,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-05-26",
-      "fim": "2026-06-08",
-      "anotacao": ""
+      "fim": "2026-06-08"
     },
     {
       "numero": "5.2",
@@ -418,8 +373,7 @@
       "responsavel": "Jackson / Mauricio",
       "status": 5,
       "inicio": "2026-06-09",
-      "fim": "2026-06-09",
-      "anotacao": ""
+      "fim": "2026-06-09"
     },
     {
       "numero": "5.3",
@@ -427,8 +381,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-06-17",
-      "fim": "2026-06-23",
-      "anotacao": ""
+      "fim": "2026-06-23"
     },
     {
       "numero": "5.4",
@@ -436,8 +389,7 @@
       "responsavel": "Jackson / Mauricio",
       "status": "",
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "6.",
@@ -445,8 +397,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-07-01",
-      "fim": "2026-07-31",
-      "anotacao": ""
+      "fim": "2026-07-31"
     },
     {
       "numero": "6.1",
@@ -454,8 +405,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-07-01",
-      "fim": "2026-07-31",
-      "anotacao": ""
+      "fim": "2026-07-31"
     },
     {
       "numero": "7.",
@@ -463,8 +413,7 @@
       "responsavel": "A confirmar",
       "status": 1,
       "inicio": "2026-07-28",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "fim": "2026-09-30"
     },
     {
       "numero": "7.1",
@@ -472,8 +421,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "",
-      "fim": "",
-      "anotacao": ""
+      "fim": ""
     },
     {
       "numero": "7.2",
@@ -481,8 +429,7 @@
       "responsavel": "A confirmar",
       "status": 1,
       "inicio": "2026-07-28",
-      "fim": "2026-08-14",
-      "anotacao": ""
+      "fim": "2026-08-14"
     },
     {
       "numero": "7.3",
@@ -490,8 +437,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-08-17",
-      "fim": "2026-08-21",
-      "anotacao": ""
+      "fim": "2026-08-21"
     },
     {
       "numero": "7.4",
@@ -499,8 +445,7 @@
       "responsavel": "A confirmar",
       "status": 5,
       "inicio": "2026-08-21",
-      "fim": "2026-08-28",
-      "anotacao": ""
+      "fim": "2026-08-28"
     },
     {
       "numero": "7.5",
@@ -508,8 +453,7 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "2026-09-30",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "fim": "2026-09-30"
     },
     {
       "numero": "7.6",
@@ -517,8 +461,7 @@
       "responsavel": "A confirmar",
       "status": "",
       "inicio": "2026-09-30",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "fim": "2026-09-30"
     },
     {
       "numero": "8.",
@@ -526,8 +469,7 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-08-14",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "fim": "2026-09-30"
     },
     {
       "numero": "8.1",
@@ -535,8 +477,7 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-08-21",
-      "fim": "2026-09-15",
-      "anotacao": ""
+      "fim": "2026-09-15"
     },
     {
       "numero": "8.2",
@@ -544,8 +485,7 @@
       "responsavel": "Serviços de campo",
       "status": "",
       "inicio": "2026-08-14",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "fim": "2026-09-30"
     },
     {
       "numero": "8.3",
@@ -553,8 +493,7 @@
       "responsavel": "A confirmar",
       "status": 3,
       "inicio": "2026-08-21",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "fim": "2026-09-30"
     },
     {
       "numero": "9.",
@@ -562,8 +501,7 @@
       "responsavel": "Evandro / Jackson",
       "status": 1,
       "inicio": "2026-10-08",
-      "fim": "2026-10-20",
-      "anotacao": ""
+      "fim": "2026-10-20"
     },
     {
       "numero": "9.1",
@@ -571,12 +509,11 @@
       "responsavel": "Evandro / Jackson",
       "status": 1,
       "inicio": "2026-10-08",
-      "fim": "2026-10-20",
-      "anotacao": ""
+      "fim": "2026-10-20"
     }
   ],
   "historico": [],
-  "statusProjeto": "08/10/26 - Nova Blacklist gerada pelo Time de Serviços Técnicos (WIFI 3.1 + GPON).\n21/08/26 - Previsão de 30/08/26 para cruzar com a base de jigas de testes e rodar a 1ª Blacklist pelo Extrator.\n21/08/26 - Previsão de 15/09/26 para cruzar com as OS geradas por VT.\n21/08/26 - Previsão de 30/09/26 para implementar a rotina de Blacklist mensal para o fluxo de descarte.\n14/08/26 - Definido que até setembro haverá lista mensal automatizada por serviços de campo, com medição a criar e QuickWin a informar.\n28/07/26 - Previsão de 15/08/26 para identificar os motivos de baixas não ligados ao terminal.\n17/06/26 - Escopo de métricas de consulta da jornada dos terminais para Scrap por rotatividade, com previsão para 23/06/26.\n09/06/26 - Relatórios e testes apresentados ao Demis, com conclusão de que novos parâmetros e estudos são necessários.\n09/06/26 - Jackson e Mauricio vão alinhar as novas fases e a distribuição de tarefas do novo estudo.\n26/05/26 - Previsão de 08/06/26 para definir e estudar novas diretrizes para investigações.\n25/05/26 - Levantamento parado, com previsão de retomada em 01/06/26.\n15/05/26 - Mauricio levantará terminais novos de 2 anos e índice de troca; divergência entre 48 meses e dados maiores, com retorno previsto em 22/05/26.\n06/05/26 - Estudos, relatórios e laudos enviados ao Mauricio, aguardando validação para as próximas etapas.",
+  "statusProjeto": "10/11/26 - Implementar rotina de Blacklist Mensal para fluxo de descarte em mesma periodicidade.\n08/10/26 - Nova Blacklist gerada pelo Time de Serviços Técnicos (WIFI 3.1 + GPON).\n21/08/26 - Previsão de 30/08/26 para cruzar com a base de jigas de testes e rodar a 1ª Blacklist pelo Extrator.\n21/08/26 - Previsão de 15/09/26 para cruzar com as OS geradas por VT.\n21/08/26 - Previsão de 30/09/26 para implementar a rotina de Blacklist mensal para o fluxo de descarte.\n14/08/26 - Definido que até setembro haverá lista mensal automatizada por serviços de campo, com medição a criar e QuickWin a informar.\n28/07/26 - Previsão de 15/08/26 para identificar os motivos de baixas não ligados ao terminal.\n17/06/26 - Escopo de métricas de consulta da jornada dos terminais para Scrap por rotatividade, com previsão para 23/06/26.\n09/06/26 - Relatórios e testes apresentados ao Demis, com conclusão de que novos parâmetros e estudos são necessários.\n09/06/26 - Jackson e Mauricio vão alinhar as novas fases e a distribuição de tarefas do novo estudo.\n26/05/26 - Previsão de 08/06/26 para definir e estudar novas diretrizes para investigações.\n25/05/26 - Levantamento parado, com previsão de retomada em 01/06/26.\n15/05/26 - Mauricio levantará terminais novos de 2 anos e índice de troca; divergência entre 48 meses e dados maiores, com retorno previsto em 22/05/26.\n06/05/26 - Estudos, relatórios e laudos enviados ao Mauricio, aguardando validação para as próximas etapas.",
   "financeiro": [
     {
       "id": "LOG-013",
@@ -3174,6 +3111,6 @@
   "fonte": {
     "arquivo": "LOG-013 - Ciclo de Vida.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-013%20-%20Ciclo%20de%20Vida.xlsx?web=1",
-    "extraidoEm": "2026-11-04T18:20:11-03:00"
+    "extraidoEm": "2026-11-05T17:09:10-03:00"
   }
 }
