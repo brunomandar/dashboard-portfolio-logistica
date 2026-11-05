@@ -74,7 +74,7 @@
       minimumFractionDigits: absolute < 10 ? 2 : 1,
       maximumFractionDigits: 2
     });
-    return `${amount < 0 ? '- ' : ''}R$ ${formatted}M`;
+    return `R$ ${formatted}M`;
   }
 
   function savingField(project, field) {
@@ -285,7 +285,8 @@
     const grid = $('.kpi-grid');
     if (!grid) return;
     const active = projects.filter(project => !isInactive(project));
-    const risk = active.filter(isRisk);
+    const priorityBlocksRisk = project => /^(cancelad|congelad|concluid)/.test(clean(project.prioridade).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase());
+    const risk = active.filter(project => isRisk(project) && clean(project.status).toUpperCase() !== 'L5' && !priorityBlocksRisk(project));
     const done = projects.filter(isDone);
     const saving = projects.reduce((sum, project) => sum + savingField(project, 'total12M'), 0);
     const savingOpex = projects.reduce((sum, project) => sum + savingField(project, 'opex12M'), 0);
@@ -329,15 +330,55 @@
   }
   bindRiskTooltip();
 
+  function bindListTooltip() {
+    if (window.__listTooltipBound) return;
+    window.__listTooltipBound = true;
+    let tip = null;
+    const hostOf = target => target && target.closest ? target.closest('[data-list-tip]') : null;
+    const place = event => {
+      if (!tip) return;
+      const pad = 12, w = tip.offsetWidth, h = tip.offsetHeight;
+      let x = event.clientX + pad, y = event.clientY + pad;
+      if (x + w > window.innerWidth - 8) x = event.clientX - w - pad;
+      if (y + h > window.innerHeight - 8) y = event.clientY - h - pad;
+      tip.style.left = `${Math.max(8, x)}px`;
+      tip.style.top = `${Math.max(8, y)}px`;
+    };
+    document.addEventListener('mouseover', event => {
+      const host = hostOf(event.target);
+      if (!host) return;
+      let list = [];
+      try { list = JSON.parse(host.getAttribute('data-list-tip')); } catch (error) { list = []; }
+      const title = host.getAttribute('data-list-title') || 'Projetos';
+      if (!tip) { tip = document.createElement('div'); tip.className = 'roadmap-tooltip list-tooltip'; document.body.appendChild(tip); }
+      const shown = list.slice(0, 25);
+      tip.innerHTML = `<b>${esc(title)} (${list.length})</b>${list.length ? `<ul>${shown.map(item => `<li>${esc(item)}</li>`).join('')}</ul>${list.length > shown.length ? `<div class="list-more">+ ${list.length - shown.length} projeto(s)</div>` : ''}` : '<div class="list-more">Nenhum projeto.</div>'}`;
+      tip.classList.add('show');
+      place(event);
+    });
+    document.addEventListener('mousemove', event => { if (tip && tip.classList.contains('show')) place(event); });
+    document.addEventListener('mouseout', event => {
+      const host = hostOf(event.target);
+      if (!host || (event.relatedTarget && host.contains(event.relatedTarget))) return;
+      if (tip) tip.classList.remove('show');
+    });
+  }
+  bindListTooltip();
+
   function renderHealth(projects) {
     // Rosca pelo estágio (L) de TODOS os projetos do recorte
     const STAGE_GROUP = { L0: 'Backlog', L1: 'Planejado', L2: 'Planejado', L3: 'Em Execução', L4: 'Em Execução', L5: 'Concluído' };
     const GROUP_COLORS = { 'Backlog': '#bfbfbf', 'Planejado': '#ffc000', 'Em Execução': '#c00000', 'Concluído': '#530b03', 'Sem estágio': '#7f7f7f' };
-    const groupOf = project => STAGE_GROUP[clean(project.status).toUpperCase()] || 'Sem estágio';
-    const situationCounts = countsBy(projects, groupOf);
-    const situations = ['Backlog','Planejado','Em Execução','Concluído','Sem estágio'].filter(value => situationCounts[value]);
+    const groupOf = project => STAGE_GROUP[clean(project.status).toUpperCase()] || '';
+    const staged = projects.filter(project => groupOf(project));
+    const situationCounts = countsBy(staged, groupOf);
+    const situations = ['Backlog','Planejado','Em Execução','Concluído'].filter(value => situationCounts[value]);
+    const GROUP_LABELS = { 'Backlog': 'Backlog - L0', 'Planejado': 'Planejado - L1 e L2', 'Em Execução': 'Em Execução - L3 e L4', 'Concluído': 'Concluído - L5' };
+    const labelOf = key => GROUP_LABELS[key] || key;
     const colorOf = key => GROUP_COLORS[key] || '#7f7f7f';
-    const total = projects.length;
+    const total = staged.length;
+    const listAttr = (title, list) => `data-list-title="${esc(title)}" data-list-tip="${esc(JSON.stringify(list.slice().sort((a, b) => idNumber(a.id) - idNumber(b.id)).map(project => `${project.id} · ${clean(project.projeto)}`)))}"`;
+    const groupAttr = key => listAttr(labelOf(key), staged.filter(project => groupOf(project) === key));
     let cursor = 0;
     const stops = [];
     situations.forEach((key, index) => {
@@ -359,14 +400,14 @@
         const value = situationCounts[key] || 0;
         const length = total ? value * circumference / total : 0;
         const visible = Math.max(0.01, length - gap);
-        const arc = `<circle class="donut-arc" cx="100" cy="100" r="${radius}" fill="none" stroke="${colorOf(key)}" stroke-width="20" stroke-linecap="round" stroke-dasharray="${visible.toFixed(2)} ${circumference.toFixed(2)}" stroke-dashoffset="${(-offset - gap / 2).toFixed(2)}" transform="rotate(-90 100 100)"><title>${esc(key)}: ${value}</title></circle>`;
+        const arc = `<circle class="donut-arc" ${groupAttr(key)} cx="100" cy="100" r="${radius}" fill="none" stroke="${colorOf(key)}" stroke-width="20" stroke-linecap="round" stroke-dasharray="${visible.toFixed(2)} ${circumference.toFixed(2)}" stroke-dashoffset="${(-offset - gap / 2).toFixed(2)}" transform="rotate(-90 100 100)"><title>${esc(key)}: ${value}</title></circle>`;
         offset += length;
         return arc;
       }).join('');
       donut.innerHTML = `<svg viewBox="0 0 200 200" aria-hidden="true"><defs><filter id="donutShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#18212f" flood-opacity=".12"/></filter></defs><circle cx="100" cy="100" r="${radius}" fill="none" stroke="#eef1f5" stroke-width="20"/><g filter="url(#donutShadow)">${arcs}</g><circle cx="100" cy="100" r="58" fill="#fff"/><text x="100" y="99" text-anchor="middle" class="donut-total">${total}</text><text x="100" y="122" text-anchor="middle" class="donut-caption">PROJETOS</text></svg>`;
     }
     const legend = $('.legend');
-    if (legend) legend.innerHTML = situations.map(key => `<div><i style="background:${colorOf(key)}"></i>${esc(key)} <b>${situationCounts[key]}</b><em>${pct(situationCounts[key], total)}%</em></div>`).join('') || '<div>Sem projetos no recorte.</div>';
+    if (legend) legend.innerHTML = situations.map(key => `<div class="legend-item" ${groupAttr(key)}><i style="background:${colorOf(key)}"></i>${esc(labelOf(key))} <b>${situationCounts[key]}</b><em>${pct(situationCounts[key], total)}%</em></div>`).join('') || '<div>Sem projetos no recorte.</div>';
 
     const stageCounts = countsBy(projects, project => project.status);
     const stages = ['L0','L1','L2','L3','L4','L5'];
@@ -376,7 +417,7 @@
     if (bars) bars.innerHTML = stages.map(stage => {
       const value = stageCounts[stage] || 0;
       const height = value ? Math.max(10, value * 100 / max) : 3;
-      return `<div class="bar-group"><div class="vbar" style="--h:${height}%" data-v="${value}"></div><span>${stage}<small class="stage-name">${STAGE_NAMES[stage]}</small></span></div>`;
+      return `<div class="bar-group" ${listAttr(`${stage} · ${STAGE_NAMES[stage]}`, projects.filter(project => clean(project.status).toUpperCase() === stage))}><div class="vbar" style="--h:${height}%" data-v="${value}"></div><span>${stage}<small class="stage-name">${STAGE_NAMES[stage]}</small></span></div>`;
     }).join('');
   }
 
@@ -390,15 +431,21 @@
       .sort((a, b) => b[1] - a[1])
       .slice(0, 3)
       .map(([key]) => key);
+    const isConsultoria = value => clean(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() === 'consultoria';
+    const consultoria = Object.keys(countsBy(valid, forumOf)).find(isConsultoria);
+    if (consultoria && !forums.includes(consultoria)) forums.push(consultoria);
     const managers = Object.entries(countsBy(valid, project => project.area))
       .sort((a, b) => b[1] - a[1])
       .slice(0, 6)
       .map(([key]) => key);
-    const colors = ['#530b03', '#df3232', '#bfbfbf'];
+    const baseColors = ['#530b03', '#df3232', '#bfbfbf'];
+    let colorIndex = 0;
+    const colors = forums.map(forum => isConsultoria(forum) ? '#ed7d31' : baseColors[colorIndex++ % baseColors.length]);
+    const listAttrMF = (title, list) => `data-list-title="${esc(title)}" data-list-tip="${esc(JSON.stringify(list.slice().sort((a, b) => idNumber(a.id) - idNumber(b.id)).map(project => `${project.id} · ${clean(project.projeto)}`)))}"`;
     const max = Math.max(1, ...managers.flatMap(manager => forums.map(forum => valid.filter(project => project.area === manager && forumOf(project) === forum).length)));
     host.innerHTML = `<h3 style="text-align:center;margin-bottom:6px">Demandas por Gerência x Fórum</h3><div class="manager-total">Total: <b>${valid.length}</b> projeto(s) em <b>${managers.length}</b> gerência(s)</div><div class="manager-scroll"><div class="manager-chart">${managers.map(manager => {
       const values = forums.map(forum => valid.filter(project => project.area === manager && forumOf(project) === forum).length);
-      return `<div class="manager-group"><div class="manager-bars">${values.map((value, index) => value <= 0 ? '' : `<div title="${esc(forums[index])}: ${value}" style="position:relative;height:${Math.max(10, value * 150 / max)}px;background:${colors[index]}">${value > 0 ? `<span style="position:absolute;left:50%;top:-24px;transform:translateX(-50%);z-index:5;display:block;font-size:12px;font-weight:800;color:#111827;line-height:1;white-space:nowrap;pointer-events:none">${value}</span>` : ''}</div>`).join('')}</div><span>${esc(manager)}</span><em class="manager-count">${valid.filter(project => project.area === manager).length} projeto(s)</em></div>`;
+      return `<div class="manager-group"><div class="manager-bars">${values.map((value, index) => value <= 0 ? '' : `<div ${listAttrMF(`${manager} · ${forums[index]}`, valid.filter(project => project.area === manager && forumOf(project) === forums[index]))} style="position:relative;height:${Math.max(10, value * 150 / max)}px;background:${colors[index]}">${value > 0 ? `<span style="position:absolute;left:50%;top:-24px;transform:translateX(-50%);z-index:5;display:block;font-size:12px;font-weight:800;color:#111827;line-height:1;white-space:nowrap;pointer-events:none">${value}</span>` : ''}</div>`).join('')}</div><span>${esc(manager)}</span><em class="manager-count">${valid.filter(project => project.area === manager).length} projeto(s)</em></div>`;
     }).join('')}</div></div><div class="manager-legend">${forums.map((forum, index) => `<div><span style="background:${colors[index]}"></span>${esc(forum)}</div>`).join('') || '<div>Sem fóruns disponíveis no recorte.</div>'}</div>`;
   }
 
@@ -479,7 +526,7 @@
     projects.forEach(project => arrayOf(project.financeiro).forEach(record => {
       if (Number(record?.ano) !== 2026 || clean(record?.tipoDespesa) !== 'Total' || !(record?.icg in series)) return;
       const index = MONTH_ORDER[record.mes];
-      if (index !== undefined) series[record.icg][index] += n(record.resultado);
+      if (index !== undefined) series[record.icg][index] += Math.abs(n(record.resultado));
     }));
     return series;
   }
@@ -499,11 +546,32 @@
     return `<g stroke="#e8ebf0" stroke-width="1"><line x1="0" y1="30" x2="900" y2="30"/><line x1="0" y1="83" x2="900" y2="83"/><line x1="0" y1="136" x2="900" y2="136"/><line x1="0" y1="190" x2="900" y2="190"/></g><polyline fill="none" stroke="#bfbfbf" stroke-width="3" points="${points(lines.Budget)}"/><polyline fill="none" stroke="#ed7d31" stroke-width="4" points="${points(lines.Fcst)}"/><polyline fill="none" stroke="#c00000" stroke-width="4" points="${points(lines.Real)}"/>`;
   }
 
+  function isQualitative(project) {
+    return clean(project.ganhoProjeto).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().startsWith('qualitativ');
+  }
+
+  // Projetos qualitativos: progresso geral pelas etapas do macrocronograma
+  function qualitativeProgressCard(project) {
+    const items = scheduleItemsOf(project, 'macro');
+    const total = items.length;
+    const count = code => items.filter(item => effectiveScheduleStatus(item) === code).length;
+    const done = count(4);
+    const percent = total ? Math.round(done * 100 / total) : 0;
+    const rows = [
+      ['Etapas concluídas', `${done} / ${total}`],
+      ['Em andamento', count(1)],
+      ['Em risco', count(2)],
+      ['Atrasadas', count(3)]
+    ];
+    return `<article class="card line-chart project-finance-chart qualitative-progress"><div class="chart-title">Progresso geral do projeto</div><div class="chart-sub">Projeto qualitativo · calculado pelas etapas do macrocronograma</div>${total ? `<div class="qp-bar-row"><div class="qp-bar"><i style="width:${percent}%"></i></div><b class="qp-pct">${percent}%</b></div><dl class="qp-list">${rows.map(([label, value]) => `<dt>${esc(label)}</dt><dd>${esc(value)}</dd>`).join('')}</dl>` : '<div class="empty-state">Macrocronograma sem etapas registradas.</div>'}</article>`;
+  }
+
   function projectFinanceChart(project) {
     const LABELS = ['JAN','FEV','MAR','ABR','MAI','JUN','JUL','AGO','SET','OUT','NOV','DEZ'];
-    const endMatch = clean(project.termino).match(/^(\d{4})-(\d{2})/);
-    const end = endMatch ? new Date(Number(endMatch[1]), Number(endMatch[2]) - 1, 1) : null;
-    const base = end ? new Date(end.getFullYear(), end.getMonth() + 1, 1) : new Date(new Date().getFullYear(), 0, 1);
+    const monthOf = value => { const m = clean(value).match(/^(\d{4})-(\d{2})/); return m ? new Date(Number(m[1]), Number(m[2]) - 1, 1) : null; };
+    const capture = monthOf(project.inicioCaptura);
+    const end = monthOf(project.termino);
+    const base = capture || (end ? new Date(end.getFullYear(), end.getMonth() + 1, 1) : new Date(new Date().getFullYear(), 0, 1));
     const months = Array.from({ length: 12 }, (_, index) => {
       const date = new Date(base.getFullYear(), base.getMonth() + index, 1);
       return { key: `${date.getFullYear()}-${date.getMonth()}`, label: LABELS[date.getMonth()], year: String(date.getFullYear()).slice(-2) };
@@ -518,32 +586,120 @@
       return '';
     };
     const series = { meta: Array(12).fill(0), real: Array(12).fill(0), fcst: Array(12).fill(0), base: Array(12).fill(0) };
-    const has = { meta: false, real: false, fcst: false, base: false };
+    let hasBase = false;
     arrayOf(project.financeiro).forEach(record => {
       if (clean(record?.tipoDespesa) && clean(record?.tipoDespesa) !== 'Total') return;
       const kind = kindOf(record?.icg);
       const month = MONTH_ORDER[clean(record?.mes).slice(0, 1).toUpperCase() + clean(record?.mes).slice(1, 3).toLowerCase()];
       const index = indexOf[`${Number(record?.ano)}-${month}`];
       if (!kind || index === undefined) return;
-      series[kind][index] += n(record.resultado);
-      has[kind] = true;
+      series[kind][index] += Math.abs(n(record.resultado));
+      if (kind === 'base') hasBase = true;
     });
-    const lines = { meta: cumulative(series.meta), real: cumulative(series.real), fcst: cumulative(series.fcst), base: cumulative(series.base) };
-    const visible = ['meta','real','fcst'].concat(has.base ? ['base'] : []);
-    const values = visible.map(key => lines[key]).flat();
-    const min = Math.min(0, ...values);
-    let max = Math.max(0, ...values);
-    if (max === min) max = min + 1;
-    const x = index => (index + 0.5) * 900 / 12;
-    const points = list => list.map((value, index) => `${x(index).toFixed(1)},${(190 - (value - min) * 160 / (max - min)).toFixed(1)}`).join(' ');
-    const COLORS = { meta: '#2f6fe4', real: '#111111', fcst: '#17875b', base: '#f08a00' };
-    const NAMES = { meta: 'Meta', real: 'Realizado', fcst: 'Forecast', base: 'Baseline / ano anterior' };
-    const svg = `<svg viewBox="0 0 900 200" preserveAspectRatio="none"><g stroke="#e8ebf0" stroke-width="1"><line x1="0" y1="30" x2="900" y2="30"/><line x1="0" y1="83" x2="900" y2="83"/><line x1="0" y1="136" x2="900" y2="136"/><line x1="0" y1="190" x2="900" y2="190"/></g>${visible.slice().reverse().map(key => `<polyline fill="none" stroke="${COLORS[key]}" stroke-width="3" vector-effect="non-scaling-stroke" points="${points(lines[key])}"/>`).join('')}</svg>`;
-    const legend = `<div class="pf-legend">${visible.map(key => `<span><i style="background:${COLORS[key]}"></i>${NAMES[key]}</span>`).join('')}</div>`;
-    const axis = `<div class="pf-axis">${months.map(month => `<span>${month.label}<small>${month.year}</small></span>`).join('')}</div>`;
-    const sub = end ? `Captura de 12 meses após o término previsto (${months[0].label}/${months[0].year} a ${months[11].label}/${months[11].year})` : 'Término não informado · exibindo o ano corrente';
-    return { sub, body: `${legend}${svg}${axis}` };
+    const body = financeChartSVG({ labels: months.map(m => m.label), years: months.map(m => m.year), real: series.real, fcst: series.fcst, meta: series.meta, base: hasBase ? series.base : null, id: `p${clean(project.id).replace(/[^a-z0-9]/gi, '')}` });
+    const period = `${months[0].label}/${months[0].year} a ${months[11].label}/${months[11].year}`;
+    const sub = capture ? `12 meses a partir do início da captura (${period})` : end ? `Início da captura não informado · 12 meses após o término (${period})` : 'Início da captura não informado · exibindo o ano corrente';
+    return { sub, body };
   }
+
+
+  // Gráfico financeiro padrão (Home e projeto): Realizado e Forecast em barras lado a lado, desvio entre eles e Meta em linha azul
+  function financeChartSVG({ labels, years, real, fcst, meta, base, id, width, fs = 1 }) {
+    const abs = list => (list || []).map(value => Math.abs(n(value)));
+    real = abs(real); fcst = abs(fcst); meta = abs(meta); base = base ? abs(base) : null;
+    const count = labels.length;
+    const max = Math.max(0.0001, ...real, ...fcst, ...meta, ...(base || [])) * 1.45;
+    const occupied = labels.map(() => Infinity);
+    const W = width || 960, H = 340, left = 20, right = 20, top = 56, bottom = 46;
+    const plotH = H - top - bottom;
+    const slot = (W - left - right) / count;
+    const x = index => left + slot * index + slot / 2;
+    const y = value => top + plotH - (value / max) * plotH;
+    const fmt = value => value ? `${value.toLocaleString('pt-BR', { maximumFractionDigits: value < 10 ? 2 : 1 })}M` : '0M';
+    const grid = [0, 0.25, 0.5, 0.75, 1].map(step => `<line x1="${left}" x2="${W - right}" y1="${(top + plotH * step).toFixed(1)}" y2="${(top + plotH * step).toFixed(1)}" stroke="#eceef2" stroke-width="1"/>`).join('');
+    const columns = labels.map((label, index) => `<rect x="${(left + slot * index).toFixed(1)}" y="${top}" width="${slot.toFixed(1)}" height="${plotH}" fill="${index % 2 ? '#fafafa' : '#ffffff'}"/>`).join('');
+    const barW = Math.min(28, slot * 0.36);
+    const gap = 3;
+    const floor = top + plotH;
+    const pairs = labels.map((label, index) => {
+      const r = real[index], f = fcst[index];
+      const rx = x(index) - gap / 2 - barW, fx = x(index) + gap / 2;
+      let out = '';
+      const floorY = top + plotH;
+      let rLabelY = r ? y(r) - 6 : null;
+      let fLabelY = f ? y(f) - 6 : null;
+      if (rLabelY !== null && fLabelY !== null && Math.abs(rLabelY - fLabelY) < 12 * fs) {
+        if (rLabelY <= fLabelY) rLabelY -= 12 * fs; else fLabelY -= 12 * fs;
+      }
+      if (r) out += `<rect x="${rx.toFixed(1)}" y="${y(r).toFixed(1)}" width="${barW.toFixed(1)}" height="${(floor - y(r)).toFixed(1)}" rx="4" fill="url(#${id}Real)"><title>Realizado ${label}: R$ ${fmt(r)}</title></rect><text x="${(rx + barW / 2).toFixed(1)}" y="${rLabelY.toFixed(1)}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#1f1f1f">${fmt(r)}</text>`;
+      if (f) out += `<rect x="${fx.toFixed(1)}" y="${y(f).toFixed(1)}" width="${barW.toFixed(1)}" height="${(floor - y(f)).toFixed(1)}" rx="4" fill="url(#${id}Fcst)"><title>Forecast ${label}: R$ ${fmt(f)}</title></rect><text x="${(fx + barW / 2).toFixed(1)}" y="${fLabelY.toFixed(1)}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#15803d">${fmt(f)}</text>`;
+      [rLabelY, fLabelY].forEach(value => { if (value !== null) occupied[index] = Math.min(occupied[index], value - 11 * fs); });
+      if (floorY && occupied[index] === Infinity) occupied[index] = floorY;
+      if (r && f) {
+        const diff = r - f;
+        const upY = Math.min(rLabelY, fLabelY) - 30 * fs;
+        occupied[index] = Math.min(occupied[index], upY - 2);
+        const good = diff >= 0;
+        const color = good ? '#15803d' : '#c00000';
+        const bg = good ? '#e8f7ee' : '#fbeaea';
+        const text = `${good ? '▲' : '▼'} ${fmt(Math.abs(diff))}`;
+        const pw = (text.length * 5.6 + 8) * fs;
+        out += `<g><title>Desvio Realizado x Forecast ${label}: ${good ? 'acima' : 'abaixo'} em R$ ${fmt(Math.abs(diff))}</title><rect x="${(x(index) - pw / 2).toFixed(1)}" y="${(upY - 1).toFixed(1)}" width="${pw.toFixed(1)}" height="${(15 * fs).toFixed(1)}" rx="${(7.5 * fs).toFixed(1)}" fill="${bg}" stroke="${color}" stroke-width="1"/><text x="${x(index).toFixed(1)}" y="${(upY + 10.5 * fs).toFixed(1)}" text-anchor="middle" font-size="${(9 * fs).toFixed(1)}" font-weight="800" fill="${color}">${text}</text></g>`;
+      }
+      return out;
+    }).join('');
+    const path = list => list.map((value, index) => `${index ? 'L' : 'M'}${x(index).toFixed(1)},${y(value).toFixed(1)}`).join(' ');
+    const dots = (list, color, name) => list.map((value, index) => `<circle cx="${x(index).toFixed(1)}" cy="${y(value).toFixed(1)}" r="4.5" fill="#fff" stroke="${color}" stroke-width="2.5"><title>${name} ${labels[index]}: R$ ${fmt(value)}</title></circle>`).join('');
+    // Meta: caixinha azul pequena; se o ponto estiver perto dos valores das barras, sobe acima de tudo com linha de ligação
+    const metaLabels = meta.map((value, index) => {
+      if (!value) return '';
+      const text = fmt(value);
+      const bw = (text.length * 6 + 10) * fs, bh = 15 * fs;
+      const cx = x(index), py = y(value);
+      const limit = occupied[index];
+      let by = py - bh - 8;
+      let leader = false;
+      if (by + bh > limit - 3) {
+        by = limit - bh - 10;
+        leader = true;
+      }
+      by = Math.max(2, by);
+      const line = leader ? `<line x1="${cx.toFixed(1)}" y1="${py.toFixed(1)}" x2="${cx.toFixed(1)}" y2="${(by + bh).toFixed(1)}" stroke="#2563eb" stroke-width="1" stroke-dasharray="2 2"/>` : '';
+      return `${line}<rect x="${(cx - bw / 2).toFixed(1)}" y="${by.toFixed(1)}" width="${bw.toFixed(1)}" height="${bh.toFixed(1)}" rx="3" fill="#fff" stroke="#2563eb" stroke-width="1.2"/><text x="${cx.toFixed(1)}" y="${(by + 11 * fs).toFixed(1)}" text-anchor="middle" font-size="${(9.5 * fs).toFixed(1)}" font-weight="800" fill="#1d4ed8">${text}</text>`;
+    }).join('');
+    const baseLine = base ? `<path d="${path(base)}" fill="none" stroke="#f08a00" stroke-width="2.5"/>${dots(base, '#f08a00', 'Baseline')}` : '';
+    const axis = labels.map((label, index) => `<text x="${x(index).toFixed(1)}" y="${H - 22}" text-anchor="middle" font-size="${(12 * fs).toFixed(1)}" font-weight="800" fill="#1f1f1f">${label}</text><text x="${x(index).toFixed(1)}" y="${H - 7}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" fill="#7f7f7f">${years[index]}</text>`).join('');
+    const defs = `<defs><linearGradient id="${id}Real" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b4f57"/><stop offset="1" stop-color="#15171b"/></linearGradient><linearGradient id="${id}Fcst" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34c26b"/><stop offset="1" stop-color="#15803d"/></linearGradient></defs>`;
+    const svg = `<svg class="fin-chart" viewBox="0 0 ${W} ${H}" role="img">${defs}${columns}${grid}${pairs}${baseLine}<path d="${path(meta)}" fill="none" stroke="#2563eb" stroke-width="3"/>${dots(meta, '#2563eb', 'Meta')}${metaLabels}${axis}</svg>`;
+    const legend = `<div class="fin-legend"><span><i class="lg-bar"></i>Realizado</span><span><i class="lg-bar fcst"></i>Forecast</span><span><i class="lg-line"></i>Meta</span>${base ? '<span><i class="lg-line base"></i>Baseline / ano anterior</span>' : ''}<span><i class="lg-dev">▲▼</i>Desvio Realizado x Forecast</span></div>`;
+    const sum = list => list.reduce((acc, value) => acc + value, 0);
+    const tReal = sum(real), tFcst = sum(fcst), tMeta = sum(meta);
+    const gapBox = (a, b) => { const d = a - b; return `<b class="${d >= 0 ? 'pos' : 'neg'}">${d >= 0 ? '▲' : '▼'} ${fmt(Math.abs(d))}</b>`; };
+    const minis = `<div class="fin-mini"><div><small>Meta</small><b>${fmt(tMeta)}</b></div><div><small>Forecast</small><b>${fmt(tFcst)}</b></div><div><small>Realizado</small><b>${fmt(tReal)}</b></div><div><small>Real x Meta</small>${gapBox(tReal, tMeta)}</div><div><small>Real x Forecast</small>${gapBox(tReal, tFcst)}</div></div>`;
+    return `<div class="fin-top">${legend}${minis}</div>${svg}`;
+  }
+
+  // Home: busca de projeto dentro do gráfico (vazio = visão geral)
+  function filterFinanceChart(value) {
+    const body = $('#finBody');
+    const sub = $('#finSub');
+    if (!body) return;
+    const norm = text => clean(text).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const query = norm(value);
+    const pool = Array.isArray(state.finProjects) ? state.finProjects : [];
+    const list = query ? pool.filter(project => norm(`${project.id} ${project.projeto}`).includes(query)) : pool;
+    const LABELS = ['JAN','FEV','MAR','ABR','MAI','JUN','JUL','AGO','SET','OUT','NOV','DEZ'];
+    if (sub) sub.textContent = !query ? '2026 · valores mensais de Realizado, Forecast e Meta · visão geral'
+      : list.length === 1 ? `2026 · ${list[0].id} · ${clean(list[0].projeto)}`
+      : list.length ? `2026 · ${list.length} projetos encontrados` : 'Nenhum projeto encontrado';
+    if (query && !list.length) { body.innerHTML = '<div class="empty-state">Nenhum projeto encontrado para a busca.</div>'; $('#finMiniSlot')?.replaceChildren(); return; }
+    const series = aggregateFinancial(list);
+    body.innerHTML = financeChartSVG({ labels: LABELS, years: LABELS.map(() => '26'), real: series.Real, fcst: series.Fcst, meta: series.Budget, id: 'home', width: 1150, fs: 1.3 });
+    const slot = $('#finMiniSlot');
+    const mini = body.querySelector('.fin-mini');
+    if (slot) slot.replaceChildren(...(mini ? [mini] : []));
+  }
+  window.filterFinanceChart = filterFinanceChart;
 
   function renderFinance(projects) {
     const series = aggregateFinancial(projects);
@@ -559,8 +715,12 @@
     const year = projects.reduce((sum, project) => sum + savingField(project, 'total2026'), 0);
     const grid = $('#financeiro .finance-grid');
     if (grid) grid.innerHTML = `<article class="card finance-kpi"><small>Meta</small><b>${moneyMM(budget)}</b></article><article class="card finance-kpi"><small>Forecast</small><b>${moneyMM(forecast)}</b></article><article class="card finance-kpi"><small>Realizado</small><b>${moneyMM(real)}</b></article><article class="card finance-kpi gap-kpi"><div class="gap-split"><div><span>Real x Meta</span><b style="color:${gapMeta < 0 ? 'var(--claro)' : 'var(--green)'}">${moneyMM(gapMeta)}</b></div><div><span>Real x Forecast</span><b style="color:${gapForecast < 0 ? 'var(--claro)' : 'var(--green)'}">${moneyMM(gapForecast)}</b></div></div></article><article class="card finance-kpi"><small>Saving Opex</small><b>${moneyMM(opex)}</b></article><article class="card finance-kpi"><small>Saving Capex</small><b>${moneyMM(capex)}</b></article><article class="card finance-kpi"><small>Saving Total</small><b>${moneyMM(all)}</b></article><article class="card finance-kpi"><small>Saving 2026</small><b>${moneyMM(year)}</b></article>`;
-    const svg = $('#financeiro .line-chart svg');
-    if (svg) svg.innerHTML = chartPolyline(series);
+    state.finProjects = projects;
+    const card = $('#financeiro .line-chart');
+    if (card) {
+      if (!card.querySelector('#finSearch')) card.innerHTML = `<div class="fin-head"><div><div class="chart-title">Evolução mensal</div><div class="chart-sub" id="finSub"></div></div><div class="fin-head-right"><div id="finMiniSlot"></div><input id="finSearch" class="fin-search" type="search" placeholder="Buscar projeto por nome ou LOG..." autocomplete="off" oninput="filterFinanceChart(this.value)"></div></div><div id="finBody"></div>`;
+      filterFinanceChart(card.querySelector('#finSearch').value);
+    }
   }
 
   function riskClass(risk) {
@@ -623,6 +783,90 @@
     return 0;
   }
 
+  // Anotação da etapa (comentário do Excel) = data reprogramada
+  function scheduleNote(item) {
+    return clean(first(item, ['anotacao', 'anotação', 'comentario', 'comentário', 'reprogramacao', 'reprogramação']));
+  }
+
+  // Status exibido: se a data final já passou e a etapa não está concluída, vira 3 · Atrasado
+  function effectiveScheduleStatus(item) {
+    const code = scheduleStatusCode(item);
+    if (code === 4) return 4;
+    const end = scheduleDate(item.fim || item.termino);
+    if (!end) return code;
+    const today = new Date();
+    const todayNoon = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 12);
+    return end < todayNoon ? 3 : code;
+  }
+
+  function scheduleItemsOf(project, mode) {
+    const source = mode === 'detalhado' ? arrayOf(project.cronogramaDetalhado) : arrayOf(project.macroAtividades);
+    return source.filter(item => item && item.atividade && item.atividade !== 0 && item.atividade !== '0');
+  }
+
+  function scheduleSummaryAttr(project, mode, title) {
+    const items = scheduleItemsOf(project, mode);
+    const count = code => items.filter(item => effectiveScheduleStatus(item) === code).length;
+    const lines = items.length ? [
+      ['Total de etapas', items.length],
+      ['Concluídas', count(4)],
+      ['Iniciadas', count(1)],
+      ['Em risco', count(2)],
+      ['Atrasadas', count(3)],
+      ['Não iniciadas', count(0)],
+      ['Reprogramadas', items.filter(item => scheduleNote(item)).length]
+    ] : [['Sem etapas registradas', '']];
+    return `data-info-tip="${esc(JSON.stringify({ t: title, lines }))}"`;
+  }
+
+  function bindInfoTooltip() {
+    if (window.__infoTooltipBound) return;
+    window.__infoTooltipBound = true;
+    let tip = null;
+    const hostOf = target => target && target.closest ? target.closest('[data-info-tip]') : null;
+    const place = event => {
+      if (!tip) return;
+      const pad = 12, w = tip.offsetWidth, h = tip.offsetHeight;
+      let x = event.clientX + pad, y = event.clientY + pad;
+      if (x + w > window.innerWidth - 8) x = event.clientX - w - pad;
+      if (y + h > window.innerHeight - 8) y = event.clientY - h - pad;
+      tip.style.left = `${Math.max(8, x)}px`;
+      tip.style.top = `${Math.max(8, y)}px`;
+    };
+    document.addEventListener('mouseover', event => {
+      const host = hostOf(event.target);
+      if (!host) return;
+      let data = {};
+      try { data = JSON.parse(host.getAttribute('data-info-tip')); } catch (error) { data = {}; }
+      if (!tip) { tip = document.createElement('div'); tip.className = 'roadmap-tooltip list-tooltip info-tooltip'; document.body.appendChild(tip); }
+      const lines = Array.isArray(data.lines) ? data.lines : [];
+      tip.innerHTML = `<b>${esc(data.t || '')}</b>${data.text ? `<div class="info-text">${esc(data.text)}</div>` : ''}${lines.length ? `<dl>${lines.map(([label, value]) => `<dt>${esc(label)}</dt><dd>${esc(value)}</dd>`).join('')}</dl>` : ''}`;
+      tip.classList.add('show');
+      place(event);
+    });
+    document.addEventListener('mousemove', event => { if (tip && tip.classList.contains('show')) place(event); });
+    document.addEventListener('mouseout', event => {
+      const host = hostOf(event.target);
+      if (!host || (event.relatedTarget && host.contains(event.relatedTarget))) return;
+      if (tip) tip.classList.remove('show');
+    });
+  }
+  bindInfoTooltip();
+
+  // Parte do mês ocupada pela etapa (proporcional aos dias)
+  function monthFill(item, monthKey) {
+    const [year, month] = monthKey.split('-').map(Number);
+    const days = new Date(year, month, 0).getDate();
+    const start = scheduleDate(item.inicio || item.fim);
+    const end = scheduleDate(item.fim || item.termino || item.inicio);
+    const inMonth = date => date && date.getFullYear() === year && date.getMonth() === month - 1;
+    const from = inMonth(start) ? (start.getDate() - 1) / days : 0;
+    const to = inMonth(end) ? end.getDate() / days : 1;
+    const left = Math.max(0, Math.min(1, from));
+    const width = Math.max(0.02, Math.min(1, to) - left);
+    return { left: (left * 100).toFixed(2), width: (width * 100).toFixed(2) };
+  }
+
   function scheduleDate(value) {
     const match = clean(value).match(/^(\d{4})-(\d{2})(?:-(\d{2}))?/);
     if (!match) return null;
@@ -672,13 +916,20 @@
   function projectScheduleRows(items, months) {
     return items.map((item, index) => {
       const topicNumber = scheduleTopicNumber(item, index);
-      const statusCode = scheduleStatusCode(item);
+      const statusCode = effectiveScheduleStatus(item);
       const status = SCHEDULE_STATUS[statusCode];
+      const note = scheduleNote(item);
+      const noteTag = note ? ` <em class="reprog-tag" data-info-tip="${esc(JSON.stringify({ t: 'Data reprogramada', text: note }))}">reprogramado</em>` : '';
       const activity = clean(item.projeto) || 'Tópico sem descrição';
       const topicLabel = `${topicNumber} · ${activity}`;
       const period = `${formatDate(item.inicio)} → ${formatDate(item.fim || item.termino)}`;
       const barTitle = `${topicLabel} · ${period} · Status ${statusCode}: ${status.label}`;
-      return `<div class="road-row"><div class="road-name" title="${esc(topicLabel)}"><b>${esc(topicNumber)}</b><span>${esc(activity)}</span></div>${months.map(month => overlaps(item, month.key) ? `<div class="road-block ${status.className}" title="${esc(barTitle)}" aria-label="${esc(barTitle)}"></div>` : '<div class="road-cell"></div>').join('')}</div>`;
+      const periodTip = `data-info-tip="${esc(JSON.stringify({ t: 'Período', text: period }))}"`;
+      return `<div class="road-row"><div class="road-name"><b>${esc(topicNumber)}</b><span>${esc(activity)}${noteTag}</span></div>${months.map(month => {
+        if (!overlaps(item, month.key)) return '<div class="road-cell"></div>';
+        const fill = monthFill(item, month.key);
+        return `<div class="road-cell schedule-month-cell"><div class="road-block road-fill ${status.className}" style="margin-left:${fill.left}%;width:${fill.width}%" ${periodTip}></div></div>`;
+      }).join('')}</div>`;
     }).join('');
   }
 
@@ -687,9 +938,7 @@
   }
 
   function scheduleCard(project, mode) {
-    const source = mode === 'detalhado' ? arrayOf(project.cronogramaDetalhado) : arrayOf(project.macroAtividades);
-    const items = source
-      .filter(item => item && item.atividade && item.atividade !== 0 && item.atividade !== '0')
+    const items = scheduleItemsOf(project, mode)
       .map(item => ({ ...item, projeto: item.atividade, fim: item.fim || item.termino }));
     const months = scheduleMonths(project, items);
     const rows = projectScheduleRows(items, months);
@@ -780,13 +1029,13 @@
     const projectFinance = projectFinanceChart(project);
     const initiative = clean(first(project, ['iniciativa','forum','fórum'])) || 'Iniciativa não informada';
     view.innerHTML = `
-      <div class="project-topbar"><button class="back" type="button" onclick="closeProject()">← Voltar ao portfólio</button><select class="project-selector" onchange="openProject(this.value)">${state.projects.map(item => `<option value="${esc(item.id)}" ${item.id === project.id ? 'selected' : ''}>${esc(item.id)} · ${esc(item.projeto)}</option>`).join('')}</select></div>
+      <div class="project-topbar"><button class="back" type="button" onclick="closeProject()">← Voltar ao portfólio</button><select class="project-selector" onchange="openProject(this.value)">${state.projects.map(item => `<option value="${esc(item.id)}" ${item.id === project.id ? 'selected' : ''}>${esc(item.id)} · ${esc(item.projeto)}</option>`).join('')}</select><div class="project-search"><input type="search" id="projectSearch" placeholder="Buscar projeto por nome ou LOG..." autocomplete="off" oninput="searchProjects(this.value)" onkeydown="if(event.key==='Enter'){const f=document.querySelector('#projectSearchResults [data-id]');if(f)openProject(f.dataset.id);}"><div id="projectSearchResults" class="project-search-results"></div></div></div>
       <section class="project-hero hero-v9"><div class="hero-main"><div class="pid">${esc(project.id)} · ${esc(project.area || 'Não informado')} · ${esc(initiative)}</div><h1>${esc(project.projeto || 'Projeto sem nome')}</h1><div class="hero-tags-row"><div class="meta-row"><span class="chip">${esc(project.status || 'Sem stage')}</span><span class="chip">${esc(project.prioridade || 'S/P')}</span><span class="chip green">${esc(project.ganhoProjeto || 'Não informado')}</span><span class="chip risk-tag risk-${clean(project.risco || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z]/g, '') || 'na'}">Risco - ${esc(project.risco || 'Não informado')}</span></div></div></div></section>
-      <section class="detail-grid"><article class="card detail"><small>Início</small><b>${formatDate(project.inicio)}</b></article><article class="card detail"><small>Término</small><b>${formatDate(project.termino)}</b></article><article class="card detail"><small>Ponto focal</small><b title="${esc(project.pontoFocal)}">${esc(compact(project.pontoFocal || 'Não informado', 25))}</b></article><article class="card detail"><small>PMO</small><b title="${esc(project.pmo)}">${esc(compact(project.pmo || 'Não informado', 25))}</b></article></section>
+      <section class="detail-grid"><article class="card detail"><small>Início</small><b>${formatDate(project.inicio)}</b></article><article class="card detail"><small>Término</small><b>${formatDate(project.termino)}</b></article><article class="card detail"><small>Ponto focal</small><b title="${esc(project.pontoFocal)}">${esc(compact(project.pontoFocal || 'Não informado', 25))}</b></article><article class="card detail"><small>Focal Acompanhamento</small><b title="${esc(project.pmo)}">${esc(compact(project.pmo || 'Não informado', 25))}</b></article></section>
       <section class="detail-grid"><article class="card detail"><small>Saving Opex 12M</small><b>${moneyMM(savingField(project, 'opex12M'))}</b></article><article class="card detail"><small>Saving Capex 12M</small><b>${moneyMM(savingField(project, 'capex12M'))}</b></article><article class="card detail"><small>Saving total 12M</small><b>${moneyMM(savingField(project, 'total12M'))}</b></article><article class="card detail"><small>Saving 2026</small><b>${moneyMM(savingField(project, 'total2026'))}</b></article></section>
       <section class="section two-col"><article class="card text-card scroll-card"><div class="chart-title">Escopo do projeto</div><p class="scroll-content">${esc(project.escopo || 'Escopo não preenchido no arquivo de origem.')}</p></article><article class="card text-card scroll-card"><div class="chart-title">Principais entregáveis</div><ul class="checklist scroll-content">${deliverables.length ? deliverables.map(item => `<li>${esc(item)}</li>`).join('') : '<li>Entregáveis não preenchidos no arquivo de origem.</li>'}</ul></article></section>
-      <section class="section"><div class="section-head"><div><h2>Cronograma do projeto</h2><p>Alternância entre visão executiva e detalhada.</p></div></div><div class="tabs"><button class="tab ${state.scheduleMode === 'macro' ? 'active' : ''}" type="button" onclick="switchSchedule('macro')">Macrocronograma</button><button class="tab ${state.scheduleMode === 'detalhado' ? 'active' : ''}" type="button" onclick="switchSchedule('detalhado')">Cronograma detalhado</button></div><article class="card roadmap-card" id="projectSchedule">${scheduleCard(project, state.scheduleMode)}</article></section>
-      <section class="section two-col"><article class="card line-chart project-finance-chart"><div class="chart-title">Desempenho financeiro do projeto</div><div class="chart-sub">${esc(projectFinance.sub)}</div>${projectFinance.body}</article><article class="card timeline"><div class="chart-title" style="margin-bottom:18px">Histórico de atualizações</div>${projectRiskNote(project) ? `<div class="timeline-risk"><b>⚠ Risco</b><p>${esc(projectRiskNote(project))}</p></div>` : ''}${timeline.length ? timeline.map(item => `<div class="time-item"><div class="time-date">${shortDate(item.data)}</div><div class="time-line"></div><div class="time-copy"><b>Atualização registrada</b><p>${esc(item.detalhe)}</p></div></div>`).join('') : '<div class="empty-state">Sem atualizações registradas no Status do Projeto.</div>'}</article></section>`;
+      <section class="section"><div class="section-head"><div><h2>Cronograma do projeto</h2><p>Alternância entre visão executiva e detalhada.</p></div></div><div class="tabs"><button class="tab ${state.scheduleMode === 'macro' ? 'active' : ''}" type="button" ${scheduleSummaryAttr(project, 'macro', 'Resumo do macrocronograma')} onclick="switchSchedule('macro')">Macrocronograma</button>${canOpenDetailed(project) ? `<button class="tab ${state.scheduleMode === 'detalhado' ? 'active' : ''}" type="button" ${scheduleSummaryAttr(project, 'detalhado', 'Resumo do cronograma detalhado')} onclick="switchSchedule('detalhado')">Cronograma detalhado</button>` : `<button class="tab tab-locked" type="button" disabled title="Cronograma detalhado disponível apenas para projetos da gerência de Transportes">🔒 Cronograma detalhado</button>`}</div><article class="card roadmap-card" id="projectSchedule">${scheduleCard(project, state.scheduleMode)}</article></section>
+      <section class="section two-col">${isQualitative(project) ? qualitativeProgressCard(project) : `<article class="card line-chart project-finance-chart"><div class="chart-title">Desempenho financeiro do projeto</div><div class="chart-sub">${esc(projectFinance.sub)}</div>${projectFinance.body}</article>`}<article class="card timeline"><div class="chart-title" style="margin-bottom:18px">Histórico de atualizações</div>${projectRiskNote(project) ? `<div class="timeline-risk"><b>⚠ Risco</b><p>${esc(projectRiskNote(project))}</p></div>` : ''}${timeline.length ? timeline.map(item => `<div class="time-item"><div class="time-date">${shortDate(item.data)}</div><div class="time-line"></div><div class="time-copy"><b>Atualização registrada</b><p>${esc(item.detalhe)}</p></div></div>`).join('') : '<div class="empty-state">Sem atualizações registradas no Status do Projeto.</div>'}</article></section>`;
   }
 
   function renderDashboard() {
@@ -816,6 +1065,11 @@
   window.filterPortfolioTable = renderTable;
   window.filterTable = renderTable;
 
+  function canOpenDetailed(project) {
+    const area = clean(project?.area).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    return area.startsWith('transporte');
+  }
+
   window.openProject = id => {
     const project = state.projects.find(item => item.id === id) || state.projects[0];
     if (!project) return;
@@ -830,6 +1084,22 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  window.searchProjects = value => {
+    const box = $('#projectSearchResults');
+    if (!box) return;
+    const norm = text => clean(text).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const query = norm(value);
+    if (!query) { box.innerHTML = ''; box.classList.remove('show'); return; }
+    const found = state.projects.filter(item => norm(`${item.id} ${item.projeto}`).includes(query)).slice(0, 12);
+    box.innerHTML = found.length
+      ? found.map(item => `<button type="button" data-id="${esc(item.id)}" onmousedown="event.preventDefault();openProject(this.dataset.id)"><b>${esc(item.id)}</b> · ${esc(item.projeto)}</button>`).join('')
+      : '<div class="empty">Nenhum projeto encontrado.</div>';
+    box.classList.add('show');
+  };
+  document.addEventListener('focusout', event => {
+    if (event.target && event.target.id === 'projectSearch') setTimeout(() => $('#projectSearchResults')?.classList.remove('show'), 150);
+  });
+
   window.closeProject = () => {
     document.body.classList.remove('project-open');
     $('#home')?.classList.remove('hide');
@@ -840,8 +1110,8 @@
   };
 
   window.switchSchedule = mode => {
-    state.scheduleMode = mode === 'detalhado' ? 'detalhado' : 'macro';
     const project = state.projects.find(item => item.id === state.selectedId);
+    state.scheduleMode = mode === 'detalhado' && canOpenDetailed(project) ? 'detalhado' : 'macro';
     if (project) renderProject(project);
   };
 
