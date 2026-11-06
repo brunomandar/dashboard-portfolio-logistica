@@ -12,7 +12,7 @@
   "status": "L1",
   "situacao": "Planejado",
   "prioridade": "P0",
-  "ganhoProjeto": "",
+  "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O projeto visa estruturar e aprimorar o controle de estoque PEP para projetos, empresarial e MDR, por meio da realização de inventário nacional, desenvolvimento e implantação de funcionalidades no SIAKI, ampliando a visibilidade, o controle e a gestão dos estoques. A iniciativa considera o rollout da solução para as áreas envolvidas e o processo contínuo de inventário como premissas para garantir maior acuracidade e governança dos materiais.",
   "entregaveis": [
@@ -2859,6 +2859,6 @@
   "fonte": {
     "arquivo": "LOG-037 - Controle de estoque PEP.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-037%20-%20Controle%20de%20estoque%20PEP.xlsx?web=1",
-    "extraidoEm": "2026-11-05T17:49:13-03:00"
+    "extraidoEm": "2026-11-06T11:53:03-03:00"
   }
 }

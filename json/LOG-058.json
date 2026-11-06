@@ -12,7 +12,7 @@
   "status": "L5",
   "situacao": "Concluído",
   "prioridade": "Concluído",
-  "ganhoProjeto": "Qualitativo",
+  "ganhoProjeto": "Quantitativo",
   "tipos": [],
   "escopo": "O projeto migra o atendimento do Televendas dos Correios para a modalidade Expressa, com avaliação de volumetria e custo por cidade (moto versus Correios) e prioridade para o Rio Grande do Sul, em atendimento a uma demanda originada por escalation da região Sul. A ampliação das áreas de atendimento no RS foi concluída e o projeto encerrado com a demanda atendida.",
   "entregaveis": [
@@ -2892,6 +2892,6 @@
   "fonte": {
     "arquivo": "LOG-058 - Migração do TELEVENDAS de correios para Expressa.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-058%20-%20Migra%C3%A7%C3%A3o%20do%20TELEVENDAS%20de%20correios%20para%20Expressa.xlsx?web=1",
-    "extraidoEm": "2026-11-05T17:49:38-03:00"
+    "extraidoEm": "2026-11-06T11:53:25-03:00"
   }
 }

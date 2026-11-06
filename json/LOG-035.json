@@ -12,7 +12,7 @@
   "status": "L1",
   "situacao": "Planejado",
   "prioridade": "P0",
-  "ganhoProjeto": "",
+  "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O projeto busca aumentar o percentual de retorno de acessórios, partes e peças na logística reversa por meio da implantação de controles sistêmicos, melhoria da rastreabilidade dos itens e atuação conjunta com parceiros, regionais e equipes técnicas, visando reduzir perdas, ampliar a visibilidade dos estoques de reversa e aumentar a eficiência operacional do processo.",
   "entregaveis": [
@@ -3777,6 +3777,6 @@
   "fonte": {
     "arquivo": "LOG-035 - Retorno de Acessórios  Partes e Peças.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-035%20-%20Retorno%20de%20Acess%C3%B3rios%20%20Partes%20e%20Pe%C3%A7as.xlsx?web=1",
-    "extraidoEm": "2026-11-05T17:49:08-03:00"
+    "extraidoEm": "2026-11-06T11:53:00-03:00"
   }
 }

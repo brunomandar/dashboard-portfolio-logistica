@@ -1,7 +1,7 @@
 {
   "id": "LOG-042",
   "projeto": "Agentes de IA para Monitorar a Cadeia (Prospecção)",
-  "area": "",
+  "area": "Int. Logística",
   "pontoFocal": "Ingrid Alcici",
   "inicio": "2026-07-01",
   "termino": "",
@@ -12,7 +12,7 @@
   "status": "L0",
   "situacao": "Planejado",
   "prioridade": "P2",
-  "ganhoProjeto": "",
+  "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O projeto visa avaliar e estruturar o uso de agentes de IA para monitoramento inteligente da cadeia logística, utilizando análise preditiva e monitoramento automatizado para antecipação de riscos, identificação de gargalos e suporte à tomada de decisão operacional e estratégica. A iniciativa considera a integração com sistemas existentes, definição da arquitetura analítica e maturidade tecnológica necessária para evolução da torre de controle para um modelo mais autônomo.",
   "entregaveis": [
@@ -3777,6 +3777,6 @@
   "fonte": {
     "arquivo": "LOG-042 - Agentes de IA para Monitorar a Cadeia (Prospecção).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-042%20-%20Agentes%20de%20IA%20para%20Monitorar%20a%20Cadeia%20%28Prospec%C3%A7%C3%A3o%29.xlsx?web=1",
-    "extraidoEm": "2026-11-05T17:49:16-03:00"
+    "extraidoEm": "2026-11-06T11:53:06-03:00"
   }
 }

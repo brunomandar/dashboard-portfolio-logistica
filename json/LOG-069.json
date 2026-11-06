@@ -1,16 +1,16 @@
 {
   "id": "LOG-069",
   "projeto": "Reforma Tributária",
-  "area": "Transportes",
-  "pontoFocal": "Helder Silva",
+  "area": "Int. Logística",
+  "pontoFocal": "Ingrid Alcici",
   "inicio": "2026-08-24",
   "termino": "2027-01-31",
   "inicioCaptura": "",
   "iniciativa": "Op. Transporte",
   "pmo": "Bruno",
   "risco": "Baixo",
-  "status": "L0",
-  "situacao": "Planejado",
+  "status": "L3",
+  "situacao": "Em execução",
   "prioridade": "P0",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
@@ -3309,6 +3309,6 @@
   "fonte": {
     "arquivo": "LOG-069 - Reforma Tributária.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-069%20-%20Reforma%20Tribut%C3%A1ria.xlsx?web=1",
-    "extraidoEm": "2026-11-05T17:49:54-03:00"
+    "extraidoEm": "2026-11-06T11:53:41-03:00"
   }
 }
