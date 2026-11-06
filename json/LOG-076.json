@@ -1179,6 +1179,16 @@
   ],
   "historico": [
     {
+      "data": "2026-11-06",
+      "acoes": "Corrigir o cálculo de SLA utilizando a data correta do TOA.\nDisponibilizar nova visão/report de SLA com o conceito revisado.\nLevantar previsão de atendimento dos aproximadamente 3 mil casos em atraso.\nRegularizar as 260 OS já entregues que aguardam baixa sistêmica.\nTratar com prioridade os cerca de 600 casos pendentes da Postal.\nIntensificar o acompanhamento e cobrança das transportadoras com plano de ação para redução dos atrasos.\nAvaliar ajustes no fluxo de expedição para reduzir impacto no prazo de entrega.\nAtualizar as previsões de atendimento no sistema para dar visibilidade correta aos casos em atraso.",
+      "detalhe": "Realizada revisão dos indicadores de SLA e identificado que o cálculo atual está utilizando conceito incorreto, gerando distorção na visão dos atrasos. Foi alinhada a correção da medição utilizando a data de abertura/reserva da OS no TOA. Também foram discutidos os impactos do backlog de aproximadamente 3 mil ordens em atraso, a necessidade de acelerar baixas sistêmicas e reforçar o acompanhamento das transportadoras para estabilização da operação."
+    },
+    {
+      "data": "2026-11-04",
+      "acoes": "Identificar o motivo do TOA não estar seguindo o SLA combinado\nUtilizar novo criterio para a emissao das OS e despacho\nFinalizar contrato entre as partes",
+      "detalhe": "TOA vem com alguns cadastros para entrega no mesmo dia, D0, não está considerando o SLA da PostalGow\nIdentificado que a Postal estava utilizando críterio errado para expedição das ordens, o que estava gerando atrasos e quebra das agendas \nAlinhamento contratual entre as áreas de Compras e Transportes junto com a PostalGow"
+    },
+    {
       "data": "2026-11-03",
       "acoes": "atualizar fluxo de devolução de equipamento com a nova informação",
       "detalhe": "Conversa com a Vanessa, ela disse que estão alinhando com compras sobre a retirada e devolução da Tv Box, que em algumas áreas eles não vão fazer as retiradas via transportadora, será gerado um voucher para o cliente fazer o envio via correios"
@@ -1219,7 +1229,7 @@
       "detalhe": "Operação em fase final de implantação, com infraestrutura concluída e testes do RPA em andamento. Permanecem pendentes as liberações de acessos e validações de LGPD no TOA, impactando a entrada em operação, reprogramada para 13/10/2026."
     }
   ],
-  "statusProjeto": "Risco: Atraso na disponibilidade das bases pelo time de LGPD. \n05/11/2026: Fechado entre PostalGow, Time de Transporte e Compras as regras operacionais que irão ser estabelecidas para execução da operação.\nTime postalgow precisa corrigir erros do relatório e disponibilizar . O modelo de extração TOA será automatizado.\n04/11/2026: Macro fluxo devolução preliminar compartilhado com Fabrício, pendente fechamento das novas regras junto ao time de compras\n27/10/2026: Criar fluxo de devolução dos equipamentos para Postal Gow - Reversa\n26/10/2026: Backlog de 2247 OS\n23/10/2026: Ajuste no robo e embaladas 900 OS\n22/10/2026: Inicio da separação das 274 solicitações e envio pela Postal Gow\n21/10/2026: Go-Live iniciado, porém não conseguiu emitir as 274 etiquetas para o inicio da separação\n07/10/2026: Operação em fase final de implantação, com infraestrutura concluída e testes do RPA em andamento. Permanecem pendentes as liberações de acessos e validações de LGPD no TOA, impactando a entrada em operação, reprogramada para 13/10/2026.",
+  "statusProjeto": "Risco: Atraso na disponibilidade das bases pelo time de LGPD. \n06/11/2026: Discutidos os impactos do backlog de quse 3 mil ordens em atraso, a necessidade de acelerar baixas sistêmicas e acompanhamento das transportadoras.\n05/11/2026: Fechado entre PostalGow, Time de Transporte e Compras as regras operacionais que irão ser estabelecidas para execução da operação.\nTime postalgow precisa corrigir erros do relatório e disponibilizar . O modelo de extração TOA será automatizado.\n04/11/2026: Macro fluxo devolução preliminar compartilhado com Fabrício, pendente fechamento das novas regras junto ao time de compras\n30/10/2026: Enviado comunicado via e-mail informando que as entregas de Claro Box passou a operar via Logística.\n27/10/2026: Criar fluxo de devolução dos equipamentos para Postal Gow - Reversa\n26/10/2026: Backlog de 2247 OS\n23/10/2026: Ajuste no robo e embaladas 900 OS\n22/10/2026: Inicio da separação das 274 solicitações e envio pela Postal Gow\n21/10/2026: Go-Live iniciado, porém não conseguiu emitir as 274 etiquetas para o inicio da separação\n07/10/2026: Operação em fase final de implantação, com infraestrutura concluída e testes do RPA em andamento. Permanecem pendentes as liberações de acessos e validações de LGPD no TOA, impactando a entrada em operação, reprogramada para 13/10/2026.",
   "financeiro": [
     {
       "id": "LOG-076",
@@ -3817,6 +3827,6 @@
   "fonte": {
     "arquivo": "LOG-076 - Desativação DTH.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-076%20-%20Desativa%C3%A7%C3%A3o%20DTH.xlsx?web=1",
-    "extraidoEm": "2026-11-06T11:53:55-03:00"
+    "extraidoEm": "2026-11-06T16:42:27-03:00"
   }
 }

@@ -1,6 +1,6 @@
 {
   "id": "LOG-079",
-  "projeto": "Integração TMS - Logística",
+  "projeto": "TMS Identity and Access Management",
   "area": "Transportes",
   "pontoFocal": "Wagner Alves",
   "inicio": "2026-10-15",
@@ -364,9 +364,9 @@
       "numero": "2.2",
       "atividade": "Criação Perfil x Information Onwer",
       "responsavel": "Logistisca",
-      "status": 1,
+      "status": 4,
       "inicio": "2026-11-05",
-      "fim": "2026-11-09",
+      "fim": "2026-11-06",
       "anotacao": ""
     },
     {
@@ -578,8 +578,8 @@
     },
     {
       "numero": "4.12",
-      "atividade": "Abertura RDM para implantação em produção",
-      "responsavel": "PING Arquiteto SI + logistica / Catalde",
+      "atividade": "Abertura RDM para implantação em produção ( abertura chamado smart TI)",
+      "responsavel": "Logistica",
       "status": 0,
       "inicio": "2027-01-04",
       "fim": "2027-01-05",
@@ -588,7 +588,7 @@
     {
       "numero": "4.13",
       "atividade": "Defesa da mudança no Comitê de GMUD",
-      "responsavel": "PING Arquiteto SI",
+      "responsavel": "Damaceno",
       "status": 0,
       "inicio": "2027-01-06",
       "fim": "2027-01-07",
@@ -3828,8 +3828,8 @@
     }
   ],
   "fonte": {
-    "arquivo": "LOG-079 - Segundo Fator de Autenticação TMS (PING e IGA).xlsx",
-    "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-079%20-%20Segundo%20Fator%20de%20Autentica%C3%A7%C3%A3o%20TMS%20%28PING%20e%20IGA%29.xlsx?web=1",
-    "extraidoEm": "2026-11-06T11:54:02-03:00"
+    "arquivo": "LOG-79 -TMS Identity and Access Management.xlsx",
+    "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-79%20-TMS%20Identity%20and%20Access%20Management.xlsx?web=1",
+    "extraidoEm": "2026-11-06T16:42:38-03:00"
   }
 }

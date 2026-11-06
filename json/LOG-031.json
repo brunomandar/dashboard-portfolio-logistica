@@ -5,15 +5,17 @@
   "pontoFocal": "Evandro Felix",
   "inicio": "2026-03-01",
   "termino": "2026-12-01",
-  "inicioCaptura": "2026-03-01",
+  "inicioCaptura": "2027-02-01",
   "iniciativa": "Op. Logística",
   "pmo": "Bruno",
-  "risco": "A validar",
+  "risco": "Médio",
   "status": "L1",
-  "situacao": "Planejado",
+  "situacao": "Atenção",
   "prioridade": "P0",
   "ganhoProjeto": "Quantitativo",
-  "tipos": [],
+  "tipos": [
+    "Opex"
+  ],
   "escopo": "O projeto substitui caixas de papelão por Ecobox (caixas plásticas reutilizáveis), otimizando a logística reversa e o fluxo de materiais para reduzir o uso de papelão, os custos logísticos e de aquisição, e aumentar a eficiência no transporte e na armazenagem e a sustentabilidade da operação. A iniciativa considera como premissas a redução de custos no longo prazo, a capacidade da operação de reutilizar as caixas, a redução efetiva de danos no transporte e um volume que justifique a substituição do modelo atual, condicionada à aprovação da diretoria (GO/NO GO).",
   "entregaveis": [
     "Ecobox implementada na operação.",
@@ -22,9 +24,9 @@
     "Modelo operacional definido (logística direta e reversa)."
   ],
   "saving": {
-    "opex12M": 0.0,
+    "opex12M": 2.4,
     "capex12M": 0.0,
-    "total12M": 0.0,
+    "total12M": 2.4,
     "opex2026": 0.0,
     "capex2026": 0.0,
     "total2026": 0.0
@@ -33,7 +35,7 @@
     {
       "numero": "1",
       "atividade": "Business Case",
-      "responsavel": "Evandro Felix",
+      "responsavel": "Reparo",
       "status": 5,
       "inicio": "2026-01-19",
       "fim": "2026-03-10",
@@ -43,54 +45,54 @@
       "numero": "2",
       "atividade": "SAP / Fiscal",
       "responsavel": "Reparo / SAP / Fiscal",
-      "status": 3,
-      "inicio": "2026-04-13",
-      "fim": "2026-04-24",
+      "status": 4,
+      "inicio": "2026-03-11",
+      "fim": "2026-05-25",
       "anotacao": ""
     },
     {
       "numero": "3",
       "atividade": "Estratégia de Aquisição",
-      "responsavel": "Evandro Felix",
-      "status": 3,
-      "inicio": "2026-05-06",
-      "fim": "2026-07-20",
+      "responsavel": "Reparo",
+      "status": 4,
+      "inicio": "2026-06-01",
+      "fim": "2026-08-20",
       "anotacao": ""
     },
     {
       "numero": "4",
       "atividade": "Financeiro / Business Wide Savings",
-      "responsavel": "A confirmar",
-      "status": 1,
-      "inicio": "2026-07-21",
-      "fim": "2026-10-30",
+      "responsavel": "Reparo / Financeiro",
+      "status": 4,
+      "inicio": "2026-08-21",
+      "fim": "2026-09-29",
       "anotacao": ""
     },
     {
       "numero": "5",
       "atividade": "Validação DPR / Sustentabilidade",
-      "responsavel": "DPR / Evandro Felix",
+      "responsavel": "DPR / Reparo",
       "status": 1,
-      "inicio": "2026-09-21",
-      "fim": "2026-10-20",
+      "inicio": "2026-10-01",
+      "fim": "2026-11-15",
       "anotacao": ""
     },
     {
       "numero": "6",
       "atividade": "Decisão e Contratação",
-      "responsavel": "A confirmar",
+      "responsavel": "Compras / Reparo",
       "status": 0,
-      "inicio": "2026-10-21",
-      "fim": "2026-12-18",
+      "inicio": "2026-11-16",
+      "fim": "2027-01-04",
       "anotacao": ""
     },
     {
       "numero": "7",
       "atividade": "Implantação e Captura",
-      "responsavel": "A confirmar",
+      "responsavel": "Reparo",
       "status": 0,
-      "inicio": "2026-12-01",
-      "fim": "2027-03-31",
+      "inicio": "2027-01-05",
+      "fim": "2027-01-31",
       "anotacao": ""
     }
   ],
@@ -3046,6 +3048,6 @@
   "fonte": {
     "arquivo": "LOG-031 - Ampliação da Ecobox.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-031%20-%20Amplia%C3%A7%C3%A3o%20da%20Ecobox.xlsx?web=1",
-    "extraidoEm": "2026-11-06T11:52:53-03:00"
+    "extraidoEm": "2026-11-06T16:41:26-03:00"
   }
 }

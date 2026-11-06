@@ -9,7 +9,7 @@
   "iniciativa": "Op. Logística",
   "pmo": "Bruno",
   "risco": "Médio",
-  "status": "L2",
+  "status": "L3",
   "situacao": "Atenção",
   "prioridade": "P0",
   "ganhoProjeto": "Qualitativo",
@@ -34,16 +34,16 @@
     {
       "numero": "1",
       "atividade": "Planejamento e governança do projeto",
-      "responsavel": "Cleria Plaster",
+      "responsavel": "Time CD",
       "status": 4,
       "inicio": "2026-04-01",
-      "fim": "2026-04-15",
+      "fim": "2026-04-30",
       "anotacao": ""
     },
     {
       "numero": "2",
       "atividade": "Mobilização das áreas e entrevistas",
-      "responsavel": "Cleria Plaster / Gerências de Logística",
+      "responsavel": "Time CD / Gerências de Logística",
       "status": 4,
       "inicio": "2026-04-13",
       "fim": "2026-08-07",
@@ -54,52 +54,52 @@
       "atividade": "Desenvolvimento do BIA",
       "responsavel": "Áreas de Logística",
       "status": 4,
-      "inicio": "2026-06-01",
+      "inicio": "2026-08-08",
       "fim": "2026-08-21",
       "anotacao": ""
     },
     {
       "numero": "4",
       "atividade": "Validação do BIA com a SIC",
-      "responsavel": "SIC / Cleria Plaster",
+      "responsavel": "SIC / Time CD",
       "status": 4,
-      "inicio": "2026-06-10",
-      "fim": "2026-08-31",
+      "inicio": "2026-08-22",
+      "fim": "2026-09-10",
       "anotacao": ""
     },
     {
       "numero": "5",
       "atividade": "Desenvolvimento e validação dos PCNs",
-      "responsavel": "Cleria Plaster / Gerências",
+      "responsavel": "Time CD / Gerências",
       "status": 2,
-      "inicio": "2026-08-21",
-      "fim": "2026-10-15",
+      "inicio": "2026-09-11",
+      "fim": "2026-11-15",
       "anotacao": ""
     },
     {
       "numero": "6",
       "atividade": "Plano de Contingência Global da Diretoria",
-      "responsavel": "Cleria Plaster / SIC",
+      "responsavel": "Time CD / SIC",
       "status": 1,
-      "inicio": "2026-09-29",
-      "fim": "2026-10-31",
+      "inicio": "2026-11-16",
+      "fim": "2026-11-30",
       "anotacao": ""
     },
     {
       "numero": "7",
       "atividade": "Treinamento e simulações das equipes",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CD",
       "status": 0,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-12-01",
+      "fim": "2026-12-17",
       "anotacao": ""
     },
     {
       "numero": "8",
       "atividade": "Publicação, implantação e monitoramento",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CD",
       "status": 0,
-      "inicio": "",
+      "inicio": "2026-12-18",
       "fim": "2026-12-31",
       "anotacao": ""
     }
@@ -2993,6 +2993,6 @@
   "fonte": {
     "arquivo": "LOG-021 - Gestão de Risco.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-021%20-%20Gest%C3%A3o%20de%20Risco.xlsx?web=1",
-    "extraidoEm": "2026-11-06T11:52:41-03:00"
+    "extraidoEm": "2026-11-06T16:41:15-03:00"
   }
 }

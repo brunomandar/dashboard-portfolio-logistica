@@ -45,36 +45,36 @@
       "numero": "02.",
       "atividade": "DIAGNÓSTICO E DESENHO TRIBUTÁRIO LOGÍSTICO",
       "responsavel": "Time Claro",
-      "status": 2,
-      "inicio": "2026-09-14",
-      "fim": "2026-10-23",
+      "status": 4,
+      "inicio": "2026-09-19",
+      "fim": "2026-10-20",
       "anotacao": ""
     },
     {
       "numero": "03.",
       "atividade": "ADEQUAÇÃO DO SAP E SISTEMAS FISCAIS",
       "responsavel": "Time Claro",
-      "status": 2,
-      "inicio": "2026-09-21",
-      "fim": "2026-12-11",
+      "status": 1,
+      "inicio": "2026-10-21",
+      "fim": "2026-11-06",
       "anotacao": ""
     },
     {
       "numero": "04.",
       "atividade": "ADEQUAÇÃO DO TMS E DOCUMENTOS DE TRANSPORTE",
       "responsavel": "Time Claro / Catalde",
-      "status": 2,
-      "inicio": "2026-09-21",
-      "fim": "2026-12-11",
+      "status": 1,
+      "inicio": "2026-11-02",
+      "fim": "2026-12-08",
       "anotacao": ""
     },
     {
       "numero": "05.",
       "atividade": "ADEQUAÇÃO DOS TRANSPORTADORES E CONTRATOS",
       "responsavel": "Time Claro",
-      "status": 2,
-      "inicio": "2026-09-14",
-      "fim": "2026-12-18",
+      "status": 0,
+      "inicio": "2026-12-10",
+      "fim": "2027-01-06",
       "anotacao": ""
     },
     {
@@ -82,8 +82,8 @@
       "atividade": "TESTES INTEGRADOS E READINESS 2026",
       "responsavel": "Time Claro",
       "status": 0,
-      "inicio": "2026-11-02",
-      "fim": "2026-12-23",
+      "inicio": "2027-01-07",
+      "fim": "2027-02-10",
       "anotacao": ""
     },
     {
@@ -91,7 +91,7 @@
       "atividade": "ENTRADA 2027, ESTABILIZAÇÃO E BENEFÍCIOS",
       "responsavel": "Time Claro",
       "status": 0,
-      "inicio": "2027-01-01",
+      "inicio": "2027-02-11",
       "fim": "2027-03-31",
       "anotacao": ""
     },
@@ -3309,6 +3309,6 @@
   "fonte": {
     "arquivo": "LOG-069 - Reforma Tributária.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-069%20-%20Reforma%20Tribut%C3%A1ria.xlsx?web=1",
-    "extraidoEm": "2026-11-06T11:53:41-03:00"
+    "extraidoEm": "2026-11-06T16:42:14-03:00"
   }
 }

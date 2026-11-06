@@ -58,7 +58,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-08-27",
-      "fim": "2026-09-10",
+      "fim": "2026-09-20",
       "anotacao": ""
     },
     {
@@ -83,17 +83,17 @@
       "numero": "6",
       "atividade": "Envio da Relação de Cidades e EPOs de Atendimento",
       "responsavel": "Transportes / Logistica",
-      "status": 3,
-      "inicio": "2026-10-19",
-      "fim": "2026-10-23",
+      "status": 4,
+      "inicio": "2026-10-22",
+      "fim": "2026-10-29",
       "anotacao": ""
     },
     {
       "numero": "7",
       "atividade": "Implantação da Migração da Esteira",
       "responsavel": "Transportes",
-      "status": 0,
-      "inicio": "2026-10-26",
+      "status": 1,
+      "inicio": "2026-10-30",
       "fim": "2026-11-10",
       "anotacao": ""
     },
@@ -168,7 +168,7 @@
       "responsavel": "Transportes",
       "status": 4,
       "inicio": "2026-08-27",
-      "fim": "2026-09-10",
+      "fim": "2026-09-20",
       "anotacao": ""
     },
     {
@@ -238,53 +238,53 @@
       "numero": "6",
       "atividade": "Envio da Relação de Cidades e EPOs de Atendimento",
       "responsavel": "Transportes / Logistica",
-      "status": 3,
-      "inicio": "2026-10-19",
-      "fim": "2026-10-23",
+      "status": 4,
+      "inicio": "2026-10-22",
+      "fim": "2026-10-29",
       "anotacao": ""
     },
     {
       "numero": "6.1",
       "atividade": "Validar tabela de custos vigente (cidade/fornecedor, incl. 22 cidades SPI)",
       "responsavel": "Transportes",
-      "status": 3,
-      "inicio": "2026-10-19",
-      "fim": "2026-10-20",
+      "status": 4,
+      "inicio": "2026-10-22",
+      "fim": "2026-10-24",
       "anotacao": ""
     },
     {
       "numero": "6.2",
       "atividade": "Confirmar capacidade, contrato e readiness das EPOs (SPI)",
       "responsavel": "Transportes",
-      "status": 3,
-      "inicio": "2026-10-21",
-      "fim": "2026-10-22",
+      "status": 4,
+      "inicio": "2026-10-23",
+      "fim": "2026-10-25",
       "anotacao": ""
     },
     {
       "numero": "6.3",
       "atividade": "Definir piloto com linha de base (custo, SLA, cancelamento, volume)",
       "responsavel": "Transportes",
-      "status": 3,
-      "inicio": "2026-10-21",
-      "fim": "2026-10-22",
+      "status": 4,
+      "inicio": "2026-10-24",
+      "fim": "2026-10-26",
       "anotacao": ""
     },
     {
       "numero": "6.4",
       "atividade": "Definir gatilhos de continuidade (saving, cancelamento e SLA)",
       "responsavel": "Transportes",
-      "status": 3,
-      "inicio": "2026-10-22",
-      "fim": "2026-10-23",
+      "status": 4,
+      "inicio": "2026-10-26",
+      "fim": "2026-10-29",
       "anotacao": ""
     },
     {
       "numero": "7",
       "atividade": "Implantação da Migração da Esteira",
       "responsavel": "Transportes",
-      "status": 0,
-      "inicio": "2026-10-26",
+      "status": 1,
+      "inicio": "2026-10-30",
       "fim": "2026-11-10",
       "anotacao": ""
     },
@@ -292,8 +292,8 @@
       "numero": "7.1",
       "atividade": "Migração da esteira",
       "responsavel": "Transportes",
-      "status": 0,
-      "inicio": "2026-10-26",
+      "status": 1,
+      "inicio": "2026-10-30",
       "fim": "2026-11-06",
       "anotacao": ""
     },
@@ -301,7 +301,7 @@
       "numero": "7.2",
       "atividade": "Acompanhar estabilização após a implantação",
       "responsavel": "Transportes",
-      "status": 0,
+      "status": 1,
       "inicio": "2026-11-06",
       "fim": "2026-11-10",
       "anotacao": ""
@@ -2950,6 +2950,6 @@
   "fonte": {
     "arquivo": "LOG-068 - Retornar Entrega de Simcard e ComboMulti para EPO.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-068%20-%20Retornar%20Entrega%20de%20Simcard%20e%20ComboMulti%20para%20EPO.xlsx?web=1",
-    "extraidoEm": "2026-11-06T11:53:39-03:00"
+    "extraidoEm": "2026-11-06T16:42:12-03:00"
   }
 }
