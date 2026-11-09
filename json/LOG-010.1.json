@@ -1181,7 +1181,7 @@
     {
       "data": "2026-11-03",
       "acoes": "Logistica : Apresentar o fluxo de cotação e esteira de canal vermelho",
-      "detalhe": ""
+      "detalhe": "Fuxo apresentado"
     },
     {
       "data": "2026-10-30",
@@ -1289,7 +1289,7 @@
       "detalhe": "Aqui foi colocado a mesa qual seria o foco do BID"
     }
   ],
-  "statusProjeto": "Risco:\ndata - Pontos relevantes para aquele evento\n30/10/26 -",
+  "statusProjeto": "Risco:\n06/11/2026 -",
   "financeiro": [
     {
       "id": "LOG-010.1",
@@ -3887,6 +3887,6 @@
   "fonte": {
     "arquivo": "LOG-010.1 - BID Transportes - Engenharia.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.1%20-%20BID%20Transportes%20-%20Engenharia.xlsx?web=1",
-    "extraidoEm": "2026-11-06T16:40:39-03:00"
+    "extraidoEm": "2026-11-09T09:16:06-03:00"
   }
 }

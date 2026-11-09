@@ -17,7 +17,9 @@
     "Capex"
   ],
   "escopo": "Ações para massificar o retorno de Controles. Atualmente há retorno do equipamento sem o retorno do controle. \nMeta é potencializar o retorno das fontes com campanhas junto as regionais.",
-  "entregaveis": [],
+  "entregaveis": [
+    "Aumento da Recuperação de Controles e Fontes"
+  ],
   "saving": {
     "opex12M": 0.0,
     "capex12M": 10.2,
@@ -29,11 +31,11 @@
   "macroAtividades": [
     {
       "numero": "01.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Revisão do FCST de  ( Nov/Dez)",
+      "responsavel": "Carlos",
+      "status": 0,
+      "inicio": "2026-11-06",
+      "fim": "2026-11-13",
       "anotacao": ""
     },
     {
@@ -1174,7 +1176,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "data - Pontos relevantes para aquele evento",
+  "statusProjeto": "6/11/2026 Reversa de Acessórios: projeto apresenta realizado de R$ 9,7 MM versus meta/FCST de R$ 10,2 MM (gap de R$ 0,47 MM). Em validação da projeção de novembro e dezembro para revisão do FCST e alinhamento da justificativa de fechamento do exercício.",
   "financeiro": [
     {
       "id": "LOG-011",
@@ -3772,6 +3774,6 @@
   "fonte": {
     "arquivo": "LOG-011 - Reversa de Acessórios (controles e fontes).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-011%20-%20Reversa%20de%20Acess%C3%B3rios%20%28controles%20e%20fontes%29.xlsx?web=1",
-    "extraidoEm": "2026-11-06T16:41:00-03:00"
+    "extraidoEm": "2026-11-09T09:16:27-03:00"
   }
 }

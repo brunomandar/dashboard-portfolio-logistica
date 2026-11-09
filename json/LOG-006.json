@@ -1,163 +1,169 @@
 {
   "id": "LOG-006",
   "projeto": "Projeto Retirada de Equipamento por Regional",
-  "area": "",
+  "area": "Desconexão",
   "pontoFocal": "",
   "inicio": "",
-  "termino": "",
-  "inicioCaptura": "",
-  "iniciativa": "",
+  "termino": "2026-12-01",
+  "inicioCaptura": "2026-01-01",
+  "iniciativa": "DGP",
   "pmo": "",
-  "risco": "",
-  "status": "",
-  "situacao": "Em execução",
+  "risco": "Médio",
+  "status": "L4",
+  "situacao": "Atenção",
   "prioridade": "",
   "ganhoProjeto": "",
-  "tipos": [],
-  "escopo": "",
-  "entregaveis": [],
+  "tipos": [
+    "Capex"
+  ],
+  "escopo": "Melhorar eficiencia na recuperação de caixinhas com os processos mapeados pelo time de melhoria de processos",
+  "entregaveis": [
+    "Aumento da taxa de recuperação de equipamentos.",
+    "Redução de custos com reposição de equipamentos.",
+    "Maior eficiência operacional das equipes envolvidas."
+  ],
   "saving": {
     "opex12M": 0.0,
-    "capex12M": 0.0,
-    "total12M": 0.0,
+    "capex12M": 62.54,
+    "total12M": 62.54,
     "opex2026": 0.0,
-    "capex2026": 0.0,
-    "total2026": 0.0
+    "capex2026": 62.54,
+    "total2026": 62.54
   },
   "macroAtividades": [
     {
       "numero": "01.",
-      "atividade": "Contrato",
-      "responsavel": "",
-      "status": 1,
-      "inicio": "",
-      "fim": "",
+      "atividade": "Melhorar performance das regionais",
+      "responsavel": "Gestão Operacional",
+      "status": 4,
+      "inicio": "2026-03-01",
+      "fim": "2026-04-30",
       "anotacao": ""
     },
     {
       "numero": "02.",
-      "atividade": "PGR",
-      "responsavel": "",
+      "atividade": "Revisar modelo híbrido de operação",
+      "responsavel": "Gestão Operacional",
       "status": 4,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-03-02",
+      "fim": "2026-04-30",
       "anotacao": ""
     },
     {
       "numero": "03.",
-      "atividade": "Acessos",
-      "responsavel": "",
+      "atividade": "Ajustar fluxo de agendamento de retiradas",
+      "responsavel": "Atendimento e Desconexão",
       "status": 4,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-03-03",
+      "fim": "2026-03-31",
       "anotacao": ""
     },
     {
       "numero": "04.",
-      "atividade": "Cadastros",
-      "responsavel": "",
+      "atividade": "Implantar rastreamento da devolução",
+      "responsavel": "Desconexão",
       "status": 4,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-03-04",
+      "fim": "2026-03-31",
       "anotacao": ""
     },
     {
       "numero": "05.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Correção de devolução parcial (modem sem mesh)",
+      "responsavel": "Engenharia / Marketing",
+      "status": 5,
+      "inicio": "2026-03-05",
+      "fim": "2026-04-30",
       "anotacao": ""
     },
     {
       "numero": "06.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Reduzir casos improdutivos recorrentes",
+      "responsavel": "Desconexão",
+      "status": 6,
+      "inicio": "2026-03-06",
+      "fim": "2026-05-29",
       "anotacao": ""
     },
     {
       "numero": "07.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Revisar script de retenção",
+      "responsavel": "Atendimento",
+      "status": 7,
+      "inicio": "2026-01-02",
+      "fim": "2026-02-03",
       "anotacao": ""
     },
     {
       "numero": "08.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Ajustar comunicação de retirada no site",
+      "responsavel": "Atendimento e Digital",
+      "status": 8,
+      "inicio": "2026-03-08",
+      "fim": "2026-04-30",
       "anotacao": ""
     },
     {
       "numero": "09.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Revisar política para equipamentos não cobráveis",
+      "responsavel": "Desconexão e Cobrança",
+      "status": 9,
+      "inicio": "2026-03-09",
+      "fim": "2026-03-31",
       "anotacao": ""
     },
     {
       "numero": "10.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Definir limite para improdutivas",
+      "responsavel": "Desconexão e Cobrança",
+      "status": 10,
+      "inicio": "2026-03-10",
+      "fim": "2026-03-31",
       "anotacao": ""
     },
     {
       "numero": "11.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Expandir utilização de dados de contato",
+      "responsavel": "Desconexão e Privacidade",
+      "status": 11,
+      "inicio": "2026-03-11",
+      "fim": "2026-07-31",
       "anotacao": ""
     },
     {
       "numero": "12.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Concluir conciliação dos BOX ativos",
+      "responsavel": "TI, Atendimento e Desconexão",
+      "status": 12,
+      "inicio": "2026-03-12",
+      "fim": "2026-07-31",
       "anotacao": ""
     },
     {
       "numero": "13.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Reduzir reincidência de FPD",
+      "responsavel": "Antifraude, Cobrança e Desconexão",
+      "status": 13,
+      "inicio": "2026-03-13",
+      "fim": "2026-06-30",
       "anotacao": ""
     },
     {
       "numero": "14.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Revisar regras de BOX adicional",
+      "responsavel": "Marketing, Antifraude e Cobrança",
+      "status": 14,
+      "inicio": "2026-03-14",
+      "fim": "2026-05-30",
       "anotacao": ""
     },
     {
       "numero": "15.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Simplificar baixa no TOA",
+      "responsavel": "Desconexão e Serviços Técnicos",
+      "status": 15,
+      "inicio": "2026-03-15",
+      "fim": "2026-07-31",
       "anotacao": ""
     },
     {
@@ -272,137 +278,137 @@
   "cronogramaDetalhado": [
     {
       "numero": 1,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "2026-08-13",
-      "fim": "2026-08-13",
+      "atividade": "Melhorar performance das regionais",
+      "responsavel": "Gestão Operacional",
+      "status": 4,
+      "inicio": "2026-03-01",
+      "fim": "2026-04-30",
       "anotacao": ""
     },
     {
       "numero": 2,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Revisar modelo híbrido de operação",
+      "responsavel": "Gestão Operacional",
+      "status": 4,
+      "inicio": "2026-03-02",
+      "fim": "2026-04-30",
       "anotacao": ""
     },
     {
       "numero": 3,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Ajustar fluxo de agendamento de retiradas",
+      "responsavel": "Atendimento e Desconexão",
+      "status": 4,
+      "inicio": "2026-03-03",
+      "fim": "2026-03-31",
       "anotacao": ""
     },
     {
       "numero": 4,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Implantar rastreamento da devolução",
+      "responsavel": "Desconexão",
+      "status": 4,
+      "inicio": "2026-03-04",
+      "fim": "2026-03-31",
       "anotacao": ""
     },
     {
       "numero": 5,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Correção de devolução parcial (modem sem mesh)",
+      "responsavel": "Engenharia / Marketing",
+      "status": 4,
+      "inicio": "2026-03-05",
+      "fim": "2026-04-30",
       "anotacao": ""
     },
     {
       "numero": 6,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Reduzir casos improdutivos recorrentes",
+      "responsavel": "Desconexão",
+      "status": 4,
+      "inicio": "2026-03-06",
+      "fim": "2026-05-29",
       "anotacao": ""
     },
     {
       "numero": 7,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Revisar script de retenção",
+      "responsavel": "Atendimento",
+      "status": 4,
+      "inicio": "2026-01-02",
+      "fim": "2026-02-03",
       "anotacao": ""
     },
     {
       "numero": 8,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Ajustar comunicação de retirada no site",
+      "responsavel": "Atendimento e Digital",
+      "status": 4,
+      "inicio": "2026-03-08",
+      "fim": "2026-04-30",
       "anotacao": ""
     },
     {
       "numero": 9,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Revisar política para equipamentos não cobráveis",
+      "responsavel": "Desconexão e Cobrança",
+      "status": 4,
+      "inicio": "2026-03-09",
+      "fim": "2026-03-31",
       "anotacao": ""
     },
     {
       "numero": 10,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Definir limite para improdutivas",
+      "responsavel": "Desconexão e Cobrança",
+      "status": 4,
+      "inicio": "2026-03-10",
+      "fim": "2026-03-31",
       "anotacao": ""
     },
     {
       "numero": 11,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Expandir utilização de dados de contato",
+      "responsavel": "Desconexão e Privacidade",
+      "status": 4,
+      "inicio": "2026-03-11",
+      "fim": "2026-07-31",
       "anotacao": ""
     },
     {
       "numero": 12,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Concluir conciliação dos BOX ativos",
+      "responsavel": "TI, Atendimento e Desconexão",
+      "status": 4,
+      "inicio": "2026-03-12",
+      "fim": "2026-07-31",
       "anotacao": ""
     },
     {
       "numero": 13,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Reduzir reincidência de FPD",
+      "responsavel": "Antifraude, Cobrança e Desconexão",
+      "status": 4,
+      "inicio": "2026-03-13",
+      "fim": "2026-06-30",
       "anotacao": ""
     },
     {
       "numero": 14,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Revisar regras de BOX adicional",
+      "responsavel": "Marketing, Antifraude e Cobrança",
+      "status": 4,
+      "inicio": "2026-03-14",
+      "fim": "2026-05-30",
       "anotacao": ""
     },
     {
       "numero": 15,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Simplificar baixa no TOA",
+      "responsavel": "Desconexão e Serviços Técnicos",
+      "status": 4,
+      "inicio": "2026-03-15",
+      "fim": "2026-07-31",
       "anotacao": ""
     },
     {
@@ -1174,26 +1180,31 @@
   "historico": [
     {
       "data": "2026-10-15",
-      "acoes": "-",
+      "acoes": "Definição de premissas",
       "detalhe": "Premissas: Quando o gerado for superior ao baseline, usar o realizado. Quando o gerado for inferior ao baseline, usar o baseline"
     },
     {
       "data": "2026-09-19",
-      "acoes": "-",
+      "acoes": "Parâmetro  definição da meta",
       "detalhe": "Definido como parâmetro a  definição da meta resultado de jan26/ a jun 26 desconsiderado julho e agosto pois o resultado está relacionado ao churn da cia\nReunião 15/10 com Bruno - Premissas de cálculo de desempenho"
     },
     {
       "data": "2026-09-03",
-      "acoes": "-",
+      "acoes": "Safra para medição",
       "detalhe": "Medição da safra com base de 30 dias (1º mês) que irá refletir no número do 13º mês .Acompanhamento do resultado com base na geração atual x percentual de eficiência do baseline (2025)\nAlinhado report de captura para o período de jan/26 a dez/26, em conformidade com o alinhamento realizado entre Bruno e Helder."
     },
     {
       "data": "2026-08-04",
-      "acoes": "-",
+      "acoes": "Projeção Futuras: A partir de agosto/2026, a meta passará a considerar o FCST.",
       "detalhe": "Meta Base 2026: Para o período de janeiro a julho/2026, será considerado o realizado como referência de meta, conforme alinhamento com o gestor da área, em função da alteração da metodologia de cálculo do 13º mês para o 1º mês.\n*Projeção Futuras: A partir de agosto/2026, a meta passará a considerar o FCST (Forecast), utilizando como base a média do realizado de janeiro a julho/2026.\n*Atualização de Dados: Sempre que o realizado for disponibilizado pelo responsável da área, o valor da célula J60 deverá ser atualizado com o valor real informado na célula J66, garantindo a aderência das informações."
+    },
+    {
+      "data": "2026-04-14",
+      "acoes": "Aprovação Forúm Financeiro",
+      "detalhe": "Projeto será levado para aprovação do time Financeiro. possivelmente na próxima semana. Os ganhos foram estimados e o FIND ja finalizado. Ganho estimado para 2026 17MM"
     }
   ],
-  "statusProjeto": "",
+  "statusProjeto": "Risco: Ausência de base estruturada para abertura dos equipamentos recuperados por tecnologia, o que pode comprometer a visibilidade dos resultados por tecnologia e a correta mensuração dos impactos em CAPEX.\n04/11/2026 - Validação do BP do projeto contemplando a revisão do FCST e o novo saving \n26/10/2026 - Incorporar o DX22 como uma ação ou alavanca operacional do projeto  Retirada de Equipamentos por Regional \n15/10/2026 -  Definidas as regras de desempenho: considerar o realizado quando superior ao baseline e o baseline quando inferior.\n19/09/2026 - Meta definida com base no resultado de jan-jun/26, desconsiderando jul e ago devido aos impactos de churn.\n03/09/2026 -  Alinhada medição da safra em 30 dias, acompanhamento por eficiência versus baseline 2025 e critério de captura para jan-dez/26.\n04/08/2026 -  Definidas as premissas de meta e projeção. Realizado de jan-jul/26 como referência e FCST a partir de ago/26.",
   "financeiro": [
     {
       "id": "LOG-006",
@@ -1349,7 +1360,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": 0.0
+      "resultado": 2.9543420316190345
     },
     {
       "id": "LOG-006",
@@ -1361,7 +1372,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": 0.0
+      "resultado": 0.779725825661011
     },
     {
       "id": "LOG-006",
@@ -1373,7 +1384,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 6.455530543834292
     },
     {
       "id": "LOG-006",
@@ -1385,7 +1396,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": 0.0
+      "resultado": 2.9595430617234557
     },
     {
       "id": "LOG-006",
@@ -1397,7 +1408,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": 0.0
+      "resultado": 3.9644958314104453
     },
     {
       "id": "LOG-006",
@@ -1409,7 +1420,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": 0.0
+      "resultado": 3.626889077443935
     },
     {
       "id": "LOG-006",
@@ -1421,7 +1432,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": 0.0
+      "resultado": 12.15927062717887
     },
     {
       "id": "LOG-006",
@@ -1433,7 +1444,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": 0.0
+      "resultado": 11.355175307738461
     },
     {
       "id": "LOG-006",
@@ -1445,7 +1456,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.0
+      "resultado": 5.322540075240761
     },
     {
       "id": "LOG-006",
@@ -1457,7 +1468,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.0
+      "resultado": 7.526952235223137
     },
     {
       "id": "LOG-006",
@@ -1469,7 +1480,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.0
+      "resultado": 2.718479353086725
     },
     {
       "id": "LOG-006",
@@ -1481,7 +1492,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.0
+      "resultado": 2.718479353086725
     },
     {
       "id": "LOG-006",
@@ -1493,7 +1504,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": 0.0
+      "resultado": 2.9543420316190345
     },
     {
       "id": "LOG-006",
@@ -1505,7 +1516,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": 0.0
+      "resultado": 0.779725825661011
     },
     {
       "id": "LOG-006",
@@ -1517,7 +1528,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 6.455530543834292
     },
     {
       "id": "LOG-006",
@@ -1529,7 +1540,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": 0.0
+      "resultado": 2.9595430617234557
     },
     {
       "id": "LOG-006",
@@ -1541,7 +1552,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": 0.0
+      "resultado": 3.9644958314104453
     },
     {
       "id": "LOG-006",
@@ -1553,7 +1564,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": 0.0
+      "resultado": 3.626889077443935
     },
     {
       "id": "LOG-006",
@@ -1565,7 +1576,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": 0.0
+      "resultado": 12.15927062717887
     },
     {
       "id": "LOG-006",
@@ -1577,7 +1588,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": 0.0
+      "resultado": 11.355175307738461
     },
     {
       "id": "LOG-006",
@@ -1589,7 +1600,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.0
+      "resultado": 5.322540075240761
     },
     {
       "id": "LOG-006",
@@ -1601,7 +1612,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.0
+      "resultado": 7.526952235223137
     },
     {
       "id": "LOG-006",
@@ -1613,7 +1624,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.0
+      "resultado": 2.718479353086725
     },
     {
       "id": "LOG-006",
@@ -1625,7 +1636,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.0
+      "resultado": 2.718479353086725
     },
     {
       "id": "LOG-006",
@@ -1781,7 +1792,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": 0.0
+      "resultado": 2.9543420316190345
     },
     {
       "id": "LOG-006",
@@ -1793,7 +1804,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": 0.0
+      "resultado": 0.779725825661011
     },
     {
       "id": "LOG-006",
@@ -1805,7 +1816,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 6.455530543834292
     },
     {
       "id": "LOG-006",
@@ -1817,7 +1828,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": 0.0
+      "resultado": 2.9595430617234557
     },
     {
       "id": "LOG-006",
@@ -1829,7 +1840,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": 0.0
+      "resultado": 3.9644958314104453
     },
     {
       "id": "LOG-006",
@@ -1841,7 +1852,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": 0.0
+      "resultado": 3.626889077443935
     },
     {
       "id": "LOG-006",
@@ -1853,7 +1864,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": 0.0
+      "resultado": 12.15927062717887
     },
     {
       "id": "LOG-006",
@@ -1865,7 +1876,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": 0.0
+      "resultado": 11.355175307738461
     },
     {
       "id": "LOG-006",
@@ -1877,7 +1888,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.0
+      "resultado": 5.322540075240761
     },
     {
       "id": "LOG-006",
@@ -1889,7 +1900,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.0
+      "resultado": 7.526952235223137
     },
     {
       "id": "LOG-006",
@@ -1901,7 +1912,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.0
+      "resultado": 2.718479353086725
     },
     {
       "id": "LOG-006",
@@ -1913,7 +1924,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.0
+      "resultado": 2.718479353086725
     },
     {
       "id": "LOG-006",
@@ -1925,7 +1936,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": 0.0
+      "resultado": 2.9543420316190345
     },
     {
       "id": "LOG-006",
@@ -1937,7 +1948,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": 0.0
+      "resultado": 0.779725825661011
     },
     {
       "id": "LOG-006",
@@ -1949,7 +1960,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 6.455530543834292
     },
     {
       "id": "LOG-006",
@@ -1961,7 +1972,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": 0.0
+      "resultado": 2.9595430617234557
     },
     {
       "id": "LOG-006",
@@ -1973,7 +1984,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": 0.0
+      "resultado": 3.9644958314104453
     },
     {
       "id": "LOG-006",
@@ -1985,7 +1996,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": 0.0
+      "resultado": 3.626889077443935
     },
     {
       "id": "LOG-006",
@@ -1997,7 +2008,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": 0.0
+      "resultado": 12.15927062717887
     },
     {
       "id": "LOG-006",
@@ -2009,7 +2020,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": 0.0
+      "resultado": 11.355175307738461
     },
     {
       "id": "LOG-006",
@@ -2021,7 +2032,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.0
+      "resultado": 5.322540075240761
     },
     {
       "id": "LOG-006",
@@ -2033,7 +2044,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.0
+      "resultado": 7.526952235223137
     },
     {
       "id": "LOG-006",
@@ -2045,7 +2056,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.0
+      "resultado": 2.718479353086725
     },
     {
       "id": "LOG-006",
@@ -2057,7 +2068,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.0
+      "resultado": 2.718479353086725
     },
     {
       "id": "LOG-006",
@@ -2069,7 +2080,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": -0.2
+      "resultado": 2.9543420316190345
     },
     {
       "id": "LOG-006",
@@ -2081,7 +2092,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": -0.2
+      "resultado": 0.779725825661011
     },
     {
       "id": "LOG-006",
@@ -2093,7 +2104,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": -0.2
+      "resultado": 6.455530543834292
     },
     {
       "id": "LOG-006",
@@ -2105,7 +2116,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": -0.2
+      "resultado": 2.9595430617234557
     },
     {
       "id": "LOG-006",
@@ -2117,7 +2128,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": -0.2
+      "resultado": 3.9644958314104453
     },
     {
       "id": "LOG-006",
@@ -2129,7 +2140,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": -0.2
+      "resultado": 3.626889077443935
     },
     {
       "id": "LOG-006",
@@ -2141,7 +2152,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": -0.2
+      "resultado": 12.15927062717887
     },
     {
       "id": "LOG-006",
@@ -2153,7 +2164,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": -0.2
+      "resultado": 11.355175307738461
     },
     {
       "id": "LOG-006",
@@ -2165,7 +2176,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": -0.2
+      "resultado": 5.322540075240761
     },
     {
       "id": "LOG-006",
@@ -2177,7 +2188,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": -0.2
+      "resultado": 7.526952235223137
     },
     {
       "id": "LOG-006",
@@ -2189,7 +2200,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": -0.2
+      "resultado": 2.718479353086725
     },
     {
       "id": "LOG-006",
@@ -2201,7 +2212,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": -0.2
+      "resultado": 2.718479353086725
     },
     {
       "id": "LOG-006",
@@ -2357,7 +2368,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": -0.2
+      "resultado": 2.9543420316190345
     },
     {
       "id": "LOG-006",
@@ -2369,7 +2380,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": -0.2
+      "resultado": 0.779725825661011
     },
     {
       "id": "LOG-006",
@@ -2381,7 +2392,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": -0.2
+      "resultado": 6.455530543834292
     },
     {
       "id": "LOG-006",
@@ -2393,7 +2404,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": -0.2
+      "resultado": 2.9595430617234557
     },
     {
       "id": "LOG-006",
@@ -2405,7 +2416,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": -0.2
+      "resultado": 3.9644958314104453
     },
     {
       "id": "LOG-006",
@@ -2417,7 +2428,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": -0.2
+      "resultado": 3.626889077443935
     },
     {
       "id": "LOG-006",
@@ -2429,7 +2440,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": -0.2
+      "resultado": 12.15927062717887
     },
     {
       "id": "LOG-006",
@@ -2441,7 +2452,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": -0.2
+      "resultado": 11.355175307738461
     },
     {
       "id": "LOG-006",
@@ -2453,7 +2464,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Set",
-      "resultado": -0.2
+      "resultado": 5.322540075240761
     },
     {
       "id": "LOG-006",
@@ -2465,7 +2476,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Out",
-      "resultado": -0.2
+      "resultado": 7.526952235223137
     },
     {
       "id": "LOG-006",
@@ -2477,7 +2488,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": -0.2
+      "resultado": 2.718479353086725
     },
     {
       "id": "LOG-006",
@@ -2489,7 +2500,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": -0.2
+      "resultado": 2.718479353086725
     },
     {
       "id": "LOG-006",
@@ -3791,6 +3802,6 @@
   "fonte": {
     "arquivo": "LOG-006 - Projeto Retirada de Equipamento por Regional.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-006%20-%20Projeto%20Retirada%20de%20Equipamento%20por%20Regional.xlsx?web=1",
-    "extraidoEm": "2026-11-06T16:40:25-03:00"
+    "extraidoEm": "2026-11-09T09:15:51-03:00"
   }
 }

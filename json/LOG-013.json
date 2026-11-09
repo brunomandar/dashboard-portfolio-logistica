@@ -35,7 +35,7 @@
     {
       "numero": "01.",
       "atividade": "Estratégia de segregação e preparação do piloto (POC)",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CD",
       "status": 5,
       "inicio": "2026-01-01",
       "fim": "2026-01-30",
@@ -44,7 +44,7 @@
     {
       "numero": "02.",
       "atividade": "Tratativa de bloqueios técnicos (Blacklist) e acesso aos servidores",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CD",
       "status": 5,
       "inicio": "2026-02-02",
       "fim": "2026-02-27",
@@ -53,7 +53,7 @@
     {
       "numero": "03.",
       "atividade": "Movimentação sistêmica dos terminais e MVP",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CD",
       "status": 5,
       "inicio": "2026-03-02",
       "fim": "2026-03-31",
@@ -62,7 +62,7 @@
     {
       "numero": "04.",
       "atividade": "Testes em ambiente real e estudos de terminais (resultados preliminares)",
-      "responsavel": "Mauricio (validação)",
+      "responsavel": "Time CD",
       "status": 1,
       "inicio": "2026-05-04",
       "fim": "2026-05-29",
@@ -71,7 +71,7 @@
     {
       "numero": "05.",
       "atividade": "Revisão de diretrizes e integração à Jornada do Terminal",
-      "responsavel": "Jackson / Mauricio",
+      "responsavel": "Time CD",
       "status": 1,
       "inicio": "2026-05-26",
       "fim": "2026-06-23",
@@ -80,7 +80,7 @@
     {
       "numero": "06.",
       "atividade": "Desenvolvimento do Extrator de Blacklist",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CD",
       "status": 5,
       "inicio": "2026-07-01",
       "fim": "2026-07-31",
@@ -89,7 +89,7 @@
     {
       "numero": "07.",
       "atividade": "Base de dados e captura da 1ª Blacklist",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CD",
       "status": 1,
       "inicio": "2026-07-28",
       "fim": "2026-09-30",
@@ -98,7 +98,7 @@
     {
       "numero": "08.",
       "atividade": "Cruzamento com OS (VT) e rotina mensal de Blacklist",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CD",
       "status": 1,
       "inicio": "2026-08-14",
       "fim": "2026-09-30",
@@ -107,7 +107,7 @@
     {
       "numero": "09.",
       "atividade": "Nova Blacklist (WIFI 3.1 + GPON) e acompanhamento",
-      "responsavel": "Evandro / Jackson",
+      "responsavel": "Time CD",
       "status": 1,
       "inicio": "2026-10-08",
       "fim": "2026-11-10",
@@ -572,6 +572,15 @@
       "status": 1,
       "inicio": "2026-10-08",
       "fim": "2026-10-20",
+      "anotacao": ""
+    },
+    {
+      "numero": "10.",
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     }
   ],
@@ -3174,6 +3183,6 @@
   "fonte": {
     "arquivo": "LOG-013 - Ciclo de Vida.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-013%20-%20Ciclo%20de%20Vida.xlsx?web=1",
-    "extraidoEm": "2026-11-06T16:41:02-03:00"
+    "extraidoEm": "2026-11-09T09:16:29-03:00"
   }
 }

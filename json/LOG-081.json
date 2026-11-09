@@ -289,7 +289,7 @@
       "numero": "1.1",
       "atividade": "Levantamento e Mapeamento de Processos",
       "responsavel": "Transportes",
-      "status": 1,
+      "status": 5,
       "inicio": "2026-10-08",
       "fim": "2026-11-04",
       "anotacao": ""
@@ -408,9 +408,14 @@
       "data": "2026-10-07",
       "acoes": "Estruturação do Projeto",
       "detalhe": "Entrevista com o Gestor para entendimento da demanda"
+    },
+    {
+      "data": "2026-11-06",
+      "acoes": "Estruturação do Projeto",
+      "detalhe": "Fluxograma desenhado e enviado ao gestor para aprovação"
     }
   ],
-  "statusProjeto": "Risco: \n30/10/2026 - O projeto se encontra em processo estruturação da arquitetura.",
+  "statusProjeto": "Risco: \n06/11/2026 - Fluxograma enviado ao Fábio Costa para validação e aprovação.",
   "financeiro": [
     {
       "id": "LOG-081",
@@ -3008,6 +3013,6 @@
   "fonte": {
     "arquivo": "LOG-081 - Claro Box no TMS.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-081%20-%20Claro%20Box%20no%20TMS.xlsx?web=1",
-    "extraidoEm": "2026-11-06T16:42:35-03:00"
+    "extraidoEm": "2026-11-09T09:18:10-03:00"
   }
 }
