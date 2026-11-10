@@ -410,6 +410,43 @@ def ler_financeiro(ws, project_id):
     return linhas
 
 
+def ler_fca(ws):
+    """
+    Aba "FCA" do Excel do projeto (mesmo arquivo das atualizações de status).
+    Cabeçalho em qualquer linha com as colunas: Data | Justificativa | Plano de ação | Observação
+    (Data é opcional). Vale a ÚLTIMA linha preenchida, ou seja, a atualização mais recente.
+    """
+    cabecalho, colunas = None, {}
+    for r in range(1, min(ws.max_row, 30) + 1):
+        for c in range(1, min(ws.max_column, 20) + 1):
+            k = chave(ws.cell(r, c).value or "")
+            if k.startswith("justificativa"):
+                colunas["justificativa"] = c
+            elif k.startswith("planodeacao") or k.startswith("planoacao"):
+                colunas["planoAcao"] = c
+            elif k.startswith("observ"):
+                colunas["observacao"] = c
+            elif k == "data":
+                colunas["data"] = c
+        if "justificativa" in colunas:
+            cabecalho = r
+            break
+        colunas = {}
+    if not cabecalho:
+        return {}
+    ultimo = {}
+    for r in range(cabecalho + 1, ws.max_row + 1):
+        linha = {k: texto_celula(ws.cell(r, c).value) for k, c in colunas.items()}
+        if any(linha.get(k) for k in ("justificativa", "planoAcao", "observacao")):
+            ultimo = linha
+    return {
+        "data": data_iso(ultimo.get("data", "")) if ultimo.get("data") else "",
+        "justificativa": ultimo.get("justificativa", ""),
+        "planoAcao": ultimo.get("planoAcao", ""),
+        "observacao": ultimo.get("observacao", ""),
+    }
+
+
 def aba(wb, *nomes):
     alvo = {chave(n) for n in nomes}
     for ws in wb.worksheets:
@@ -453,6 +490,7 @@ def processar(caminho):
     ws_cron = aba(wb, "Cronograma")
     ws_anot = aba(wb, "Anotações", "Anotacoes")
     ws_fin = aba(wb, "Base_Financ.", "Base_Financ", "Base Financ")
+    ws_fca = aba(wb, "FCA")
     saving = one["saving"]
     tipos = [t for t, v in (("Opex", saving["opex12M"]), ("Capex", saving["capex12M"])) if v]
     projeto = {
@@ -479,6 +517,7 @@ def processar(caminho):
         "historico": ler_anotacoes(ws_anot) if ws_anot is not None else [],
         "statusProjeto": one["statusProjeto"],
         "financeiro": ler_financeiro(ws_fin, project_id) if ws_fin is not None else [],
+        "fca": ler_fca(ws_fca) if ws_fca is not None else {},
         "fonte": {
             "arquivo": arquivo,
             "url": urllib.parse.quote(URL_PASTA_SHAREPOINT + arquivo, safe=":/") + "?web=1",

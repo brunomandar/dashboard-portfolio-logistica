@@ -1093,11 +1093,13 @@ body.project-open .topbar{display:none!important}
 <!-- ===== Módulo Financeiro DGP ===== -->
 <script>
 /* =====================================================================
-   FINANCEIRO DGP — módulo isolado do dashboard
+   FINANCEIRO DGP — módulo isolado do dashboard (layout "Dashboard
+   Financeiro Projetos de Logística")
    - Aberto pelo link "Financeiro DGP →" da seção Desempenho financeiro
    - Tela bloqueada ("em desenvolvimento") até digitar a senha
-   - Dados: mesmos JSONs do gerar_jsons.py (campo "financeiro" de cada
-     projeto), somente linhas com Iniciativa = DGP
+   - Dados: somente os JSONs do gerar_jsons.py (campo "financeiro" e
+     "fca" de cada projeto), iniciativas DGP e ICG
+   - Sem bibliotecas externas: gráficos em SVG próprio
    - Não altera nenhuma outra parte do dashboard
    ===================================================================== */
 (() => {
@@ -1129,13 +1131,16 @@ body.project-open .topbar{display:none!important}
   const setUnlocked = value => { try { value ? sessionStorage.setItem(UNLOCK_KEY, '1') : sessionStorage.removeItem(UNLOCK_KEY); } catch (_) { /* sem sessionStorage */ } window.__dgpUnlocked = value; };
 
   /* ---------------- Utilitários ---------------- */
-  const MONTHS = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+  const MES = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+  const MES_NOME = { Jan:'Janeiro', Fev:'Fevereiro', Mar:'Março', Abr:'Abril', Mai:'Maio', Jun:'Junho', Jul:'Julho', Ago:'Agosto', Set:'Setembro', Out:'Outubro', Nov:'Novembro', Dez:'Dezembro' };
   const $ = (s, r = document) => r.querySelector(s);
-  const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
   const clean = v => String(v ?? '').trim();
   const norm = s => String(s ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
   const arrayOf = v => Array.isArray(v) ? v : (v == null ? [] : [v]);
-  const monthIndex = m => { const a = {jan:0,janeiro:0,fev:1,fevereiro:1,mar:2,marco:2,abr:3,abril:3,mai:4,maio:4,jun:5,junho:5,jul:6,julho:6,ago:7,agosto:7,set:8,setembro:8,out:9,outubro:9,nov:10,novembro:10,dez:11,dezembro:11}; return a[norm(m)] ?? -1; };
+  const uniq = a => [...new Set(a.filter(v => v !== '' && v != null))];
+  const sum = (a, fn) => a.reduce((s, x) => s + (Number(fn(x)) || 0), 0);
+  const monthIndex = m => { const a = { jan:0, janeiro:0, fev:1, fevereiro:1, mar:2, marco:2, abr:3, abril:3, mai:4, maio:4, jun:5, junho:5, jul:6, julho:6, ago:7, agosto:7, set:8, setembro:8, out:9, outubro:9, nov:10, novembro:10, dez:11, dezembro:11 }; return a[norm(m)] ?? -1; };
   function num(v) {
     if (v == null || v === '') return 0;
     if (typeof v === 'number') return isFinite(v) ? v : 0;
@@ -1144,112 +1149,124 @@ body.project-open .topbar{display:none!important}
     else if (s.includes(',')) s = s.replace(',', '.');
     const n = Number(s); return isFinite(n) ? n : 0;
   }
-  // Valores da base já estão em milhões (mesmo padrão do financeiro da Home)
-  const money = v => v == null || !isFinite(v) ? 'N/A' : `${v < 0 ? '-' : ''}R$ ${Math.abs(v).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}M`;
-  const moneyShort = v => v == null || !isFinite(v) ? 'N/A' : `${v < 0 ? '-' : ''}R$ ${Math.abs(v).toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: Math.abs(v) < 10 ? 2 : 1 })}M`;
-  const pct = v => v == null || !isFinite(v) ? 'N/A' : new Intl.NumberFormat('pt-BR', { style: 'percent', minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(v);
-  const axisNum = v => v.toLocaleString('pt-BR', { maximumFractionDigits: Math.abs(v) < 10 ? 1 : 0 });
+  const fmt = v => Number(v || 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const pct = v => Number.isFinite(v) ? v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '%' : 'N/D';
+  const normalizeGerencia = value => /^(analytics|dessistemico|desenvolvimentosistemico|intlogistica)$/.test(norm(value)) ? 'Int. Logística' : value;
 
   /* Paleta Claro do dashboard */
-  const C = { red: '#df3232', dark: '#c00000', brown: '#530b03', yellow: '#ffc000', orange: '#ed7d31', gray: '#7f7f7f', light: '#d9d9d9', ink: '#1f1f1f' };
+  const C = { red: '#df3232', dark: '#c00000', brown: '#530b03', yellow: '#ffc000', orange: '#ed7d31', gray: '#7f7f7f', green: '#2e7d32', ink: '#1f1f1f' };
   /* Cores do gráfico financeiro padrão (Home/projeto) */
-  const F = { realTop: '#4b4f57', realBottom: '#15171b', fcst: '#15803d', meta: '#2563eb' };
+  const F = { real: '#1f2227', fcst: '#15803d', meta: '#2563eb' };
 
-  /* ---------------- Dados ---------------- */
-  const normalizeGerencia = value => /^(analytics|dessistemico|desenvolvimentosistemico|intlogistica)$/.test(norm(value)) ? 'Int. Logística' : value;
+  function sem(a) {
+    if (!Number.isFinite(a)) return { c: C.gray, t: 'Sem referência', i: '●' };
+    if (a >= 95) return { c: C.green, t: 'No alvo', i: '▲' };
+    if (a >= 90) return { c: C.yellow, t: 'Atenção', i: '◆' };
+    return { c: C.red, t: 'Crítico', i: '▼' };
+  }
+  const trClass = v => v > 0 ? 'pos' : v < 0 ? 'neg' : 'neu';
+  function rollingLabel(date = new Date()) { const m = date.getMonth() === 0 ? 12 : date.getMonth(); return `${m}+${12 - m}`; }
+
+  /* ---------------- Dados (somente JSON) ---------------- */
   function sourceProjects() {
     const list = typeof window.getDashboardProjects === 'function' ? window.getDashboardProjects() : window.PORTFOLIO_DATA;
-    return arrayOf(list).filter(p => p && typeof p === 'object' && /^LOG-\d+(?:\.\d+)?$/i.test(clean(p.id)) && (typeof window.isDashboardProjectAllowed !== 'function' || window.isDashboardProjectAllowed(p)));
+    return arrayOf(list).filter(p => p && typeof p === 'object' && /^LOG-\d+(?:\.\d+)?$/i.test(clean(p.id)) &&
+      (typeof window.isDashboardProjectAllowed !== 'function' || window.isDashboardProjectAllowed(p)));
   }
 
-  function buildRows() {
-    const out = [], seen = new Set();
+  function buildData() {
+    const rows = [], fca = new Map(), seen = new Set();
     sourceProjects().forEach(p => {
       const recs = arrayOf(p.financeiro).filter(r => r && typeof r === 'object');
       const hasSplit = recs.some(r => /^(opex|capex)$/.test(norm(r.tipoDespesa)));
-      const tipoUnico = arrayOf(p.tipos).length === 1 ? clean(p.tipos[0]).toUpperCase() : 'NÃO INFORMADO';
+      const tipoUnico = arrayOf(p.tipos).length === 1 ? clean(p.tipos[0]).toUpperCase() : '';
+      let used = false;
       recs.forEach(r => {
-        if (norm(r.iniciativa || p.iniciativa) !== 'dgp') return;          // somente DGP
-        let expense = clean(r.tipoDespesa).toUpperCase();
-        if (hasSplit) { if (!['OPEX', 'CAPEX'].includes(expense)) return; } // evita somar a linha "Total" junto
-        else expense = tipoUnico;
-        const year = Number(r.ano), monthN = monthIndex(r.mes);
-        if (![2026, 2027].includes(year) || monthN < 0) return;
+        const iniciativa = clean(r.iniciativa || p.iniciativa).toUpperCase();
+        if (!['DGP', 'ICG'].includes(iniciativa)) return;                 // escopo: DGP e ICG
+        let tipo = clean(r.tipoDespesa).toUpperCase();
+        if (hasSplit) { if (!['OPEX', 'CAPEX'].includes(tipo)) return; }   // não soma a linha "Total"
+        else tipo = tipoUnico || tipo;
+        const ic = norm(r.icg);
+        const item = ic === 'budget' || ic === 'meta' ? 'Budget' : ic === 'fcst' || ic === 'forecast' ? 'FCST' : ic === 'real' || ic === 'realizado' ? 'Real' : '';
+        const mi = monthIndex(r.mes), ano = Number(r.ano);
+        if (!item || mi < 0 || !Number.isFinite(ano) || !ano) return;
+        const stage = clean(p.status).toUpperCase(), situacao = clean(r.situacao);
+        const fase = stage && situacao ? `${stage} - ${situacao}` : (stage || situacao || 'N/D');
         const obj = {
-          id: clean(p.id) || clean(r.id),
-          mgmt: normalizeGerencia(clean(r.gerencia) || clean(p.area)) || 'Não informado',
-          area: normalizeGerencia(clean(p.area) || clean(r.gerencia)) || 'Não informado',
-          project: clean(p.projeto) || clean(r.projeto) || 'Não informado',
-          status: clean(r.situacao) || clean(p.status) || 'Não informado',
-          icg: clean(r.icg),
-          expense,
-          year,
-          month: MONTHS[monthN],
-          monthN,
-          value: Math.abs(num(r.resultado))
+          id: clean(p.id), iniciativa,
+          area: normalizeGerencia(clean(r.gerencia) || clean(p.area)) || 'Não informado',
+          projeto: clean(p.projeto) || clean(r.projeto) || 'Não informado',
+          status: situacao, item, tipo: tipo || 'N/D', ano, mes: MES[mi],
+          resultado: Math.abs(num(r.resultado)), fase
         };
-        const key = JSON.stringify(obj);
-        if (seen.has(key)) return;
-        seen.add(key); out.push(obj);
+        const key = [obj.id, obj.iniciativa, obj.area, obj.projeto, obj.status, obj.item, obj.tipo, obj.ano, obj.mes, obj.fase].join('|');
+        if (seen.has(key)) return;                                         // remove duplicidade exata
+        seen.add(key); rows.push(obj); used = true;
       });
+      if (used) {
+        const f = p.fca && typeof p.fca === 'object' ? p.fca : {};
+        fca.set(clean(p.id), {
+          justificativa: clean(f.justificativa),
+          planoAcao: clean(f.planoAcao || f.planoDeAcao),
+          observacao: clean(f.observacao)
+        });
+      }
     });
-    return out;
+    return { rows, fca };
+  }
+  function lastUpdate() {
+    const dates = sourceProjects().map(p => Date.parse(p?.fonte?.extraidoEm || '')).filter(Number.isFinite);
+    return dates.length ? new Date(Math.max(...dates)).toLocaleString('pt-BR') : 'Não informado';
   }
 
   /* ---------------- Estado ---------------- */
-  let rawRows = [];
-  let lineView = 'monthly';
-  let initialized = false;
-  let sortState = { key: 'gapMeta', dir: 1 };
-  const FILTERS = [['year','Ano'],['month','Mês até'],['mgmt','Gerência'],['area','Área'],['project','Projeto'],['expense','Tipo de despesa'],['status','Status']];
-  const state = { year: 'Todos', month: '11', mgmt: 'Todos', area: 'Todos', project: 'Todos', expense: 'Todos', status: 'Todos' };
-  const DETAIL_COLS = [['id','ID'],['mgmt','Gerência'],['area','Área'],['project','Projeto'],['expense','Despesa'],['status','Status'],['baseline','Baseline'],['meta','Meta'],['forecast','Forecast'],['real','Realizado'],['gapMeta','Gap Meta'],['attain','Ating.'],['projection','Projeção'],['trend','Tendência']];
-  const MONEY_COLS = ['baseline','meta','forecast','real','gapMeta','projection'];
-  const visibleCols = new Set(DETAIL_COLS.map(c => c[0]));
+  let RAW = [], FCA = new Map(), currentDetails = [], page = 1, sortKey = 'real', sortDir = -1;
+  const pageSize = 10;
+  const sel = { year: [], month: [], area: [], phase: [], project: [] };
+  let iniciativa = '';
+  const MULTI = {
+    year:    { label: 'Ano',     all: 'Todos os anos',     many: n => `${n} anos selecionados`,     tags: false },
+    month:   { label: 'Mês',     all: 'Todos os meses',    many: n => `${n} meses selecionados`,    tags: true  },
+    area:    { label: 'Área',    all: 'Todas as áreas',    many: n => `${n} áreas selecionadas`,    tags: false },
+    phase:   { label: 'Fase',    all: 'Todas as fases',    many: n => `${n} fases selecionadas`,    tags: false },
+    project: { label: 'Projeto', all: 'Todos os projetos', many: n => `${n} projetos selecionados`, tags: true  }
+  };
 
-  const unique = k => [...new Set(rawRows.map(r => r[k]).filter(x => x !== '' && x != null))].sort((a, b) => String(a).localeCompare(String(b), 'pt-BR', { numeric: true }));
-  function defaultCutoff(year) {
-    const m = rawRows.filter(r => r.year === year && norm(r.icg) === 'real' && r.value !== 0).map(r => r.monthN);
-    return m.length ? Math.max(...m) : (year === new Date().getFullYear() ? new Date().getMonth() : 11);
+  function optionsFor(name) {
+    if (name === 'month') return [...MES];
+    if (name === 'year') return uniq(RAW.map(x => String(x.ano))).sort();
+    if (name === 'area') return uniq(RAW.map(x => x.area)).sort((a, b) => a.localeCompare(b, 'pt-BR'));
+    if (name === 'phase') return uniq(RAW.map(x => x.fase)).sort((a, b) => a.localeCompare(b, 'pt-BR'));
+    let d = RAW;
+    if (sel.area.length) d = d.filter(x => sel.area.includes(x.area));
+    if (iniciativa) d = d.filter(x => x.iniciativa === iniciativa);
+    if (sel.phase.length) d = d.filter(x => sel.phase.includes(x.fase));
+    return uniq(d.map(x => x.projeto)).sort((a, b) => a.localeCompare(b, 'pt-BR'));
   }
-  const maxYear = () => { const ys = unique('year').map(Number); return ys.length ? Math.max(...ys) : new Date().getFullYear(); };
+  const optLabel = (name, v) => name === 'month' ? MES_NOME[v] : v;
+
   function filtered() {
-    const cutoff = Number(state.month);
-    return rawRows.filter(r => (state.year === 'Todos' || r.year === Number(state.year)) && r.monthN <= cutoff &&
-      ['mgmt','area','project','expense','status'].every(k => state[k] === 'Todos' || String(r[k]) === state[k]));
+    const months = sel.month.length && sel.month.length < 12 ? sel.month : null;
+    return RAW.filter(x =>
+      (!sel.year.length || sel.year.includes(String(x.ano))) &&
+      (!months || months.includes(x.mes)) &&
+      (!sel.area.length || sel.area.includes(x.area)) &&
+      (!iniciativa || x.iniciativa === iniciativa) &&
+      (!sel.phase.length || sel.phase.includes(x.fase)) &&
+      (!sel.project.length || sel.project.includes(x.projeto)));
   }
-  const emptyMonthly = () => Array.from({ length: 12 }, () => ({ baseline: 0, meta: 0, forecast: null, real: 0 }));
-  function group(rows, keys) {
-    const m = new Map();
-    rows.forEach(r => {
-      const key = keys.map(k => r[k]).join('¦');
-      if (!m.has(key)) { const o = {}; keys.forEach(k => o[k] = r[k]); Object.assign(o, { baseline: 0, meta: 0, forecast: null, real: 0, monthly: emptyMonthly() }); m.set(key, o); }
-      const o = m.get(key), ic = norm(r.icg);
-      const field = ic === 'budget' ? 'baseline' : ic === 'fcst' ? 'meta' : ic === 'real' ? 'real' : ic === 'forecast' ? 'forecast' : null;
-      if (!field) return;
-      if (field === 'forecast') { o.forecast = (o.forecast ?? 0) + r.value; o.monthly[r.monthN].forecast = (o.monthly[r.monthN].forecast ?? 0) + r.value; }
-      else { o[field] += r.value; o.monthly[r.monthN][field] += r.value; }
+  function aggregate(data, keys) {
+    const map = new Map();
+    data.forEach(x => { const k = keys.map(z => x[z]).join('¦'); if (!map.has(k)) map.set(k, { rows: [], ...Object.fromEntries(keys.map(z => [z, x[z]])) }); map.get(k).rows.push(x); });
+    return [...map.values()];
+  }
+  const vals = rows => ({ budget: sum(rows, x => x.item === 'Budget' ? x.resultado : 0), fcst: sum(rows, x => x.item === 'FCST' ? x.resultado : 0), real: sum(rows, x => x.item === 'Real' ? x.resultado : 0) });
+  function projectDetails(data) {
+    return aggregate(data, ['id', 'iniciativa', 'area', 'projeto', 'status', 'tipo', 'fase']).map(g => {
+      const v = vals(g.rows); return { ...g, ...v, delta: v.real - v.budget, ating: v.budget !== 0 ? v.real / v.budget * 100 : NaN };
     });
-    return [...m.values()].map(calc);
   }
-  function calc(o) {
-    const cutoff = Number(state.month), elapsed = cutoff + 1, remaining = 12 - elapsed;
-    const actual = o.monthly.slice(0, elapsed).filter(x => x.real !== 0);
-    const avg = actual.length ? actual.reduce((s, x) => s + x.real, 0) / actual.length : 0;
-    o.gapMeta = o.real - o.meta;
-    o.gapForecast = o.forecast == null ? null : o.real - o.forecast;
-    o.attain = o.meta !== 0 ? o.real / o.meta : null;
-    o.missing = Math.max(o.meta - o.real, 0);
-    o.needMonthly = remaining > 0 ? o.missing / remaining : o.missing;
-    o.projection = o.real + avg * remaining;
-    const recent = o.monthly.slice(Math.max(0, elapsed - 3), elapsed).map(x => x.real);
-    const prior = o.monthly.slice(Math.max(0, elapsed - 6), Math.max(0, elapsed - 3)).map(x => x.real);
-    if (recent.length < 3 || prior.length < 3) o.trend = 'Dados insuficientes';
-    else { const a = recent.reduce((s, v) => s + v, 0) / 3, b = prior.reduce((s, v) => s + v, 0) / 3; o.trend = a > b * 1.02 ? 'Crescente' : a < b * .98 ? 'Decrescente' : 'Estável'; }
-    return o;
-  }
-  const aggregate = rows => group(rows.map(r => ({ ...r, __all: 'x' })), ['__all'])[0] || calc({ baseline: 0, meta: 0, forecast: null, real: 0, monthly: emptyMonthly() });
-  const signal = v => v == null ? 'gray' : v >= 1 ? 'green' : v >= .9 ? 'yellow' : 'red';
 
   /* ---------------- Estilos (escopo #dgpView) ---------------- */
   function injectStyles() {
@@ -1257,105 +1274,148 @@ body.project-open .topbar{display:none!important}
     const css = `
 .dgp-view{display:none}.dgp-view.show{display:block}
 body.dgp-open #projectView{display:none!important}
-#dgpView{--dgp-red:${C.red};--dgp-dark:${C.dark};--dgp-brown:${C.brown};--dgp-yellow:${C.yellow};--dgp-orange:${C.orange};--dgp-gray:${C.gray};--dgp-line:${C.light};--dgp-ink:${C.ink};color:var(--dgp-ink)}
+#dgpView{--r:${C.red};--dr:${C.dark};--br:${C.brown};--ye:${C.yellow};--or:${C.orange};--gr:${C.gray};--gn:${C.green};--ink:${C.ink};--sh:0 4px 14px rgba(38,42,50,.065);color:var(--ink);font-size:14px}
+#dgpView *{box-sizing:border-box}
 #dgpView .dgp-topbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 12px}
 #dgpView .dgp-topbar .back{margin:0!important}
 #dgpView .dgp-top-actions{margin-left:auto;display:flex;gap:8px}
-#dgpView .dgp-btn{border:1px solid var(--dgp-line);background:#fff;color:var(--dgp-ink);border-radius:10px;padding:8px 13px;font-size:12px;font-weight:700;box-shadow:var(--shadow)}
-#dgpView .dgp-btn:hover{border-color:var(--dgp-red);color:var(--dgp-dark)}
-#dgpView .dgp-hero{background:#fff;border-radius:20px;box-shadow:var(--shadow);padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;border-left:5px solid var(--dgp-red);margin-bottom:12px}
-#dgpView .dgp-hero .pid{font-size:11px;letter-spacing:.08em;color:var(--dgp-gray);text-transform:uppercase}
-#dgpView .dgp-hero h1{font-size:22px;margin:4px 0 2px}
-#dgpView .dgp-hero p{margin:0;font-size:12px;color:var(--dgp-gray)}
-#dgpView .dgp-chips{display:flex;gap:8px;flex-wrap:wrap}
-#dgpView .dgp-chip{padding:6px 11px;border-radius:999px;font-size:11px;font-weight:800;background:#f2f2f2;color:var(--dgp-ink)}
-#dgpView .dgp-chip.red{background:var(--dgp-red);color:#fff}
-#dgpView .dgp-filters{display:grid;grid-template-columns:repeat(7,minmax(110px,1fr));gap:10px;padding:12px 16px;margin-bottom:8px}
-#dgpView .dgp-field label{display:block;font-size:10px;font-weight:800;color:var(--dgp-gray);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
-#dgpView .dgp-field select{width:100%;padding:8px 9px;border:1px solid var(--dgp-line);border-radius:10px;background:#fff;color:var(--dgp-ink);font-size:12px;outline:none}
-#dgpView .dgp-field select:focus{border-color:var(--dgp-red);box-shadow:0 0 0 3px rgba(223,50,50,.12)}
-#dgpView .dgp-meta-row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin:4px 2px 12px}
-#dgpView .dgp-badge{font-size:11px;font-weight:800;padding:5px 10px;border-radius:999px;background:#fbeaea;color:var(--dgp-dark);border:1px solid #f3c4c4}
-#dgpView .dgp-notice{font-size:11px;color:var(--dgp-gray)}
-#dgpView .dgp-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:14px}
-#dgpView .dgp-kpi{padding:16px 18px 14px;position:relative;border-top:4px solid var(--kpi,var(--dgp-ink))}
-#dgpView .dgp-kpi-icon{position:absolute;right:14px;top:14px;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--kpi,var(--dgp-ink));color:#fff}
-#dgpView .dgp-kpi-icon svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-#dgpView .dgp-kpi.projection .dgp-kpi-icon{color:var(--dgp-ink)}
-#dgpView .dgp-kpi small{font-size:10px;color:var(--dgp-gray);text-transform:uppercase;letter-spacing:.06em;font-weight:700}
-#dgpView .dgp-kpi-main{font-size:24px;font-weight:800;margin:8px 0 12px}
-#dgpView .dgp-kpi-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;border-top:1px solid #eceef2;padding-top:10px}
-#dgpView .dgp-kpi-grid span{display:block;font-size:10px;color:var(--dgp-gray)}
-#dgpView .dgp-kpi-grid b{display:block;font-size:13px;margin-top:2px}
-#dgpView .pos{color:var(--dgp-brown)!important;font-weight:800}
-#dgpView .neg{color:var(--dgp-red)!important;font-weight:800}
-#dgpView .dgp-grid-2{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin-bottom:14px}
-#dgpView .dgp-grid-eq{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
-#dgpView .dgp-card{padding:18px;min-width:0}
-#dgpView .dgp-card-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
-#dgpView .dgp-card-head h3{font-size:14px;margin:0;padding-left:11px;position:relative}
-#dgpView .dgp-card-head h3:before{content:"";position:absolute;left:0;top:1px;bottom:1px;width:4px;border-radius:4px;background:var(--dgp-red)}
-#dgpView .dgp-sub{font-size:11px;color:var(--dgp-gray);margin:2px 0 0 11px}
-#dgpView .dgp-toggle{display:flex;background:#f2f2f2;border-radius:9px;padding:3px}
-#dgpView .dgp-toggle button{border:0;background:transparent;padding:5px 11px;border-radius:7px;font-size:11px;font-weight:800;color:var(--dgp-gray)}
-#dgpView .dgp-toggle button.active{background:var(--dgp-red);color:#fff}
-#dgpView .dgp-legend{display:flex;flex-wrap:wrap;gap:14px;font-size:11.5px;font-weight:600;margin:0 0 4px}
-#dgpView .dgp-legend span{display:inline-flex;align-items:center;gap:6px}
-#dgpView .dgp-legend .lg-bar{width:13px;height:13px;border-radius:3px;background:linear-gradient(180deg,${F.realTop},${F.realBottom})}
-#dgpView .dgp-legend .lg-line{width:24px;border-top:3px solid ${F.meta}}
-#dgpView .dgp-legend .lg-dash{width:24px;border-top:3px dashed ${F.fcst}}
-#dgpView svg.dgp-svg{width:100%;height:auto;display:block}
-#dgpView .dgp-table-wrap{overflow:auto;max-height:420px;border:1px solid #eceef2;border-radius:12px}
-#dgpView table{width:100%;min-width:0;border-collapse:collapse;white-space:nowrap}
-#dgpView th{position:sticky;top:0;z-index:2;background:#fafafa;color:var(--dgp-gray);font-size:10px;text-transform:uppercase;letter-spacing:.06em;padding:10px 12px;text-align:left;border-bottom:1px solid var(--dgp-line);cursor:pointer;user-select:none}
-#dgpView th.sorted{color:var(--dgp-dark)}
-#dgpView td{font-size:12px;padding:9px 12px;border-bottom:1px solid #f0f0f0}
+#dgpView .dgp-btn{border:1px solid #e3e5e8;background:#fff;color:var(--ink);border-radius:10px;padding:8px 13px;font-size:12px;font-weight:700;box-shadow:var(--sh);cursor:pointer}
+#dgpView .dgp-btn:hover{border-color:var(--r);color:var(--dr)}
+#dgpView .dgp-btn.red{background:var(--dr);border-color:var(--dr);color:#fff}
+#dgpView .dgp-btn.red:hover{background:var(--br)}
+#dgpView .x-card{background:#fff;border-radius:14px;box-shadow:var(--sh)}
+#dgpView .x-head{background:linear-gradient(120deg,#8f0000,var(--dr) 45%,var(--r));color:#fff;border-radius:18px;padding:18px 24px;display:flex;align-items:center;gap:16px;box-shadow:0 5px 18px rgba(196,30,42,.22)}
+#dgpView .x-head h1{font-size:24px;font-weight:800;margin:0 0 3px;color:#fff}
+#dgpView .x-head .sub{opacity:.88;font-size:13px}
+#dgpView .x-head .meta{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;margin-top:7px;opacity:.95}
+#dgpView .x-section{color:var(--r);font-size:16px;font-weight:800;border-left:4px solid var(--r);padding-left:9px;margin:18px 0 9px;line-height:1.2}
+#dgpView .x-import{margin-top:14px;padding:14px 16px;border-top:4px solid var(--r)}
+#dgpView .x-import-main{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+#dgpView .x-import-title{font-weight:900;color:var(--r)}
+#dgpView .x-import-sub{color:#70757d;font-size:12px;max-width:720px}
+#dgpView .x-actions{display:flex;gap:8px;flex-wrap:wrap;position:relative}
+#dgpView .x-progress{height:18px;border-radius:999px;background:#eceef1;overflow:hidden;margin-top:12px}
+#dgpView .x-progress i{display:block;height:100%;background:var(--r);color:#fff;font-size:11px;font-weight:800;font-style:normal;text-align:center;line-height:18px}
+#dgpView .x-load{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;font-size:12px;color:#686d75;margin-top:8px}
+#dgpView .x-load span{background:#f7f8fa;padding:7px;border-radius:8px}
+#dgpView .x-drop{display:none;position:absolute;right:0;top:42px;z-index:40;min-width:190px;background:#fff;border:1px solid #e2e4e7;border-radius:12px;box-shadow:0 14px 32px rgba(38,42,50,.18);padding:6px}
+#dgpView .x-drop.open{display:block}
+#dgpView .x-drop button{display:block;width:100%;text-align:left;border:0;background:none;padding:8px 10px;border-radius:8px;font-size:13px;cursor:pointer}
+#dgpView .x-drop button:hover{background:#f5f6f8}
+#dgpView .x-period{background:#fff;border-left:4px solid var(--r);border-radius:10px;box-shadow:var(--sh);padding:9px 14px;margin-top:12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+#dgpView .x-period strong{color:var(--r)}
+#dgpView .x-line{display:grid;grid-template-columns:minmax(360px,1fr) minmax(0,3fr);gap:12px;align-items:stretch;margin-bottom:14px}
+#dgpView .x-counts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+#dgpView .kpi{position:relative;overflow:hidden;padding:10px 12px}
+#dgpView .kpi:after{content:"";position:absolute;right:-18px;top:-18px;width:54px;height:54px;border-radius:50%;background:rgba(223,50,50,.07)}
+#dgpView .kpi-label{font-size:11px;color:#686d75;font-weight:800;text-transform:uppercase;letter-spacing:.03em;line-height:1.1}
+#dgpView .kpi-value{font-size:22px;font-weight:900;line-height:1;margin-top:4px}
+#dgpView .kpi-note{font-size:10px;color:#81858c;margin-top:3px}
+#dgpView .x-counts .kpi{min-height:76px;display:flex;flex-direction:column;justify-content:center}
+#dgpView .x-filters{display:grid;grid-template-columns:minmax(78px,.62fr) minmax(116px,.9fr) minmax(112px,.88fr) minmax(126px,1fr) minmax(112px,.88fr) minmax(280px,2.35fr);gap:8px;align-items:end}
+#dgpView .f-card{background:#fff;border-top:4px solid var(--r);border-radius:10px;box-shadow:var(--sh);padding:8px;min-width:0}
+#dgpView .f-card>label{display:block;font-size:10px;text-transform:uppercase;color:var(--r);font-weight:800;letter-spacing:.04em;height:16px;margin:0 0 4px}
+#dgpView .f-trigger,#dgpView .f-select{width:100%;height:36px;border:0;border-radius:6px;background:#fff;padding:6px 9px;text-align:left;display:flex;align-items:center;justify-content:space-between;color:#3f4349;font-size:13px;cursor:pointer;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;outline:none}
+#dgpView .f-trigger:after{content:'▾';color:#777;margin-left:6px}
+#dgpView .f-multi{position:relative}
+#dgpView .f-menu{display:none;position:absolute;z-index:35;top:calc(100% + 7px);left:0;min-width:240px;width:max-content;max-width:360px;background:#fff;border:1px solid #e2e4e7;border-radius:12px;box-shadow:0 14px 32px rgba(38,42,50,.18);padding:10px}
+#dgpView .f-multi.open .f-menu{display:block}
+#dgpView .f-acts{display:flex;gap:7px;padding-bottom:8px;border-bottom:1px solid #eceef0;margin-bottom:7px}
+#dgpView .f-act{border:0;background:#f1f2f4;color:#555;border-radius:7px;padding:5px 8px;font-size:11px;font-weight:800;cursor:pointer}
+#dgpView .f-opts{display:grid;gap:4px;max-height:230px;overflow:auto}
+#dgpView .f-opts.two{grid-template-columns:repeat(2,1fr)}
+#dgpView .f-opt{display:flex;align-items:center;gap:7px;padding:5px 7px;border-radius:7px;cursor:pointer;font-size:13px}
+#dgpView .f-opt:hover{background:#f5f6f8}
+#dgpView .f-opt input{accent-color:var(--r)}
+#dgpView .f-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+#dgpView .f-tag{display:inline-flex;align-items:center;gap:5px;background:#fdebed;color:var(--dr);border:1px solid #f7c9cd;border-radius:999px;padding:3px 7px;font-size:11px;font-weight:800}
+#dgpView .f-tag button{border:0;background:transparent;color:inherit;padding:0;font-weight:900;cursor:pointer}
+#dgpView .f-project{position:relative;padding-top:26px;min-width:0}
+#dgpView .f-clear{position:absolute;top:0;right:0;height:22px;padding:2px 9px;border:0;border-radius:7px;background:var(--r);color:#fff;font-size:11px;font-weight:700;cursor:pointer}
+#dgpView .f-clear:hover{background:var(--dr)}
+#dgpView .x-fin{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+#dgpView .x-fin .kpi{min-height:130px;padding:11px 12px}
+#dgpView .x-fin .kpi-top{display:flex;justify-content:space-between;align-items:center;gap:8px;min-height:24px}
+#dgpView .badge{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:999px;color:#fff;font-weight:800;font-size:11px;white-space:nowrap}
+#dgpView .badge.atencao{color:var(--ink)}
+#dgpView .m-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin-top:8px}
+#dgpView .m-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+#dgpView .metric{background:#f7f8fa;border-radius:7px;padding:7px 6px;min-width:0}
+#dgpView .metric b{display:block;font-size:15px;line-height:1.15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#dgpView .metric span{display:block;font-size:10px;color:#73777e;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#dgpView .chart-card{padding:15px}
+#dgpView .chart-card>b,#dgpView .chart-title{font-weight:800;font-size:14px}
+#dgpView .legend-note{font-size:11px;color:#7b7f86}
+#dgpView .x-svg{width:100%;height:auto;display:block}
+#dgpView .x-legend{display:flex;justify-content:center;gap:18px;font-size:12px;color:#555;margin-top:4px;flex-wrap:wrap}
+#dgpView .x-legend span{display:inline-flex;align-items:center;gap:6px}
+#dgpView .x-legend i{width:12px;height:12px;border-radius:50%;display:inline-block}
+#dgpView .x-row{display:grid;grid-template-columns:30% 1fr 1fr;gap:14px}
+#dgpView .x-row3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+#dgpView .tbl-wrap{overflow:auto;border-radius:10px}
+#dgpView table{width:100%;border-collapse:collapse;min-width:0}
+#dgpView th{background:#f0f1f3;color:#4f535a;font-size:11px;text-transform:uppercase;white-space:nowrap;position:sticky;top:0;z-index:2;padding:8px;text-align:left}
+#dgpView td{padding:7px 8px;border-bottom:1px solid #eceef0;font-size:13px;vertical-align:middle}
 #dgpView tbody tr:hover td{background:#fff5f5}
-#dgpView .num{text-align:right;font-variant-numeric:tabular-nums}
-#dgpView .pill{display:inline-block;padding:3px 8px;border-radius:999px;font-size:10px;font-weight:800;color:#fff}
-#dgpView .pill.green{background:var(--dgp-brown)}#dgpView .pill.yellow{background:var(--dgp-yellow);color:var(--dgp-ink)}#dgpView .pill.red{background:var(--dgp-red)}#dgpView .pill.gray{background:#bfbfbf}
-#dgpView .dgp-rank-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-#dgpView .dgp-rank-title{font-size:12px;font-weight:800;margin:0 0 8px}
-#dgpView .dgp-rank-list{display:flex;flex-direction:column;gap:7px}
-#dgpView .dgp-rank-item{display:grid;grid-template-columns:24px 10px 1fr auto;gap:8px;align-items:center;padding:8px 10px;background:#fafafa;border-radius:10px;font-size:11.5px}
-#dgpView .dgp-rank-pos{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--dgp-ink);color:#fff;font-weight:800;font-size:11px}
-#dgpView .dgp-dot{width:9px;height:9px;border-radius:50%}
-#dgpView .dgp-rank-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-#dgpView .dgp-rank-val{font-weight:800}
-#dgpView .dgp-detail-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-#dgpView .dgp-col-picker{position:relative}
-#dgpView .dgp-col-menu{display:none;position:absolute;right:0;top:40px;z-index:30;min-width:220px;max-height:320px;overflow:auto;padding:8px;background:#fff;border:1px solid var(--dgp-line);border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.14)}
-#dgpView .dgp-col-menu.open{display:block}
-#dgpView .dgp-col-menu label{display:flex;gap:8px;align-items:center;padding:6px 5px;font-size:12px}
-#dgpView .dgp-col-menu input{accent-color:var(--dgp-red)}
-#dgpView .dgp-search{width:260px;height:36px;padding:0 12px;border:1px solid var(--dgp-line);border-radius:10px;font-size:12px;outline:none}
-#dgpView .dgp-search:focus{border-color:var(--dgp-red);box-shadow:0 0 0 3px rgba(223,50,50,.12)}
-#dgpView .dgp-notes{padding:12px 16px;margin-top:14px}
-#dgpView .dgp-notes summary{font-size:12px;font-weight:800;color:var(--dgp-gray);cursor:pointer}
-#dgpView .dgp-map{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;margin-top:12px}
-#dgpView .dgp-map div{border-left:4px solid var(--dgp-red);background:#fafafa;padding:7px 10px;font-size:11.5px;border-radius:0 8px 8px 0}
-#dgpView .dgp-map div.warn{border-left-color:var(--dgp-orange)}
-#dgpView .dgp-map b{display:block}
-#dgpView .dgp-footer{font-size:11px;color:var(--dgp-gray);text-align:center;padding:14px 0 2px}
-#dgpView .empty-state{padding:24px;text-align:center;color:var(--dgp-gray);font-size:12px}
+#dgpView tfoot td{font-weight:900;background:#f7f7f8}
+#dgpView .area-tbl td,#dgpView .area-tbl th{font-size:12px;padding:5px 7px;white-space:nowrap}
+#dgpView #dgpDetailTable th,#dgpView #dgpDetailTable td{text-align:center}
+#dgpView #dgpDetailTable th:nth-child(2),#dgpView #dgpDetailTable td:nth-child(2),#dgpView #dgpDetailTable th:nth-child(3),#dgpView #dgpDetailTable td:nth-child(3),#dgpView #dgpDetailTable th:nth-child(4),#dgpView #dgpDetailTable td:nth-child(4){text-align:left}
+#dgpView th.sort{cursor:pointer}
+#dgpView th.sort:after{content:' ↕';color:#aaa}
+#dgpView .pos{color:var(--gn)!important;font-weight:800}
+#dgpView .neg{color:var(--r)!important;font-weight:800}
+#dgpView .neu{color:var(--gr)!important}
+#dgpView .rank-card{padding:14px}
+#dgpView .rank-title{font-weight:900;font-size:15px;margin-bottom:4px}
+#dgpView .rank-fin{border-top:4px solid var(--br)}
+#dgpView .rank-fin .rank-title{color:var(--br)}
+#dgpView .rank-item{display:grid;grid-template-columns:1fr auto;gap:8px;padding:10px 0;border-bottom:1px solid #eceef0}
+#dgpView .rank-item:last-child{border-bottom:0}
+#dgpView .rank-name{font-weight:700;font-size:13px}
+#dgpView .rank-meta{font-size:11px;color:#777}
+#dgpView .rank-value{font-weight:900;text-align:right}
+#dgpView .rank-value .rank-meta{font-weight:800}
+#dgpView .empty{padding:22px;text-align:center;color:#888}
+#dgpView .detail-tools{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center;margin-bottom:10px}
+#dgpView .detail-tools input{max-width:360px;width:100%;height:38px;border:1px solid #e3e5e8;border-radius:10px;padding:0 12px;font-size:13px;outline:none}
+#dgpView .detail-tools input:focus{border-color:var(--r)}
+#dgpView .fca-btn{border:0;background:transparent;cursor:pointer;font-size:15px;padding:0}
+#dgpView .pager{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+#dgpView .pager button,#dgpView .pager span{min-width:30px;height:30px;border:1px solid #dee2e6;background:#fff;color:var(--r);border-radius:4px;font-size:12px;cursor:pointer}
+#dgpView .pager button.active{background:var(--r);border-color:var(--r);color:#fff}
+#dgpView .pager span{display:grid;place-items:center;color:#999;cursor:default}
+#dgpView .footer-note{color:#777;font-size:12px;padding:14px 0 6px}
+#dgpView .x-modal{display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.45);align-items:center;justify-content:center;padding:20px}
+#dgpView .x-modal.show{display:flex}
+#dgpView .x-modal-box{background:#fff;border-radius:14px;width:100%;max-width:760px;box-shadow:0 20px 50px rgba(0,0,0,.25);overflow:hidden}
+#dgpView .x-modal-head{display:flex;justify-content:space-between;align-items:flex-start;padding:16px 20px;border-bottom:1px solid #eceef0}
+#dgpView .x-modal-head h5{margin:0;font-size:18px;font-weight:800}
+#dgpView .x-modal-body{padding:16px 20px}
+#dgpView .x-modal-body .fca-label{font-weight:800;margin:0 0 6px}
+#dgpView .x-modal-body .fca-box{background:#f7f8fa;border:1px solid #e3e5e8;border-radius:8px;padding:9px 12px;min-height:58px;white-space:pre-wrap;margin-bottom:14px;font-size:13px}
+#dgpView .x-modal-foot{display:flex;justify-content:flex-end;padding:12px 20px;border-top:1px solid #eceef0}
+#dgpView .x-close{border:0;background:none;font-size:22px;line-height:1;cursor:pointer;color:#666}
+#dgpTip{position:fixed;z-index:3000;pointer-events:none;background:#25282d;color:#fff;border-radius:8px;padding:10px 12px;font-size:12px;line-height:1.45;max-width:340px;white-space:pre-line;box-shadow:0 8px 24px rgba(0,0,0,.25);display:none}
+#dgpTip b{display:block;margin-bottom:3px}
 /* Tela bloqueada */
 #dgpView .dgp-lock{min-height:calc(100vh - 160px);display:grid;place-items:center}
-#dgpView .dgp-lock-card{max-width:520px;width:100%;text-align:center;padding:40px 36px;border-top:5px solid var(--dgp-red)}
+#dgpView .dgp-lock-card{max-width:520px;width:100%;text-align:center;padding:40px 36px;border-top:5px solid var(--r)}
 #dgpView .dgp-lock-icon{width:74px;height:74px;margin:0 auto 18px;border-radius:50%;background:#fbeaea;display:grid;place-items:center;font-size:34px}
 #dgpView .dgp-lock-card h2{margin:0 0 8px;font-size:22px}
-#dgpView .dgp-lock-card p{margin:0 auto;color:var(--dgp-gray);font-size:13px;line-height:1.55;max-width:400px}
+#dgpView .dgp-lock-card p{margin:0 auto;color:var(--gr);font-size:13px;line-height:1.55;max-width:400px}
 #dgpView .dgp-progress{height:8px;border-radius:999px;background:#f0f0f0;overflow:hidden;margin:22px auto 6px;max-width:300px}
-#dgpView .dgp-progress i{display:block;height:100%;width:65%;border-radius:999px;background:linear-gradient(90deg,var(--dgp-dark),var(--dgp-red),var(--dgp-orange));animation:dgpPulse 1.8s ease-in-out infinite alternate}
+#dgpView .dgp-progress i{display:block;height:100%;width:65%;border-radius:999px;background:linear-gradient(90deg,var(--dr),var(--r),var(--or));animation:dgpPulse 1.8s ease-in-out infinite alternate}
 @keyframes dgpPulse{from{width:45%}to{width:75%}}
 #dgpView .dgp-lock-link{margin-top:26px;border:0;background:none;color:#bfbfbf;font-size:11px;text-decoration:underline;cursor:pointer}
 #dgpView .dgp-lock-form{display:none;gap:8px;justify-content:center;margin-top:16px}
 #dgpView .dgp-lock-form.show{display:flex}
-#dgpView .dgp-lock-form input{width:200px;height:36px;padding:0 12px;border:1px solid var(--dgp-line);border-radius:10px;font-size:12px;outline:none}
-#dgpView .dgp-lock-form input:focus{border-color:var(--dgp-red)}
-#dgpView .dgp-lock-form button{border:0;background:var(--dgp-red);color:#fff;font-weight:800;font-size:12px;border-radius:10px;padding:0 16px}
-#dgpView .dgp-lock-error{min-height:16px;font-size:11px;color:var(--dgp-red);margin-top:8px}
-@media(max-width:1100px){#dgpView .dgp-filters{grid-template-columns:repeat(3,1fr)}#dgpView .dgp-cards{grid-template-columns:repeat(2,1fr)}#dgpView .dgp-grid-2,#dgpView .dgp-grid-eq{grid-template-columns:1fr}}
-@media(max-width:650px){#dgpView .dgp-filters{grid-template-columns:1fr 1fr}#dgpView .dgp-cards,#dgpView .dgp-rank-grid{grid-template-columns:1fr}#dgpView .dgp-search{width:100%}}
+#dgpView .dgp-lock-form input{width:200px;height:36px;padding:0 12px;border:1px solid #e3e5e8;border-radius:10px;font-size:12px;outline:none}
+#dgpView .dgp-lock-form input:focus{border-color:var(--r)}
+#dgpView .dgp-lock-form button{border:0;background:var(--r);color:#fff;font-weight:800;font-size:12px;border-radius:10px;padding:0 16px}
+#dgpView .dgp-lock-error{min-height:16px;font-size:11px;color:var(--r);margin-top:8px}
+@media(max-width:1199px){#dgpView .x-line{grid-template-columns:1fr}#dgpView .x-filters{grid-template-columns:repeat(3,minmax(0,1fr))}#dgpView .f-project{grid-column:span 2}#dgpView .x-row,#dgpView .x-row3{grid-template-columns:1fr}#dgpView .x-fin{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){#dgpView .x-filters,#dgpView .x-fin,#dgpView .x-counts{grid-template-columns:1fr}#dgpView .f-project{grid-column:auto}#dgpView .x-load{grid-template-columns:repeat(2,1fr)}}
 `;
     const style = document.createElement('style');
     style.id = 'dgpStyles';
@@ -1363,146 +1423,284 @@ body.dgp-open #projectView{display:none!important}
     document.head.appendChild(style);
   }
 
-  /* ---------------- Gráficos (SVG, sem bibliotecas externas) ---------------- */
-  function lineData(rows) {
-    const cutoff = Number(state.month);
-    const g = group(rows.map(r => ({ ...r, __all: 'x' })), ['__all'])[0] || { monthly: emptyMonthly() };
-    const actual = g.monthly.slice(0, cutoff + 1).filter(x => x.real !== 0).map(x => x.real);
-    const avg = actual.length ? actual.reduce((s, v) => s + v, 0) / actual.length : 0;
-    const meta = [], real = [], projection = [];
-    let cm = 0, cr = 0;
-    for (let i = 0; i < 12; i++) {
-      const x = g.monthly[i];
-      cm += x.meta || 0;
-      if (i <= cutoff) cr += x.real || 0;
-      if (lineView === 'ytd') { meta.push(cm); real.push(i <= cutoff ? cr : null); projection.push(i <= cutoff ? cr : cr + avg * (i - cutoff)); }
-      else { meta.push(x.meta || 0); real.push(i <= cutoff ? (x.real || 0) : null); projection.push(i <= cutoff ? (x.real || 0) : avg); }
-    }
-    return { meta, real, projection };
+  /* ---------------- Tooltip próprio ---------------- */
+  function tipEl() {
+    let t = $('#dgpTip');
+    if (!t) { t = document.createElement('div'); t.id = 'dgpTip'; document.body.appendChild(t); }
+    return t;
+  }
+  function bindTips(view) {
+    if (view.__tipsBound) return;
+    view.__tipsBound = true;
+    view.addEventListener('mousemove', e => {
+      const el = e.target.closest && e.target.closest('[data-tip]');
+      const t = tipEl();
+      if (!el || !view.contains(el)) { t.style.display = 'none'; return; }
+      const [title, ...lines] = String(el.getAttribute('data-tip')).split('\n');
+      t.innerHTML = `<b>${esc(title)}</b>${lines.map(esc).join('<br>')}`;
+      t.style.display = 'block';
+      const w = t.offsetWidth, h = t.offsetHeight;
+      let x = e.clientX + 14, y = e.clientY - h - 12;
+      if (x + w > window.innerWidth - 8) x = e.clientX - w - 14;
+      if (y < 8) y = e.clientY + 16;
+      t.style.left = x + 'px'; t.style.top = y + 'px';
+    });
+    view.addEventListener('mouseleave', () => { tipEl().style.display = 'none'; });
   }
 
-  function evolutionSVG(rows) {
-    const { meta, real, projection } = lineData(rows);
-    const W = 960, H = 330, L = 46, R = 16, T = 22, B = 34, plotH = H - T - B, slot = (W - L - R) / 12;
-    const max = Math.max(0.0001, ...meta, ...real.filter(v => v != null), ...projection) * 1.18;
-    const x = i => L + slot * i + slot / 2, y = v => T + plotH - (v / max) * plotH;
-    const ticks = [0, .25, .5, .75, 1].map(s => {
-      const v = max * s, yy = y(v);
-      return `<line x1="${L}" x2="${W - R}" y1="${yy.toFixed(1)}" y2="${yy.toFixed(1)}" stroke="#eceef2"/><text x="${L - 6}" y="${(yy + 3).toFixed(1)}" text-anchor="end" font-size="10" fill="${C.gray}">${axisNum(v)}</text>`;
-    }).join('');
-    const cols = MONTHS.map((_, i) => `<rect x="${(L + slot * i).toFixed(1)}" y="${T}" width="${slot.toFixed(1)}" height="${plotH}" fill="${i % 2 ? '#fafafa' : '#fff'}"/>`).join('');
-    const barW = Math.min(30, slot * .42), floor = T + plotH;
-    const bars = real.map((v, i) => v == null || !v ? '' : `<rect x="${(x(i) - barW / 2).toFixed(1)}" y="${y(v).toFixed(1)}" width="${barW.toFixed(1)}" height="${(floor - y(v)).toFixed(1)}" rx="4" fill="url(#dgpReal)"><title>Realizado ${MONTHS[i]}: ${money(v)}</title></rect><text x="${x(i).toFixed(1)}" y="${(y(v) - 6).toFixed(1)}" text-anchor="middle" font-size="10" font-weight="800" fill="${C.ink}">${axisNum(v)}</text>`).join('');
-    const path = list => list.map((v, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
-    const cutoff = Number(state.month);
-    const projPts = projection.map((v, i) => ({ v, i })).filter(p => p.i >= cutoff);
-    const projPath = projPts.length > 1 ? `<path d="${projPts.map((p, k) => `${k ? 'L' : 'M'}${x(p.i).toFixed(1)},${y(p.v).toFixed(1)}`).join(' ')}" fill="none" stroke="${F.fcst}" stroke-width="2.5" stroke-dasharray="6 5"/>${projPts.slice(1).map(p => `<circle cx="${x(p.i).toFixed(1)}" cy="${y(p.v).toFixed(1)}" r="3.5" fill="#fff" stroke="${F.fcst}" stroke-width="2"><title>Projeção ${MONTHS[p.i]}: ${money(p.v)}</title></circle>`).join('')}` : '';
-    const metaLine = `<path d="${path(meta)}" fill="none" stroke="${F.meta}" stroke-width="3"/>${meta.map((v, i) => `<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="4.5" fill="#fff" stroke="${F.meta}" stroke-width="2.5"><title>FCST / Meta ${MONTHS[i]}: ${money(v)}</title></circle>`).join('')}`;
-    const axis = MONTHS.map((m, i) => `<text x="${x(i).toFixed(1)}" y="${H - 12}" text-anchor="middle" font-size="12" font-weight="800" fill="${C.ink}">${m.toUpperCase()}</text>`).join('');
-    const defs = `<defs><linearGradient id="dgpReal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${F.realTop}"/><stop offset="1" stop-color="${F.realBottom}"/></linearGradient></defs>`;
-    const legend = `<div class="dgp-legend"><span><i class="lg-bar"></i>Realizado${lineView === 'ytd' ? ' acumulado' : ''}</span><span><i class="lg-line"></i>FCST / Meta${lineView === 'ytd' ? ' acumulada' : ''}</span><span><i class="lg-dash"></i>Projeção de fechamento</span></div>`;
-    return `${legend}<svg class="dgp-svg" viewBox="0 0 ${W} ${H}" role="img">${defs}${cols}${ticks}${bars}${projPath}${metaLine}${axis}</svg>`;
+  /* ---------------- Gráficos SVG ---------------- */
+  const niceMax = v => { if (v <= 0) return 1; const p = Math.pow(10, Math.floor(Math.log10(v))); const n = v / p; return (n <= 1 ? 1 : n <= 2 ? 2 : n <= 2.5 ? 2.5 : n <= 5 ? 5 : 10) * p; };
+  const niceScale = (v, n = 6) => { const step = niceMax(Math.max(v, 0.0001) / n); return { step, top: Math.ceil(Math.max(v, 0.0001) / step) * step }; };
+  function smoothPath(points) {
+    let d = '';
+    const segs = []; let cur = [];
+    points.forEach(p => { if (p) cur.push(p); else if (cur.length) { segs.push(cur); cur = []; } });
+    if (cur.length) segs.push(cur);
+    segs.forEach(s => {
+      d += `M${s[0].x.toFixed(1)},${s[0].y.toFixed(1)}`;
+      for (let i = 0; i < s.length - 1; i++) {
+        const p0 = s[i - 1] || s[i], p1 = s[i], p2 = s[i + 1], p3 = s[i + 2] || p2, k = 0.35 / 2;
+        const c1x = p1.x + (p2.x - p0.x) * k, c1y = p1.y + (p2.y - p0.y) * k;
+        const c2x = p2.x - (p3.x - p1.x) * k, c2y = p2.y - (p3.y - p1.y) * k;
+        d += ` C${c1x.toFixed(1)},${c1y.toFixed(1)} ${c2x.toFixed(1)},${c2y.toFixed(1)} ${p2.x.toFixed(1)},${p2.y.toFixed(1)}`;
+      }
+    });
+    return d;
   }
 
-  function areaSVG(rows) {
-    const g = group(rows, ['area']).filter(x => x.meta !== 0);
-    const total = g.reduce((s, x) => s + (x.meta || 0), 0);
-    const list = g.map(x => ({ ...x, share: total ? x.meta / total * 100 : 0 })).sort((a, b) => b.share - a.share).slice(0, 12);
-    if (!list.length) return '<div class="empty-state">Sem meta registrada no recorte.</div>';
-    const W = 460, H = 330, L = 40, R = 10, T = 26, B = 48, plotH = H - T - B, slot = (W - L - R) / list.length;
-    const max = Math.max(40, Math.ceil(Math.max(...list.map(x => x.share)) / 10) * 10 + 10);
-    const y = v => T + plotH - (v / max) * plotH;
-    const ticks = [0, .25, .5, .75, 1].map(s => { const v = max * s, yy = y(v); return `<line x1="${L}" x2="${W - R}" y1="${yy.toFixed(1)}" y2="${yy.toFixed(1)}" stroke="#eceef2"/><text x="${L - 5}" y="${(yy + 3).toFixed(1)}" text-anchor="end" font-size="10" fill="${C.gray}">${Math.round(v)}%</text>`; }).join('');
-    const bw = Math.min(46, slot * .62);
-    const bars = list.map((x, i) => {
-      const cx = L + slot * i + slot / 2, yy = y(x.share);
-      const label = x.share.toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
-      const name = x.area.length > 14 ? `${x.area.slice(0, 13)}…` : x.area;
-      return `<rect x="${(cx - bw / 2).toFixed(1)}" y="${yy.toFixed(1)}" width="${bw.toFixed(1)}" height="${(T + plotH - yy).toFixed(1)}" rx="6" fill="${C.red}"><title>${esc(x.area)} · Representatividade: ${label}% · Meta da área: ${money(x.meta)}</title></rect><text x="${cx.toFixed(1)}" y="${(yy - 7).toFixed(1)}" text-anchor="middle" font-size="11" font-weight="800" fill="${C.dark}">${label}%</text><text x="${cx.toFixed(1)}" y="${H - 28}" text-anchor="middle" font-size="10.5" font-weight="700" fill="${C.ink}">${esc(name)}</text>`;
+  function lineChart(data) {
+    const now = new Date(), cy = now.getFullYear(), cm = now.getMonth();
+    const monthly = MES.map((m, i) => {
+      const rows = data.filter(x => x.mes === m), base = vals(rows);
+      const realRows = rows.filter(x => x.ano < cy || (x.ano === cy && i < cm));
+      return { m, ...base, real: realRows.length ? vals(realRows).real : null };
+    });
+    const W = 1200, H = 340, L = 44, R = 18, T = 30, B = 30, pw = W - L - R, ph = H - T - B;
+    const all = monthly.flatMap(x => [x.budget, x.fcst, x.real]).filter(Number.isFinite);
+    const sc = niceScale(Math.max(0.0001, ...all) * 1.08), max = sc.top;
+    const step = pw / 12, x = i => L + step * i + step / 2, y = v => T + ph - (v / max) * ph;
+    let grid = '';
+    for (let v = 0; v <= max + 1e-9; v += sc.step) { const yy = y(v); grid += `<line x1="${L}" x2="${W - R}" y1="${yy.toFixed(1)}" y2="${yy.toFixed(1)}" stroke="#eceef1"/><text x="${L - 7}" y="${(yy + 4).toFixed(1)}" text-anchor="end" font-size="12" fill="#666">${v.toLocaleString('pt-BR', { maximumFractionDigits: sc.step < 1 ? 1 : 0 })}</text>`; }
+    const series = [['Meta', 'budget', F.meta], ['FCST', 'fcst', F.fcst], ['Realizado', 'real', F.real]];
+    const lines = series.map(([label, key, color]) => {
+      const pts = monthly.map((v, i) => Number.isFinite(v[key]) ? { x: x(i), y: y(v[key]), v: v[key] } : null);
+      return `<path d="${smoothPath(pts)}" fill="none" stroke="${color}" stroke-width="3"/>` +
+        pts.map(p => p ? `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="5" fill="${color}"/>` : '').join('');
     }).join('');
-    return `<div class="dgp-sub" style="margin:0 0 6px;text-align:center">FCST / Meta total: <b>${money(total)}</b> = 100%</div><svg class="dgp-svg" viewBox="0 0 ${W} ${H}" role="img">${ticks}${bars}</svg>`;
+    const labels = series.map(([, key, color]) => monthly.map((v, i) => Number.isFinite(v[key]) ? `<text x="${x(i).toFixed(1)}" y="${(y(v[key]) - 10).toFixed(1)}" text-anchor="middle" font-size="12.5" font-weight="700" fill="#333" stroke="#fff" stroke-width="3" paint-order="stroke">${fmt(v[key])}</text>` : '').join('')).join('');
+    const axis = MES.map((m, i) => `<text x="${x(i).toFixed(1)}" y="${H - 8}" text-anchor="middle" font-size="13" fill="#555">${m}</text>`).join('');
+    const hovers = monthly.map((v, i) => {
+      const lines2 = [`Mês: ${v.m}`, `Meta: ${fmt(v.budget)}`, `FCST: ${fmt(v.fcst)}`, Number.isFinite(v.real) ? `Realizado: ${fmt(v.real)}` : 'Realizado: Sem resultado fechado'];
+      if (Number.isFinite(v.real)) { const d = v.real - v.fcst; lines2.push(`Diferença Absoluta: ${fmt(d)}`, `Diferença Percentual: ${pct(v.fcst ? d / v.fcst * 100 : NaN)}`); }
+      return `<rect x="${(L + step * i).toFixed(1)}" y="${T}" width="${step.toFixed(1)}" height="${ph}" fill="transparent" data-tip="${esc(lines2.join('\n'))}"/>`;
+    }).join('');
+    const legend = `<div class="x-legend">${series.map(([l, , c]) => `<span><i style="background:${c}"></i>${l}</span>`).join('')}</div>`;
+    return `<svg class="x-svg" viewBox="0 0 ${W} ${H}" role="img">${grid}<line x1="${L}" x2="${W - R}" y1="${T + ph}" y2="${T + ph}" stroke="#cfd3d8"/>${lines}${labels}${axis}${hovers}</svg>${legend}`;
+  }
+
+  function expenseChart(data) {
+    const areas = uniq(data.map(x => x.area)).map(area => {
+      const rows = data.filter(x => x.area === area);
+      const capex = new Set(rows.filter(x => x.tipo === 'CAPEX').map(x => x.id)).size;
+      const opex = new Set(rows.filter(x => x.tipo === 'OPEX').map(x => x.id)).size;
+      return { area, capex, opex, total: capex + opex };
+    }).sort((a, b) => b.total - a.total || a.area.localeCompare(b.area, 'pt-BR'));
+    if (!areas.length) return '<div class="empty">Sem dados</div>';
+    const W = 440, H = 270, L = 46, R = 8, T = 24, B = 54, pw = W - L - R, ph = H - T - B;
+    const max = Math.max(1, ...areas.flatMap(a => [a.capex, a.opex]));
+    const top = Math.ceil(max * 1.15), y = v => T + ph - (v / top) * ph, step = pw / areas.length, bw = Math.min(22, step * .3);
+    let grid = '';
+    for (let v = 0; v <= top; v += Math.max(1, Math.ceil(top / 6))) grid += `<line x1="${L}" x2="${W - R}" y1="${y(v).toFixed(1)}" y2="${y(v).toFixed(1)}" stroke="#eceef1"/><text x="${L - 6}" y="${(y(v) + 4).toFixed(1)}" text-anchor="end" font-size="11" fill="#666">${v}</text>`;
+    const bars = areas.map((a, i) => {
+      const cx = L + step * i + step / 2;
+      return [['CAPEX', a.capex, C.dark, cx - bw - 2], ['OPEX', a.opex, C.orange, cx + 2]].map(([t, v, c, bx]) =>
+        `<rect x="${bx.toFixed(1)}" y="${y(v).toFixed(1)}" width="${bw.toFixed(1)}" height="${(T + ph - y(v)).toFixed(1)}" rx="3" fill="${c}" data-tip="${esc(`Área: ${a.area}\nTipo: ${t}\nProjetos: ${v}`)}"/><text x="${(bx + bw / 2).toFixed(1)}" y="${(y(v) - 6).toFixed(1)}" text-anchor="middle" font-size="12" font-weight="700" fill="#333">${v}</text>`).join('') +
+        `<text transform="translate(${cx.toFixed(1)},${T + ph + 14}) rotate(-25)" text-anchor="end" font-size="11.5" fill="#555">${esc(a.area)}</text>`;
+    }).join('');
+    const yTitle = `<text transform="translate(13,${T + ph / 2}) rotate(-90)" text-anchor="middle" font-size="11" fill="#666">Quantidade de Projetos</text>`;
+    return `<svg class="x-svg" viewBox="0 0 ${W} ${H}" role="img">${grid}${yTitle}${bars}</svg><div class="x-legend"><span><i style="background:${C.dark}"></i>CAPEX</span><span><i style="background:${C.orange}"></i>OPEX</span></div>`;
+  }
+
+  function areaChart(data) {
+    const areas = aggregate(data, ['area']).map(g => ({ area: g.area, ...vals(g.rows) })).sort((a, b) => b.real - a.real);
+    if (!areas.length) return '<div class="empty">Sem dados</div>';
+    const W = 480, rowH = 46, T = 10, B = 26, L = 108, R = 54, H = T + B + rowH * areas.length, pw = W - L - R;
+    const sc = niceScale(Math.max(0.0001, ...areas.map(a => a.real)) * 1.12, 6), max = sc.top;
+    const xx = v => L + (v / max) * pw;
+    let grid = '';
+    for (let v = 0; v <= max + 1e-9; v += sc.step) { grid += `<line x1="${xx(v).toFixed(1)}" x2="${xx(v).toFixed(1)}" y1="${T}" y2="${H - B}" stroke="#eceef1"/><text x="${xx(v).toFixed(1)}" y="${H - 8}" text-anchor="middle" font-size="11" fill="#666">${v.toLocaleString('pt-BR', { maximumFractionDigits: sc.step < 1 ? 1 : 0 })}</text>`; }
+    const bars = areas.map((a, i) => {
+      const yy = T + rowH * i + rowH * .18, h = rowH * .64, d = a.real - a.fcst;
+      const tip = `Área: ${a.area}\nRealizado: ${fmt(a.real)}\nMeta: ${fmt(a.budget)}\nFCST: ${fmt(a.fcst)}\nDiferença Absoluta: ${fmt(d)}\nDiferença Percentual: ${pct(a.fcst ? d / a.fcst * 100 : NaN)}`;
+      return `<text x="${L - 8}" y="${(yy + h / 2 + 4).toFixed(1)}" text-anchor="end" font-size="12" fill="#555">${esc(a.area)}</text><rect x="${L}" y="${yy.toFixed(1)}" width="${Math.max(0, xx(a.real) - L).toFixed(1)}" height="${h.toFixed(1)}" rx="6" fill="${C.dark}" data-tip="${esc(tip)}"/><text x="${(xx(a.real) + 6).toFixed(1)}" y="${(yy + h / 2 + 4).toFixed(1)}" font-size="12" font-weight="700" fill="#333">${fmt(a.real)}</text>`;
+    }).join('');
+    return `<svg class="x-svg" viewBox="0 0 ${W} ${H}" role="img">${grid}${bars}</svg>`;
   }
 
   /* ---------------- Blocos ---------------- */
-  const ICONS = {
-    briefcase: '<svg viewBox="0 0 24 24"><path d="M9 6V4h6v2M4 7h16v12H4zM4 11h16M10 11v2h4v-2"/></svg>',
-    tools: '<svg viewBox="0 0 24 24"><path d="M14 6a4 4 0 0 0-5-4l2.5 2.5-3 3L6 5a4 4 0 0 0 4 5l8 8 2-2-8-8M5 19l5-5"/></svg>',
-    money: '<svg viewBox="0 0 24 24"><path d="M12 2v20M17 6.5c-1-1-2.5-1.5-5-1.5-3 0-5 1.5-5 3.5S9 12 12 12s5 1.5 5 3.5S15 19 12 19c-2.5 0-4-.5-5-1.5"/></svg>',
-    hourglass: '<svg viewBox="0 0 24 24"><path d="M6 2h12M6 22h12M8 2c0 5 1 6 4 8 3-2 4-3 4-8M8 22c0-5 1-6 4-8 3 2 4 3 4 8"/></svg>'
-  };
-  function kpiCard(title, o, color, icon, cls = '') {
-    return `<article class="card dgp-kpi ${cls}" style="--kpi:${color}"><span class="dgp-kpi-icon">${ICONS[icon]}</span><small>${title}</small><div class="dgp-kpi-main">${moneyShort(o.real)}</div><div class="dgp-kpi-grid"><div><span>Budget</span><b>${moneyShort(o.baseline)}</b></div><div><span>FCST (Meta)</span><b>${moneyShort(o.meta)}</b></div><div><span>Gap vs FCST</span><b class="${o.gapMeta >= 0 ? 'pos' : 'neg'}">${moneyShort(o.gapMeta)}</b></div><div><span>Atingimento</span><b>${pct(o.attain)}</b></div></div></article>`;
+  const badge = s => `<span class="badge ${s.t === 'Atenção' ? 'atencao' : ''}" style="background:${s.c}">${s.i} ${s.t}</span>`;
+  function finCard(title, v) {
+    const a = v.budget !== 0 ? v.real / v.budget * 100 : NaN, s = sem(a);
+    return `<div class="x-card kpi"><div class="kpi-top"><div class="kpi-label">${esc(title)}</div>${badge(s)}</div><div class="m-grid"><div class="metric"><b>${fmt(v.budget)}</b><span>Meta</span></div><div class="metric"><b>${fmt(v.fcst)}</b><span>FCST</span></div><div class="metric"><b>${fmt(v.real)}</b><span>Realizado</span></div><div class="metric"><b style="color:${s.c === C.yellow ? '#b58a00' : s.c}">${pct(a)}</b><span title="Aderência à meta">Aderência à meta</span></div></div></div>`;
   }
-  function renderCards(rows) {
-    const total = aggregate(rows), capex = aggregate(rows.filter(r => r.expense === 'CAPEX')), opex = aggregate(rows.filter(r => r.expense === 'OPEX'));
-    const projected = { ...total, real: total.projection, gapMeta: total.projection - total.meta, attain: total.meta ? total.projection / total.meta : null };
-    $('#dgpCards').innerHTML = kpiCard('Total geral', total, C.ink, 'briefcase') + kpiCard('CAPEX', capex, C.dark, 'tools') + kpiCard('OPEX', opex, C.orange, 'money') + kpiCard('Projeção de fechamento', projected, C.yellow, 'hourglass', 'projection');
+  function projectionCard(v) {
+    const b = Math.round(v.budget * 100) / 100, f = Math.round(v.fcst * 100) / 100, a = b !== 0 ? f / b * 100 : NaN, s = sem(a);
+    return `<div class="x-card kpi"><div class="kpi-top"><div class="kpi-label">Resultado consolidado</div></div><div class="m-grid three"><div class="metric"><b>${fmt(v.budget)}</b><span>Meta 12 meses</span></div><div class="metric"><b>${fmt(v.fcst)}</b><span>FCST 12 meses</span></div><div class="metric"><b style="color:${s.c === C.yellow ? '#b58a00' : s.c}">${pct(a)}</b><span>Aderência à meta</span></div></div></div>`;
   }
-  function renderManagement(rows) {
-    const g = group(rows, ['mgmt']).sort((a, b) => (b.attain ?? -1) - (a.attain ?? -1));
-    $('#dgpMgmt').innerHTML = `<thead><tr><th>Gerência</th><th class="num">Meta</th><th class="num">Realizado</th><th class="num">Gap</th><th class="num">Ating.</th><th>Tendência</th></tr></thead><tbody>${g.map(x => `<tr><td>${esc(x.mgmt)}</td><td class="num">${money(x.meta)}</td><td class="num">${money(x.real)}</td><td class="num ${x.gapMeta < 0 ? 'neg' : 'pos'}">${money(x.gapMeta)}</td><td class="num"><span class="pill ${signal(x.attain)}">${pct(x.attain)}</span></td><td>${esc(x.trend)}</td></tr>`).join('') || '<tr><td colspan="6" class="empty-state">Sem dados no recorte.</td></tr>'}</tbody>`;
+  function renderKpis(data) {
+    const projs = aggregate(data, ['id']).map(x => x.rows[0]);
+    const dgp = projs.filter(x => x.iniciativa === 'DGP').length, icg = projs.filter(x => x.iniciativa === 'ICG').length;
+    $('#dgpCounts').innerHTML = [['Total de projetos', projs.length, 'Projetos únicos filtrados'], ['Projetos DGP', dgp, 'Portfólio DGP'], ['Projetos ICG', icg, 'Portfólio ICG']]
+      .map(([l, v, n]) => `<div class="x-card kpi"><div class="kpi-label">${l}</div><div class="kpi-value">${v}</div><div class="kpi-note">${n}</div></div>`).join('');
+    const now = new Date(), cy = now.getFullYear(), cm = now.getMonth();
+    const lastIdx = (cm + 11) % 12, lastYear = cm === 0 ? cy - 1 : cy, lastLabel = MES[lastIdx].toLowerCase() + '/' + String(lastYear).slice(-2);
+    const closed = data.filter(x => x.ano < cy || (x.ano === cy && MES.indexOf(x.mes) < cm));
+    const annual = vals(data);
+    $('#dgpFin').innerHTML = finCard('Resultado parcial até ' + lastLabel, vals(closed)) + finCard('OPEX', vals(closed.filter(x => x.tipo === 'OPEX'))) + finCard('CAPEX', vals(closed.filter(x => x.tipo === 'CAPEX'))) + projectionCard({ budget: annual.budget, fcst: annual.fcst });
   }
-  function renderRanks(rows) {
-    const g = group(rows, ['id', 'project', 'expense']).filter(x => Math.abs(x.real) > 1e-6 && Math.abs(x.gapMeta) > 1e-6);
-    const dot = x => x.attain >= 1 ? C.brown : x.attain >= .95 ? C.yellow : C.red;
-    const render = (id, arr) => { $(id).innerHTML = arr.map((x, i) => `<div class="dgp-rank-item"><span class="dgp-rank-pos">${i + 1}</span><i class="dgp-dot" style="background:${dot(x)}"></i><span class="dgp-rank-name" title="${esc(x.id)} · ${esc(x.project)}">${esc(x.project)} · ${esc(x.expense)}</span><span class="dgp-rank-val ${x.gapMeta < 0 ? 'neg' : 'pos'}">${money(x.gapMeta)}</span></div>`).join('') || '<span class="dgp-notice">Sem projetos com impacto no recorte.</span>'; };
-    render('#dgpAbove', g.filter(x => x.gapMeta > 0).sort((a, b) => b.gapMeta - a.gapMeta).slice(0, 8));
-    render('#dgpBelow', g.filter(x => x.gapMeta < 0).sort((a, b) => a.gapMeta - b.gapMeta).slice(0, 8));
+  function renderAreaTable(data) {
+    const rows = aggregate(data, ['area']).map(g => ({ area: g.area, ...vals(g.rows) })).sort((a, b) => b.real - a.real);
+    $('#dgpAreaBody').innerHTML = rows.map(x => { const d = x.real - x.budget, a = x.fcst ? x.real / x.fcst * 100 : NaN, t = sem(a).t; return `<tr><td><b>${esc(x.area)}</b></td><td>${fmt(x.budget)}</td><td>${fmt(x.fcst)}</td><td>${fmt(x.real)}</td><td class="${trClass(d)}">${fmt(d)}</td><td class="${t === 'No alvo' ? 'pos' : t === 'Crítico' ? 'neg' : 'neu'}">${pct(a)}</td></tr>`; }).join('') || '<tr><td colspan="6" class="empty">Sem dados</td></tr>';
+    const v = vals(data), d = v.real - v.budget, a = v.fcst ? v.real / v.fcst * 100 : NaN;
+    $('#dgpAreaFoot').innerHTML = `<tr><td>TOTAL</td><td>${fmt(v.budget)}</td><td>${fmt(v.fcst)}</td><td>${fmt(v.real)}</td><td class="${trClass(d)}">${fmt(d)}</td><td>${pct(a)}</td></tr>`;
   }
-  function renderDetail(rows) {
-    let g = group(rows, ['id', 'mgmt', 'area', 'project', 'expense', 'status']);
-    const q = norm($('#dgpSearch')?.value);
-    if (q) g = g.filter(x => norm([x.id, x.mgmt, x.area, x.project, x.expense, x.status].join(' ')).includes(q));
-    g.sort((a, b) => { const av = a[sortState.key] ?? -Infinity, bv = b[sortState.key] ?? -Infinity; return typeof av === 'string' ? av.localeCompare(String(bv), 'pt-BR', { numeric: true }) * sortState.dir : (av - bv) * sortState.dir; });
-    const cols = DETAIL_COLS.filter(([k]) => visibleCols.has(k));
-    const t = $('#dgpDetail');
-    t.innerHTML = `<thead><tr>${cols.map(([k, l]) => `<th data-key="${k}" class="${[...MONEY_COLS, 'attain'].includes(k) ? 'num' : ''} ${sortState.key === k ? 'sorted' : ''}">${l}${sortState.key === k ? (sortState.dir > 0 ? ' ▲' : ' ▼') : ''}</th>`).join('')}</tr></thead><tbody>${g.map(x => `<tr>${cols.map(([k]) => {
-      const isNum = [...MONEY_COLS, 'attain'].includes(k);
-      const cls = k === 'gapMeta' ? (Number(x[k]) < 0 ? 'neg' : 'pos') : '';
-      const val = k === 'attain' ? pct(x[k]) : MONEY_COLS.includes(k) ? money(x[k]) : esc(x[k]);
-      return `<td class="${isNum ? 'num' : ''} ${cls}">${val}</td>`;
-    }).join('')}</tr>`).join('') || `<tr><td colspan="${cols.length}" class="empty-state">Nenhum projeto encontrado.</td></tr>`}</tbody>`;
-    t.querySelectorAll('th').forEach(th => th.onclick = () => { const k = th.dataset.key; sortState = { key: k, dir: sortState.key === k ? -sortState.dir : 1 }; renderDetail(filtered()); });
+  function rankItem(x, mode, total, belowTip = false) {
+    const right = mode === 'result'
+      ? `${fmt(x.real)}<div class="rank-meta">${pct(total ? x.real / total * 100 : 0)} do total</div>`
+      : `${pct(x.atingMeta)}<div class="rank-meta">Real ${fmt(x.real)} | Meta ${fmt(x.budget)}</div>`;
+    const f = FCA.get(String(x.id)) || {};
+    const tip = belowTip ? ` data-tip="${esc(`Justificativa\n${f.justificativa || 'Justificativa não informada.'}`)}"` : '';
+    return `<div class="rank-item"${tip}><div><div class="rank-name">${esc(x.projeto)}</div><div class="rank-meta">${esc(x.area)} · ${esc(x.iniciativa)}</div></div><div class="rank-value">${right}</div></div>`;
   }
-  function buildFilters() {
-    const box = $('#dgpFilters');
-    if (!box) return;
-    box.innerHTML = FILTERS.map(([k, label]) => {
-      let opts;
-      if (k === 'year') opts = '<option value="Todos">Selecionar todos</option>' + unique('year').map(v => `<option value="${v}">${v}</option>`).join('');
-      else if (k === 'month') opts = MONTHS.map((m, i) => `<option value="${i}">${m}</option>`).join('');
-      else opts = '<option value="Todos">Todos</option>' + unique(k).map(v => `<option value="${esc(v)}">${esc(v)}</option>`).join('');
-      return `<div class="dgp-field"><label>${label}</label><select data-k="${k}">${opts}</select></div>`;
-    }).join('');
-    box.querySelectorAll('select').forEach(sel => {
-      const k = sel.dataset.k;
-      sel.value = state[k];
-      if (sel.value !== String(state[k])) { state[k] = k === 'month' ? '11' : 'Todos'; sel.value = state[k]; }
-      sel.onchange = () => {
-        state[k] = sel.value;
-        if (k === 'year') { state.month = String(defaultCutoff(sel.value === 'Todos' ? maxYear() : Number(sel.value))); buildFilters(); }
-        update();
-      };
-    });
+  function renderRanks(data) {
+    const p = projectDetails(data).map(x => ({ ...x, atingMeta: x.budget !== 0 ? x.real / x.budget * 100 : NaN })), total = sum(p, x => x.real);
+    const above = p.filter(x => Number.isFinite(x.atingMeta) && x.atingMeta >= 100).sort((a, b) => b.atingMeta - a.atingMeta).slice(0, 5);
+    const below = p.filter(x => Number.isFinite(x.atingMeta) && x.atingMeta < 100).sort((a, b) => a.atingMeta - b.atingMeta).slice(0, 5);
+    const result = [...p].sort((a, b) => b.real - a.real).slice(0, 5);
+    $('#dgpRankAbove').innerHTML = above.map(x => rankItem(x, 'att', total)).join('') || '<div class="empty">Nenhum projeto</div>';
+    $('#dgpRankBelow').innerHTML = below.map(x => rankItem(x, 'att', total, true)).join('') || '<div class="empty">Nenhum projeto</div>';
+    $('#dgpRankResult').innerHTML = result.map(x => rankItem(x, 'result', total)).join('') || '<div class="empty">Nenhum projeto</div>';
   }
-  function buildColumnMenu() {
-    const menu = $('#dgpColMenu');
-    menu.innerHTML = DETAIL_COLS.map(([k, l]) => `<label><input type="checkbox" value="${k}" ${visibleCols.has(k) ? 'checked' : ''}>${l}</label>`).join('');
-    menu.querySelectorAll('input').forEach(cb => cb.onchange = () => { cb.checked ? visibleCols.add(cb.value) : visibleCols.delete(cb.value); renderDetail(filtered()); });
+  function renderDetails(data) { currentDetails = projectDetails(data); renderDetailPage(); }
+  function renderDetailPage() {
+    const q = clean($('#dgpSearch')?.value).toLowerCase();
+    const arr = currentDetails.filter(x => [x.id, x.area, x.projeto, x.fase, x.tipo].join(' ').toLowerCase().includes(q));
+    arr.sort((a, b) => { let A = a[sortKey], B = b[sortKey]; if (typeof A === 'string') return A.localeCompare(String(B), 'pt-BR', { numeric: true }) * sortDir; A = Number.isFinite(A) ? A : -Infinity; B = Number.isFinite(B) ? B : -Infinity; return (A - B) * sortDir; });
+    const pages = Math.max(1, Math.ceil(arr.length / pageSize));
+    page = Math.min(page, pages);
+    const slice = arr.slice((page - 1) * pageSize, page * pageSize);
+    const tb = sum(arr, x => x.budget), tf = sum(arr, x => x.fcst), tr = sum(arr, x => x.real), td = tr - tb;
+    $('#dgpDetailFoot').innerHTML = `<tr><td colspan="5">TOTAL</td><td>${fmt(tb)}</td><td>${fmt(tf)}</td><td>${fmt(tr)}</td><td class="${trClass(td)}">${fmt(td)}</td><td colspan="2"></td></tr>`;
+    $('#dgpDetailBody').innerHTML = slice.map(x => `<tr><td>${esc(x.id)}</td><td>${esc(x.area)}</td><td><b>${esc(x.projeto)}</b></td><td>${esc(x.fase || 'N/D')}</td><td>${esc(x.tipo)}</td><td>${fmt(x.budget)}</td><td>${fmt(x.fcst)}</td><td>${fmt(x.real)}</td><td class="${trClass(x.delta)}">${fmt(x.delta)}</td><td>${pct(x.ating)}</td><td><button type="button" class="fca-btn" data-fca="${esc(x.id)}" title="FCA e acompanhamento" aria-label="Abrir FCA do projeto ${esc(x.projeto)}">📋</button></td></tr>`).join('') || '<tr><td colspan="11" class="empty">Nenhum registro encontrado</td></tr>';
+    $('#dgpDetailBody').querySelectorAll('[data-fca]').forEach(b => b.onclick = () => openFca(b.dataset.fca));
+    $('#dgpPageInfo').textContent = `${arr.length} registro(s) | Página ${page} de ${pages}`;
+    let ps = '';
+    for (let i = 1; i <= pages; i++) {
+      if (i === 1 || i === pages || Math.abs(i - page) <= 2) ps += `<button type="button" class="${i === page ? 'active' : ''}" data-p="${i}">${i}</button>`;
+      else if (!ps.endsWith('…</span>')) ps += '<span>…</span>';
+    }
+    $('#dgpPager').innerHTML = ps;
+    $('#dgpPager').querySelectorAll('[data-p]').forEach(b => b.onclick = () => { page = +b.dataset.p; renderDetailPage(); });
+  }
+  function openFca(id) {
+    const p = currentDetails.find(x => String(x.id) === String(id));
+    if (!p) return;
+    const f = FCA.get(String(id)) || {};
+    $('#dgpFcaProject').textContent = `ID ${p.id} · ${p.projeto}`;
+    $('#dgpFcaJust').textContent = f.justificativa || 'Não informada';
+    $('#dgpFcaAction').textContent = f.planoAcao || 'Não informado';
+    $('#dgpFcaObs').textContent = f.observacao || 'Não informada';
+    $('#dgpFcaModal').classList.add('show');
+  }
+  function updatePeriod() {
+    const ordered = MES.filter(m => sel.month.includes(m));
+    const years = sel.year.length ? [...sel.year].sort() : uniq(RAW.map(x => String(x.ano))).sort();
+    let text;
+    if (!ordered.length || ordered.length === 12) text = years.length === 1 ? `Janeiro/${years[0]} a Dezembro/${years[0]}` : 'Todos os meses e anos';
+    else if (ordered.length === 1) text = `${MES_NOME[ordered[0]]}${years.length === 1 ? '/' + years[0] : ''}`;
+    else {
+      const contiguous = ordered.every((m, i) => i === 0 || MES.indexOf(m) === MES.indexOf(ordered[i - 1]) + 1);
+      text = contiguous && years.length === 1 ? `${MES_NOME[ordered[0]]}/${years[0]} a ${MES_NOME[ordered[ordered.length - 1]]}/${years[0]}` : `${ordered.length} meses acumulados`;
+    }
+    $('#dgpPeriod').textContent = text;
   }
 
-  function update() {
-    if (!$('#dgpCards')) return;
-    const rows = filtered();
-    const projects = new Set(rows.map(r => r.id)).size;
-    $('#dgpScope').textContent = `${state.year === 'Todos' ? 'Todos os anos' : state.year} | YTD até ${MONTHS[Number(state.month)]} | ${projects} projeto(s) DGP | ${rows.length} linhas`;
-    $('#dgpQuality').textContent = 'Forecast distinto não identificado na fonte; exibido como N/A. Duplicidades exatas são removidas no carregamento.';
-    renderCards(rows);
-    $('#dgpEvolution').innerHTML = evolutionSVG(rows);
-    $('#dgpArea').innerHTML = areaSVG(rows);
-    renderManagement(rows);
-    renderRanks(rows);
-    renderDetail(rows);
+  /* ---------------- Filtros ---------------- */
+  function buildMulti(name) {
+    const cfg = MULTI[name], opts = optionsFor(name);
+    sel[name] = sel[name].filter(v => opts.includes(v));
+    const box = $(`#dgpOpts-${name}`);
+    box.innerHTML = opts.map(v => `<label class="f-opt"><input type="checkbox" value="${esc(v)}" ${sel[name].includes(v) ? 'checked' : ''}>${esc(optLabel(name, v))}</label>`).join('');
+    box.querySelectorAll('input').forEach(cb => cb.onchange = () => {
+      sel[name] = [...box.querySelectorAll('input:checked')].map(x => x.value);
+      afterFilter(name);
+    });
+    const chosen = opts.filter(v => sel[name].includes(v));
+    $(`#dgpTrig-${name}`).textContent = !chosen.length || chosen.length === opts.length ? cfg.all : chosen.length === 1 ? optLabel(name, chosen[0]) : cfg.many(chosen.length);
+    if (cfg.tags) {
+      const tags = $(`#dgpTags-${name}`);
+      tags.innerHTML = chosen.map(v => `<span class="f-tag">${esc(optLabel(name, v))}<button type="button" data-v="${esc(v)}" aria-label="Remover">×</button></span>`).join('');
+      tags.querySelectorAll('button').forEach(b => b.onclick = () => { sel[name] = sel[name].filter(v => v !== b.dataset.v); afterFilter(name); });
+    }
+  }
+  function afterFilter(name) {
+    buildMulti(name);
+    if (['year', 'area', 'phase'].includes(name)) buildMulti('project');
+    updatePeriod(); page = 1; renderAll();
+  }
+  function multiHTML(name, extraClass = '') {
+    const cfg = MULTI[name];
+    return `<div class="f-card ${extraClass}"><label>${cfg.label}</label><div class="f-multi" id="dgpMulti-${name}"><button type="button" class="f-trigger" id="dgpTrig-${name}">${cfg.all}</button><div class="f-menu"><div class="f-acts"><button type="button" class="f-act" data-all="${name}">Selecionar todos</button><button type="button" class="f-act" data-clear="${name}">Limpar seleção</button></div><div class="f-opts ${name === 'month' ? 'two' : ''}" id="dgpOpts-${name}"></div></div></div>${cfg.tags ? `<div class="f-tags" id="dgpTags-${name}"></div>` : ''}</div>`;
+  }
+  function initFilters(view) {
+    Object.keys(MULTI).forEach(buildMulti);
+    const ini = $('#dgpIniciativa');
+    ini.innerHTML = '<option value="">Todas as iniciativas</option>' + uniq(RAW.map(x => x.iniciativa)).sort().map(v => `<option>${esc(v)}</option>`).join('');
+    if ([...ini.options].some(o => o.value === iniciativa)) ini.value = iniciativa; else iniciativa = '';
+    ini.onchange = () => { iniciativa = ini.value; buildMulti('project'); updatePeriod(); page = 1; renderAll(); };
+    view.querySelectorAll('.f-trigger').forEach(t => t.onclick = e => {
+      e.stopPropagation();
+      const m = t.parentElement, open = m.classList.contains('open');
+      view.querySelectorAll('.f-multi.open').forEach(x => x.classList.remove('open'));
+      if (!open) m.classList.add('open');
+    });
+    view.querySelectorAll('.f-menu').forEach(m => m.onclick = e => e.stopPropagation());
+    view.querySelectorAll('[data-all]').forEach(b => b.onclick = () => { const n = b.dataset.all; sel[n] = optionsFor(n); afterFilter(n); });
+    view.querySelectorAll('[data-clear]').forEach(b => b.onclick = () => { const n = b.dataset.clear; sel[n] = []; afterFilter(n); });
+    $('#dgpClear').onclick = () => { Object.keys(sel).forEach(k => sel[k] = []); iniciativa = ''; ini.value = ''; Object.keys(MULTI).forEach(buildMulti); updatePeriod(); page = 1; renderAll(); };
+    updatePeriod();
+  }
+
+  /* ---------------- Exportação (sem bibliotecas) ---------------- */
+  function download(content, name, type) {
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob(['\ufeff' + content], { type }));
+    a.download = name; a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  }
+  const csvEsc = v => '"' + String(v ?? '').replaceAll('"', '""') + '"';
+  const BASE_HEADS = ['ID', 'Iniciativa', 'Área', 'Projetos', 'Status', 'Item', 'Tipo Despesa', 'Ano', 'Mês', 'Resultado', 'Fase'];
+  const baseRow = r => [r.id, r.iniciativa, r.area, r.projeto, r.status, r.item, r.tipo, r.ano, r.mes, fmt(r.resultado), r.fase];
+  function exportBaseCsv() { download([BASE_HEADS, ...filtered().map(baseRow)].map(r => r.map(csvEsc).join(';')).join('\n'), 'Base_Projetos_DGP_Filtrada.csv', 'text/csv;charset=utf-8'); }
+  function exportBaseExcel() {
+    const rows = [BASE_HEADS, ...filtered().map(baseRow)];
+    const html = `<html><head><meta charset="utf-8"></head><body><table>${rows.map((r, i) => `<tr>${r.map(c => i ? `<td>${esc(c)}</td>` : `<th>${esc(c)}</th>`).join('')}</tr>`).join('')}</table></body></html>`;
+    download(html, 'Base_Projetos_DGP_Filtrada.xls', 'application/vnd.ms-excel;charset=utf-8');
+  }
+  function exportDetailCsv() {
+    const head = ['ID', 'Área', 'Projeto', 'Fase', 'Tipo Despesa', 'Meta', 'FCST', 'Realizado', 'Desvio vs Meta', '% Atingimento'];
+    download([head, ...currentDetails.map(x => [x.id, x.area, x.projeto, x.fase, x.tipo, fmt(x.budget), fmt(x.fcst), fmt(x.real), fmt(x.delta), pct(x.ating)])].map(r => r.map(csvEsc).join(';')).join('\n'), 'detalhamento_projetos.csv', 'text/csv;charset=utf-8');
+  }
+
+  function renderAll() {
+    const d = filtered();
+    renderKpis(d);
+    $('#dgpLine').innerHTML = lineChart(d);
+    $('#dgpExpense').innerHTML = expenseChart(d);
+    $('#dgpArea').innerHTML = areaChart(d);
+    renderAreaTable(d);
+    renderRanks(d);
+    renderDetails(d);
   }
 
   /* ---------------- Telas ---------------- */
@@ -1512,7 +1710,7 @@ body.dgp-open #projectView{display:none!important}
 
   function renderLocked() {
     const view = $('#dgpView');
-    view.innerHTML = `${topbar()}<div class="dgp-lock"><article class="card dgp-lock-card"><div class="dgp-lock-icon">🚧</div><h2>Financeiro DGP</h2><p>Este módulo está em desenvolvimento e será disponibilizado em breve, com o detalhamento financeiro dos projetos da iniciativa DGP.</p><div class="dgp-progress"><i></i></div><button class="dgp-lock-link" type="button" id="dgpLockLink">Acesso restrito</button><form class="dgp-lock-form" id="dgpLockForm" autocomplete="off"><input type="password" id="dgpPass" placeholder="Senha de acesso"><button type="submit">Entrar</button></form><div class="dgp-lock-error" id="dgpLockError"></div></article></div>`;
+    view.innerHTML = `${topbar()}<div class="dgp-lock"><article class="card x-card dgp-lock-card"><div class="dgp-lock-icon">🚧</div><h2>Financeiro DGP</h2><p>Este módulo está em desenvolvimento e será disponibilizado em breve, com o detalhamento financeiro dos projetos da iniciativa DGP.</p><div class="dgp-progress"><i></i></div><button class="dgp-lock-link" type="button" id="dgpLockLink">Acesso restrito</button><form class="dgp-lock-form" id="dgpLockForm" autocomplete="off"><input type="password" id="dgpPass" placeholder="Senha de acesso"><button type="submit">Entrar</button></form><div class="dgp-lock-error" id="dgpLockError"></div></article></div>`;
     $('#dgpLockLink').onclick = () => { $('#dgpLockForm').classList.add('show'); $('#dgpPass').focus(); };
     $('#dgpLockForm').onsubmit = event => {
       event.preventDefault();
@@ -1523,38 +1721,47 @@ body.dgp-open #projectView{display:none!important}
 
   function renderModule() {
     const view = $('#dgpView');
-    rawRows = buildRows();
-    const actions = `<button class="dgp-btn" type="button" id="dgpRefresh">↻ Atualizar dados</button><button class="dgp-btn" type="button" id="dgpReset">Limpar filtros</button><button class="dgp-btn" type="button" id="dgpLock" title="Bloquear novamente">🔒 Bloquear</button>`;
-    view.innerHTML = `${topbar(actions)}
-      <section class="dgp-hero"><div><div class="pid">Iniciativa DGP · Detalhamento financeiro</div><h1>Financeiro DGP</h1><p>Projetos da iniciativa DGP que exigem acompanhamento especial.</p></div><div class="dgp-chips"><span class="dgp-chip">Período: YTD (2026–2027)</span><span class="dgp-chip red">Visão executiva</span></div></section>
-      <section class="card dgp-filters" id="dgpFilters"></section>
-      <div class="dgp-meta-row"><span class="dgp-badge" id="dgpScope"></span><span class="dgp-notice" id="dgpQuality"></span></div>
-      ${rawRows.length ? `
-      <section class="dgp-cards" id="dgpCards"></section>
-      <section class="dgp-grid-2"><article class="card dgp-card"><div class="dgp-card-head"><div><h3>Evolução acumulada YTD</h3><div class="dgp-sub">Valores em R$ milhões</div></div><div class="dgp-toggle"><button type="button" data-view="monthly" class="${lineView === 'monthly' ? 'active' : ''}">Mensal</button><button type="button" data-view="ytd" class="${lineView === 'ytd' ? 'active' : ''}">YTD</button></div></div><div id="dgpEvolution"></div></article><article class="card dgp-card"><div class="dgp-card-head"><div><h3>Representatividade da meta por área (%)</h3></div></div><div id="dgpArea"></div></article></section>
-      <section class="dgp-grid-eq"><article class="card dgp-card"><div class="dgp-card-head"><h3>Performance consolidada por área de negócio</h3></div><div class="dgp-table-wrap"><table id="dgpMgmt"></table></div></article><article class="card dgp-card"><div class="dgp-card-head"><h3>Ranking de projetos</h3></div><div class="dgp-rank-grid"><div><div class="dgp-rank-title">Acima da meta</div><div class="dgp-rank-list" id="dgpAbove"></div></div><div><div class="dgp-rank-title">Abaixo da meta</div><div class="dgp-rank-list" id="dgpBelow"></div></div></div></article></section>
-      <section class="card dgp-card"><div class="dgp-card-head"><h3>Detalhamento analítico</h3><div class="dgp-detail-actions"><div class="dgp-col-picker"><button type="button" class="dgp-btn" id="dgpColBtn">Exibir/ocultar colunas</button><div class="dgp-col-menu" id="dgpColMenu"></div></div><input class="dgp-search" id="dgpSearch" type="search" placeholder="Pesquisar projeto, área, status..." autocomplete="off"></div></div><div class="dgp-table-wrap"><table id="dgpDetail"></table></div></section>
-      ` : '<article class="card dgp-card"><div class="empty-state">Nenhum lançamento financeiro DGP (2026–2027) encontrado nos JSONs. Confira se a aba Base_Financ. dos projetos DGP está preenchida e com Iniciativa = DGP.</div></article>'}
-      <details class="card dgp-notes"><summary>Notas da base: origem de cada campo</summary><div class="dgp-map">
-        <div><b>Fonte</b>Aba Base_Financ. de cada Excel LOG-xxx (via gerar_jsons.py)</div><div><b>Escopo</b>Somente linhas com Iniciativa = DGP</div><div><b>ID do projeto</b>LOG-xxx do arquivo</div><div><b>Gerência</b>Coluna Gerência da Base_Financ.</div><div><b>Área</b>Área da One_Page</div><div><b>Projeto</b>Nome do projeto na One_Page</div><div><b>Tipo de despesa</b>OPEX / CAPEX (linha "Total" não é somada)</div><div><b>Baseline</b>Resultado quando ICG = Budget</div><div><b>Meta</b>Resultado quando ICG = Fcst</div><div class="warn"><b>Forecast</b>Não existe como série distinta (N/A)</div><div><b>Realizado</b>Resultado quando ICG = Real</div><div><b>Status</b>Situação da Base_Financ. (ou stage do projeto)</div><div class="warn"><b>Período</b>Somente 2026 e 2027</div>
-      </div></details>
-      <div class="dgp-footer">Valores em R$ milhões, conforme registrado na Base_Financ. dos projetos.</div>`;
+    const data = buildData();
+    RAW = data.rows; FCA = data.fca;
+    const projects = uniq(RAW.map(x => x.id)).length, areas = uniq(RAW.map(x => x.area)).length;
+    const rl = rollingLabel();
+    view.innerHTML = `${topbar('<button class="dgp-btn" type="button" id="dgpLock" title="Bloquear novamente">🔒 Bloquear</button>')}
+      <header class="x-head"><div><h1>Dashboard Financeiro Projetos de Logística</h1><div class="sub">Visão financeira e gerencial do portfólio | valores em milhões</div><div class="meta"><span><b>Fonte:</b> JSONs do portfólio (Base_Financ.)</span><span><b>Última Atualização:</b> ${esc(lastUpdate())}</span></div></div></header>
+      <section class="x-card x-import"><div class="x-import-main"><div><div class="x-import-title">Base de Projetos DGP</div><div class="x-import-sub">Dados carregados automaticamente dos arquivos JSON gerados a partir da aba Base_Financ. de cada projeto. Para atualizar, rode o gerar_jsons.py e clique em Atualizar Relatórios.</div></div><div class="x-actions"><button type="button" class="dgp-btn red" id="dgpRefresh">🔄 Atualizar Relatórios</button><button type="button" class="dgp-btn" id="dgpExportBtn">Exportar ▾</button><div class="x-drop" id="dgpExportMenu"><button type="button" id="dgpExpCsv">CSV filtrado</button><button type="button" id="dgpExpXls">Excel filtrado</button></div></div></div>
+        <div class="x-progress"><i style="width:${RAW.length ? 100 : 0}%">${RAW.length ? '100%' : '0%'}</i></div>
+        <div class="x-load"><span>Status: <b>${RAW.length ? 'Concluído' : 'Sem dados'}</b></span><span>Linhas: <b>${RAW.length.toLocaleString('pt-BR')}</b></span><span>Colunas: <b>${BASE_HEADS.length}</b></span><span>Registros: <b>${RAW.length.toLocaleString('pt-BR')}</b></span><span>Projetos únicos: <b>${projects}</b></span><span>Áreas: <b>${areas}</b></span></div>
+      </section>
+      <div class="x-period"><strong>Período selecionado:</strong><span id="dgpPeriod">Todos os meses</span></div>
+      <div class="x-section">KPIs executivos</div>
+      <section class="x-line"><div class="x-counts" id="dgpCounts"></div><div class="x-filters">${multiHTML('year')}${multiHTML('month')}${multiHTML('area')}<div class="f-card"><label for="dgpIniciativa">Iniciativa</label><select class="f-select" id="dgpIniciativa"></select></div>${multiHTML('phase')}<div class="f-project"><button type="button" class="f-clear" id="dgpClear">Limpar filtros</button>${multiHTML('project')}</div></div></section>
+      <section class="x-fin" id="dgpFin"></section>
+      <div class="x-section">Evolução financeira</div>
+      <section class="x-card chart-card"><div><b class="chart-title">Meta, FCST e Realizado por mês</b><div class="legend-note">Passe o mouse para visualizar a variação detalhada</div></div><div id="dgpLine"></div></section>
+      <div class="x-section">Visão financeira</div>
+      <section class="x-row"><div class="x-card chart-card"><b>Quantidade de Projetos por Área e Tipo de Despesa</b><div id="dgpExpense"></div></div><div class="x-card chart-card"><b>Resultado financeiro por área</b><div id="dgpArea"></div></div><div class="x-card chart-card"><b>Tabela resumida por área</b><div class="tbl-wrap" style="margin-top:9px;max-height:260px"><table class="area-tbl"><thead><tr><th>Área</th><th>Meta</th><th>FCST</th><th>Realizado</th><th>Delta vs Meta</th><th>% Atingimento</th></tr></thead><tbody id="dgpAreaBody"></tbody><tfoot id="dgpAreaFoot"></tfoot></table></div></div></section>
+      <div class="x-section">Rankings de projetos</div>
+      <section class="x-row3"><div class="x-card rank-card"><div class="rank-title pos">▲ Top 5 acima da meta</div><div id="dgpRankAbove"></div></div><div class="x-card rank-card"><div class="rank-title neg">▼ Top 5 abaixo da meta</div><div id="dgpRankBelow"></div></div><div class="x-card rank-card rank-fin"><div class="rank-title">★ Top 5 por resultado financeiro</div><div id="dgpRankResult"></div></div></section>
+      <div class="x-section">Detalhamento analítico</div>
+      <section class="x-card rank-card"><div class="detail-tools"><input id="dgpSearch" type="search" placeholder="Pesquisar projeto, área, fase ou ID..." autocomplete="off"><button type="button" class="dgp-btn red" id="dgpExportDetail">Exportar CSV</button></div>
+        <div class="tbl-wrap" style="max-height:680px"><table id="dgpDetailTable"><thead><tr><th class="sort" data-key="id">ID</th><th class="sort" data-key="area">Área</th><th class="sort" data-key="projeto">Projeto</th><th class="sort" data-key="fase">Fase</th><th class="sort" data-key="tipo">Tipo Despesa</th><th class="sort" data-key="budget">Meta (${rl})</th><th class="sort" data-key="fcst">FCST (${rl})</th><th class="sort" data-key="real">Realizado</th><th class="sort" data-key="delta">Desvio vs Meta</th><th class="sort" data-key="ating">% Atingimento</th><th aria-label="FCA">📋</th></tr></thead><tbody id="dgpDetailBody"></tbody><tfoot id="dgpDetailFoot"></tfoot></table></div>
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;margin-top:12px;gap:8px"><div id="dgpPageInfo" style="color:#777;font-size:12px"></div><div class="pager" id="dgpPager"></div></div>
+      </section>
+      <div class="footer-note">Fonte: JSONs do portfólio (aba Base_Financ. de cada projeto). Indicadores calculados dinamicamente conforme os filtros selecionados.</div>
+      <div class="x-modal" id="dgpFcaModal"><div class="x-modal-box" role="dialog" aria-modal="true"><div class="x-modal-head"><div><h5>📋 FCA e acompanhamento</h5><div style="color:#777;font-size:12px;margin-top:4px" id="dgpFcaProject"></div></div><button type="button" class="x-close" data-close aria-label="Fechar">×</button></div><div class="x-modal-body"><div class="fca-label">Justificativa</div><div class="fca-box" id="dgpFcaJust"></div><div class="fca-label">Plano de ação</div><div class="fca-box" id="dgpFcaAction" style="min-height:74px"></div><div class="fca-label">Observação</div><div class="fca-box" id="dgpFcaObs" style="min-height:74px;margin-bottom:0"></div></div><div class="x-modal-foot"><button type="button" class="dgp-btn" data-close>Fechar</button></div></div></div>`;
 
-    if (!$('#dgpScope')) return;
-    if (!rawRows.length) { $('#dgpScope').textContent = '0 projeto(s) DGP'; }
-    if (!initialized && rawRows.length) { state.month = String(defaultCutoff(maxYear())); initialized = true; }
-    buildFilters();
-    $('#dgpRefresh').onclick = () => { const b = $('#btnAtualizarDashboard'); if (b) { $('#dgpRefresh').textContent = '↻ Atualizando…'; b.click(); } };
-    $('#dgpReset').onclick = () => { Object.assign(state, { year: 'Todos', month: String(defaultCutoff(maxYear())), mgmt: 'Todos', area: 'Todos', project: 'Todos', expense: 'Todos', status: 'Todos' }); const s = $('#dgpSearch'); if (s) s.value = ''; buildFilters(); update(); };
+    bindTips(view);
+    initFilters(view);
     $('#dgpLock').onclick = () => { setUnlocked(false); renderLocked(); };
-    if (!rawRows.length) return;
-    view.querySelectorAll('.dgp-toggle button').forEach(b => b.onclick = () => { view.querySelectorAll('.dgp-toggle button').forEach(x => x.classList.remove('active')); b.classList.add('active'); lineView = b.dataset.view; $('#dgpEvolution').innerHTML = evolutionSVG(filtered()); });
-    $('#dgpSearch').oninput = () => renderDetail(filtered());
-    const menu = $('#dgpColMenu');
-    $('#dgpColBtn').onclick = e => { e.stopPropagation(); menu.classList.toggle('open'); };
-    menu.onclick = e => e.stopPropagation();
-    buildColumnMenu();
-    update();
+    $('#dgpRefresh').onclick = () => { const b = $('#btnAtualizarDashboard'); if (b) { $('#dgpRefresh').textContent = '🔄 Atualizando…'; b.click(); } else renderModule(); };
+    $('#dgpExportBtn').onclick = e => { e.stopPropagation(); $('#dgpExportMenu').classList.toggle('open'); };
+    $('#dgpExpCsv').onclick = exportBaseCsv;
+    $('#dgpExpXls').onclick = exportBaseExcel;
+    $('#dgpExportDetail').onclick = exportDetailCsv;
+    $('#dgpSearch').oninput = () => { page = 1; renderDetailPage(); };
+    view.querySelectorAll('#dgpDetailTable th[data-key]').forEach(th => th.onclick = () => { const k = th.dataset.key; sortDir = sortKey === k ? -sortDir : 1; sortKey = k; renderDetailPage(); });
+    const modal = $('#dgpFcaModal');
+    modal.onclick = e => { if (e.target === modal || e.target.closest('[data-close]')) modal.classList.remove('show'); };
+    renderAll();
   }
 
   /* ---------------- Navegação ---------------- */
@@ -1584,6 +1791,7 @@ body.dgp-open #projectView{display:none!important}
   window.closeFinanceiroDGP = () => {
     $('#dgpView')?.classList.remove('show');
     document.body.classList.remove('dgp-open');
+    const t = $('#dgpTip'); if (t) t.style.display = 'none';
     if (typeof window.closeProject === 'function') window.closeProject();
     else { document.body.classList.remove('project-open'); $('#home')?.classList.remove('hide'); }
   };
@@ -1594,9 +1802,12 @@ body.dgp-open #projectView{display:none!important}
   const originalOpen = window.openProject;
   if (typeof originalOpen === 'function') window.openProject = (...args) => { $('#dgpView')?.classList.remove('show'); document.body.classList.remove('dgp-open'); return originalOpen(...args); };
 
-  document.addEventListener('click', () => $('#dgpColMenu')?.classList.remove('open'));
-  // Recarrega a tela quando o botão "Atualizar dados" terminar
-  // (observa o fim da atualização pelo próprio botão, sem alterar o dashboard.js)
+  document.addEventListener('click', () => {
+    document.querySelectorAll('#dgpView .f-multi.open').forEach(x => x.classList.remove('open'));
+    $('#dgpExportMenu')?.classList.remove('open');
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') $('#dgpFcaModal')?.classList.remove('show'); });
+  // Recarrega a tela quando o botão "Atualizar dados" terminar (mantém filtros)
   const reRender = () => { if (document.body.classList.contains('dgp-open') && isUnlocked()) renderModule(); };
   document.addEventListener('dashboardDataLoaded', reRender);
   const refreshBtn = document.getElementById('btnAtualizarDashboard');
