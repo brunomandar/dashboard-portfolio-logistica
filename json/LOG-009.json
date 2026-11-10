@@ -23,12 +23,12 @@
     "Nova malha logística integrada (Single/Multi)"
   ],
   "saving": {
-    "opex12M": 2.82,
+    "opex12M": 3.1551500536774193,
     "capex12M": 0.0,
-    "total12M": 2.82,
-    "opex2026": 0.77,
+    "total12M": 3.1551500536774193,
+    "opex2026": 0.8501042936774194,
     "capex2026": 0.0,
-    "total2026": 0.77
+    "total2026": 0.8501042936774194
   },
   "macroAtividades": [
     {
@@ -646,8 +646,14 @@
       "anotacao": ""
     }
   ],
-  "historico": [],
-  "statusProjeto": "19/10/26 - Time Claro - Fim da 2ª Onda com a redução de 11 moto\n20/09/26 - Time Claro - Fim da 1ª Onda com a redução de 22 motos.\n11/09/26 - Unificação do SIMC NP em operação por Analitycs para equalizar SAP/ATLAS (Unificação de estoques).\n03/09/26 - RAMPUP por regional, definida com avaliação do Fabricio (Onda 1 - 22 motos até 20/09 / Onda 2 - 11 motos até 19/out)\n02/09/26 - Assinatura de contrato realizada.\n14/08/26 - 400k esse ano no BID.  Compra do plastico ficou para 2a quinzena de setembro.\n08/07/26 - Reunião realizada com Fabricio em 08/07 foi aprovado a proposta da Hexpress mediante unificação da malha e saving de 1.93MM com captura de 500k em 2026.\n12/06/26 - Compras irá entrar em contato com Hexpress para negociação.\n09/06/26 - Em renegociação com compras.\n22/05/26 - Valores finais em validação com time logística para aprovação em compras.\n15/05/26 - FCST ajustado pois ha dependencia de conclusão do BID.\n11/05/26 - SIMCARD e BID de transportes terão ajusto no FCST, pois não há BID finalizado.",
+  "historico": [
+    {
+      "data": "2026-11-10",
+      "acoes": "Ajuste da projeção de redução devido mudança no quadro fixo",
+      "detalhe": "A readequação do quadro resultou na redução de 42 motos (19 em set/26 e 23 em out/26), superando as 33 previstas inicialmente. O ajuste foi viabilizado pela migração de parte das entregas da modalidade Expressa para D+1, gerando saving acumulado de R$ 184,4 mil até outubro e economia anualizada estimada em R$ 2,7 MM."
+    }
+  ],
+  "statusProjeto": "10/11/2026 - Ajuste na projeção do saving. Redução de 42 motos (vs. 33 planejadas), impulsionada pela migração da modalidade Expressa para D+1. Resultado: R$ 184,4 mil de saving acumulado e potencial anualizado de R$ 2,7 MM.Total projetado entre fixo e variável de 3,16 MM\n19/10/26 - Time Claro - Fim da 2ª Onda com a redução de 11 moto\n20/09/26 - Time Claro - Fim da 1ª Onda com a redução de 22 motos.\n11/09/26 - Unificação do SIMC NP em operação por Analitycs para equalizar SAP/ATLAS (Unificação de estoques).\n03/09/26 - RAMPUP por regional, definida com avaliação do Fabricio (Onda 1 - 22 motos até 20/09 / Onda 2 - 11 motos até 19/out)\n02/09/26 - Assinatura de contrato realizada.\n14/08/26 - 400k esse ano no BID.  Compra do plastico ficou para 2a quinzena de setembro.\n08/07/26 - Reunião realizada com Fabricio em 08/07 foi aprovado a proposta da Hexpress mediante unificação da malha e saving de 1.93MM com captura de 500k em 2026.\n12/06/26 - Compras irá entrar em contato com Hexpress para negociação.\n09/06/26 - Em renegociação com compras.\n22/05/26 - Valores finais em validação com time logística para aprovação em compras.\n15/05/26 - FCST ajustado pois ha dependencia de conclusão do BID.\n11/05/26 - SIMCARD e BID de transportes terão ajusto no FCST, pois não há BID finalizado.",
   "financeiro": [
     {
       "id": "LOG-009",
@@ -755,7 +761,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.0429457416666667
+      "resultado": -0.042945751666666705
     },
     {
       "id": "LOG-009",
@@ -767,7 +773,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.1995360122043011
+      "resultado": -0.2260746316666666
     },
     {
       "id": "LOG-009",
@@ -779,7 +785,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28345722
     },
     {
       "id": "LOG-009",
@@ -791,7 +797,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -803,7 +809,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jan",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -815,7 +821,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Fev",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -827,7 +833,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -839,7 +845,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -851,7 +857,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mai",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -863,7 +869,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -875,7 +881,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -887,7 +893,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -1619,7 +1625,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.0557258950925926
+      "resultado": -0.056787064
     },
     {
       "id": "LOG-009",
@@ -1631,7 +1637,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.1995360122043011
+      "resultado": -0.221729289677419
     },
     {
       "id": "LOG-009",
@@ -1643,7 +1649,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28345722
     },
     {
       "id": "LOG-009",
@@ -1655,7 +1661,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -1667,7 +1673,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jan",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -1679,7 +1685,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Fev",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -1691,7 +1697,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -1703,7 +1709,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -1715,7 +1721,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mai",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -1727,7 +1733,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -1739,7 +1745,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -1751,7 +1757,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -2483,7 +2489,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.0557258950925926
+      "resultado": -0.056787064
     },
     {
       "id": "LOG-009",
@@ -2495,7 +2501,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.1995360122043011
+      "resultado": -0.221729289677419
     },
     {
       "id": "LOG-009",
@@ -2507,7 +2513,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28345722
     },
     {
       "id": "LOG-009",
@@ -2519,7 +2525,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -2531,7 +2537,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jan",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -2543,7 +2549,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Fev",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -2555,7 +2561,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -2567,7 +2573,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -2579,7 +2585,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mai",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -2591,7 +2597,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -2603,7 +2609,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -2615,7 +2621,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.2565352866666667
+      "resultado": -0.28813072
     },
     {
       "id": "LOG-009",
@@ -3246,6 +3252,6 @@
   "fonte": {
     "arquivo": "LOG-009 - Unificação da Malha (Single x CM).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-009%20-%20Unifica%C3%A7%C3%A3o%20da%20Malha%20%28Single%20x%20CM%29.xlsx?web=1",
-    "extraidoEm": "2026-11-10T11:42:37-03:00"
+    "extraidoEm": "2026-11-10T13:45:23-03:00"
   }
 }
