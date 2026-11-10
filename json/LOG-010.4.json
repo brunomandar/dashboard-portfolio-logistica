@@ -1,12 +1,12 @@
 {
   "id": "LOG-010.4",
-  "projeto": "Saving Compras  Bid Mctech - SP",
-  "area": "",
+  "projeto": "Top Rotas Mctech",
+  "area": "Transportes",
   "pontoFocal": "Jaime de Melo",
-  "inicio": "2026-09-01",
-  "termino": "2027-08-01",
+  "inicio": "2026-08-01",
+  "termino": "2026-08-31",
   "inicioCaptura": "2027-08-01",
-  "iniciativa": "Op. Transporte",
+  "iniciativa": "Consultoria",
   "pmo": "",
   "risco": "Médio",
   "status": "L4",
@@ -17,9 +17,10 @@
     "Opex",
     "Capex"
   ],
-  "escopo": "Otimização de custos por meio da migração do frete FTL (carga fechada) para LTL (carga fracionada), com a transportadora MCTECH  40 principais rotas do Brasil, foram negociadas com a Mctech",
+  "escopo": "Otimização de custos por meio da migração do frete FTL (carga fechada) para LTL (carga fracionada), com a transportadora MCTECH. Iremos realizar uma negociação pontual de 40 principais rotas do Brasil que possuem maior volumetria.",
   "entregaveis": [
-    "Apuração do saving gerado por período."
+    "Cadastro de Rotas LTL.",
+    "Redução nas despesas de Frete."
   ],
   "saving": {
     "opex12M": 0.36,
@@ -32,65 +33,65 @@
   "macroAtividades": [
     {
       "numero": "01.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Definição das TOP rotas",
+      "responsavel": "Jaime",
+      "status": 4,
+      "inicio": "2026-08-01",
+      "fim": "2026-08-04",
       "anotacao": ""
     },
     {
       "numero": "02.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Criação do BPLAN inicial com a estimativa de ganhos",
+      "responsavel": "Jaime e Bruno",
+      "status": 4,
+      "inicio": "2026-08-05",
+      "fim": "2026-08-11",
       "anotacao": ""
     },
     {
       "numero": "03.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Abertura do processo em compras",
+      "responsavel": "Gustavo",
+      "status": 4,
+      "inicio": "2026-08-12",
+      "fim": "2026-08-12",
       "anotacao": ""
     },
     {
       "numero": "04.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Conclusão da Rodada 1",
+      "responsavel": "Magali",
+      "status": 4,
+      "inicio": "2026-08-13",
+      "fim": "2026-08-20",
       "anotacao": ""
     },
     {
       "numero": "05.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Conclusão da Rodada Final",
+      "responsavel": "Magali",
+      "status": 4,
+      "inicio": "2026-08-21",
+      "fim": "2026-08-28",
       "anotacao": ""
     },
     {
       "numero": "06.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Subida da tabela do TMS",
+      "responsavel": "Jaime",
+      "status": 4,
+      "inicio": "2026-08-31",
+      "fim": "2026-08-31",
       "anotacao": ""
     },
     {
       "numero": "07.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Início da Captura",
+      "responsavel": "Jaime",
+      "status": 4,
+      "inicio": "2026-09-01",
+      "fim": "2026-09-01",
       "anotacao": ""
     },
     {
@@ -277,65 +278,65 @@
   "cronogramaDetalhado": [
     {
       "numero": 1,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Definição das TOP rotas",
+      "responsavel": "Jaime",
+      "status": 4,
+      "inicio": "2026-08-01",
+      "fim": "2026-08-04",
       "anotacao": ""
     },
     {
       "numero": 2,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Criação do BPLAN inicial com a estimativa de ganhos",
+      "responsavel": "Jaime e Bruno",
+      "status": 4,
+      "inicio": "2026-08-05",
+      "fim": "2026-08-11",
       "anotacao": ""
     },
     {
       "numero": 3,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Abertura do processo em compras",
+      "responsavel": "Gustavo",
+      "status": 4,
+      "inicio": "2026-08-12",
+      "fim": "2026-08-12",
       "anotacao": ""
     },
     {
       "numero": 4,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Conclusão da Rodada 1",
+      "responsavel": "Magali",
+      "status": 4,
+      "inicio": "2026-08-13",
+      "fim": "2026-08-20",
       "anotacao": ""
     },
     {
       "numero": 5,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Conclusão da Rodada Final",
+      "responsavel": "Magali",
+      "status": 4,
+      "inicio": "2026-08-21",
+      "fim": "2026-08-28",
       "anotacao": ""
     },
     {
       "numero": 6,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Subida da tabela do TMS",
+      "responsavel": "Jaime",
+      "status": 4,
+      "inicio": "2026-08-31",
+      "fim": "2026-08-31",
       "anotacao": ""
     },
     {
       "numero": 7,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Início da Captura",
+      "responsavel": "Jaime",
+      "status": 4,
+      "inicio": "2026-09-01",
+      "fim": "2026-09-01",
       "anotacao": ""
     },
     {
@@ -1183,7 +1184,7 @@
       "detalhe": "Importante: A incorporação do ganho deste projeto ao benefício reportado no BID de Engenharia está condicionada à conclusão da negociação pela área de Compras."
     }
   ],
-  "statusProjeto": "",
+  "statusProjeto": "08/09/2026: Concluído o complemento de rotas enviadas pela McTech\n30/08/2026: Identificada inconsistência em 10 rotas do material, as quais irão ser implementadas após revisão da McTech\n27/08/2026: Realizada subida e testes das tabelas McTech no sistema TMS",
   "financeiro": [
     {
       "id": "LOG-010.4",
@@ -1291,7 +1292,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.09006055200000002
+      "resultado": 0.00479671
     },
     {
       "id": "LOG-010.4",
@@ -1303,7 +1304,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.045
+      "resultado": 0.012657429999999935
     },
     {
       "id": "LOG-010.4",
@@ -1435,7 +1436,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.510343128
+      "resultado": 0.19453603
     },
     {
       "id": "LOG-010.4",
@@ -1447,7 +1448,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.255
+      "resultado": 0.27384714
     },
     {
       "id": "LOG-010.4",
@@ -1579,7 +1580,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.6004036800000001
+      "resultado": 0.19933274
     },
     {
       "id": "LOG-010.4",
@@ -1591,7 +1592,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.3
+      "resultado": 0.2865045699999999
     },
     {
       "id": "LOG-010.4",
@@ -3781,6 +3782,6 @@
   "fonte": {
     "arquivo": "LOG-010.4 - Top Rotas  - Mctech.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.4%20-%20Top%20Rotas%20%20-%20Mctech.xlsx?web=1",
-    "extraidoEm": "2026-11-09T09:16:25-03:00"
+    "extraidoEm": "2026-11-10T10:20:26-03:00"
   }
 }

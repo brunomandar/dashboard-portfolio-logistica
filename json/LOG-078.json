@@ -80,18 +80,18 @@
       "numero": "06.",
       "atividade": "CONSTRUÇÃO DO PLANO DE AÇÃO E CRONOGRAMA EXECUTIVO",
       "responsavel": "",
-      "status": 0,
-      "inicio": "2026-10-27",
-      "fim": "2026-10-27",
+      "status": 4,
+      "inicio": "2026-11-03",
+      "fim": "2026-11-05",
       "anotacao": ""
     },
     {
       "numero": "07.",
       "atividade": "DESENHO DO NOVO FLUXO DE PAGAMENTO",
       "responsavel": "",
-      "status": 0,
-      "inicio": "2026-10-27",
-      "fim": "2026-10-27",
+      "status": 1,
+      "inicio": "2026-11-06",
+      "fim": "2026-11-12",
       "anotacao": ""
     },
     {
@@ -99,8 +99,8 @@
       "atividade": "DEFINIÇÃO DOS REQUISITOS SISTÊMICOS E REGRAS DO NEGÓCIO",
       "responsavel": "",
       "status": 0,
-      "inicio": "2026-10-27",
-      "fim": "2026-10-27",
+      "inicio": "2026-11-13",
+      "fim": "2026-11-19",
       "anotacao": ""
     },
     {
@@ -108,8 +108,8 @@
       "atividade": "DESENVOLVIMENTO DAS MELHORIAS SISTÊMICAS",
       "responsavel": "",
       "status": 0,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-11-23",
+      "fim": "2026-12-25",
       "anotacao": ""
     },
     {
@@ -117,8 +117,8 @@
       "atividade": "ELABORAÇÃO DOS ADITIVOS CONTRATUAIS COM AS TRANSPORTADORAS",
       "responsavel": "",
       "status": 0,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-11-23",
+      "fim": "2026-12-25",
       "anotacao": ""
     },
     {
@@ -126,8 +126,8 @@
       "atividade": "VALIDAÇÃO DO NOVO FLUXO COM TRANSPORTES, FISCAL, FINANCEIRO, COMPRAS E JURÍDICO",
       "responsavel": "",
       "status": 0,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2027-01-04",
+      "fim": "2027-01-08",
       "anotacao": ""
     },
     {
@@ -135,8 +135,8 @@
       "atividade": "HOMOLOGAÇÃO DAS MELHORIAS SISTÊMICAS",
       "responsavel": "",
       "status": 0,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2027-01-11",
+      "fim": "2027-01-22",
       "anotacao": ""
     },
     {
@@ -144,8 +144,8 @@
       "atividade": "COMUNICAÇÃO DO NOVO PROCESSO PARA AS TRANSPORTADORAS",
       "responsavel": "",
       "status": 0,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2027-01-25",
+      "fim": "2027-01-29",
       "anotacao": ""
     },
     {
@@ -153,8 +153,8 @@
       "atividade": "TESTE COM AS ÁREAS ENVOLVIDAS",
       "responsavel": "",
       "status": 0,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2027-02-01",
+      "fim": "2027-02-12",
       "anotacao": ""
     },
     {
@@ -162,8 +162,8 @@
       "atividade": "IMPLATAÇÃO DO NOVO FLUXO DE PAGAMENTO",
       "responsavel": "",
       "status": 0,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2027-02-15",
+      "fim": "2027-02-19",
       "anotacao": ""
     },
     {
@@ -171,8 +171,8 @@
       "atividade": "MONITORAMENTO DOS INDICADORES E ACOMPANHAMENTO PÓS-IMPLATAÇÃO",
       "responsavel": "",
       "status": 0,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2027-02-19",
+      "fim": "2027-03-01",
       "anotacao": ""
     },
     {
@@ -3470,6 +3470,6 @@
   "fonte": {
     "arquivo": "LOG-078 - Regulamentacão do Prazo de Pagamentos (30 Dias úteis).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-078%20-%20Regulamentac%C3%A3o%20do%20Prazo%20de%20Pagamentos%20%2830%20Dias%20%C3%BAteis%29.xlsx?web=1",
-    "extraidoEm": "2026-11-09T09:18:06-03:00"
+    "extraidoEm": "2026-11-10T10:22:37-03:00"
   }
 }

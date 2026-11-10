@@ -105,11 +105,11 @@
     },
     {
       "numero": "09.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Fluxo de pagamento",
+      "responsavel": "Clizia",
+      "status": 0,
+      "inicio": "2026-11-23",
+      "fim": "2026-12-30",
       "anotacao": ""
     },
     {
@@ -592,30 +592,30 @@
       "anotacao": ""
     },
     {
-      "numero": 36,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "numero": 9,
+      "atividade": "Fluxo de Pagamento",
+      "responsavel": "Clizia",
+      "status": 0,
+      "inicio": "2026-11-23",
+      "fim": "2026-12-30",
       "anotacao": ""
     },
     {
-      "numero": 37,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "numero": "9.1",
+      "atividade": "Parametrizar o fluxo de pagamento com as regras contratuais",
+      "responsavel": "Clizia",
+      "status": 0,
+      "inicio": "2026-11-23",
+      "fim": "2026-12-30",
       "anotacao": ""
     },
     {
-      "numero": 38,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "numero": "9.2",
+      "atividade": "Verificação automática das regras",
+      "responsavel": "Rogério",
+      "status": 0,
+      "inicio": "2026-11-23",
+      "fim": "2026-12-30",
       "anotacao": ""
     },
     {
@@ -1229,7 +1229,7 @@
       "detalhe": "Operação em fase final de implantação, com infraestrutura concluída e testes do RPA em andamento. Permanecem pendentes as liberações de acessos e validações de LGPD no TOA, impactando a entrada em operação, reprogramada para 13/10/2026."
     }
   ],
-  "statusProjeto": "Risco: Atraso na disponibilidade das bases pelo time de LGPD. \n06/11/2026: Discutidos os impactos do backlog de quse 3 mil ordens em atraso, a necessidade de acelerar baixas sistêmicas e acompanhamento das transportadoras.\n05/11/2026: Fechado entre PostalGow, Time de Transporte e Compras as regras operacionais que irão ser estabelecidas para execução da operação.\nTime postalgow precisa corrigir erros do relatório e disponibilizar . O modelo de extração TOA será automatizado.\n04/11/2026: Macro fluxo devolução preliminar compartilhado com Fabrício, pendente fechamento das novas regras junto ao time de compras\n30/10/2026: Enviado comunicado via e-mail informando que as entregas de Claro Box passou a operar via Logística.\n27/10/2026: Criar fluxo de devolução dos equipamentos para Postal Gow - Reversa\n26/10/2026: Backlog de 2247 OS\n23/10/2026: Ajuste no robo e embaladas 900 OS\n22/10/2026: Inicio da separação das 274 solicitações e envio pela Postal Gow\n21/10/2026: Go-Live iniciado, porém não conseguiu emitir as 274 etiquetas para o inicio da separação\n07/10/2026: Operação em fase final de implantação, com infraestrutura concluída e testes do RPA em andamento. Permanecem pendentes as liberações de acessos e validações de LGPD no TOA, impactando a entrada em operação, reprogramada para 13/10/2026.",
+  "statusProjeto": "Risco: Atraso na disponibilidade das bases pelo time de LGPD. \n09/11/2026: WR - Alteração da agenda para 15 dias e revisão do fluxo de tratativa das ordens com quebra de agenda. Verificar o fluxo de pagamento com relação ao contrato, precisará de verificação automática.\n06/11/2026: Discutidos os impactos do backlog de quse 3 mil ordens em atraso, a necessidade de acelerar baixas sistêmicas e acompanhamento das transportadoras. Foi criado um WR para tratativa dos problemas que inicia em 09/11.\n05/11/2026: Fechado entre PostalGow, Time de Transporte e Compras as regras operacionais que irão ser estabelecidas para execução da operação.\nTime postalgow precisa corrigir erros do relatório e disponibilizar . O modelo de extração TOA será automatizado.\n04/11/2026: Macro fluxo devolução preliminar compartilhado com Fabrício, pendente fechamento das novas regras junto ao time de compras\n30/10/2026: Enviado comunicado via e-mail informando que as entregas de Claro Box passou a operar via Logística.\n27/10/2026: Criar fluxo de devolução dos equipamentos para Postal Gow - Reversa\n26/10/2026: Backlog de 2247 OS\n23/10/2026: Ajuste no robo e embaladas 900 OS\n22/10/2026: Inicio da separação das 274 solicitações e envio pela Postal Gow\n21/10/2026: Go-Live iniciado, porém não conseguiu emitir as 274 etiquetas para o inicio da separação\n07/10/2026: Operação em fase final de implantação, com infraestrutura concluída e testes do RPA em andamento. Permanecem pendentes as liberações de acessos e validações de LGPD no TOA, impactando a entrada em operação, reprogramada para 13/10/2026.",
   "financeiro": [
     {
       "id": "LOG-076",
@@ -3827,6 +3827,6 @@
   "fonte": {
     "arquivo": "LOG-076 - Desativação DTH.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-076%20-%20Desativa%C3%A7%C3%A3o%20DTH.xlsx?web=1",
-    "extraidoEm": "2026-11-09T09:18:02-03:00"
+    "extraidoEm": "2026-11-10T10:22:32-03:00"
   }
 }

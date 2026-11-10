@@ -1230,9 +1230,14 @@
       "data": "2026-11-05",
       "acoes": "Avaliação de Regra de Negócio para grupos/perfil de usuários conforme região geográfica",
       "detalhe": "Permanece em análise a definição do processo de provisionamento de usuários no fluxo de concessão de acessos do GIA. A proposta discutida prevê que o usuário seja criado já com o respectivo grupo/perfil de acesso e com sua região de atuação previamente associada durante o processo inicial de concessão.\nFoi proposto que eventuais alterações futuras na alocação regional do usuário deverão ser realizadas diretamente pela área de Logística, garantindo maior autonomia operacional e reduzindo impactos no processo de concessão de acessos.\nResponsável pelo alinhamento: Rogério e time Catalde"
+    },
+    {
+      "data": "2026-11-09",
+      "acoes": "Definições dos niveis de aprovação",
+      "detalhe": "Ficou definido 02 níveis de aprovação, primeiro nível Gestor imediado do solicitnante e segundo nível, analístas do sistema. Inicalmente as validaçãoes serão manuais pela equipe de GA até finalização da automatização pelo IGA"
     }
   ],
-  "statusProjeto": "05/10/2026- Abertura chamados para Inclusão da aplicação no CMDB (inventário de ativos) da Claro: Resp- Wagner\n05/10/2026- Mapeamento de Perfis x Owners- Responsável: Rogério e time Catalde\n05/10/2026- Criação dos grupos de aprovadores\n05/10/2026- Definições para o Ambiente de Homologação do PING",
+  "statusProjeto": "09/11- Definido 02 níveis para aprovações no IGA. Incilmente será realizado manulmente pela equipe GA até aumatização do IGA \n05/10/2026- Abertura chamados para Inclusão da aplicação no CMDB (inventário de ativos) da Claro: Resp- Wagner\n05/10/2026- Mapeamento de Perfis x Owners- Responsável: Rogério e time Catalde\n05/10/2026- Criação dos grupos de aprovadores\n05/10/2026- Definições para o Ambiente de Homologação do PING",
   "financeiro": [
     {
       "id": "LOG-079",
@@ -3830,6 +3835,6 @@
   "fonte": {
     "arquivo": "LOG-79 -TMS Identity and Access Management.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-79%20-TMS%20Identity%20and%20Access%20Management.xlsx?web=1",
-    "extraidoEm": "2026-11-09T09:18:13-03:00"
+    "extraidoEm": "2026-11-10T10:22:43-03:00"
   }
 }

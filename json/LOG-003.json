@@ -1,8 +1,8 @@
 {
   "id": "LOG-003",
   "projeto": "105 - S&OP Móvel",
-  "area": "",
-  "pontoFocal": "",
+  "area": "Transportes",
+  "pontoFocal": "Raquel Piecha",
   "inicio": "2026-01-01",
   "termino": "2026-12-31",
   "inicioCaptura": "2026-01-01",
@@ -2204,7 +2204,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": 0.1991666666666667
+      "resultado": 0.0
     },
     {
       "id": "LOG-003",
@@ -2216,7 +2216,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": 0.1991666666666667
+      "resultado": 0.0
     },
     {
       "id": "LOG-003",
@@ -2228,7 +2228,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": 0.1991666666666667
+      "resultado": 0.0
     },
     {
       "id": "LOG-003",
@@ -2240,7 +2240,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": 0.1991666666666667
+      "resultado": 0.0
     },
     {
       "id": "LOG-003",
@@ -2348,7 +2348,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": 0.3983333333333334
+      "resultado": 0.1991666666666667
     },
     {
       "id": "LOG-003",
@@ -2360,7 +2360,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": 0.3983333333333334
+      "resultado": 0.1991666666666667
     },
     {
       "id": "LOG-003",
@@ -2372,7 +2372,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": 0.3983333333333334
+      "resultado": 0.1991666666666667
     },
     {
       "id": "LOG-003",
@@ -2384,7 +2384,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": 0.3983333333333334
+      "resultado": 0.1991666666666667
     },
     {
       "id": "LOG-003",
@@ -3782,6 +3782,6 @@
   "fonte": {
     "arquivo": "LOG-003 - S&OP Móvel.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-003%20-%20S%26OP%20M%C3%B3vel.xlsx?web=1",
-    "extraidoEm": "2026-11-09T09:15:45-03:00"
+    "extraidoEm": "2026-11-10T10:19:39-03:00"
   }
 }

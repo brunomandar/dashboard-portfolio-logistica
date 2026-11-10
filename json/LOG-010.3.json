@@ -1,12 +1,12 @@
 {
   "id": "LOG-010.3",
-  "projeto": "BID Transportes - Movel",
+  "projeto": "BID Transportes - Móvel",
   "area": "Transportes",
   "pontoFocal": "Jaime de Melo",
-  "inicio": "2026-07-06",
-  "termino": "2027-02-26",
-  "inicioCaptura": "2027-02-01",
-  "iniciativa": "DGP",
+  "inicio": "2026-08-31",
+  "termino": "2026-11-17",
+  "inicioCaptura": "2027-01-01",
+  "iniciativa": "Consultoria",
   "pmo": "Raquel",
   "risco": "Médio",
   "status": "L3",
@@ -35,54 +35,54 @@
       "numero": "01.",
       "atividade": "Escopo validado e envio de RFI a Mercado",
       "responsavel": "",
-      "status": "",
-      "inicio": "2026-07-31",
-      "fim": "2026-09-10",
+      "status": 4,
+      "inicio": "2026-08-31",
+      "fim": "2026-09-07",
       "anotacao": ""
     },
     {
       "numero": "02.",
       "atividade": "RFI fechado (retorno transportadoras) e Envio de RFP",
       "responsavel": "",
-      "status": "",
-      "inicio": "2026-08-11",
-      "fim": "2026-10-21",
+      "status": 4,
+      "inicio": "2026-09-08",
+      "fim": "2026-09-14",
       "anotacao": ""
     },
     {
       "numero": "03.",
       "atividade": "Live com fornecedores",
       "responsavel": "",
-      "status": "",
-      "inicio": "2026-08-14",
-      "fim": "2026-09-11",
+      "status": 4,
+      "inicio": "2026-09-15",
+      "fim": "2026-09-15",
       "anotacao": ""
     },
     {
       "numero": "04.",
       "atividade": "Deadline envio RFP Round 1",
       "responsavel": "",
-      "status": "",
-      "inicio": "2026-09-04",
-      "fim": "2026-09-25",
+      "status": 4,
+      "inicio": "2026-09-16",
+      "fim": "2026-09-29",
       "anotacao": ""
     },
     {
       "numero": "05.",
       "atividade": "Deadline envio RFP Round 2",
       "responsavel": "",
-      "status": "",
-      "inicio": "2026-10-02",
-      "fim": "2026-11-20",
+      "status": 4,
+      "inicio": "2026-09-30",
+      "fim": "2026-10-13",
       "anotacao": ""
     },
     {
       "numero": "06.",
       "atividade": "Deadline Round Final de Negociações",
       "responsavel": "",
-      "status": "",
-      "inicio": "2026-10-23",
-      "fim": "2026-11-20",
+      "status": 1,
+      "inicio": "2026-10-14",
+      "fim": "2026-11-10",
       "anotacao": ""
     },
     {
@@ -90,13 +90,13 @@
       "atividade": "Plano finalizado (contrato + ramp-up)",
       "responsavel": "",
       "status": "",
-      "inicio": "2026-11-20",
-      "fim": "2026-12-11",
+      "inicio": "2026-11-11",
+      "fim": "2026-12-02",
       "anotacao": ""
     },
     {
       "numero": "08.",
-      "atividade": "",
+      "atividade": "Integração novos transportadores",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -1153,7 +1153,7 @@
       "detalhe": "No que se refere à Movel, o Bruno apresentou uma visão geral das atualizações realizadas na base de fornecedores da operação Expressa, com foco principal nos fornecedores de frete por moto.\nTambém foi informado que o BID está dividido em duas frentes distintas: uma voltada para a operação de SIM Card e outra para E-commerce. Para o E-commerce, a estratégia é utilizar a mesma base de fornecedores já contemplada no BID da Movel.\nEm relação aos fornecedores responsáveis pelas entregas de SIM Card, o Bruno ficou de compartilhar conosco a nova relação de fornecedores para avaliação."
     }
   ],
-  "statusProjeto": "Risco: Processo de negocição e retorno das transportadoras \n30/10/2026: Retorno Rodada 2",
+  "statusProjeto": "30/10/2026: Retorno Rodada 2",
   "financeiro": [
     {
       "id": "LOG-010.3",
@@ -2029,7 +2029,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2041,7 +2041,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2053,7 +2053,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2065,7 +2065,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2077,7 +2077,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2089,7 +2089,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2101,7 +2101,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2113,7 +2113,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2125,7 +2125,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2137,7 +2137,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2149,7 +2149,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2161,7 +2161,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2317,7 +2317,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2329,7 +2329,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2341,7 +2341,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2353,7 +2353,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2365,7 +2365,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2377,7 +2377,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2389,7 +2389,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2401,7 +2401,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2413,7 +2413,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Set",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2425,7 +2425,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Out",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2437,7 +2437,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -2449,7 +2449,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.3",
@@ -3749,8 +3749,8 @@
     }
   ],
   "fonte": {
-    "arquivo": "LOG-010.3 - BID Transportes - Movel.xlsx",
-    "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.3%20-%20BID%20Transportes%20-%20Movel.xlsx?web=1",
-    "extraidoEm": "2026-11-09T09:16:22-03:00"
+    "arquivo": "LOG-010.3 - BID Transportes - Móvel.xlsx",
+    "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.3%20-%20BID%20Transportes%20-%20M%C3%B3vel.xlsx?web=1",
+    "extraidoEm": "2026-11-10T10:20:21-03:00"
   }
 }
