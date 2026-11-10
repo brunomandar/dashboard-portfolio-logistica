@@ -571,7 +571,7 @@ body.project-open .topbar{display:none!important}
   <main class="main">
     <header class="topbar">
       <section class="global-filters" aria-label="Filtros globais do dashboard">
-        <div class="global-filter"><label for="filterAno">Ano</label><select id="filterAno" onchange="applyGlobalFilters()"><option value="">Todos</option><option>2022</option><option>2023</option><option>2024</option><option>2025</option><option>2026</option></select></div>
+        <div class="global-filter"><label for="filterAno">Ano</label><select id="filterAno" onchange="applyGlobalFilters()"><option disabled>Todos</option><option disabled>2022</option><option disabled>2023</option><option disabled>2024</option><option disabled>2025</option><option value="" selected>2026</option></select></div>
         <div class="global-filter"><label for="filterGerencia">Gerência</label><select id="filterGerencia" onchange="applyGlobalFilters()"><option value="">Todas</option><option>CDs</option><option>Int. Logística</option><option>Estoques</option><option>Planejamento</option><option>Reparo</option><option>Transportes</option></select></div>
         <div class="global-filter"><label for="filterStatus">Status</label><select id="filterStatus" onchange="applyGlobalFilters()"><option value="">Todos</option><option>L0</option><option>L1</option><option>L2</option><option>L3</option><option>L4</option><option>L5</option></select></div>
         <div class="global-filter"><label for="filterGanho">Ganho do Projeto</label><select id="filterGanho" onchange="applyGlobalFilters()"><option value="">Todos</option><option>Qualitativo</option><option>Quantitativo</option></select></div>
@@ -868,7 +868,7 @@ body.project-open .topbar{display:none!important}
           <article class="card roadmap-card"><div class="empty-state">Carregando roadmap do portfólio…</div></article>
         </section>
 
-        <section class="section" id="financeiro"><div class="section-head"><div><h2>Desempenho financeiro</h2><p>Indicadores executivos e evolução mensal.</p></div><button class="link-btn">Detalhar financeiro →</button></div>
+        <section class="section" id="financeiro"><div class="section-head"><div><h2>Desempenho financeiro <strong style="color:var(--claro,#df3232);font-weight:800">(em desenvolvimento)</strong></h2><p>Indicadores executivos e evolução mensal.</p></div><button class="link-btn" type="button" onclick="openFinanceiroDGP()">Financeiro DGP →</button></div>
           <div class="finance-grid"><article class="card finance-kpi"><small>Meta</small><b>R$ 30,0M</b></article><article class="card finance-kpi"><small>Forecast</small><b>R$ 28,2M</b></article><article class="card finance-kpi"><small>Realizado</small><b>R$ 22,6M</b></article><article class="card finance-kpi"><div class="gap-split"><div><span>Real x Meta</span><b>—</b></div><div><span>Real x Forecast</span><b>—</b></div></div></article><article class="card finance-kpi"><small>Saving Opex</small><b>R$ 28,2M</b></article><article class="card finance-kpi"><small>Saving Capex</small><b>R$ 0,0M</b></article><article class="card finance-kpi"><small>Saving Total</small><b>R$ 28,2M</b></article><article class="card finance-kpi"><small>Saving 2026</small><b>R$ 0,77M</b></article></div>
           <article class="card line-chart"><div class="chart-title">Evolução mensal</div><div class="chart-sub">Meta, forecast e realizado</div><svg viewBox="0 0 900 210" preserveAspectRatio="none"><g stroke="#e8ebf0" stroke-width="1"><line x1="0" y1="40" x2="900" y2="40"/><line x1="0" y1="95" x2="900" y2="95"/><line x1="0" y1="150" x2="900" y2="150"/><line x1="0" y1="205" x2="900" y2="205"/></g><polyline fill="none" stroke="#aeb7c6" stroke-width="3" points="0,180 130,161 260,142 390,124 520,103 650,82 780,60 900,38"/><polyline fill="none" stroke="#3569e8" stroke-width="4" points="0,187 130,174 260,151 390,132 520,112 650,91 780,69 900,52"/><polyline fill="none" stroke="#da291c" stroke-width="4" points="0,190 130,180 260,165 390,149 520,130 650,112 780,96 900,79"/></svg></article>
         </section>
@@ -1090,6 +1090,520 @@ body.project-open .topbar{display:none!important}
 </script>
   <script src="json/projects.index.js"></script>
   <script src="dashboard.js"></script>
+<!-- ===== Módulo Financeiro DGP ===== -->
+<script>
+/* =====================================================================
+   FINANCEIRO DGP — módulo isolado do dashboard
+   - Aberto pelo link "Financeiro DGP →" da seção Desempenho financeiro
+   - Tela bloqueada ("em desenvolvimento") até digitar a senha
+   - Dados: mesmos JSONs do gerar_jsons.py (campo "financeiro" de cada
+     projeto), somente linhas com Iniciativa = DGP
+   - Não altera nenhuma outra parte do dashboard
+   ===================================================================== */
+(() => {
+  'use strict';
+
+  /* ---------------- Senha ----------------
+     A senha não fica escrita no arquivo, só o "hash" dela.
+     Para trocar: abra o dashboard, aperte F12 > Console, digite
+       dgpHash('NovaSenha')
+     e cole o número retornado em DGP_PASS_HASH.                       */
+  const DGP_PASS_HASH = '517280563397429';
+  const UNLOCK_KEY = 'dgpFinanceiroLiberado';
+
+  function dgpHash(text, seed = 0) {
+    let h1 = 0xdeadbeef ^ seed, h2 = 0x41c6ce57 ^ seed;
+    const str = String(text ?? '');
+    for (let i = 0; i < str.length; i++) {
+      const ch = str.charCodeAt(i);
+      h1 = Math.imul(h1 ^ ch, 2654435761);
+      h2 = Math.imul(h2 ^ ch, 1597334677);
+    }
+    h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+    h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+    return String(4294967296 * (2097151 & h2) + (h1 >>> 0));
+  }
+  window.dgpHash = dgpHash;
+
+  const isUnlocked = () => { try { return sessionStorage.getItem(UNLOCK_KEY) === '1'; } catch (_) { return !!window.__dgpUnlocked; } };
+  const setUnlocked = value => { try { value ? sessionStorage.setItem(UNLOCK_KEY, '1') : sessionStorage.removeItem(UNLOCK_KEY); } catch (_) { /* sem sessionStorage */ } window.__dgpUnlocked = value; };
+
+  /* ---------------- Utilitários ---------------- */
+  const MONTHS = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+  const $ = (s, r = document) => r.querySelector(s);
+  const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const clean = v => String(v ?? '').trim();
+  const norm = s => String(s ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
+  const arrayOf = v => Array.isArray(v) ? v : (v == null ? [] : [v]);
+  const monthIndex = m => { const a = {jan:0,janeiro:0,fev:1,fevereiro:1,mar:2,marco:2,abr:3,abril:3,mai:4,maio:4,jun:5,junho:5,jul:6,julho:6,ago:7,agosto:7,set:8,setembro:8,out:9,outubro:9,nov:10,novembro:10,dez:11,dezembro:11}; return a[norm(m)] ?? -1; };
+  function num(v) {
+    if (v == null || v === '') return 0;
+    if (typeof v === 'number') return isFinite(v) ? v : 0;
+    let s = String(v).trim().replace(/R\$|\s/g, '');
+    if (s.includes(',') && s.includes('.')) s = s.lastIndexOf(',') > s.lastIndexOf('.') ? s.replace(/\./g, '').replace(',', '.') : s.replace(/,/g, '');
+    else if (s.includes(',')) s = s.replace(',', '.');
+    const n = Number(s); return isFinite(n) ? n : 0;
+  }
+  // Valores da base já estão em milhões (mesmo padrão do financeiro da Home)
+  const money = v => v == null || !isFinite(v) ? 'N/A' : `${v < 0 ? '-' : ''}R$ ${Math.abs(v).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}M`;
+  const moneyShort = v => v == null || !isFinite(v) ? 'N/A' : `${v < 0 ? '-' : ''}R$ ${Math.abs(v).toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: Math.abs(v) < 10 ? 2 : 1 })}M`;
+  const pct = v => v == null || !isFinite(v) ? 'N/A' : new Intl.NumberFormat('pt-BR', { style: 'percent', minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(v);
+  const axisNum = v => v.toLocaleString('pt-BR', { maximumFractionDigits: Math.abs(v) < 10 ? 1 : 0 });
+
+  /* Paleta Claro do dashboard */
+  const C = { red: '#df3232', dark: '#c00000', brown: '#530b03', yellow: '#ffc000', orange: '#ed7d31', gray: '#7f7f7f', light: '#d9d9d9', ink: '#1f1f1f' };
+  /* Cores do gráfico financeiro padrão (Home/projeto) */
+  const F = { realTop: '#4b4f57', realBottom: '#15171b', fcst: '#15803d', meta: '#2563eb' };
+
+  /* ---------------- Dados ---------------- */
+  const normalizeGerencia = value => /^(analytics|dessistemico|desenvolvimentosistemico|intlogistica)$/.test(norm(value)) ? 'Int. Logística' : value;
+  function sourceProjects() {
+    const list = typeof window.getDashboardProjects === 'function' ? window.getDashboardProjects() : window.PORTFOLIO_DATA;
+    return arrayOf(list).filter(p => p && typeof p === 'object' && /^LOG-\d+(?:\.\d+)?$/i.test(clean(p.id)) && (typeof window.isDashboardProjectAllowed !== 'function' || window.isDashboardProjectAllowed(p)));
+  }
+
+  function buildRows() {
+    const out = [], seen = new Set();
+    sourceProjects().forEach(p => {
+      const recs = arrayOf(p.financeiro).filter(r => r && typeof r === 'object');
+      const hasSplit = recs.some(r => /^(opex|capex)$/.test(norm(r.tipoDespesa)));
+      const tipoUnico = arrayOf(p.tipos).length === 1 ? clean(p.tipos[0]).toUpperCase() : 'NÃO INFORMADO';
+      recs.forEach(r => {
+        if (norm(r.iniciativa || p.iniciativa) !== 'dgp') return;          // somente DGP
+        let expense = clean(r.tipoDespesa).toUpperCase();
+        if (hasSplit) { if (!['OPEX', 'CAPEX'].includes(expense)) return; } // evita somar a linha "Total" junto
+        else expense = tipoUnico;
+        const year = Number(r.ano), monthN = monthIndex(r.mes);
+        if (![2026, 2027].includes(year) || monthN < 0) return;
+        const obj = {
+          id: clean(p.id) || clean(r.id),
+          mgmt: normalizeGerencia(clean(r.gerencia) || clean(p.area)) || 'Não informado',
+          area: normalizeGerencia(clean(p.area) || clean(r.gerencia)) || 'Não informado',
+          project: clean(p.projeto) || clean(r.projeto) || 'Não informado',
+          status: clean(r.situacao) || clean(p.status) || 'Não informado',
+          icg: clean(r.icg),
+          expense,
+          year,
+          month: MONTHS[monthN],
+          monthN,
+          value: Math.abs(num(r.resultado))
+        };
+        const key = JSON.stringify(obj);
+        if (seen.has(key)) return;
+        seen.add(key); out.push(obj);
+      });
+    });
+    return out;
+  }
+
+  /* ---------------- Estado ---------------- */
+  let rawRows = [];
+  let lineView = 'monthly';
+  let initialized = false;
+  let sortState = { key: 'gapMeta', dir: 1 };
+  const FILTERS = [['year','Ano'],['month','Mês até'],['mgmt','Gerência'],['area','Área'],['project','Projeto'],['expense','Tipo de despesa'],['status','Status']];
+  const state = { year: 'Todos', month: '11', mgmt: 'Todos', area: 'Todos', project: 'Todos', expense: 'Todos', status: 'Todos' };
+  const DETAIL_COLS = [['id','ID'],['mgmt','Gerência'],['area','Área'],['project','Projeto'],['expense','Despesa'],['status','Status'],['baseline','Baseline'],['meta','Meta'],['forecast','Forecast'],['real','Realizado'],['gapMeta','Gap Meta'],['attain','Ating.'],['projection','Projeção'],['trend','Tendência']];
+  const MONEY_COLS = ['baseline','meta','forecast','real','gapMeta','projection'];
+  const visibleCols = new Set(DETAIL_COLS.map(c => c[0]));
+
+  const unique = k => [...new Set(rawRows.map(r => r[k]).filter(x => x !== '' && x != null))].sort((a, b) => String(a).localeCompare(String(b), 'pt-BR', { numeric: true }));
+  function defaultCutoff(year) {
+    const m = rawRows.filter(r => r.year === year && norm(r.icg) === 'real' && r.value !== 0).map(r => r.monthN);
+    return m.length ? Math.max(...m) : (year === new Date().getFullYear() ? new Date().getMonth() : 11);
+  }
+  const maxYear = () => { const ys = unique('year').map(Number); return ys.length ? Math.max(...ys) : new Date().getFullYear(); };
+  function filtered() {
+    const cutoff = Number(state.month);
+    return rawRows.filter(r => (state.year === 'Todos' || r.year === Number(state.year)) && r.monthN <= cutoff &&
+      ['mgmt','area','project','expense','status'].every(k => state[k] === 'Todos' || String(r[k]) === state[k]));
+  }
+  const emptyMonthly = () => Array.from({ length: 12 }, () => ({ baseline: 0, meta: 0, forecast: null, real: 0 }));
+  function group(rows, keys) {
+    const m = new Map();
+    rows.forEach(r => {
+      const key = keys.map(k => r[k]).join('¦');
+      if (!m.has(key)) { const o = {}; keys.forEach(k => o[k] = r[k]); Object.assign(o, { baseline: 0, meta: 0, forecast: null, real: 0, monthly: emptyMonthly() }); m.set(key, o); }
+      const o = m.get(key), ic = norm(r.icg);
+      const field = ic === 'budget' ? 'baseline' : ic === 'fcst' ? 'meta' : ic === 'real' ? 'real' : ic === 'forecast' ? 'forecast' : null;
+      if (!field) return;
+      if (field === 'forecast') { o.forecast = (o.forecast ?? 0) + r.value; o.monthly[r.monthN].forecast = (o.monthly[r.monthN].forecast ?? 0) + r.value; }
+      else { o[field] += r.value; o.monthly[r.monthN][field] += r.value; }
+    });
+    return [...m.values()].map(calc);
+  }
+  function calc(o) {
+    const cutoff = Number(state.month), elapsed = cutoff + 1, remaining = 12 - elapsed;
+    const actual = o.monthly.slice(0, elapsed).filter(x => x.real !== 0);
+    const avg = actual.length ? actual.reduce((s, x) => s + x.real, 0) / actual.length : 0;
+    o.gapMeta = o.real - o.meta;
+    o.gapForecast = o.forecast == null ? null : o.real - o.forecast;
+    o.attain = o.meta !== 0 ? o.real / o.meta : null;
+    o.missing = Math.max(o.meta - o.real, 0);
+    o.needMonthly = remaining > 0 ? o.missing / remaining : o.missing;
+    o.projection = o.real + avg * remaining;
+    const recent = o.monthly.slice(Math.max(0, elapsed - 3), elapsed).map(x => x.real);
+    const prior = o.monthly.slice(Math.max(0, elapsed - 6), Math.max(0, elapsed - 3)).map(x => x.real);
+    if (recent.length < 3 || prior.length < 3) o.trend = 'Dados insuficientes';
+    else { const a = recent.reduce((s, v) => s + v, 0) / 3, b = prior.reduce((s, v) => s + v, 0) / 3; o.trend = a > b * 1.02 ? 'Crescente' : a < b * .98 ? 'Decrescente' : 'Estável'; }
+    return o;
+  }
+  const aggregate = rows => group(rows.map(r => ({ ...r, __all: 'x' })), ['__all'])[0] || calc({ baseline: 0, meta: 0, forecast: null, real: 0, monthly: emptyMonthly() });
+  const signal = v => v == null ? 'gray' : v >= 1 ? 'green' : v >= .9 ? 'yellow' : 'red';
+
+  /* ---------------- Estilos (escopo #dgpView) ---------------- */
+  function injectStyles() {
+    if ($('#dgpStyles')) return;
+    const css = `
+.dgp-view{display:none}.dgp-view.show{display:block}
+body.dgp-open #projectView{display:none!important}
+#dgpView{--dgp-red:${C.red};--dgp-dark:${C.dark};--dgp-brown:${C.brown};--dgp-yellow:${C.yellow};--dgp-orange:${C.orange};--dgp-gray:${C.gray};--dgp-line:${C.light};--dgp-ink:${C.ink};color:var(--dgp-ink)}
+#dgpView .dgp-topbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 12px}
+#dgpView .dgp-topbar .back{margin:0!important}
+#dgpView .dgp-top-actions{margin-left:auto;display:flex;gap:8px}
+#dgpView .dgp-btn{border:1px solid var(--dgp-line);background:#fff;color:var(--dgp-ink);border-radius:10px;padding:8px 13px;font-size:12px;font-weight:700;box-shadow:var(--shadow)}
+#dgpView .dgp-btn:hover{border-color:var(--dgp-red);color:var(--dgp-dark)}
+#dgpView .dgp-hero{background:#fff;border-radius:20px;box-shadow:var(--shadow);padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;border-left:5px solid var(--dgp-red);margin-bottom:12px}
+#dgpView .dgp-hero .pid{font-size:11px;letter-spacing:.08em;color:var(--dgp-gray);text-transform:uppercase}
+#dgpView .dgp-hero h1{font-size:22px;margin:4px 0 2px}
+#dgpView .dgp-hero p{margin:0;font-size:12px;color:var(--dgp-gray)}
+#dgpView .dgp-chips{display:flex;gap:8px;flex-wrap:wrap}
+#dgpView .dgp-chip{padding:6px 11px;border-radius:999px;font-size:11px;font-weight:800;background:#f2f2f2;color:var(--dgp-ink)}
+#dgpView .dgp-chip.red{background:var(--dgp-red);color:#fff}
+#dgpView .dgp-filters{display:grid;grid-template-columns:repeat(7,minmax(110px,1fr));gap:10px;padding:12px 16px;margin-bottom:8px}
+#dgpView .dgp-field label{display:block;font-size:10px;font-weight:800;color:var(--dgp-gray);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+#dgpView .dgp-field select{width:100%;padding:8px 9px;border:1px solid var(--dgp-line);border-radius:10px;background:#fff;color:var(--dgp-ink);font-size:12px;outline:none}
+#dgpView .dgp-field select:focus{border-color:var(--dgp-red);box-shadow:0 0 0 3px rgba(223,50,50,.12)}
+#dgpView .dgp-meta-row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin:4px 2px 12px}
+#dgpView .dgp-badge{font-size:11px;font-weight:800;padding:5px 10px;border-radius:999px;background:#fbeaea;color:var(--dgp-dark);border:1px solid #f3c4c4}
+#dgpView .dgp-notice{font-size:11px;color:var(--dgp-gray)}
+#dgpView .dgp-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:14px}
+#dgpView .dgp-kpi{padding:16px 18px 14px;position:relative;border-top:4px solid var(--kpi,var(--dgp-ink))}
+#dgpView .dgp-kpi-icon{position:absolute;right:14px;top:14px;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--kpi,var(--dgp-ink));color:#fff}
+#dgpView .dgp-kpi-icon svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#dgpView .dgp-kpi.projection .dgp-kpi-icon{color:var(--dgp-ink)}
+#dgpView .dgp-kpi small{font-size:10px;color:var(--dgp-gray);text-transform:uppercase;letter-spacing:.06em;font-weight:700}
+#dgpView .dgp-kpi-main{font-size:24px;font-weight:800;margin:8px 0 12px}
+#dgpView .dgp-kpi-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;border-top:1px solid #eceef2;padding-top:10px}
+#dgpView .dgp-kpi-grid span{display:block;font-size:10px;color:var(--dgp-gray)}
+#dgpView .dgp-kpi-grid b{display:block;font-size:13px;margin-top:2px}
+#dgpView .pos{color:var(--dgp-brown)!important;font-weight:800}
+#dgpView .neg{color:var(--dgp-red)!important;font-weight:800}
+#dgpView .dgp-grid-2{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin-bottom:14px}
+#dgpView .dgp-grid-eq{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+#dgpView .dgp-card{padding:18px;min-width:0}
+#dgpView .dgp-card-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+#dgpView .dgp-card-head h3{font-size:14px;margin:0;padding-left:11px;position:relative}
+#dgpView .dgp-card-head h3:before{content:"";position:absolute;left:0;top:1px;bottom:1px;width:4px;border-radius:4px;background:var(--dgp-red)}
+#dgpView .dgp-sub{font-size:11px;color:var(--dgp-gray);margin:2px 0 0 11px}
+#dgpView .dgp-toggle{display:flex;background:#f2f2f2;border-radius:9px;padding:3px}
+#dgpView .dgp-toggle button{border:0;background:transparent;padding:5px 11px;border-radius:7px;font-size:11px;font-weight:800;color:var(--dgp-gray)}
+#dgpView .dgp-toggle button.active{background:var(--dgp-red);color:#fff}
+#dgpView .dgp-legend{display:flex;flex-wrap:wrap;gap:14px;font-size:11.5px;font-weight:600;margin:0 0 4px}
+#dgpView .dgp-legend span{display:inline-flex;align-items:center;gap:6px}
+#dgpView .dgp-legend .lg-bar{width:13px;height:13px;border-radius:3px;background:linear-gradient(180deg,${F.realTop},${F.realBottom})}
+#dgpView .dgp-legend .lg-line{width:24px;border-top:3px solid ${F.meta}}
+#dgpView .dgp-legend .lg-dash{width:24px;border-top:3px dashed ${F.fcst}}
+#dgpView svg.dgp-svg{width:100%;height:auto;display:block}
+#dgpView .dgp-table-wrap{overflow:auto;max-height:420px;border:1px solid #eceef2;border-radius:12px}
+#dgpView table{width:100%;min-width:0;border-collapse:collapse;white-space:nowrap}
+#dgpView th{position:sticky;top:0;z-index:2;background:#fafafa;color:var(--dgp-gray);font-size:10px;text-transform:uppercase;letter-spacing:.06em;padding:10px 12px;text-align:left;border-bottom:1px solid var(--dgp-line);cursor:pointer;user-select:none}
+#dgpView th.sorted{color:var(--dgp-dark)}
+#dgpView td{font-size:12px;padding:9px 12px;border-bottom:1px solid #f0f0f0}
+#dgpView tbody tr:hover td{background:#fff5f5}
+#dgpView .num{text-align:right;font-variant-numeric:tabular-nums}
+#dgpView .pill{display:inline-block;padding:3px 8px;border-radius:999px;font-size:10px;font-weight:800;color:#fff}
+#dgpView .pill.green{background:var(--dgp-brown)}#dgpView .pill.yellow{background:var(--dgp-yellow);color:var(--dgp-ink)}#dgpView .pill.red{background:var(--dgp-red)}#dgpView .pill.gray{background:#bfbfbf}
+#dgpView .dgp-rank-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#dgpView .dgp-rank-title{font-size:12px;font-weight:800;margin:0 0 8px}
+#dgpView .dgp-rank-list{display:flex;flex-direction:column;gap:7px}
+#dgpView .dgp-rank-item{display:grid;grid-template-columns:24px 10px 1fr auto;gap:8px;align-items:center;padding:8px 10px;background:#fafafa;border-radius:10px;font-size:11.5px}
+#dgpView .dgp-rank-pos{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--dgp-ink);color:#fff;font-weight:800;font-size:11px}
+#dgpView .dgp-dot{width:9px;height:9px;border-radius:50%}
+#dgpView .dgp-rank-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#dgpView .dgp-rank-val{font-weight:800}
+#dgpView .dgp-detail-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+#dgpView .dgp-col-picker{position:relative}
+#dgpView .dgp-col-menu{display:none;position:absolute;right:0;top:40px;z-index:30;min-width:220px;max-height:320px;overflow:auto;padding:8px;background:#fff;border:1px solid var(--dgp-line);border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.14)}
+#dgpView .dgp-col-menu.open{display:block}
+#dgpView .dgp-col-menu label{display:flex;gap:8px;align-items:center;padding:6px 5px;font-size:12px}
+#dgpView .dgp-col-menu input{accent-color:var(--dgp-red)}
+#dgpView .dgp-search{width:260px;height:36px;padding:0 12px;border:1px solid var(--dgp-line);border-radius:10px;font-size:12px;outline:none}
+#dgpView .dgp-search:focus{border-color:var(--dgp-red);box-shadow:0 0 0 3px rgba(223,50,50,.12)}
+#dgpView .dgp-notes{padding:12px 16px;margin-top:14px}
+#dgpView .dgp-notes summary{font-size:12px;font-weight:800;color:var(--dgp-gray);cursor:pointer}
+#dgpView .dgp-map{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;margin-top:12px}
+#dgpView .dgp-map div{border-left:4px solid var(--dgp-red);background:#fafafa;padding:7px 10px;font-size:11.5px;border-radius:0 8px 8px 0}
+#dgpView .dgp-map div.warn{border-left-color:var(--dgp-orange)}
+#dgpView .dgp-map b{display:block}
+#dgpView .dgp-footer{font-size:11px;color:var(--dgp-gray);text-align:center;padding:14px 0 2px}
+#dgpView .empty-state{padding:24px;text-align:center;color:var(--dgp-gray);font-size:12px}
+/* Tela bloqueada */
+#dgpView .dgp-lock{min-height:calc(100vh - 160px);display:grid;place-items:center}
+#dgpView .dgp-lock-card{max-width:520px;width:100%;text-align:center;padding:40px 36px;border-top:5px solid var(--dgp-red)}
+#dgpView .dgp-lock-icon{width:74px;height:74px;margin:0 auto 18px;border-radius:50%;background:#fbeaea;display:grid;place-items:center;font-size:34px}
+#dgpView .dgp-lock-card h2{margin:0 0 8px;font-size:22px}
+#dgpView .dgp-lock-card p{margin:0 auto;color:var(--dgp-gray);font-size:13px;line-height:1.55;max-width:400px}
+#dgpView .dgp-progress{height:8px;border-radius:999px;background:#f0f0f0;overflow:hidden;margin:22px auto 6px;max-width:300px}
+#dgpView .dgp-progress i{display:block;height:100%;width:65%;border-radius:999px;background:linear-gradient(90deg,var(--dgp-dark),var(--dgp-red),var(--dgp-orange));animation:dgpPulse 1.8s ease-in-out infinite alternate}
+@keyframes dgpPulse{from{width:45%}to{width:75%}}
+#dgpView .dgp-lock-link{margin-top:26px;border:0;background:none;color:#bfbfbf;font-size:11px;text-decoration:underline;cursor:pointer}
+#dgpView .dgp-lock-form{display:none;gap:8px;justify-content:center;margin-top:16px}
+#dgpView .dgp-lock-form.show{display:flex}
+#dgpView .dgp-lock-form input{width:200px;height:36px;padding:0 12px;border:1px solid var(--dgp-line);border-radius:10px;font-size:12px;outline:none}
+#dgpView .dgp-lock-form input:focus{border-color:var(--dgp-red)}
+#dgpView .dgp-lock-form button{border:0;background:var(--dgp-red);color:#fff;font-weight:800;font-size:12px;border-radius:10px;padding:0 16px}
+#dgpView .dgp-lock-error{min-height:16px;font-size:11px;color:var(--dgp-red);margin-top:8px}
+@media(max-width:1100px){#dgpView .dgp-filters{grid-template-columns:repeat(3,1fr)}#dgpView .dgp-cards{grid-template-columns:repeat(2,1fr)}#dgpView .dgp-grid-2,#dgpView .dgp-grid-eq{grid-template-columns:1fr}}
+@media(max-width:650px){#dgpView .dgp-filters{grid-template-columns:1fr 1fr}#dgpView .dgp-cards,#dgpView .dgp-rank-grid{grid-template-columns:1fr}#dgpView .dgp-search{width:100%}}
+`;
+    const style = document.createElement('style');
+    style.id = 'dgpStyles';
+    style.textContent = css;
+    document.head.appendChild(style);
+  }
+
+  /* ---------------- Gráficos (SVG, sem bibliotecas externas) ---------------- */
+  function lineData(rows) {
+    const cutoff = Number(state.month);
+    const g = group(rows.map(r => ({ ...r, __all: 'x' })), ['__all'])[0] || { monthly: emptyMonthly() };
+    const actual = g.monthly.slice(0, cutoff + 1).filter(x => x.real !== 0).map(x => x.real);
+    const avg = actual.length ? actual.reduce((s, v) => s + v, 0) / actual.length : 0;
+    const meta = [], real = [], projection = [];
+    let cm = 0, cr = 0;
+    for (let i = 0; i < 12; i++) {
+      const x = g.monthly[i];
+      cm += x.meta || 0;
+      if (i <= cutoff) cr += x.real || 0;
+      if (lineView === 'ytd') { meta.push(cm); real.push(i <= cutoff ? cr : null); projection.push(i <= cutoff ? cr : cr + avg * (i - cutoff)); }
+      else { meta.push(x.meta || 0); real.push(i <= cutoff ? (x.real || 0) : null); projection.push(i <= cutoff ? (x.real || 0) : avg); }
+    }
+    return { meta, real, projection };
+  }
+
+  function evolutionSVG(rows) {
+    const { meta, real, projection } = lineData(rows);
+    const W = 960, H = 330, L = 46, R = 16, T = 22, B = 34, plotH = H - T - B, slot = (W - L - R) / 12;
+    const max = Math.max(0.0001, ...meta, ...real.filter(v => v != null), ...projection) * 1.18;
+    const x = i => L + slot * i + slot / 2, y = v => T + plotH - (v / max) * plotH;
+    const ticks = [0, .25, .5, .75, 1].map(s => {
+      const v = max * s, yy = y(v);
+      return `<line x1="${L}" x2="${W - R}" y1="${yy.toFixed(1)}" y2="${yy.toFixed(1)}" stroke="#eceef2"/><text x="${L - 6}" y="${(yy + 3).toFixed(1)}" text-anchor="end" font-size="10" fill="${C.gray}">${axisNum(v)}</text>`;
+    }).join('');
+    const cols = MONTHS.map((_, i) => `<rect x="${(L + slot * i).toFixed(1)}" y="${T}" width="${slot.toFixed(1)}" height="${plotH}" fill="${i % 2 ? '#fafafa' : '#fff'}"/>`).join('');
+    const barW = Math.min(30, slot * .42), floor = T + plotH;
+    const bars = real.map((v, i) => v == null || !v ? '' : `<rect x="${(x(i) - barW / 2).toFixed(1)}" y="${y(v).toFixed(1)}" width="${barW.toFixed(1)}" height="${(floor - y(v)).toFixed(1)}" rx="4" fill="url(#dgpReal)"><title>Realizado ${MONTHS[i]}: ${money(v)}</title></rect><text x="${x(i).toFixed(1)}" y="${(y(v) - 6).toFixed(1)}" text-anchor="middle" font-size="10" font-weight="800" fill="${C.ink}">${axisNum(v)}</text>`).join('');
+    const path = list => list.map((v, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+    const cutoff = Number(state.month);
+    const projPts = projection.map((v, i) => ({ v, i })).filter(p => p.i >= cutoff);
+    const projPath = projPts.length > 1 ? `<path d="${projPts.map((p, k) => `${k ? 'L' : 'M'}${x(p.i).toFixed(1)},${y(p.v).toFixed(1)}`).join(' ')}" fill="none" stroke="${F.fcst}" stroke-width="2.5" stroke-dasharray="6 5"/>${projPts.slice(1).map(p => `<circle cx="${x(p.i).toFixed(1)}" cy="${y(p.v).toFixed(1)}" r="3.5" fill="#fff" stroke="${F.fcst}" stroke-width="2"><title>Projeção ${MONTHS[p.i]}: ${money(p.v)}</title></circle>`).join('')}` : '';
+    const metaLine = `<path d="${path(meta)}" fill="none" stroke="${F.meta}" stroke-width="3"/>${meta.map((v, i) => `<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="4.5" fill="#fff" stroke="${F.meta}" stroke-width="2.5"><title>FCST / Meta ${MONTHS[i]}: ${money(v)}</title></circle>`).join('')}`;
+    const axis = MONTHS.map((m, i) => `<text x="${x(i).toFixed(1)}" y="${H - 12}" text-anchor="middle" font-size="12" font-weight="800" fill="${C.ink}">${m.toUpperCase()}</text>`).join('');
+    const defs = `<defs><linearGradient id="dgpReal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${F.realTop}"/><stop offset="1" stop-color="${F.realBottom}"/></linearGradient></defs>`;
+    const legend = `<div class="dgp-legend"><span><i class="lg-bar"></i>Realizado${lineView === 'ytd' ? ' acumulado' : ''}</span><span><i class="lg-line"></i>FCST / Meta${lineView === 'ytd' ? ' acumulada' : ''}</span><span><i class="lg-dash"></i>Projeção de fechamento</span></div>`;
+    return `${legend}<svg class="dgp-svg" viewBox="0 0 ${W} ${H}" role="img">${defs}${cols}${ticks}${bars}${projPath}${metaLine}${axis}</svg>`;
+  }
+
+  function areaSVG(rows) {
+    const g = group(rows, ['area']).filter(x => x.meta !== 0);
+    const total = g.reduce((s, x) => s + (x.meta || 0), 0);
+    const list = g.map(x => ({ ...x, share: total ? x.meta / total * 100 : 0 })).sort((a, b) => b.share - a.share).slice(0, 12);
+    if (!list.length) return '<div class="empty-state">Sem meta registrada no recorte.</div>';
+    const W = 460, H = 330, L = 40, R = 10, T = 26, B = 48, plotH = H - T - B, slot = (W - L - R) / list.length;
+    const max = Math.max(40, Math.ceil(Math.max(...list.map(x => x.share)) / 10) * 10 + 10);
+    const y = v => T + plotH - (v / max) * plotH;
+    const ticks = [0, .25, .5, .75, 1].map(s => { const v = max * s, yy = y(v); return `<line x1="${L}" x2="${W - R}" y1="${yy.toFixed(1)}" y2="${yy.toFixed(1)}" stroke="#eceef2"/><text x="${L - 5}" y="${(yy + 3).toFixed(1)}" text-anchor="end" font-size="10" fill="${C.gray}">${Math.round(v)}%</text>`; }).join('');
+    const bw = Math.min(46, slot * .62);
+    const bars = list.map((x, i) => {
+      const cx = L + slot * i + slot / 2, yy = y(x.share);
+      const label = x.share.toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+      const name = x.area.length > 14 ? `${x.area.slice(0, 13)}…` : x.area;
+      return `<rect x="${(cx - bw / 2).toFixed(1)}" y="${yy.toFixed(1)}" width="${bw.toFixed(1)}" height="${(T + plotH - yy).toFixed(1)}" rx="6" fill="${C.red}"><title>${esc(x.area)} · Representatividade: ${label}% · Meta da área: ${money(x.meta)}</title></rect><text x="${cx.toFixed(1)}" y="${(yy - 7).toFixed(1)}" text-anchor="middle" font-size="11" font-weight="800" fill="${C.dark}">${label}%</text><text x="${cx.toFixed(1)}" y="${H - 28}" text-anchor="middle" font-size="10.5" font-weight="700" fill="${C.ink}">${esc(name)}</text>`;
+    }).join('');
+    return `<div class="dgp-sub" style="margin:0 0 6px;text-align:center">FCST / Meta total: <b>${money(total)}</b> = 100%</div><svg class="dgp-svg" viewBox="0 0 ${W} ${H}" role="img">${ticks}${bars}</svg>`;
+  }
+
+  /* ---------------- Blocos ---------------- */
+  const ICONS = {
+    briefcase: '<svg viewBox="0 0 24 24"><path d="M9 6V4h6v2M4 7h16v12H4zM4 11h16M10 11v2h4v-2"/></svg>',
+    tools: '<svg viewBox="0 0 24 24"><path d="M14 6a4 4 0 0 0-5-4l2.5 2.5-3 3L6 5a4 4 0 0 0 4 5l8 8 2-2-8-8M5 19l5-5"/></svg>',
+    money: '<svg viewBox="0 0 24 24"><path d="M12 2v20M17 6.5c-1-1-2.5-1.5-5-1.5-3 0-5 1.5-5 3.5S9 12 12 12s5 1.5 5 3.5S15 19 12 19c-2.5 0-4-.5-5-1.5"/></svg>',
+    hourglass: '<svg viewBox="0 0 24 24"><path d="M6 2h12M6 22h12M8 2c0 5 1 6 4 8 3-2 4-3 4-8M8 22c0-5 1-6 4-8 3 2 4 3 4 8"/></svg>'
+  };
+  function kpiCard(title, o, color, icon, cls = '') {
+    return `<article class="card dgp-kpi ${cls}" style="--kpi:${color}"><span class="dgp-kpi-icon">${ICONS[icon]}</span><small>${title}</small><div class="dgp-kpi-main">${moneyShort(o.real)}</div><div class="dgp-kpi-grid"><div><span>Budget</span><b>${moneyShort(o.baseline)}</b></div><div><span>FCST (Meta)</span><b>${moneyShort(o.meta)}</b></div><div><span>Gap vs FCST</span><b class="${o.gapMeta >= 0 ? 'pos' : 'neg'}">${moneyShort(o.gapMeta)}</b></div><div><span>Atingimento</span><b>${pct(o.attain)}</b></div></div></article>`;
+  }
+  function renderCards(rows) {
+    const total = aggregate(rows), capex = aggregate(rows.filter(r => r.expense === 'CAPEX')), opex = aggregate(rows.filter(r => r.expense === 'OPEX'));
+    const projected = { ...total, real: total.projection, gapMeta: total.projection - total.meta, attain: total.meta ? total.projection / total.meta : null };
+    $('#dgpCards').innerHTML = kpiCard('Total geral', total, C.ink, 'briefcase') + kpiCard('CAPEX', capex, C.dark, 'tools') + kpiCard('OPEX', opex, C.orange, 'money') + kpiCard('Projeção de fechamento', projected, C.yellow, 'hourglass', 'projection');
+  }
+  function renderManagement(rows) {
+    const g = group(rows, ['mgmt']).sort((a, b) => (b.attain ?? -1) - (a.attain ?? -1));
+    $('#dgpMgmt').innerHTML = `<thead><tr><th>Gerência</th><th class="num">Meta</th><th class="num">Realizado</th><th class="num">Gap</th><th class="num">Ating.</th><th>Tendência</th></tr></thead><tbody>${g.map(x => `<tr><td>${esc(x.mgmt)}</td><td class="num">${money(x.meta)}</td><td class="num">${money(x.real)}</td><td class="num ${x.gapMeta < 0 ? 'neg' : 'pos'}">${money(x.gapMeta)}</td><td class="num"><span class="pill ${signal(x.attain)}">${pct(x.attain)}</span></td><td>${esc(x.trend)}</td></tr>`).join('') || '<tr><td colspan="6" class="empty-state">Sem dados no recorte.</td></tr>'}</tbody>`;
+  }
+  function renderRanks(rows) {
+    const g = group(rows, ['id', 'project', 'expense']).filter(x => Math.abs(x.real) > 1e-6 && Math.abs(x.gapMeta) > 1e-6);
+    const dot = x => x.attain >= 1 ? C.brown : x.attain >= .95 ? C.yellow : C.red;
+    const render = (id, arr) => { $(id).innerHTML = arr.map((x, i) => `<div class="dgp-rank-item"><span class="dgp-rank-pos">${i + 1}</span><i class="dgp-dot" style="background:${dot(x)}"></i><span class="dgp-rank-name" title="${esc(x.id)} · ${esc(x.project)}">${esc(x.project)} · ${esc(x.expense)}</span><span class="dgp-rank-val ${x.gapMeta < 0 ? 'neg' : 'pos'}">${money(x.gapMeta)}</span></div>`).join('') || '<span class="dgp-notice">Sem projetos com impacto no recorte.</span>'; };
+    render('#dgpAbove', g.filter(x => x.gapMeta > 0).sort((a, b) => b.gapMeta - a.gapMeta).slice(0, 8));
+    render('#dgpBelow', g.filter(x => x.gapMeta < 0).sort((a, b) => a.gapMeta - b.gapMeta).slice(0, 8));
+  }
+  function renderDetail(rows) {
+    let g = group(rows, ['id', 'mgmt', 'area', 'project', 'expense', 'status']);
+    const q = norm($('#dgpSearch')?.value);
+    if (q) g = g.filter(x => norm([x.id, x.mgmt, x.area, x.project, x.expense, x.status].join(' ')).includes(q));
+    g.sort((a, b) => { const av = a[sortState.key] ?? -Infinity, bv = b[sortState.key] ?? -Infinity; return typeof av === 'string' ? av.localeCompare(String(bv), 'pt-BR', { numeric: true }) * sortState.dir : (av - bv) * sortState.dir; });
+    const cols = DETAIL_COLS.filter(([k]) => visibleCols.has(k));
+    const t = $('#dgpDetail');
+    t.innerHTML = `<thead><tr>${cols.map(([k, l]) => `<th data-key="${k}" class="${[...MONEY_COLS, 'attain'].includes(k) ? 'num' : ''} ${sortState.key === k ? 'sorted' : ''}">${l}${sortState.key === k ? (sortState.dir > 0 ? ' ▲' : ' ▼') : ''}</th>`).join('')}</tr></thead><tbody>${g.map(x => `<tr>${cols.map(([k]) => {
+      const isNum = [...MONEY_COLS, 'attain'].includes(k);
+      const cls = k === 'gapMeta' ? (Number(x[k]) < 0 ? 'neg' : 'pos') : '';
+      const val = k === 'attain' ? pct(x[k]) : MONEY_COLS.includes(k) ? money(x[k]) : esc(x[k]);
+      return `<td class="${isNum ? 'num' : ''} ${cls}">${val}</td>`;
+    }).join('')}</tr>`).join('') || `<tr><td colspan="${cols.length}" class="empty-state">Nenhum projeto encontrado.</td></tr>`}</tbody>`;
+    t.querySelectorAll('th').forEach(th => th.onclick = () => { const k = th.dataset.key; sortState = { key: k, dir: sortState.key === k ? -sortState.dir : 1 }; renderDetail(filtered()); });
+  }
+  function buildFilters() {
+    const box = $('#dgpFilters');
+    if (!box) return;
+    box.innerHTML = FILTERS.map(([k, label]) => {
+      let opts;
+      if (k === 'year') opts = '<option value="Todos">Selecionar todos</option>' + unique('year').map(v => `<option value="${v}">${v}</option>`).join('');
+      else if (k === 'month') opts = MONTHS.map((m, i) => `<option value="${i}">${m}</option>`).join('');
+      else opts = '<option value="Todos">Todos</option>' + unique(k).map(v => `<option value="${esc(v)}">${esc(v)}</option>`).join('');
+      return `<div class="dgp-field"><label>${label}</label><select data-k="${k}">${opts}</select></div>`;
+    }).join('');
+    box.querySelectorAll('select').forEach(sel => {
+      const k = sel.dataset.k;
+      sel.value = state[k];
+      if (sel.value !== String(state[k])) { state[k] = k === 'month' ? '11' : 'Todos'; sel.value = state[k]; }
+      sel.onchange = () => {
+        state[k] = sel.value;
+        if (k === 'year') { state.month = String(defaultCutoff(sel.value === 'Todos' ? maxYear() : Number(sel.value))); buildFilters(); }
+        update();
+      };
+    });
+  }
+  function buildColumnMenu() {
+    const menu = $('#dgpColMenu');
+    menu.innerHTML = DETAIL_COLS.map(([k, l]) => `<label><input type="checkbox" value="${k}" ${visibleCols.has(k) ? 'checked' : ''}>${l}</label>`).join('');
+    menu.querySelectorAll('input').forEach(cb => cb.onchange = () => { cb.checked ? visibleCols.add(cb.value) : visibleCols.delete(cb.value); renderDetail(filtered()); });
+  }
+
+  function update() {
+    if (!$('#dgpCards')) return;
+    const rows = filtered();
+    const projects = new Set(rows.map(r => r.id)).size;
+    $('#dgpScope').textContent = `${state.year === 'Todos' ? 'Todos os anos' : state.year} | YTD até ${MONTHS[Number(state.month)]} | ${projects} projeto(s) DGP | ${rows.length} linhas`;
+    $('#dgpQuality').textContent = 'Forecast distinto não identificado na fonte; exibido como N/A. Duplicidades exatas são removidas no carregamento.';
+    renderCards(rows);
+    $('#dgpEvolution').innerHTML = evolutionSVG(rows);
+    $('#dgpArea').innerHTML = areaSVG(rows);
+    renderManagement(rows);
+    renderRanks(rows);
+    renderDetail(rows);
+  }
+
+  /* ---------------- Telas ---------------- */
+  function topbar(extra = '') {
+    return `<div class="dgp-topbar"><button class="back" type="button" onclick="closeFinanceiroDGP()">← Voltar ao portfólio</button><div class="dgp-top-actions">${extra}</div></div>`;
+  }
+
+  function renderLocked() {
+    const view = $('#dgpView');
+    view.innerHTML = `${topbar()}<div class="dgp-lock"><article class="card dgp-lock-card"><div class="dgp-lock-icon">🚧</div><h2>Financeiro DGP</h2><p>Este módulo está em desenvolvimento e será disponibilizado em breve, com o detalhamento financeiro dos projetos da iniciativa DGP.</p><div class="dgp-progress"><i></i></div><button class="dgp-lock-link" type="button" id="dgpLockLink">Acesso restrito</button><form class="dgp-lock-form" id="dgpLockForm" autocomplete="off"><input type="password" id="dgpPass" placeholder="Senha de acesso"><button type="submit">Entrar</button></form><div class="dgp-lock-error" id="dgpLockError"></div></article></div>`;
+    $('#dgpLockLink').onclick = () => { $('#dgpLockForm').classList.add('show'); $('#dgpPass').focus(); };
+    $('#dgpLockForm').onsubmit = event => {
+      event.preventDefault();
+      if (dgpHash($('#dgpPass').value) === DGP_PASS_HASH) { setUnlocked(true); renderModule(); }
+      else { $('#dgpLockError').textContent = 'Senha incorreta.'; $('#dgpPass').select(); }
+    };
+  }
+
+  function renderModule() {
+    const view = $('#dgpView');
+    rawRows = buildRows();
+    const actions = `<button class="dgp-btn" type="button" id="dgpRefresh">↻ Atualizar dados</button><button class="dgp-btn" type="button" id="dgpReset">Limpar filtros</button><button class="dgp-btn" type="button" id="dgpLock" title="Bloquear novamente">🔒 Bloquear</button>`;
+    view.innerHTML = `${topbar(actions)}
+      <section class="dgp-hero"><div><div class="pid">Iniciativa DGP · Detalhamento financeiro</div><h1>Financeiro DGP</h1><p>Projetos da iniciativa DGP que exigem acompanhamento especial.</p></div><div class="dgp-chips"><span class="dgp-chip">Período: YTD (2026–2027)</span><span class="dgp-chip red">Visão executiva</span></div></section>
+      <section class="card dgp-filters" id="dgpFilters"></section>
+      <div class="dgp-meta-row"><span class="dgp-badge" id="dgpScope"></span><span class="dgp-notice" id="dgpQuality"></span></div>
+      ${rawRows.length ? `
+      <section class="dgp-cards" id="dgpCards"></section>
+      <section class="dgp-grid-2"><article class="card dgp-card"><div class="dgp-card-head"><div><h3>Evolução acumulada YTD</h3><div class="dgp-sub">Valores em R$ milhões</div></div><div class="dgp-toggle"><button type="button" data-view="monthly" class="${lineView === 'monthly' ? 'active' : ''}">Mensal</button><button type="button" data-view="ytd" class="${lineView === 'ytd' ? 'active' : ''}">YTD</button></div></div><div id="dgpEvolution"></div></article><article class="card dgp-card"><div class="dgp-card-head"><div><h3>Representatividade da meta por área (%)</h3></div></div><div id="dgpArea"></div></article></section>
+      <section class="dgp-grid-eq"><article class="card dgp-card"><div class="dgp-card-head"><h3>Performance consolidada por área de negócio</h3></div><div class="dgp-table-wrap"><table id="dgpMgmt"></table></div></article><article class="card dgp-card"><div class="dgp-card-head"><h3>Ranking de projetos</h3></div><div class="dgp-rank-grid"><div><div class="dgp-rank-title">Acima da meta</div><div class="dgp-rank-list" id="dgpAbove"></div></div><div><div class="dgp-rank-title">Abaixo da meta</div><div class="dgp-rank-list" id="dgpBelow"></div></div></div></article></section>
+      <section class="card dgp-card"><div class="dgp-card-head"><h3>Detalhamento analítico</h3><div class="dgp-detail-actions"><div class="dgp-col-picker"><button type="button" class="dgp-btn" id="dgpColBtn">Exibir/ocultar colunas</button><div class="dgp-col-menu" id="dgpColMenu"></div></div><input class="dgp-search" id="dgpSearch" type="search" placeholder="Pesquisar projeto, área, status..." autocomplete="off"></div></div><div class="dgp-table-wrap"><table id="dgpDetail"></table></div></section>
+      ` : '<article class="card dgp-card"><div class="empty-state">Nenhum lançamento financeiro DGP (2026–2027) encontrado nos JSONs. Confira se a aba Base_Financ. dos projetos DGP está preenchida e com Iniciativa = DGP.</div></article>'}
+      <details class="card dgp-notes"><summary>Notas da base: origem de cada campo</summary><div class="dgp-map">
+        <div><b>Fonte</b>Aba Base_Financ. de cada Excel LOG-xxx (via gerar_jsons.py)</div><div><b>Escopo</b>Somente linhas com Iniciativa = DGP</div><div><b>ID do projeto</b>LOG-xxx do arquivo</div><div><b>Gerência</b>Coluna Gerência da Base_Financ.</div><div><b>Área</b>Área da One_Page</div><div><b>Projeto</b>Nome do projeto na One_Page</div><div><b>Tipo de despesa</b>OPEX / CAPEX (linha "Total" não é somada)</div><div><b>Baseline</b>Resultado quando ICG = Budget</div><div><b>Meta</b>Resultado quando ICG = Fcst</div><div class="warn"><b>Forecast</b>Não existe como série distinta (N/A)</div><div><b>Realizado</b>Resultado quando ICG = Real</div><div><b>Status</b>Situação da Base_Financ. (ou stage do projeto)</div><div class="warn"><b>Período</b>Somente 2026 e 2027</div>
+      </div></details>
+      <div class="dgp-footer">Valores em R$ milhões, conforme registrado na Base_Financ. dos projetos.</div>`;
+
+    if (!$('#dgpScope')) return;
+    if (!rawRows.length) { $('#dgpScope').textContent = '0 projeto(s) DGP'; }
+    if (!initialized && rawRows.length) { state.month = String(defaultCutoff(maxYear())); initialized = true; }
+    buildFilters();
+    $('#dgpRefresh').onclick = () => { const b = $('#btnAtualizarDashboard'); if (b) { $('#dgpRefresh').textContent = '↻ Atualizando…'; b.click(); } };
+    $('#dgpReset').onclick = () => { Object.assign(state, { year: 'Todos', month: String(defaultCutoff(maxYear())), mgmt: 'Todos', area: 'Todos', project: 'Todos', expense: 'Todos', status: 'Todos' }); const s = $('#dgpSearch'); if (s) s.value = ''; buildFilters(); update(); };
+    $('#dgpLock').onclick = () => { setUnlocked(false); renderLocked(); };
+    if (!rawRows.length) return;
+    view.querySelectorAll('.dgp-toggle button').forEach(b => b.onclick = () => { view.querySelectorAll('.dgp-toggle button').forEach(x => x.classList.remove('active')); b.classList.add('active'); lineView = b.dataset.view; $('#dgpEvolution').innerHTML = evolutionSVG(filtered()); });
+    $('#dgpSearch').oninput = () => renderDetail(filtered());
+    const menu = $('#dgpColMenu');
+    $('#dgpColBtn').onclick = e => { e.stopPropagation(); menu.classList.toggle('open'); };
+    menu.onclick = e => e.stopPropagation();
+    buildColumnMenu();
+    update();
+  }
+
+  /* ---------------- Navegação ---------------- */
+  function ensureView() {
+    let view = $('#dgpView');
+    if (!view) {
+      view = document.createElement('div');
+      view.className = 'dgp-view'; view.id = 'dgpView';
+      const anchor = $('#projectView');
+      if (anchor) anchor.insertAdjacentElement('afterend', view); else ($('.content') || document.body).appendChild(view);
+    }
+    return view;
+  }
+
+  window.openFinanceiroDGP = () => {
+    injectStyles();
+    const view = ensureView();
+    $('#projectView')?.classList.remove('show');
+    $('#home')?.classList.add('hide');
+    document.body.classList.add('project-open', 'dgp-open');
+    view.classList.add('show');
+    const crumb = $('#crumbName'); if (crumb) crumb.textContent = 'Financeiro DGP';
+    isUnlocked() ? renderModule() : renderLocked();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  window.closeFinanceiroDGP = () => {
+    $('#dgpView')?.classList.remove('show');
+    document.body.classList.remove('dgp-open');
+    if (typeof window.closeProject === 'function') window.closeProject();
+    else { document.body.classList.remove('project-open'); $('#home')?.classList.remove('hide'); }
+  };
+
+  // Integração com a navegação existente (sem alterar o comportamento original)
+  const originalClose = window.closeProject;
+  if (typeof originalClose === 'function') window.closeProject = (...args) => { $('#dgpView')?.classList.remove('show'); document.body.classList.remove('dgp-open'); return originalClose(...args); };
+  const originalOpen = window.openProject;
+  if (typeof originalOpen === 'function') window.openProject = (...args) => { $('#dgpView')?.classList.remove('show'); document.body.classList.remove('dgp-open'); return originalOpen(...args); };
+
+  document.addEventListener('click', () => $('#dgpColMenu')?.classList.remove('open'));
+  // Recarrega a tela quando o botão "Atualizar dados" terminar
+  // (observa o fim da atualização pelo próprio botão, sem alterar o dashboard.js)
+  const reRender = () => { if (document.body.classList.contains('dgp-open') && isUnlocked()) renderModule(); };
+  document.addEventListener('dashboardDataLoaded', reRender);
+  const refreshBtn = document.getElementById('btnAtualizarDashboard');
+  if (refreshBtn) new MutationObserver(() => { if (!refreshBtn.disabled && !refreshBtn.hasAttribute('aria-busy')) reRender(); })
+    .observe(refreshBtn, { attributes: true, attributeFilter: ['aria-busy', 'disabled'] });
+})();
+</script>
   <script>
   (() => {
     'use strict';
