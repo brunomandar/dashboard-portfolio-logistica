@@ -436,7 +436,6 @@
     if (consultoria && !forums.includes(consultoria)) forums.push(consultoria);
     const managers = Object.entries(countsBy(valid, project => project.area))
       .sort((a, b) => b[1] - a[1])
-      .slice(0, 6)
       .map(([key]) => key);
     const baseColors = ['#530b03', '#df3232', '#bfbfbf'];
     let colorIndex = 0;
