@@ -1,7 +1,7 @@
 {
   "id": "LOG-007",
   "projeto": "Planejamento Redução Consumo Material",
-  "area": "",
+  "area": "Planejamento",
   "pontoFocal": "Marcelo Saleme",
   "inicio": "",
   "termino": "",
@@ -11,7 +11,7 @@
   "risco": "Médio",
   "status": "L3",
   "situacao": "Atenção",
-  "prioridade": "",
+  "prioridade": "P0",
   "ganhoProjeto": "Quantitativo",
   "tipos": [
     "Capex"
@@ -36,8 +36,8 @@
       "atividade": "Piloto BOM Unisoma",
       "responsavel": "Mellato",
       "status": 1,
-      "inicio": "2026-11-06",
-      "fim": "2026-11-20",
+      "inicio": "2026-11-10",
+      "fim": "2026-11-24",
       "anotacao": ""
     },
     {
@@ -45,8 +45,8 @@
       "atividade": "Turn Key Misc",
       "responsavel": "Compras",
       "status": 1,
-      "inicio": "2026-11-23",
-      "fim": "2026-11-20",
+      "inicio": "2026-11-25",
+      "fim": "2026-11-24",
       "anotacao": ""
     },
     {
@@ -3773,9 +3773,10 @@
       "resultado": 0.46919782538333127
     }
   ],
+  "fca": {},
   "fonte": {
     "arquivo": "LOG-007 - Planejamento Redução Consumo Material.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-007%20-%20Planejamento%20Redu%C3%A7%C3%A3o%20Consumo%20Material.xlsx?web=1",
-    "extraidoEm": "2026-11-10T10:19:47-03:00"
+    "extraidoEm": "2026-11-10T11:42:33-03:00"
   }
 }
