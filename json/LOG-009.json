@@ -13,9 +13,7 @@
   "situacao": "Em risco",
   "prioridade": "P0",
   "ganhoProjeto": "Quantitativo",
-  "tipos": [
-    "Opex"
-  ],
+  "tipos": [],
   "escopo": "Unificação do estoque de SIM cards (Single e ComboMulti), viabilizando a integração da malha de distribuição na esteira de entrega expressa via motoboy, com foco na otimização de rotas e ganho de eficiência operacional, resultando na redução do quadro de entregadores.",
   "entregaveis": [
     "Unificação de estoque",
@@ -23,12 +21,12 @@
     "Nova malha logística integrada (Single/Multi)"
   ],
   "saving": {
-    "opex12M": 3.1551500536774193,
+    "opex12M": 0.0,
     "capex12M": 0.0,
-    "total12M": 3.1551500536774193,
-    "opex2026": 0.8501042936774194,
+    "total12M": 0.0,
+    "opex2026": 0.0,
     "capex2026": 0.0,
-    "total2026": 0.8501042936774194
+    "total2026": 0.0
   },
   "macroAtividades": [
     {
@@ -89,7 +87,7 @@
       "numero": "07.",
       "atividade": "Implantação da 2ª Onda",
       "responsavel": "",
-      "status": 2,
+      "status": 4,
       "inicio": "2026-08-15",
       "fim": "2026-10-19",
       "anotacao": ""
@@ -98,7 +96,7 @@
       "numero": "08.",
       "atividade": "Estabilização da 2ª Onda",
       "responsavel": "",
-      "status": 2,
+      "status": 4,
       "inicio": "2026-08-15",
       "fim": "2026-10-19",
       "anotacao": ""
@@ -107,7 +105,7 @@
       "numero": "09.",
       "atividade": "Encerramento da implantação nacional",
       "responsavel": "",
-      "status": 0,
+      "status": 4,
       "inicio": "2026-10-14",
       "fim": "2026-11-02",
       "anotacao": ""
@@ -523,7 +521,7 @@
       "numero": "2.4",
       "atividade": "Implantar 2ª onda",
       "responsavel": "Transportes / Claro",
-      "status": 2,
+      "status": 4,
       "inicio": "2026-08-15",
       "fim": "2026-10-19",
       "anotacao": ""
@@ -532,7 +530,7 @@
       "numero": "2.4.1",
       "atividade": "Implantação BA",
       "responsavel": "Transportes / Claro",
-      "status": 2,
+      "status": 4,
       "inicio": "2026-08-15",
       "fim": "2026-10-19",
       "anotacao": ""
@@ -541,7 +539,7 @@
       "numero": "2.4.2",
       "atividade": "Implantação CE",
       "responsavel": "Transportes / Claro",
-      "status": 2,
+      "status": 4,
       "inicio": "2026-08-15",
       "fim": "2026-10-19",
       "anotacao": ""
@@ -550,7 +548,7 @@
       "numero": "2.4.3",
       "atividade": "Implantação PE",
       "responsavel": "Transportes / Claro",
-      "status": 2,
+      "status": 4,
       "inicio": "2026-08-15",
       "fim": "2026-10-19",
       "anotacao": ""
@@ -559,7 +557,7 @@
       "numero": "2.4.4",
       "atividade": "Implantação SE",
       "responsavel": "Transportes / Claro",
-      "status": 2,
+      "status": 4,
       "inicio": "2026-08-15",
       "fim": "2026-10-19",
       "anotacao": ""
@@ -568,7 +566,7 @@
       "numero": "2.4.5",
       "atividade": "Implantação SP EXP",
       "responsavel": "Transportes / Claro",
-      "status": 2,
+      "status": 4,
       "inicio": "2026-08-15",
       "fim": "2026-10-19",
       "anotacao": ""
@@ -577,7 +575,7 @@
       "numero": "2.4.6",
       "atividade": "Implantação SP D+1",
       "responsavel": "Transportes / Claro",
-      "status": 2,
+      "status": 4,
       "inicio": "2026-08-15",
       "fim": "2026-10-19",
       "anotacao": ""
@@ -586,7 +584,7 @@
       "numero": "2.4.7",
       "atividade": "Implantação RS",
       "responsavel": "Transportes / Claro",
-      "status": 2,
+      "status": 4,
       "inicio": "2026-08-15",
       "fim": "2026-10-19",
       "anotacao": ""
@@ -595,7 +593,7 @@
       "numero": "2.5",
       "atividade": "Estabilizar 2ª onda",
       "responsavel": "Transportes / Claro",
-      "status": 2,
+      "status": 4,
       "inicio": "2026-10-19",
       "fim": "2026-10-30",
       "anotacao": ""
@@ -613,7 +611,7 @@
       "numero": "3.1",
       "atividade": "Envio do comunicado interno",
       "responsavel": "Transportes / Claro",
-      "status": 0,
+      "status": 2,
       "inicio": "2026-10-14",
       "fim": "2026-11-02",
       "anotacao": ""
@@ -622,7 +620,7 @@
       "numero": "3.2",
       "atividade": "Validar Implantação em cada uma das UFs",
       "responsavel": "Transportes / Claro",
-      "status": 0,
+      "status": 4,
       "inicio": "2026-10-15",
       "fim": "2026-11-03",
       "anotacao": ""
@@ -3252,6 +3250,6 @@
   "fonte": {
     "arquivo": "LOG-009 - Unificação da Malha (Single x CM).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-009%20-%20Unifica%C3%A7%C3%A3o%20da%20Malha%20%28Single%20x%20CM%29.xlsx?web=1",
-    "extraidoEm": "2026-11-10T13:45:23-03:00"
+    "extraidoEm": "2026-11-10T16:39:17-03:00"
   }
 }
