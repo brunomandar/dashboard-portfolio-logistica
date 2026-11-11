@@ -80,6 +80,12 @@ window.DASHBOARD_SHOW_META = true;
     return `R$ ${formatted}M`;
   }
 
+  // Cards: sempre 2 casas decimais e sufixo MM
+  function cardMM(value) {
+    const absolute = Math.abs(n(value));
+    return `R$ ${absolute.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}MM`;
+  }
+
   function savingField(project, field) {
     const saving = project?.saving;
     if (saving && typeof saving === 'object') return n(saving[field]);
@@ -291,14 +297,18 @@ window.DASHBOARD_SHOW_META = true;
     const priorityBlocksRisk = project => /^(cancelad|congelad|concluid)/.test(clean(project.prioridade).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase());
     const risk = active.filter(project => isRisk(project) && clean(project.status).toUpperCase() !== 'L5' && !priorityBlocksRisk(project));
     const done = projects.filter(isDone);
-    const saving = projects.reduce((sum, project) => sum + savingField(project, 'total12M'), 0);
-    const savingOpex = projects.reduce((sum, project) => sum + savingField(project, 'opex12M'), 0);
-    const savingCapex = projects.reduce((sum, project) => sum + savingField(project, 'capex12M'), 0);
+    // Saving potencial = Saving OPEX + Saving CAPEX (Base_Financ., mesmo cálculo da seção financeira)
+    const anoSelKpi = $('#filterAno');
+    const anoTextoKpi = clean(anoSelKpi?.options?.[anoSelKpi.selectedIndex]?.text);
+    const savingBase = savingFromBase(projects, /^\d{4}$/.test(anoTextoKpi) ? [Number(anoTextoKpi)] : []);
+    const savingOpex = savingBase.opex;
+    const savingCapex = savingBase.capex;
+    const saving = savingOpex + savingCapex;
     grid.innerHTML = `
       <article class="card kpi" style="--accent:#ed7d31"><div class="kpi-label">Projetos ativos</div><div class="kpi-value">${active.length}</div><div class="kpi-foot">${projects.length} projeto(s) no recorte</div></article>
       <article class="card kpi kpi-risk" style="--accent:#c00000" data-risk-list="${esc(JSON.stringify(risk.slice().sort((a, b) => idNumber(a.id) - idNumber(b.id)).map(project => `${project.id} · ${clean(project.projeto)}`)))}"><div class="kpi-label">Em risco</div><div class="kpi-value">${risk.length}</div><div class="kpi-foot"><span class="danger">${pct(risk.length, active.length)}%</span> da carteira ativa</div></article>
       <article class="card kpi" style="--accent:#530b03"><div class="kpi-label">Concluídos</div><div class="kpi-value">${done.length}</div><div class="kpi-foot"><span class="positive">${pct(done.length, projects.length)}%</span> da carteira</div></article>
-      <article class="card kpi" style="--accent:#ffc000"><div class="kpi-label">Saving potencial</div><div class="kpi-value">${moneyMM(saving)}</div><div class="kpi-foot">Opex ${moneyMM(savingOpex)} · Capex ${moneyMM(savingCapex)}</div></article>`;
+      <article class="card kpi" style="--accent:#ffc000"><div class="kpi-label">Saving potencial</div><div class="kpi-value">${cardMM(saving)}</div><div class="kpi-foot">Opex ${cardMM(savingOpex)} · Capex ${cardMM(savingCapex)}</div></article>`;
   }
 
   function bindRiskTooltip() {
@@ -544,6 +554,26 @@ window.DASHBOARD_SHOW_META = true;
     return series;
   }
 
+  // Saving = Realizado da Base_Financ. (ICG = Real), linhas OPEX e CAPEX; Total = OPEX + CAPEX.
+  // years: lista de anos considerados (vazio = todos os anos).
+  function savingFromBase(projects, years) {
+    const out = { opex: 0, capex: 0, total: 0 };
+    const inYears = record => !years.length || years.includes(Number(record?.ano));
+    projects.forEach(project => {
+      const records = arrayOf(project.financeiro).filter(record => clean(record?.icg) === 'Real' && inYears(record));
+      const split = records.filter(record => /^(opex|capex)$/i.test(clean(record?.tipoDespesa)));
+      if (split.length) {
+        split.forEach(record => { out[clean(record.tipoDespesa).toLowerCase()] += Math.abs(n(record.resultado)); });
+        return;
+      }
+      // Projeto sem linhas OPEX/CAPEX: usa a linha Total no tipo único do projeto
+      const tipos = arrayOf(project.tipos).map(value => clean(value).toLowerCase()).filter(value => value === 'opex' || value === 'capex');
+      const value = records.filter(record => clean(record?.tipoDespesa) === 'Total').reduce((sum, record) => sum + Math.abs(n(record.resultado)), 0);
+      if (tipos.length === 1) out[tipos[0]] += value;
+    });
+    out.total = out.opex + out.capex;
+    return out;
+  }
   const cumulative = values => values.reduce((result, value, index) => {
     result.push(value + (result[index - 1] || 0));
     return result;
@@ -630,6 +660,7 @@ window.DASHBOARD_SHOW_META = true;
     const x = index => left + slot * index + slot / 2;
     const y = value => top + plotH - (value / max) * plotH;
     const fmt = value => value ? `${value.toLocaleString('pt-BR', { maximumFractionDigits: value < 10 ? 2 : 1 })}M` : '0M';
+    const fmtCard = value => `${Number(value || 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}MM`;
     const grid = [0, 0.25, 0.5, 0.75, 1].map(step => `<line x1="${left}" x2="${W - right}" y1="${(top + plotH * step).toFixed(1)}" y2="${(top + plotH * step).toFixed(1)}" stroke="#eceef2" stroke-width="1"/>`).join('');
     const columns = labels.map((label, index) => `<rect x="${(left + slot * index).toFixed(1)}" y="${top}" width="${slot.toFixed(1)}" height="${plotH}" fill="${index % 2 ? '#fafafa' : '#ffffff'}"/>`).join('');
     const barW = Math.min(28, slot * 0.36);
@@ -657,7 +688,7 @@ window.DASHBOARD_SHOW_META = true;
         const good = diff >= 0;
         const color = good ? '#15803d' : '#c00000';
         const bg = good ? '#e8f7ee' : '#fbeaea';
-        const text = `${good ? '▲' : '▼'} ${fmt(Math.abs(diff))}`;
+        const text = `${good ? '▲' : '▼'} ${fmtCard(Math.abs(diff))}`;
         const pw = (text.length * 5.6 + 8) * fs;
         lbl += `<g><title>Desvio Realizado x Forecast ${label}: ${good ? 'acima' : 'abaixo'} em R$ ${fmt(Math.abs(diff))}</title><rect x="${(x(index) - pw / 2).toFixed(1)}" y="${(upY - 1).toFixed(1)}" width="${pw.toFixed(1)}" height="${(15 * fs).toFixed(1)}" rx="${(7.5 * fs).toFixed(1)}" fill="${bg}" stroke="${color}" stroke-width="1"/><text x="${x(index).toFixed(1)}" y="${(upY + 10.5 * fs).toFixed(1)}" text-anchor="middle" font-size="${(9 * fs).toFixed(1)}" font-weight="800" fill="${color}">${text}</text></g>`;
       }
@@ -670,7 +701,7 @@ window.DASHBOARD_SHOW_META = true;
     const metaLeaders = [];
     const metaLabels = meta.map((value, index) => {
       if (!SHOW_META || !value) return '';
-      const text = fmt(value);
+      const text = fmtCard(value);
       const bw = (text.length * 6 + 10) * fs, bh = 15 * fs;
       const cx = x(index), py = y(value);
       const limit = occupied[index];
@@ -692,8 +723,8 @@ window.DASHBOARD_SHOW_META = true;
     const legend = `<div class="fin-legend"><span><i class="lg-bar"></i>Real+FCST</span><span><i class="lg-bar fcst"></i>Forecast</span><span><i class="lg-line"></i>Meta${SHOW_META ? '' : ': -'}</span>${base ? '<span><i class="lg-line base"></i>Baseline / ano anterior</span>' : ''}<span><i class="lg-dev">▲▼</i>Desvio Realizado x Forecast</span></div>`;
     const sum = list => list.reduce((acc, value) => acc + value, 0);
     const tReal = sum(real), tFcst = sum(fcst), tMeta = sum(meta);
-    const gapBox = (a, b) => { const d = a - b; return `<b class="${d >= 0 ? 'pos' : 'neg'}">${d >= 0 ? '▲' : '▼'} ${fmt(Math.abs(d))}</b>`; };
-    const minis = `<div class="fin-mini"><div><small>Meta</small><b>${SHOW_META ? fmt(tMeta) : '-'}</b></div><div><small>Forecast</small><b>${fmt(tFcst)}</b></div><div><small>Real+FCST</small><b>${fmt(tReal)}</b></div><div><small>Real x Meta</small>${SHOW_META ? gapBox(tReal, tMeta) : '<b>-</b>'}</div><div><small>Real x Forecast</small>${gapBox(tReal, tFcst)}</div></div>`;
+    const gapBox = (a, b) => { const d = a - b; return `<b class="${d >= 0 ? 'pos' : 'neg'}">${d >= 0 ? '▲' : '▼'} ${fmtCard(Math.abs(d))}</b>`; };
+    const minis = `<div class="fin-mini"><div><small>Meta</small><b>${SHOW_META ? fmtCard(tMeta) : '-'}</b></div><div><small>Forecast</small><b>${fmtCard(tFcst)}</b></div><div><small>Real+FCST</small><b>${fmtCard(tReal)}</b></div><div><small>Real x Meta</small>${SHOW_META ? gapBox(tReal, tMeta) : '<b>-</b>'}</div><div><small>Real x FCST</small>${gapBox(tReal, tFcst)}</div></div>`;
     return `<div class="fin-top">${legend}${minis}</div>${svg}`;
   }
 
@@ -727,12 +758,17 @@ window.DASHBOARD_SHOW_META = true;
     const real = total('Real');
     const gapMeta = real - budget;
     const gapForecast = real - forecast;
-    const opex = projects.reduce((sum, project) => sum + savingField(project, 'opex12M'), 0);
-    const capex = projects.reduce((sum, project) => sum + savingField(project, 'capex12M'), 0);
-    const all = projects.reduce((sum, project) => sum + savingField(project, 'total12M'), 0);
-    const year = projects.reduce((sum, project) => sum + savingField(project, 'total2026'), 0);
+    // Saving vem da Base_Financ. (Realizado). Total segue o ano selecionado no filtro Ano ("Todos" = todos os anos)
+    const anoSel = $('#filterAno');
+    const anoTexto = clean(anoSel?.options?.[anoSel.selectedIndex]?.text);
+    const anosTotal = /^\d{4}$/.test(anoTexto) ? [Number(anoTexto)] : [];
+    const savingTotal = savingFromBase(projects, anosTotal);
+    const opex = savingTotal.opex;
+    const capex = savingTotal.capex;
+    const all = savingTotal.total;
+    const year = savingFromBase(projects, [2026]).total;
     const grid = $('#financeiro .finance-grid');
-    if (grid) grid.innerHTML = `<article class="card finance-kpi"><small>Meta</small><b>${window.DASHBOARD_SHOW_META !== false ? moneyMM(budget) : '-'}</b></article><article class="card finance-kpi"><small>Forecast</small><b>${moneyMM(forecast)}</b></article><article class="card finance-kpi"><small>Real+FCST</small><b>${moneyMM(real)}</b></article><article class="card finance-kpi gap-kpi"><div class="gap-split"><div><span>Real x Meta</span>${window.DASHBOARD_SHOW_META !== false ? `<b style="color:${gapMeta < 0 ? 'var(--claro)' : 'var(--green)'}">${moneyMM(gapMeta)}</b>` : '<b>-</b>'}</div><div><span>Real x Forecast</span><b style="color:${gapForecast < 0 ? 'var(--claro)' : 'var(--green)'}">${moneyMM(gapForecast)}</b></div></div></article><article class="card finance-kpi"><small>Saving Opex</small><b>${moneyMM(opex)}</b></article><article class="card finance-kpi"><small>Saving Capex</small><b>${moneyMM(capex)}</b></article><article class="card finance-kpi"><small>Saving Total</small><b>${moneyMM(all)}</b></article><article class="card finance-kpi"><small>Saving 2026</small><b>${moneyMM(year)}</b></article>`;
+    if (grid) grid.innerHTML = `<article class="card finance-kpi"><small>Meta</small><b>${window.DASHBOARD_SHOW_META !== false ? cardMM(budget) : '-'}</b></article><article class="card finance-kpi"><small>Forecast</small><b>${cardMM(forecast)}</b></article><article class="card finance-kpi"><small>Real+FCST</small><b>${cardMM(real)}</b></article><article class="card finance-kpi gap-kpi"><div class="gap-split"><div><span>Real x Meta</span>${window.DASHBOARD_SHOW_META !== false ? `<b style="color:${gapMeta < 0 ? 'var(--claro)' : 'var(--green)'}">${cardMM(gapMeta)}</b>` : '<b>-</b>'}</div><div><span>Real x FCST</span><b style="color:${gapForecast < 0 ? 'var(--claro)' : 'var(--green)'}">${cardMM(gapForecast)}</b></div></div></article><article class="card finance-kpi"><small>Saving Opex</small><b>${cardMM(opex)}</b></article><article class="card finance-kpi"><small>Saving Capex</small><b>${cardMM(capex)}</b></article><article class="card finance-kpi"><small>Saving Total</small><b>${cardMM(all)}</b></article><article class="card finance-kpi"><small>Saving 2026</small><b>${cardMM(year)}</b></article>`;
     state.finProjects = projects;
     const card = $('#financeiro .line-chart');
     if (card) {
@@ -1050,7 +1086,7 @@ window.DASHBOARD_SHOW_META = true;
       <div class="project-topbar"><button class="back" type="button" onclick="closeProject()">← Voltar ao portfólio</button><select class="project-selector" onchange="openProject(this.value)">${state.projects.map(item => `<option value="${esc(item.id)}" ${item.id === project.id ? 'selected' : ''}>${esc(item.id)} · ${esc(item.projeto)}</option>`).join('')}</select><div class="project-search"><input type="search" id="projectSearch" placeholder="Buscar projeto por nome ou LOG..." autocomplete="off" oninput="searchProjects(this.value)" onkeydown="if(event.key==='Enter'){const f=document.querySelector('#projectSearchResults [data-id]');if(f)openProject(f.dataset.id);}"><div id="projectSearchResults" class="project-search-results"></div></div></div>
       <section class="project-hero hero-v9"><div class="hero-main"><div class="pid">${esc(project.id)} · ${esc(project.area || 'Não informado')} · ${esc(initiative)}</div><h1>${esc(project.projeto || 'Projeto sem nome')}</h1><div class="hero-tags-row"><div class="meta-row"><span class="chip">${esc(project.status || 'Sem stage')}</span><span class="chip">${esc(project.prioridade || 'S/P')}</span><span class="chip green">${esc(project.ganhoProjeto || 'Não informado')}</span><span class="chip risk-tag risk-${clean(project.risco || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z]/g, '') || 'na'}">Risco - ${esc(project.risco || 'Não informado')}</span></div></div></div></section>
       <section class="detail-grid"><article class="card detail"><small>Início</small><b>${formatDate(project.inicio)}</b></article><article class="card detail"><small>Término</small><b>${formatDate(project.termino)}</b></article><article class="card detail"><small>Ponto focal</small><b title="${esc(project.pontoFocal)}">${esc(compact(project.pontoFocal || 'Não informado', 25))}</b></article><article class="card detail"><small>Focal Acompanhamento</small><b title="${esc(project.pmo)}">${esc(compact(project.pmo || 'Não informado', 25))}</b></article></section>
-      <section class="detail-grid"><article class="card detail"><small>Saving Opex 12M</small><b>${moneyMM(savingField(project, 'opex12M'))}</b></article><article class="card detail"><small>Saving Capex 12M</small><b>${moneyMM(savingField(project, 'capex12M'))}</b></article><article class="card detail"><small>Saving total 12M</small><b>${moneyMM(savingField(project, 'total12M'))}</b></article><article class="card detail"><small>Saving 2026</small><b>${moneyMM(savingField(project, 'total2026'))}</b></article></section>
+      <section class="detail-grid"><article class="card detail"><small>Saving Opex 12M</small><b>${cardMM(savingField(project, 'opex12M'))}</b></article><article class="card detail"><small>Saving Capex 12M</small><b>${cardMM(savingField(project, 'capex12M'))}</b></article><article class="card detail"><small>Saving total 12M</small><b>${cardMM(savingField(project, 'total12M'))}</b></article><article class="card detail"><small>Saving 2026</small><b>${cardMM(savingField(project, 'total2026'))}</b></article></section>
       <section class="section two-col"><article class="card text-card scroll-card"><div class="chart-title">Escopo do projeto</div><p class="scroll-content">${esc(project.escopo || 'Escopo não preenchido no arquivo de origem.')}</p></article><article class="card text-card scroll-card"><div class="chart-title">Principais entregáveis</div><ul class="checklist scroll-content">${deliverables.length ? deliverables.map(item => `<li>${esc(item)}</li>`).join('') : '<li>Entregáveis não preenchidos no arquivo de origem.</li>'}</ul></article></section>
       <section class="section"><div class="section-head"><div><h2>Cronograma do projeto</h2><p>Alternância entre visão executiva e detalhada.</p></div></div><div class="tabs"><button class="tab ${state.scheduleMode === 'macro' ? 'active' : ''}" type="button" ${scheduleSummaryAttr(project, 'macro', 'Resumo do macrocronograma')} onclick="switchSchedule('macro')">Macrocronograma</button>${canOpenDetailed(project) ? `<button class="tab ${state.scheduleMode === 'detalhado' ? 'active' : ''}" type="button" ${scheduleSummaryAttr(project, 'detalhado', 'Resumo do cronograma detalhado')} onclick="switchSchedule('detalhado')">Cronograma detalhado</button>` : `<button class="tab tab-locked" type="button" disabled title="Cronograma detalhado disponível apenas para projetos da gerência de Transportes">🔒 Cronograma detalhado</button>`}</div><article class="card roadmap-card" id="projectSchedule">${scheduleCard(project, state.scheduleMode)}</article></section>
       <section class="section two-col">${isQualitative(project) ? qualitativeProgressCard(project) : `<article class="card line-chart project-finance-chart"><div class="chart-title">Desempenho financeiro do projeto</div><div class="chart-sub">${esc(projectFinance.sub)}</div>${projectFinance.body}</article>`}<article class="card timeline"><div class="chart-title" style="margin-bottom:18px">Histórico de atualizações</div>${projectRiskNote(project) ? `<div class="timeline-risk"><b>⚠ Risco</b><p>${esc(projectRiskNote(project))}</p></div>` : ''}${timeline.length ? timeline.map(item => `<div class="time-item"><div class="time-date">${shortDate(item.data)}</div><div class="time-line"></div><div class="time-copy"><b>Atualização registrada</b><p>${esc(item.detalhe)}</p></div></div>`).join('') : '<div class="empty-state">Sem atualizações registradas no Status do Projeto.</div>'}</article></section>`;
