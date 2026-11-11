@@ -238,17 +238,84 @@ window.DASHBOARD_SHOW_META = true;
       if (values.includes(selected)) select.value = selected;
     });
   }
+  // Filtros com checkbox (seleção múltipla): valores marcados ficam em select.dataset.multi
+  const MULTI_FILTER_IDS = ['filterGerencia', 'filterStatus', 'filterIniciativa', 'filterPontoFocal', 'filterFocalAcomp'];
+  function multiValues(id) {
+    try { return JSON.parse(document.getElementById(id)?.dataset.multi || '[]'); } catch (_) { return []; }
+  }
+  // Para filtrar: todos marcados = sem filtro (igual a "Todas"/"Todos")
+  function activeMultiValues(id) {
+    const select = document.getElementById(id);
+    const options = select ? [...select.options].map(option => option.value).filter(Boolean) : [];
+    const chosen = multiValues(id).filter(value => options.includes(value));
+    return chosen.length === options.length ? [] : chosen;
+  }
+  // Compatibilidade: com 1 item marcado envia o texto; com 0 ou vários envia '' (a filtragem real usa as listas)
+  const singleOf = list => list.length === 1 ? list[0] : '';
+
   function currentFilters() {
+    const gerenciaList = activeMultiValues('filterGerencia');
+    const statusList = activeMultiValues('filterStatus');
+    const iniciativaList = activeMultiValues('filterIniciativa');
+    const pontoFocalList = activeMultiValues('filterPontoFocal');
+    const focalAcompList = activeMultiValues('filterFocalAcomp');
     return {
       ano: $('#filterAno')?.value || '',
-      gerencia: $('#filterGerencia')?.value || '',
-      status: $('#filterStatus')?.value || '',
+      gerencia: singleOf(gerenciaList),
+      status: singleOf(statusList),
       ganho: $('#filterGanho')?.value || '',
       tipo: $('#filterTipo')?.value || '',
-      iniciativa: $('#filterIniciativa')?.value || '',
-      pontoFocal: $('#filterPontoFocal')?.value || '',
-      focalAcomp: $('#filterFocalAcomp')?.value || ''
+      iniciativa: singleOf(iniciativaList),
+      pontoFocal: singleOf(pontoFocalList),
+      focalAcomp: singleOf(focalAcompList),
+      gerenciaList, statusList, iniciativaList, pontoFocalList, focalAcompList
     };
+  }
+
+  function setupMultiFilters() {
+    MULTI_FILTER_IDS.forEach(id => {
+      const select = document.getElementById(id);
+      if (!select || select.dataset.multiReady) return;
+      select.dataset.multiReady = '1';
+      select.dataset.multi = select.dataset.multi || '[]';
+      select.style.display = 'none';
+      const box = document.createElement('div');
+      box.className = 'mf-box';
+      box.innerHTML = `<button type="button" class="mf-trigger"></button><div class="mf-menu"><div class="mf-acts"><button type="button" class="mf-act" data-act="all">Selecionar todos</button><button type="button" class="mf-act" data-act="none">Limpar</button></div><div class="mf-opts"></div></div>`;
+      select.insertAdjacentElement('afterend', box);
+      const trigger = box.querySelector('.mf-trigger');
+      const opts = box.querySelector('.mf-opts');
+      const optionValues = () => [...select.options].map(option => option.value).filter(Boolean);
+      const emptyLabel = () => select.options[0]?.textContent || 'Todos';
+      const updateLabel = () => {
+        const values = optionValues();
+        const chosen = multiValues(id).filter(value => values.includes(value));
+        trigger.textContent = !chosen.length || chosen.length === values.length ? emptyLabel() : chosen.length === 1 ? chosen[0] : `${chosen.length} selecionados`;
+        trigger.title = chosen.length ? chosen.join(', ') : emptyLabel();
+      };
+      const save = list => { select.dataset.multi = JSON.stringify(list); updateLabel(); if (typeof window.applyGlobalFilters === 'function') window.applyGlobalFilters(); };
+      const buildOptions = () => {
+        const chosen = multiValues(id);
+        opts.innerHTML = optionValues().map(value => `<label class="mf-opt"><input type="checkbox" value="${esc(value)}" ${chosen.includes(value) ? 'checked' : ''}><span>${esc(value)}</span></label>`).join('') || '<div class="mf-empty">Sem opções</div>';
+        opts.querySelectorAll('input').forEach(input => input.addEventListener('change', () => save([...opts.querySelectorAll('input:checked')].map(item => item.value))));
+      };
+      trigger.addEventListener('click', event => {
+        event.stopPropagation();
+        const open = box.classList.contains('open');
+        document.querySelectorAll('.mf-box.open').forEach(item => item.classList.remove('open'));
+        if (!open) { buildOptions(); box.classList.add('open'); }
+      });
+      box.querySelector('.mf-menu').addEventListener('click', event => event.stopPropagation());
+      box.querySelector('[data-act="all"]').addEventListener('click', () => { save(optionValues()); buildOptions(); });
+      box.querySelector('[data-act="none"]').addEventListener('click', () => { save([]); buildOptions(); });
+      // Atualiza o rótulo quando as opções do select forem recarregadas
+      new MutationObserver(updateLabel).observe(select, { childList: true });
+      updateLabel();
+    });
+    if (!window.__mfCloseBound) {
+      window.__mfCloseBound = true;
+      document.addEventListener('click', () => document.querySelectorAll('.mf-box.open').forEach(item => item.classList.remove('open')));
+    }
   }
 
   const projectInYear = (project, year) => {
@@ -265,13 +332,13 @@ window.DASHBOARD_SHOW_META = true;
     const filters = currentFilters();
     return state.projects.filter(project =>
       projectInYear(project, filters.ano) &&
-      (!filters.gerencia || clean(project.area) === filters.gerencia) &&
-      (!filters.status || clean(project.status) === filters.status) &&
+      (!filters.gerenciaList.length || filters.gerenciaList.includes(clean(project.area))) &&
+      (!filters.statusList.length || filters.statusList.includes(clean(project.status))) &&
       (!filters.ganho || clean(project.ganhoProjeto) === filters.ganho) &&
       (!filters.tipo || arrayOf(project.tipos).map(clean).includes(filters.tipo)) &&
-      (!filters.iniciativa || clean(first(project, ['iniciativa','forum','fórum'])) === filters.iniciativa) &&
-      (!filters.pontoFocal || clean(first(project, ['pontoFocal','ponto_focal','ponto focal'])) === filters.pontoFocal) &&
-      (!filters.focalAcomp || clean(first(project, ['pmo','focalAcompanhamento'])) === filters.focalAcomp)
+      (!filters.iniciativaList.length || filters.iniciativaList.includes(clean(first(project, ['iniciativa','forum','fórum'])))) &&
+      (!filters.pontoFocalList.length || filters.pontoFocalList.includes(clean(first(project, ['pontoFocal','ponto_focal','ponto focal'])))) &&
+      (!filters.focalAcompList.length || filters.focalAcompList.includes(clean(first(project, ['pmo','focalAcompanhamento']))))
     );
   }
 
@@ -447,12 +514,15 @@ window.DASHBOARD_SHOW_META = true;
     const isConsultoria = value => clean(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() === 'consultoria';
     const consultoria = Object.keys(countsBy(valid, forumOf)).find(isConsultoria);
     if (consultoria && !forums.includes(consultoria)) forums.push(consultoria);
+    const isIcg = value => clean(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() === 'icg';
+    const icg = Object.keys(countsBy(valid, forumOf)).find(isIcg);
+    if (icg && !forums.includes(icg)) forums.push(icg);
     const managers = Object.entries(countsBy(valid, project => project.area))
       .sort((a, b) => b[1] - a[1])
       .map(([key]) => key);
     const baseColors = ['#530b03', '#df3232', '#bfbfbf'];
     let colorIndex = 0;
-    const colors = forums.map(forum => isConsultoria(forum) ? '#ed7d31' : baseColors[colorIndex++ % baseColors.length]);
+    const colors = forums.map(forum => isConsultoria(forum) ? '#ed7d31' : isIcg(forum) ? '#ffc000' : baseColors[colorIndex++ % baseColors.length]);
     const listAttrMF = (title, list) => `data-list-title="${esc(title)}" data-list-tip="${esc(JSON.stringify(list.slice().sort((a, b) => idNumber(a.id) - idNumber(b.id)).map(project => `${project.id} · ${clean(project.projeto)}`)))}"`;
     const max = Math.max(1, ...managers.flatMap(manager => forums.map(forum => valid.filter(project => project.area === manager && forumOf(project) === forum).length)));
     host.innerHTML = `<h3 style="text-align:center;margin-bottom:6px">Demandas por Gerência x Fórum</h3><div class="manager-total">Total: <b>${valid.length}</b> projeto(s) em <b>${managers.length}</b> gerência(s)</div><div class="manager-scroll"><div class="manager-chart">${managers.map(manager => {
@@ -765,7 +835,7 @@ window.DASHBOARD_SHOW_META = true;
     const savingTotal = savingFromBase(projects, anosTotal);
     const opex = savingTotal.opex;
     const capex = savingTotal.capex;
-    const all = savingTotal.total;
+    const all = savingFromBase(projects, [2026, 2027]).total; // Saving Total: sempre 2026 + 2027, independente do filtro
     const year = savingFromBase(projects, [2026]).total;
     const grid = $('#financeiro .finance-grid');
     if (grid) grid.innerHTML = `<article class="card finance-kpi"><small>Meta</small><b>${window.DASHBOARD_SHOW_META !== false ? cardMM(budget) : '-'}</b></article><article class="card finance-kpi"><small>Forecast</small><b>${cardMM(forecast)}</b></article><article class="card finance-kpi"><small>Real+FCST</small><b>${cardMM(real)}</b></article><article class="card finance-kpi gap-kpi"><div class="gap-split"><div><span>Real x Meta</span>${window.DASHBOARD_SHOW_META !== false ? `<b style="color:${gapMeta < 0 ? 'var(--claro)' : 'var(--green)'}">${cardMM(gapMeta)}</b>` : '<b>-</b>'}</div><div><span>Real x FCST</span><b style="color:${gapForecast < 0 ? 'var(--claro)' : 'var(--green)'}">${cardMM(gapForecast)}</b></div></div></article><article class="card finance-kpi"><small>Saving Opex</small><b>${cardMM(opex)}</b></article><article class="card finance-kpi"><small>Saving Capex</small><b>${cardMM(capex)}</b></article><article class="card finance-kpi"><small>Saving Total</small><b>${cardMM(all)}</b></article><article class="card finance-kpi"><small>Saving 2026</small><b>${cardMM(year)}</b></article>`;
@@ -1227,6 +1297,7 @@ window.DASHBOARD_SHOW_META = true;
       if (!projects.length) throw new Error('Nenhum projeto compatível foi carregado.');
       state.projects = projects;
       state.updatedAt = new Date();
+      setupMultiFilters();
       window.dashboardFilters = currentFilters();
       renderDashboard();
       bindEvents();
