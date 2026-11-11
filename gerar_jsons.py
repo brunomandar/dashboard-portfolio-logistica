@@ -609,9 +609,9 @@ def main():
     with open(os.path.join(PASTA_JSON, "projects.index.js"), "w", encoding="utf-8") as f:
         f.write("window.PORTFOLIO_JSON_FILES = " + json.dumps(nomes_json, ensure_ascii=False) + ";\n")
     with open(os.path.join(PASTA_JSON, "portfolio.json"), "w", encoding="utf-8") as f:
-        json.dump(projetos, f, ensure_ascii=False)
+        json.dump(projetos, f, ensure_ascii=False, default=lambda v: v.strftime('%Y-%m-%d') if hasattr(v, 'strftime') else str(v))
     with open(os.path.join(PASTA_JSON, "projects.data.js"), "w", encoding="utf-8") as f:
-        f.write("window.PORTFOLIO_DATA = " + json.dumps(projetos, ensure_ascii=False) + ";\n")
+        f.write("window.PORTFOLIO_DATA = " + json.dumps(projetos, ensure_ascii=False, default=lambda v: v.strftime('%Y-%m-%d') if hasattr(v, 'strftime') else str(v)) + ";\n")
 
     with open(os.path.join(BASE_DIR, "MANIFESTO.txt"), "w", encoding="utf-8") as f:
         f.write("DASHBOARD PORTFÓLIO LOGÍSTICA — MANIFESTO\n\n")
