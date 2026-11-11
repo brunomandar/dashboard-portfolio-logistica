@@ -1190,7 +1190,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": 0.01467
+      "resultado": 0.015
     },
     {
       "id": "LOG-002",
@@ -1202,7 +1202,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": 0.02826
+      "resultado": 0.028
     },
     {
       "id": "LOG-002",
@@ -1214,7 +1214,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": 0.059328
+      "resultado": 0.059
     },
     {
       "id": "LOG-002",
@@ -1226,7 +1226,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": 0.079146
+      "resultado": 0.079
     },
     {
       "id": "LOG-002",
@@ -1238,7 +1238,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": 0.11466
+      "resultado": 0.115
     },
     {
       "id": "LOG-002",
@@ -1250,7 +1250,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": 0.14805
+      "resultado": 0.148
     },
     {
       "id": "LOG-002",
@@ -1262,7 +1262,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": 0.190404
+      "resultado": 0.19
     },
     {
       "id": "LOG-002",
@@ -1274,7 +1274,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": 0.203958
+      "resultado": 0.204
     },
     {
       "id": "LOG-002",
@@ -1286,7 +1286,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.201978
+      "resultado": 0.202
     },
     {
       "id": "LOG-002",
@@ -1298,7 +1298,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.260766
+      "resultado": 0.227
     },
     {
       "id": "LOG-002",
@@ -1310,7 +1310,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.26451
+      "resultado": 0.265
     },
     {
       "id": "LOG-002",
@@ -1322,7 +1322,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.251856
+      "resultado": 0.252
     },
     {
       "id": "LOG-002",
@@ -1478,7 +1478,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": 0.01467
+      "resultado": 0.015
     },
     {
       "id": "LOG-002",
@@ -1490,7 +1490,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": 0.02826
+      "resultado": 0.028
     },
     {
       "id": "LOG-002",
@@ -1502,7 +1502,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": 0.059328
+      "resultado": 0.059
     },
     {
       "id": "LOG-002",
@@ -1514,7 +1514,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": 0.079146
+      "resultado": 0.079
     },
     {
       "id": "LOG-002",
@@ -1526,7 +1526,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": 0.11466
+      "resultado": 0.115
     },
     {
       "id": "LOG-002",
@@ -1538,7 +1538,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": 0.14805
+      "resultado": 0.148
     },
     {
       "id": "LOG-002",
@@ -1550,7 +1550,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": 0.190404
+      "resultado": 0.19
     },
     {
       "id": "LOG-002",
@@ -1562,7 +1562,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": 0.203958
+      "resultado": 0.204
     },
     {
       "id": "LOG-002",
@@ -1574,7 +1574,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.201978
+      "resultado": 0.202
     },
     {
       "id": "LOG-002",
@@ -1586,7 +1586,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.260766
+      "resultado": 0.227
     },
     {
       "id": "LOG-002",
@@ -1598,7 +1598,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.26451
+      "resultado": 0.265
     },
     {
       "id": "LOG-002",
@@ -1610,7 +1610,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.251856
+      "resultado": 0.252
     },
     {
       "id": "LOG-002",
@@ -3777,6 +3777,6 @@
   "fonte": {
     "arquivo": "LOG-002 - APP Devolução em Loja (Expansão AA).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-002%20-%20APP%20Devolu%C3%A7%C3%A3o%20em%20Loja%20%28Expans%C3%A3o%20AA%29.xlsx?web=1",
-    "extraidoEm": "2026-11-11T11:25:27-03:00"
+    "extraidoEm": "2026-11-11T15:33:04-03:00"
   }
 }

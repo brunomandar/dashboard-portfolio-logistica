@@ -26,12 +26,12 @@
     "Sistema TMS adequado para receber o BID"
   ],
   "saving": {
-    "opex12M": 2.65199368759665,
-    "capex12M": 10.6509300815353,
-    "total12M": 13.30292376913195,
+    "opex12M": 2.47917481226993,
+    "capex12M": 9.90907837858592,
+    "total12M": 12.38825319085585,
     "opex2026": 0.0,
     "capex2026": 0.0,
-    "total2026": 13.30292376913195
+    "total2026": 12.38825319085585
   },
   "macroAtividades": [
     {
@@ -283,7 +283,7 @@
       "numero": 1,
       "atividade": "Detalhar o perfil de viagens (Engenharia, Móvel, E-commerce)",
       "responsavel": "Compras/McK",
-      "status": "",
+      "status": 4,
       "inicio": "2026-07-06",
       "fim": "2026-08-07",
       "anotacao": ""
@@ -292,7 +292,7 @@
       "numero": 2,
       "atividade": "Definir o modelo de cotação (ex.: reduzir nº de rotas)",
       "responsavel": "Compras/McK",
-      "status": "",
+      "status": 4,
       "inicio": "2026-07-06",
       "fim": "2026-08-07",
       "anotacao": ""
@@ -301,7 +301,7 @@
       "numero": 3,
       "atividade": "Mapear potenciais fornecedores para o BID",
       "responsavel": "Compras/McK",
-      "status": "",
+      "status": 4,
       "inicio": "2026-07-06",
       "fim": "2026-07-31",
       "anotacao": ""
@@ -310,7 +310,7 @@
       "numero": 4,
       "atividade": "Realizar RFIs (perfil de fornecedores e insights)",
       "responsavel": "Compras",
-      "status": "",
+      "status": 4,
       "inicio": "2026-07-20",
       "fim": "2026-08-11",
       "anotacao": ""
@@ -319,7 +319,7 @@
       "numero": 5,
       "atividade": "Alinhar internamente RFP e plano de execução",
       "responsavel": "Compras/Log",
-      "status": "",
+      "status": 4,
       "inicio": "2026-07-20",
       "fim": "2026-08-10",
       "anotacao": ""
@@ -328,7 +328,7 @@
       "numero": 6,
       "atividade": "Estruturar a RFP",
       "responsavel": "Compras",
-      "status": "",
+      "status": 4,
       "inicio": "2026-08-03",
       "fim": "2026-08-10",
       "anotacao": ""
@@ -337,7 +337,7 @@
       "numero": 7,
       "atividade": "Lançar rodada 1 de cotação",
       "responsavel": "Compras",
-      "status": "",
+      "status": 4,
       "inicio": "2026-08-12",
       "fim": "2026-09-04",
       "anotacao": ""
@@ -346,7 +346,7 @@
       "numero": 8,
       "atividade": "Validação Técnica com equipe de Risco Claro",
       "responsavel": "Compras/Risco",
-      "status": "",
+      "status": 4,
       "inicio": "2026-08-17",
       "fim": "2026-10-19",
       "anotacao": ""
@@ -355,7 +355,7 @@
       "numero": 9,
       "atividade": "Equalizar propostas + feedback Faróis– rodada 1",
       "responsavel": "Compras/McK",
-      "status": "",
+      "status": 4,
       "inicio": "2026-09-07",
       "fim": "2026-09-11",
       "anotacao": ""
@@ -364,7 +364,7 @@
       "numero": 10,
       "atividade": "Lançar rodada 2 de cotação",
       "responsavel": "Compras",
-      "status": "",
+      "status": 4,
       "inicio": "2026-09-14",
       "fim": "2026-10-02",
       "anotacao": ""
@@ -373,7 +373,7 @@
       "numero": 11,
       "atividade": "Equalizar propostas + feedback Faróis– rodada 2",
       "responsavel": "Compras/McK",
-      "status": "",
+      "status": 4,
       "inicio": "2026-10-05",
       "fim": "2026-10-09",
       "anotacao": ""
@@ -382,7 +382,7 @@
       "numero": 12,
       "atividade": "Discutir tecnicamente com fornecedores (Q&A)",
       "responsavel": "Compras/Log",
-      "status": "",
+      "status": 4,
       "inicio": "2026-10-05",
       "fim": "2026-10-19",
       "anotacao": ""
@@ -391,7 +391,7 @@
       "numero": 13,
       "atividade": "Validar shortlist e definir estratégia de negociação",
       "responsavel": "Compras/McK",
-      "status": "",
+      "status": 4,
       "inicio": "2026-10-05",
       "fim": "2026-10-19",
       "anotacao": ""
@@ -400,7 +400,7 @@
       "numero": 14,
       "atividade": "Negociar com players do shortlist (Envio de Lista longa)",
       "responsavel": "Compras",
-      "status": "",
+      "status": 1,
       "inicio": "2026-10-12",
       "fim": "2026-10-23",
       "anotacao": ""
@@ -409,7 +409,7 @@
       "numero": 15,
       "atividade": "Definir vencedores do BID",
       "responsavel": "Compras/Dir",
-      "status": "",
+      "status": 2,
       "inicio": "2026-10-26",
       "fim": "2026-10-30",
       "anotacao": ""
@@ -418,7 +418,7 @@
       "numero": 16,
       "atividade": "Assinar o contrato",
       "responsavel": "Compras/Jur",
-      "status": "",
+      "status": 2,
       "inicio": "2026-10-30",
       "fim": "2026-11-20",
       "anotacao": ""
@@ -427,7 +427,7 @@
       "numero": 17,
       "atividade": "Onboarding do fornecedor",
       "responsavel": "Logística",
-      "status": "",
+      "status": 2,
       "inicio": "2026-11-09",
       "fim": "2026-11-20",
       "anotacao": ""
@@ -436,7 +436,7 @@
       "numero": 18,
       "atividade": "Definir planos de ramp-up e phase-out dos fornecedores",
       "responsavel": "Logística",
-      "status": "",
+      "status": 2,
       "inicio": "2026-11-09",
       "fim": "2026-11-20",
       "anotacao": ""
@@ -1182,9 +1182,19 @@
   ],
   "historico": [
     {
+      "data": "2026-11-06",
+      "acoes": "Logistica/Mck/Compras :Pipeline de iniciativas logísticas e BID de Fretes de Engenharia",
+      "detalhe": "Apresentaado  uma atualização rápida do pipeline de iniciativas logísticas e discutir o andamento do BID de Fretes de Engenharia.\n1. Enviar a última rodada (R4) de negociação aos 14 fornecedores.\n2. Após as respostas, selecionar os oito fornecedores mais competitivos.\n3. Adotar como referência o cenário de cherry picking com oito fornecedores, com saving próximo de R$ 12,5 milhões.\n4. Permitir que os fornecedores atendam nacionalmente nas rotas em que forem mais competitivos.\n5. Utilizar o TMS para direcionar automaticamente o frete ao menor preço disponível.\n6. Encaminhar o frete ao segundo colocado quando o primeiro fornecedor declinar.\n7. Evitar a abertura de cotações spot quando existir um segundo fornecedor com tabela válida.\n8. Solicitar aos fornecedores a complementação das rotas nas UFs em que já são competitivos.\n9. Revisar os valores das tabelas de mesorregião, especialmente para as curvas B e"
+    },
+    {
       "data": "2026-11-03",
-      "acoes": "Logistica : Apresentar o fluxo de cotação e esteira de canal vermelho",
-      "detalhe": "Fuxo apresentado"
+      "acoes": "Logistica : Reunião Transporte/Catalde -Teve como foco revisar o fluxo sistêmico para canal vermelho, entregas expressas, necessidades especiais, generalidades e abertura de cotação.",
+      "detalhe": "1. A data de necessidade não será utilizada como parâmetro automático pelo TMS.\nEla poderá ser registrada como observação para apoiar as decisões dos aprovadores.\n\n1. No canal vermelho, o TMS deverá sugerir a alternativa de menor preço.\nA seleção final poderá ser alterada pelo aprovador técnico quando houver justificativa relacionada ao prazo.\n\n1. A escolha de uma alternativa diferente da recomendação deverá ser aprovada pela área de Transporte.\n2. Caso nenhuma rota expressa atenda à necessidade, o protocolo seguirá para cotação.\n3. Se o canal vermelho for reprovado, o protocolo retornará à esteira convencional.\nNesse caso, não será necessária uma aprovação adicional de Transporte.\n\n1. Necessidades especiais previstas na tabela de generalidades serão calculadas e adicionadas ao frete convencional.\n2. Necessidades especiais não previstas ou não calculáveis seguirão para cotação.\n3. Cotações originadas após todas as validações não terão comparação com tabela convencional.\nIsso ocorre porque as tabelas já terão sido verificadas e consideradas inadequadas para aquela necessidade.\n\n1. Veículo blindado e outras situações semelhantes deverão seguir diretamente para cotação, sem exibição de tabela comparativa.\n2. Canal vermelho e necessidade especial deverão aparecer como caminhos alternativos, e não como etapas sequenciais.\n3. O processo de frete elevado será revisto separadamente.\nA análise deverá considerar o chamado 45698 e as novas regras das tabelas.\n\n1. O agrupamento de protocolos poderá ser limitado nos casos emergenciais ou especiais.\nComo o valor precisa estar definido antes das aprovações, o protocolo não poderá ser alterado posteriormente para inclusão de novas cargas."
+    },
+    {
+      "data": "2026-11-03",
+      "acoes": "Logistica : Reunião Transporte/Catalde -Teve como foco revisar o fluxo sistêmico para canal vermelho, entregas expressas, necessidades especiais, generalidades e abertura de cotação.",
+      "detalhe": "Póximos passos :\n- Ajustar o desenho do fluxo conforme as decisões da reunião.\n- Alterar o texto de “TMS seleciona” para “TMS sugere a alternativa de menor preço”.\n- Retirar a data de necessidade como parâmetro automático.\n- Posicionar canal vermelho e necessidade especial como caminhos alternativos.\n- Incluir a regra de que cotações geradas por exceção não terão tabela comparativa.\n- Melhorar a disposição visual do fluxo, evitando linhas cruzadas.\n- Acrescentar uma legenda com as necessidades especiais já conhecidas.\n- Encaminhar o fluxo atualizado para Otávio.\n- Providenciar a abertura do chamado de desenvolvimento"
     },
     {
       "data": "2026-10-30",
@@ -1292,7 +1302,7 @@
       "detalhe": "Aqui foi colocado a mesa qual seria o foco do BID"
     }
   ],
-  "statusProjeto": "06/11/2026: Atualmente, estamos na fase final de validação do mapa nacional e dos impactos financeiros, preparando a apresentação na Mesa de Frete e o R4, como Last Call do processo.\n03/11/2026: Apresentação do fluxo de cotação e da esteira de Canal Vermelho.\n30/10/2026: Apresentação do resultado do BID de Engenharia, definição dos próximos passos e preparação para a Mesa de Frete e o R4.\n30/10/2026: Avaliação dos transportadores que devem permanecer ou sair da short list.\n19/10/2026: Revisão das cotações de Engenharia por mesorregião e avaliação do reequilíbrio das rotas",
+  "statusProjeto": "06/11 - Logistica/Mck/Compras: Pipeline de iniciativas logísticas e BID de Fretes de Engenharia\n R4 enviada para 14 fornecedores. Definido cenário alvo com 8 fornecedores, saving estimado em R$ 12,5 MM, cobertura nacional e direcionamento automático do TMS para o menor frete.\n03/11 - Logistica: Reunião Transporte/Catalde\n Definidas regras para Canal Vermelho, Entregas Expressas, Necessidades Especiais e Cotações, priorizando a menor alternativa de custo sugerida pelo TMS.\n03/11 - Logistica: Reunião Transporte/Catalde (Próximos Passos)\n Atualizar fluxo conforme definições da reunião, posicionar exceções como caminhos alternativos e abrir chamado para desenvolvimento sistêmico.\n30/10 - Mck: Agenda Checkpoint Executivo\n BID de Engenharia apresentou potencial de saving de R$ 12,5 MM. Avaliada necessidade de nova rodada de negociação para rotas estratégicas e garantia de cobertura nacional.\n30/10 - Mck: Agenda Checkpoint Executivo (Tema Transportadores)\n Iniciada revisão da short list de transportadores, incluindo análise de permanência, risco operacional e validação dos parceiros estratégicos.\n29/10 - Logistica: Iniciativas TMS, Construir fluxo cotação/CV\n Fluxo de Cotação e Canal Vermelho concluído e preparado para validação final da gestão e abertura do desenvolvimento.",
   "financeiro": [
     {
       "id": "LOG-010.1",
@@ -3891,6 +3901,6 @@
   "fonte": {
     "arquivo": "LOG-010.1 - BID Transportes - Engenharia.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.1%20-%20BID%20Transportes%20-%20Engenharia.xlsx?web=1",
-    "extraidoEm": "2026-11-11T11:25:48-03:00"
+    "extraidoEm": "2026-11-11T15:33:25-03:00"
   }
 }

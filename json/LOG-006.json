@@ -2080,7 +2080,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": 2.9543420316190345
+      "resultado": 0.0
     },
     {
       "id": "LOG-006",
@@ -2092,7 +2092,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": 0.779725825661011
+      "resultado": 0.0
     },
     {
       "id": "LOG-006",
@@ -2104,7 +2104,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": 6.455530543834292
+      "resultado": 0.0
     },
     {
       "id": "LOG-006",
@@ -2116,7 +2116,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": 2.9595430617234557
+      "resultado": 0.0
     },
     {
       "id": "LOG-006",
@@ -2128,7 +2128,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": 3.9644958314104453
+      "resultado": 0.0
     },
     {
       "id": "LOG-006",
@@ -2140,7 +2140,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": 3.626889077443935
+      "resultado": 0.0
     },
     {
       "id": "LOG-006",
@@ -2152,7 +2152,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": 12.15927062717887
+      "resultado": 0.0
     },
     {
       "id": "LOG-006",
@@ -2164,7 +2164,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": 11.355175307738461
+      "resultado": 0.0
     },
     {
       "id": "LOG-006",
@@ -2176,7 +2176,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 5.322540075240761
+      "resultado": 0.0
     },
     {
       "id": "LOG-006",
@@ -2188,7 +2188,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 7.526952235223137
+      "resultado": 0.0
     },
     {
       "id": "LOG-006",
@@ -2200,7 +2200,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 2.718479353086725
+      "resultado": 0.0
     },
     {
       "id": "LOG-006",
@@ -2212,7 +2212,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 2.718479353086725
+      "resultado": 0.0
     },
     {
       "id": "LOG-006",
@@ -2224,7 +2224,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": 0.0
+      "resultado": 2.9543420316190345
     },
     {
       "id": "LOG-006",
@@ -2236,7 +2236,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": 0.0
+      "resultado": 0.779725825661011
     },
     {
       "id": "LOG-006",
@@ -2248,7 +2248,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 6.455530543834292
     },
     {
       "id": "LOG-006",
@@ -2260,7 +2260,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": 0.0
+      "resultado": 2.9595430617234557
     },
     {
       "id": "LOG-006",
@@ -2272,7 +2272,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": 0.0
+      "resultado": 3.9644958314104453
     },
     {
       "id": "LOG-006",
@@ -2284,7 +2284,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": 0.0
+      "resultado": 3.626889077443935
     },
     {
       "id": "LOG-006",
@@ -2296,7 +2296,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": 0.0
+      "resultado": 12.15927062717887
     },
     {
       "id": "LOG-006",
@@ -2308,7 +2308,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": 0.0
+      "resultado": 11.355175307738461
     },
     {
       "id": "LOG-006",
@@ -2320,7 +2320,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.0
+      "resultado": 5.322540075240761
     },
     {
       "id": "LOG-006",
@@ -2332,7 +2332,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.0
+      "resultado": 7.526952235223137
     },
     {
       "id": "LOG-006",
@@ -2344,7 +2344,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.0
+      "resultado": 2.718479353086725
     },
     {
       "id": "LOG-006",
@@ -2356,7 +2356,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.0
+      "resultado": 2.718479353086725
     },
     {
       "id": "LOG-006",
@@ -3803,6 +3803,6 @@
   "fonte": {
     "arquivo": "LOG-006 - Projeto Retirada de Equipamento por Regional.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-006%20-%20Projeto%20Retirada%20de%20Equipamento%20por%20Regional.xlsx?web=1",
-    "extraidoEm": "2026-11-11T11:25:35-03:00"
+    "extraidoEm": "2026-11-11T15:33:11-03:00"
   }
 }
