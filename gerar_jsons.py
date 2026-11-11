@@ -593,7 +593,8 @@ def main():
 
     for projeto, nome in zip(projetos, nomes_json):
         with open(os.path.join(PASTA_JSON, nome), "w", encoding="utf-8") as f:
-            json.dump(projeto, f, ensure_ascii=False, indent=2)
+            json.dump(projeto, f, ensure_ascii=False, indent=2, default=lambda v: 
+            v.strftime('%Y-%m-%d') if hasattr(v, 'strftime') else str(v))
 
     # Remove JSONs de projetos que não existem mais (ex.: antigos LOG-15.json)
     removidos = []
