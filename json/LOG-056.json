@@ -47,52 +47,52 @@
       "responsavel": "Time Transportes / Catalde / Transportadores",
       "status": 4,
       "inicio": "2026-09-01",
-      "fim": "2026-09-29",
+      "fim": "2026-10-05",
       "anotacao": ""
     },
     {
       "numero": "3",
-      "atividade": "Desenvolvimento VPO e integrações API",
-      "responsavel": "Catalde",
+      "atividade": "Mapeamento dos transportadores que irão ou Não subcontratar",
+      "responsavel": "Bruno",
       "status": 1,
-      "inicio": "2026-09-30",
-      "fim": "2026-11-30",
+      "inicio": "2026-10-06",
+      "fim": "2026-11-02",
       "anotacao": ""
     },
     {
       "numero": "4",
-      "atividade": "Contratação da REPOM / Renovação e Aditivo contratual da Catalde",
-      "responsavel": "Compras",
+      "atividade": "Desenvolvimento VPO e integrações API",
+      "responsavel": "Catalde",
       "status": 1,
-      "inicio": "2026-08-31",
-      "fim": "2026-12-04",
+      "inicio": "2026-11-03",
+      "fim": "2026-12-21",
       "anotacao": ""
     },
     {
       "numero": "5",
-      "atividade": "Adequações e aceite sistêmico",
-      "responsavel": "Time Transportes / Catalde / Transportadores",
+      "atividade": "Contratação da REPOM / Renovação e Aditivo contratual da Catalde",
+      "responsavel": "Compras",
       "status": 0,
-      "inicio": "2026-12-01",
-      "fim": "2026-12-17",
+      "inicio": "2026-09-14",
+      "fim": "2026-10-23",
       "anotacao": ""
     },
     {
       "numero": "6",
-      "atividade": "Liberação para produção",
-      "responsavel": "Claro",
+      "atividade": "Adequações e aceite sistêmico",
+      "responsavel": "Time Transportes / Catalde / Transportadores",
       "status": 0,
-      "inicio": "2026-12-16",
-      "fim": "2026-12-31",
+      "inicio": "2026-10-26",
+      "fim": "2026-11-13",
       "anotacao": ""
     },
     {
       "numero": "7",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Liberação para produção",
+      "responsavel": "Claro",
+      "status": 0,
+      "inicio": "2026-12-22",
+      "fim": "2026-12-31",
       "anotacao": ""
     },
     {
@@ -630,7 +630,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "26/10/26 - Resumo da solicitação: 100% frota própria - Aerotrafic, Liderfast e BR Logistica. 100% subcontratados - Celistics, Hexpress, Prestex e Aerosoft. Operação mista - Rhomega, Dslog, Mctech, Verko. Sem retorno -  IBR Logistica.  Tema escalado para apoio do time da operação, solicitando ajuda com as devolutivas em aberto. Data de termino 13/11.\n30/10/26 - Data final para envio dos tipos de operação adotados por cada uma das transportadoras, para implementação do vale-pedagio.\n21/10/26 - Demanda TMS avançou para o gerente responsável em compras.\n20/10/26 - Repom recebeu proposta comercial, mas time de compras está buscando custo zero para operação. Repom ficou de realizar nova volta com a Claro.\n09/09/26 - Transportadores solicitaram alterações e atualizações de layout para dar continuidade.\n03/09/26 - Chamado 46665 aberto com a Catalde para customização dos novos EDIs e fluxo de dados Pré-MDF.\n03/09/26 - Novo módulo de VPO previsto com franquia e bilhetagem por transação com a REPOM.\n03/09/26 - Definido que o contrato da REPOM será com a Claro e a Catalde atuará como integradora.\n03/09/26 - Definido que o mesmo caminhão responsável pela coleta realizará a entrega.\n03/09/26 - Cícero ficou responsável por levantar a bilhetagem dos últimos 12 meses.\n03/09/26 - SR para contratação do fornecedor permaneceu com data a definir.\n01/09/26 - Requisitos da Catalde informados aos transportadores.\n21/08/26 - Endered apresentou seus serviços e foi iniciado estudo com a Catalde para adoção pela Claro.\n06/05/26 - Projeto mantido em backlog por baixo risco, com prazo previsto até 24/05.",
+  "statusProjeto": "11/11/26 - Elberte comentou que o contrato seguiu para o Jurídico não vamos precisar do termo de fornecedor único, já que o valor ~R$ 29K ano, foi fechada em 0,79% do valor de frete.\n05/11/26 - Jaime concluiu a análise e o valor foi revisto de R$ 3,65MM para R$ 1,38MM, uma diferença de R$2,26MM\n30/10/26 - Fabricio pediu para rodarmos em IA uma simulação dos valores de pedágio, mais aderente com a realizadade\n30/10/26 - Data final para envio dos tipos de operação adotados por cada uma das transportadoras, para implementação do vale-pedagio.\n29/10/26 - Elberte de compras sinalizou que teremos que realizar a abertura de um formulário de fornecedor único para seguirmos com a demanda no valor de R$ 3,724MM\n26/10/26 - Resumo da solicitação: 100% frota própria - Aerotrafic, Liderfast e BR Logistica. 100% subcontratados - Celistics, Hexpress, Prestex e Aerosoft. Operação mista - Rhomega, Dslog, Mctech, Verko. Sem retorno -  IBR Logistica.  Tema escalado para apoio do time da operação, solicitando ajuda com as devolutivas em aberto. Data de termino 13/11.\n21/10/26 - Demanda TMS avançou para o gerente responsável em compras.\n20/10/26 - Repom recebeu proposta comercial, mas time de compras está buscando custo zero para operação. Repom ficou de realizar nova volta com a Claro.\n09/09/26 - Transportadores solicitaram alterações e atualizações de layout para dar continuidade.\n03/09/26 - Chamado 46665 aberto com a Catalde para customização dos novos EDIs e fluxo de dados Pré-MDF.\n03/09/26 - Novo módulo de VPO previsto com franquia e bilhetagem por transação com a REPOM.\n03/09/26 - Definido que o contrato da REPOM será com a Claro e a Catalde atuará como integradora.\n03/09/26 - Definido que o mesmo caminhão responsável pela coleta realizará a entrega.\n03/09/26 - Cícero ficou responsável por levantar a bilhetagem dos últimos 12 meses.\n03/09/26 - SR para contratação do fornecedor permaneceu com data a definir.\n01/09/26 - Requisitos da Catalde informados aos transportadores.\n21/08/26 - Endered apresentou seus serviços e foi iniciado estudo com a Catalde para adoção pela Claro.\n06/05/26 - Projeto mantido em backlog por baixo risco, com prazo previsto até 24/05.",
   "financeiro": [
     {
       "id": "LOG-056",
@@ -3229,6 +3229,6 @@
   "fonte": {
     "arquivo": "LOG-056 - Vale Pedagio.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-056%20-%20Vale%20Pedagio.xlsx?web=1",
-    "extraidoEm": "2026-11-11T16:08:25-03:00"
+    "extraidoEm": "2026-11-11T17:18:19-03:00"
   }
 }
