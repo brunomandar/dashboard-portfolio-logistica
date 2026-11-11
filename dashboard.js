@@ -1,3 +1,6 @@
+/* Meta no financeiro da Home e dos projetos: true = mostra | false = mostra "-" */
+window.DASHBOARD_SHOW_META = true;
+
 (() => {
   'use strict';
 
@@ -520,9 +523,20 @@
     if (typeof window.layoutRoadmapTimeline === 'function') window.layoutRoadmapTimeline(card);
   }
 
+  // Projeto "só com Meta": em 2026 (linha Total) tem Budget, mas Realizado e Forecast zerados.
+  // Fica fora dos cálculos agregados até ser preenchido no Excel.
+  function isMetaOnly(project) {
+    const totals = { Budget: 0, Fcst: 0, Real: 0 };
+    arrayOf(project.financeiro).forEach(record => {
+      if (Number(record?.ano) !== 2026 || clean(record?.tipoDespesa) !== 'Total' || !(record?.icg in totals)) return;
+      totals[record.icg] += Math.abs(n(record.resultado));
+    });
+    return totals.Budget > 0 && totals.Real === 0 && totals.Fcst === 0;
+  }
+
   function aggregateFinancial(projects) {
     const series = { Budget: Array(12).fill(0), Fcst: Array(12).fill(0), Real: Array(12).fill(0) };
-    projects.forEach(project => arrayOf(project.financeiro).forEach(record => {
+    projects.filter(project => !isMetaOnly(project)).forEach(project => arrayOf(project.financeiro).forEach(record => {
       if (Number(record?.ano) !== 2026 || clean(record?.tipoDespesa) !== 'Total' || !(record?.icg in series)) return;
       const index = MONTH_ORDER[record.mes];
       if (index !== undefined) series[record.icg][index] += Math.abs(n(record.resultado));
@@ -607,7 +621,7 @@
     const abs = list => (list || []).map(value => Math.abs(n(value)));
     real = abs(real); fcst = abs(fcst); meta = abs(meta); base = base ? abs(base) : null;
     const count = labels.length;
-    const SHOW_META = false; // Meta desativada temporariamente (em revisão) — trocar para true para reativar
+    const SHOW_META = window.DASHBOARD_SHOW_META !== false; // Meta: controlada por DASHBOARD_SHOW_META (topo do arquivo)
     const max = Math.max(0.0001, ...real, ...fcst, ...(SHOW_META ? meta : []), ...(base || [])) * 1.45;
     const occupied = labels.map(() => Infinity);
     const W = width || 960, H = 340, left = 20, right = 20, top = 56, bottom = 46;
@@ -632,7 +646,7 @@
       if (rLabelY !== null && fLabelY !== null && Math.abs(rLabelY - fLabelY) < 12 * fs) {
         if (rLabelY <= fLabelY) rLabelY -= 12 * fs; else fLabelY -= 12 * fs;
       }
-      if (r) out += `<rect x="${rx.toFixed(1)}" y="${y(r).toFixed(1)}" width="${barW.toFixed(1)}" height="${(floor - y(r)).toFixed(1)}" rx="4" fill="url(#${id}Real)"><title>Realizado ${label}: R$ ${fmt(r)}</title></rect>`; if (r) lbl += `<text x="${(rx + barW / 2).toFixed(1)}" y="${rLabelY.toFixed(1)}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#1f1f1f">${fmt(r)}</text>`;
+      if (r) out += `<rect x="${rx.toFixed(1)}" y="${y(r).toFixed(1)}" width="${barW.toFixed(1)}" height="${(floor - y(r)).toFixed(1)}" rx="4" fill="url(#${id}Real)"><title>Real+FCST ${label}: R$ ${fmt(r)}</title></rect>`; if (r) lbl += `<text x="${(rx + barW / 2).toFixed(1)}" y="${rLabelY.toFixed(1)}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#1f1f1f">${fmt(r)}</text>`;
       if (f) out += `<rect x="${fx.toFixed(1)}" y="${y(f).toFixed(1)}" width="${barW.toFixed(1)}" height="${(floor - y(f)).toFixed(1)}" rx="4" fill="url(#${id}Fcst)"><title>Forecast ${label}: R$ ${fmt(f)}</title></rect>`; if (f) lbl += `<text x="${(fx + barW / 2).toFixed(1)}" y="${fLabelY.toFixed(1)}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#15803d">${fmt(f)}</text>`;
       [rLabelY, fLabelY].forEach(value => { if (value !== null) occupied[index] = Math.min(occupied[index], value - 11 * fs); });
       if (floorY && occupied[index] === Infinity) occupied[index] = floorY;
@@ -653,6 +667,7 @@
     const path = list => list.map((value, index) => `${index ? 'L' : 'M'}${x(index).toFixed(1)},${y(value).toFixed(1)}`).join(' ');
     const dots = (list, color, name) => list.map((value, index) => `<circle cx="${x(index).toFixed(1)}" cy="${y(value).toFixed(1)}" r="4.5" fill="#fff" stroke="${color}" stroke-width="2.5"><title>${name} ${labels[index]}: R$ ${fmt(value)}</title></circle>`).join('');
     // Meta: caixinha azul pequena; se o ponto estiver perto dos valores das barras, sobe acima de tudo com linha de ligação
+    const metaLeaders = [];
     const metaLabels = meta.map((value, index) => {
       if (!SHOW_META || !value) return '';
       const text = fmt(value);
@@ -667,17 +682,18 @@
       }
       by = Math.max(2, by);
       const line = leader ? `<line x1="${cx.toFixed(1)}" y1="${py.toFixed(1)}" x2="${cx.toFixed(1)}" y2="${(by + bh).toFixed(1)}" stroke="#2563eb" stroke-width="1" stroke-dasharray="2 2"/>` : '';
-      return `${line}<rect x="${(cx - bw / 2).toFixed(1)}" y="${by.toFixed(1)}" width="${bw.toFixed(1)}" height="${bh.toFixed(1)}" rx="3" fill="#fff" stroke="#2563eb" stroke-width="1.2"/><text x="${cx.toFixed(1)}" y="${(by + 11 * fs).toFixed(1)}" text-anchor="middle" font-size="${(9.5 * fs).toFixed(1)}" font-weight="800" fill="#1d4ed8">${text}</text>`;
+      metaLeaders.push(line);
+      return `<rect x="${(cx - bw / 2).toFixed(1)}" y="${by.toFixed(1)}" width="${bw.toFixed(1)}" height="${bh.toFixed(1)}" rx="3" fill="#fff" stroke="#2563eb" stroke-width="1.2"/><text x="${cx.toFixed(1)}" y="${(by + 11 * fs).toFixed(1)}" text-anchor="middle" font-size="${(9.5 * fs).toFixed(1)}" font-weight="800" fill="#1d4ed8">${text}</text>`;
     }).join('');
     const baseLine = base ? `<path d="${path(base)}" fill="none" stroke="#f08a00" stroke-width="2.5"/>${dots(base, '#f08a00', 'Baseline')}` : '';
     const axis = labels.map((label, index) => `<text x="${x(index).toFixed(1)}" y="${H - 22}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#1f1f1f">${label}</text><text x="${x(index).toFixed(1)}" y="${H - 9}" text-anchor="middle" font-size="${(8.5 * fs).toFixed(1)}" fill="#7f7f7f">${years[index]}</text>`).join('');
     const defs = `<defs><linearGradient id="${id}Real" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b4f57"/><stop offset="1" stop-color="#15171b"/></linearGradient><linearGradient id="${id}Fcst" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34c26b"/><stop offset="1" stop-color="#15803d"/></linearGradient></defs>`;
-    const svg = `<svg class="fin-chart" viewBox="0 0 ${W} ${H}" role="img">${defs}${columns}${grid}${pairs}${baseLine}${SHOW_META ? `<path d="${path(meta)}" fill="none" stroke="#2563eb" stroke-width="3"/>${dots(meta, '#2563eb', 'Meta')}` : ''}${valueLabels.join('')}${metaLabels}${axis}</svg>`;
-    const legend = `<div class="fin-legend"><span><i class="lg-bar"></i>Realizado</span><span><i class="lg-bar fcst"></i>Forecast</span><span><i class="lg-line"></i>Meta: -</span>${base ? '<span><i class="lg-line base"></i>Baseline / ano anterior</span>' : ''}<span><i class="lg-dev">▲▼</i>Desvio Realizado x Forecast</span></div>`;
+    const svg = `<svg class="fin-chart" viewBox="0 0 ${W} ${H}" role="img">${defs}${columns}${grid}${pairs}${baseLine}${SHOW_META ? `<path d="${path(meta)}" fill="none" stroke="#2563eb" stroke-width="3"/>${dots(meta, '#2563eb', 'Meta')}` : ''}${metaLeaders.join('')}${valueLabels.join('')}${metaLabels}${axis}</svg>`;
+    const legend = `<div class="fin-legend"><span><i class="lg-bar"></i>Real+FCST</span><span><i class="lg-bar fcst"></i>Forecast</span><span><i class="lg-line"></i>Meta${SHOW_META ? '' : ': -'}</span>${base ? '<span><i class="lg-line base"></i>Baseline / ano anterior</span>' : ''}<span><i class="lg-dev">▲▼</i>Desvio Realizado x Forecast</span></div>`;
     const sum = list => list.reduce((acc, value) => acc + value, 0);
     const tReal = sum(real), tFcst = sum(fcst), tMeta = sum(meta);
     const gapBox = (a, b) => { const d = a - b; return `<b class="${d >= 0 ? 'pos' : 'neg'}">${d >= 0 ? '▲' : '▼'} ${fmt(Math.abs(d))}</b>`; };
-    const minis = `<div class="fin-mini"><div><small>Meta</small><b>${SHOW_META ? fmt(tMeta) : '-'}</b></div><div><small>Forecast</small><b>${fmt(tFcst)}</b></div><div><small>Realizado</small><b>${fmt(tReal)}</b></div><div><small>Real x Meta</small>${SHOW_META ? gapBox(tReal, tMeta) : '<b>-</b>'}</div><div><small>Real x Forecast</small>${gapBox(tReal, tFcst)}</div></div>`;
+    const minis = `<div class="fin-mini"><div><small>Meta</small><b>${SHOW_META ? fmt(tMeta) : '-'}</b></div><div><small>Forecast</small><b>${fmt(tFcst)}</b></div><div><small>Real+FCST</small><b>${fmt(tReal)}</b></div><div><small>Real x Meta</small>${SHOW_META ? gapBox(tReal, tMeta) : '<b>-</b>'}</div><div><small>Real x Forecast</small>${gapBox(tReal, tFcst)}</div></div>`;
     return `<div class="fin-top">${legend}${minis}</div>${svg}`;
   }
 
@@ -691,7 +707,7 @@
     const pool = Array.isArray(state.finProjects) ? state.finProjects : [];
     const list = query ? pool.filter(project => norm(`${project.id} ${project.projeto}`).includes(query)) : pool;
     const LABELS = ['JAN','FEV','MAR','ABR','MAI','JUN','JUL','AGO','SET','OUT','NOV','DEZ'];
-    if (sub) sub.textContent = !query ? '2026 · valores mensais de Realizado, Forecast e Meta · visão geral'
+    if (sub) sub.textContent = !query ? '2026 · valores mensais de Real+FCST, Forecast e Meta · visão geral'
       : list.length === 1 ? `2026 · ${list[0].id} · ${clean(list[0].projeto)}`
       : list.length ? `2026 · ${list.length} projetos encontrados` : 'Nenhum projeto encontrado';
     if (query && !list.length) { body.innerHTML = '<div class="empty-state">Nenhum projeto encontrado para a busca.</div>'; $('#finMiniSlot')?.replaceChildren(); return; }
@@ -716,7 +732,7 @@
     const all = projects.reduce((sum, project) => sum + savingField(project, 'total12M'), 0);
     const year = projects.reduce((sum, project) => sum + savingField(project, 'total2026'), 0);
     const grid = $('#financeiro .finance-grid');
-    if (grid) grid.innerHTML = `<article class="card finance-kpi"><small>Meta</small><b>-</b></article><article class="card finance-kpi"><small>Forecast</small><b>${moneyMM(forecast)}</b></article><article class="card finance-kpi"><small>Realizado</small><b>${moneyMM(real)}</b></article><article class="card finance-kpi gap-kpi"><div class="gap-split"><div><span>Real x Meta</span><b>-</b></div><div><span>Real x Forecast</span><b style="color:${gapForecast < 0 ? 'var(--claro)' : 'var(--green)'}">${moneyMM(gapForecast)}</b></div></div></article><article class="card finance-kpi"><small>Saving Opex</small><b>${moneyMM(opex)}</b></article><article class="card finance-kpi"><small>Saving Capex</small><b>${moneyMM(capex)}</b></article><article class="card finance-kpi"><small>Saving Total</small><b>${moneyMM(all)}</b></article><article class="card finance-kpi"><small>Saving 2026</small><b>${moneyMM(year)}</b></article>`;
+    if (grid) grid.innerHTML = `<article class="card finance-kpi"><small>Meta</small><b>${window.DASHBOARD_SHOW_META !== false ? moneyMM(budget) : '-'}</b></article><article class="card finance-kpi"><small>Forecast</small><b>${moneyMM(forecast)}</b></article><article class="card finance-kpi"><small>Real+FCST</small><b>${moneyMM(real)}</b></article><article class="card finance-kpi gap-kpi"><div class="gap-split"><div><span>Real x Meta</span>${window.DASHBOARD_SHOW_META !== false ? `<b style="color:${gapMeta < 0 ? 'var(--claro)' : 'var(--green)'}">${moneyMM(gapMeta)}</b>` : '<b>-</b>'}</div><div><span>Real x Forecast</span><b style="color:${gapForecast < 0 ? 'var(--claro)' : 'var(--green)'}">${moneyMM(gapForecast)}</b></div></div></article><article class="card finance-kpi"><small>Saving Opex</small><b>${moneyMM(opex)}</b></article><article class="card finance-kpi"><small>Saving Capex</small><b>${moneyMM(capex)}</b></article><article class="card finance-kpi"><small>Saving Total</small><b>${moneyMM(all)}</b></article><article class="card finance-kpi"><small>Saving 2026</small><b>${moneyMM(year)}</b></article>`;
     state.finProjects = projects;
     const card = $('#financeiro .line-chart');
     if (card) {

@@ -533,6 +533,13 @@ body.project-open .topbar{display:none!important}
   .roadmap-tooltip dd{margin:0;font-weight:800;text-align:right}
   #portfolio .toolbar .export-excel{flex:0 0 auto;border:0;border-radius:10px;background:#1d6f42;color:#fff;font-size:11px;font-weight:800;padding:0 14px;cursor:pointer;white-space:nowrap}
   #portfolio .toolbar .export-excel:hover{background:#155a35}
+
+/* Gráfico Gerência x Fórum: adapta ao espaço, sem cortar barras */
+.manager-chart{justify-content:space-between!important;gap:clamp(8px,1.6vw,28px)!important;min-width:0!important;width:100%}
+#destaques .manager-chart .manager-group{flex:1 1 0!important;min-width:0!important}
+.manager-bars{justify-content:center!important;gap:clamp(2px,.4vw,6px)!important;width:100%;min-width:0}
+.manager-bars div{flex:0 1 64px!important;min-width:0!important;max-width:64px}
+.manager-group>span{overflow-wrap:anywhere}
 </style>
 </head>
 <body>
@@ -868,7 +875,7 @@ body.project-open .topbar{display:none!important}
           <article class="card roadmap-card"><div class="empty-state">Carregando roadmap do portfólio…</div></article>
         </section>
 
-        <section class="section" id="financeiro"><div class="section-head"><div><h2>Desempenho financeiro <strong style="color:var(--claro,#df3232);font-weight:800">(em desenvolvimento)</strong></h2><p>Indicadores executivos e evolução mensal.</p></div><button class="link-btn" type="button" onclick="openFinanceiroDGP()">Financeiro DGP →</button></div>
+        <section class="section" id="financeiro"><div class="section-head"><div><h2>Desempenho financeiro</h2><p>Indicadores executivos e evolução mensal.</p></div><button class="link-btn" type="button" onclick="openFinanceiroDGP()">Financeiro DGP →</button></div>
           <div class="finance-grid"><article class="card finance-kpi"><small>Meta</small><b>R$ 30,0M</b></article><article class="card finance-kpi"><small>Forecast</small><b>R$ 28,2M</b></article><article class="card finance-kpi"><small>Realizado</small><b>R$ 22,6M</b></article><article class="card finance-kpi"><div class="gap-split"><div><span>Real x Meta</span><b>—</b></div><div><span>Real x Forecast</span><b>—</b></div></div></article><article class="card finance-kpi"><small>Saving Opex</small><b>R$ 28,2M</b></article><article class="card finance-kpi"><small>Saving Capex</small><b>R$ 0,0M</b></article><article class="card finance-kpi"><small>Saving Total</small><b>R$ 28,2M</b></article><article class="card finance-kpi"><small>Saving 2026</small><b>R$ 0,77M</b></article></div>
           <article class="card line-chart"><div class="chart-title">Evolução mensal</div><div class="chart-sub">Meta, forecast e realizado</div><svg viewBox="0 0 900 210" preserveAspectRatio="none"><g stroke="#e8ebf0" stroke-width="1"><line x1="0" y1="40" x2="900" y2="40"/><line x1="0" y1="95" x2="900" y2="95"/><line x1="0" y1="150" x2="900" y2="150"/><line x1="0" y1="205" x2="900" y2="205"/></g><polyline fill="none" stroke="#aeb7c6" stroke-width="3" points="0,180 130,161 260,142 390,124 520,103 650,82 780,60 900,38"/><polyline fill="none" stroke="#3569e8" stroke-width="4" points="0,187 130,174 260,151 390,132 520,112 650,91 780,69 900,52"/><polyline fill="none" stroke="#da291c" stroke-width="4" points="0,190 130,180 260,165 390,149 520,130 650,112 780,96 900,79"/></svg></article>
         </section>
