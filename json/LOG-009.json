@@ -13,7 +13,9 @@
   "situacao": "Em risco",
   "prioridade": "P0",
   "ganhoProjeto": "Quantitativo",
-  "tipos": [],
+  "tipos": [
+    "Opex"
+  ],
   "escopo": "Unificação do estoque de SIM cards (Single e ComboMulti), viabilizando a integração da malha de distribuição na esteira de entrega expressa via motoboy, com foco na otimização de rotas e ganho de eficiência operacional, resultando na redução do quadro de entregadores.",
   "entregaveis": [
     "Unificação de estoque",
@@ -21,12 +23,12 @@
     "Nova malha logística integrada (Single/Multi)"
   ],
   "saving": {
-    "opex12M": 0.0,
+    "opex12M": 2.7,
     "capex12M": 0.0,
-    "total12M": 0.0,
-    "opex2026": 0.0,
+    "total12M": 2.7,
+    "opex2026": 0.225,
     "capex2026": 0.0,
-    "total2026": 0.0
+    "total2026": 0.225
   },
   "macroAtividades": [
     {
@@ -3250,6 +3252,6 @@
   "fonte": {
     "arquivo": "LOG-009 - Unificação da Malha (Single x CM).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-009%20-%20Unifica%C3%A7%C3%A3o%20da%20Malha%20%28Single%20x%20CM%29.xlsx?web=1",
-    "extraidoEm": "2026-11-10T18:01:31-03:00"
+    "extraidoEm": "2026-11-11T11:00:06-03:00"
   }
 }
