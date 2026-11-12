@@ -497,7 +497,7 @@ body.project-open .topbar{display:none!important}
   <link rel="icon" href="data:,">
 
 <style id="filtros-v2-layout">
-.global-filters{grid-template-columns:repeat(8,minmax(100px,1fr))!important}
+.global-filters{grid-template-columns:repeat(10,minmax(88px,1fr))!important}
 .update-stack{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:3px!important;flex:0 0 auto!important}
 .update-stack .updated{display:block!important;max-width:210px!important;font-size:9px!important;line-height:1.15!important;text-align:center!important;color:#fff!important;white-space:normal!important}
 @media(max-width:1200px){.global-filters{grid-template-columns:repeat(3,minmax(140px,1fr))!important}.topbar{height:auto!important;min-height:64px!important}}
@@ -557,6 +557,7 @@ body.project-open .topbar{display:none!important}
 .mf-opt:hover{background:#f5f6f8}
 .mf-opt input{accent-color:#df3232;width:14px;height:14px;margin:0}
 .mf-empty{padding:8px;font-size:12px;color:#7f7f7f}
+.global-filter .mf-opt.mf-disabled{color:#b5b5b5!important;cursor:not-allowed}
 .global-filter .mf-opt{font-size:12px!important;line-height:1.2!important;font-weight:600!important;color:#1f1f1f!important;text-transform:none!important;letter-spacing:0!important}
 </style>
 </head>
@@ -596,9 +597,11 @@ body.project-open .topbar{display:none!important}
   <main class="main">
     <header class="topbar">
       <section class="global-filters" aria-label="Filtros globais do dashboard">
-        <div class="global-filter"><label for="filterAno">Ano</label><select id="filterAno" onchange="applyGlobalFilters()"><option disabled>Todos</option><option disabled>2022</option><option disabled>2023</option><option disabled>2024</option><option disabled>2025</option><option value="" selected>2026</option><option value="2027">2027</option></select></div>
+        <div class="global-filter"><label for="filterAno">Ano</label><select id="filterAno" onchange="applyGlobalFilters()" data-multi='["2026"]' data-multi-required="2026"><option disabled>Todos</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026" selected>2026</option><option value="2027">2027</option></select></div>
+        <div class="global-filter"><label for="filterMes">Mês</label><select id="filterMes" onchange="applyGlobalFilters()"><option value="">Todos</option><option>Jan</option><option>Fev</option><option>Mar</option><option>Abr</option><option>Mai</option><option>Jun</option><option>Jul</option><option>Ago</option><option>Set</option><option>Out</option><option>Nov</option><option>Dez</option></select></div>
         <div class="global-filter"><label for="filterGerencia">Gerência</label><select id="filterGerencia" onchange="applyGlobalFilters()"><option value="">Todas</option><option>CDs</option><option>Desconexão</option><option>Int. Logística</option><option>Estoques</option><option>Planejamento</option><option>Reparo</option><option>Transportes</option></select></div>
         <div class="global-filter"><label for="filterStatus">Status</label><select id="filterStatus" onchange="applyGlobalFilters()"><option value="">Todos</option><option>L0</option><option>L1</option><option>L2</option><option>L3</option><option>L4</option><option>L5</option></select></div>
+        <div class="global-filter"><label for="filterPrioridade">Prioridade</label><select id="filterPrioridade" onchange="applyGlobalFilters()"><option value="">Todas</option><option>P0</option><option>P1</option><option>P2</option><option>Congelado</option><option>Cancelado</option><option>Concluído</option></select></div>
         <div class="global-filter"><label for="filterGanho">Ganho do Projeto</label><select id="filterGanho" onchange="applyGlobalFilters()"><option value="">Todos</option><option>Qualitativo</option><option>Quantitativo</option></select></div>
         <div class="global-filter"><label for="filterTipo">Tipo</label><select id="filterTipo" onchange="applyGlobalFilters()"><option value="">Todos</option><option>Capex</option><option>Opex</option></select></div>
         <div class="global-filter"><label for="filterIniciativa">Iniciativa</label><select id="filterIniciativa" onchange="applyGlobalFilters()"><option value="">Todas</option></select></div>

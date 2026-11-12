@@ -239,14 +239,27 @@ window.DASHBOARD_SHOW_META = true;
     });
   }
   // Filtros com checkbox (seleção múltipla): valores marcados ficam em select.dataset.multi
-  const MULTI_FILTER_IDS = ['filterGerencia', 'filterStatus', 'filterIniciativa', 'filterPontoFocal', 'filterFocalAcomp'];
+  const MULTI_FILTER_IDS = ['filterAno', 'filterMes', 'filterGerencia', 'filterStatus', 'filterPrioridade', 'filterIniciativa', 'filterPontoFocal', 'filterFocalAcomp'];
+  const enabledOptionValues = select => select ? [...select.options].filter(option => !option.disabled).map(option => option.value).filter(Boolean) : [];
+  // Anos marcados (sempre ao menos 1; padrão 2026) e meses marcados (índices 0-11; vazio = todos)
+  function selectedYears() {
+    const select = document.getElementById('filterAno');
+    const chosen = multiValues('filterAno').filter(value => enabledOptionValues(select).includes(value)).map(Number);
+    return chosen.length ? chosen : [2026];
+  }
+  function selectedMonthIndexes() {
+    const list = activeMultiValues('filterMes');
+    return list.map(month => MONTH_ORDER[month]).filter(index => index !== undefined);
+  }
+  window.dashboardSelectedYears = selectedYears;
+  window.dashboardSelectedMonths = selectedMonthIndexes;
   function multiValues(id) {
     try { return JSON.parse(document.getElementById(id)?.dataset.multi || '[]'); } catch (_) { return []; }
   }
   // Para filtrar: todos marcados = sem filtro (igual a "Todas"/"Todos")
   function activeMultiValues(id) {
     const select = document.getElementById(id);
-    const options = select ? [...select.options].map(option => option.value).filter(Boolean) : [];
+    const options = enabledOptionValues(select);
     const chosen = multiValues(id).filter(value => options.includes(value));
     return chosen.length === options.length ? [] : chosen;
   }
@@ -259,8 +272,12 @@ window.DASHBOARD_SHOW_META = true;
     const iniciativaList = activeMultiValues('filterIniciativa');
     const pontoFocalList = activeMultiValues('filterPontoFocal');
     const focalAcompList = activeMultiValues('filterFocalAcomp');
+    const prioridadeList = activeMultiValues('filterPrioridade');
     return {
-      ano: $('#filterAno')?.value || '',
+      // Ano: 2026 marcado = sem filtro de projetos (comportamento anterior); só 2027 = filtra 2027
+      ano: (() => { const years = activeMultiValues('filterAno'); return years.length === 1 && years[0] !== '2026' ? years[0] : ''; })(),
+      anoList: selectedYears(),
+      mesList: activeMultiValues('filterMes'),
       gerencia: singleOf(gerenciaList),
       status: singleOf(statusList),
       ganho: $('#filterGanho')?.value || '',
@@ -268,7 +285,7 @@ window.DASHBOARD_SHOW_META = true;
       iniciativa: singleOf(iniciativaList),
       pontoFocal: singleOf(pontoFocalList),
       focalAcomp: singleOf(focalAcompList),
-      gerenciaList, statusList, iniciativaList, pontoFocalList, focalAcompList
+      gerenciaList, statusList, iniciativaList, pontoFocalList, focalAcompList, prioridadeList
     };
   }
 
@@ -285,19 +302,23 @@ window.DASHBOARD_SHOW_META = true;
       select.insertAdjacentElement('afterend', box);
       const trigger = box.querySelector('.mf-trigger');
       const opts = box.querySelector('.mf-opts');
-      const optionValues = () => [...select.options].map(option => option.value).filter(Boolean);
+      const optionValues = () => enabledOptionValues(select);
       const emptyLabel = () => select.options[0]?.textContent || 'Todos';
       const updateLabel = () => {
         const values = optionValues();
         const chosen = multiValues(id).filter(value => values.includes(value));
-        trigger.textContent = !chosen.length || chosen.length === values.length ? emptyLabel() : chosen.length === 1 ? chosen[0] : `${chosen.length} selecionados`;
+        const allLabel = select.dataset.multiRequired ? chosen.join(', ') : emptyLabel();
+        trigger.textContent = !chosen.length ? emptyLabel() : chosen.length === values.length && values.length > 1 ? allLabel : chosen.length === 1 ? chosen[0] : `${chosen.length} selecionados`;
         trigger.title = chosen.length ? chosen.join(', ') : emptyLabel();
       };
-      const save = list => { select.dataset.multi = JSON.stringify(list); updateLabel(); if (typeof window.applyGlobalFilters === 'function') window.applyGlobalFilters(); };
+      const save = list => { if (!list.length && select.dataset.multiRequired) list = [select.dataset.multiRequired]; select.dataset.multi = JSON.stringify(list); updateLabel(); if (typeof window.applyGlobalFilters === 'function') window.applyGlobalFilters(); };
       const buildOptions = () => {
         const chosen = multiValues(id);
-        opts.innerHTML = optionValues().map(value => `<label class="mf-opt"><input type="checkbox" value="${esc(value)}" ${chosen.includes(value) ? 'checked' : ''}><span>${esc(value)}</span></label>`).join('') || '<div class="mf-empty">Sem opções</div>';
-        opts.querySelectorAll('input').forEach(input => input.addEventListener('change', () => save([...opts.querySelectorAll('input:checked')].map(item => item.value))));
+        // Mantém a ordem original; opções desabilitadas aparecem bloqueadas
+        opts.innerHTML = [...select.options].filter(option => option.index > 0 && (option.disabled || option.value)).map(option => option.disabled
+          ? `<label class="mf-opt mf-disabled" title="Indisponível no momento"><input type="checkbox" disabled><span>${esc(option.textContent)}</span></label>`
+          : `<label class="mf-opt"><input type="checkbox" value="${esc(option.value)}" ${chosen.includes(option.value) ? 'checked' : ''}><span>${esc(option.textContent)}</span></label>`).join('') || '<div class="mf-empty">Sem opções</div>';
+        opts.querySelectorAll('input:not([disabled])').forEach(input => input.addEventListener('change', () => { save([...opts.querySelectorAll('input:checked')].map(item => item.value)); if (select.dataset.multiRequired) buildOptions(); }));
       };
       trigger.addEventListener('click', event => {
         event.stopPropagation();
@@ -332,8 +353,10 @@ window.DASHBOARD_SHOW_META = true;
     const filters = currentFilters();
     return state.projects.filter(project =>
       projectInYear(project, filters.ano) &&
+      (!filters.mesList.length || filters.anoList.some(year => filters.mesList.some(month => overlaps({ inicio: project.inicio, fim: project.termino }, `${year}-${String(MONTH_ORDER[month] + 1).padStart(2, '0')}`)))) &&
       (!filters.gerenciaList.length || filters.gerenciaList.includes(clean(project.area))) &&
       (!filters.statusList.length || filters.statusList.includes(clean(project.status))) &&
+      (!filters.prioridadeList.length || filters.prioridadeList.includes(roadmapKey(project))) &&
       (!filters.ganho || clean(project.ganhoProjeto) === filters.ganho) &&
       (!filters.tipo || arrayOf(project.tipos).map(clean).includes(filters.tipo)) &&
       (!filters.iniciativaList.length || filters.iniciativaList.includes(clean(first(project, ['iniciativa','forum','fórum'])))) &&
@@ -365,9 +388,7 @@ window.DASHBOARD_SHOW_META = true;
     const risk = active.filter(project => isRisk(project) && clean(project.status).toUpperCase() !== 'L5' && !priorityBlocksRisk(project));
     const done = projects.filter(isDone);
     // Saving potencial = Saving OPEX + Saving CAPEX (Base_Financ., mesmo cálculo da seção financeira)
-    const anoSelKpi = $('#filterAno');
-    const anoTextoKpi = clean(anoSelKpi?.options?.[anoSelKpi.selectedIndex]?.text);
-    const savingBase = savingFromBase(projects, /^\d{4}$/.test(anoTextoKpi) ? [Number(anoTextoKpi)] : []);
+    const savingBase = savingFromBase(projects, selectedYears());
     const savingOpex = savingBase.opex;
     const savingCapex = savingBase.capex;
     const saving = savingOpex + savingCapex;
@@ -619,16 +640,54 @@ window.DASHBOARD_SHOW_META = true;
     projects.filter(project => !isMetaOnly(project)).forEach(project => arrayOf(project.financeiro).forEach(record => {
       if (Number(record?.ano) !== 2026 || clean(record?.tipoDespesa) !== 'Total' || !(record?.icg in series)) return;
       const index = MONTH_ORDER[record.mes];
-      if (index !== undefined) series[record.icg][index] += Math.abs(n(record.resultado));
+      const months = selectedMonthIndexes();
+      if (index !== undefined && (!months.length || months.includes(index))) series[record.icg][index] += Math.abs(n(record.resultado));
     }));
     return series;
   }
 
+  // Períodos do gráfico financeiro: 1 ano = 12 meses | 2 anos = 24 meses | 3+ anos = últimos 24 meses
+  // Ano + meses = só os meses marcados de cada ano marcado
+  function financePeriods() {
+    const years = selectedYears().slice().sort((a, b) => a - b);
+    const chosenMonths = selectedMonthIndexes().slice().sort((a, b) => a - b);
+    const months = chosenMonths.length ? chosenMonths : Array.from({ length: 12 }, (_, index) => index);
+    const list = years.flatMap(year => months.map(month => ({ year, month })));
+    return list.length > 24 ? list.slice(-24) : list;
+  }
+  // 12 meses a partir do início da captura (mesma regra da tela individual do projeto)
+  function capturePeriods(project) {
+    const monthOf = value => { const m = clean(value).match(/^(\d{4})-(\d{2})/); return m ? new Date(Number(m[1]), Number(m[2]) - 1, 1) : null; };
+    const capture = monthOf(project.inicioCaptura);
+    const end = monthOf(project.termino);
+    const base = capture || (end ? new Date(end.getFullYear(), end.getMonth() + 1, 1) : new Date(new Date().getFullYear(), 0, 1));
+    return Array.from({ length: 12 }, (_, index) => { const date = new Date(base.getFullYear(), base.getMonth() + index, 1); return { year: date.getFullYear(), month: date.getMonth() }; });
+  }
+  function aggregateFinancialPeriods(projects, periods) {
+    const series = { Budget: periods.map(() => 0), Fcst: periods.map(() => 0), Real: periods.map(() => 0) };
+    const position = new Map(periods.map((period, index) => [`${period.year}-${period.month}`, index]));
+    projects.filter(project => !isMetaOnly(project)).forEach(project => arrayOf(project.financeiro).forEach(record => {
+      if (clean(record?.tipoDespesa) !== 'Total' || !(record?.icg in series)) return;
+      const index = position.get(`${Number(record?.ano)}-${MONTH_ORDER[record?.mes]}`);
+      if (index !== undefined) series[record.icg][index] += Math.abs(n(record.resultado));
+    }));
+    return series;
+  }
+  const periodLabel = periods => {
+    const L = ['JAN','FEV','MAR','ABR','MAI','JUN','JUL','AGO','SET','OUT','NOV','DEZ'];
+    if (!periods.length) return '';
+    const a = periods[0], b = periods[periods.length - 1];
+    return periods.length === 1 ? `${L[a.month]}/${String(a.year).slice(-2)}` : `${L[a.month]}/${String(a.year).slice(-2)} a ${L[b.month]}/${String(b.year).slice(-2)}`;
+  };
+
   // Saving = Realizado da Base_Financ. (ICG = Real), linhas OPEX e CAPEX; Total = OPEX + CAPEX.
   // years: lista de anos considerados (vazio = todos os anos).
-  function savingFromBase(projects, years) {
+  // monthRange (opcional): [primeiroMês, últimoMês] em índices 0-11, usado no YTD/YTG
+  function savingFromBase(projects, years, monthRange) {
     const out = { opex: 0, capex: 0, total: 0 };
-    const inYears = record => !years.length || years.includes(Number(record?.ano));
+    const months = selectedMonthIndexes();
+    const inRange = index => !monthRange || (index >= monthRange[0] && index <= monthRange[1]);
+    const inYears = record => (!years.length || years.includes(Number(record?.ano))) && (!months.length || months.includes(MONTH_ORDER[record?.mes])) && inRange(MONTH_ORDER[record?.mes]);
     projects.forEach(project => {
       const records = arrayOf(project.financeiro).filter(record => clean(record?.icg) === 'Real' && inYears(record));
       const split = records.filter(record => /^(opex|capex)$/i.test(clean(record?.tipoDespesa)));
@@ -711,7 +770,7 @@ window.DASHBOARD_SHOW_META = true;
     });
     const body = financeChartSVG({ labels: months.map(m => m.label), years: months.map(m => m.year), real: series.real, fcst: series.fcst, meta: series.meta, base: hasBase ? series.base : null, id: `p${clean(project.id).replace(/[^a-z0-9]/gi, '')}` });
     const period = `${months[0].label}/${months[0].year} a ${months[11].label}/${months[11].year}`;
-    const sub = capture ? `12 meses a partir do início da captura (${period})` : end ? `Início da captura não informado · 12 meses após o término (${period})` : 'Início da captura não informado · exibindo o ano corrente';
+    const sub = (capture ? `12 meses a partir do início da captura (${period})` : end ? `Início da captura não informado · 12 meses após o término (${period})` : 'Início da captura não informado · exibindo o ano corrente');
     return { sub, body };
   }
 
@@ -729,8 +788,12 @@ window.DASHBOARD_SHOW_META = true;
     const slot = (W - left - right) / count;
     const x = index => left + slot * index + slot / 2;
     const y = value => top + plotH - (value / max) * plotH;
-    const fmt = value => value ? `${value.toLocaleString('pt-BR', { maximumFractionDigits: value < 10 ? 2 : 1 })}M` : '0M';
+    const fmt = value => `${Number(value || 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}M`;
     const fmtCard = value => `${Number(value || 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}MM`;
+    // Gráfico da Home: números dentro do gráfico sem "M"/"MM" (unidade informada no subtítulo); caixinhas do topo mantêm "MM"
+    const plain = true; // Home e projeto individual: números do gráfico sem unidade
+    const fmtBar = value => plain ? Number(value || 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : fmt(value);
+    const fmtBox = value => plain ? Number(value || 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : fmtCard(value);
     const grid = [0, 0.25, 0.5, 0.75, 1].map(step => `<line x1="${left}" x2="${W - right}" y1="${(top + plotH * step).toFixed(1)}" y2="${(top + plotH * step).toFixed(1)}" stroke="#eceef2" stroke-width="1"/>`).join('');
     const columns = labels.map((label, index) => `<rect x="${(left + slot * index).toFixed(1)}" y="${top}" width="${slot.toFixed(1)}" height="${plotH}" fill="${index % 2 ? '#fafafa' : '#ffffff'}"/>`).join('');
     const barW = Math.min(28, slot * 0.36);
@@ -747,8 +810,8 @@ window.DASHBOARD_SHOW_META = true;
       if (rLabelY !== null && fLabelY !== null && Math.abs(rLabelY - fLabelY) < 12 * fs) {
         if (rLabelY <= fLabelY) rLabelY -= 12 * fs; else fLabelY -= 12 * fs;
       }
-      if (r) out += `<rect x="${rx.toFixed(1)}" y="${y(r).toFixed(1)}" width="${barW.toFixed(1)}" height="${(floor - y(r)).toFixed(1)}" rx="4" fill="url(#${id}Real)"><title>Real+FCST ${label}: R$ ${fmt(r)}</title></rect>`; if (r) lbl += `<text x="${(rx + barW / 2).toFixed(1)}" y="${rLabelY.toFixed(1)}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#1f1f1f">${fmt(r)}</text>`;
-      if (f) out += `<rect x="${fx.toFixed(1)}" y="${y(f).toFixed(1)}" width="${barW.toFixed(1)}" height="${(floor - y(f)).toFixed(1)}" rx="4" fill="url(#${id}Fcst)"><title>Forecast ${label}: R$ ${fmt(f)}</title></rect>`; if (f) lbl += `<text x="${(fx + barW / 2).toFixed(1)}" y="${fLabelY.toFixed(1)}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#15803d">${fmt(f)}</text>`;
+      if (r) out += `<rect x="${rx.toFixed(1)}" y="${y(r).toFixed(1)}" width="${barW.toFixed(1)}" height="${(floor - y(r)).toFixed(1)}" rx="4" fill="url(#${id}Real)"><title>Real+FCST ${label}: R$ ${fmt(r)}</title></rect>`; if (r) lbl += `<text x="${(rx + barW / 2).toFixed(1)}" y="${rLabelY.toFixed(1)}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#1f1f1f">${fmtBar(r)}</text>`;
+      if (f) out += `<rect x="${fx.toFixed(1)}" y="${y(f).toFixed(1)}" width="${barW.toFixed(1)}" height="${(floor - y(f)).toFixed(1)}" rx="4" fill="url(#${id}Fcst)"><title>Forecast ${label}: R$ ${fmt(f)}</title></rect>`; if (f) lbl += `<text x="${(fx + barW / 2).toFixed(1)}" y="${fLabelY.toFixed(1)}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#15803d">${fmtBar(f)}</text>`;
       [rLabelY, fLabelY].forEach(value => { if (value !== null) occupied[index] = Math.min(occupied[index], value - 11 * fs); });
       if (floorY && occupied[index] === Infinity) occupied[index] = floorY;
       if (r && f) {
@@ -758,7 +821,7 @@ window.DASHBOARD_SHOW_META = true;
         const good = diff >= 0;
         const color = good ? '#15803d' : '#c00000';
         const bg = good ? '#e8f7ee' : '#fbeaea';
-        const text = `${good ? '▲' : '▼'} ${fmtCard(Math.abs(diff))}`;
+        const text = `${good ? '▲' : '▼'} ${fmtBox(Math.abs(diff))}`;
         const pw = (text.length * 5.6 + 8) * fs;
         lbl += `<g><title>Desvio Realizado x Forecast ${label}: ${good ? 'acima' : 'abaixo'} em R$ ${fmt(Math.abs(diff))}</title><rect x="${(x(index) - pw / 2).toFixed(1)}" y="${(upY - 1).toFixed(1)}" width="${pw.toFixed(1)}" height="${(15 * fs).toFixed(1)}" rx="${(7.5 * fs).toFixed(1)}" fill="${bg}" stroke="${color}" stroke-width="1"/><text x="${x(index).toFixed(1)}" y="${(upY + 10.5 * fs).toFixed(1)}" text-anchor="middle" font-size="${(9 * fs).toFixed(1)}" font-weight="800" fill="${color}">${text}</text></g>`;
       }
@@ -771,7 +834,7 @@ window.DASHBOARD_SHOW_META = true;
     const metaLeaders = [];
     const metaLabels = meta.map((value, index) => {
       if (!SHOW_META || !value) return '';
-      const text = fmtCard(value);
+      const text = fmtBox(value);
       const bw = (text.length * 6 + 10) * fs, bh = 15 * fs;
       const cx = x(index), py = y(value);
       const limit = occupied[index];
@@ -808,12 +871,14 @@ window.DASHBOARD_SHOW_META = true;
     const pool = Array.isArray(state.finProjects) ? state.finProjects : [];
     const list = query ? pool.filter(project => norm(`${project.id} ${project.projeto}`).includes(query)) : pool;
     const LABELS = ['JAN','FEV','MAR','ABR','MAI','JUN','JUL','AGO','SET','OUT','NOV','DEZ'];
-    if (sub) sub.textContent = !query ? '2026 · valores mensais de Real+FCST, Forecast e Meta · visão geral'
-      : list.length === 1 ? `2026 · ${list[0].id} · ${clean(list[0].projeto)}`
-      : list.length ? `2026 · ${list.length} projetos encontrados` : 'Nenhum projeto encontrado';
+    // Projeto único na busca: ignora o filtro de anos e usa os 12 meses da captura financeira
+    const periods = query && list.length === 1 ? capturePeriods(list[0]) : financePeriods();
+    const label = periodLabel(periods);
+    if (sub) sub.textContent = !query || list.length > 1 ? `${label} · valores em R$ milhões`
+      : list.length === 1 ? `${label} (captura ${list[0].id}) · valores em R$ milhões` : 'Nenhum projeto encontrado';
     if (query && !list.length) { body.innerHTML = '<div class="empty-state">Nenhum projeto encontrado para a busca.</div>'; $('#finMiniSlot')?.replaceChildren(); return; }
-    const series = aggregateFinancial(list);
-    body.innerHTML = financeChartSVG({ labels: LABELS, years: LABELS.map(() => '26'), real: series.Real, fcst: series.Fcst, meta: series.Budget, id: 'home', width: 1150, fs: 1.3 });
+    const series = aggregateFinancialPeriods(list, periods);
+    body.innerHTML = financeChartSVG({ labels: periods.map(period => LABELS[period.month]), years: periods.map(period => String(period.year).slice(-2)), real: series.Real, fcst: series.Fcst, meta: series.Budget, id: 'home', width: 1150, fs: periods.length > 12 ? 1 : 1.3 });
     const slot = $('#finMiniSlot');
     const mini = body.querySelector('.fin-mini');
     if (slot) slot.replaceChildren(...(mini ? [mini] : []));
@@ -821,7 +886,7 @@ window.DASHBOARD_SHOW_META = true;
   window.filterFinanceChart = filterFinanceChart;
 
   function renderFinance(projects) {
-    const series = aggregateFinancial(projects);
+    const series = aggregateFinancialPeriods(projects, financePeriods());
     const total = key => series[key].reduce((sum, value) => sum + value, 0);
     const budget = total('Budget');
     const forecast = total('Fcst');
@@ -829,16 +894,21 @@ window.DASHBOARD_SHOW_META = true;
     const gapMeta = real - budget;
     const gapForecast = real - forecast;
     // Saving vem da Base_Financ. (Realizado). Total segue o ano selecionado no filtro Ano ("Todos" = todos os anos)
-    const anoSel = $('#filterAno');
-    const anoTexto = clean(anoSel?.options?.[anoSel.selectedIndex]?.text);
-    const anosTotal = /^\d{4}$/.test(anoTexto) ? [Number(anoTexto)] : [];
+    const anosTotal = selectedYears();
     const savingTotal = savingFromBase(projects, anosTotal);
     const opex = savingTotal.opex;
     const capex = savingTotal.capex;
-    const all = savingFromBase(projects, [2026, 2027]).total; // Saving Total: sempre 2026 + 2027, independente do filtro
-    const year = savingFromBase(projects, [2026]).total;
+    // YTD = meses fechados do ano até hoje | YTG = do mês atual até dezembro (só com 1 ano selecionado)
+    const ytdYears = selectedYears();
+    let ytd = null, ytg = null;
+    if (ytdYears.length === 1) {
+      const today = new Date(), currentYear = today.getFullYear(), currentMonth = today.getMonth();
+      const lastClosed = ytdYears[0] < currentYear ? 11 : ytdYears[0] > currentYear ? -1 : currentMonth - 1;
+      ytd = lastClosed >= 0 ? savingFromBase(projects, ytdYears, [0, lastClosed]).total : 0;
+      ytg = lastClosed < 11 ? savingFromBase(projects, ytdYears, [lastClosed + 1, 11]).total : 0;
+    }
     const grid = $('#financeiro .finance-grid');
-    if (grid) grid.innerHTML = `<article class="card finance-kpi"><small>Meta</small><b>${window.DASHBOARD_SHOW_META !== false ? cardMM(budget) : '-'}</b></article><article class="card finance-kpi"><small>Forecast</small><b>${cardMM(forecast)}</b></article><article class="card finance-kpi"><small>Real+FCST</small><b>${cardMM(real)}</b></article><article class="card finance-kpi gap-kpi"><div class="gap-split"><div><span>Real x Meta</span>${window.DASHBOARD_SHOW_META !== false ? `<b style="color:${gapMeta < 0 ? 'var(--claro)' : 'var(--green)'}">${cardMM(gapMeta)}</b>` : '<b>-</b>'}</div><div><span>Real x FCST</span><b style="color:${gapForecast < 0 ? 'var(--claro)' : 'var(--green)'}">${cardMM(gapForecast)}</b></div></div></article><article class="card finance-kpi"><small>Saving Opex</small><b>${cardMM(opex)}</b></article><article class="card finance-kpi"><small>Saving Capex</small><b>${cardMM(capex)}</b></article><article class="card finance-kpi"><small>Saving Total</small><b>${cardMM(all)}</b></article><article class="card finance-kpi"><small>Saving 2026</small><b>${cardMM(year)}</b></article>`;
+    if (grid) grid.innerHTML = `<article class="card finance-kpi"><small>Meta</small><b>${window.DASHBOARD_SHOW_META !== false ? cardMM(budget) : '-'}</b></article><article class="card finance-kpi"><small>Forecast</small><b>${cardMM(forecast)}</b></article><article class="card finance-kpi"><small>Real+FCST</small><b>${cardMM(real)}</b></article><article class="card finance-kpi gap-kpi"><div class="gap-split"><div><span>Real x Meta</span>${window.DASHBOARD_SHOW_META !== false ? `<b style="color:${gapMeta < 0 ? 'var(--claro)' : 'var(--green)'}">${cardMM(gapMeta)}</b>` : '<b>-</b>'}</div><div><span>Real x FCST</span><b style="color:${gapForecast < 0 ? 'var(--claro)' : 'var(--green)'}">${cardMM(gapForecast)}</b></div></div></article><article class="card finance-kpi"><small>Saving Opex</small><b>${cardMM(opex)}</b></article><article class="card finance-kpi"><small>Saving Capex</small><b>${cardMM(capex)}</b></article><article class="card finance-kpi"><small>YTD (Year To Date)</small><b>${ytd === null ? '-' : cardMM(ytd)}</b></article><article class="card finance-kpi"><small>YTG (Year To Go)</small><b>${ytg === null ? '-' : cardMM(ytg)}</b></article>`;
     state.finProjects = projects;
     const card = $('#financeiro .line-chart');
     if (card) {
