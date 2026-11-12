@@ -575,7 +575,7 @@ body.project-open .topbar{display:none!important}
     </a>
 
     <a href="#portfolio">
-        <i class="dot-icon"></i>Portfólio completo
+        <i class="dot-icon"></i>Portfólio Completo
     </a>
 
     <!-- INSERIR O BOTÃO AQUI -->
@@ -720,7 +720,7 @@ body.project-open .topbar{display:none!important}
 </section>
 
         <section class="section" id="saude">
-          <div class="section-head"><div><h2>Saúde do portfólio</h2><p>Distribuição dos projetos por situação e estágio.</p></div></div>
+          <div class="section-head"><div><h2>Saúde do Portfólio</h2><p>Distribuição dos projetos por situação e estágio.</p></div></div>
           <div class="charts">
             <article class="card chart-card"><div class="chart-title">Projetos por status</div><div class="chart-sub">Composição do portfólio por estágio</div><div class="donut-wrap"><div class="donut"></div><div class="legend"><div><i style="background:var(--green)"></i>Em execução <b>21</b></div><div><i style="background:var(--blue)"></i>Planejado <b>12</b></div><div><i style="background:var(--yellow)"></i>Atenção <b>8</b></div><div><i style="background:var(--claro)"></i>Em risco <b>6</b></div></div></div></article>
             <article class="card chart-card"><div class="chart-title">Distribuição por stage</div><div class="chart-sub">Evolução no ciclo de projetos</div><div class="bars"><div class="bar-group"><div class="vbar" style="--h:27%" data-v="4"></div><span>L0</span></div><div class="bar-group"><div class="vbar" style="--h:47%" data-v="7"></div><span>L1</span></div><div class="bar-group"><div class="vbar" style="--h:67%" data-v="10"></div><span>L2</span></div><div class="bar-group"><div class="vbar" style="--h:87%" data-v="13"></div><span>L3</span></div><div class="bar-group"><div class="vbar" style="--h:100%" data-v="15"></div><span>L4</span></div><div class="bar-group"><div class="vbar" style="--h:40%" data-v="6"></div><span>L5</span></div></div></article>
@@ -728,7 +728,7 @@ body.project-open .topbar{display:none!important}
         </section>
 
         <section class="section" id="roadmap">
-          <div class="section-head"><div><h2>Roadmap executivo</h2><p>6 meses antes e 6 meses depois de hoje · <b id="roadmapCount" class="roadmap-count">—</b></p></div><div class="roadmap-actions"><input id="roadmapSearch" class="roadmap-search" type="search" placeholder="Buscar por projeto ou ID..." oninput="refreshRoadmapPriority()" aria-label="Buscar no roadmap"><div class="roadmap-priority-filter" role="group" aria-label="Filtrar roadmap por prioridade"><span>Prioridade</span><button type="button" class="rp-btn active" data-rp="ALL" onclick="toggleRoadmapPriority('ALL')">Todos</button><button type="button" class="rp-btn active" data-rp="P0" onclick="toggleRoadmapPriority('P0')">P0</button><button type="button" class="rp-btn active" data-rp="P1" onclick="toggleRoadmapPriority('P1')">P1</button><button type="button" class="rp-btn active" data-rp="P2" onclick="toggleRoadmapPriority('P2')">P2</button><button type="button" class="rp-btn active" data-rp="Congelado" onclick="toggleRoadmapPriority('Congelado')">Congelado</button><button type="button" class="rp-btn active" data-rp="Cancelado" onclick="toggleRoadmapPriority('Cancelado')">Cancelado</button><button type="button" class="rp-btn active" data-rp="Concluído" onclick="toggleRoadmapPriority('Concluído')">Concluído</button></div><button class="link-btn" type="button" onclick="document.querySelector('#roadmap .roadmap-scroll')?.scrollBy({top:240,behavior:'smooth'})">Ver próximos projetos ↓</button></div></div>
+          <div class="section-head"><div><h2>Roadmap Executivo</h2><p>6 meses antes e 6 meses depois de hoje · <b id="roadmapCount" class="roadmap-count">—</b></p></div><div class="roadmap-actions"><input id="roadmapSearch" class="roadmap-search" type="search" placeholder="Buscar por projeto ou ID..." oninput="refreshRoadmapPriority()" aria-label="Buscar no roadmap"><div class="roadmap-priority-filter" role="group" aria-label="Filtrar roadmap por prioridade"><span>Prioridade</span><button type="button" class="rp-btn active" data-rp="ALL" onclick="toggleRoadmapPriority('ALL')">Todos</button><button type="button" class="rp-btn active" data-rp="P0" onclick="toggleRoadmapPriority('P0')">P0</button><button type="button" class="rp-btn active" data-rp="P1" onclick="toggleRoadmapPriority('P1')">P1</button><button type="button" class="rp-btn active" data-rp="P2" onclick="toggleRoadmapPriority('P2')">P2</button><button type="button" class="rp-btn active" data-rp="Congelado" onclick="toggleRoadmapPriority('Congelado')">Congelado</button><button type="button" class="rp-btn active" data-rp="Cancelado" onclick="toggleRoadmapPriority('Cancelado')">Cancelado</button><button type="button" class="rp-btn active" data-rp="Concluído" onclick="toggleRoadmapPriority('Concluído')">Concluído</button></div><button class="link-btn" type="button" onclick="document.querySelector('#roadmap .roadmap-scroll')?.scrollBy({top:240,behavior:'smooth'})">Ver próximos projetos ↓</button></div></div>
           <style>
             #roadmap .roadmap-actions{display:flex;align-items:center;gap:14px;flex-wrap:nowrap;justify-content:flex-end}
             #roadmap>.section-head{align-items:flex-end;margin-bottom:8px}
@@ -896,7 +896,7 @@ body.project-open .topbar{display:none!important}
           <article class="card roadmap-card"><div class="empty-state">Carregando roadmap do portfólio…</div></article>
         </section>
 
-        <section class="section" id="financeiro"><div class="section-head"><div><h2>Desempenho financeiro</h2><p>Indicadores executivos e evolução mensal.</p></div><button class="link-btn" type="button" onclick="openFinanceiroDGP()">Financeiro DGP →</button></div>
+        <section class="section" id="financeiro"><div class="section-head"><div><h2>Desempenho Financeiro</h2><p>Indicadores executivos e evolução mensal.</p></div><button class="link-btn" type="button" onclick="openFinanceiroDGP()">Financeiro DGP →</button></div>
           <div class="finance-grid"><article class="card finance-kpi"><small>Meta</small><b>R$ 30,0M</b></article><article class="card finance-kpi"><small>Forecast</small><b>R$ 28,2M</b></article><article class="card finance-kpi"><small>Realizado</small><b>R$ 22,6M</b></article><article class="card finance-kpi"><div class="gap-split"><div><span>Real x Meta</span><b>—</b></div><div><span>Real x Forecast</span><b>—</b></div></div></article><article class="card finance-kpi"><small>Saving Opex</small><b>R$ 28,2M</b></article><article class="card finance-kpi"><small>Saving Capex</small><b>R$ 0,0M</b></article><article class="card finance-kpi"><small>Saving Total</small><b>R$ 28,2M</b></article><article class="card finance-kpi"><small>Saving 2026</small><b>R$ 0,77M</b></article></div>
           <article class="card line-chart"><div class="chart-title">Evolução mensal</div><div class="chart-sub">Meta, forecast e realizado</div><svg viewBox="0 0 900 210" preserveAspectRatio="none"><g stroke="#e8ebf0" stroke-width="1"><line x1="0" y1="40" x2="900" y2="40"/><line x1="0" y1="95" x2="900" y2="95"/><line x1="0" y1="150" x2="900" y2="150"/><line x1="0" y1="205" x2="900" y2="205"/></g><polyline fill="none" stroke="#aeb7c6" stroke-width="3" points="0,180 130,161 260,142 390,124 520,103 650,82 780,60 900,38"/><polyline fill="none" stroke="#3569e8" stroke-width="4" points="0,187 130,174 260,151 390,132 520,112 650,91 780,69 900,52"/><polyline fill="none" stroke="#da291c" stroke-width="4" points="0,190 130,180 260,165 390,149 520,130 650,112 780,96 900,79"/></svg></article>
         </section>
@@ -932,7 +932,7 @@ body.project-open .topbar{display:none!important}
             #portfolio .open-project{max-width:100%;padding:5px 6px;font-size:8px;white-space:nowrap}
             @media(max-width:900px){#portfolio .toolbar{padding:8px 10px}#portfolio th,#portfolio td{padding-left:3px;padding-right:3px;font-size:8px}#portfolio th{font-size:7px}#portfolio .open-project{padding:4px 3px;font-size:7px}}
           </style>
-          <div class="section-head"><div><h2>Portfólio completo</h2><p>Consulta rápida da carteira · 5 projetos visíveis; role para consultar todo o portfólio.</p></div><button class="link-btn" type="button" onclick="document.querySelector('#portfolio .table-wrap')?.scrollBy({top:220,behavior:'smooth'})">Ver próximos projetos ↓</button></div>
+          <div class="section-head"><div><h2>Portfólio Completo</h2><p>Consulta rápida da carteira · 5 projetos visíveis; role para consultar todo o portfólio.</p></div><button class="link-btn" type="button" onclick="document.querySelector('#portfolio .table-wrap')?.scrollBy({top:220,behavior:'smooth'})">Ver próximos projetos ↓</button></div>
           <article class="card portfolio">
             <div class="toolbar"><input id="tableSearch" placeholder="Buscar por projeto ou ID..." oninput="filterPortfolioTable()"><select id="portfolioStatusFilter" onchange="filterPortfolioTable()"><option value="">Todos os status</option></select><button type="button" class="export-excel" onclick="exportPortfolioExcel()" title="Exportar a lista filtrada para Excel">⤓ Exportar Excel</button></div>
           <script>
@@ -1087,7 +1087,7 @@ body.project-open .topbar{display:none!important}
         <section class="detail-grid"><article class="card detail"><small>Saving Opex 12M</small><b>R$ 28,2M</b></article><article class="card detail"><small>Saving Capex 12M</small><b>R$ 0,0M</b></article><article class="card detail"><small>Saving total 12M</small><b>R$ 28,2M</b></article><article class="card detail"><small>Saving 2026</small><b>R$ 0,77M</b></article></section>
         <section class="section two-col"><article class="card text-card scroll-card"><div class="chart-title">Escopo do projeto</div><p class="scroll-content">Unificar os estoques de SIM Cards Single e Combo Multi, integrar a malha expressa via motoboy e otimizar rotas para elevar a eficiência operacional.</p></article><article class="card text-card scroll-card"><div class="chart-title">Principais entregáveis</div><ul class="checklist scroll-content"><li>Unificação de estoque</li><li>Contrato com fornecedor</li><li>Nova malha logística integrada</li></ul></article></section>
         <section class="section"><div class="section-head"><div><h2>Cronograma do projeto</h2><p>Alternância entre visão executiva e detalhada.</p></div></div><div class="tabs"><button class="tab active">Macrocronograma</button><button class="tab">Cronograma detalhado</button></div><article class="card roadmap-card"><div class="months"><div></div><div>JUN</div><div>JUL</div><div>AGO</div><div>SET</div><div>OUT</div><div>NOV</div><div>DEZ</div></div><div class="road-row"><div class="road-name">Planejamento e preparação</div><div class="road-block blue"></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div class="road-row"><div class="road-name">Unificação dos estoques</div><div class="road-block"></div><div class="road-block"></div><div></div><div></div><div></div><div></div><div></div></div><div class="road-row"><div class="road-name">Conclusão dos habilitadores</div><div></div><div class="road-block green"></div><div class="road-block green"></div><div></div><div></div><div></div><div></div></div><div class="road-row"><div class="road-name">Implantação 1ª onda</div><div></div><div></div><div></div><div class="road-block"></div><div class="road-block"></div><div></div><div></div></div><div class="road-row"><div class="road-name">Implantação 2ª onda</div><div></div><div></div><div></div><div class="road-block blue"></div><div class="road-block blue"></div><div class="road-block blue"></div><div></div></div><div class="road-row"><div class="road-name">Encerramento e aceite</div><div></div><div></div><div></div><div></div><div></div><div class="road-block green"></div><div class="road-block green"></div></div></article></section>
-        <section class="section two-col"><article class="card line-chart"><div class="chart-title">Desempenho financeiro do projeto</div><div class="chart-sub">Visão demonstrativa mensal</div><svg viewBox="0 0 900 210" preserveAspectRatio="none"><g stroke="#e8ebf0"><line x1="0" y1="50" x2="900" y2="50"/><line x1="0" y1="110" x2="900" y2="110"/><line x1="0" y1="170" x2="900" y2="170"/></g><polyline fill="none" stroke="#3569e8" stroke-width="5" points="0,188 150,174 300,150 450,124 600,99 750,75 900,50"/><polyline fill="none" stroke="#da291c" stroke-width="5" points="0,190 150,181 300,168 450,145 600,121 750,104 900,86"/></svg></article><article class="card timeline"><div class="chart-title" style="margin-bottom:18px">Histórico de atualizações</div><div class="time-item"><div class="time-date">19 OUT</div><div class="time-line"></div><div class="time-copy"><b>Redução de 11 motos</b><p>Atualização operacional registrada.</p></div></div><div class="time-item"><div class="time-date">20 SET</div><div class="time-line"></div><div class="time-copy"><b>Redução de 22 motos</b><p>Marco de eficiência operacional.</p></div></div><div class="time-item"><div class="time-date">02 SET</div><div class="time-line"></div><div class="time-copy"><b>Contrato assinado</b><p>Formalização concluída.</p></div></div></article></section>
+        <section class="section two-col"><article class="card line-chart"><div class="chart-title">Desempenho Financeiro do projeto</div><div class="chart-sub">Visão demonstrativa mensal</div><svg viewBox="0 0 900 210" preserveAspectRatio="none"><g stroke="#e8ebf0"><line x1="0" y1="50" x2="900" y2="50"/><line x1="0" y1="110" x2="900" y2="110"/><line x1="0" y1="170" x2="900" y2="170"/></g><polyline fill="none" stroke="#3569e8" stroke-width="5" points="0,188 150,174 300,150 450,124 600,99 750,75 900,50"/><polyline fill="none" stroke="#da291c" stroke-width="5" points="0,190 150,181 300,168 450,145 600,121 750,104 900,86"/></svg></article><article class="card timeline"><div class="chart-title" style="margin-bottom:18px">Histórico de atualizações</div><div class="time-item"><div class="time-date">19 OUT</div><div class="time-line"></div><div class="time-copy"><b>Redução de 11 motos</b><p>Atualização operacional registrada.</p></div></div><div class="time-item"><div class="time-date">20 SET</div><div class="time-line"></div><div class="time-copy"><b>Redução de 22 motos</b><p>Marco de eficiência operacional.</p></div></div><div class="time-item"><div class="time-date">02 SET</div><div class="time-line"></div><div class="time-copy"><b>Contrato assinado</b><p>Formalização concluída.</p></div></div></article></section>
       </div>
     </div>
   </main>
@@ -1123,7 +1123,7 @@ body.project-open .topbar{display:none!important}
 /* =====================================================================
    FINANCEIRO DGP — módulo isolado do dashboard (layout "Dashboard
    Financeiro Projetos de Logística")
-   - Aberto pelo link "Financeiro DGP →" da seção Desempenho financeiro
+   - Aberto pelo link "Financeiro DGP →" da seção Desempenho Financeiro
    - Tela bloqueada ("em desenvolvimento") até digitar a senha
    - Dados: somente os JSONs do gerar_jsons.py (campo "financeiro" e
      "fca" de cada projeto), iniciativas DGP e ICG
@@ -1993,7 +1993,7 @@ body.dgp-open #projectView{display:none!important}
 #portfolio .toolbar .export-excel{background:#c00000!important}
 #portfolio .toolbar .export-excel:hover{background:#530b03!important}
 .global-filter select:focus,.toolbar input:focus,.toolbar select:focus{border-color:#df3232!important;box-shadow:0 0 0 3px rgba(223,50,50,.12)!important}
-/* Roadmap executivo: prioridades */
+/* Roadmap Executivo: prioridades */
 #roadmap .roadmap-legend .legend-p0,#roadmap .priority-p0 .road-block{background:#c00000!important}
 #roadmap .roadmap-legend .legend-p1,#roadmap .priority-p1 .road-block{background:#ed7d31!important}
 #roadmap .roadmap-legend .legend-p2,#roadmap .priority-p2 .road-block{background:#ffc000!important}
@@ -2016,7 +2016,7 @@ body.dgp-open #projectView{display:none!important}
 /* Paleta Claro nos cards de KPI */
 .kpi-grid .kpi-foot .positive{color:#530b03!important}
 .kpi-grid .kpi-foot .danger{color:#c00000!important}
-/* Roadmap executivo: busca, contagem, 7 projetos visíveis e nome completo */
+/* Roadmap Executivo: busca, contagem, 7 projetos visíveis e nome completo */
 #roadmap{--road-name-col:440px!important;--road-row-height:44px!important}
 #roadmap .road-name{padding-top:3px!important;padding-bottom:3px!important;gap:2px!important}
 #roadmap .roadmap-scroll{max-height:calc(var(--road-header-height) + 7 * var(--road-row-height) + 14px)!important}
@@ -2025,7 +2025,7 @@ body.dgp-open #projectView{display:none!important}
 #roadmap .roadmap-search:focus{border-color:#df3232;box-shadow:0 0 0 3px rgba(223,50,50,.12)}
 #roadmap .roadmap-count{color:#c00000;font-weight:800}
 @media(max-width:760px){#roadmap{--road-name-col:260px!important}#roadmap .roadmap-search{width:100%}}
-/* Portfólio completo: fonte maior e botão Abrir visão */
+/* Portfólio Completo: fonte maior e botão Abrir visão */
 #portfolio{--portfolio-row-height:52px!important;--portfolio-header-height:40px!important}
 #portfolio col:nth-child(1){width:29%!important}
 #portfolio col:nth-child(10){width:9%}

@@ -770,7 +770,7 @@ window.DASHBOARD_SHOW_META = true;
     });
     const body = financeChartSVG({ labels: months.map(m => m.label), years: months.map(m => m.year), real: series.real, fcst: series.fcst, meta: series.meta, base: hasBase ? series.base : null, id: `p${clean(project.id).replace(/[^a-z0-9]/gi, '')}` });
     const period = `${months[0].label}/${months[0].year} a ${months[11].label}/${months[11].year}`;
-    const sub = (capture ? `12 meses a partir do início da captura (${period})` : end ? `Início da captura não informado · 12 meses após o término (${period})` : 'Início da captura não informado · exibindo o ano corrente');
+    const sub = `${period} · Valores em R$ milhões`;
     return { sub, body };
   }
 
@@ -819,11 +819,13 @@ window.DASHBOARD_SHOW_META = true;
         const upY = Math.min(rLabelY, fLabelY) - 30 * fs;
         occupied[index] = Math.min(occupied[index], upY - 2);
         const good = diff >= 0;
-        const color = good ? '#15803d' : '#c00000';
-        const bg = good ? '#e8f7ee' : '#fbeaea';
-        const text = `${good ? '▲' : '▼'} ${fmtBox(Math.abs(diff))}`;
-        const pw = (text.length * 5.6 + 8) * fs;
-        lbl += `<g><title>Desvio Realizado x Forecast ${label}: ${good ? 'acima' : 'abaixo'} em R$ ${fmt(Math.abs(diff))}</title><rect x="${(x(index) - pw / 2).toFixed(1)}" y="${(upY - 1).toFixed(1)}" width="${pw.toFixed(1)}" height="${(15 * fs).toFixed(1)}" rx="${(7.5 * fs).toFixed(1)}" fill="${bg}" stroke="${color}" stroke-width="1"/><text x="${x(index).toFixed(1)}" y="${(upY + 10.5 * fs).toFixed(1)}" text-anchor="middle" font-size="${(9 * fs).toFixed(1)}" font-weight="800" fill="${color}">${text}</text></g>`;
+        // Desvio zero (0,00 após arredondar): traço cinza, sem indicador verde/vermelho
+        const zero = Math.round(Math.abs(diff) * 100) === 0;
+        const color = zero ? '#7f7f7f' : good ? '#15803d' : '#c00000';
+        const bg = zero ? '#f2f2f2' : good ? '#e8f7ee' : '#fbeaea';
+        const text = zero ? `- ${fmtBox(0)}` : `${good ? '▲' : '▼'} ${fmtBox(Math.abs(diff))}`;
+        const pw = (Math.max(text.length, 3) * 5.6 + 8) * fs;
+        lbl += `<g><title>Desvio Realizado x FCST ${label}: ${zero ? 'sem desvio' : `${good ? 'acima' : 'abaixo'} em R$ ${fmt(Math.abs(diff))}`}</title><rect x="${(x(index) - pw / 2).toFixed(1)}" y="${(upY - 1).toFixed(1)}" width="${pw.toFixed(1)}" height="${(15 * fs).toFixed(1)}" rx="${(7.5 * fs).toFixed(1)}" fill="${bg}" stroke="${color}" stroke-width="1"/><text x="${x(index).toFixed(1)}" y="${(upY + 10.5 * fs).toFixed(1)}" text-anchor="middle" font-size="${(9 * fs).toFixed(1)}" font-weight="800" fill="${color}">${text}</text></g>`;
       }
       valueLabels.push(lbl);
       return out;
@@ -853,7 +855,7 @@ window.DASHBOARD_SHOW_META = true;
     const axis = labels.map((label, index) => `<text x="${x(index).toFixed(1)}" y="${H - 22}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#1f1f1f">${label}</text><text x="${x(index).toFixed(1)}" y="${H - 9}" text-anchor="middle" font-size="${(8.5 * fs).toFixed(1)}" fill="#7f7f7f">${years[index]}</text>`).join('');
     const defs = `<defs><linearGradient id="${id}Real" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b4f57"/><stop offset="1" stop-color="#15171b"/></linearGradient><linearGradient id="${id}Fcst" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34c26b"/><stop offset="1" stop-color="#15803d"/></linearGradient></defs>`;
     const svg = `<svg class="fin-chart" viewBox="0 0 ${W} ${H}" role="img">${defs}${columns}${grid}${pairs}${baseLine}${SHOW_META ? `<path d="${path(meta)}" fill="none" stroke="#2563eb" stroke-width="3"/>${dots(meta, '#2563eb', 'Meta')}` : ''}${metaLeaders.join('')}${valueLabels.join('')}${metaLabels}${axis}</svg>`;
-    const legend = `<div class="fin-legend"><span><i class="lg-bar"></i>Real+FCST</span><span><i class="lg-bar fcst"></i>Forecast</span><span><i class="lg-line"></i>Meta${SHOW_META ? '' : ': -'}</span>${base ? '<span><i class="lg-line base"></i>Baseline / ano anterior</span>' : ''}<span><i class="lg-dev">▲▼</i>Desvio Realizado x Forecast</span></div>`;
+    const legend = `<div class="fin-legend"><span><i class="lg-bar"></i>Real+FCST</span><span><i class="lg-bar fcst"></i>Forecast</span><span><i class="lg-line"></i>Meta${SHOW_META ? '' : ': -'}</span>${base ? '<span><i class="lg-line base"></i>Baseline / ano anterior</span>' : ''}<span><i class="lg-dev">▲▼</i>Desvio Realizado x FCST</span></div>`;
     const sum = list => list.reduce((acc, value) => acc + value, 0);
     const tReal = sum(real), tFcst = sum(fcst), tMeta = sum(meta);
     const gapBox = (a, b) => { const d = a - b; return `<b class="${d >= 0 ? 'pos' : 'neg'}">${d >= 0 ? '▲' : '▼'} ${fmtCard(Math.abs(d))}</b>`; };
@@ -867,15 +869,16 @@ window.DASHBOARD_SHOW_META = true;
     const sub = $('#finSub');
     if (!body) return;
     const norm = text => clean(text).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-    const query = norm(value);
+    const query = clean(value);
     const pool = Array.isArray(state.finProjects) ? state.finProjects : [];
-    const list = query ? pool.filter(project => norm(`${project.id} ${project.projeto}`).includes(query)) : pool;
+    // Seleção de projeto: valor = ID do projeto (vazio = todos)
+    const list = query ? pool.filter(project => clean(project.id) === query) : pool;
     const LABELS = ['JAN','FEV','MAR','ABR','MAI','JUN','JUL','AGO','SET','OUT','NOV','DEZ'];
     // Projeto único na busca: ignora o filtro de anos e usa os 12 meses da captura financeira
     const periods = query && list.length === 1 ? capturePeriods(list[0]) : financePeriods();
     const label = periodLabel(periods);
-    if (sub) sub.textContent = !query || list.length > 1 ? `${label} · valores em R$ milhões`
-      : list.length === 1 ? `${label} (captura ${list[0].id}) · valores em R$ milhões` : 'Nenhum projeto encontrado';
+    if (sub) sub.textContent = !query || list.length > 1 ? `${label} · Valores em R$ milhões`
+      : list.length === 1 ? `${label} (captura ${list[0].id}) · Valores em R$ milhões` : 'Nenhum projeto encontrado';
     if (query && !list.length) { body.innerHTML = '<div class="empty-state">Nenhum projeto encontrado para a busca.</div>'; $('#finMiniSlot')?.replaceChildren(); return; }
     const series = aggregateFinancialPeriods(list, periods);
     body.innerHTML = financeChartSVG({ labels: periods.map(period => LABELS[period.month]), years: periods.map(period => String(period.year).slice(-2)), real: series.Real, fcst: series.Fcst, meta: series.Budget, id: 'home', width: 1150, fs: periods.length > 12 ? 1 : 1.3 });
@@ -912,8 +915,13 @@ window.DASHBOARD_SHOW_META = true;
     state.finProjects = projects;
     const card = $('#financeiro .line-chart');
     if (card) {
-      if (!card.querySelector('#finSearch')) card.innerHTML = `<div class="fin-head"><div><div class="chart-title">Evolução mensal</div><div class="chart-sub" id="finSub"></div></div><div class="fin-head-right"><div id="finMiniSlot"></div><input id="finSearch" class="fin-search" type="search" placeholder="Buscar projeto por nome ou LOG..." autocomplete="off" oninput="filterFinanceChart(this.value)"></div></div><div id="finBody"></div>`;
-      filterFinanceChart(card.querySelector('#finSearch').value);
+      if (!card.querySelector('#finSearch')) card.innerHTML = `<div class="fin-head"><div><div class="chart-title">Evolução Mensal</div><div class="chart-sub" id="finSub"></div></div><div class="fin-head-right"><div id="finMiniSlot"></div><select id="finSearch" class="fin-search" onchange="filterFinanceChart(this.value)"><option value="">Todos os projetos</option></select></div></div><div id="finBody"></div>`;
+      const finSelect = card.querySelector('#finSearch');
+      const selectedId = finSelect.value;
+      const finOptions = projects.filter(project => clean(project.ganhoProjeto).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().startsWith('quantitativ')).sort((a, b) => idNumber(a.id) - idNumber(b.id));
+      finSelect.innerHTML = `<option value="">Todos os projetos</option>${finOptions.map(project => `<option value="${esc(project.id)}">${esc(project.id)} · ${esc(clean(project.projeto))}</option>`).join('')}`;
+      finSelect.value = finOptions.some(project => clean(project.id) === selectedId) ? selectedId : '';
+      filterFinanceChart(finSelect.value);
     }
   }
 
