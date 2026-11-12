@@ -1,8 +1,8 @@
 {
   "id": "LOG-005",
-  "projeto": "LOG-05 - Venda de Ativo",
+  "projeto": "Venda de Ativo",
   "area": "Estoques",
-  "pontoFocal": "",
+  "pontoFocal": "Gustavo Mendes",
   "inicio": "2026-01-01",
   "termino": "2026-12-01",
   "inicioCaptura": "2026-01-01",
@@ -23,11 +23,11 @@
   ],
   "saving": {
     "opex12M": 0.0,
-    "capex12M": 14.53,
-    "total12M": 14.53,
+    "capex12M": 14.027161677985765,
+    "total12M": 14.027161677985765,
     "opex2026": 0.0,
-    "capex2026": 14.53,
-    "total2026": 14.53
+    "capex2026": 14.027161677985765,
+    "total2026": 14.027161677985765
   },
   "macroAtividades": [
     {
@@ -1176,7 +1176,13 @@
       "anotacao": ""
     }
   ],
-  "historico": [],
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "acoes": "Ajuste de FCST",
+      "detalhe": "FCST atualizado conforme previsão reportada pelo gestor do projeto"
+    }
+  ],
   "statusProjeto": "2024: Piloto do processo, com contratação e implantação do broker. \t\t\t\t\t\t\t\t\t\t\n 2025: Consolidação do processo, incluindo a condução das negociações e a redução do comissionamento. \t\t\t\t\t\t\t\t\t\t\n 2026: Acompanhamento da venda de ativos (Ano 2), com operação em regime contínuo (ongoing).",
   "financeiro": [
     {
@@ -1381,7 +1387,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": 1.88
+      "resultado": 1.8770103699781062
     },
     {
       "id": "LOG-005",
@@ -1393,7 +1399,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": 1.74
+      "resultado": 1.7434133830541874
     },
     {
       "id": "LOG-005",
@@ -1405,7 +1411,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": 1.262
+      "resultado": 1.2622459946358786
     },
     {
       "id": "LOG-005",
@@ -1417,7 +1423,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": 1.68
+      "resultado": 1.6790294700602084
     },
     {
       "id": "LOG-005",
@@ -1429,7 +1435,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 2.38
+      "resultado": 2.384980647409141
     },
     {
       "id": "LOG-005",
@@ -1441,7 +1447,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 1.062
+      "resultado": 2.3595101852323483
     },
     {
       "id": "LOG-005",
@@ -1453,7 +1459,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.0354
+      "resultado": 1.3665336617405581
     },
     {
       "id": "LOG-005",
@@ -1465,7 +1471,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.0826
+      "resultado": 0.72396004378763
     },
     {
       "id": "LOG-005",
@@ -1525,7 +1531,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": 1.88
+      "resultado": 1.8770103699781062
     },
     {
       "id": "LOG-005",
@@ -1537,7 +1543,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": 1.74
+      "resultado": 1.7434133830541874
     },
     {
       "id": "LOG-005",
@@ -1549,7 +1555,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": 1.262
+      "resultado": 1.2622459946358786
     },
     {
       "id": "LOG-005",
@@ -1561,7 +1567,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": 1.68
+      "resultado": 1.6790294700602084
     },
     {
       "id": "LOG-005",
@@ -1573,7 +1579,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 2.38
+      "resultado": 2.384980647409141
     },
     {
       "id": "LOG-005",
@@ -1585,7 +1591,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 1.062
+      "resultado": 2.3595101852323483
     },
     {
       "id": "LOG-005",
@@ -1597,7 +1603,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.0354
+      "resultado": 1.3665336617405581
     },
     {
       "id": "LOG-005",
@@ -1609,7 +1615,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.0826
+      "resultado": 0.72396004378763
     },
     {
       "id": "LOG-005",
@@ -1885,7 +1891,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.0354
+      "resultado": 1.3665336617405581
     },
     {
       "id": "LOG-005",
@@ -1897,7 +1903,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.0826
+      "resultado": 0.72396004378763
     },
     {
       "id": "LOG-005",
@@ -2029,7 +2035,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.0354
+      "resultado": 1.3665336617405581
     },
     {
       "id": "LOG-005",
@@ -2041,7 +2047,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.0826
+      "resultado": 0.72396004378763
     },
     {
       "id": "LOG-005",
@@ -3776,6 +3782,6 @@
   "fonte": {
     "arquivo": "LOG-005 - Venda de Ativo.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-005%20-%20Venda%20de%20Ativo.xlsx?web=1",
-    "extraidoEm": "2026-11-11T17:15:37-03:00"
+    "extraidoEm": "2026-11-12T11:09:30-03:00"
   }
 }

@@ -1181,9 +1181,14 @@
       "data": "2026-11-05",
       "acoes": "Testes homologação relatório",
       "detalhe": "Liberado para testes de homologação a primeira etapa do relatorio"
+    },
+    {
+      "data": "2026-11-10",
+      "acoes": "MKT valindando informações ( Nathan)",
+      "detalhe": "MKT ( Nathan) validandando informações do multi com previsão para 12.11"
     }
   ],
-  "statusProjeto": "23/10 - Apurar Volumetria geral validada em tempo real.\n03/11 - Tirar filtro do e-commerce no Combo Multi.\n05/11- Liberado testes homolgação relatório primeira etapa\n10/11- Garantir usabilidade do dashboard\n30/11- Entregar o restante do Data Request.",
+  "statusProjeto": "11/11- MKT validando informações do Multi prazo de 01 dia para valdação \n10/11- Garantir usabilidade do dashboard\n05/11- Liberado testes homolgação relatório primeira etapa\n03/11 - Tirar filtro do e-commerce no Combo Multi.\n30/11- Entregar o restante do Data Request.",
   "financeiro": [
     {
       "id": "LOG-051",
@@ -3782,6 +3787,6 @@
   "fonte": {
     "arquivo": "LOG-051 - Relatório ComboMulti.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-051%20-%20Relat%C3%B3rio%20ComboMulti.xlsx?web=1",
-    "extraidoEm": "2026-11-11T17:18:08-03:00"
+    "extraidoEm": "2026-11-12T11:10:59-03:00"
   }
 }

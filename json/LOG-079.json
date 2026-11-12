@@ -1,6 +1,6 @@
 {
   "id": "LOG-079",
-  "projeto": "TMS Identity and Access Management",
+  "projeto": "TMS Criação do Segundo Fator de Autenticação",
   "area": "Transportes",
   "pontoFocal": "Wagner Alves",
   "inicio": "2026-10-15",
@@ -1237,7 +1237,7 @@
       "detalhe": "Ficou definido 02 níveis de aprovação, primeiro nível Gestor imediado do solicitnante e segundo nível, analístas do sistema. Inicalmente as validaçãoes serão manuais pela equipe de GA até finalização da automatização pelo IGA"
     }
   ],
-  "statusProjeto": "09/11/2026- Definido 02 níveis para aprovações no IGA. Incilmente será realizado manulmente pela equipe GA até aumatização do IGA \n05/10/2026- Abertura chamados para Inclusão da aplicação no CMDB (inventário de ativos) da Claro: Resp- Wagner\n05/10/2026- Mapeamento de Perfis x Owners- Responsável: Rogério e time Catalde\n05/10/2026- Criação dos grupos de aprovadores\n05/10/2026- Definições para o Ambiente de Homologação do PING",
+  "statusProjeto": "09/11/2026- Definido 02 níveis para aprovações no IGA. Incilmente será realizado manulmente pela equipe GA até aumatização do IGA. Pendente envio do escopo técnico dos perfis no TMS \n05/10/2026- Abertura chamados para Inclusão da aplicação no CMDB (inventário de ativos) da Claro: Resp- Wagner\n05/10/2026- Mapeamento de Perfis x Owners- Responsável: Rogério e time Catalde\n05/10/2026- Criação dos grupos de aprovadores\n05/10/2026- Definições para o Ambiente de Homologação do PING",
   "financeiro": [
     {
       "id": "LOG-079",
@@ -3836,6 +3836,6 @@
   "fonte": {
     "arquivo": "LOG-79 -TMS Criação do Segundo Fator de Autenticação.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-79%20-TMS%20Cria%C3%A7%C3%A3o%20do%20Segundo%20Fator%20de%20Autentica%C3%A7%C3%A3o.xlsx?web=1",
-    "extraidoEm": "2026-11-11T17:19:22-03:00"
+    "extraidoEm": "2026-11-12T11:11:55-03:00"
   }
 }

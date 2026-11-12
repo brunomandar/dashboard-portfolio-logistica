@@ -1248,7 +1248,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": 0.027666233247469762
+      "resultado": 0.0277
     },
     {
       "id": "LOG-073",
@@ -1260,7 +1260,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": 0.033932
+      "resultado": 0.0339
     },
     {
       "id": "LOG-073",
@@ -1272,7 +1272,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": 0.03182
+      "resultado": 0.0318
     },
     {
       "id": "LOG-073",
@@ -1284,7 +1284,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.036458
+      "resultado": 0.0365
     },
     {
       "id": "LOG-073",
@@ -1296,7 +1296,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.02862925498262339
+      "resultado": 0.0421
     },
     {
       "id": "LOG-073",
@@ -1308,7 +1308,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.02862925498262339
+      "resultado": 0.0286
     },
     {
       "id": "LOG-073",
@@ -1320,7 +1320,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.02862925498262339
+      "resultado": 0.0286
     },
     {
       "id": "LOG-073",
@@ -1536,7 +1536,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": 0.027666233247469762
+      "resultado": 0.0277
     },
     {
       "id": "LOG-073",
@@ -1548,7 +1548,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": 0.033932
+      "resultado": 0.0339
     },
     {
       "id": "LOG-073",
@@ -1560,7 +1560,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": 0.03182
+      "resultado": 0.0318
     },
     {
       "id": "LOG-073",
@@ -1572,7 +1572,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.036458
+      "resultado": 0.0365
     },
     {
       "id": "LOG-073",
@@ -1584,7 +1584,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.02862925498262339
+      "resultado": 0.0421
     },
     {
       "id": "LOG-073",
@@ -1596,7 +1596,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.02862925498262339
+      "resultado": 0.0286
     },
     {
       "id": "LOG-073",
@@ -1608,7 +1608,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.02862925498262339
+      "resultado": 0.0286
     },
     {
       "id": "LOG-073",
@@ -3775,6 +3775,6 @@
   "fonte": {
     "arquivo": "LOG-073 - Saving Compras  Bid Mctech - SP.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-073%20-%20Saving%20Compras%20%20Bid%20Mctech%20-%20SP.xlsx?web=1",
-    "extraidoEm": "2026-11-11T17:19:00-03:00"
+    "extraidoEm": "2026-11-12T11:11:34-03:00"
   }
 }

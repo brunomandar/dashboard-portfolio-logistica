@@ -1182,6 +1182,11 @@
       "data": "2026-10-26",
       "acoes": "-",
       "detalhe": "Importante: A incorporação do ganho deste projeto ao benefício reportado no BID de Engenharia está condicionada à conclusão da negociação pela área de Compras."
+    },
+    {
+      "data": "2026-11-11",
+      "acoes": "Ajuste de FCST",
+      "detalhe": "O desvio acumulado de set/26 e out/26  do projeto foi realocado para os últimos meses, visando à compensação do resultado previsto."
     }
   ],
   "statusProjeto": "08/09/2026: Concluído o complemento de rotas enviadas pela McTech\n30/08/2026: Identificada inconsistência em 10 rotas do material, as quais irão ser implementadas após revisão da McTech\n27/08/2026: Realizada subida e testes das tabelas McTech no sistema TMS",
@@ -1292,7 +1297,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.00479671
+      "resultado": 0.0299
     },
     {
       "id": "LOG-010.4",
@@ -1304,7 +1309,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.012657429999999935
+      "resultado": 0.043
     },
     {
       "id": "LOG-010.4",
@@ -1436,7 +1441,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.19453603
+      "resultado": 0.1694
     },
     {
       "id": "LOG-010.4",
@@ -1448,7 +1453,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.27384714
+      "resultado": 0.2435
     },
     {
       "id": "LOG-010.4",
@@ -1580,7 +1585,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.19933274
+      "resultado": 0.1993
     },
     {
       "id": "LOG-010.4",
@@ -1592,7 +1597,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.2865045699999999
+      "resultado": 0.2865
     },
     {
       "id": "LOG-010.4",
@@ -1724,7 +1729,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.045
+      "resultado": 0.0299
     },
     {
       "id": "LOG-010.4",
@@ -1736,7 +1741,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.045
+      "resultado": 0.043
     },
     {
       "id": "LOG-010.4",
@@ -1868,7 +1873,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.255
+      "resultado": 0.1694
     },
     {
       "id": "LOG-010.4",
@@ -1880,7 +1885,7 @@
       "tipoDespesa": "Capex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.255
+      "resultado": 0.2435
     },
     {
       "id": "LOG-010.4",
@@ -2012,7 +2017,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Set",
-      "resultado": 0.3
+      "resultado": 0.1993
     },
     {
       "id": "LOG-010.4",
@@ -2024,7 +2029,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.3
+      "resultado": 0.2865
     },
     {
       "id": "LOG-010.4",
@@ -2552,7 +2557,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.045
+      "resultado": 0.050715
     },
     {
       "id": "LOG-010.4",
@@ -2564,7 +2569,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.045
+      "resultado": 0.050715
     },
     {
       "id": "LOG-010.4",
@@ -2576,7 +2581,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.045
+      "resultado": 0.050715
     },
     {
       "id": "LOG-010.4",
@@ -2696,7 +2701,7 @@
       "tipoDespesa": "Capex",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.255
+      "resultado": 0.2874
     },
     {
       "id": "LOG-010.4",
@@ -2708,7 +2713,7 @@
       "tipoDespesa": "Capex",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.255
+      "resultado": 0.2874
     },
     {
       "id": "LOG-010.4",
@@ -2720,7 +2725,7 @@
       "tipoDespesa": "Capex",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.255
+      "resultado": 0.2874
     },
     {
       "id": "LOG-010.4",
@@ -2840,7 +2845,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.3
+      "resultado": 0.338115
     },
     {
       "id": "LOG-010.4",
@@ -2852,7 +2857,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.3
+      "resultado": 0.338115
     },
     {
       "id": "LOG-010.4",
@@ -2864,7 +2869,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.3
+      "resultado": 0.338115
     },
     {
       "id": "LOG-010.4",
@@ -2984,7 +2989,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.045
+      "resultado": 0.050715
     },
     {
       "id": "LOG-010.4",
@@ -2996,7 +3001,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.045
+      "resultado": 0.050715
     },
     {
       "id": "LOG-010.4",
@@ -3008,7 +3013,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.045
+      "resultado": 0.050715
     },
     {
       "id": "LOG-010.4",
@@ -3128,7 +3133,7 @@
       "tipoDespesa": "Capex",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.255
+      "resultado": 0.2874
     },
     {
       "id": "LOG-010.4",
@@ -3140,7 +3145,7 @@
       "tipoDespesa": "Capex",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.255
+      "resultado": 0.2874
     },
     {
       "id": "LOG-010.4",
@@ -3152,7 +3157,7 @@
       "tipoDespesa": "Capex",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.255
+      "resultado": 0.2874
     },
     {
       "id": "LOG-010.4",
@@ -3272,7 +3277,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.3
+      "resultado": 0.338115
     },
     {
       "id": "LOG-010.4",
@@ -3284,7 +3289,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.3
+      "resultado": 0.338115
     },
     {
       "id": "LOG-010.4",
@@ -3296,7 +3301,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.3
+      "resultado": 0.338115
     },
     {
       "id": "LOG-010.4",
@@ -3783,6 +3788,6 @@
   "fonte": {
     "arquivo": "LOG-010.4 - Top Rotas  - Mctech.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.4%20-%20Top%20Rotas%20%20-%20Mctech.xlsx?web=1",
-    "extraidoEm": "2026-11-11T17:16:43-03:00"
+    "extraidoEm": "2026-11-12T11:10:05-03:00"
   }
 }
