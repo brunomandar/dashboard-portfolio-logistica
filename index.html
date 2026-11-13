@@ -559,6 +559,88 @@ body.project-open .topbar{display:none!important}
 .mf-empty{padding:8px;font-size:12px;color:#7f7f7f}
 .global-filter .mf-opt.mf-disabled{color:#b5b5b5!important;cursor:not-allowed}
 .global-filter .mf-opt{font-size:12px!important;line-height:1.2!important;font-weight:600!important;color:#1f1f1f!important;text-transform:none!important;letter-spacing:0!important}
+
+/* Sem barra de rolagem horizontal na página (o hero usa 100vw, que inclui a barra vertical no Windows) */
+html{overflow-x:hidden}
+body{overflow-x:clip;max-width:100%}
+/* Financeiro DGP: KPIs e filtros se ajustam à largura disponível */
+body #dgpView .x-line{grid-template-columns:minmax(0,1fr) minmax(0,3fr)}
+body #dgpView .x-counts{grid-template-columns:repeat(3,minmax(0,1fr))}
+body #dgpView .x-counts .kpi-label{overflow-wrap:anywhere}
+body #dgpView .x-filters{grid-template-columns:repeat(5,minmax(0,1fr)) minmax(0,2.2fr)}
+body #dgpView .x-fin{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:1199px){body #dgpView .x-line{grid-template-columns:minmax(0,1fr)}body #dgpView .x-filters{grid-template-columns:repeat(3,minmax(0,1fr))}body #dgpView .x-fin{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){body #dgpView .x-filters,body #dgpView .x-fin,body #dgpView .x-counts{grid-template-columns:minmax(0,1fr)}}
+
+/* Layout fluido: conteúdo ocupa a tela até 1760px; em telas maiores fica centralizado e alinhado à barra de filtros */
+body .content{max-width:1760px}
+@media(min-width:1601px){
+  body .hero{padding-left:max(54px,calc((100vw - 1684px)/2 + 38px));padding-right:max(54px,calc((100vw - 1684px)/2 + 38px))}
+  body .topbar{padding-left:max(28px,calc((100vw - 1760px)/2 + 38px))!important;padding-right:max(28px,calc((100vw - 1760px)/2 + 38px))!important}
+}
+
+/* Financeiro DGP: legenda clicável, cor no tooltip e filtros alinhados */
+#dgpView .x-legend-toggle span{cursor:pointer;user-select:none;padding:2px 4px;border-radius:6px}
+#dgpView .x-legend-toggle span:hover{background:#f5f6f8}
+#dgpView .x-legend-toggle span.off{color:#9aa0a6;text-decoration:line-through}
+#dgpView .x-legend-toggle span.off i{opacity:.35}
+#dgpTip .tip-sw{display:inline-block;width:10px;height:10px;border:1px solid #fff;margin-right:6px;vertical-align:-1px}
+body #dgpView .x-line{align-items:end}
+body #dgpView .x-filters{position:relative;padding-top:28px;align-items:stretch}
+body #dgpView .f-project{position:static;padding-top:0;display:flex}
+body #dgpView .f-project>.f-card{flex:1}
+body #dgpView .f-card{display:flex;flex-direction:column;justify-content:flex-start;min-height:76px}
+body #dgpView .f-tags:empty{display:none}
+body #dgpView .x-counts .kpi{min-height:76px}
+
+/* Financeiro DGP: Visão financeira mais equilibrada */
+body #dgpView .x-row{grid-template-columns:minmax(0,.95fr) minmax(0,1fr) minmax(0,1.3fr);align-items:stretch}
+body #dgpView .x-row>.x-card{display:flex;flex-direction:column}
+body #dgpView #dgpArea{flex:1;display:flex;align-items:center;justify-content:center;padding:6px 4px 0}
+body #dgpView #dgpArea svg{width:100%;max-width:560px}
+@media(max-width:1440px){body #dgpView .area-tbl th,body #dgpView .area-tbl td{padding:6px 5px;font-size:11.5px}body #dgpView .area-tbl th{font-size:10px;letter-spacing:0}}
+body #dgpView .area-tbl{width:100%}
+body #dgpView .area-tbl th,body #dgpView .area-tbl td{padding:7px 8px;text-align:center}
+body #dgpView .area-tbl th:first-child,body #dgpView .area-tbl td:first-child{text-align:left}
+body #dgpView .area-tbl tbody tr:nth-child(even) td{background:#fafafa}
+@media(max-width:1199px){body #dgpView .x-row{grid-template-columns:minmax(0,1fr)}}
+
+/* Financeiro DGP: botão Exportar, cards financeiros sem cortes e tabela por área sem rolagem */
+body #dgpView .x-export-btn{padding:11px 26px;font-size:14px;min-width:150px;border-radius:11px}
+body #dgpView .x-drop{top:50px}
+body #dgpView .x-fin .kpi{min-height:0;height:auto;padding:12px 12px 14px}
+body #dgpView .x-fin .kpi-top{align-items:flex-start;flex-wrap:wrap;row-gap:6px}
+body #dgpView .x-fin .kpi-label{font-size:11px;line-height:1.25;flex:1 1 120px;min-width:0}
+body #dgpView .x-fin .m-grid{gap:5px;margin-top:10px}
+body #dgpView .x-fin .metric{padding:7px 5px 8px;display:flex;flex-direction:column;gap:3px}
+body #dgpView .x-fin .m-grid:not(.three){grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1.2fr)}
+body #dgpView .x-fin .metric b{font-size:clamp(10px,.88vw,15px);white-space:nowrap;overflow:visible;text-overflow:clip;letter-spacing:-.2px}
+body #dgpView .x-fin .metric span{font-size:9px;line-height:1.2;white-space:normal;overflow:visible;text-overflow:clip;word-break:normal;overflow-wrap:anywhere}
+body #dgpView .area-tbl-wrap{overflow:hidden!important}
+body #dgpView .area-tbl{table-layout:fixed;width:100%;min-width:0!important}
+body #dgpView .area-tbl th,body #dgpView .area-tbl td{white-space:normal!important;overflow-wrap:anywhere;padding:6px 4px!important;font-size:clamp(10px,.8vw,12px)!important;text-align:center}
+body #dgpView .area-tbl th{font-size:clamp(8.5px,.62vw,10px)!important;line-height:1.2;letter-spacing:0!important;vertical-align:middle}
+body #dgpView .area-tbl th{overflow-wrap:normal!important;word-break:keep-all}
+body #dgpView .area-tbl th:nth-child(2),body #dgpView .area-tbl th:nth-child(3){width:12%}
+body #dgpView .area-tbl th:nth-child(4),body #dgpView .area-tbl th:nth-child(5){width:15%}
+body #dgpView .area-tbl th:nth-child(6){width:20%}
+body #dgpView .area-tbl th:first-child,body #dgpView .area-tbl td:first-child{width:auto;text-align:left;padding-left:8px!important}
+
+/* Projeto individual: Histórico de atualizações ocupando bem o espaço do card */
+#projectView .two-col>.card.timeline{display:flex!important;flex-direction:column;padding:18px 20px!important;gap:10px}
+#projectView .two-col>.card.timeline>.chart-title{margin:0 0 4px!important;font-size:16px!important}
+#projectView .two-col>.card.timeline .time-item{flex:1 0 auto;min-height:0!important;grid-template-columns:62px 18px minmax(0,1fr)!important;gap:12px!important;align-items:stretch!important;background:#fafafa;border:1px solid #eef0f3;border-radius:12px;padding:12px 14px 12px 8px}
+#projectView .two-col>.card.timeline .time-date{font-size:12px!important;font-weight:800;color:#c00000;text-align:center;padding-top:2px!important;white-space:normal!important;line-height:1.25!important}
+#projectView .two-col>.card.timeline .time-line:before{top:18px;bottom:-4px}
+#projectView .two-col>.card.timeline .time-item:last-of-type .time-line:before{display:none}
+#projectView .two-col>.card.timeline .time-copy{padding-bottom:0!important;display:flex;flex-direction:column;justify-content:flex-start}
+#projectView .two-col>.card.timeline .time-copy b{font-size:13.5px!important;line-height:1.3!important}
+#projectView .two-col>.card.timeline .time-copy p{font-size:12.5px!important;line-height:1.45!important;color:#4b5563!important;margin:5px 0 0!important}
+#projectView .two-col>.card.timeline .timeline-risk{margin:0!important;flex:0 0 auto}
+#projectView .two-col>.card.timeline>.chart-title{flex:0 0 auto}
+/* O card do histórico acompanha a altura do gráfico ao lado e rola quando o conteúdo for maior */
+#projectView .two-col>.card.timeline{contain:size;align-self:stretch;overflow-y:auto!important}
+#projectView .two-col>.card.timeline .empty-state{flex:1;display:flex;align-items:center;justify-content:center}
 </style>
 </head>
 <body>
@@ -1179,7 +1261,7 @@ body.project-open .topbar{display:none!important}
   }
   const fmt = v => Number(v || 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   const pct = v => Number.isFinite(v) ? v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '%' : 'N/D';
-  const normalizeGerencia = value => /^(analytics|dessistemico|desenvolvimentosistemico|intlogistica)$/.test(norm(value)) ? 'Int. Logística' : value;
+  const normalizeGerencia = value => /^(analytics|dessistemico|desenvolvimentosistemico|intlogistica)$/.test(norm(value)) ? 'Int. Logística' : norm(value) === 'transportes' ? 'Transporte' : value;
 
   /* Paleta Claro do dashboard */
   const C = { red: '#df3232', dark: '#c00000', brown: '#530b03', yellow: '#ffc000', orange: '#ed7d31', gray: '#7f7f7f', green: '#2e7d32', ink: '#1f1f1f' };
@@ -1209,11 +1291,12 @@ body.project-open .topbar{display:none!important}
       const hasSplit = recs.some(r => /^(opex|capex)$/.test(norm(r.tipoDespesa)));
       const tipoUnico = arrayOf(p.tipos).length === 1 ? clean(p.tipos[0]).toUpperCase() : '';
       let used = false;
+      // Iniciativa SEMPRE da One_Page do projeto (mesma fonte da Home); Consultoria/DGP entra como DGP
+      const iniOne = norm(p.iniciativa);
+      const iniciativa = iniOne === 'consultoriadgp' || iniOne === 'dgp' ? 'DGP' : iniOne === 'icg' ? 'ICG' : '';
+      if (!iniciativa) return;                                            // escopo: DGP e ICG
+      const startRows = rows.length;
       recs.forEach(r => {
-        // Consultoria/DGP (na linha ou na One_Page do projeto) entra como DGP
-        const isConsDgp = v => norm(v) === 'consultoriadgp';
-        const iniciativa = isConsDgp(r.iniciativa) || isConsDgp(p.iniciativa) ? 'DGP' : clean(r.iniciativa || p.iniciativa).toUpperCase();
-        if (!['DGP', 'ICG'].includes(iniciativa)) return;                 // escopo: DGP e ICG
         let tipo = clean(r.tipoDespesa).toUpperCase();
         if (hasSplit) { if (!['OPEX', 'CAPEX'].includes(tipo)) return; }   // não soma a linha "Total"
         else tipo = tipoUnico || tipo;
@@ -1234,6 +1317,36 @@ body.project-open .topbar{display:none!important}
         if (seen.has(key)) return;                                         // remove duplicidade exata
         seen.add(key); rows.push(obj); used = true;
       });
+      // Tipo de despesa do projeto: só OPEX com valor -> OPEX; só CAPEX com valor -> CAPEX; os dois com valor -> ambos.
+      // Exceção: "Massificação ESIM" é OPEX (sem captura de ganhos prevista).
+      if (used) {
+        const own = rows.slice(startRows);
+        const tot = t => own.filter(x => x.tipo === t).reduce((acc, x) => acc + x.resultado, 0);
+        const opexV = tot('OPEX'), capexV = tot('CAPEX');
+        const isEsim = norm(p.projeto).includes('massificacaoesim');
+        let keep = null;
+        if (isEsim) keep = 'OPEX';
+        else if (opexV > 0 && capexV === 0) keep = 'OPEX';
+        else if (capexV > 0 && opexV === 0) keep = 'CAPEX';
+        if (keep) {
+          const other = keep === 'OPEX' ? 'CAPEX' : 'OPEX';
+          const kept = own.filter(x => x.tipo !== other);
+          if (!kept.length) own.forEach(x => { x.tipo = keep; });
+          rows.splice(startRows, own.length, ...(kept.length ? kept : own));
+        }
+      }
+      // Projeto DGP/ICG sem lançamentos na Base_Financ.: entra na contagem com valores zerados
+      if (!used) {
+        const stage = clean(p.status).toUpperCase();
+        rows.push({
+          id: clean(p.id), iniciativa,
+          area: normalizeGerencia(clean(p.area)) || 'Não informado',
+          projeto: clean(p.projeto) || 'Não informado',
+          status: '', item: 'Real', tipo: tipoUnico || 'N/D', ano: new Date().getFullYear(), mes: MES[0],
+          resultado: 0, fase: stage || 'N/D'
+        });
+        used = true;
+      }
       if (used) {
         const f = p.fca && typeof p.fca === 'object' ? p.fca : {};
         fca.set(clean(p.id), {
@@ -1467,7 +1580,7 @@ body.dgp-open #projectView{display:none!important}
       const t = tipEl();
       if (!el || !view.contains(el)) { t.style.display = 'none'; return; }
       const [title, ...lines] = String(el.getAttribute('data-tip')).split('\n');
-      t.innerHTML = `<b>${esc(title)}</b>${lines.map(esc).join('<br>')}`;
+      t.innerHTML = `<b>${esc(title)}</b>${lines.map(line => { const m = line.match(/^§([^§]+)§(.*)$/); return m ? `<span class="tip-sw" style="background:${esc(m[1])}"></span>${esc(m[2])}` : esc(line); }).join('<br>')}`;
       t.style.display = 'block';
       const w = t.offsetWidth, h = t.offsetHeight;
       let x = e.clientX + 14, y = e.clientY - h - 12;
@@ -1498,6 +1611,7 @@ body.dgp-open #projectView{display:none!important}
     return d;
   }
 
+  const hiddenLine = new Set(); // séries ocultas no gráfico de linhas (clique na legenda)
   function lineChart(data) {
     const now = new Date(), cy = now.getFullYear(), cm = now.getMonth();
     const monthly = MES.map((m, i) => {
@@ -1506,25 +1620,26 @@ body.dgp-open #projectView{display:none!important}
       return { m, ...base, real: realRows.length ? vals(realRows).real : null };
     });
     const W = 1200, H = 340, L = 44, R = 18, T = 30, B = 30, pw = W - L - R, ph = H - T - B;
-    const all = monthly.flatMap(x => [x.budget, x.fcst, x.real]).filter(Number.isFinite);
+    const series = [['Meta', 'budget', F.meta], ['FCST', 'fcst', F.fcst], ['Realizado', 'real', F.real]];
+    const visible = series.filter(([, key]) => !hiddenLine.has(key));
+    const all = monthly.flatMap(x => visible.map(([, key]) => x[key])).filter(Number.isFinite);
     const sc = niceScale(Math.max(0.0001, ...all) * 1.08), max = sc.top;
     const step = pw / 12, x = i => L + step * i + step / 2, y = v => T + ph - (v / max) * ph;
     let grid = '';
     for (let v = 0; v <= max + 1e-9; v += sc.step) { const yy = y(v); grid += `<line x1="${L}" x2="${W - R}" y1="${yy.toFixed(1)}" y2="${yy.toFixed(1)}" stroke="#eceef1"/><text x="${L - 7}" y="${(yy + 4).toFixed(1)}" text-anchor="end" font-size="12" fill="#666">${v.toLocaleString('pt-BR', { maximumFractionDigits: sc.step < 1 ? 1 : 0 })}</text>`; }
-    const series = [['Meta', 'budget', F.meta], ['FCST', 'fcst', F.fcst], ['Realizado', 'real', F.real]];
-    const lines = series.map(([label, key, color]) => {
+    const lines = visible.map(([label, key, color]) => {
       const pts = monthly.map((v, i) => Number.isFinite(v[key]) ? { x: x(i), y: y(v[key]), v: v[key] } : null);
       return `<path d="${smoothPath(pts)}" fill="none" stroke="${color}" stroke-width="3"/>` +
         pts.map(p => p ? `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="5" fill="${color}"/>` : '').join('');
     }).join('');
-    const labels = series.map(([, key, color]) => monthly.map((v, i) => Number.isFinite(v[key]) ? `<text x="${x(i).toFixed(1)}" y="${(y(v[key]) - 10).toFixed(1)}" text-anchor="middle" font-size="12.5" font-weight="700" fill="#333" stroke="#fff" stroke-width="3" paint-order="stroke">${fmt(v[key])}</text>` : '').join('')).join('');
+    const labels = visible.map(([, key, color]) => monthly.map((v, i) => Number.isFinite(v[key]) ? `<text x="${x(i).toFixed(1)}" y="${(y(v[key]) - 10).toFixed(1)}" text-anchor="middle" font-size="12.5" font-weight="700" fill="#333" stroke="#fff" stroke-width="3" paint-order="stroke">${fmt(v[key])}</text>` : '').join('')).join('');
     const axis = MES.map((m, i) => `<text x="${x(i).toFixed(1)}" y="${H - 8}" text-anchor="middle" font-size="13" fill="#555">${m}</text>`).join('');
     const hovers = monthly.map((v, i) => {
-      const lines2 = [`Mês: ${v.m}`, `Meta: ${fmt(v.budget)}`, `FCST: ${fmt(v.fcst)}`, Number.isFinite(v.real) ? `Realizado: ${fmt(v.real)}` : 'Realizado: Sem resultado fechado'];
-      if (Number.isFinite(v.real)) { const d = v.real - v.fcst; lines2.push(`Diferença Absoluta: ${fmt(d)}`, `Diferença Percentual: ${pct(v.fcst ? d / v.fcst * 100 : NaN)}`); }
+      const lines2 = [`Mês: ${v.m}`, ...visible.map(([label, key, color]) => `§${color}§${label}: ${key === 'real' && !Number.isFinite(v.real) ? 'Sem resultado fechado' : fmt(v[key])}`)];
+      if (Number.isFinite(v.real) && !hiddenLine.has('real') && !hiddenLine.has('fcst')) { const d = v.real - v.fcst; lines2.push(`Diferença Absoluta: ${fmt(d)}`, `Diferença Percentual: ${pct(v.fcst ? d / v.fcst * 100 : NaN)}`); }
       return `<rect x="${(L + step * i).toFixed(1)}" y="${T}" width="${step.toFixed(1)}" height="${ph}" fill="transparent" data-tip="${esc(lines2.join('\n'))}"/>`;
     }).join('');
-    const legend = `<div class="x-legend">${series.map(([l, , c]) => `<span><i style="background:${c}"></i>${l}</span>`).join('')}</div>`;
+    const legend = `<div class="x-legend x-legend-toggle">${series.map(([l, key, c]) => `<span role="button" tabindex="0" data-series="${key}" class="${hiddenLine.has(key) ? 'off' : ''}" title="Clique para ${hiddenLine.has(key) ? 'mostrar' : 'ocultar'}"><i style="background:${c}"></i>${l}</span>`).join('')}</div>`;
     return `<svg class="x-svg" viewBox="0 0 ${W} ${H}" role="img">${grid}<line x1="${L}" x2="${W - R}" y1="${T + ph}" y2="${T + ph}" stroke="#cfd3d8"/>${lines}${labels}${axis}${hovers}</svg>${legend}`;
   }
 
@@ -1554,15 +1669,16 @@ body.dgp-open #projectView{display:none!important}
   function areaChart(data) {
     const areas = aggregate(data, ['area']).map(g => ({ area: g.area, ...vals(g.rows) })).sort((a, b) => b.real - a.real);
     if (!areas.length) return '<div class="empty">Sem dados</div>';
-    const W = 480, rowH = 46, T = 10, B = 26, L = 108, R = 54, H = T + B + rowH * areas.length, pw = W - L - R;
-    const sc = niceScale(Math.max(0.0001, ...areas.map(a => a.real)) * 1.12, 6), max = sc.top;
+    const longest = Math.max(...areas.map(a => String(a.area).length));
+    const W = 460, rowH = 38, T = 8, B = 28, L = Math.min(150, 18 + longest * 7.4), R = 58, H = T + B + rowH * areas.length, pw = W - L - R;
+    const sc = niceScale(Math.max(0.0001, ...areas.map(a => a.real)) * 1.05, 5), max = sc.top;
     const xx = v => L + (v / max) * pw;
     let grid = '';
-    for (let v = 0; v <= max + 1e-9; v += sc.step) { grid += `<line x1="${xx(v).toFixed(1)}" x2="${xx(v).toFixed(1)}" y1="${T}" y2="${H - B}" stroke="#eceef1"/><text x="${xx(v).toFixed(1)}" y="${H - 8}" text-anchor="middle" font-size="11" fill="#666">${v.toLocaleString('pt-BR', { maximumFractionDigits: sc.step < 1 ? 1 : 0 })}</text>`; }
+    for (let v = 0; v <= max + 1e-9; v += sc.step) { grid += `<line x1="${xx(v).toFixed(1)}" x2="${xx(v).toFixed(1)}" y1="${T}" y2="${H - B}" stroke="#eceef1"/><text x="${xx(v).toFixed(1)}" y="${H - 9}" text-anchor="middle" font-size="12" fill="#666">${v.toLocaleString('pt-BR', { maximumFractionDigits: sc.step < 1 ? 1 : 0 })}</text>`; }
     const bars = areas.map((a, i) => {
-      const yy = T + rowH * i + rowH * .18, h = rowH * .64, d = a.real - a.fcst;
+      const yy = T + rowH * i + rowH * .2, h = rowH * .6, d = a.real - a.fcst;
       const tip = `Área: ${a.area}\nRealizado: ${fmt(a.real)}\nMeta: ${fmt(a.budget)}\nFCST: ${fmt(a.fcst)}\nDiferença Absoluta: ${fmt(d)}\nDiferença Percentual: ${pct(a.fcst ? d / a.fcst * 100 : NaN)}`;
-      return `<text x="${L - 8}" y="${(yy + h / 2 + 4).toFixed(1)}" text-anchor="end" font-size="12" fill="#555">${esc(a.area)}</text><rect x="${L}" y="${yy.toFixed(1)}" width="${Math.max(0, xx(a.real) - L).toFixed(1)}" height="${h.toFixed(1)}" rx="6" fill="${C.dark}" data-tip="${esc(tip)}"/><text x="${(xx(a.real) + 6).toFixed(1)}" y="${(yy + h / 2 + 4).toFixed(1)}" font-size="12" font-weight="700" fill="#333">${fmt(a.real)}</text>`;
+      return `<text x="${L - 10}" y="${(yy + h / 2 + 4.5).toFixed(1)}" text-anchor="end" font-size="13" font-weight="600" fill="#444">${esc(a.area)}</text><rect x="${L}" y="${yy.toFixed(1)}" width="${Math.max(2, xx(a.real) - L).toFixed(1)}" height="${h.toFixed(1)}" rx="5" fill="${C.dark}" data-tip="${esc(tip)}"/><text x="${(xx(a.real) + 6).toFixed(1)}" y="${(yy + h / 2 + 4.5).toFixed(1)}" font-size="13" font-weight="800" fill="#333">${fmt(a.real)}</text>`;
     }).join('');
     return `<svg class="x-svg" viewBox="0 0 ${W} ${H}" role="img">${grid}${bars}</svg>`;
   }
@@ -1755,9 +1871,9 @@ body.dgp-open #projectView{display:none!important}
     RAW = data.rows; FCA = data.fca;
     const projects = uniq(RAW.map(x => x.id)).length, areas = uniq(RAW.map(x => x.area)).length;
     const rl = rollingLabel();
-    view.innerHTML = `${topbar('<button class="dgp-btn" type="button" id="dgpLock" title="Bloquear novamente">🔒 Bloquear</button>')}
+    view.innerHTML = `${topbar()}
       <header class="x-head"><div><h1>Dashboard Financeiro Projetos de Logística</h1><div class="sub">Visão financeira e gerencial do portfólio | valores em milhões</div><div class="meta"><span><b>Fonte:</b> JSONs do portfólio (Base_Financ.)</span><span><b>Última Atualização:</b> ${esc(lastUpdate())}</span></div></div></header>
-      <section class="x-card x-import"><div class="x-import-main"><div><div class="x-import-title">Base de Projetos DGP</div><div class="x-import-sub">Dados carregados automaticamente dos arquivos JSON gerados a partir da aba Base_Financ. de cada projeto. Para atualizar, rode o gerar_jsons.py e clique em Atualizar Relatórios.</div></div><div class="x-actions"><button type="button" class="dgp-btn red" id="dgpRefresh">🔄 Atualizar Relatórios</button><button type="button" class="dgp-btn" id="dgpExportBtn">Exportar ▾</button><div class="x-drop" id="dgpExportMenu"><button type="button" id="dgpExpCsv">CSV filtrado</button><button type="button" id="dgpExpXls">Excel filtrado</button></div></div></div>
+      <section class="x-card x-import"><div class="x-import-main"><div><div class="x-import-title">Base de Projetos DGP</div><div class="x-import-sub">Dados carregados automaticamente dos arquivos JSON gerados a partir da aba Base_Financ. de cada projeto.</div></div><div class="x-actions"><button type="button" class="dgp-btn x-export-btn" id="dgpExportBtn">Exportar ▾</button><div class="x-drop" id="dgpExportMenu"><button type="button" id="dgpExpCsv">CSV filtrado</button><button type="button" id="dgpExpXls">Excel filtrado</button></div></div></div>
         <div class="x-progress"><i style="width:${RAW.length ? 100 : 0}%">${RAW.length ? '100%' : '0%'}</i></div>
         <div class="x-load"><span>Status: <b>${RAW.length ? 'Concluído' : 'Sem dados'}</b></span><span>Linhas: <b>${RAW.length.toLocaleString('pt-BR')}</b></span><span>Colunas: <b>${BASE_HEADS.length}</b></span><span>Registros: <b>${RAW.length.toLocaleString('pt-BR')}</b></span><span>Projetos únicos: <b>${projects}</b></span><span>Áreas: <b>${areas}</b></span></div>
       </section>
@@ -1768,7 +1884,7 @@ body.dgp-open #projectView{display:none!important}
       <div class="x-section">Evolução financeira</div>
       <section class="x-card chart-card"><div><b class="chart-title">Meta, FCST e Realizado por mês</b><div class="legend-note">Passe o mouse para visualizar a variação detalhada</div></div><div id="dgpLine"></div></section>
       <div class="x-section">Visão financeira</div>
-      <section class="x-row"><div class="x-card chart-card"><b>Quantidade de Projetos por Área e Tipo de Despesa</b><div id="dgpExpense"></div></div><div class="x-card chart-card"><b>Resultado financeiro por área</b><div id="dgpArea"></div></div><div class="x-card chart-card"><b>Tabela resumida por área</b><div class="tbl-wrap" style="margin-top:9px;max-height:260px"><table class="area-tbl"><thead><tr><th>Área</th><th>Meta</th><th>FCST</th><th>Realizado</th><th>Delta vs Meta</th><th>% Atingimento</th></tr></thead><tbody id="dgpAreaBody"></tbody><tfoot id="dgpAreaFoot"></tfoot></table></div></div></section>
+      <section class="x-row"><div class="x-card chart-card"><b>Quantidade de Projetos por Área e Tipo de Despesa</b><div id="dgpExpense"></div></div><div class="x-card chart-card"><b>Resultado financeiro por área</b><div id="dgpArea"></div></div><div class="x-card chart-card"><b>Tabela resumida por área</b><div class="tbl-wrap area-tbl-wrap" style="margin-top:9px"><table class="area-tbl"><thead><tr><th>Área</th><th>Meta</th><th>FCST</th><th>Realizado</th><th>Delta vs Meta</th><th>% Atingimento</th></tr></thead><tbody id="dgpAreaBody"></tbody><tfoot id="dgpAreaFoot"></tfoot></table></div></div></section>
       <div class="x-section">Rankings de projetos</div>
       <section class="x-row3"><div class="x-card rank-card"><div class="rank-title pos">▲ Top 5 acima da meta</div><div id="dgpRankAbove"></div></div><div class="x-card rank-card"><div class="rank-title neg">▼ Top 5 abaixo da meta</div><div id="dgpRankBelow"></div></div><div class="x-card rank-card rank-fin"><div class="rank-title">★ Top 5 por resultado financeiro</div><div id="dgpRankResult"></div></div></section>
       <div class="x-section">Detalhamento analítico</div>
@@ -1781,12 +1897,17 @@ body.dgp-open #projectView{display:none!important}
 
     bindTips(view);
     initFilters(view);
-    $('#dgpLock').onclick = () => { setUnlocked(false); renderLocked(); };
-    $('#dgpRefresh').onclick = () => { const b = $('#btnAtualizarDashboard'); if (b) { $('#dgpRefresh').textContent = '🔄 Atualizando…'; b.click(); } else renderModule(); };
     $('#dgpExportBtn').onclick = e => { e.stopPropagation(); $('#dgpExportMenu').classList.toggle('open'); };
     $('#dgpExpCsv').onclick = exportBaseCsv;
     $('#dgpExpXls').onclick = exportBaseExcel;
     $('#dgpExportDetail').onclick = exportDetailCsv;
+    $('#dgpLine').onclick = e => {
+      const item = e.target.closest('[data-series]');
+      if (!item) return;
+      const key = item.dataset.series;
+      hiddenLine.has(key) ? hiddenLine.delete(key) : hiddenLine.add(key);
+      $('#dgpLine').innerHTML = lineChart(filtered());
+    };
     $('#dgpSearch').oninput = () => { page = 1; renderDetailPage(); };
     view.querySelectorAll('#dgpDetailTable th[data-key]').forEach(th => th.onclick = () => { const k = th.dataset.key; sortDir = sortKey === k ? -sortDir : 1; sortKey = k; renderDetailPage(); });
     const modal = $('#dgpFcaModal');
@@ -1814,7 +1935,7 @@ body.dgp-open #projectView{display:none!important}
     document.body.classList.add('project-open', 'dgp-open');
     view.classList.add('show');
     const crumb = $('#crumbName'); if (crumb) crumb.textContent = 'Financeiro DGP';
-    isUnlocked() ? renderModule() : renderLocked();
+    renderModule(); // acesso liberado (sem senha)
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -1838,7 +1959,7 @@ body.dgp-open #projectView{display:none!important}
   });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') $('#dgpFcaModal')?.classList.remove('show'); });
   // Recarrega a tela quando o botão "Atualizar dados" terminar (mantém filtros)
-  const reRender = () => { if (document.body.classList.contains('dgp-open') && isUnlocked()) renderModule(); };
+  const reRender = () => { if (document.body.classList.contains('dgp-open')) renderModule(); };
   document.addEventListener('dashboardDataLoaded', reRender);
   const refreshBtn = document.getElementById('btnAtualizarDashboard');
   if (refreshBtn) new MutationObserver(() => { if (!refreshBtn.disabled && !refreshBtn.hasAttribute('aria-busy')) reRender(); })
