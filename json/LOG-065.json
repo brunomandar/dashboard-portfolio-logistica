@@ -1179,6 +1179,11 @@
   ],
   "historico": [
     {
+      "data": "2026-11-11",
+      "acoes": "Enviar base de casos reais do monitor para Andreia\nRastrear a origem de cada ocorrência via CNPJ, identificando em qual sistema a inconsistência foi criada ou mantida.\nComparar os dados da origem com os dados corrigidos no SAP para identificar divergências.\nValidar se as travas do CPC deveriam ter impedido a inconsistência nos casos identificados.",
+      "detalhe": "A reunião teve como foco entender a origem dos erros cadastrais que fazem notas fiscais ficarem retidas no monitor do SAP, principalmente relacionados à Inscrição Estadual. Foi concluído que ainda não é possível afirmar em qual sistema a inconsistência nasce (BVC, CPC, Solar, Radar ou integrações), sendo necessário analisar casos reais para rastrear o fluxo completo do cadastro. O principal risco identificado é o retrabalho recorrente, onde a NF é corrigida no SAP, mas o dado incorreto retorna da origem e o problema reaparece."
+    },
+    {
       "data": "2026-11-06",
       "acoes": "Verificar o que mudou de input de sistema que está gerando o novo erro\nAlimentar a matriz de erros com as informações\nLevantar evidências dos erros relacionados ao BVC\nPegar a volumetria dos erros\nEscalonar os casos criticos para equipe anti-fraude",
       "detalhe": "Novo erro identificado 999\nNão foi definido a matriz de erro ainda, ainda precisa preencher com as informaçoes, principalmente as ações de logistica\nChamar equipe que trata a base de dados BVC para reunião e verificar os impactos que ocorrem devido a base cadastral\nTime de cadastro ficou de passar a volumetria dos erros que eles tratam\nLevantado ponto de possivel detecção de fraude, como é tratado esse assunto ? precisa de um fluxo"
@@ -1249,7 +1254,7 @@
       "detalhe": "Foi identificado que o canal PME não possui uma régua padronizada de comunicação ativa com os clientes, sendo o vendedor o principal ponto de contato durante o acompanhamento dos pedidos. Também foi constatado que as regionais utilizam diferentes ferramentas para consulta e acompanhamento operacional, principalmente SAP e TMS. Foi apresentada uma iniciativa em estudo para ampliar a comunicação direta com os clientes por meio do WhatsApp, permitindo consulta de rastreabilidade e status dos pedidos sem necessidade de acionamento do vendedor ou dos canais tradicionais de atendimento."
     }
   ],
-  "statusProjeto": "06/11/2026: Reuniao de alinhamento das ações de cada erro da matriz. Dia 11/11 teremos reunião com time da base BVC  para verificar possíveis inconsistências de cadastro e atualização de bases.\n27/10/2026: Reunião com o time de Cadastro, enviado Matriz de erro para validação\n26/10/2026: Reunião com Ivete para entender o fluxo PME pela Logistica\n19/10/2026: Criado procedimento pela equipe de Processos\n08/10/2026: Revisado os fluxos existentes e identificado que falta os procedimentos das etapas e os reponsáveis\n01/10/2026: Definidos pontos focais por parte de Logistica e PME. Inicio de mapeamento das atividades agendado para 08/10.\n17/09/2026: diagnóstico inicial e análise da volumetria concluídos. As rejeições SEFAZ representaram menos de 1% das vendas analisadas, não justificando naquele momento um desenvolvimento sistêmico específico. O projeto segue com o mapeamento dos fluxos, definição das responsabilidades e acompanhamento do card nº 1446811072.",
+  "statusProjeto": "11/11/2026: Identificada a necessidade de atuar na origem dos dados cadastrais, pois correções apenas no SAP não eliminam as recorrências de erros de Inscrição Estadual e emissão de NF.\n06/11/2026: Reuniao de alinhamento das ações de cada erro da matriz. Dia 11/11 teremos reunião com time da base BVC  para verificar possíveis inconsistências de cadastro e atualização de bases.\n27/10/2026: Reunião com o time de Cadastro, enviado Matriz de erro para validação\n26/10/2026: Reunião com Ivete para entender o fluxo PME pela Logistica\n19/10/2026: Criado procedimento pela equipe de Processos\n08/10/2026: Revisado os fluxos existentes e identificado que falta os procedimentos das etapas e os reponsáveis\n01/10/2026: Definidos pontos focais por parte de Logistica e PME. Inicio de mapeamento das atividades agendado para 08/10.\n17/09/2026: diagnóstico inicial e análise da volumetria concluídos. As rejeições SEFAZ representaram menos de 1% das vendas analisadas, não justificando naquele momento um desenvolvimento sistêmico específico. O projeto segue com o mapeamento dos fluxos, definição das responsabilidades e acompanhamento do card nº 1446811072.",
   "financeiro": [
     {
       "id": "LOG-065",
@@ -3848,6 +3853,6 @@
   "fonte": {
     "arquivo": "LOG-065 - Imersão na Esteira PME.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-065%20-%20Imers%C3%A3o%20na%20Esteira%20PME.xlsx?web=1",
-    "extraidoEm": "2026-11-13T11:33:49-03:00"
+    "extraidoEm": "2026-11-13T16:54:57-03:00"
   }
 }

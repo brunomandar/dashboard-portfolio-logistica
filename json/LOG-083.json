@@ -4,7 +4,7 @@
   "area": "Transportes",
   "pontoFocal": "Tiago",
   "inicio": "2026-11-03",
-  "termino": "2027-04-30",
+  "termino": "2027-04-08",
   "inicioCaptura": "",
   "iniciativa": "Op. Transporte",
   "pmo": "Tiago",
@@ -32,74 +32,74 @@
   "macroAtividades": [
     {
       "numero": "01.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Kick-off - Diagnóstico inicial da operação",
+      "responsavel": "Fabiana",
+      "status": 4,
+      "inicio": "2026-11-03",
+      "fim": "2026-11-09",
       "anotacao": ""
     },
     {
       "numero": "02.",
-      "atividade": "",
+      "atividade": "Mapa completo da operação atual",
       "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "status": 1,
+      "inicio": "2026-11-10",
+      "fim": "2026-12-21",
       "anotacao": ""
     },
     {
       "numero": "03.",
-      "atividade": "",
+      "atividade": "Elaborar matriz de sinergias e oportunidades",
       "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "status": 0,
+      "inicio": "2026-12-22",
+      "fim": "2026-12-28",
       "anotacao": ""
     },
     {
       "numero": "04.",
-      "atividade": "",
+      "atividade": "Elaboração de cenários",
       "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "status": 0,
+      "inicio": "2026-12-29",
+      "fim": "2026-12-31",
       "anotacao": ""
     },
     {
       "numero": "05.",
-      "atividade": "",
+      "atividade": "Validação dos cenários",
       "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "status": 0,
+      "inicio": "2027-01-01",
+      "fim": "2027-01-07",
       "anotacao": ""
     },
     {
       "numero": "06.",
-      "atividade": "",
+      "atividade": "Elaborar Business Case (impactos financeiros)",
       "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "status": 0,
+      "inicio": "2027-01-08",
+      "fim": "2027-01-14",
       "anotacao": ""
     },
     {
       "numero": "07.",
-      "atividade": "",
+      "atividade": "Desenho da operação futura",
       "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "status": 0,
+      "inicio": "2027-01-15",
+      "fim": "2027-02-04",
       "anotacao": ""
     },
     {
       "numero": "08.",
-      "atividade": "",
+      "atividade": "Conclusão do processo de integração",
       "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "status": 0,
+      "inicio": "2027-02-05",
+      "fim": "2027-04-08",
       "anotacao": ""
     },
     {
@@ -277,7 +277,7 @@
   "cronogramaDetalhado": [
     {
       "numero": 1,
-      "atividade": "",
+      "atividade": "Kick-off - Diagnóstico inicial da operação",
       "responsavel": "",
       "status": "",
       "inicio": "2026-08-13",
@@ -394,7 +394,7 @@
     },
     {
       "numero": 14,
-      "atividade": "",
+      "atividade": "Mapa completo da operação atual",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -403,7 +403,7 @@
     },
     {
       "numero": 15,
-      "atividade": "",
+      "atividade": "Elaborar matriz de sinergias e oportunidades",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -412,7 +412,7 @@
     },
     {
       "numero": 16,
-      "atividade": "",
+      "atividade": "Elaboração de cenários",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -421,7 +421,7 @@
     },
     {
       "numero": 17,
-      "atividade": "",
+      "atividade": "Validação dos cenários",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -430,7 +430,7 @@
     },
     {
       "numero": 18,
-      "atividade": "",
+      "atividade": "Elaborar Business Case (impactos financeiros)",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -439,7 +439,7 @@
     },
     {
       "numero": 19,
-      "atividade": "",
+      "atividade": "Desenho da operação futura",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -448,7 +448,7 @@
     },
     {
       "numero": 20,
-      "atividade": "",
+      "atividade": "Conclusão do processo de integração",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -1177,7 +1177,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "11/11/26 - Realizada agenda para elaboração dos cenários de transporte junto ao time McKinsey\n10/11/26 - Visita do time Claro na Operação Desktop, Leandro e Ingrid representaram a área de transportes",
+  "statusProjeto": "11/11/26 - Realizada agenda para elaboração dos cenários de transporte junto ao time McKinsey. Ficou pedente da Mckinsey enviar uma base dos fretes realizados dos últimos 3 meses para o opreação Desktop para o time de transportes Claro elaborarem uma simulação. Foco em entendermos as discrepancias de valores.\n10/11/26 - Visita do time Claro na Operação Desktop, Leandro e Ingrid representaram a área de transportes\n29/10/26 - Primeiro contato entre o time de logística transportes com a equip Desktop, colaboradores Thiago Morishita (Financeiro FP&A + Logística), Vinicius Jore Souza ( Ger. Loística e Frota) e o Mateus Henrique Stahanoy (torre de controle, Logística e frota) esses são os colaboradores Desktop que possuem sinergia com a nossa área",
   "financeiro": [
     {
       "id": "LOG-083",
@@ -3776,6 +3776,6 @@
   "fonte": {
     "arquivo": "LOG-083 - RUBI Absorção Operações Desktop.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-083%20-%20RUBI%20Absor%C3%A7%C3%A3o%20Opera%C3%A7%C3%B5es%20Desktop.xlsx?web=1",
-    "extraidoEm": "2026-11-13T11:34:23-03:00"
+    "extraidoEm": "2026-11-13T16:55:29-03:00"
   }
 }
