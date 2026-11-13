@@ -1210,7 +1210,9 @@ body.project-open .topbar{display:none!important}
       const tipoUnico = arrayOf(p.tipos).length === 1 ? clean(p.tipos[0]).toUpperCase() : '';
       let used = false;
       recs.forEach(r => {
-        const iniciativa = clean(r.iniciativa || p.iniciativa).toUpperCase();
+        // Consultoria/DGP (na linha ou na One_Page do projeto) entra como DGP
+        const isConsDgp = v => norm(v) === 'consultoriadgp';
+        const iniciativa = isConsDgp(r.iniciativa) || isConsDgp(p.iniciativa) ? 'DGP' : clean(r.iniciativa || p.iniciativa).toUpperCase();
         if (!['DGP', 'ICG'].includes(iniciativa)) return;                 // escopo: DGP e ICG
         let tipo = clean(r.tipoDespesa).toUpperCase();
         if (hasSplit) { if (!['OPEX', 'CAPEX'].includes(tipo)) return; }   // não soma a linha "Total"

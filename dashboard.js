@@ -538,12 +538,15 @@ window.DASHBOARD_SHOW_META = true;
     const isIcg = value => clean(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() === 'icg';
     const icg = Object.keys(countsBy(valid, forumOf)).find(isIcg);
     if (icg && !forums.includes(icg)) forums.push(icg);
+    const isConsDgp = value => clean(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z]/g, '') === 'consultoriadgp';
+    const consDgp = Object.keys(countsBy(valid, forumOf)).find(isConsDgp);
+    if (consDgp && !forums.includes(consDgp)) forums.push(consDgp);
     const managers = Object.entries(countsBy(valid, project => project.area))
       .sort((a, b) => b[1] - a[1])
       .map(([key]) => key);
     const baseColors = ['#530b03', '#df3232', '#bfbfbf'];
     let colorIndex = 0;
-    const colors = forums.map(forum => isConsultoria(forum) ? '#ed7d31' : isIcg(forum) ? '#ffc000' : baseColors[colorIndex++ % baseColors.length]);
+    const colors = forums.map(forum => isConsultoria(forum) ? '#ed7d31' : isIcg(forum) ? '#ffc000' : isConsDgp(forum) ? '#7f7f7f' : baseColors[colorIndex++ % baseColors.length]);
     const listAttrMF = (title, list) => `data-list-title="${esc(title)}" data-list-tip="${esc(JSON.stringify(list.slice().sort((a, b) => idNumber(a.id) - idNumber(b.id)).map(project => `${project.id} · ${clean(project.projeto)}`)))}"`;
     const max = Math.max(1, ...managers.flatMap(manager => forums.map(forum => valid.filter(project => project.area === manager && forumOf(project) === forum).length)));
     host.innerHTML = `<h3 style="text-align:center;margin-bottom:6px">Demandas por Gerência x Fórum</h3><div class="manager-total">Total: <b>${valid.length}</b> projeto(s) em <b>${managers.length}</b> gerência(s)</div><div class="manager-scroll"><div class="manager-chart">${managers.map(manager => {
