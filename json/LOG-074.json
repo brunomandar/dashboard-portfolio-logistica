@@ -6,7 +6,7 @@
   "inicio": "2026-05-01",
   "termino": "2027-04-01",
   "inicioCaptura": "2026-05-01",
-  "iniciativa": "DGP",
+  "iniciativa": "ICG",
   "pmo": "Edinalva",
   "risco": "Médio",
   "status": "L4",
@@ -3775,6 +3775,6 @@
   "fonte": {
     "arquivo": "LOG-074 - BID Operador Logístico (Reparo).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-074%20-%20BID%20Operador%20Log%C3%ADstico%20%28Reparo%29.xlsx?web=1",
-    "extraidoEm": "2026-11-12T11:11:37-03:00"
+    "extraidoEm": "2026-11-13T11:34:06-03:00"
   }
 }
