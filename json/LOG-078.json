@@ -5,7 +5,7 @@
   "pontoFocal": "Gustavo Peres Campos",
   "inicio": "2026-11-01",
   "termino": "2027-03-01",
-  "inicioCaptura": "",
+  "inicioCaptura": "2026-10-01",
   "iniciativa": "Op. Transporte",
   "pmo": "Gustavo",
   "risco": "Médio",
@@ -89,7 +89,7 @@
       "numero": "07.",
       "atividade": "DESENHO DO NOVO FLUXO DE PAGAMENTO",
       "responsavel": "",
-      "status": 1,
+      "status": 4,
       "inicio": "2026-11-06",
       "fim": "2026-11-12",
       "anotacao": ""
@@ -98,7 +98,7 @@
       "numero": "08.",
       "atividade": "DEFINIÇÃO DOS REQUISITOS SISTÊMICOS E REGRAS DO NEGÓCIO",
       "responsavel": "",
-      "status": 0,
+      "status": 2,
       "inicio": "2026-11-13",
       "fim": "2026-11-19",
       "anotacao": ""
@@ -107,7 +107,7 @@
       "numero": "09.",
       "atividade": "DESENVOLVIMENTO DAS MELHORIAS SISTÊMICAS",
       "responsavel": "",
-      "status": 0,
+      "status": 2,
       "inicio": "2026-11-23",
       "fim": "2026-12-25",
       "anotacao": ""
@@ -3471,6 +3471,6 @@
   "fonte": {
     "arquivo": "LOG-078 - Regulamentacão do Prazo de Pagamentos (30 Dias úteis).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-078%20-%20Regulamentac%C3%A3o%20do%20Prazo%20de%20Pagamentos%20%2830%20Dias%20%C3%BAteis%29.xlsx?web=1",
-    "extraidoEm": "2026-11-16T14:38:03-03:00"
+    "extraidoEm": "2026-11-16T16:08:59-03:00"
   }
 }

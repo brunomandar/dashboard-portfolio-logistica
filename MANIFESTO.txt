@@ -1,7 +1,7 @@
 DASHBOARD PORTFÓLIO LOGÍSTICA — MANIFESTO
 
-Projetos JSON: 64
-Gerado em: 2026-11-16T14:38:27-03:00
+Projetos JSON: 63
+Gerado em: 2026-11-16T16:09:07-03:00
 
 Projetos:
 - LOG-001.json
@@ -63,7 +63,6 @@ Projetos:
 - LOG-076.json
 - LOG-077.json
 - LOG-078.json
-- LOG-079.json
 - LOG-080.json
 - LOG-081.json
 - LOG-082.json
