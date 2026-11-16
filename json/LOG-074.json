@@ -3,9 +3,9 @@
   "projeto": "BID Operador Logístico (Reparo)",
   "area": "Reparo",
   "pontoFocal": "Evandro Felix",
-  "inicio": "2026-05-01",
-  "termino": "2027-04-01",
-  "inicioCaptura": "2026-05-01",
+  "inicio": "2026-01-01",
+  "termino": "2026-12-01",
+  "inicioCaptura": "2026-01-01",
   "iniciativa": "DGP",
   "pmo": "Edinalva",
   "risco": "Baixo",
@@ -24,9 +24,9 @@
     "opex12M": 6.11,
     "capex12M": 0.0,
     "total12M": 6.11,
-    "opex2026": 4.08,
+    "opex2026": 6.11,
     "capex2026": 0.0,
-    "total2026": 4.08
+    "total2026": 6.11
   },
   "macroAtividades": [
     {
@@ -1175,8 +1175,14 @@
       "anotacao": ""
     }
   ],
-  "historico": [],
-  "statusProjeto": "06/11/2026 Saving Compras Bid OPL (ID 117): em validação da composição do resultado realizado, para confirmar alinhamento da apuração com o escopo aprovado e identificar eventual impacto dos custos de aquisição de insumos no saving reportado.",
+  "historico": [
+    {
+      "data": "2026-11-16",
+      "acoes": "Alinhamento do período de captura",
+      "detalhe": "Conforme alinhado na agenda de hoje, o período a ser considerado é de jan/26 a dez/26. Com base nos resultados realizados e reportados, o desempenho acumulado de jan a out/26 foi de 32,040, frente a um projetado de 32,097, resultando em um desvio de -0,057.\n\nContudo, considerando o forecast de novembro e dezembro, a projeção de fechamento do projeto é de 6,081, ficando 0,033 abaixo da meta de 6,114. Dessa forma, o resultado projetado indica um atingimento de aproximadamente 99,5% da meta, demonstrando aderência ao objetivo estabelecido, com um desvio residual pouco representativo frente ao resultado total do período."
+    }
+  ],
+  "statusProjeto": "16/11/2026 Após o ajuste do período de captura para jan/26 a dez/26, a projeção de fechamento indica 99,5% de atingimento da meta (6,081 vs. 6,114), com desvio residual de -0,033, sem impacto relevante no resultado consolidado do projeto.\n06/11/2026 Saving Compras Bid OPL (ID 117): em validação da composição do resultado realizado, para confirmar alinhamento da apuração com o escopo aprovado e identificar eventual impacto dos custos de aquisição de insumos no saving reportado.",
   "financeiro": [
     {
       "id": "LOG-074",
@@ -1188,7 +1194,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": 0.0
+      "resultado": 0.5883
     },
     {
       "id": "LOG-074",
@@ -1200,7 +1206,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": 0.0
+      "resultado": 0.6058
     },
     {
       "id": "LOG-074",
@@ -1212,7 +1218,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.1497
     },
     {
       "id": "LOG-074",
@@ -1224,7 +1230,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": 0.0
+      "resultado": 0.9532
     },
     {
       "id": "LOG-074",
@@ -1296,7 +1302,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.455
+      "resultado": 0.7032
     },
     {
       "id": "LOG-074",
@@ -1308,7 +1314,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.5095362572144726
+      "resultado": 0.4647
     },
     {
       "id": "LOG-074",
@@ -1320,7 +1326,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.5095362572144726
+      "resultado": 0.4647
     },
     {
       "id": "LOG-074",
@@ -1476,7 +1482,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": 0.0
+      "resultado": 0.5883
     },
     {
       "id": "LOG-074",
@@ -1488,7 +1494,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": 0.0
+      "resultado": 0.6058
     },
     {
       "id": "LOG-074",
@@ -1500,7 +1506,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.1497
     },
     {
       "id": "LOG-074",
@@ -1512,7 +1518,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": 0.0
+      "resultado": 0.9532
     },
     {
       "id": "LOG-074",
@@ -1584,7 +1590,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Out",
-      "resultado": 0.455
+      "resultado": 0.7032
     },
     {
       "id": "LOG-074",
@@ -1596,7 +1602,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": 0.5095362572144726
+      "resultado": 0.4647
     },
     {
       "id": "LOG-074",
@@ -1608,7 +1614,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": 0.5095362572144726
+      "resultado": 0.4647
     },
     {
       "id": "LOG-074",
@@ -1620,7 +1626,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": 0.0
+      "resultado": 0.5095362572144726
     },
     {
       "id": "LOG-074",
@@ -1632,7 +1638,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": 0.0
+      "resultado": 0.5095362572144726
     },
     {
       "id": "LOG-074",
@@ -1644,7 +1650,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.5095362572144726
     },
     {
       "id": "LOG-074",
@@ -1656,7 +1662,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": 0.0
+      "resultado": 0.5095362572144726
     },
     {
       "id": "LOG-074",
@@ -1908,7 +1914,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": 0.0
+      "resultado": 0.5095362572144726
     },
     {
       "id": "LOG-074",
@@ -1920,7 +1926,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": 0.0
+      "resultado": 0.5095362572144726
     },
     {
       "id": "LOG-074",
@@ -1932,7 +1938,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.5095362572144726
     },
     {
       "id": "LOG-074",
@@ -1944,7 +1950,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": 0.0
+      "resultado": 0.5095362572144726
     },
     {
       "id": "LOG-074",
@@ -2052,7 +2058,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": 0.0
+      "resultado": 0.5095362572144726
     },
     {
       "id": "LOG-074",
@@ -2064,7 +2070,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": 0.0
+      "resultado": 0.5095362572144726
     },
     {
       "id": "LOG-074",
@@ -2076,7 +2082,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.5095362572144726
     },
     {
       "id": "LOG-074",
@@ -2088,7 +2094,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": 0.0
+      "resultado": 0.5095362572144726
     },
     {
       "id": "LOG-074",
@@ -2340,7 +2346,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": 0.0
+      "resultado": 0.5095362572144726
     },
     {
       "id": "LOG-074",
@@ -2352,7 +2358,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": 0.0
+      "resultado": 0.5095362572144726
     },
     {
       "id": "LOG-074",
@@ -2364,7 +2370,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.5095362572144726
     },
     {
       "id": "LOG-074",
@@ -2376,7 +2382,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": 0.0
+      "resultado": 0.5095362572144726
     },
     {
       "id": "LOG-074",
@@ -2484,7 +2490,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jan",
-      "resultado": 0.5095
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -2496,7 +2502,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Fev",
-      "resultado": 0.5095
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -2508,7 +2514,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.5095
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -2520,7 +2526,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.5095
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -2772,7 +2778,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jan",
-      "resultado": 0.5095
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -2784,7 +2790,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Fev",
-      "resultado": 0.5095
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -2796,7 +2802,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.5095
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -2808,7 +2814,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.5095
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -2916,7 +2922,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jan",
-      "resultado": 0.5095362572144726
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -2928,7 +2934,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Fev",
-      "resultado": 0.5095362572144726
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -2940,7 +2946,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.5095362572144726
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -2952,7 +2958,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.5095362572144726
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -3204,7 +3210,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jan",
-      "resultado": 0.5095362572144726
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -3216,7 +3222,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Fev",
-      "resultado": 0.5095362572144726
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -3228,7 +3234,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.5095362572144726
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -3240,7 +3246,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.5095362572144726
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -3348,7 +3354,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jan",
-      "resultado": 0.5095362572144726
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -3360,7 +3366,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Fev",
-      "resultado": 0.5095362572144726
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -3372,7 +3378,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.5095362572144726
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -3384,7 +3390,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.5095362572144726
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -3636,7 +3642,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jan",
-      "resultado": 0.5095362572144726
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -3648,7 +3654,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Fev",
-      "resultado": 0.5095362572144726
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -3660,7 +3666,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.5095362572144726
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -3672,7 +3678,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.5095362572144726
+      "resultado": 0.0
     },
     {
       "id": "LOG-074",
@@ -3775,6 +3781,6 @@
   "fonte": {
     "arquivo": "LOG-074 - BID Operador Logístico (Reparo).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-074%20-%20BID%20Operador%20Log%C3%ADstico%20%28Reparo%29.xlsx?web=1",
-    "extraidoEm": "2026-11-16T16:08:52-03:00"
+    "extraidoEm": "2026-11-16T16:55:13-03:00"
   }
 }
