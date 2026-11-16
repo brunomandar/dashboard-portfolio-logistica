@@ -285,7 +285,7 @@ def ler_one_page(ws):
         "termino": data_iso(valor_ao_lado(ws, rot, "Término:")),
         "inicioCaptura": data_iso(valor_ao_lado(ws, rot, "Início Capt.:", "Início Captura:")),
         "iniciativa": valor_ao_lado(ws, rot, "Iniciativa:"),
-        "pmo": valor_ao_lado(ws, rot, "Focal Acompanhamento:", "PMO:"),
+        "pmo": valor_ao_lado(ws, rot, "Focal Acompanhamento:", "Focal Acomp.:", "Focal Acomp:", "PMO:"),
         "risco": valor_ao_lado(ws, rot, "Risco:"),
         "status": valor_ao_lado(ws, rot, "Status:"),
         "prioridade": valor_ao_lado(ws, rot, "Prioridade:"),
