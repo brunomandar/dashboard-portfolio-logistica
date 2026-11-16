@@ -47,7 +47,7 @@
       "responsavel": "Time Transportes / Catalde / Transportadores",
       "status": 4,
       "inicio": "2026-09-01",
-      "fim": "2026-10-05",
+      "fim": "2026-09-29",
       "anotacao": ""
     },
     {
@@ -55,8 +55,8 @@
       "atividade": "Mapeamento dos transportadores que irão ou Não subcontratar",
       "responsavel": "Bruno",
       "status": 4,
-      "inicio": "2026-10-06",
-      "fim": "2026-11-02",
+      "inicio": "2026-09-29",
+      "fim": "2026-11-13",
       "anotacao": ""
     },
     {
@@ -64,8 +64,8 @@
       "atividade": "Desenvolvimento VPO e integrações API",
       "responsavel": "Catalde",
       "status": 1,
-      "inicio": "2026-11-03",
-      "fim": "2026-12-21",
+      "inicio": "2026-09-30",
+      "fim": "2026-11-30",
       "anotacao": ""
     },
     {
@@ -73,8 +73,8 @@
       "atividade": "Contratação da REPOM / Renovação e Aditivo contratual da Catalde",
       "responsavel": "Compras",
       "status": 1,
-      "inicio": "2026-09-14",
-      "fim": "2026-10-23",
+      "inicio": "2026-08-31",
+      "fim": "2026-12-04",
       "anotacao": ""
     },
     {
@@ -82,8 +82,8 @@
       "atividade": "Adequações e aceite sistêmico",
       "responsavel": "Time Transportes / Catalde / Transportadores",
       "status": 0,
-      "inicio": "2026-10-26",
-      "fim": "2026-11-13",
+      "inicio": "2026-12-01",
+      "fim": "2026-12-17",
       "anotacao": ""
     },
     {
@@ -91,7 +91,7 @@
       "atividade": "Liberação para produção",
       "responsavel": "Claro",
       "status": 0,
-      "inicio": "2026-12-22",
+      "inicio": "2026-12-16",
       "fim": "2026-12-31",
       "anotacao": ""
     },
@@ -3235,6 +3235,6 @@
   "fonte": {
     "arquivo": "LOG-056 - Vale Pedagio.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-056%20-%20Vale%20Pedagio.xlsx?web=1",
-    "extraidoEm": "2026-11-13T16:54:43-03:00"
+    "extraidoEm": "2026-11-16T14:11:39-03:00"
   }
 }

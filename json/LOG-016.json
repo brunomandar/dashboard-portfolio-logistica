@@ -35,82 +35,91 @@
     {
       "numero": "1",
       "atividade": "Diagnóstico e priorização dos locais de maior impacto",
-      "responsavel": "A confirmar",
-      "status": 3,
+      "responsavel": "Time Planejamento",
+      "status": 4,
       "inicio": "2026-02-01",
-      "fim": "2026-07-30",
+      "fim": "2026-05-19",
       "anotacao": ""
     },
     {
       "numero": "2",
       "atividade": "Melhoria de malha São Paulo Interior – BID concluído (MCTECH)",
-      "responsavel": "A confirmar",
+      "responsavel": "Time Planejamento / Compras",
       "status": 5,
       "inicio": "2026-05-26",
-      "fim": "2026-05-26",
+      "fim": "2026-06-14",
       "anotacao": ""
     },
     {
       "numero": "3",
       "atividade": "Calendarização Nordeste e Centro-Oeste",
-      "responsavel": "A confirmar",
+      "responsavel": "Time Planejamento",
       "status": 5,
       "inicio": "2026-06-15",
-      "fim": "2026-07-31",
+      "fim": "2026-07-20",
       "anotacao": ""
     },
     {
       "numero": "4",
       "atividade": "Melhoria de malha Bahia (EA Bahia)",
-      "responsavel": "A confirmar",
+      "responsavel": "Time Planejamento",
       "status": 5,
-      "inicio": "2026-06-22",
-      "fim": "2026-08-14",
+      "inicio": "2026-07-22",
+      "fim": "2026-08-31",
       "anotacao": ""
     },
     {
       "numero": "5",
       "atividade": "Mudança de malha na área suframada (AC, AP, RR: Brasília para Manaus)",
-      "responsavel": "A confirmar",
-      "status": 2,
-      "inicio": "2026-08-14",
+      "responsavel": "Time Planejamento",
+      "status": 4,
+      "inicio": "2026-09-14",
       "fim": "2026-09-29",
       "anotacao": ""
     },
     {
       "numero": "6",
       "atividade": "Mapeamento da capilaridade",
-      "responsavel": "A confirmar",
-      "status": 3,
-      "inicio": "2026-08-30",
-      "fim": "2026-08-30",
+      "responsavel": "Time Planejamento",
+      "status": 4,
+      "inicio": "2026-09-30",
+      "fim": "2026-10-29",
       "anotacao": ""
     },
     {
       "numero": "7",
       "atividade": "Mudança de malha do Sul de Minas para o CD Campinas",
-      "responsavel": "A confirmar",
-      "status": 3,
-      "inicio": "2026-08-31",
-      "fim": "2026-10-10",
+      "responsavel": "Time Planejamento",
+      "status": 1,
+      "inicio": "2026-10-30",
+      "fim": "2026-11-30",
       "anotacao": ""
     },
     {
       "numero": "8",
       "atividade": "Calendarização Região Sul e São Paulo",
-      "responsavel": "A confirmar",
-      "status": 3,
-      "inicio": "2026-09-30",
-      "fim": "2026-09-30",
+      "responsavel": "Time Planejamento",
+      "status": 1,
+      "inicio": "2026-11-10",
+      "fim": "2026-12-03",
       "anotacao": ""
     },
     {
       "numero": "9",
       "atividade": "Mensuração do retorno das melhorias aplicadas",
-      "responsavel": "A confirmar",
+      "responsavel": "Time Planejamento",
       "status": 0,
-      "inicio": "2026-12-20",
-      "fim": "2026-12-20",
+      "inicio": "2026-12-04",
+      "fim": "2026-12-16",
+      "anotacao": ""
+    },
+    {
+      "numero": "10",
+      "atividade": "Conclusão e aceite do projeto",
+      "responsavel": "Time Planejamento",
+      "status": 0,
+      "inicio": "2026-12-19",
+      "fim": "2026-12-31",
       "anotacao": ""
     }
   ],
@@ -2932,6 +2941,6 @@
   "fonte": {
     "arquivo": "LOG-016 - Calendarização, Roteirização e Capilaridade.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-016%20-%20Calendariza%C3%A7%C3%A3o%2C%20Roteiriza%C3%A7%C3%A3o%20e%20Capilaridade.xlsx?web=1",
-    "extraidoEm": "2026-11-13T16:53:27-03:00"
+    "extraidoEm": "2026-11-16T14:10:48-03:00"
   }
 }

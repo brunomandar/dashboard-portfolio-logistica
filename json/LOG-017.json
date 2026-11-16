@@ -35,90 +35,90 @@
     {
       "numero": "1",
       "atividade": "Início do projeto",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CDs",
       "status": 4,
       "inicio": "2026-03-01",
-      "fim": "2026-03-01",
+      "fim": "2026-03-15",
       "anotacao": ""
     },
     {
       "numero": "2",
       "atividade": "Implementar padrão de pedidos mínimos e múltiplos de caixas",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CDs",
       "status": 4,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-03-16",
+      "fim": "2026-04-14",
       "anotacao": ""
     },
     {
       "numero": "3",
       "atividade": "Ajustar processos de separação e expedição",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CDs",
       "status": 4,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-04-15",
+      "fim": "2026-04-28",
       "anotacao": ""
     },
     {
       "numero": "4",
       "atividade": "Definir horários de corte e input de pedidos",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CDs",
       "status": 4,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-04-29",
+      "fim": "2026-05-08",
       "anotacao": ""
     },
     {
       "numero": "5",
       "atividade": "Padronizar analytics e processo de miscelâneas",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CDs / Int. Logistica",
       "status": 4,
       "inicio": "2026-05-06",
-      "fim": "2026-05-26",
+      "fim": "2026-05-20",
       "anotacao": ""
     },
     {
       "numero": "6",
       "atividade": "Analisar impactos positivos e negativos da alteração",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CDs",
       "status": 4,
-      "inicio": "2026-05-07",
-      "fim": "2026-05-18",
+      "inicio": "2026-05-11",
+      "fim": "2026-05-25",
       "anotacao": ""
     },
     {
       "numero": "7",
       "atividade": "Avaliar implantação nos demais CDs",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CDs",
       "status": 4,
       "inicio": "2026-05-19",
-      "fim": "2026-05-25",
+      "fim": "2026-05-27",
       "anotacao": ""
     },
     {
       "numero": "8",
       "atividade": "Implantar solução nos demais CDs",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CDs",
       "status": 4,
       "inicio": "2026-05-26",
-      "fim": "2026-05-26",
+      "fim": "2026-06-05",
       "anotacao": ""
     },
     {
       "numero": "9",
       "atividade": "Acompanhar alterações de processos",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CDs",
       "status": 4,
-      "inicio": "2026-07-06",
-      "fim": "2026-07-08",
+      "inicio": "2026-06-10",
+      "fim": "2026-06-29",
       "anotacao": ""
     },
     {
       "numero": "10",
       "atividade": "Concluir implantação em todas as regionais",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CDs",
       "status": 4,
-      "inicio": "2026-07-08",
+      "inicio": "2026-06-30",
       "fim": "2026-07-08",
       "anotacao": ""
     }
@@ -2887,6 +2887,6 @@
   "fonte": {
     "arquivo": "LOG-017 - Distribuição e Pedido Minimo.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-017%20-%20Distribui%C3%A7%C3%A3o%20e%20Pedido%20Minimo.xlsx?web=1",
-    "extraidoEm": "2026-11-13T16:53:29-03:00"
+    "extraidoEm": "2026-11-16T14:10:50-03:00"
   }
 }

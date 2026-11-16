@@ -34,82 +34,82 @@
     {
       "numero": "1",
       "atividade": "Aprovação do processo junto à AMX / México",
-      "responsavel": "A confirmar",
-      "status": 2,
+      "responsavel": "Time Estoques",
+      "status": 4,
       "inicio": "2026-02-10",
-      "fim": "",
+      "fim": "2026-04-29",
       "anotacao": ""
     },
     {
       "numero": "2",
       "atividade": "BI e relatório Slow Moving / Giro de estoque",
-      "responsavel": "A confirmar",
-      "status": 3,
+      "responsavel": "Time Estoques / TCIA",
+      "status": 4,
       "inicio": "2026-04-30",
-      "fim": "2026-05-12",
+      "fim": "2026-05-13",
       "anotacao": ""
     },
     {
       "numero": "3",
       "atividade": "Implantação das frentes PR e RS",
-      "responsavel": "A confirmar",
-      "status": 0,
+      "responsavel": "Time Estoques",
+      "status": 3,
       "inicio": "2026-05-08",
-      "fim": "",
+      "fim": "2026-05-28",
       "anotacao": ""
     },
     {
       "numero": "4",
       "atividade": "Expansão para SPI, Centro-Oeste, Norte e Nordeste",
-      "responsavel": "A confirmar",
-      "status": 0,
+      "responsavel": "Time Estoques",
+      "status": 4,
       "inicio": "2026-05-25",
-      "fim": "",
+      "fim": "2026-06-05",
       "anotacao": ""
     },
     {
       "numero": "5",
       "atividade": "Revisão do TO BE e alinhamento com a TCIA",
-      "responsavel": "A confirmar",
-      "status": 3,
+      "responsavel": "Time Estoques / TCIA",
+      "status": 4,
       "inicio": "2026-06-03",
-      "fim": "2026-06-03",
+      "fim": "2026-07-27",
       "anotacao": ""
     },
     {
       "numero": "6",
       "atividade": "Revisão do FCST e plano de ação para redução",
-      "responsavel": "A confirmar",
-      "status": 3,
+      "responsavel": "Time Estoques",
+      "status": 4,
       "inicio": "2026-07-28",
-      "fim": "2026-07-28",
+      "fim": "2026-08-10",
       "anotacao": ""
     },
     {
       "numero": "7",
       "atividade": "Monitoramento do estoque versus meta",
-      "responsavel": "Gustavo Mendes",
-      "status": 1,
-      "inicio": "",
-      "fim": "",
+      "responsavel": "Time Estoques",
+      "status": 4,
+      "inicio": "2026-08-14",
+      "fim": "2026-09-25",
       "anotacao": ""
     },
     {
       "numero": "8",
       "atividade": "Governança do tema em Catalão",
-      "responsavel": "A confirmar",
-      "status": "",
-      "inicio": "2026-08-14",
-      "fim": "",
+      "responsavel": "Time Estoques / Catalão",
+      "status": 4,
+      "inicio": "2026-09-29",
+      "fim": "2026-11-06",
       "anotacao": ""
     },
     {
       "numero": "9",
       "atividade": "Ferramenta de controle dos estoques de Marketing (End to End)",
-      "responsavel": "Gustavo Mendes",
-      "status": 1,
-      "inicio": "2026-09-29",
-      "fim": "",
+      "responsavel": "Time Estoques / TCIA",
+      "status": 0,
+      "inicio": "2026-11-10",
+      "fim": "2027-03-15",
       "anotacao": ""
     }
   ],
@@ -2949,6 +2949,6 @@
   "fonte": {
     "arquivo": "LOG-014 - RAI de Estoques.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-014%20-%20RAI%20de%20Estoques.xlsx?web=1",
-    "extraidoEm": "2026-11-13T16:53:23-03:00"
+    "extraidoEm": "2026-11-16T14:10:45-03:00"
   }
 }

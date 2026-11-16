@@ -35,7 +35,7 @@
   "macroAtividades": [
     {
       "numero": "01.",
-      "atividade": "ENTENDIMENTO DA NOVA REGULAMENTAÇÃO",
+      "atividade": "",
       "responsavel": "",
       "status": 4,
       "inicio": "2026-10-19",
@@ -44,7 +44,7 @@
     },
     {
       "numero": "02.",
-      "atividade": "ELABORAÇÃO DA APRESENTAÇÃO EXECUTIVA COM OS IMPACTOS DA REGULAMENTAÇÃO",
+      "atividade": "",
       "responsavel": "",
       "status": 4,
       "inicio": "2026-10-20",
@@ -53,7 +53,7 @@
     },
     {
       "numero": "03.",
-      "atividade": "KICK-OFF DO PROJETO E DEFINÇÃO DOS STAKEHOLDERS ENVOLVIDOS",
+      "atividade": "",
       "responsavel": "",
       "status": 4,
       "inicio": "2026-10-23",
@@ -62,7 +62,7 @@
     },
     {
       "numero": "04.",
-      "atividade": "MAPEAMENTO DO PROCESSO ATUAL DE PAGAMENTO DE FRETES",
+      "atividade": "",
       "responsavel": "",
       "status": 4,
       "inicio": "2026-10-23",
@@ -71,7 +71,7 @@
     },
     {
       "numero": "05.",
-      "atividade": "LEVANTAMENTO DE GAPS E RISCOS PARA PAGAMENTO DO PRAZO EM 30 DIAS",
+      "atividade": "",
       "responsavel": "",
       "status": 4,
       "inicio": "2026-10-27",
@@ -80,7 +80,7 @@
     },
     {
       "numero": "06.",
-      "atividade": "CONSTRUÇÃO DO PLANO DE AÇÃO E CRONOGRAMA EXECUTIVO",
+      "atividade": "",
       "responsavel": "",
       "status": 4,
       "inicio": "2026-11-03",
@@ -89,92 +89,92 @@
     },
     {
       "numero": "07.",
-      "atividade": "DESENHO DO NOVO FLUXO DE PAGAMENTO",
+      "atividade": "",
       "responsavel": "",
-      "status": 1,
-      "inicio": "2026-11-06",
-      "fim": "2026-11-12",
+      "status": "",
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     },
     {
       "numero": "08.",
-      "atividade": "DEFINIÇÃO DOS REQUISITOS SISTÊMICOS E REGRAS DO NEGÓCIO",
+      "atividade": "",
       "responsavel": "",
-      "status": 0,
-      "inicio": "2026-11-13",
-      "fim": "2026-11-19",
+      "status": "",
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     },
     {
       "numero": "09.",
-      "atividade": "DESENVOLVIMENTO DAS MELHORIAS SISTÊMICAS",
+      "atividade": "",
       "responsavel": "",
-      "status": 0,
-      "inicio": "2026-11-23",
-      "fim": "2026-12-25",
+      "status": "",
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     },
     {
       "numero": "10.",
-      "atividade": "ELABORAÇÃO DOS ADITIVOS CONTRATUAIS COM AS TRANSPORTADORAS",
+      "atividade": "",
       "responsavel": "",
-      "status": 0,
-      "inicio": "2026-11-23",
-      "fim": "2026-12-25",
+      "status": "",
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     },
     {
       "numero": "11.",
-      "atividade": "VALIDAÇÃO DO NOVO FLUXO COM TRANSPORTES, FISCAL, FINANCEIRO, COMPRAS E JURÍDICO",
+      "atividade": "",
       "responsavel": "",
-      "status": 0,
-      "inicio": "2027-01-04",
-      "fim": "2027-01-08",
+      "status": "",
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     },
     {
       "numero": "12.",
-      "atividade": "HOMOLOGAÇÃO DAS MELHORIAS SISTÊMICAS",
+      "atividade": "",
       "responsavel": "",
-      "status": 0,
-      "inicio": "2027-01-11",
-      "fim": "2027-01-22",
+      "status": "",
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     },
     {
       "numero": "13.",
-      "atividade": "COMUNICAÇÃO DO NOVO PROCESSO PARA AS TRANSPORTADORAS",
+      "atividade": "",
       "responsavel": "",
-      "status": 0,
-      "inicio": "2027-01-25",
-      "fim": "2027-01-29",
+      "status": "",
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     },
     {
       "numero": "14.",
-      "atividade": "TESTE COM AS ÁREAS ENVOLVIDAS",
+      "atividade": "",
       "responsavel": "",
-      "status": 0,
-      "inicio": "2027-02-01",
-      "fim": "2027-02-12",
+      "status": "",
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     },
     {
       "numero": "15.",
-      "atividade": "IMPLATAÇÃO DO NOVO FLUXO DE PAGAMENTO",
+      "atividade": "",
       "responsavel": "",
-      "status": 0,
-      "inicio": "2027-02-15",
-      "fim": "2027-02-19",
+      "status": "",
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     },
     {
       "numero": "16.",
-      "atividade": "MONITORAMENTO DOS INDICADORES E ACOMPANHAMENTO PÓS-IMPLATAÇÃO",
+      "atividade": "",
       "responsavel": "",
-      "status": 0,
-      "inicio": "2027-02-19",
-      "fim": "2027-03-01",
+      "status": "",
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     },
     {
@@ -280,61 +280,61 @@
   "cronogramaDetalhado": [
     {
       "numero": "1.",
-      "atividade": "Entendimento da Nova Regulamentação",
+      "atividade": "",
       "responsavel": "",
-      "status": 4,
-      "inicio": "2026-10-19",
-      "fim": "2026-10-19",
+      "status": 0,
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     },
     {
       "numero": "1.1",
-      "atividade": "Levantamento dos requisitos legais da nova regulamentação",
+      "atividade": "",
       "responsavel": "",
-      "status": 4,
-      "inicio": "2026-10-19",
-      "fim": "2026-10-19",
+      "status": 0,
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     },
     {
       "numero": "1.2",
-      "atividade": "Identificação dos impactos operacionais nos processos atuais",
+      "atividade": "",
       "responsavel": "",
-      "status": 4,
-      "inicio": "2026-10-20",
-      "fim": "2026-10-20",
+      "status": 0,
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     },
     {
       "numero": "1.3",
-      "atividade": "Identificação dos riscos de não conformidade",
+      "atividade": "",
       "responsavel": "",
-      "status": 4,
-      "inicio": "2026-10-20",
-      "fim": "2026-10-20",
+      "status": 0,
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     },
     {
       "numero": "1.4",
-      "atividade": "Levantamento das áreas impactadas (Transportes, Fiscal, Financeiro, Compras, Jurídico e TI)",
+      "atividade": "",
       "responsavel": "",
-      "status": 4,
-      "inicio": "2026-10-20",
-      "fim": "2026-10-20",
+      "status": 0,
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     },
     {
       "numero": "1.5",
-      "atividade": "Consolidação dos requisitos obrigatórios para adequação",
+      "atividade": "",
       "responsavel": "",
-      "status": 4,
-      "inicio": "2026-10-20",
-      "fim": "2026-10-20",
+      "status": 0,
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     },
     {
       "numero": "2.",
-      "atividade": "Estruturação da Apresentação da Regulamentação",
+      "atividade": "",
       "responsavel": "",
       "status": 0,
       "inicio": "",
@@ -343,7 +343,7 @@
     },
     {
       "numero": "2.1",
-      "atividade": "Elaboração do material executivo sobre a regulamentação",
+      "atividade": "",
       "responsavel": "",
       "status": 0,
       "inicio": "",
@@ -352,7 +352,7 @@
     },
     {
       "numero": "2.2",
-      "atividade": "Demonstração dos impactos para a companhia",
+      "atividade": "",
       "responsavel": "",
       "status": 0,
       "inicio": "",
@@ -361,7 +361,7 @@
     },
     {
       "numero": "2.3",
-      "atividade": "Apresentação dos riscos operacionais e financeiros",
+      "atividade": "",
       "responsavel": "",
       "status": 0,
       "inicio": "",
@@ -370,7 +370,7 @@
     },
     {
       "numero": "2.4",
-      "atividade": "Apresentação das oportunidades de melhoria do processo",
+      "atividade": "",
       "responsavel": "",
       "status": 0,
       "inicio": "",
@@ -379,7 +379,7 @@
     },
     {
       "numero": "2.5",
-      "atividade": "Validação do material com stakeholders",
+      "atividade": "",
       "responsavel": "",
       "status": 0,
       "inicio": "",
@@ -388,7 +388,7 @@
     },
     {
       "numero": "3.",
-      "atividade": "Elaboração do Cronograma do Projeto",
+      "atividade": "",
       "responsavel": "",
       "status": 0,
       "inicio": "",
@@ -397,7 +397,7 @@
     },
     {
       "numero": "3.1",
-      "atividade": "Definição das etapas do projeto",
+      "atividade": "",
       "responsavel": "",
       "status": 0,
       "inicio": "",
@@ -406,7 +406,7 @@
     },
     {
       "numero": "3.2",
-      "atividade": "Definição dos responsáveis por atividade",
+      "atividade": "",
       "responsavel": "",
       "status": 0,
       "inicio": "",
@@ -415,7 +415,7 @@
     },
     {
       "numero": "3.3",
-      "atividade": "Definição dos marcos (milestones) do projeto",
+      "atividade": "",
       "responsavel": "",
       "status": 0,
       "inicio": "",
@@ -424,7 +424,7 @@
     },
     {
       "numero": "3.4",
-      "atividade": "Definição dos prazos de execução",
+      "atividade": "",
       "responsavel": "",
       "status": 0,
       "inicio": "",
@@ -433,7 +433,7 @@
     },
     {
       "numero": "3.5",
-      "atividade": "Publicação do cronograma executivo",
+      "atividade": "",
       "responsavel": "",
       "status": 0,
       "inicio": "",
@@ -442,7 +442,7 @@
     },
     {
       "numero": "4.",
-      "atividade": "Agenda para Definição dos Próximos Passos",
+      "atividade": "",
       "responsavel": "",
       "status": 0,
       "inicio": "",
@@ -451,7 +451,7 @@
     },
     {
       "numero": "4.1",
-      "atividade": "Realização do kick-off com as áreas envolvidas",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -460,7 +460,7 @@
     },
     {
       "numero": "4.2",
-      "atividade": "Apresentação dos impactos identificados",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -469,7 +469,7 @@
     },
     {
       "numero": "4.3",
-      "atividade": "Alinhamento das responsabilidades",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -478,7 +478,7 @@
     },
     {
       "numero": "4.4",
-      "atividade": "Definição da governança do projeto",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -487,7 +487,7 @@
     },
     {
       "numero": "4.5",
-      "atividade": "Formalização dos próximos passos",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -496,7 +496,7 @@
     },
     {
       "numero": "5.",
-      "atividade": "Elaboração do Plano de Ação",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -505,7 +505,7 @@
     },
     {
       "numero": "5.1",
-      "atividade": "Identificação das ações necessárias para adequação",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -514,7 +514,7 @@
     },
     {
       "numero": "5.2",
-      "atividade": "Priorização das atividades críticas",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -523,7 +523,7 @@
     },
     {
       "numero": "5.3",
-      "atividade": "Definição dos responsáveis por ação",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -532,7 +532,7 @@
     },
     {
       "numero": "5.4",
-      "atividade": "Definição dos prazos de execução",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -541,7 +541,7 @@
     },
     {
       "numero": "5.5",
-      "atividade": "Aprovação do plano de ação",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -550,7 +550,7 @@
     },
     {
       "numero": "6.",
-      "atividade": "Desenho do Fluxo de Pagamento",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -559,7 +559,7 @@
     },
     {
       "numero": "6.1",
-      "atividade": "Mapeamento do fluxo atual (AS IS)",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -568,7 +568,7 @@
     },
     {
       "numero": "6.2",
-      "atividade": "Identificação dos gargalos do processo",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -577,7 +577,7 @@
     },
     {
       "numero": "6.3",
-      "atividade": "Desenho do novo fluxo (TO BE)",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -586,7 +586,7 @@
     },
     {
       "numero": "6.4",
-      "atividade": "Definição dos controles e indicadores",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -595,7 +595,7 @@
     },
     {
       "numero": "6.5",
-      "atividade": "Validação do fluxo futuro com as áreas",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -604,7 +604,7 @@
     },
     {
       "numero": "7.",
-      "atividade": "Desenvolvimento de Melhorias Sistêmicas",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -613,7 +613,7 @@
     },
     {
       "numero": "7.1",
-      "atividade": "Levantamento dos requisitos funcionais",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -622,7 +622,7 @@
     },
     {
       "numero": "7.2",
-      "atividade": "Especificação técnica das melhorias",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -631,7 +631,7 @@
     },
     {
       "numero": "7.3",
-      "atividade": "Desenvolvimento das adequações sistêmicas",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -640,7 +640,7 @@
     },
     {
       "numero": "7.4",
-      "atividade": "Execução dos testes integrados",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -649,7 +649,7 @@
     },
     {
       "numero": "7.5",
-      "atividade": "Homologação das melhorias",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -658,7 +658,7 @@
     },
     {
       "numero": "8.",
-      "atividade": "Implantação e Acompanhamento",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -667,7 +667,7 @@
     },
     {
       "numero": "8.1",
-      "atividade": "Implantação das melhorias em produção",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -676,7 +676,7 @@
     },
     {
       "numero": "8.2",
-      "atividade": "Monitoramento dos primeiros ciclos de pagamento",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -685,7 +685,7 @@
     },
     {
       "numero": "8.3",
-      "atividade": "Acompanhamento dos indicadores de SLA",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -694,7 +694,7 @@
     },
     {
       "numero": "8.4",
-      "atividade": "Correção de desvios identificados",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -703,7 +703,7 @@
     },
     {
       "numero": "8.5",
-      "atividade": "Encerramento e sustentação do projeto",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -712,7 +712,7 @@
     },
     {
       "numero": "9.",
-      "atividade": "Aditivo Contratual com os Transportadores",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -721,7 +721,7 @@
     },
     {
       "numero": "9.1",
-      "atividade": "Levantamento dos contratos impactados",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -730,7 +730,7 @@
     },
     {
       "numero": "9.2",
-      "atividade": "Revisão das cláusulas relacionadas ao pagamento",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -739,7 +739,7 @@
     },
     {
       "numero": "9.3",
-      "atividade": "Elaboração da minuta de aditivo",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -748,7 +748,7 @@
     },
     {
       "numero": "9.4",
-      "atividade": "Validação jurídica",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -757,7 +757,7 @@
     },
     {
       "numero": "9.5",
-      "atividade": "Formalização e assinatura dos aditivos",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -766,7 +766,7 @@
     },
     {
       "numero": "10.",
-      "atividade": "Comunicado do Novo Processo para as Transportadoras",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -775,7 +775,7 @@
     },
     {
       "numero": "10.1",
-      "atividade": "Elaboração da comunicação oficial",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -784,7 +784,7 @@
     },
     {
       "numero": "10.2",
-      "atividade": "Divulgação dos novos procedimentos",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -793,7 +793,7 @@
     },
     {
       "numero": "10.3",
-      "atividade": "Divulgação de prazos e responsabilidades",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -802,7 +802,7 @@
     },
     {
       "numero": "10.4",
-      "atividade": "Tratativa de dúvidas e esclarecimentos",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -811,7 +811,7 @@
     },
     {
       "numero": "10.5",
-      "atividade": "Confirmação de recebimento da comunicação",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -820,7 +820,7 @@
     },
     {
       "numero": "11.",
-      "atividade": "Validação do Novo Fluxo com as Áreas",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -829,7 +829,7 @@
     },
     {
       "numero": "11.1",
-      "atividade": "Apresentação do fluxo futuro para as áreas",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -838,7 +838,7 @@
     },
     {
       "numero": "11.2",
-      "atividade": "Coleta de feedbacks e ajustes necessários",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -847,7 +847,7 @@
     },
     {
       "numero": "11.3",
-      "atividade": "Validação do processo por Transportes",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -856,7 +856,7 @@
     },
     {
       "numero": "11.4",
-      "atividade": "Validação do processo por Fiscal, Financeiro e Compras",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -865,7 +865,7 @@
     },
     {
       "numero": "11.5",
-      "atividade": "Aprovação final para entrada em operação",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -3473,6 +3473,6 @@
   "fonte": {
     "arquivo": "LOG-082 - Auditoria 2026.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-082%20-%20Auditoria%202026.xlsx?web=1",
-    "extraidoEm": "2026-11-13T16:55:27-03:00"
+    "extraidoEm": "2026-11-16T14:12:27-03:00"
   }
 }
