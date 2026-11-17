@@ -12,6 +12,7 @@
   "status": "L3",
   "situacao": "Atenção",
   "prioridade": "P0",
+  "tipoAgenda": "",
   "ganhoProjeto": "Quantitativo",
   "tipos": [
     "Capex"
@@ -36,8 +37,8 @@
       "atividade": "Piloto BOM Unisoma",
       "responsavel": "Mellato",
       "status": 1,
-      "inicio": "2026-11-11",
-      "fim": "2026-11-25",
+      "inicio": "2026-11-17",
+      "fim": "2026-12-01",
       "anotacao": ""
     },
     {
@@ -45,17 +46,17 @@
       "atividade": "Turn Key Misc",
       "responsavel": "Compras",
       "status": 1,
-      "inicio": "2026-11-26",
-      "fim": "2026-11-25",
+      "inicio": "2026-12-02",
+      "fim": "2026-12-01",
       "anotacao": ""
     },
     {
       "numero": "03.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Consumo de estoque dos técnicos",
+      "responsavel": "Mellato",
+      "status": 1,
+      "inicio": "2027-01-01",
+      "fim": "2027-06-30",
       "anotacao": ""
     },
     {
@@ -1178,7 +1179,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "16/10/2026  BOM Unisoma Piloto previsto para final de outubro\n16/09/2026  Turn Key Misc (0,15MM): Turn Key Misc - Premissa pendente bench, piloto e implantação (0,15MM). O time de Compras está realizando o levantamento dos custos, com retorno previsto até 25/09. \n16/09/2026  Controle de Estoque em Técnicos (15MM): iniciativa em desenvolvimento com o time de TI.",
+  "statusProjeto": "Risco: Aprovação do projeto TurnKey em função de estudo de viabilidade não ser rentável (Saleme)\n17/11/2026 - BOM Unisoma Piloto previsto para final de outubro\n17/11/2026 - Turn Key Misc (0,15MM): Saleme ja teve retorno de compras com fornecedores da Procisa e CSR, ainda está em apuração e análise de viabilidade. (0,15MM).\n17/11/2026 -  Previsão início Janeiro/27 - Controle de Estoque em Técnicos (15MM): iniciativa em desenvolvimento com o time de TI.",
   "financeiro": [
     {
       "id": "LOG-007",
@@ -3777,6 +3778,6 @@
   "fonte": {
     "arquivo": "LOG-007 - Planejamento Redução Consumo Material.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-007%20-%20Planejamento%20Redu%C3%A7%C3%A3o%20Consumo%20Material.xlsx?web=1",
-    "extraidoEm": "2026-11-16T17:00:19-03:00"
+    "extraidoEm": "2026-11-17T11:10:00-03:00"
   }
 }

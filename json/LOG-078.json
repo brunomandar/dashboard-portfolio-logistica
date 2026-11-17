@@ -12,6 +12,7 @@
   "status": "L0",
   "situacao": "Atenção",
   "prioridade": "P0",
+  "tipoAgenda": "",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "Com a entrada em vigor da Lei nº 15.485/2026, que estabelece o prazo máximo de 30 dias úteis para a quitação do frete, a Claro deverá revisar e adequar seus processos logísticos, financeiros e sistêmicos. A legislação também determina que a forma e o prazo acordados para o pagamento sejam registrados no CIOT, ampliando a necessidade de controle e rastreabilidade das operações de transporte.\n\nO projeto tem como objetivo mapear o fluxo atual de pagamento de fretes, desde a geração dos documentos de transporte até a efetiva liquidação financeira, identificando etapas, prazos e possíveis gargalos que possam comprometer o atendimento à nova regulamentação.\n\nO escopo contempla a revisão dos processos de emissão e registro do CIOT, recebimento e auditoria de documentos, geração de pré-fatura, emissão de aviso de faturamento, aprovações internas e efetivação do pagamento. Também deverão ser avaliadas melhorias sistêmicas e possíveis integrações entre o TMS Catalde, o SAP e as demais ferramentas envolvidas, permitindo o acompanhamento de cada operação desde sua origem até a confirmação do pagamento.\n\nAlém disso, o projeto prevê a criação de indicadores, controles e alertas preventivos para identificar documentos próximos do vencimento, operações com inconsistências e pagamentos com risco de ultrapassar o prazo regulamentar. Como a Lei nº 15.485/2026 não define expressamente o marco inicial da contagem dos 30 dias úteis, esse ponto deverá ser validado com as áreas Jurídica, Fiscal e de Compliance antes da definição definitiva do fluxo.\n\nQUANTOS PAGAMENTOS REALIZADOS ANUALMENTE \n\nPOSSIVEIS RISCOS\n\nPAGAMENTO FRETE PEP",
@@ -3471,6 +3472,6 @@
   "fonte": {
     "arquivo": "LOG-078 - Regulamentacão do Prazo de Pagamentos (30 Dias úteis).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-078%20-%20Regulamentac%C3%A3o%20do%20Prazo%20de%20Pagamentos%20%2830%20Dias%20%C3%BAteis%29.xlsx?web=1",
-    "extraidoEm": "2026-11-16T17:03:06-03:00"
+    "extraidoEm": "2026-11-17T11:12:09-03:00"
   }
 }

@@ -12,6 +12,7 @@
   "status": "L0",
   "situacao": "Planejado",
   "prioridade": "P1",
+  "tipoAgenda": "",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O projeto revisa a metodologia de análise da alta rotatividade de terminais, com nova lógica baseada em pedidos de troca e visitas técnicas, para identificar as causas reais das trocas e eliminar distorções nos indicadores de qualidade, gerando inteligência para decisões de manutenção, reutilização, descarte e renovação dos equipamentos. A iniciativa tem como premissas que a idade técnica e a recirculação excessiva elevam as trocas e que a maioria dos terminais substituídos não apresenta falha crítica, com expectativa de reduzir trocas desnecessárias e melhorar a gestão dos ativos.",
@@ -99,7 +100,7 @@
       "numero": "08.",
       "atividade": "Cruzamento com OS (VT) e rotina mensal de Blacklist",
       "responsavel": "Time CD",
-      "status": 1,
+      "status": 4,
       "inicio": "2026-08-14",
       "fim": "2026-10-05",
       "anotacao": ""
@@ -108,7 +109,7 @@
       "numero": "09.",
       "atividade": "Nova Blacklist (WIFI 3.1 + GPON) e acompanhamento",
       "responsavel": "Time CD",
-      "status": 1,
+      "status": 4,
       "inicio": "2026-10-08",
       "fim": "2026-11-10",
       "anotacao": ""
@@ -117,7 +118,7 @@
       "numero": "10.",
       "atividade": "Testes das implementações realizadas",
       "responsavel": "Time CD",
-      "status": 0,
+      "status": 4,
       "inicio": "2026-11-11",
       "fim": "2026-12-15",
       "anotacao": ""
@@ -126,18 +127,18 @@
       "numero": "11.",
       "atividade": "Conclusão e aceite do projeto",
       "responsavel": "Time CD",
-      "status": 0,
+      "status": 4,
       "inicio": "2026-12-16",
-      "fim": "2026-12-31",
+      "fim": "2026-12-17",
       "anotacao": ""
     },
     {
       "numero": "12.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Dahsboard IN para automatizar a Blacklist mensal",
+      "responsavel": "Serviços Técnicos",
+      "status": 0,
+      "inicio": "2026-09-01",
+      "fim": "2027-02-28",
       "anotacao": ""
     },
     {
@@ -585,7 +586,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "10/11/26 - Implementar rotina de Blacklist Mensal para fluxo de descarte em mesma periodicidade.\n08/10/26 - Nova Blacklist gerada pelo Time de Serviços Técnicos (WIFI 3.1 + GPON).\n21/08/26 - Previsão de 30/08/26 para cruzar com a base de jigas de testes e rodar a 1ª Blacklist pelo Extrator.\n21/08/26 - Previsão de 15/09/26 para cruzar com as OS geradas por VT.\n21/08/26 - Previsão de 30/09/26 para implementar a rotina de Blacklist mensal para o fluxo de descarte.\n14/08/26 - Definido que até setembro haverá lista mensal automatizada por serviços de campo, com medição a criar e QuickWin a informar.\n28/07/26 - Previsão de 15/08/26 para identificar os motivos de baixas não ligados ao terminal.\n17/06/26 - Escopo de métricas de consulta da jornada dos terminais para Scrap por rotatividade, com previsão para 23/06/26.\n09/06/26 - Relatórios e testes apresentados ao Demis, com conclusão de que novos parâmetros e estudos são necessários.\n09/06/26 - Jackson e Mauricio vão alinhar as novas fases e a distribuição de tarefas do novo estudo.\n26/05/26 - Previsão de 08/06/26 para definir e estudar novas diretrizes para investigações.\n25/05/26 - Levantamento parado, com previsão de retomada em 01/06/26.\n15/05/26 - Mauricio levantará terminais novos de 2 anos e índice de troca; divergência entre 48 meses e dados maiores, com retorno previsto em 22/05/26.\n06/05/26 - Estudos, relatórios e laudos enviados ao Mauricio, aguardando validação para as próximas etapas.",
+  "statusProjeto": "17/11/2026 - Blacklist Ongoing será substituída pelo relatório de IN, previsto para Fev/27\n10/11/26 - Implementar rotina de Blacklist Mensal para fluxo de descarte em mesma periodicidade.\n08/10/26 - Nova Blacklist gerada pelo Time de Serviços Técnicos (WIFI 3.1 + GPON).\n21/08/26 - Previsão de 30/08/26 para cruzar com a base de jigas de testes e rodar a 1ª Blacklist pelo Extrator.\n21/08/26 - Previsão de 15/09/26 para cruzar com as OS geradas por VT.\n21/08/26 - Previsão de 30/09/26 para implementar a rotina de Blacklist mensal para o fluxo de descarte.\n14/08/26 - Definido que até setembro haverá lista mensal automatizada por serviços de campo, com medição a criar e QuickWin a informar.\n28/07/26 - Previsão de 15/08/26 para identificar os motivos de baixas não ligados ao terminal.\n17/06/26 - Escopo de métricas de consulta da jornada dos terminais para Scrap por rotatividade, com previsão para 23/06/26.\n09/06/26 - Relatórios e testes apresentados ao Demis, com conclusão de que novos parâmetros e estudos são necessários.\n09/06/26 - Jackson e Mauricio vão alinhar as novas fases e a distribuição de tarefas do novo estudo.\n26/05/26 - Previsão de 08/06/26 para definir e estudar novas diretrizes para investigações.\n25/05/26 - Levantamento parado, com previsão de retomada em 01/06/26.\n15/05/26 - Mauricio levantará terminais novos de 2 anos e índice de troca; divergência entre 48 meses e dados maiores, com retorno previsto em 22/05/26.\n06/05/26 - Estudos, relatórios e laudos enviados ao Mauricio, aguardando validação para as próximas etapas.",
   "financeiro": [
     {
       "id": "LOG-013",
@@ -3184,6 +3185,6 @@
   "fonte": {
     "arquivo": "LOG-013 - Ciclo de Vida.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-013%20-%20Ciclo%20de%20Vida.xlsx?web=1",
-    "extraidoEm": "2026-11-16T17:00:54-03:00"
+    "extraidoEm": "2026-11-17T11:10:37-03:00"
   }
 }

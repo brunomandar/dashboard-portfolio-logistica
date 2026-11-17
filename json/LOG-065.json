@@ -12,6 +12,7 @@
   "status": "L2",
   "situacao": "Atenção",
   "prioridade": "P1",
+  "tipoAgenda": "",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "Otimizar a jornada logística do Canal PME por meio do redesenho e padronização dos processos.Visando a integração das informações e centralização do acompanhamento dos pedidos. \nO projeto abrange a identificação e o tratamento dos erros cadastrais e das rejeições SEFAZ, promovendo maior rastreabilidade, agilidade operacional e transparência na comunicação com áreas internas, vendedores e clientes.\nAreas envolvidas: Logistica Transporte, Logistica Armazenagem(CD), Processos, PME Matricial, PME Regional, Cadastro, TI e Jurídico.",
@@ -3853,6 +3854,6 @@
   "fonte": {
     "arquivo": "LOG-065 - Imersão na Esteira PME.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-065%20-%20Imers%C3%A3o%20na%20Esteira%20PME.xlsx?web=1",
-    "extraidoEm": "2026-11-16T17:02:32-03:00"
+    "extraidoEm": "2026-11-17T11:11:46-03:00"
   }
 }

@@ -12,6 +12,7 @@
   "status": "L4",
   "situacao": "Atenção",
   "prioridade": "P0",
+  "tipoAgenda": "",
   "ganhoProjeto": "Qualitativo",
   "tipos": [
     "Capex"
@@ -1204,7 +1205,7 @@
       "detalhe": "Projeto será levado para aprovação do time Financeiro. possivelmente na próxima semana. Os ganhos foram estimados e o FIND ja finalizado. Ganho estimado para 2026 17MM"
     }
   ],
-  "statusProjeto": "Risco: Ausência de base estruturada para abertura dos equipamentos recuperados por tecnologia, o que pode comprometer a visibilidade dos resultados por tecnologia e a correta mensuração dos impactos em CAPEX.\n04/11/2026 - Validação do BP do projeto contemplando a revisão do FCST e o novo saving \n26/10/2026 - Incorporar o DX22 como uma ação ou alavanca operacional do projeto  Retirada de Equipamentos por Regional \n15/10/2026 -  Definidas as regras de desempenho: considerar o realizado quando superior ao baseline e o baseline quando inferior.\n19/09/2026 - Meta definida com base no resultado de jan-jun/26, desconsiderando jul e ago devido aos impactos de churn.\n03/09/2026 -  Alinhada medição da safra em 30 dias, acompanhamento por eficiência versus baseline 2025 e critério de captura para jan-dez/26.\n04/08/2026 -  Definidas as premissas de meta e projeção. Realizado de jan-jul/26 como referência e FCST a partir de ago/26.",
+  "statusProjeto": "Risco: Ausência de base estruturada para abertura dos equipamentos recuperados por tecnologia, o que pode comprometer a visibilidade dos resultados por tecnologia e a correta mensuração dos impactos em CAPEX.\n17/11/2026 - Alinhamento para inclusão do projeto no WAVE \n17/11/2026 - Incorporação do projeto DX22 nesta demanda (Ganho dessa demanda já inclusa no Guarda-chuva de retirada de equipamentos)\n04/11/2026 - Validação do BP do projeto contemplando a revisão do FCST e o novo saving \n26/10/2026 - Incorporar o DX22 como uma ação ou alavanca operacional do projeto  Retirada de Equipamentos por Regional \n15/10/2026 -  Definidas as regras de desempenho: considerar o realizado quando superior ao baseline e o baseline quando inferior.\n19/09/2026 - Meta definida com base no resultado de jan-jun/26, desconsiderando jul e ago devido aos impactos de churn.\n03/09/2026 -  Alinhada medição da safra em 30 dias, acompanhamento por eficiência versus baseline 2025 e critério de captura para jan-dez/26.\n04/08/2026 -  Definidas as premissas de meta e projeção. Realizado de jan-jul/26 como referência e FCST a partir de ago/26.",
   "financeiro": [
     {
       "id": "LOG-006",
@@ -3803,6 +3804,6 @@
   "fonte": {
     "arquivo": "LOG-006 - Projeto Retirada de Equipamento por Regional.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-006%20-%20Projeto%20Retirada%20de%20Equipamento%20por%20Regional.xlsx?web=1",
-    "extraidoEm": "2026-11-16T17:00:17-03:00"
+    "extraidoEm": "2026-11-17T11:09:58-03:00"
   }
 }

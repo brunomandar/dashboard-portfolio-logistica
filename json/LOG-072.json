@@ -12,6 +12,7 @@
   "status": "L0",
   "situacao": "Atenção",
   "prioridade": "P1",
+  "tipoAgenda": "",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O Projeto Boost busca evoluir a jornada de ativação do Combo Multi nos canais E-commerce Residencial e Televendas, com foco na captura de clientes móvel e na otimização das jornadas de ativação e portabilidade. A iniciativa alinha escopo e áreas envolvidas e define o melhor modelo para avançar, incluindo a validação da biometria.",
@@ -2794,6 +2795,6 @@
   "fonte": {
     "arquivo": "LOG-072 - BOOST - Combo Multi no Canal Ecommerce.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-072%20-%20BOOST%20-%20Combo%20Multi%20no%20Canal%20Ecommerce.xlsx?web=1",
-    "extraidoEm": "2026-11-16T17:02:53-03:00"
+    "extraidoEm": "2026-11-17T11:11:57-03:00"
   }
 }

@@ -12,6 +12,7 @@
   "status": "L5",
   "situacao": "Concluído",
   "prioridade": "Concluído",
+  "tipoAgenda": "",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O projeto estrutura o checklist da jornada de integração de novos transportadores, cobrindo cadastro de fornecedor, treinamento, integração com o TMS, seguro, acessos aos portais e tratativa de sinistros e abono de OTD. A iniciativa depende da aprovação do BID com os novos transportadores.",
@@ -3778,6 +3779,6 @@
   "fonte": {
     "arquivo": "LOG-052 - Checklist Jornada de Integração e Tracking de Transportadores.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-052%20-%20Checklist%20Jornada%20de%20Integra%C3%A7%C3%A3o%20e%20Tracking%20de%20Transportadores.xlsx?web=1",
-    "extraidoEm": "2026-11-16T17:02:00-03:00"
+    "extraidoEm": "2026-11-17T11:11:29-03:00"
   }
 }

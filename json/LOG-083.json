@@ -12,6 +12,7 @@
   "status": "L1",
   "situacao": "Planejado",
   "prioridade": "P1",
+  "tipoAgenda": "",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "Planejar a integração das operações logísticas da Desktop à estrutura da Claro, por meio do diagnóstico do modelo atual e da definição do cenário futuro para distribuição, logística reversa, Centros de Distribuição, transportes e frota própria.\n\nO projeto deverá mapear processos, volumes, custos, recursos, contratos, sistemas e controles existentes, identificando sinergias operacionais, oportunidades de otimização de despesas e alternativas para o redesenho da malha logística, preparando a operação para uma eventual integração após a conclusão da OPA.",
@@ -278,901 +279,127 @@
     {
       "numero": 1,
       "atividade": "Kick-off - Diagnóstico inicial da operação",
-      "responsavel": "Transportes",
-      "status": 1,
-      "inicio": "2026-08-13",
-      "fim": "2026-08-13",
+      "responsavel": "Fabiana",
+      "status": 4,
+      "inicio": "2026-11-03",
+      "fim": "2026-11-09",
       "anotacao": ""
     },
     {
-      "numero": "1.1",
-      "atividade": "",
-      "responsavel": "Transportes",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "numero": 2,
+      "atividade": "Mapa completo da operação atual",
+      "responsavel": "",
+      "status": 1,
+      "inicio": "2026-11-10",
+      "fim": "2026-12-21",
+      "anotacao": ""
+    },
+    {
+      "numero": "2.1",
+      "atividade": "Levantamento da operação atual: processos, volumes e custos",
+      "responsavel": "McKinsey",
+      "status": 1,
+      "inicio": "2026-11-18",
+      "fim": "2026-12-01",
+      "anotacao": ""
+    },
+    {
+      "numero": "2.2",
+      "atividade": "Construção de business cases para captura de valor",
+      "responsavel": "McKinsey",
+      "status": 1,
+      "inicio": "2026-11-18",
+      "fim": "2026-12-01",
+      "anotacao": ""
+    },
+    {
+      "numero": "2.3",
+      "atividade": "Recebimento da base de fretes (3 meses) da operação Desktop - pendente",
+      "responsavel": "McKinsey",
+      "status": 1,
+      "inicio": "2026-11-11",
+      "fim": "2026-11-11",
+      "anotacao": ""
+    },
+    {
+      "numero": "2.4",
+      "atividade": "Mapeamento de impactos na operação de Transportes",
+      "responsavel": "Tiago",
+      "status": 0,
+      "inicio": "2026-11-23",
+      "fim": "2026-11-23",
+      "anotacao": ""
+    },
+    {
+      "numero": "2.5",
+      "atividade": "Participação nos fóruns semanais de governança do PMO",
+      "responsavel": "Tiago",
+      "status": 0,
+      "inicio": "2026-11-23",
+      "fim": "2026-11-23",
       "anotacao": ""
     },
     {
       "numero": 3,
-      "atividade": "",
+      "atividade": "Elaborar matriz de sinergias e oportunidades",
       "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "status": 0,
+      "inicio": "2026-12-22",
+      "fim": "2026-12-28",
       "anotacao": ""
     },
     {
       "numero": 4,
-      "atividade": "",
+      "atividade": "Elaboração de cenários",
       "responsavel": "",
-      "status": "",
+      "status": 0,
+      "inicio": "2026-12-29",
+      "fim": "2026-12-31",
+      "anotacao": ""
+    },
+    {
+      "numero": "4.1",
+      "atividade": "Simulação de fretes Claro x Desktop (depende de 2.3)",
+      "responsavel": "Transportes",
+      "status": 0,
       "inicio": "",
       "fim": "",
       "anotacao": ""
     },
     {
       "numero": 5,
-      "atividade": "",
+      "atividade": "Validação dos cenários",
       "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "status": 0,
+      "inicio": "2027-01-01",
+      "fim": "2027-01-07",
       "anotacao": ""
     },
     {
       "numero": 6,
-      "atividade": "",
+      "atividade": "Elaborar Business Case (impactos financeiros)",
       "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "status": 0,
+      "inicio": "2027-01-08",
+      "fim": "2027-01-14",
       "anotacao": ""
     },
     {
       "numero": 7,
-      "atividade": "",
+      "atividade": "Desenho da operação futura",
       "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "status": 0,
+      "inicio": "2027-01-15",
+      "fim": "2027-02-04",
       "anotacao": ""
     },
     {
       "numero": 8,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 9,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 10,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 11,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 12,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 13,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 14,
-      "atividade": "Mapa completo da operação atual",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 15,
-      "atividade": "Elaborar matriz de sinergias e oportunidades",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 16,
-      "atividade": "Elaboração de cenários",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 17,
-      "atividade": "Validação dos cenários",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 18,
-      "atividade": "Elaborar Business Case (impactos financeiros)",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 19,
-      "atividade": "Desenho da operação futura",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 20,
       "atividade": "Conclusão do processo de integração",
       "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 21,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 22,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 23,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 24,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 25,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 26,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 27,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 28,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 29,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 30,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 31,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 32,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 33,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 34,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 35,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 36,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 37,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 38,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 39,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 40,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 41,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 42,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 43,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 44,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 45,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 46,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 47,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 48,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 49,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 50,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 51,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 52,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 53,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 54,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 55,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 56,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 57,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 58,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 59,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 60,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 61,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 62,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 63,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 64,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 65,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 66,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 67,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 68,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 69,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 70,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 71,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 72,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 73,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 74,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 75,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 76,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 77,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 78,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 79,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 80,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 81,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 82,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 83,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 84,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 85,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 86,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 87,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 88,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 89,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 90,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 91,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 92,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 93,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 94,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 95,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 96,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 97,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 98,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 99,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": 100,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "status": 0,
+      "inicio": "2027-02-05",
+      "fim": "2027-04-08",
       "anotacao": ""
     }
   ],
@@ -1180,10 +407,10 @@
     {
       "data": "2026-11-16",
       "acoes": "Acompanhar a definição de qual fórum de TI permanece (PMO/Vanessa e Luiz)\nAcompanhar o plano de detalhamento da implementação do PMO (semana de 23/11) e mapear os impactos na operação de Transportes/Logística",
-      "detalhe": "Reunião de governança do Projeto Ruby, conduzida pela PMO/Vanessa. Serão criados fóruns semanais com lideranças seniores, com início na semana de 23/11: Engenharia e Operações (segunda, 10h) e TI (segunda, 15h), cada um com temas específicos para que as lideranças direcionem pedidos de ajuda. Maria Júlia (Ger. Marketing e Produtos Financeiros) sugeriu incluir o Rogério (Minha Claro/autoatendimento) em Operação e Atendimento e questionou a necessidade de representante em Operações Técnicas e Redes. Vanessa e Luiz concordaram em consolidar em uma única agenda, fechando primeiro a lista de participantes e depois definindo qual fórum permanece; se ficar o novo, a Engenharia deve participar.Treinamento do Business Case (Luiza Cereda): apresentado o template, válido apenas para iniciativas de redução de custos, com impacto mensal separado entre Claro e Desktop, validação pelo financeiro e upload no Wave. Prazo para as principais iniciativas: esta semana; plano de detalhamento da implementação na semana de 23/11."
+      "detalhe": "Reunião de governança do Projeto Ruby, conduzida pela Vanessa Simões (McKinsey) Serão criados fóruns semanais com lideranças seniores, com início na semana de 23/11: Engenharia e Operações (segunda, 10h) e TI (segunda, 15h), cada um com temas específicos para que as lideranças direcionem pedidos de ajuda. Maria Júlia (Ger. Marketing e Produtos Financeiros) sugeriu incluir o Rogério (Minha Claro/autoatendimento) em Operação e Atendimento e questionou a necessidade de representante em Operações Técnicas e Redes. Vanessa e Luiz concordaram em consolidar em uma única agenda, fechando primeiro a lista de participantes e depois definindo qual fórum permanece; se ficar o novo, a Engenharia deve participar.Treinamento do Business Case (Luiza Cereda): apresentado o template, válido apenas para iniciativas de redução de custos, com impacto mensal separado entre Claro e Desktop, validação pelo financeiro e upload no Wave. Prazo para as principais iniciativas: esta semana; plano de detalhamento da implementação na semana de 23/11."
     }
   ],
-  "statusProjeto": "16/11/26 - Reunião de governança do Projeto Ruby (PMO/IMO): definidos fóruns semanais com lideranças a partir de 23/11, com proposta de consolidar com o fórum de TI existente. Apresentado o template de Business Case do PMO.\nPrazo do PMO: plano de detalhamento da implementação na semana de 23/11. Transportes acompanha em paralelo para mapear impactos na operação.\n11/11/26 - Realizada agenda para elaboração dos cenários de transporte junto ao time McKinsey. Ficou pedente da Mckinsey enviar uma base dos fretes realizados dos últimos 3 meses para o opreação Desktop para o time de transportes Claro elaborarem uma simulação. Foco em entendermos as discrepancias de valores.\n10/11/26 - Visita do time Claro na Operação Desktop, Leandro e Ingrid representaram a área de transportes\n29/10/26 - Primeiro contato entre o time de logística transportes com a equip Desktop, colaboradores Thiago Morishita (Financeiro FP&A + Logística), Vinicius Jore Souza ( Ger. Loística e Frota) e o Mateus Henrique Stahanoy (torre de controle, Logística e frota) esses são os colaboradores Desktop que possuem sinergia com a nossa área",
+  "statusProjeto": "16/11/26 - Reunião de governança do Projeto Ruby (PMO/IMO): definidos fóruns semanais com lideranças a partir de 23/11. Apresentado o template de Business Case do PMO.\nPrazo do PMO: business cases das principais iniciativas até esta semana, plano de detalhamento da implementação na semana de 23/11. Transportes acompanha em paralelo para mapear impactos na operação.\n11/11/26 - Realizada agenda para elaboração dos cenários de transporte junto ao time McKinsey. Ficou pedente da Mckinsey enviar uma base dos fretes realizados dos últimos 3 meses para o opreação Desktop para o time de transportes Claro elaborarem uma simulação. Foco em entendermos as discrepancias de valores.\n10/11/26 - Visita do time Claro na Operação Desktop, Leandro e Ingrid representaram a área de transportes\n29/10/26 - Primeiro contato entre o time de logística transportes com a equip Desktop, colaboradores Thiago Morishita (Financeiro FP&A + Logística), Vinicius Jore Souza ( Ger. Loística e Frota) e o Mateus Henrique Stahanoy (torre de controle, Logística e frota) esses são os colaboradores Desktop que possuem sinergia com a nossa área",
   "financeiro": [
     {
       "id": "LOG-083",
@@ -3782,6 +3009,6 @@
   "fonte": {
     "arquivo": "LOG-083 - RUBI Absorção Operações Desktop.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-083%20-%20RUBI%20Absor%C3%A7%C3%A3o%20Opera%C3%A7%C3%B5es%20Desktop.xlsx?web=1",
-    "extraidoEm": "2026-11-16T17:03:17-03:00"
+    "extraidoEm": "2026-11-17T11:12:20-03:00"
   }
 }

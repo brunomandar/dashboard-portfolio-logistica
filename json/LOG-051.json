@@ -12,6 +12,7 @@
   "status": "L3",
   "situacao": "Em execução",
   "prioridade": "P1",
+  "tipoAgenda": "",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "Desenvolver o Relatório Funil de Vendas e Ativação de Chips, com o objetivo de acompanhar, comparar e analisar o desempenho entre os chips vendidos e os chips efetivamente ativados, permitindo identificar perdas no processo comercial, oportunidades de melhoria e apoiar a tomada de decisão das áreas de Vendas, Operações e Planejamento.",
@@ -3787,6 +3788,6 @@
   "fonte": {
     "arquivo": "LOG-051 - Relatório ComboMulti.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-051%20-%20Relat%C3%B3rio%20ComboMulti.xlsx?web=1",
-    "extraidoEm": "2026-11-16T17:01:55-03:00"
+    "extraidoEm": "2026-11-17T11:11:26-03:00"
   }
 }

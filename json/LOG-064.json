@@ -4,7 +4,7 @@
   "area": "Transportes",
   "pontoFocal": "Michelle Rodrigues",
   "inicio": "2026-06-01",
-  "termino": "2026-12-31",
+  "termino": "2027-01-30",
   "inicioCaptura": "",
   "iniciativa": "Op. Transporte",
   "pmo": "Edinalva",
@@ -12,6 +12,7 @@
   "status": "L2",
   "situacao": "Em risco",
   "prioridade": "P1",
+  "tipoAgenda": "",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "Implementar melhorias na ferramenta de Rastreabilidade COMEX para proporcionar visibilidade ponta a ponta dos pedidos de importação, por meio de um layout mais intuitivo, aumento da confiabilidade das informações, redução de inconsistências e minimização de inputs manuais. O projeto também visa eliminar controles paralelos, centralizar o acompanhamento dos processos e aumentar a eficiência operacional na gestão das cargas.",
@@ -82,15 +83,33 @@
     },
     {
       "numero": "06.",
+      "atividade": "Detalhar fluxo operacional e documentação técnica.",
+      "responsavel": "Emerson (E4U)",
+      "status": 0,
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": "07.",
+      "atividade": "Formalizar escopo  da solução.",
+      "responsavel": "Edinalva",
+      "status": 2,
+      "inicio": "2026-11-16",
+      "fim": "2026-11-19",
+      "anotacao": ""
+    },
+    {
+      "numero": "08.",
       "atividade": "Aprovação do Orçamento",
       "responsavel": "Fabricio",
-      "status": 0,
+      "status": 4,
       "inicio": "2026-10-27",
       "fim": "2026-11-09",
       "anotacao": "[Comentário encadeado]\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\nComentário:\nFabricio pediu para marcar agenda para 09/11/2026"
     },
     {
-      "numero": "07.",
+      "numero": "09.",
       "atividade": "Abertura de requisição de compra.",
       "responsavel": "Edinalva",
       "status": 0,
@@ -99,7 +118,7 @@
       "anotacao": ""
     },
     {
-      "numero": "08.",
+      "numero": "10.",
       "atividade": "Desenvolvimento",
       "responsavel": "Emerson (E4U)",
       "status": 0,
@@ -108,28 +127,10 @@
       "anotacao": ""
     },
     {
-      "numero": "09.",
+      "numero": "11.",
       "atividade": "Homologação",
       "responsavel": "Michelle/Luis",
       "status": 0,
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": "10.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": "11.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
       "inicio": "",
       "fim": "",
       "anotacao": ""
@@ -446,14 +447,19 @@
       "data": "2026-10-23",
       "acoes": "Solicitação de abertura de PPM 149837",
       "detalhe": "Enviado documentação para Gustavo, concluir requisição"
+    },
+    {
+      "data": "2026-11-11",
+      "acoes": "Próximos Passos Definidos em Reunião",
+      "detalhe": "Foram alinhados os seguintes pontos:\nRevisar a viabilidade do cronograma proposto de 8 semanas, considerando possíveis impactos e dependências.\nValidar o modelo de pagamento, definindo se o faturamento ocorrerá por módulo entregue ou ao final do projeto.\nDetalhar o fluxo operacional, incluindo a definição da ferramenta de cotação a ser utilizada.\nRevisar e consolidar o escopo técnico, garantindo o atendimento de todos os requisitos e solicitações mapeados.\nRetirar do orçamento o custo da licença de BI e avaliar a internalização dos relatórios junto ao time do Lecione, com definição dos insumos necessários para construção do dashboard de acompanhamento do COMEX.\nIncluir no backlog o item de previsão de custos, para acompanhamento e gestão financeira da solução."
     }
   ],
-  "statusProjeto": "23/10/26 - Solicitação de abertura de PPM 149837\n23/10/26 -Estimar o volume de horas necessário para compor o bolsão de horas a ser considerado na renovação do contrato.\n13/10/26 -Conclusão do mapeamento dos Requisitos funcionais/Time E4U iniciou o desenho da solução\n15/09/26 - Inserção da Integração SAP x Rastreabilidade na Agenda Prioritária de TI",
+  "statusProjeto": "11/11/2026 Em fase de alinhamento dos requisitos do projeto, contemplando a revisão do cronograma de 8 semanas, definição do modelo de pagamento, validação do fluxo operacional e do escopo técnico, além da internalização dos relatórios de BI para suporte ao dashboard COMEX e inclusão da previsão de custos no backlog da solução. (Agendadpo\n23/10/26 - Solicitação de abertura de PPM 149837\n23/10/26 -Estimar o volume de horas necessário para compor o bolsão de horas a ser considerado na renovação do contrato.\n13/10/26 -Conclusão do mapeamento dos Requisitos funcionais/Time E4U iniciou o desenho da solução\n15/09/26 - Inserção da Integração SAP x Rastreabilidade na Agenda Prioritária de TI",
   "financeiro": [],
   "fca": {},
   "fonte": {
     "arquivo": "LOG-064 - Rastreabilidade - COMEX.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-064%20-%20Rastreabilidade%20-%20COMEX.xlsx?web=1",
-    "extraidoEm": "2026-11-16T17:02:27-03:00"
+    "extraidoEm": "2026-11-17T11:11:43-03:00"
   }
 }

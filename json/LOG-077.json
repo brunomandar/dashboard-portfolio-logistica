@@ -12,6 +12,7 @@
   "status": "L1",
   "situacao": "Planejado",
   "prioridade": "P2",
+  "tipoAgenda": "",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O projeto consiste na realização de uma POC da tecnologia Zello com um grupo piloto de 5 motociclistas da empresa Hexpress, integrando monitoramento por comando de voz e recursos de IA às operações de entrega do canal Single e Multi, visando ampliar a visibilidade das rotas, gerar dados operacionais estruturados e identificar oportunidades de ganho em eficiência, rastreabilidade e gestão operacional. \nA POC será realizada nos Estados do Rio de Janeiro, São Paulo e Mato Grosso do Sul",
@@ -3789,6 +3790,6 @@
   "fonte": {
     "arquivo": "LOG-077 - POC Zello.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-077%20-%20POC%20Zello.xlsx?web=1",
-    "extraidoEm": "2026-11-16T17:03:03-03:00"
+    "extraidoEm": "2026-11-17T11:12:07-03:00"
   }
 }

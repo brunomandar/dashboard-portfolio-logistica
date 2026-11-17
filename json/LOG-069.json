@@ -12,6 +12,7 @@
   "status": "L3",
   "situacao": "Em execução",
   "prioridade": "P0",
+  "tipoAgenda": "",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O projeto visa adequar a operação logística às novas regras tributárias, estruturando a governança e o desenho tributário e adaptando SAP, sistemas fiscais, TMS, documentos de transporte, transportadores e contratos para a entrada em 2027. A iniciativa prevê testes ponta a ponta, decisão de go/no-go e estabilização da operação, com validação de créditos, contabilização e pagamento de fretes.",
@@ -3310,6 +3311,6 @@
   "fonte": {
     "arquivo": "LOG-069 - Reforma Tributária.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-069%20-%20Reforma%20Tribut%C3%A1ria.xlsx?web=1",
-    "extraidoEm": "2026-11-16T17:02:44-03:00"
+    "extraidoEm": "2026-11-17T11:11:51-03:00"
   }
 }

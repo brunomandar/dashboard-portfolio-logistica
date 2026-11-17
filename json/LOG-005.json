@@ -3,7 +3,7 @@
   "projeto": "Venda de Ativo",
   "area": "Estoques",
   "pontoFocal": "Gustavo Mendes",
-  "inicio": "2026-01-01",
+  "inicio": "2024-01-01",
   "termino": "2026-12-01",
   "inicioCaptura": "2026-01-01",
   "iniciativa": "DGP",
@@ -12,6 +12,7 @@
   "status": "L5",
   "situacao": "Concluído",
   "prioridade": "P0",
+  "tipoAgenda": "",
   "ganhoProjeto": "Quantitativo",
   "tipos": [
     "Capex"
@@ -32,29 +33,29 @@
   "macroAtividades": [
     {
       "numero": "01.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Implementação do Broker",
+      "responsavel": "Gustavo",
+      "status": 5,
+      "inicio": "2024-01-01",
+      "fim": "2024-12-01",
       "anotacao": ""
     },
     {
       "numero": "02.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Monitoramento Broker (Estabilização)",
+      "responsavel": "Gustavo",
+      "status": 5,
+      "inicio": "2025-01-01",
+      "fim": "2025-12-01",
       "anotacao": ""
     },
     {
       "numero": "03.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Monoramento Broker Ano 3 - DGP (Mensuração de Ganhos)",
+      "responsavel": "Gustavo",
+      "status": 5,
+      "inicio": "2026-01-01",
+      "fim": "2026-12-01",
       "anotacao": ""
     },
     {
@@ -1183,7 +1184,7 @@
       "detalhe": "FCST atualizado conforme previsão reportada pelo gestor do projeto"
     }
   ],
-  "statusProjeto": "2024: Piloto do processo, com contratação e implantação do broker. \t\t\t\t\t\t\t\t\t\t\n 2025: Consolidação do processo, incluindo a condução das negociações e a redução do comissionamento. \t\t\t\t\t\t\t\t\t\t\n 2026: Acompanhamento da venda de ativos (Ano 2), com operação em regime contínuo (ongoing).",
+  "statusProjeto": "01/12/2026 - Meta utltrapassada.  Buscando previsão da receita 17MM até Dez/2026\t\t\n2026: Acompanhamento da venda de ativos (Ano 2), com operação em regime contínuo (ongoing). \n2025: Consolidação do processo, incluindo a condução das negociações e a redução do comissionamento. \t\t\t\t\t\n2024: Piloto do processo, com contratação e implantação do broker.",
   "financeiro": [
     {
       "id": "LOG-005",
@@ -3782,6 +3783,6 @@
   "fonte": {
     "arquivo": "LOG-005 - Venda de Ativo.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-005%20-%20Venda%20de%20Ativo.xlsx?web=1",
-    "extraidoEm": "2026-11-16T17:00:15-03:00"
+    "extraidoEm": "2026-11-17T11:09:56-03:00"
   }
 }

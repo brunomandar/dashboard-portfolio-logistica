@@ -12,6 +12,7 @@
   "status": "L4",
   "situacao": "Atenção",
   "prioridade": "P0",
+  "tipoAgenda": "",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O projeto aprimora a gestão e a visibilidade dos estoques empresariais PM/MM por meio de relatórios gerenciais, padronização de processos e do uso do SAP e integração com o WMS, visando aumentar o controle, a acuracidade e o planejamento. A execução considera a evolução do sistema de gestão e as dependências de S/4HANA e TCIA.",
@@ -2895,6 +2896,6 @@
   "fonte": {
     "arquivo": "LOG-020 - EE - Visão de Estoques.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-020%20-%20EE%20-%20Vis%C3%A3o%20de%20Estoques.xlsx?web=1",
-    "extraidoEm": "2026-11-16T17:01:04-03:00"
+    "extraidoEm": "2026-11-17T11:10:48-03:00"
   }
 }

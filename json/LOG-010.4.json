@@ -12,6 +12,7 @@
   "status": "L4",
   "situacao": "Atenção",
   "prioridade": "P0",
+  "tipoAgenda": "",
   "ganhoProjeto": "Quantitativo",
   "tipos": [
     "Opex",
@@ -3788,6 +3789,6 @@
   "fonte": {
     "arquivo": "LOG-010.4 - Top Rotas  - Mctech.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.4%20-%20Top%20Rotas%20%20-%20Mctech.xlsx?web=1",
-    "extraidoEm": "2026-11-16T17:00:50-03:00"
+    "extraidoEm": "2026-11-17T11:10:33-03:00"
   }
 }
