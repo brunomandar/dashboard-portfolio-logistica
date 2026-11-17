@@ -273,6 +273,9 @@ window.DASHBOARD_SHOW_META = true;
     const pontoFocalList = activeMultiValues('filterPontoFocal');
     const focalAcompList = activeMultiValues('filterFocalAcomp');
     const prioridadeList = activeMultiValues('filterPrioridade');
+    // Tipo de Agenda: seleção única (Todas / Estratégica / Geral)
+    const agendaValue = $('#filterAgenda')?.value || '';
+    const agendaList = agendaValue ? [agendaValue] : [];
     return {
       // Ano: 2026 marcado = sem filtro de projetos (comportamento anterior); só 2027 = filtra 2027
       ano: (() => { const years = activeMultiValues('filterAno'); return years.length === 1 && years[0] !== '2026' ? years[0] : ''; })(),
@@ -285,7 +288,7 @@ window.DASHBOARD_SHOW_META = true;
       iniciativa: singleOf(iniciativaList),
       pontoFocal: singleOf(pontoFocalList),
       focalAcomp: singleOf(focalAcompList),
-      gerenciaList, statusList, iniciativaList, pontoFocalList, focalAcompList, prioridadeList
+      gerenciaList, statusList, iniciativaList, pontoFocalList, focalAcompList, prioridadeList, agendaList
     };
   }
 
@@ -361,7 +364,8 @@ window.DASHBOARD_SHOW_META = true;
       (!filters.tipo || arrayOf(project.tipos).map(clean).includes(filters.tipo)) &&
       (!filters.iniciativaList.length || filters.iniciativaList.includes(clean(first(project, ['iniciativa','forum','fórum'])))) &&
       (!filters.pontoFocalList.length || filters.pontoFocalList.includes(clean(first(project, ['pontoFocal','ponto_focal','ponto focal'])))) &&
-      (!filters.focalAcompList.length || filters.focalAcompList.includes(clean(first(project, ['pmo','focalAcompanhamento']))))
+      (!filters.focalAcompList.length || filters.focalAcompList.includes(clean(first(project, ['pmo','focalAcompanhamento'])))) &&
+      (!filters.agendaList.length || filters.agendaList.map(v => v.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()).includes(clean(project.tipoAgenda).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()))
     );
   }
 
@@ -522,10 +526,22 @@ window.DASHBOARD_SHOW_META = true;
     }).join('');
   }
 
-  function renderManagerForum(projects) {
+  // Alterna o eixo do gráfico: 'gerencia' (padrão) ou 'focal' (Focal Acompanhamento)
+  state.mfMode = state.mfMode || 'gerencia';
+  window.toggleManagerForum = () => {
+    const host = $('#destaques .card');
+    const body = host && host.querySelector('.mf-body');
+    const next = state.mfMode === 'focal' ? 'gerencia' : 'focal';
+    if (!body) { state.mfMode = next; renderManagerForum(filteredProjects()); return; }
+    body.classList.add('mf-leave');
+    setTimeout(() => { state.mfMode = next; renderManagerForum(filteredProjects(), true); }, 220);
+  };
+  function renderManagerForum(projects, animate = false) {
     const host = $('#destaques .card');
     if (!host) return;
-    const valid = projects.filter(project => clean(project.area) && clean(project.area) !== 'Não informado');
+    const byFocal = state.mfMode === 'focal';
+    const groupOf = project => byFocal ? clean(first(project, ['pmo','focalAcompanhamento'])) : clean(project.area);
+    const valid = projects.filter(project => groupOf(project) && groupOf(project) !== 'Não informado');
     const forumOf = project => clean(first(project, ['iniciativa','forum','fórum'])) || 'Não informado';
     const forums = Object.entries(countsBy(valid, forumOf))
       .filter(([key]) => key !== 'Não informado')
@@ -541,18 +557,23 @@ window.DASHBOARD_SHOW_META = true;
     const isConsDgp = value => clean(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z]/g, '') === 'consultoriadgp';
     const consDgp = Object.keys(countsBy(valid, forumOf)).find(isConsDgp);
     if (consDgp && !forums.includes(consDgp)) forums.push(consDgp);
-    const managers = Object.entries(countsBy(valid, project => project.area))
+    const managers = Object.entries(countsBy(valid, groupOf))
       .sort((a, b) => b[1] - a[1])
       .map(([key]) => key);
     const baseColors = ['#530b03', '#df3232', '#bfbfbf'];
     let colorIndex = 0;
     const colors = forums.map(forum => isConsultoria(forum) ? '#ed7d31' : isIcg(forum) ? '#ffc000' : isConsDgp(forum) ? '#7f7f7f' : baseColors[colorIndex++ % baseColors.length]);
     const listAttrMF = (title, list) => `data-list-title="${esc(title)}" data-list-tip="${esc(JSON.stringify(list.slice().sort((a, b) => idNumber(a.id) - idNumber(b.id)).map(project => `${project.id} · ${clean(project.projeto)}`)))}"`;
-    const max = Math.max(1, ...managers.flatMap(manager => forums.map(forum => valid.filter(project => project.area === manager && forumOf(project) === forum).length)));
-    host.innerHTML = `<h3 style="text-align:center;margin-bottom:6px">Demandas por Gerência x Fórum</h3><div class="manager-total">Total: <b>${valid.length}</b> projeto(s) em <b>${managers.length}</b> gerência(s)</div><div class="manager-scroll"><div class="manager-chart">${managers.map(manager => {
-      const values = forums.map(forum => valid.filter(project => project.area === manager && forumOf(project) === forum).length);
-      return `<div class="manager-group"><div class="manager-bars">${values.map((value, index) => value <= 0 ? '' : `<div ${listAttrMF(`${manager} · ${forums[index]}`, valid.filter(project => project.area === manager && forumOf(project) === forums[index]))} style="position:relative;height:${Math.max(10, value * 150 / max)}px;background:${colors[index]}">${value > 0 ? `<span style="position:absolute;left:50%;top:-24px;transform:translateX(-50%);z-index:5;display:block;font-size:12px;font-weight:800;color:#111827;line-height:1;white-space:nowrap;pointer-events:none">${value}</span>` : ''}</div>`).join('')}</div><span>${esc(manager)}</span><em class="manager-count">${valid.filter(project => project.area === manager).length} projeto(s)</em></div>`;
-    }).join('')}</div></div><div class="manager-legend">${forums.map((forum, index) => `<div><span style="background:${colors[index]}"></span>${esc(forum)}</div>`).join('') || '<div>Sem fóruns disponíveis no recorte.</div>'}</div>`;
+    const max = Math.max(1, ...managers.flatMap(manager => forums.map(forum => valid.filter(project => groupOf(project) === manager && forumOf(project) === forum).length)));
+    const title = byFocal ? 'Demandas por Focal Acomp. x Fórum' : 'Demandas por Gerência x Fórum';
+    const unit = byFocal ? 'focal(is) de acompanhamento' : 'gerência(s)';
+    const toggleLabel = byFocal ? '⇄ Ver por Gerência' : '⇄ Ver por Focal Acomp.';
+    const sectionTitle = $('#destaques .section-head h2');
+    if (sectionTitle) sectionTitle.textContent = byFocal ? 'Demandas por Focal Acomp. x Fórum' : 'Demandas por Gerente x Fórum';
+    host.innerHTML = `<div class="mf-title-row"><h3>${title}</h3><button type="button" class="mf-toggle" onclick="toggleManagerForum()" title="Alternar entre Gerência e Focal Acompanhamento">${toggleLabel}</button></div><div class="mf-body${animate ? ' mf-enter' : ''}"><div class="manager-total">Total: <b>${valid.length}</b> projeto(s) em <b>${managers.length}</b> ${unit}</div><div class="manager-scroll"><div class="manager-chart">${managers.map(manager => {
+      const values = forums.map(forum => valid.filter(project => groupOf(project) === manager && forumOf(project) === forum).length);
+      return `<div class="manager-group"><div class="manager-bars">${values.map((value, index) => value <= 0 ? '' : `<div ${listAttrMF(`${manager} · ${forums[index]}`, valid.filter(project => groupOf(project) === manager && forumOf(project) === forums[index]))} style="position:relative;height:${Math.max(10, value * 150 / max)}px;background:${colors[index]}">${value > 0 ? `<span style="position:absolute;left:50%;top:-24px;transform:translateX(-50%);z-index:5;display:block;font-size:12px;font-weight:800;color:#111827;line-height:1;white-space:nowrap;pointer-events:none">${value}</span>` : ''}</div>`).join('')}</div><span>${esc(manager)}</span><em class="manager-count">${valid.filter(project => groupOf(project) === manager).length} projeto(s)</em></div>`;
+    }).join('')}</div></div><div class="manager-legend">${forums.map((forum, index) => `<div><span style="background:${colors[index]}"></span>${esc(forum)}</div>`).join('') || '<div>Sem fóruns disponíveis no recorte.</div>'}</div></div>`;
   }
 
   function monthRange(key) {
@@ -783,7 +804,6 @@ window.DASHBOARD_SHOW_META = true;
     const abs = list => (list || []).map(value => Math.abs(n(value)));
     real = abs(real); fcst = abs(fcst); meta = abs(meta); base = base ? abs(base) : null;
     const fcstTotal = fcst.reduce((acc, value) => acc + value, 0);
-    if (noFcst) fcst = fcst.map(() => 0); // projeto individual: sem barras de Forecast
     const count = labels.length;
     const SHOW_META = window.DASHBOARD_SHOW_META !== false; // Meta: controlada por DASHBOARD_SHOW_META (topo do arquivo)
     const max = Math.max(0.0001, ...real, ...fcst, ...(SHOW_META ? meta : []), ...(base || [])) * 1.45;
@@ -807,7 +827,7 @@ window.DASHBOARD_SHOW_META = true;
     const valueLabels = [];
     const pairs = labels.map((label, index) => {
       const r = real[index], f = fcst[index];
-      const rx = noFcst ? x(index) - barW / 2 : x(index) - gap / 2 - barW, fx = x(index) + gap / 2;
+      const rx = x(index) - gap / 2 - barW, fx = x(index) + gap / 2;
       let out = '', lbl = '';
       const floorY = top + plotH;
       let rLabelY = r ? y(r) - 6 : null;
@@ -819,7 +839,7 @@ window.DASHBOARD_SHOW_META = true;
       if (f) out += `<rect x="${fx.toFixed(1)}" y="${y(f).toFixed(1)}" width="${barW.toFixed(1)}" height="${(floor - y(f)).toFixed(1)}" rx="4" fill="url(#${id}Fcst)"><title>Forecast ${label}: R$ ${fmt(f)}</title></rect>`; if (f) lbl += `<text x="${(fx + barW / 2).toFixed(1)}" y="${fLabelY.toFixed(1)}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#15803d">${fmtBar(f)}</text>`;
       [rLabelY, fLabelY].forEach(value => { if (value !== null) occupied[index] = Math.min(occupied[index], value - 11 * fs); });
       if (floorY && occupied[index] === Infinity) occupied[index] = floorY;
-      if (r && f) {
+      if (r && f && !noFcst) { // projeto individual: sem selo de desvio
         const diff = r - f;
         const upY = Math.min(rLabelY, fLabelY) - 30 * fs;
         occupied[index] = Math.min(occupied[index], upY - 2);
@@ -860,11 +880,11 @@ window.DASHBOARD_SHOW_META = true;
     const axis = labels.map((label, index) => `<text x="${x(index).toFixed(1)}" y="${H - 22}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#1f1f1f">${label}</text><text x="${x(index).toFixed(1)}" y="${H - 9}" text-anchor="middle" font-size="${(8.5 * fs).toFixed(1)}" fill="#7f7f7f">${years[index]}</text>`).join('');
     const defs = `<defs><linearGradient id="${id}Real" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b4f57"/><stop offset="1" stop-color="#15171b"/></linearGradient><linearGradient id="${id}Fcst" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34c26b"/><stop offset="1" stop-color="#15803d"/></linearGradient></defs>`;
     const svg = `<svg class="fin-chart" viewBox="0 0 ${W} ${H}" role="img">${defs}${columns}${grid}${pairs}${baseLine}${SHOW_META ? `<path d="${path(meta)}" fill="none" stroke="#2563eb" stroke-width="3"/>${dots(meta, '#2563eb', 'Meta')}` : ''}${metaLeaders.join('')}${valueLabels.join('')}${metaLabels}${axis}</svg>`;
-    const legend = `<div class="fin-legend"><span><i class="lg-bar"></i>Real+FCST</span>${noFcst ? '' : '<span><i class="lg-bar fcst"></i>Forecast</span>'}<span><i class="lg-line"></i>Meta${SHOW_META ? '' : ': -'}</span>${base ? '<span><i class="lg-line base"></i>Baseline / ano anterior</span>' : ''}${noFcst ? '' : '<span><i class="lg-dev">▲▼</i>Desvio Realizado x FCST</span>'}</div>`;
+    const legend = `<div class="fin-legend"><span><i class="lg-bar"></i>Real+FCST</span><span><i class="lg-bar fcst"></i>Forecast</span><span><i class="lg-line"></i>Meta${SHOW_META ? '' : ': -'}</span>${base ? '<span><i class="lg-line base"></i>Baseline / ano anterior</span>' : ''}${noFcst ? '' : '<span><i class="lg-dev">▲▼</i>Desvio Realizado x FCST</span>'}</div>`;
     const sum = list => list.reduce((acc, value) => acc + value, 0);
     const tReal = sum(real), tFcst = noFcst ? fcstTotal : sum(fcst), tMeta = sum(meta);
     const gapBox = (a, b) => { const d = a - b; return `<b class="${d >= 0 ? 'pos' : 'neg'}">${d >= 0 ? '▲' : '▼'} ${fmtCard(Math.abs(d))}</b>`; };
-    const minis = `<div class="fin-mini"><div><small>Meta</small><b>${SHOW_META ? fmtCard(tMeta) : '-'}</b></div><div><small>Forecast</small><b>${fmtCard(tFcst)}</b></div><div><small>Real+FCST</small><b>${fmtCard(tReal)}</b></div><div><small>Real x Meta</small>${SHOW_META ? gapBox(tReal, tMeta) : '<b>-</b>'}</div>${noFcst ? '' : `<div><small>Real x FCST</small>${gapBox(tReal, tFcst)}</div>`}</div>`;
+    const minis = `<div class="fin-mini"><div><small>Meta</small><b>${SHOW_META ? fmtCard(tMeta) : '-'}</b></div>${noFcst ? '' : `<div><small>Forecast</small><b>${fmtCard(tFcst)}</b></div>`}<div><small>Real+FCST</small><b>${fmtCard(tReal)}</b></div><div><small>Real x Meta</small>${SHOW_META ? gapBox(tReal, tMeta) : '<b>-</b>'}</div>${noFcst ? '' : `<div><small>Real x FCST</small>${gapBox(tReal, tFcst)}</div>`}</div>`;
     return `<div class="fin-top">${legend}${minis}</div>${svg}`;
   }
 
