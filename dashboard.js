@@ -771,7 +771,7 @@ window.DASHBOARD_SHOW_META = true;
       series[kind][index] += Math.abs(n(record.resultado));
       if (kind === 'base') hasBase = true;
     });
-    const body = financeChartSVG({ labels: months.map(m => m.label), years: months.map(m => m.year), real: series.real, fcst: series.fcst, meta: series.meta, base: hasBase ? series.base : null, id: `p${clean(project.id).replace(/[^a-z0-9]/gi, '')}` });
+    const body = financeChartSVG({ labels: months.map(m => m.label), years: months.map(m => m.year), real: series.real, fcst: series.fcst, meta: series.meta, base: hasBase ? series.base : null, id: `p${clean(project.id).replace(/[^a-z0-9]/gi, '')}`, noFcst: true });
     const period = `${months[0].label}/${months[0].year} a ${months[11].label}/${months[11].year}`;
     const sub = `${period} · Valores em R$ milhões`;
     return { sub, body };
@@ -779,9 +779,11 @@ window.DASHBOARD_SHOW_META = true;
 
 
   // Gráfico financeiro padrão (Home e projeto): Realizado e Forecast em barras lado a lado, desvio entre eles e Meta em linha azul
-  function financeChartSVG({ labels, years, real, fcst, meta, base, id, width, fs = 1 }) {
+  function financeChartSVG({ labels, years, real, fcst, meta, base, id, width, fs = 1, noFcst = false }) {
     const abs = list => (list || []).map(value => Math.abs(n(value)));
     real = abs(real); fcst = abs(fcst); meta = abs(meta); base = base ? abs(base) : null;
+    const fcstTotal = fcst.reduce((acc, value) => acc + value, 0);
+    if (noFcst) fcst = fcst.map(() => 0); // projeto individual: sem barras de Forecast
     const count = labels.length;
     const SHOW_META = window.DASHBOARD_SHOW_META !== false; // Meta: controlada por DASHBOARD_SHOW_META (topo do arquivo)
     const max = Math.max(0.0001, ...real, ...fcst, ...(SHOW_META ? meta : []), ...(base || [])) * 1.45;
@@ -805,7 +807,7 @@ window.DASHBOARD_SHOW_META = true;
     const valueLabels = [];
     const pairs = labels.map((label, index) => {
       const r = real[index], f = fcst[index];
-      const rx = x(index) - gap / 2 - barW, fx = x(index) + gap / 2;
+      const rx = noFcst ? x(index) - barW / 2 : x(index) - gap / 2 - barW, fx = x(index) + gap / 2;
       let out = '', lbl = '';
       const floorY = top + plotH;
       let rLabelY = r ? y(r) - 6 : null;
@@ -858,11 +860,11 @@ window.DASHBOARD_SHOW_META = true;
     const axis = labels.map((label, index) => `<text x="${x(index).toFixed(1)}" y="${H - 22}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#1f1f1f">${label}</text><text x="${x(index).toFixed(1)}" y="${H - 9}" text-anchor="middle" font-size="${(8.5 * fs).toFixed(1)}" fill="#7f7f7f">${years[index]}</text>`).join('');
     const defs = `<defs><linearGradient id="${id}Real" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b4f57"/><stop offset="1" stop-color="#15171b"/></linearGradient><linearGradient id="${id}Fcst" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34c26b"/><stop offset="1" stop-color="#15803d"/></linearGradient></defs>`;
     const svg = `<svg class="fin-chart" viewBox="0 0 ${W} ${H}" role="img">${defs}${columns}${grid}${pairs}${baseLine}${SHOW_META ? `<path d="${path(meta)}" fill="none" stroke="#2563eb" stroke-width="3"/>${dots(meta, '#2563eb', 'Meta')}` : ''}${metaLeaders.join('')}${valueLabels.join('')}${metaLabels}${axis}</svg>`;
-    const legend = `<div class="fin-legend"><span><i class="lg-bar"></i>Real+FCST</span><span><i class="lg-bar fcst"></i>Forecast</span><span><i class="lg-line"></i>Meta${SHOW_META ? '' : ': -'}</span>${base ? '<span><i class="lg-line base"></i>Baseline / ano anterior</span>' : ''}<span><i class="lg-dev">▲▼</i>Desvio Realizado x FCST</span></div>`;
+    const legend = `<div class="fin-legend"><span><i class="lg-bar"></i>Real+FCST</span>${noFcst ? '' : '<span><i class="lg-bar fcst"></i>Forecast</span>'}<span><i class="lg-line"></i>Meta${SHOW_META ? '' : ': -'}</span>${base ? '<span><i class="lg-line base"></i>Baseline / ano anterior</span>' : ''}${noFcst ? '' : '<span><i class="lg-dev">▲▼</i>Desvio Realizado x FCST</span>'}</div>`;
     const sum = list => list.reduce((acc, value) => acc + value, 0);
-    const tReal = sum(real), tFcst = sum(fcst), tMeta = sum(meta);
+    const tReal = sum(real), tFcst = noFcst ? fcstTotal : sum(fcst), tMeta = sum(meta);
     const gapBox = (a, b) => { const d = a - b; return `<b class="${d >= 0 ? 'pos' : 'neg'}">${d >= 0 ? '▲' : '▼'} ${fmtCard(Math.abs(d))}</b>`; };
-    const minis = `<div class="fin-mini"><div><small>Meta</small><b>${SHOW_META ? fmtCard(tMeta) : '-'}</b></div><div><small>Forecast</small><b>${fmtCard(tFcst)}</b></div><div><small>Real+FCST</small><b>${fmtCard(tReal)}</b></div><div><small>Real x Meta</small>${SHOW_META ? gapBox(tReal, tMeta) : '<b>-</b>'}</div><div><small>Real x FCST</small>${gapBox(tReal, tFcst)}</div></div>`;
+    const minis = `<div class="fin-mini"><div><small>Meta</small><b>${SHOW_META ? fmtCard(tMeta) : '-'}</b></div><div><small>Forecast</small><b>${fmtCard(tFcst)}</b></div><div><small>Real+FCST</small><b>${fmtCard(tReal)}</b></div><div><small>Real x Meta</small>${SHOW_META ? gapBox(tReal, tMeta) : '<b>-</b>'}</div>${noFcst ? '' : `<div><small>Real x FCST</small>${gapBox(tReal, tFcst)}</div>`}</div>`;
     return `<div class="fin-top">${legend}${minis}</div>${svg}`;
   }
 
@@ -872,15 +874,16 @@ window.DASHBOARD_SHOW_META = true;
     const sub = $('#finSub');
     if (!body) return;
     const norm = text => clean(text).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-    const query = clean(value);
+    // Seleção de projetos (checkbox): lista de IDs; vazia = todos os projetos
+    const ids = (Array.isArray(value) ? value : (clean(value) ? [clean(value)] : [])).map(clean).filter(Boolean);
+    const query = ids.join(',');
     const pool = Array.isArray(state.finProjects) ? state.finProjects : [];
-    // Seleção de projeto: valor = ID do projeto (vazio = todos)
-    const list = query ? pool.filter(project => clean(project.id) === query) : pool;
+    const list = ids.length ? pool.filter(project => ids.includes(clean(project.id))) : pool;
     const LABELS = ['JAN','FEV','MAR','ABR','MAI','JUN','JUL','AGO','SET','OUT','NOV','DEZ'];
     // Projeto único na busca: ignora o filtro de anos e usa os 12 meses da captura financeira
     const periods = query && list.length === 1 ? capturePeriods(list[0]) : financePeriods();
     const label = periodLabel(periods);
-    if (sub) sub.textContent = !query || list.length > 1 ? `${label} · Valores em R$ milhões`
+    if (sub) sub.textContent = !query || list.length > 1 ? `${label} · Valores em R$ milhões${list.length > 1 && query ? ` · ${list.length} projetos selecionados` : ''}`
       : list.length === 1 ? `${label} (captura ${list[0].id}) · Valores em R$ milhões` : 'Nenhum projeto encontrado';
     if (query && !list.length) { body.innerHTML = '<div class="empty-state">Nenhum projeto encontrado para a busca.</div>'; $('#finMiniSlot')?.replaceChildren(); return; }
     const series = aggregateFinancialPeriods(list, periods);
@@ -918,13 +921,32 @@ window.DASHBOARD_SHOW_META = true;
     state.finProjects = projects;
     const card = $('#financeiro .line-chart');
     if (card) {
-      if (!card.querySelector('#finSearch')) card.innerHTML = `<div class="fin-head"><div><div class="chart-title">Evolução Mensal</div><div class="chart-sub" id="finSub"></div></div><div class="fin-head-right"><div id="finMiniSlot"></div><select id="finSearch" class="fin-search" onchange="filterFinanceChart(this.value)"><option value="">Todos os projetos</option></select></div></div><div id="finBody"></div>`;
-      const finSelect = card.querySelector('#finSearch');
-      const selectedId = finSelect.value;
+      if (!card.querySelector('#finSearch')) card.innerHTML = `<div class="fin-head"><div><div class="chart-title">Evolução Mensal</div><div class="chart-sub" id="finSub"></div></div><div class="fin-head-right"><div id="finMiniSlot"></div><div id="finSearch" class="mf-box fin-search fin-multi"><button type="button" class="mf-trigger">Todos os projetos</button><div class="mf-menu"><div class="mf-acts"><button type="button" class="mf-act" data-act="all">Selecionar todos</button><button type="button" class="mf-act" data-act="none">Limpar</button></div><div class="mf-opts"></div></div></div></div></div><div id="finBody"></div>`;
+      const finBox = card.querySelector('#finSearch');
       const finOptions = projects.filter(project => clean(project.ganhoProjeto).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().startsWith('quantitativ')).sort((a, b) => idNumber(a.id) - idNumber(b.id));
-      finSelect.innerHTML = `<option value="">Todos os projetos</option>${finOptions.map(project => `<option value="${esc(project.id)}">${esc(project.id)} · ${esc(clean(project.projeto))}</option>`).join('')}`;
-      finSelect.value = finOptions.some(project => clean(project.id) === selectedId) ? selectedId : '';
-      filterFinanceChart(finSelect.value);
+      const validIds = finOptions.map(project => clean(project.id));
+      state.finSelected = (state.finSelected || []).filter(id => validIds.includes(id));
+      const finTrigger = finBox.querySelector('.mf-trigger');
+      const finOpts = finBox.querySelector('.mf-opts');
+      const finLabel = () => {
+        const chosen = state.finSelected;
+        finTrigger.textContent = !chosen.length || chosen.length === validIds.length ? 'Todos os projetos' : chosen.length === 1 ? (() => { const p = finOptions.find(item => clean(item.id) === chosen[0]); return p ? `${p.id} · ${clean(p.projeto)}` : chosen[0]; })() : `${chosen.length} projetos selecionados`;
+        finTrigger.title = chosen.length ? chosen.join(', ') : 'Todos os projetos';
+      };
+      const finApply = () => { finLabel(); filterFinanceChart(state.finSelected.length === validIds.length ? [] : state.finSelected); };
+      const finBuild = () => {
+        finOpts.innerHTML = finOptions.map(project => `<label class="mf-opt"><input type="checkbox" value="${esc(project.id)}" ${state.finSelected.includes(clean(project.id)) ? 'checked' : ''}><span>${esc(project.id)} · ${esc(clean(project.projeto))}</span></label>`).join('') || '<div class="mf-empty">Sem projetos</div>';
+        finOpts.querySelectorAll('input').forEach(input => input.addEventListener('change', () => { state.finSelected = [...finOpts.querySelectorAll('input:checked')].map(item => item.value); finApply(); }));
+      };
+      if (!finBox.dataset.ready) {
+        finBox.dataset.ready = '1';
+        finTrigger.addEventListener('click', event => { event.stopPropagation(); const open = finBox.classList.contains('open'); document.querySelectorAll('.mf-box.open').forEach(item => item.classList.remove('open')); if (!open) { finBuild(); finBox.classList.add('open'); } });
+        finBox.querySelector('.mf-menu').addEventListener('click', event => event.stopPropagation());
+        finBox.querySelector('[data-act="all"]').addEventListener('click', () => { state.finSelected = finOptions.map(project => clean(project.id)); finBuild(); finApply(); });
+        finBox.querySelector('[data-act="none"]').addEventListener('click', () => { state.finSelected = []; finBuild(); finApply(); });
+        document.addEventListener('click', () => finBox.classList.remove('open'));
+      }
+      finApply();
     }
   }
 
