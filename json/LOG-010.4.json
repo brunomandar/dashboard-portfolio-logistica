@@ -24,9 +24,9 @@
     "Redução nas despesas de Frete."
   ],
   "saving": {
-    "opex12M": 0.36,
-    "capex12M": 2.04,
-    "total12M": 2.4,
+    "opex12M": 0.54,
+    "capex12M": 3.06,
+    "total12M": 3.6,
     "opex2026": 0.18,
     "capex2026": 1.02,
     "total2026": 1.2
@@ -3789,6 +3789,6 @@
   "fonte": {
     "arquivo": "LOG-010.4 - Top Rotas  - Mctech.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.4%20-%20Top%20Rotas%20%20-%20Mctech.xlsx?web=1",
-    "extraidoEm": "2026-11-17T16:51:51-03:00"
+    "extraidoEm": "2026-11-17T18:11:56-03:00"
   }
 }

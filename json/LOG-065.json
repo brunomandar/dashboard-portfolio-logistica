@@ -65,7 +65,7 @@
       "responsavel": "CD/Operações",
       "status": 1,
       "inicio": "2026-10-08",
-      "fim": "2026-12-01",
+      "fim": "2026-12-14",
       "anotacao": "primeira data: 04/11/26"
     },
     {
@@ -74,7 +74,7 @@
       "responsavel": "CD/Transporte",
       "status": 1,
       "inicio": "2026-10-19",
-      "fim": "2026-12-01",
+      "fim": "2026-12-14",
       "anotacao": ""
     },
     {
@@ -82,7 +82,7 @@
       "atividade": "DESENVOLVER TRANSFORMAÇÃO DIGITAL",
       "responsavel": "TI",
       "status": 0,
-      "inicio": "2026-12-01",
+      "inicio": "2026-12-14",
       "fim": "2026-12-30",
       "anotacao": ""
     },
@@ -3859,6 +3859,6 @@
   "fonte": {
     "arquivo": "LOG-065 - Imersão na Esteira PME.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-065%20-%20Imers%C3%A3o%20na%20Esteira%20PME.xlsx?web=1",
-    "extraidoEm": "2026-11-17T16:53:48-03:00"
+    "extraidoEm": "2026-11-17T18:13:18-03:00"
   }
 }
