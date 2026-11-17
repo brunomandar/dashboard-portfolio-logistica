@@ -12,7 +12,7 @@
   "status": "L2",
   "situacao": "Planejado",
   "prioridade": "P2",
-  "tipoAgenda": "",
+  "tipoAgenda": "Estratégica",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O projeto visa automatizar o controle e o inventário de equipamentos para reduzir perdas, ampliar o controle operacional e evitar paralisações. A solução pressupõe validação técnica e uso contínuo de dados, com dependências de fornecedor (Motive) e desenvolvimento.",
@@ -2969,6 +2969,6 @@
   "fonte": {
     "arquivo": "LOG-027 - Inv. Automatizado e Inv. Equipamentos.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-027%20-%20Inv.%20Automatizado%20e%20Inv.%20Equipamentos.xlsx?web=1",
-    "extraidoEm": "2026-11-17T14:04:34-03:00"
+    "extraidoEm": "2026-11-17T15:09:59-03:00"
   }
 }

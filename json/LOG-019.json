@@ -12,7 +12,7 @@
   "status": "L5",
   "situacao": "Concluído",
   "prioridade": "Concluído",
-  "tipoAgenda": "",
+  "tipoAgenda": "Estratégica",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O projeto estrutura e padroniza o fluxo de logística reversa de equipamentos do Empresarial, integrando as áreas envolvidas para aumentar o controle dos equipamentos retornados, otimizar o reaproveitamento de ativos e reduzir a necessidade de novas aquisições. A iniciativa tem como premissas que a padronização eleve a eficiência da reversa, que a integração entre áreas elimine gargalos e que o processo estruturado seja seguido pelas áreas.",
@@ -3013,6 +3013,6 @@
   "fonte": {
     "arquivo": "LOG-019 - Empresarial – Aumento da Logística Reversa.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-019%20-%20Empresarial%20%E2%80%93%20Aumento%20da%20Log%C3%ADstica%20Reversa.xlsx?web=1",
-    "extraidoEm": "2026-11-17T14:04:24-03:00"
+    "extraidoEm": "2026-11-17T15:09:48-03:00"
   }
 }

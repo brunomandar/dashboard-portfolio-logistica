@@ -12,7 +12,7 @@
   "status": "L0",
   "situacao": "Atenção",
   "prioridade": "P0",
-  "tipoAgenda": "",
+  "tipoAgenda": "Geral",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O projeto contempla a revisão e o fortalecimento dos processos de contratação, gestão e acompanhamento das operações de transporte, com foco na adequação aos procedimentos corporativos, mitigação de riscos operacionais e aprimoramento da governança.\n\nAs principais frentes incluem a regularização das contratações por meio do Ariba, a realização de processos competitivos para seleção de transportadoras, o controle das subcontratações, a padronização de cláusulas de desempenho e a aplicação de penalidades contratuais quando cabíveis.\n\nO escopo também prevê melhorias no TMS, incluindo maior controle sobre cotações e aprovações por exceção, definição de alçadas, restrição da identificação dos fornecedores durante o processo de seleção e revisão das funcionalidades críticas da ferramenta. Adicionalmente, serão implementados controles periódicos de acesso, bloqueio automático de usuários inativos e exclusão dos acessos vinculados a fornecedores com contratos encerrados.\n\nO projeto busca ainda aprimorar os indicadores gerenciais, garantir a consistência das informações reportadas e ampliar a visibilidade da liderança sobre custos, desempenho dos fornecedores, aprovações excepcionais e riscos relacionados às operações de transporte.",
@@ -3474,6 +3474,6 @@
   "fonte": {
     "arquivo": "LOG-082 - Auditoria 2026.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-082%20-%20Auditoria%202026.xlsx?web=1",
-    "extraidoEm": "2026-11-17T14:06:49-03:00"
+    "extraidoEm": "2026-11-17T15:11:38-03:00"
   }
 }

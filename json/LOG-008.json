@@ -12,7 +12,7 @@
   "status": "L3",
   "situacao": "Atenção",
   "prioridade": "P0",
-  "tipoAgenda": "",
+  "tipoAgenda": "Estratégica",
   "ganhoProjeto": "Quantitativo",
   "tipos": [],
   "escopo": "Implementação da tecnologia eSIM para ampliar a digitalização das ativações, reduzindo a dependência de chips físicos por meio de adequações em sistemas, operações e logística. A iniciativa visa elevar a participação do eSIM para 20% da base Consumo, proporcionando uma melhor experiência ao cliente, maior eficiência operacional e uma redução estimada de R$ 10,3 milhões em custos operacionais nos próximos 12 meses, impulsionada principalmente pela expansão do canal de Televendas e pela menor necessidade de distribuição de SIM Cards físicos.",
@@ -3806,6 +3806,6 @@
   "fonte": {
     "arquivo": "LOG-008 - Massificação eSIM (Saving Logístico).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-008%20-%20Massifica%C3%A7%C3%A3o%20eSIM%20%28Saving%20Log%C3%ADstico%29.xlsx?web=1",
-    "extraidoEm": "2026-11-17T14:03:38-03:00"
+    "extraidoEm": "2026-11-17T15:09:01-03:00"
   }
 }

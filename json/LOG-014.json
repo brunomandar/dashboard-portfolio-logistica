@@ -12,7 +12,7 @@
   "status": "L3",
   "situacao": "Em execução",
   "prioridade": "P1",
-  "tipoAgenda": "",
+  "tipoAgenda": "Estratégica",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O projeto estrutura a gestão ativa dos estoques via RAI, com processos de controle de entrada, consumo e giro e uso de BI para ampliar a visibilidade, reduzir excedentes e obsolescência e melhorar a utilização e monetização dos ativos. A iniciativa pressupõe integração entre Marketing, Operações e Planejamento, validação do BI, adesão aos processos implantados e aprovações internas aplicáveis.",
@@ -2959,6 +2959,6 @@
   "fonte": {
     "arquivo": "LOG-014 - RAI de Estoques.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-014%20-%20RAI%20de%20Estoques.xlsx?web=1",
-    "extraidoEm": "2026-11-17T14:04:16-03:00"
+    "extraidoEm": "2026-11-17T15:09:40-03:00"
   }
 }

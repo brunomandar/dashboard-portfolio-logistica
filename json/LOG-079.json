@@ -12,7 +12,7 @@
   "status": "L3",
   "situacao": "Em execução",
   "prioridade": "P2",
-  "tipoAgenda": "",
+  "tipoAgenda": "Geral",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "Implementar a integração entre a plataforma de Governança e Administração de Identidades (IGA) SailPoint IdentityNow  e o TMS (Transportation Management System), permitindo a automação dos processos de solicitação, aprovação, concessão, revisão e revogação de acessos dos usuários ao sistema, de acordo com as políticas de segurança e governança de acessos da Claro. A integração visa transformar o TMS em uma aplicação gerenciada pelo SailPoint IdentityNow, garantindo maior controle, rastreabilidade, conformidade e redução de atividades manuais relacionadas ao ciclo de vida dos acessos.\nProcesso de Compras para renovação: SR2429830603",
@@ -3837,6 +3837,6 @@
   "fonte": {
     "arquivo": "LOG-079 -TMS Criação do Segundo Fator de Autenticação.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-079%20-TMS%20Cria%C3%A7%C3%A3o%20do%20Segundo%20Fator%20de%20Autentica%C3%A7%C3%A3o.xlsx?web=1",
-    "extraidoEm": "2026-11-17T14:06:38-03:00"
+    "extraidoEm": "2026-11-17T15:11:32-03:00"
   }
 }

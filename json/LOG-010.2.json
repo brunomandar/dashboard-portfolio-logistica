@@ -12,7 +12,7 @@
   "status": "L3",
   "situacao": "Atenção",
   "prioridade": "P0",
-  "tipoAgenda": "",
+  "tipoAgenda": "Estratégica",
   "ganhoProjeto": "Quantitativo",
   "tipos": [],
   "escopo": "Realizar um BID nacional para contratar fornecedores para entrega do canal E-commerce e Expresso (Sim Cards).\nEscopo do E-commerce prevê a contratação de transportadores especializados no B2C, com a possibilidade de emissão de CT-es. A operação irá ocorrer através dos nossos CDs e Estoques Televendas\nEscopo da Expressa prevê a contratação de empresas especializadas em entregas através de motos, atendendo nossos clientes na modalidade D0 e D+1. Esta contratação não requer um transportador que realize a emissão de CT-es",
@@ -3792,6 +3792,6 @@
   "fonte": {
     "arquivo": "LOG-010.2 - BID Transportes - Expressa.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.2%20-%20BID%20Transportes%20-%20Expressa.xlsx?web=1",
-    "extraidoEm": "2026-11-17T14:03:58-03:00"
+    "extraidoEm": "2026-11-17T15:09:20-03:00"
   }
 }

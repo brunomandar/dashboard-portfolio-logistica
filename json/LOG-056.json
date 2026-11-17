@@ -12,7 +12,7 @@
   "status": "L3",
   "situacao": "Atenção",
   "prioridade": "P0",
-  "tipoAgenda": "",
+  "tipoAgenda": "Geral",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "Implementação do Vale-Pedágio Obrigatório (VPO)\nImplementar o processo corporativo de Vale-Pedágio Obrigatório (VPO), em conformidade com a Lei nº 10.209/2001 e a Resolução ANTT nº 6.024/2023, por meio da integração entre TMS, transportadores e REPOM, garantindo a antecipação do pedágio antes da realização da viagem, rastreabilidade das transações e evidências para auditoria.\n\nA solução contemplará:\nContratação da REPOM, como fornecedor responsável pela operacionalização e antecipação eletrônica do VPO\nAdequação do TMS Catalde, incluindo desenvolvimento das interfaces necessárias para troca de informações com transportadores e integração do processo de VPO;\nVinclução do protocolo do VPO ao MDF-e, assegurando rastreabilidade e suporte aos processos de auditoria;\nAdequação dos processos operacionais junto aos transportadores;\nMitigação dos riscos regulatórios e financeiros, incluindo risco de dupla cobrança do pedágio.\n\nRisco mitigado: o descumprimento da obrigação de antecipação do VPO está sujeito a multa administrativa de R$ 3.000 por veículo, além de outros riscos previstos na legislação aplicável.\nAditivo TMS: SR2429830603  |  Contratação REPOM: SR2378181466",
@@ -3236,6 +3236,6 @@
   "fonte": {
     "arquivo": "LOG-056 - Vale Pedagio.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-056%20-%20Vale%20Pedagio.xlsx?web=1",
-    "extraidoEm": "2026-11-17T14:05:14-03:00"
+    "extraidoEm": "2026-11-17T15:10:42-03:00"
   }
 }

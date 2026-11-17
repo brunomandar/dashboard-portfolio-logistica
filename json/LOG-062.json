@@ -12,7 +12,7 @@
   "status": "L0",
   "situacao": "Em risco",
   "prioridade": "P0",
-  "tipoAgenda": "",
+  "tipoAgenda": "Estratégica",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O projeto visa aumentar a recuperação de equipamentos não devolvidos por meio de uma abordagem E2E multifrentes (reforço de campo com motoboys e squads, correção de falhas de processo, evolução de sistemas e estruturação da cobrança), reduzindo perdas por falta de rastreabilidade e retiradas sem controle, elevando a eficiência das retiradas e a receita com recuperação física e cobrança. A iniciativa tem como premissas a expansão da operação de campo, a atuação simultânea de Logística, TI, Jurídico e Cobrança e a evolução contínua ao longo de 2026 até 1T27, com gestão orientada a indicadores.",
@@ -2951,6 +2951,6 @@
   "fonte": {
     "arquivo": "LOG-062 - Claro Go (Projeto Beon) - contratação de autônomo.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-062%20-%20Claro%20Go%20%28Projeto%20Beon%29%20-%20contrata%C3%A7%C3%A3o%20de%20aut%C3%B4nomo.xlsx?web=1",
-    "extraidoEm": "2026-11-17T14:05:32-03:00"
+    "extraidoEm": "2026-11-17T15:10:52-03:00"
   }
 }

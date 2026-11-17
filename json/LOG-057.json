@@ -12,7 +12,7 @@
   "status": "L5",
   "situacao": "Concluído",
   "prioridade": "Concluído",
-  "tipoAgenda": "",
+  "tipoAgenda": "Geral",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O projeto estratégico e mandatório incorpora a Telmex do Brasil à Claro NXT e a Americel à Embratel TVSAT e à Claro S/A, consolidando serviços, sistemas, cadastros, ativos, contratos e processos para garantir continuidade operacional, fiscal, contábil e regulatória, sem impacto aos clientes. A iniciativa considera como premissas a incorporação a partir de julho de 2026, convênios bancários e estruturas da Claro NXT ativos antes da migração e mapeamentos e validações fornecidos pelas áreas envolvidas, sem criação de novos serviços ou estruturas organizacionais.",
@@ -3779,6 +3779,6 @@
   "fonte": {
     "arquivo": "LOG-057 - Incorporação TELMEX_AMERICEL.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-057%20-%20Incorpora%C3%A7%C3%A3o%20TELMEX_AMERICEL.xlsx?web=1",
-    "extraidoEm": "2026-11-17T14:05:20-03:00"
+    "extraidoEm": "2026-11-17T15:10:45-03:00"
   }
 }

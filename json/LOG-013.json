@@ -12,7 +12,7 @@
   "status": "L0",
   "situacao": "Planejado",
   "prioridade": "P1",
-  "tipoAgenda": "",
+  "tipoAgenda": "Estratégica",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "O projeto revisa a metodologia de análise da alta rotatividade de terminais, com nova lógica baseada em pedidos de troca e visitas técnicas, para identificar as causas reais das trocas e eliminar distorções nos indicadores de qualidade, gerando inteligência para decisões de manutenção, reutilização, descarte e renovação dos equipamentos. A iniciativa tem como premissas que a idade técnica e a recirculação excessiva elevam as trocas e que a maioria dos terminais substituídos não apresenta falha crítica, com expectativa de reduzir trocas desnecessárias e melhorar a gestão dos ativos.",
@@ -3185,6 +3185,6 @@
   "fonte": {
     "arquivo": "LOG-013 - Ciclo de Vida.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-013%20-%20Ciclo%20de%20Vida.xlsx?web=1",
-    "extraidoEm": "2026-11-17T14:04:14-03:00"
+    "extraidoEm": "2026-11-17T15:09:38-03:00"
   }
 }

@@ -12,7 +12,7 @@
   "status": "L5",
   "situacao": "Concluído",
   "prioridade": "P0",
-  "tipoAgenda": "",
+  "tipoAgenda": "Geral",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "Piloto de comercialização de TVs Samsung nas lojas próprias (lançamento na Regional CO, com 10 lojas físicas) e na Loja Online, alinhado à diretriz da Diretoria de ampliar a receita com produtos eletrônicos e estruturando o abastecimento e a distribuição logística das TVs. O piloto tem como premissas a viabilidade logística junto aos transportadores (com frete negociado e seguro cobrindo o novo produto) e a disponibilidade de espaço no CD, com volume inicial de 40 unidades para as lojas e 10 para reposição.",
@@ -2905,6 +2905,6 @@
   "fonte": {
     "arquivo": "LOG-071 - Piloto Venda de TV (Distribuição Loja).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-071%20-%20Piloto%20Venda%20de%20TV%20%28Distribui%C3%A7%C3%A3o%20Loja%29.xlsx?web=1",
-    "extraidoEm": "2026-11-17T14:06:04-03:00"
+    "extraidoEm": "2026-11-17T15:11:10-03:00"
   }
 }

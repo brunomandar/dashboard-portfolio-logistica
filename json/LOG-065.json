@@ -12,7 +12,7 @@
   "status": "L2",
   "situacao": "Atenção",
   "prioridade": "P1",
-  "tipoAgenda": "",
+  "tipoAgenda": "Geral",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
   "escopo": "Otimizar a jornada logística do Canal PME por meio do redesenho e padronização dos processos.Visando a integração das informações e centralização do acompanhamento dos pedidos. \nO projeto abrange a identificação e o tratamento dos erros cadastrais e das rejeições SEFAZ, promovendo maior rastreabilidade, agilidade operacional e transparência na comunicação com áreas internas, vendedores e clientes.\nAreas envolvidas: Logistica Transporte, Logistica Armazenagem(CD), Processos, PME Matricial, PME Regional, Cadastro, TI e Jurídico.",
@@ -1180,6 +1180,11 @@
   ],
   "historico": [
     {
+      "data": "2026-11-17",
+      "acoes": "Ivete - levantar e documentar os códigos de rejeição atualmente tratados pela operação.\nMapear para cada código qual é a ação atual da Logística (aguardar, abrir chamado, cancelar pedido, reprocessar etc.).\nEstruturar a primeira versão da matriz de erros e tratativas utilizando os códigos de rejeição da SEFAZ.\nValidar posteriormente a matriz com Cadastro, TI, Tributário e demais áreas envolvidas.\nIvete - compartilhar o levantamento inicial até quinta-feira (ou, no máximo, segunda-feira).",
+      "detalhe": "Foi discutida a dificuldade da Logística em tratar erros genéricos do SAP e retornos pouco detalhados do OGS, que geram retrabalho e acionamentos incorretos entre as áreas. Como não há viabilidade de melhoria sistêmica no curto prazo, foi acordado criar uma matriz de erros e tratativas para orientar as ações operacionais. O trabalho começará pelos códigos de rejeição da SEFAZ, mapeando responsáveis, tratativas e decisões necessárias para cada cenário."
+    },
+    {
       "data": "2026-11-11",
       "acoes": "Enviar base de casos reais do monitor para Andreia\nRastrear a origem de cada ocorrência via CNPJ, identificando em qual sistema a inconsistência foi criada ou mantida.\nComparar os dados da origem com os dados corrigidos no SAP para identificar divergências.\nValidar se as travas do CPC deveriam ter impedido a inconsistência nos casos identificados.",
       "detalhe": "A reunião teve como foco entender a origem dos erros cadastrais que fazem notas fiscais ficarem retidas no monitor do SAP, principalmente relacionados à Inscrição Estadual. Foi concluído que ainda não é possível afirmar em qual sistema a inconsistência nasce (BVC, CPC, Solar, Radar ou integrações), sendo necessário analisar casos reais para rastrear o fluxo completo do cadastro. O principal risco identificado é o retrabalho recorrente, onde a NF é corrigida no SAP, mas o dado incorreto retorna da origem e o problema reaparece."
@@ -1255,7 +1260,7 @@
       "detalhe": "Foi identificado que o canal PME não possui uma régua padronizada de comunicação ativa com os clientes, sendo o vendedor o principal ponto de contato durante o acompanhamento dos pedidos. Também foi constatado que as regionais utilizam diferentes ferramentas para consulta e acompanhamento operacional, principalmente SAP e TMS. Foi apresentada uma iniciativa em estudo para ampliar a comunicação direta com os clientes por meio do WhatsApp, permitindo consulta de rastreabilidade e status dos pedidos sem necessidade de acionamento do vendedor ou dos canais tradicionais de atendimento."
     }
   ],
-  "statusProjeto": "11/11/2026: Identificada a necessidade de atuar na origem dos dados cadastrais, pois correções apenas no SAP não eliminam as recorrências de erros de Inscrição Estadual e emissão de NF.\n06/11/2026: Reuniao de alinhamento das ações de cada erro da matriz. Dia 11/11 teremos reunião com time da base BVC  para verificar possíveis inconsistências de cadastro e atualização de bases.\n27/10/2026: Reunião com o time de Cadastro, enviado Matriz de erro para validação\n26/10/2026: Reunião com Ivete para entender o fluxo PME pela Logistica\n19/10/2026: Criado procedimento pela equipe de Processos\n08/10/2026: Revisado os fluxos existentes e identificado que falta os procedimentos das etapas e os reponsáveis\n01/10/2026: Definidos pontos focais por parte de Logistica e PME. Inicio de mapeamento das atividades agendado para 08/10.\n17/09/2026: diagnóstico inicial e análise da volumetria concluídos. As rejeições SEFAZ representaram menos de 1% das vendas analisadas, não justificando naquele momento um desenvolvimento sistêmico específico. O projeto segue com o mapeamento dos fluxos, definição das responsabilidades e acompanhamento do card nº 1446811072.",
+  "statusProjeto": "17/11/2026: Definido o início da construção da matriz de erros PME para padronizar as tratativas operacionais e reduzir o retrabalho causado por erros genéricos do SAP e retornos insuficientes do OGS.\n11/11/2026: Identificada a necessidade de atuar na origem dos dados cadastrais, pois correções apenas no SAP não eliminam as recorrências de erros de Inscrição Estadual e emissão de NF.\n06/11/2026: Reuniao de alinhamento das ações de cada erro da matriz. Dia 11/11 teremos reunião com time da base BVC  para verificar possíveis inconsistências de cadastro e atualização de bases.\n27/10/2026: Reunião com o time de Cadastro, enviado Matriz de erro para validação\n26/10/2026: Reunião com Ivete para entender o fluxo PME pela Logistica\n19/10/2026: Criado procedimento pela equipe de Processos\n08/10/2026: Revisado os fluxos existentes e identificado que falta os procedimentos das etapas e os reponsáveis\n01/10/2026: Definidos pontos focais por parte de Logistica e PME. Inicio de mapeamento das atividades agendado para 08/10.\n17/09/2026: diagnóstico inicial e análise da volumetria concluídos. As rejeições SEFAZ representaram menos de 1% das vendas analisadas, não justificando naquele momento um desenvolvimento sistêmico específico. O projeto segue com o mapeamento dos fluxos, definição das responsabilidades e acompanhamento do card nº 1446811072.",
   "financeiro": [
     {
       "id": "LOG-065",
@@ -3854,6 +3859,6 @@
   "fonte": {
     "arquivo": "LOG-065 - Imersão na Esteira PME.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-065%20-%20Imers%C3%A3o%20na%20Esteira%20PME.xlsx?web=1",
-    "extraidoEm": "2026-11-17T14:05:44-03:00"
+    "extraidoEm": "2026-11-17T15:10:58-03:00"
   }
 }
