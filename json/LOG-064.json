@@ -431,7 +431,7 @@
     {
       "data": "2026-10-14",
       "acoes": "Reforma Tributária - Adequar cálculos e campos fiscais às novas regras",
-      "detalhe": "Testes permanecem previstos para iniciar em 16/10/2026."
+      "detalhe": "Testes permanecem previstos para iniciar em 16/10/2026.\nDúvidas da E4U foram respondidas.\nDefinidos os códigos fiscais que deverão ser utilizados no sistema.\nMapeadas as células da memória de cálculo DUIMP para integração.\nCampo IS será previsto, mas sem alimentação inicial pelo SAP."
     },
     {
       "data": "2026-10-14",
@@ -452,14 +452,19 @@
       "data": "2026-11-11",
       "acoes": "Próximos Passos Definidos em Reunião",
       "detalhe": "Foram alinhados os seguintes pontos:\nRevisar a viabilidade do cronograma proposto de 8 semanas, considerando possíveis impactos e dependências.\nValidar o modelo de pagamento, definindo se o faturamento ocorrerá por módulo entregue ou ao final do projeto.\nDetalhar o fluxo operacional, incluindo a definição da ferramenta de cotação a ser utilizada.\nRevisar e consolidar o escopo técnico, garantindo o atendimento de todos os requisitos e solicitações mapeados.\nRetirar do orçamento o custo da licença de BI e avaliar a internalização dos relatórios junto ao time do Lecione, com definição dos insumos necessários para construção do dashboard de acompanhamento do COMEX.\nIncluir no backlog o item de previsão de custos, para acompanhamento e gestão financeira da solução."
+    },
+    {
+      "data": "2026-11-17",
+      "acoes": "Reunião de alinhamento",
+      "detalhe": "Realizada reunião de alinhamento, com definição da retirada do BI do escopo do projeto. A importação dos relatórios para o sistema de Rastreabilidade utilizará licença fornecida pela Claro, sem custo adicional de licenciamento. A previsão de entrega é de 60 dias úteis. Como próximo passo, será agendada reunião com Michelle para apresentação da estimativa de custos e posterior inclusão do desenvolvimento no orçamento da E4U."
     }
   ],
-  "statusProjeto": "11/11/2026 Em fase de alinhamento dos requisitos do projeto, contemplando a revisão do cronograma de 8 semanas, definição do modelo de pagamento, validação do fluxo operacional e do escopo técnico, além da internalização dos relatórios de BI para suporte ao dashboard COMEX e inclusão da previsão de custos no backlog da solução. (Agendadpo\n23/10/26 - Solicitação de abertura de PPM 149837\n23/10/26 -Estimar o volume de horas necessário para compor o bolsão de horas a ser considerado na renovação do contrato.\n13/10/26 -Conclusão do mapeamento dos Requisitos funcionais/Time E4U iniciou o desenho da solução\n15/09/26 - Inserção da Integração SAP x Rastreabilidade na Agenda Prioritária de TI",
+  "statusProjeto": "17/11/2026 - Definida a retirada do BI do escopo. A importação dos relatórios no Rastreabilidade utilizará licença fornecida pela Claro, sem custo adicional. Prazo estimado de entrega: 60 dias úteis. Próximo passo: alinhamento com Michelle para apresentação dos custos e inclusão do desenvolvimento no orçamento da E4U.A entrega ocorrerá em ambiente de teste do novo sistema\n11/11/2026 Em fase de alinhamento dos requisitos do projeto, contemplando a revisão do cronograma de 8 semanas, definição do modelo de pagamento, validação do fluxo operacional e do escopo técnico, além da internalização dos relatórios de BI para suporte ao dashboard COMEX e inclusão da previsão de custos no backlog da solução. (Agendadpo\n23/10/26 - Solicitação de abertura de PPM 149837\n23/10/26 -Estimar o volume de horas necessário para compor o bolsão de horas a ser considerado na renovação do contrato.\n13/10/26 -Conclusão do mapeamento dos Requisitos funcionais/Time E4U iniciou o desenho da solução\n15/09/26 - Inserção da Integração SAP x Rastreabilidade na Agenda Prioritária de TI",
   "financeiro": [],
   "fca": {},
   "fonte": {
     "arquivo": "LOG-064 - Rastreabilidade - COMEX.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-064%20-%20Rastreabilidade%20-%20COMEX.xlsx?web=1",
-    "extraidoEm": "2026-11-17T15:10:56-03:00"
+    "extraidoEm": "2026-11-17T16:53:45-03:00"
   }
 }

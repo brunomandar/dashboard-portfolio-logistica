@@ -65,53 +65,53 @@
       "atividade": "Rollout SIAKI – controle de estoque (TCIA, Planejamento e Operações)",
       "responsavel": "TCIA / Planejamento / Operações",
       "status": 3,
-      "inicio": "2026-09-15",
-      "fim": "2026-09-30",
+      "inicio": "2026-05-15",
+      "fim": "2026-12-30",
       "anotacao": ""
     },
     {
       "numero": "05.",
       "atividade": "Saneamento do estoque Residencial (300 → ~40 PEPs)",
       "responsavel": "A confirmar",
-      "status": 0,
-      "inicio": "",
-      "fim": "",
+      "status": 4,
+      "inicio": "2026-10-01",
+      "fim": "2026-11-30",
       "anotacao": ""
     },
     {
       "numero": "06.",
       "atividade": "Saneamento do estoque Empresarial (215 → 3 PEPs)",
       "responsavel": "A confirmar",
-      "status": 0,
-      "inicio": "",
-      "fim": "",
+      "status": 4,
+      "inicio": "2026-07-15",
+      "fim": "2026-08-15",
       "anotacao": ""
     },
     {
       "numero": "07.",
       "atividade": "Redução de reservas e unificação do tipo de item",
       "responsavel": "A confirmar",
-      "status": 0,
-      "inicio": "",
-      "fim": "",
+      "status": 4,
+      "inicio": "2025-11-01",
+      "fim": "2026-07-01",
       "anotacao": ""
     },
     {
       "numero": "08.",
       "atividade": "Controle de bobinas (cobertura e agendamento)",
       "responsavel": "A confirmar",
-      "status": 0,
-      "inicio": "",
-      "fim": "",
+      "status": 4,
+      "inicio": "2025-01-01",
+      "fim": "2026-05-30",
       "anotacao": ""
     },
     {
       "numero": "09.",
       "atividade": "Ajustes, justificativas e cobranças de inventário",
       "responsavel": "TCIA / Planejamento / Operações",
-      "status": 0,
-      "inicio": "2026-11-27",
-      "fim": "2026-12-20",
+      "status": 4,
+      "inicio": "2026-05-15",
+      "fim": "2026-11-30",
       "anotacao": ""
     }
   ],
@@ -193,8 +193,8 @@
       "atividade": "Rollout do inventário nas empreiteiras (~300 EPOs)",
       "responsavel": "TCIA",
       "status": 4,
-      "inicio": "2026-03-12",
-      "fim": "2026-03-20",
+      "inicio": "2026-05-15",
+      "fim": "2026-11-30",
       "anotacao": ""
     },
     {
@@ -202,8 +202,8 @@
       "atividade": "Retorno de materiais sem giro para CD (reversa)",
       "responsavel": "A confirmar",
       "status": 4,
-      "inicio": "2026-03-23",
-      "fim": "2026-03-31",
+      "inicio": "2026-12-01",
+      "fim": "2026-12-09",
       "anotacao": ""
     },
     {
@@ -211,58 +211,58 @@
       "atividade": "Rollout SIAKI – controle de estoque (TCIA, Planejamento e Operações)",
       "responsavel": "TCIA / Planejamento / Operações",
       "status": 3,
-      "inicio": "2026-09-15",
-      "fim": "2026-09-30",
-      "anotacao": ""
+      "inicio": "2026-05-15",
+      "fim": "2026-12-30",
+      "anotacao": "1. TCIA finalizado (Telas de inventário) 15/05 a 15/06\n2. TCIA finalizado (Tela de projetos) 14/06 a 14/07\n3. TCIA finalizado (Tela de operações) 15/07 a 13/11\n4. TCIA andamento (Tela dePlanejamento) 13/11 a 04/12\n5. Validalção de 06/12 a 30/12"
     },
     {
       "numero": "5",
       "atividade": "Saneamento do estoque Residencial (300 → ~40 PEPs)",
-      "responsavel": "A confirmar",
-      "status": 0,
-      "inicio": "",
-      "fim": "",
+      "responsavel": "Lucas Gabriel",
+      "status": 1,
+      "inicio": "2026-10-01",
+      "fim": "2026-11-30",
       "anotacao": ""
     },
     {
       "numero": "6",
       "atividade": "Saneamento do estoque Empresarial (215 → 3 PEPs)",
-      "responsavel": "A confirmar",
-      "status": 0,
-      "inicio": "",
-      "fim": "",
+      "responsavel": "Lucas Gabriel",
+      "status": 4,
+      "inicio": "2026-07-15",
+      "fim": "2026-08-15",
       "anotacao": ""
     },
     {
       "numero": "7",
       "atividade": "Redução de reservas e unificação do tipo de item",
-      "responsavel": "A confirmar",
-      "status": 0,
-      "inicio": "",
-      "fim": "",
+      "responsavel": "Lucas Gabriel",
+      "status": 4,
+      "inicio": "2025-11-01",
+      "fim": "2026-07-01",
       "anotacao": ""
     },
     {
       "numero": "8",
-      "atividade": "Controle de bobinas (cobertura e agendamento)",
-      "responsavel": "A confirmar",
-      "status": 0,
-      "inicio": "",
-      "fim": "",
+      "atividade": "Controle de bobinas (cobertura e agendamento) + Saneamento",
+      "responsavel": "Lucas Gabriel",
+      "status": 4,
+      "inicio": "2025-01-01",
+      "fim": "2026-05-30",
       "anotacao": ""
     },
     {
       "numero": "9",
       "atividade": "Ajustes, justificativas e cobranças de inventário",
       "responsavel": "TCIA / Planejamento / Operações",
-      "status": 0,
-      "inicio": "2026-11-27",
-      "fim": "2026-12-20",
+      "status": 1,
+      "inicio": "2026-05-15",
+      "fim": "2026-11-30",
       "anotacao": ""
     }
   ],
   "historico": [],
-  "statusProjeto": "29/09/26 - Inventário Nacional EPO Construção em andamento, com rollout das empreiteiras e conclusão prevista para nov/26; iniciado rollout das funcionalidades de controle de estoque no SIAKI para TCIA, Planejamento e Operações.\n21/08/26 - Desenvolvimento das funcionalidades de controle de estoque no SIAKI em execução, contemplando entrevistas, telas, autonomia, cobertura e gestão dos estoques.\n22/06/26 - Avanço do inventário físico nacional e da implantação das melhorias sistêmicas para controle dos estoques PEP.\n22/05/26 - Iniciado o Inventário Nacional EPO Construção para aumento da acuracidade e visibilidade dos estoques PEP.\n12/05/26 - Iniciado o desenvolvimento das funcionalidades de controle de estoque no SIAKI.\n06/05/26 - Estruturado plano de implantação do controle de estoque PEP e do inventário nacional.",
+  "statusProjeto": "17/11/26 - Telas de planejamento em andamento\n17/11/26 - Redução de reservas imlementado no empresarial e iniciará no residencial\n17/11/26 - Controle de bobinas implementados e em mensuração de resultado.\n29/09/26 - Inventário Nacional EPO Construção em andamento, com rollout das empreiteiras e conclusão prevista para nov/26; iniciado rollout das funcionalidades de controle de estoque no SIAKI para TCIA, Planejamento e Operações.\n21/08/26 - Desenvolvimento das funcionalidades de controle de estoque no SIAKI em execução, contemplando entrevistas, telas, autonomia, cobertura e gestão dos estoques.\n22/06/26 - Avanço do inventário físico nacional e da implantação das melhorias sistêmicas para controle dos estoques PEP.\n22/05/26 - Iniciado o Inventário Nacional EPO Construção para aumento da acuracidade e visibilidade dos estoques PEP.\n12/05/26 - Iniciado o desenvolvimento das funcionalidades de controle de estoque no SIAKI.\n06/05/26 - Estruturado plano de implantação do controle de estoque PEP e do inventário nacional.",
   "financeiro": [
     {
       "id": "LOG-037",
@@ -2861,6 +2861,6 @@
   "fonte": {
     "arquivo": "LOG-037 - Controle de estoque PEP.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-037%20-%20Controle%20de%20estoque%20PEP.xlsx?web=1",
-    "extraidoEm": "2026-11-17T15:10:21-03:00"
+    "extraidoEm": "2026-11-17T16:52:55-03:00"
   }
 }
