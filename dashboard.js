@@ -77,7 +77,7 @@ window.DASHBOARD_SHOW_META = true;
       minimumFractionDigits: absolute < 10 ? 2 : 1,
       maximumFractionDigits: 2
     });
-    return `R$ ${formatted}M`;
+    return `${amount < 0 ? '-' : ''}R$ ${formatted}M`;
   }
 
   // Cards: sempre 2 casas decimais e sufixo MM
@@ -665,7 +665,7 @@ window.DASHBOARD_SHOW_META = true;
       if (Number(record?.ano) !== 2026 || clean(record?.tipoDespesa) !== 'Total' || !(record?.icg in series)) return;
       const index = MONTH_ORDER[record.mes];
       const months = selectedMonthIndexes();
-      if (index !== undefined && (!months.length || months.includes(index))) series[record.icg][index] += Math.abs(n(record.resultado));
+      if (index !== undefined && (!months.length || months.includes(index))) series[record.icg][index] += n(record.resultado);
     }));
     return series;
   }
@@ -693,7 +693,7 @@ window.DASHBOARD_SHOW_META = true;
     projects.filter(project => !isMetaOnly(project)).forEach(project => arrayOf(project.financeiro).forEach(record => {
       if (clean(record?.tipoDespesa) !== 'Total' || !(record?.icg in series)) return;
       const index = position.get(`${Number(record?.ano)}-${MONTH_ORDER[record?.mes]}`);
-      if (index !== undefined) series[record.icg][index] += Math.abs(n(record.resultado));
+      if (index !== undefined) series[record.icg][index] += n(record.resultado);
     }));
     return series;
   }
@@ -716,12 +716,12 @@ window.DASHBOARD_SHOW_META = true;
       const records = arrayOf(project.financeiro).filter(record => clean(record?.icg) === 'Real' && inYears(record));
       const split = records.filter(record => /^(opex|capex)$/i.test(clean(record?.tipoDespesa)));
       if (split.length) {
-        split.forEach(record => { out[clean(record.tipoDespesa).toLowerCase()] += Math.abs(n(record.resultado)); });
+        split.forEach(record => { out[clean(record.tipoDespesa).toLowerCase()] += n(record.resultado); });
         return;
       }
       // Projeto sem linhas OPEX/CAPEX: usa a linha Total no tipo único do projeto
       const tipos = arrayOf(project.tipos).map(value => clean(value).toLowerCase()).filter(value => value === 'opex' || value === 'capex');
-      const value = records.filter(record => clean(record?.tipoDespesa) === 'Total').reduce((sum, record) => sum + Math.abs(n(record.resultado)), 0);
+      const value = records.filter(record => clean(record?.tipoDespesa) === 'Total').reduce((sum, record) => sum + n(record.resultado), 0);
       if (tipos.length === 1) out[tipos[0]] += value;
     });
     out.total = out.opex + out.capex;
@@ -789,7 +789,7 @@ window.DASHBOARD_SHOW_META = true;
       const month = MONTH_ORDER[clean(record?.mes).slice(0, 1).toUpperCase() + clean(record?.mes).slice(1, 3).toLowerCase()];
       const index = indexOf[`${Number(record?.ano)}-${month}`];
       if (!kind || index === undefined) return;
-      series[kind][index] += Math.abs(n(record.resultado));
+      series[kind][index] += n(record.resultado);
       if (kind === 'base') hasBase = true;
     });
     const body = financeChartSVG({ labels: months.map(m => m.label), years: months.map(m => m.year), real: series.real, fcst: series.fcst, meta: series.meta, base: hasBase ? series.base : null, id: `p${clean(project.id).replace(/[^a-z0-9]/gi, '')}`, noFcst: true });
@@ -801,18 +801,19 @@ window.DASHBOARD_SHOW_META = true;
 
   // Gráfico financeiro padrão (Home e projeto): Realizado e Forecast em barras lado a lado, desvio entre eles e Meta em linha azul
   function financeChartSVG({ labels, years, real, fcst, meta, base, id, width, fs = 1, noFcst = false }) {
-    const abs = list => (list || []).map(value => Math.abs(n(value)));
+    const abs = list => (list || []).map(value => n(value)); // valores com sinal (negativos considerados)
     real = abs(real); fcst = abs(fcst); meta = abs(meta); base = base ? abs(base) : null;
     const fcstTotal = fcst.reduce((acc, value) => acc + value, 0);
     const count = labels.length;
     const SHOW_META = window.DASHBOARD_SHOW_META !== false; // Meta: controlada por DASHBOARD_SHOW_META (topo do arquivo)
     const max = Math.max(0.0001, ...real, ...fcst, ...(SHOW_META ? meta : []), ...(base || [])) * 1.45;
+    const pos = value => Math.max(0, value);
     const occupied = labels.map(() => Infinity);
     const W = width || 960, H = 340, left = 20, right = 20, top = 56, bottom = 46;
     const plotH = H - top - bottom;
     const slot = (W - left - right) / count;
     const x = index => left + slot * index + slot / 2;
-    const y = value => top + plotH - (value / max) * plotH;
+    const y = value => top + plotH - (Math.max(0, value) / max) * plotH;
     const fmt = value => `${Number(value || 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}M`;
     const fmtCard = value => `${Number(value || 0).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}MM`;
     // Gráfico da Home: números dentro do gráfico sem "M"/"MM" (unidade informada no subtítulo); caixinhas do topo mantêm "MM"
@@ -977,6 +978,15 @@ window.DASHBOARD_SHOW_META = true;
     return '';
   }
 
+  // Saving 2026 do projeto = Realizado 2026 da Base_Financ. (OPEX + CAPEX), mesma regra dos cards de saving
+  function saving2026Label(project) {
+    const records = arrayOf(project.financeiro).filter(record => clean(record?.icg) === 'Real' && Number(record?.ano) === 2026);
+    const split = records.filter(record => /^(opex|capex)$/i.test(clean(record?.tipoDespesa)));
+    let total = split.reduce((sum, record) => sum + n(record.resultado), 0);
+    if (!split.length) total = records.filter(record => clean(record?.tipoDespesa) === 'Total').reduce((sum, record) => sum + n(record.resultado), 0);
+    if (total || clean(project.ganhoProjeto).toLocaleLowerCase('pt-BR') === 'quantitativo') return moneyMM(total);
+    return clean(project.ganhoProjeto) || 'Não informado';
+  }
   function renderTable() {
     const query = clean($('#tableSearch')?.value).toLocaleLowerCase('pt-BR');
     const selectedSituation = $('#portfolioStatusFilter')?.value || '';
@@ -994,8 +1004,8 @@ window.DASHBOARD_SHOW_META = true;
       const situation = situationOf(project);
       const stage = clean(project.status) || 'Não informado';
       const risk = clean(project.risco) || 'Não informado';
-      return `<tr data-status="${esc(situation)}"><td title="${esc(`${id} · ${name}`)}"><span class="portfolio-project"><b>${esc(id)}</b> · ${esc(name)}</span></td><td class="portfolio-detail" title="${esc(formatDate(project.inicio))}">${esc(formatDate(project.inicio))}</td><td class="portfolio-detail" title="${esc(formatDate(project.termino))}">${esc(formatDate(project.termino))}</td><td class="portfolio-detail" title="${esc(focal)}">${esc(focal)}</td><td class="portfolio-detail" title="${esc(management)}">${esc(management)}</td><td title="${esc(situation)}">${esc(situation)}</td><td title="${esc(stage)}">${esc(stage)}</td><td title="${esc(risk)}"><span class="chip ${riskClass(risk)}">${esc(risk)}</span></td><td title="${esc(savingLabel(project))}">${esc(savingLabel(project))}</td><td><button class="open-project" type="button" data-project-id="${esc(id)}" onclick="if(typeof openProject==='function')openProject(this.dataset.projectId)">Abrir visão</button></td></tr>`;
-    }).join('') || '<tr><td colspan="10" class="empty-state">Nenhum projeto corresponde aos filtros.</td></tr>';
+      return `<tr data-status="${esc(situation)}"><td title="${esc(`${id} · ${name}`)}"><span class="portfolio-project"><b>${esc(id)}</b> · ${esc(name)}</span></td><td class="portfolio-detail" title="${esc(formatDate(project.inicio))}">${esc(formatDate(project.inicio))}</td><td class="portfolio-detail" title="${esc(formatDate(project.termino))}">${esc(formatDate(project.termino))}</td><td class="portfolio-detail" title="${esc(focal)}">${esc(focal)}</td><td class="portfolio-detail" title="${esc(management)}">${esc(management)}</td><td title="${esc(situation)}">${esc(situation)}</td><td title="${esc(stage)}">${esc(stage)}</td><td title="${esc(risk)}"><span class="chip ${riskClass(risk)}">${esc(risk)}</span></td><td title="${esc(savingLabel(project))}">${esc(savingLabel(project))}</td><td title="${esc(saving2026Label(project))}">${esc(saving2026Label(project))}</td><td><button class="open-project" type="button" data-project-id="${esc(id)}" onclick="if(typeof openProject==='function')openProject(this.dataset.projectId)">Abrir visão</button></td></tr>`;
+    }).join('') || '<tr><td colspan="11" class="empty-state">Nenhum projeto corresponde aos filtros.</td></tr>';
   }
 
   const SCHEDULE_STATUS = [
