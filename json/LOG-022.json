@@ -1,6 +1,7 @@
 {
   "id": "LOG-022",
   "projeto": "Cronograma Ecommerce_Tex",
+  "marcaDgpIcg": "",
   "area": "Transportes",
   "pontoFocal": "Helder Silva",
   "inicio": "2026-04-01",
@@ -39,9 +40,9 @@
       "numero": "01.",
       "atividade": "Contrato",
       "responsavel": "Compras/Jurídico",
-      "status": 1,
+      "status": 3,
       "inicio": "2026-05-08",
-      "fim": "2026-11-22",
+      "fim": "2026-11-17",
       "anotacao": ""
     },
     {
@@ -50,7 +51,7 @@
       "responsavel": "Seguros",
       "status": 4,
       "inicio": "2026-05-08",
-      "fim": "2026-10-30",
+      "fim": "2026-08-21",
       "anotacao": ""
     },
     {
@@ -77,7 +78,7 @@
       "responsavel": "Claro / TEX / Catalde",
       "status": 2,
       "inicio": "2026-08-01",
-      "fim": "2026-11-14",
+      "fim": "2026-12-03",
       "anotacao": ""
     },
     {
@@ -85,8 +86,8 @@
       "atividade": "KICK OFF / RAMPUP",
       "responsavel": "Claro / TEX",
       "status": 0,
-      "inicio": "2026-08-01",
-      "fim": "2026-11-28",
+      "inicio": "2026-12-03",
+      "fim": "2026-12-05",
       "anotacao": ""
     },
     {
@@ -94,8 +95,8 @@
       "atividade": "RAMPUP  (CD / EA)",
       "responsavel": "Helder Claro",
       "status": 0,
-      "inicio": "2026-11-14",
-      "fim": "2026-11-28",
+      "inicio": "2026-12-05",
+      "fim": "2026-12-17",
       "anotacao": ""
     }
   ],
@@ -3115,6 +3116,6 @@
   "fonte": {
     "arquivo": "LOG-022 - Cronograma Ecommerce_Tex.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-022%20-%20Cronograma%20Ecommerce_Tex.xlsx?web=1",
-    "extraidoEm": "2026-11-17T18:12:19-03:00"
+    "extraidoEm": "2026-11-18T09:46:52-03:00"
   }
 }
