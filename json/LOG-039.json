@@ -1002,7 +1002,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "set",
-      "resultado": 41933.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1014,7 +1014,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "out",
-      "resultado": 150187.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1026,7 +1026,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "nov",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1038,7 +1038,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "dez",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1050,7 +1050,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "jan",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1062,7 +1062,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "fev",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1074,7 +1074,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "mar",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1086,7 +1086,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "abr",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1098,7 +1098,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "mai",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1110,7 +1110,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "jun",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1122,7 +1122,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "jul",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1134,7 +1134,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "ago",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1290,7 +1290,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "set",
-      "resultado": 41933.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1302,7 +1302,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "out",
-      "resultado": 150187.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1314,7 +1314,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "nov",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1326,7 +1326,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "dez",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1338,7 +1338,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "jan",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1350,7 +1350,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "fev",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1362,7 +1362,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "mar",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1374,7 +1374,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "abr",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1386,7 +1386,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "mai",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1398,7 +1398,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "jun",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1410,7 +1410,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "jul",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1422,7 +1422,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "ago",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1434,7 +1434,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "set",
-      "resultado": 41933.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1446,7 +1446,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "out",
-      "resultado": 150187.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1458,7 +1458,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "nov",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1470,7 +1470,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "dez",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1482,7 +1482,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "jan",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1494,7 +1494,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "fev",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1506,7 +1506,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "mar",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1518,7 +1518,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "abr",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1530,7 +1530,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "mai",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1542,7 +1542,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "jun",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1554,7 +1554,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "jul",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1566,7 +1566,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "ago",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1722,7 +1722,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "set",
-      "resultado": 41933.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1734,7 +1734,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "out",
-      "resultado": 150187.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1746,7 +1746,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "nov",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1758,7 +1758,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "dez",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1770,7 +1770,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "jan",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1782,7 +1782,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "fev",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1794,7 +1794,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "mar",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1806,7 +1806,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "abr",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1818,7 +1818,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "mai",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1830,7 +1830,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "jun",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1842,7 +1842,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "jul",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1854,7 +1854,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "ago",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1866,7 +1866,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "set",
-      "resultado": 41933.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1878,7 +1878,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "out",
-      "resultado": 150187.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1890,7 +1890,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "nov",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1902,7 +1902,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "dez",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1914,7 +1914,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "jan",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1926,7 +1926,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "fev",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1938,7 +1938,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "mar",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1950,7 +1950,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "abr",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1962,7 +1962,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "mai",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1974,7 +1974,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "jun",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1986,7 +1986,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "jul",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -1998,7 +1998,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "ago",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2154,7 +2154,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "set",
-      "resultado": 41933.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2166,7 +2166,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "out",
-      "resultado": 150187.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2178,7 +2178,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "nov",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2190,7 +2190,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "dez",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2202,7 +2202,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "jan",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2214,7 +2214,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "fev",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2226,7 +2226,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "mar",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2238,7 +2238,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "abr",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2250,7 +2250,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "mai",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2262,7 +2262,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "jun",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2274,7 +2274,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "jul",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2286,7 +2286,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "ago",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2298,7 +2298,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "set",
-      "resultado": 41933.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2310,7 +2310,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "out",
-      "resultado": 150187.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2322,7 +2322,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "nov",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2334,7 +2334,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "dez",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2346,7 +2346,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "jan",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2358,7 +2358,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "fev",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2370,7 +2370,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "mar",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2382,7 +2382,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "abr",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2394,7 +2394,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "mai",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2406,7 +2406,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "jun",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2418,7 +2418,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "jul",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2430,7 +2430,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "ago",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2586,7 +2586,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "set",
-      "resultado": 41933.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2598,7 +2598,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "out",
-      "resultado": 150187.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2610,7 +2610,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "nov",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2622,7 +2622,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "dez",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2634,7 +2634,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "jan",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2646,7 +2646,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "fev",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2658,7 +2658,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "mar",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2670,7 +2670,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "abr",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2682,7 +2682,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "mai",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2694,7 +2694,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "jun",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2706,7 +2706,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "jul",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -2718,7 +2718,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "ago",
-      "resultado": 188800.0
+      "resultado": 0.0
     },
     {
       "id": "LOG-039",
@@ -3589,6 +3589,6 @@
   "fonte": {
     "arquivo": "LOG-039 -Torre de controle.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-039%20-Torre%20de%20controle.xlsx?web=1",
-    "extraidoEm": "2026-11-18T10:00:33-03:00"
+    "extraidoEm": "2026-11-18T10:12:29-03:00"
   }
 }
