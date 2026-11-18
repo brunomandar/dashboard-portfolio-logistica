@@ -1,7 +1,7 @@
 DASHBOARD PORTFÓLIO LOGÍSTICA — MANIFESTO
 
-Projetos JSON: 65
-Gerado em: 2026-11-18T17:49:00-03:00
+Projetos JSON: 64
+Gerado em: 2026-11-18T17:58:45-03:00
 
 Projetos:
 - LOG-001.json
@@ -26,7 +26,6 @@ Projetos:
 - LOG-019.json
 - LOG-020.json
 - LOG-021.json
-- LOG-022.json
 - LOG-026.json
 - LOG-027.json
 - LOG-029.json
@@ -71,4 +70,5 @@ Projetos:
 - LOG-083.json
 
 Arquivos com erro (não publicados):
+- LOG-022 - Cronograma Ecommerce_Tex.xlsx: [Errno 13] Permission denied: 'C:\\Users\\F305013\\OneDrive - Claro SA\\USER-Transporte - Torre, Performance e Projetos - _Portfolio de Projetos\\0_Portfolio_Logística\\LOG-022 - Cronograma Ecommerce_Tex.xlsx'
 - LOG-041 - Reyc Log-Estudo Claro Transportes.xlsx: [Errno 13] Permission denied: 'C:\\Users\\F305013\\OneDrive - Claro SA\\USER-Transporte - Torre, Performance e Projetos - _Portfolio de Projetos\\0_Portfolio_Logística\\LOG-041 - Reyc Log-Estudo Claro Transportes.xlsx'
