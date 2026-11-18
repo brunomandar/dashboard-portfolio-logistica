@@ -93,14 +93,32 @@
       "numero": "07.",
       "atividade": "Plano finalizado (contrato + ramp-up)",
       "responsavel": "",
-      "status": "",
+      "status": 0,
       "inicio": "2026-11-11",
       "fim": "2026-12-02",
       "anotacao": ""
     },
     {
       "numero": "08.",
-      "atividade": "Integração novos transportadores",
+      "atividade": "Equalização Round 2",
+      "responsavel": "",
+      "status": 4,
+      "inicio": "2026-10-30",
+      "fim": "2026-11-12",
+      "anotacao": ""
+    },
+    {
+      "numero": "09.",
+      "atividade": "Analise regras de escolta para abertura round 3",
+      "responsavel": "",
+      "status": 1,
+      "inicio": "2026-11-12",
+      "fim": "2026-11-18",
+      "anotacao": ""
+    },
+    {
+      "numero": "10.",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -108,26 +126,8 @@
       "anotacao": ""
     },
     {
-      "numero": "09.",
-      "atividade": "Equalização Round 2",
-      "responsavel": "",
-      "status": "",
-      "inicio": "2026-10-30",
-      "fim": "2026-11-12",
-      "anotacao": ""
-    },
-    {
-      "numero": "10.",
-      "atividade": "Analise regras de escolta para abertura round 3",
-      "responsavel": "",
-      "status": "",
-      "inicio": "2026-11-12",
-      "fim": "2026-11-18",
-      "anotacao": ""
-    },
-    {
       "numero": "11.",
-      "atividade": "Deadline envio RFP Round 3",
+      "atividade": "",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -284,7 +284,7 @@
       "numero": 1,
       "atividade": "Detalhar o perfil de viagens (Engenharia, Móvel, E-commerce)",
       "responsavel": "Compras/McK",
-      "status": "",
+      "status": 1,
       "inicio": "2026-11-09",
       "fim": "2026-11-20",
       "anotacao": ""
@@ -293,7 +293,7 @@
       "numero": 2,
       "atividade": "Definir o modelo de cotação (ex.: reduzir nº de rotas)",
       "responsavel": "Compras/McK",
-      "status": "",
+      "status": 4,
       "inicio": "2026-11-09",
       "fim": "2026-11-20",
       "anotacao": ""
@@ -302,7 +302,7 @@
       "numero": 3,
       "atividade": "Mapear potenciais fornecedores para o BID",
       "responsavel": "Compras/McK",
-      "status": "",
+      "status": 4,
       "inicio": "2026-10-30",
       "fim": "2026-11-20",
       "anotacao": ""
@@ -311,7 +311,7 @@
       "numero": 4,
       "atividade": "Realizar RFIs (perfil de fornecedores e insights)",
       "responsavel": "Compras",
-      "status": "",
+      "status": 4,
       "inicio": "2026-10-26",
       "fim": "2026-11-03",
       "anotacao": ""
@@ -320,7 +320,7 @@
       "numero": 5,
       "atividade": "Alinhar internamente RFP e plano de execução",
       "responsavel": "Compras/Log",
-      "status": "",
+      "status": 4,
       "inicio": "2026-10-26",
       "fim": "2026-10-30",
       "anotacao": ""
@@ -329,7 +329,7 @@
       "numero": 6,
       "atividade": "Estruturar a RFP",
       "responsavel": "Compras",
-      "status": "",
+      "status": 4,
       "inicio": "2026-10-23",
       "fim": "2026-10-26",
       "anotacao": ""
@@ -338,7 +338,7 @@
       "numero": 7,
       "atividade": "Lançar rodada 1 de cotação",
       "responsavel": "Compras",
-      "status": "",
+      "status": 4,
       "inicio": "2026-10-16",
       "fim": "2026-10-16",
       "anotacao": ""
@@ -347,7 +347,7 @@
       "numero": 8,
       "atividade": "Validação Técnica com equipe de Risco Claro",
       "responsavel": "Compras/Risco",
-      "status": "",
+      "status": 4,
       "inicio": "2026-10-16",
       "fim": "2026-10-23",
       "anotacao": ""
@@ -356,7 +356,7 @@
       "numero": 9,
       "atividade": "Equalizar propostas + feedback Faróis– rodada 1",
       "responsavel": "Compras/McK",
-      "status": "",
+      "status": 4,
       "inicio": "2026-10-14",
       "fim": "2026-10-14",
       "anotacao": ""
@@ -365,7 +365,7 @@
       "numero": 10,
       "atividade": "Lançar rodada 2 de cotação",
       "responsavel": "Compras",
-      "status": "",
+      "status": 4,
       "inicio": "2026-10-12",
       "fim": "2026-10-23",
       "anotacao": ""
@@ -374,7 +374,7 @@
       "numero": 11,
       "atividade": "Equalizar propostas + feedback Faróis– rodada 2",
       "responsavel": "Compras/McK",
-      "status": "",
+      "status": 4,
       "inicio": "2026-10-07",
       "fim": "2026-10-07",
       "anotacao": ""
@@ -383,7 +383,7 @@
       "numero": 12,
       "atividade": "Discutir tecnicamente com fornecedores (Q&A)",
       "responsavel": "Compras/Log",
-      "status": "",
+      "status": 4,
       "inicio": "2026-10-05",
       "fim": "2026-10-09",
       "anotacao": ""
@@ -392,7 +392,7 @@
       "numero": 13,
       "atividade": "Validar shortlist e definir estratégia de negociação",
       "responsavel": "Compras/McK",
-      "status": "",
+      "status": 4,
       "inicio": "2026-10-05",
       "fim": "2026-10-19",
       "anotacao": ""
@@ -401,7 +401,7 @@
       "numero": 14,
       "atividade": "Negociar com players do shortlist (Envio de Lista longa)",
       "responsavel": "Compras",
-      "status": "",
+      "status": 4,
       "inicio": "2026-10-05",
       "fim": "2026-10-19",
       "anotacao": ""
@@ -410,7 +410,7 @@
       "numero": 15,
       "atividade": "Definir vencedores do BID",
       "responsavel": "Compras/Dir",
-      "status": "",
+      "status": 4,
       "inicio": "2026-09-14",
       "fim": "2026-10-02",
       "anotacao": ""
@@ -419,7 +419,7 @@
       "numero": 16,
       "atividade": "Assinar o contrato",
       "responsavel": "Compras/Jur",
-      "status": "",
+      "status": 4,
       "inicio": "2026-09-07",
       "fim": "2026-09-11",
       "anotacao": ""
@@ -428,7 +428,7 @@
       "numero": 17,
       "atividade": "Onboarding do fornecedor",
       "responsavel": "Logística",
-      "status": "",
+      "status": 4,
       "inicio": "2026-08-17",
       "fim": "2026-10-19",
       "anotacao": ""
@@ -437,15 +437,15 @@
       "numero": 18,
       "atividade": "Definir planos de ramp-up e phase-out dos fornecedores",
       "responsavel": "Logística",
-      "status": "",
+      "status": 4,
       "inicio": "2026-08-12",
       "fim": "2026-09-04",
       "anotacao": ""
     },
     {
       "numero": 23,
-      "atividade": "Equalizar propostas + feedback Faróis– rodada 3",
-      "responsavel": "Compras/McK",
+      "atividade": "",
+      "responsavel": "",
       "status": "",
       "inicio": "",
       "fim": "",
@@ -1147,16 +1147,6 @@
   ],
   "historico": [
     {
-      "data": "2026-10-23",
-      "acoes": "Transformação Claro - Fretes] Checkpoint Executivo",
-      "detalhe": "A agenda também foi aproveitada para discutir o cronograma da Movel e o processo de apuração do TOP Rotas Engenharia.\nEm relação ao TOP Rotas, avançamos para um nível maior de definição sobre a metodologia que será aplicada para a aferição dos resultados, alinhando os critérios e premissas que serão utilizados nas próximas etapas da análise."
-    },
-    {
-      "data": "2026-10-23",
-      "acoes": "Transformação Claro - Fretes] Checkpoint Executivo",
-      "detalhe": "No que se refere à Movel, o Bruno apresentou uma visão geral das atualizações realizadas na base de fornecedores da operação Expressa, com foco principal nos fornecedores de frete por moto.\nTambém foi informado que o BID está dividido em duas frentes distintas: uma voltada para a operação de SIM Card e outra para E-commerce. Para o E-commerce, a estratégia é utilizar a mesma base de fornecedores já contemplada no BID da Movel.\nEm relação aos fornecedores responsáveis pelas entregas de SIM Card, o Bruno ficou de compartilhar conosco a nova relação de fornecedores para avaliação."
-    },
-    {
       "data": "2026-11-12",
       "acoes": "Mckinsey: Usar Romega como referência para pressionar os outros a baixar preço de escolta, e conversar pessoalmente com a Márcia antes de dar feedback aos fornecedores para não faltar nada.\n\nMckinsey: Enviar bullet points para fornecedores com o que falta cotar (principalmente escolta da Brinks + meso pendentes)\n\nJaime/Raquel: Analisar a planilha de equalização salva na rede e identificar oportunidades e possiveis correções.",
       "detalhe": "Reunião Equalização do Bid Móvel - 12/11/26\nFornecedores cotaram por mesorregião e terminaram de cotar o longtail rota a rota, agora temos visão completa. Próximo round é para as transportadoras cotarem alguma coisa que faltou, como escolta por exemplo.\n*Cabral: cotou quase tudo, mas está com precificação mais alta, pouco competitiva. Serve como 3ª tabela para algumas regiões.\n*Celist: ganhou pouca coisa, só 2%. Já foi forte no RJ, perdeu tabela e hoje só faz cotação. Pode voltar.\n*Brinks: cotou frete, mas não cotou a tabela de escolta - ponto pendente.\n*Referência usada: tabela vigente com a IBL, e cotações de BR Samor, Cabral, Cenistics, IBL atualizada, Intermodal (IBL + Romega / Romega + TPC).\nTema central: Escolta\nPonto crítico que pode mudar muito a  projeção de cenários.\n* Hoje o TMS da Móvel é direcionado: SP vai para Omega, Sul vai para IBL, etc. Não calcula escolta na escolha.\n*Ideia futura: TMS escolher menor preço total, igual Engenharia, mas incluindo escolta parametrizada.\n* Risco: transportador com frete mais barato pode ter escolta muito mais cara e ficar mais caro no total\n*Problema operacional: hoje o transportador é definido no protocolo, antes da escolta. A escolta é definida depois, pelo somatório do romaneio inteiro (agrupamento de protocolos).Regra geral: acima de R$ 500 mil no Brasil, R$ 250 mil no RJ exige escolta. Tem variações no PGR (trajeto inteiro, só 150km de saída, etc).E a escolta tem que ser obrigatoriamente do mesmo transportador do romaneio. Não dá para pegar romaneio da Brinks e usar escolta mais barata da Cenistics, por exemplo.Por isso, para simulação dá para estimar, mas para implementar no sistema é mais complexo.\nO que está sendo cotado\n-Mesorregião para rodoviário, aéreo e dedicado.\n-Tabela Expressa (CV) na Móvel, com SLA padrão e SLA expresso separados. Exemplo Intermodal (fornecedor nota 10 no preenchimento - FTL + Meso): Simões Filho - Salvador cai de 4 para 2 dias, 5 para 3, etc. Redução média de 30% a 40% no SLA, alguns casos 50% (4 dias -> 2 dias, 8 dias -> 6 dias)."
@@ -1165,9 +1155,19 @@
       "data": "2026-11-12",
       "acoes": "-",
       "detalhe": "Projeto de contratar escolta direta\nMagali levantou a ideia de a Claro contratar escolta direto, e o transportador só acionar.Isso ganhou força na conversa, porque resolveria o problema de margem / amarração acima. Foi citado como projeto para ano que vem, com time de Qualidade / Márcia."
+    },
+    {
+      "data": "2026-10-23",
+      "acoes": "Transformação Claro - Fretes] Checkpoint Executivo",
+      "detalhe": "A agenda também foi aproveitada para discutir o cronograma da Movel e o processo de apuração do TOP Rotas Engenharia.\nEm relação ao TOP Rotas, avançamos para um nível maior de definição sobre a metodologia que será aplicada para a aferição dos resultados, alinhando os critérios e premissas que serão utilizados nas próximas etapas da análise."
+    },
+    {
+      "data": "2026-10-23",
+      "acoes": "Transformação Claro - Fretes] Checkpoint Executivo",
+      "detalhe": "No que se refere à Movel, o Bruno apresentou uma visão geral das atualizações realizadas na base de fornecedores da operação Expressa, com foco principal nos fornecedores de frete por moto.\nTambém foi informado que o BID está dividido em duas frentes distintas: uma voltada para a operação de SIM Card e outra para E-commerce. Para o E-commerce, a estratégia é utilizar a mesma base de fornecedores já contemplada no BID da Movel.\nEm relação aos fornecedores responsáveis pelas entregas de SIM Card, o Bruno ficou de compartilhar conosco a nova relação de fornecedores para avaliação."
     }
   ],
-  "statusProjeto": "12/11/2026 Equalização 2ª round -  já temos cotações por mesoregião e longtail rota a rota, Próximo round será apenas para fechar cotações que faltram como escolta para algumas transportadoras.\nDiscussão sobre a projeção de cenarios com a escolta já que o frete é calculado por protocolo e a aescolta adicionada a um grupo de protocolos.\n30/10/2026: Retorno Rodada 2",
+  "statusProjeto": "12/11/2026 Equalização 2ª round -  já temos cotações por mes oregião e longtail rota a rota, Próximo round será apenas para fechar cotações que faltram como escolta para algumas transportadoras. Discussão sobre a projeção de cenarios com a escolta já que o frete é calculado por protocolo e a aescolta adicionada a um grupo de protocolos.\n30/10/2026: Retorno Rodada 2",
   "financeiro": [
     {
       "id": "LOG-010.3",
@@ -3766,6 +3766,6 @@
   "fonte": {
     "arquivo": "LOG-010.3 - BID Transportes - Móvel.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.3%20-%20BID%20Transportes%20-%20M%C3%B3vel.xlsx?web=1",
-    "extraidoEm": "2026-11-18T11:31:56-03:00"
+    "extraidoEm": "2026-11-18T15:48:13-03:00"
   }
 }

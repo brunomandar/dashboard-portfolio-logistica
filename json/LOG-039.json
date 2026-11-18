@@ -3,16 +3,16 @@
   "projeto": "Torre de controle",
   "marcaDgpIcg": "",
   "area": "Transportes",
-  "pontoFocal": "",
-  "inicio": "",
-  "termino": "",
+  "pontoFocal": "Ingrid Alcici",
+  "inicio": "2026-01-05",
+  "termino": "2026-10-30",
   "inicioCaptura": "",
   "iniciativa": "Op. Transporte",
-  "pmo": "",
-  "risco": "",
-  "status": "",
-  "situacao": "Em execução",
-  "prioridade": "",
+  "pmo": "Wagner",
+  "risco": "Médio",
+  "status": "L4",
+  "situacao": "Atenção",
+  "prioridade": "P0",
   "tipoAgenda": "",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
@@ -35,7 +35,7 @@
     {
       "numero": "01.",
       "atividade": "REVISÃO REGRAS CRO",
-      "responsavel": "Wagner/karolina",
+      "responsavel": "Wagner",
       "status": 4,
       "inicio": "2026-06-01",
       "fim": "2026-08-23",
@@ -62,7 +62,7 @@
     {
       "numero": "04.",
       "atividade": "HOMOLOGAÇÕES CRO",
-      "responsavel": "Wagner/karolina",
+      "responsavel": "Wagner",
       "status": 2,
       "inicio": "2026-08-15",
       "fim": "2026-08-31",
@@ -89,7 +89,7 @@
     {
       "numero": "07.",
       "atividade": "HOMOLOGAÇÃO WHATSAPP",
-      "responsavel": "Wagner/karolina",
+      "responsavel": "Wagner",
       "status": 2,
       "inicio": "2026-08-15",
       "fim": "2026-10-19",
@@ -3589,6 +3589,6 @@
   "fonte": {
     "arquivo": "LOG-039 -Torre de controle.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-039%20-Torre%20de%20controle.xlsx?web=1",
-    "extraidoEm": "2026-11-18T11:32:53-03:00"
+    "extraidoEm": "2026-11-18T15:48:58-03:00"
   }
 }

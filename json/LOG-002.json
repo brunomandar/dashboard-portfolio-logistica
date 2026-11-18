@@ -1179,8 +1179,14 @@
       "anotacao": ""
     }
   ],
-  "historico": [],
-  "statusProjeto": "data - Pontos relevantes para aquele evento",
+  "historico": [
+    {
+      "data": "2026-11-18",
+      "acoes": "Lojas com baixo desempenho",
+      "detalhe": "Em 10 meses de rollout, as lojas AA multiplicaram por 4,8 os pontos de devolução (de 251 para 1.204 lojas), receberam 70.434 equipamentos e geraram R$ 1,55 mi\nde economia frente à retirada via motoboy. Out/26 foi o recorde mensal (12.631). Ponto de atenção: adesão ainda baixa em BASE, CO, NE, NO.BASE, CO, NE, NO: 425 lojas AA (39,5% da rede), mas só 81 já devolveram. Ainda há 124 lojas não cadastradas e 168 ativas sem login. Ação em andamento: números de adesão compartilhados com a Marta para cobrança das regionais críticas. No CO, inclusão de 50 lojas com treinamento em set/26: lojas com devolução de 28 para 41."
+    }
+  ],
+  "statusProjeto": "18/11/2026 - BASE, CO, NE, NO: 425 lojas AA (39,5% da rede), mas só 81 já devolveram. Ainda há 124 lojas não cadastradas e 168 ativas sem login. Ação em andamento: números de adesão compartilhados com a Marta para cobrança das regionais críticas. No CO, inclusão de 50 lojas com treinamento em set/26: lojas com devolução de 28 para 41.",
   "financeiro": [
     {
       "id": "LOG-002",
@@ -3779,6 +3785,6 @@
   "fonte": {
     "arquivo": "LOG-002 - APP Devolução em Loja (Expansão AA).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-002%20-%20APP%20Devolu%C3%A7%C3%A3o%20em%20Loja%20%28Expans%C3%A3o%20AA%29.xlsx?web=1",
-    "extraidoEm": "2026-11-18T11:31:16-03:00"
+    "extraidoEm": "2026-11-18T15:47:33-03:00"
   }
 }

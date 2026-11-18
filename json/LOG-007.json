@@ -1180,7 +1180,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "Risco: Aprovação do projeto TurnKey em função de estudo de viabilidade não ser rentável (Saleme)\n17/11/2026 - BOM Unisoma Regional Brasilia em andadamento iniciado em 30/10. Primeira medição no fechamento de novembro.\n17/11/2026 - Turn Key Misc (0,15MM): Saleme ja teve retorno de compras com fornecedores da Procisa e CSR, ainda está em apuração e análise de viabilidade. (0,15MM).\n17/11/2026 -  Previsão início Janeiro/27 - Controle de Estoque em Técnicos (15MM): iniciativa em desenvolvimento com o time de TI.",
+  "statusProjeto": "Risco: Aprovação do projeto TurnKey em função de estudo de viabilidade não ser rentável (Saleme)\n17/11/2026 - BOM Unisoma Regional Brasilia em andadamento iniciado em 30/10. Primeira medição no fechamento de novembro.\n17/11/2026 - Turn Key Misc (0,15MM): Saleme ja teve retorno de compras com fornecedores da Procisa e CSR, ainda está em apuração e análise de viabilidade. (0,15MM).\n17/11/2026 -  Previsão início Janeiro/27 - Controle de Estoque em Técnicos (15MM): Concluída avaliação preliminar da solução Easyware, apresentada pela Desktop, para controle e rastreabilidade de terminais por técnico. O material comparativo com TOA + Field Logistics/Oracle já foi elaborado e está sendo conduzido um alinhamento técnico para validação da solução mais aderente ao processo da Claro. Preliminarmente, o modelo integrado TOA + Field Logistics apresenta maior aderência ao ecossistema atual.",
   "financeiro": [
     {
       "id": "LOG-007",
@@ -3779,6 +3779,6 @@
   "fonte": {
     "arquivo": "LOG-007 - Planejamento Redução Consumo Material.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-007%20-%20Planejamento%20Redu%C3%A7%C3%A3o%20Consumo%20Material.xlsx?web=1",
-    "extraidoEm": "2026-11-18T11:31:27-03:00"
+    "extraidoEm": "2026-11-18T15:47:44-03:00"
   }
 }

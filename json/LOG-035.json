@@ -67,7 +67,7 @@
       "responsavel": "Time Learn 6 Sigma",
       "status": 1,
       "inicio": "2026-06-15",
-      "fim": "",
+      "fim": "2026-06-23",
       "anotacao": ""
     },
     {
@@ -282,7 +282,7 @@
     {
       "numero": 1,
       "atividade": "Estruturação do acompanhamento e das metas de retorno de acessórios",
-      "responsavel": "A confirmar",
+      "responsavel": "Jeferson Teixeira",
       "status": 4,
       "inicio": "2026-05-06",
       "fim": "2026-05-15",
@@ -309,7 +309,7 @@
     {
       "numero": "1.3",
       "atividade": "War Room Fontes – reuniões semanais com gestores das regionais",
-      "responsavel": "A confirmar",
+      "responsavel": "Jeferson Teixeira",
       "status": 4,
       "inicio": "2026-07-10",
       "fim": "2026-07-10",
@@ -384,7 +384,7 @@
       "responsavel": "A confirmar",
       "status": 1,
       "inicio": "2026-06-15",
-      "fim": "",
+      "fim": "2026-06-23",
       "anotacao": ""
     },
     {
@@ -401,8 +401,8 @@
       "atividade": "Divulgação do processo de reuso via APP Conectados (responsáveis das Epos e técnicos)",
       "responsavel": "A confirmar",
       "status": 0,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-06-24",
+      "fim": "2026-07-21",
       "anotacao": ""
     },
     {
@@ -491,8 +491,8 @@
       "atividade": "Analisar relatório do POC e criar KPI de controle da reversa e da devolução de acessórios",
       "responsavel": "A confirmar",
       "status": 0,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-10-09",
+      "fim": "2026-10-09",
       "anotacao": ""
     },
     {
@@ -500,8 +500,8 @@
       "atividade": "Implementar o controle nas demais regionais",
       "responsavel": "A confirmar",
       "status": 0,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-10-12",
+      "fim": "2026-10-12",
       "anotacao": ""
     },
     {
@@ -3780,6 +3780,6 @@
   "fonte": {
     "arquivo": "LOG-035 - Retorno de Acessórios  Partes e Peças.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-035%20-%20Retorno%20de%20Acess%C3%B3rios%20%20Partes%20e%20Pe%C3%A7as.xlsx?web=1",
-    "extraidoEm": "2026-11-18T11:32:38-03:00"
+    "extraidoEm": "2026-11-18T15:48:52-03:00"
   }
 }
