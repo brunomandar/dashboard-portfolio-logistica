@@ -16,12 +16,14 @@
   "tipoAgenda": "Estratégica",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
-  "escopo": "O projeto visa otimizar o processo de logística reversa em tempo, custo e qualidade, reduzindo o SLA, aumentando a velocidade da reversa e diminuindo perdas e CAPEX. A iniciativa tem como premissas o uso de dados para a melhoria contínua e a atuação estruturada por meio de squad.",
+  "escopo": "O projeto visa otimizar o processo de logística reversa em tempo, custo e qualidade, reduzindo o SLA, aumentando a velocidade da reversa e diminuindo perdas e CAPEX. A iniciativa tem como premissas o uso de dados para a melhoria contínua e a atuação estruturada por meio de squad. Objetivo eliminar o estoque em transito.",
   "entregaveis": [
     "Mapeamento E2E da reversa.",
     "Painel de acompanhamento.",
     "Rankings de performance.",
-    "Plano de ação com squad."
+    "Plano de ação com squad.",
+    "Eliminação do estoque em transito",
+    "Redução de aquisição de novos terminais"
   ],
   "saving": {
     "opex12M": 0.0,
@@ -38,7 +40,7 @@
       "responsavel": "Fabio Mattos",
       "status": 4,
       "inicio": "2026-04-30",
-      "fim": "2026-08-13",
+      "fim": "2026-05-30",
       "anotacao": ""
     },
     {
@@ -46,8 +48,8 @@
       "atividade": "Painéis e indicadores de performance da reversa",
       "responsavel": "Fabio Mattos",
       "status": 4,
-      "inicio": "2026-05-25",
-      "fim": "2026-09-29",
+      "inicio": "2026-05-06",
+      "fim": "2026-05-12",
       "anotacao": ""
     },
     {
@@ -55,8 +57,8 @@
       "atividade": "Viabilidade de laboratório de triagem (CD Jaboatão e Palhoça)",
       "responsavel": "Fabio Mattos",
       "status": 4,
-      "inicio": "2026-05-25",
-      "fim": "2026-06-10",
+      "inicio": "2026-05-20",
+      "fim": "2026-05-28",
       "anotacao": ""
     },
     {
@@ -64,8 +66,8 @@
       "atividade": "Análise de malha e modais de transporte da reversa",
       "responsavel": "Fabio Mattos",
       "status": 4,
-      "inicio": "2026-07-17",
-      "fim": "2026-09-29",
+      "inicio": "2026-03-01",
+      "fim": "2026-05-30",
       "anotacao": ""
     },
     {
@@ -73,8 +75,8 @@
       "atividade": "Integração de sistemas TMS x Qualitor (Stefanini)",
       "responsavel": "Fabio Mattos",
       "status": 4,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-03-01",
+      "fim": "2026-08-30",
       "anotacao": ""
     },
     {
@@ -82,8 +84,8 @@
       "atividade": "Plano de ação com squad",
       "responsavel": "Fabio Mattos",
       "status": 4,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-03-01",
+      "fim": "2026-11-30",
       "anotacao": ""
     },
     {
@@ -91,8 +93,8 @@
       "atividade": "Gestão e acompanhamento do projeto",
       "responsavel": "Fabio Mattos",
       "status": 4,
-      "inicio": "2026-05-12",
-      "fim": "2026-06-15",
+      "inicio": "2026-03-01",
+      "fim": "2026-11-30",
       "anotacao": ""
     },
     {
@@ -100,7 +102,7 @@
       "atividade": "Medição de resultados e encerramento",
       "responsavel": "Fabio Mattos",
       "status": 4,
-      "inicio": "2026-12-31",
+      "inicio": "2026-11-30",
       "fim": "2026-12-31",
       "anotacao": ""
     }
@@ -109,223 +111,223 @@
     {
       "numero": "1",
       "atividade": "Diagnóstico e mapeamento E2E da reversa",
-      "responsavel": "A confirmar",
-      "status": 3,
+      "responsavel": "Fabio Mattos",
+      "status": 4,
       "inicio": "2026-04-30",
-      "fim": "2026-08-13",
+      "fim": "2026-05-30",
       "anotacao": ""
     },
     {
       "numero": "1.1",
       "atividade": "Elaborar fluxograma E2E da esteira reversa e mapa de stakeholders",
-      "responsavel": "A confirmar",
+      "responsavel": "Fabio Mattos",
       "status": 4,
       "inicio": "2026-04-30",
-      "fim": "2026-04-30",
+      "fim": "2026-05-30",
       "anotacao": ""
     },
     {
       "numero": "1.2",
       "atividade": "Consolidar tempo mediano de reversa por CD e gargalos de eficiência (sistemas e CDs)",
-      "responsavel": "A confirmar",
+      "responsavel": "Fabio Mattos",
       "status": 4,
       "inicio": "2026-04-30",
-      "fim": "2026-04-30",
+      "fim": "2026-05-30",
       "anotacao": ""
     },
     {
       "numero": "1.3",
       "atividade": "Levantar principais EPOs de reversa por volume para cálculo do SLA (tempo mediano)",
-      "responsavel": "A confirmar",
-      "status": "A confirmar",
+      "responsavel": "Fabio Mattos",
+      "status": 4,
+      "inicio": "2026-05-06",
+      "fim": "2026-05-12",
+      "anotacao": "25 EPOs"
+    },
+    {
+      "numero": "1.4",
+      "atividade": "Atualizar fluxo, tempos e movimentos para fechar o diagnóstico da reversa (recorrente)",
+      "responsavel": "Fabio Mattos",
+      "status": 4,
       "inicio": "2026-05-06",
       "fim": "2026-05-12",
       "anotacao": ""
     },
     {
-      "numero": "1.4",
-      "atividade": "Atualizar fluxo, tempos e movimentos para fechar o diagnóstico da reversa (recorrente)",
-      "responsavel": "A confirmar",
-      "status": 3,
-      "inicio": "2026-07-17",
-      "fim": "2026-08-13",
-      "anotacao": ""
-    },
-    {
       "numero": "2",
       "atividade": "Painéis e indicadores de performance da reversa",
-      "responsavel": "A confirmar",
-      "status": 3,
-      "inicio": "2026-05-25",
-      "fim": "2026-09-29",
+      "responsavel": "Fabio Mattos",
+      "status": 4,
+      "inicio": "2026-05-06",
+      "fim": "2026-05-12",
       "anotacao": ""
     },
     {
       "numero": "2.1",
       "atividade": "Desenvolver painel por era e tempo real com rankings de EPOs (volume, periodicidade de devolução e pior performance)",
-      "responsavel": "A confirmar",
-      "status": 3,
-      "inicio": "2026-05-25",
+      "responsavel": "Fabio Mattos",
+      "status": 4,
+      "inicio": "2026-05-20",
       "fim": "2026-05-28",
       "anotacao": ""
     },
     {
       "numero": "2.2",
       "atividade": "Desenvolver painel do tempo de transporte no TMS (emissão da NF até a expedição)",
-      "responsavel": "A confirmar",
-      "status": 3,
-      "inicio": "2026-07-17",
-      "fim": "2026-09-29",
+      "responsavel": "Fabio Mattos",
+      "status": 4,
+      "inicio": "2026-05-20",
+      "fim": "2026-05-28",
       "anotacao": ""
     },
     {
       "numero": "3",
       "atividade": "Viabilidade de laboratório de triagem (CD Jaboatão e Palhoça)",
-      "responsavel": "A confirmar",
+      "responsavel": "Fabio Mattos",
       "status": 4,
-      "inicio": "2026-05-25",
-      "fim": "2026-06-10",
+      "inicio": "2026-05-20",
+      "fim": "2026-05-28",
       "anotacao": ""
     },
     {
       "numero": "3.1",
       "atividade": "Analisar viabilidade de abertura de laboratório de triagem de equipamentos nos CDs Jaboatão e Palhoça",
-      "responsavel": "A confirmar",
+      "responsavel": "Fabio Mattos",
       "status": 4,
       "inicio": "2026-05-25",
-      "fim": "2026-06-10",
+      "fim": "2026-05-28",
       "anotacao": ""
     },
     {
       "numero": "3.2",
       "atividade": "Decidir manter a recuperação de equipamentos nos CDs CPS e RJ (trade-off entregue)",
-      "responsavel": "A confirmar",
+      "responsavel": "Fabio Mattos",
       "status": 4,
       "inicio": "2026-05-25",
-      "fim": "2026-06-10",
+      "fim": "2026-05-28",
       "anotacao": ""
     },
     {
       "numero": "4",
       "atividade": "Análise de malha e modais de transporte da reversa",
-      "responsavel": "A confirmar",
-      "status": 3,
-      "inicio": "2026-07-17",
-      "fim": "2026-09-29",
+      "responsavel": "Fabio Mattos",
+      "status": 4,
+      "inicio": "2026-03-01",
+      "fim": "2026-05-30",
       "anotacao": ""
     },
     {
       "numero": "4.1",
       "atividade": "Analisar os 20 maiores x modal de transporte",
-      "responsavel": "A confirmar",
-      "status": 3,
-      "inicio": "2026-07-17",
-      "fim": "2026-09-29",
+      "responsavel": "Fabio Mattos",
+      "status": 4,
+      "inicio": "2026-04-30",
+      "fim": "2026-05-30",
       "anotacao": ""
     },
     {
       "numero": "4.2",
       "atividade": "Analisar malha de reversa por proximidade entre parceira e CD",
-      "responsavel": "A confirmar",
-      "status": 3,
-      "inicio": "2026-08-13",
-      "fim": "2026-09-29",
+      "responsavel": "Fabio Mattos",
+      "status": 4,
+      "inicio": "2026-04-30",
+      "fim": "2026-05-30",
       "anotacao": ""
     },
     {
       "numero": "5",
       "atividade": "Integração de sistemas TMS x Qualitor (Stefanini)",
-      "responsavel": "Stefanini",
-      "status": 2,
-      "inicio": "",
-      "fim": "",
+      "responsavel": "Fabio Mattos",
+      "status": 4,
+      "inicio": "2026-03-01",
+      "fim": "2026-08-30",
       "anotacao": ""
     },
     {
       "numero": "5.1",
       "atividade": "Desenvolver integração Qualitor x ETMS (visão da reversa)",
-      "responsavel": "Stefanini",
-      "status": 1,
-      "inicio": "",
-      "fim": "",
+      "responsavel": "Fabio Mattos",
+      "status": 4,
+      "inicio": "2026-03-01",
+      "fim": "2026-08-30",
       "anotacao": ""
     },
     {
       "numero": "5.2",
       "atividade": "Resolver pendências de atualizações cadastrais nos sistemas do processo de reversa",
-      "responsavel": "A confirmar",
-      "status": 2,
-      "inicio": "",
-      "fim": "",
+      "responsavel": "Fabio Mattos",
+      "status": 4,
+      "inicio": "2026-03-01",
+      "fim": "2026-08-30",
       "anotacao": ""
     },
     {
       "numero": "5.3",
       "atividade": "Definir previsão de Go Live da integração TMS x Qualitor",
-      "responsavel": "A confirmar",
-      "status": "A confirmar",
-      "inicio": "",
-      "fim": "",
+      "responsavel": "Fabio Mattos",
+      "status": 4,
+      "inicio": "2026-03-01",
+      "fim": "2026-08-30",
       "anotacao": ""
     },
     {
       "numero": "6",
       "atividade": "Plano de ação com squad",
-      "responsavel": "A confirmar",
-      "status": "A confirmar",
-      "inicio": "",
-      "fim": "",
+      "responsavel": "Fabio Mattos",
+      "status": 1,
+      "inicio": "2026-03-01",
+      "fim": "2026-11-30",
       "anotacao": ""
     },
     {
       "numero": "6.1",
       "atividade": "Estruturar squad e plano de ação para redução do SLA e aumento da velocidade da reversa",
-      "responsavel": "A confirmar",
-      "status": "A confirmar",
-      "inicio": "",
-      "fim": "",
+      "responsavel": "Fabio Mattos",
+      "status": 1,
+      "inicio": "2026-03-01",
+      "fim": "2026-11-30",
       "anotacao": ""
     },
     {
       "numero": "7",
       "atividade": "Gestão e acompanhamento do projeto",
-      "responsavel": "A confirmar",
-      "status": "A confirmar",
-      "inicio": "2026-05-12",
-      "fim": "2026-06-15",
+      "responsavel": "Fabio Mattos",
+      "status": 1,
+      "inicio": "2026-03-01",
+      "fim": "2026-11-30",
       "anotacao": ""
     },
     {
       "numero": "7.1",
       "atividade": "Levantar informações para atualização do projeto no Planner",
-      "responsavel": "Fabio de Souza Mattos",
-      "status": "A confirmar",
-      "inicio": "2026-05-12",
-      "fim": "2026-05-25",
+      "responsavel": "Fabio Mattos",
+      "status": 1,
+      "inicio": "2026-03-01",
+      "fim": "2026-11-30",
       "anotacao": ""
     },
     {
       "numero": "7.2",
       "atividade": "Reunião de atualização de status e entendimento do projeto com Fabio",
-      "responsavel": "A confirmar",
-      "status": "A confirmar",
-      "inicio": "2026-06-15",
-      "fim": "2026-06-15",
+      "responsavel": "Fabio Mattos",
+      "status": 1,
+      "inicio": "2026-03-01",
+      "fim": "2026-11-30",
       "anotacao": ""
     },
     {
       "numero": "8",
       "atividade": "Medição de resultados e encerramento",
-      "responsavel": "A confirmar",
+      "responsavel": "Fabio Mattos",
       "status": 0,
-      "inicio": "2026-12-31",
+      "inicio": "2026-11-30",
       "fim": "2026-12-31",
       "anotacao": ""
     },
     {
       "numero": "8.1",
       "atividade": "Medir resultados (SLA e tempo de reversa) e encerrar o projeto (fim planejado na base)",
-      "responsavel": "A confirmar",
+      "responsavel": "Fabio Mattos",
       "status": 0,
       "inicio": "2026-12-31",
       "fim": "2026-12-31",
@@ -333,7 +335,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "18/11/26 - Projeto Concluido. Solução apresentada e aguardando aprovação da gestão para seguimento.\n22/09/26 - Atualização do projeto solicitada.\n13/08/26 - Análise da malha de reversa por proximidade entre parceiro e CD em andamento.\n17/07/26 - Atualização recorrente do fluxo, tempos e movimentos para fechar o diagnóstico da reversa.\n17/07/26 - Desenvolvimento do painel de tempo de transporte TMS (da emissão da NF até a expedição) em andamento.\n17/07/26 - Análise dos 20 maiores x modal de transporte em andamento.\n09/06/26 - Reunião com Fabio agendada para 15/06, para atualização do status e entendimento do projeto.\n25/05/26 - Painel por era e em tempo real em desenvolvimento, com rankings de EPOs por volume, periodicidade de devolução e piores performances, com previsão para 28/05.\n25/05/26 - Trade-off da viabilidade de laboratório de triagem em CD Jaboatão e Palhoça entregue, com direcionamento de manter a recuperação nos CDs CPS e RJ; previsão 29/05.\n12/05/26 - Levantamento de informações para atualização do projeto no Planner em andamento (Fabio Souza).\n06/05/26 - Levantamento das principais EPOs de reversa em volume em andamento, para calcular o SLA do tempo mediano.",
+  "statusProjeto": "Risco: As movimentações terão incremento de custo na ordem de R$8MM para 2027. Mandatório redução de CAPEX de aquisição\n18/11/26 - Pendente valiação da Gestão sobre viabilidade dos custos de movimentação entre CDs (RJ para Jaboatão e abrir Palhoça).\n18/11/26 - Processo de emissão de NF qualitor x TMS ja implementado com ROLLOUT em Palhoça. Demais ja implementados.\n18/11/26 - Monitoramento do fluxo operacional em andamento.\n22/09/26 - Atualização do projeto solicitada.\n13/08/26 - Análise da malha de reversa por proximidade entre parceiro e CD em andamento.\n17/07/26 - Atualização recorrente do fluxo, tempos e movimentos para fechar o diagnóstico da reversa.\n17/07/26 - Desenvolvimento do painel de tempo de transporte TMS (da emissão da NF até a expedição) em andamento.\n17/07/26 - Análise dos 20 maiores x modal de transporte em andamento.\n09/06/26 - Reunião com Fabio agendada para 15/06, para atualização do status e entendimento do projeto.\n25/05/26 - Painel por era e em tempo real em desenvolvimento, com rankings de EPOs por volume, periodicidade de devolução e piores performances, com previsão para 28/05.\n25/05/26 - Trade-off da viabilidade de laboratório de triagem em CD Jaboatão e Palhoça entregue, com direcionamento de manter a recuperação nos CDs CPS e RJ; previsão 29/05.\n12/05/26 - Levantamento de informações para atualização do projeto no Planner em andamento (Fabio Souza).\n06/05/26 - Levantamento das principais EPOs de reversa em volume em andamento, para calcular o SLA do tempo mediano.",
   "financeiro": [
     {
       "id": "LOG-029",
@@ -1209,7 +1211,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1221,7 +1223,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1233,7 +1235,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1245,7 +1247,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1257,7 +1259,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1269,7 +1271,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1281,7 +1283,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1293,7 +1295,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1305,7 +1307,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1317,7 +1319,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1329,7 +1331,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1341,7 +1343,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1497,7 +1499,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1509,7 +1511,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1521,7 +1523,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1533,7 +1535,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1545,7 +1547,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1557,7 +1559,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1569,7 +1571,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1581,7 +1583,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1593,7 +1595,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Set",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1605,7 +1607,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Out",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1617,7 +1619,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -1629,7 +1631,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-029",
@@ -2932,6 +2934,6 @@
   "fonte": {
     "arquivo": "LOG-029 - Esteira da Reversa (operação, velocidade, qualidade).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-029%20-%20Esteira%20da%20Reversa%20%28opera%C3%A7%C3%A3o%2C%20velocidade%2C%20qualidade%29.xlsx?web=1",
-    "extraidoEm": "2026-11-18T10:43:47-03:00"
+    "extraidoEm": "2026-11-18T11:32:24-03:00"
   }
 }

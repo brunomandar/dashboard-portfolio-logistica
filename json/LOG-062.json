@@ -1229,7 +1229,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1241,7 +1241,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1253,7 +1253,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1265,7 +1265,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1277,7 +1277,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1289,7 +1289,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1301,7 +1301,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1313,7 +1313,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1325,7 +1325,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Set",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1337,7 +1337,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Out",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1349,7 +1349,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1361,7 +1361,7 @@
       "tipoDespesa": "Opex",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1517,7 +1517,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jan",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1529,7 +1529,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Fev",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1541,7 +1541,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mar",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1553,7 +1553,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Abr",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1565,7 +1565,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Mai",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1577,7 +1577,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jun",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1589,7 +1589,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Jul",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1601,7 +1601,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Ago",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1613,7 +1613,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Set",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1625,7 +1625,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Out",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1637,7 +1637,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Nov",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -1649,7 +1649,7 @@
       "tipoDespesa": "Total",
       "ano": 2026,
       "mes": "Dez",
-      "resultado": -0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-062",
@@ -2952,6 +2952,6 @@
   "fonte": {
     "arquivo": "LOG-062 - Claro Go (Projeto Beon) - contratação de autônomo.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-062%20-%20Claro%20Go%20%28Projeto%20Beon%29%20-%20contrata%C3%A7%C3%A3o%20de%20aut%C3%B4nomo.xlsx?web=1",
-    "extraidoEm": "2026-11-18T10:44:51-03:00"
+    "extraidoEm": "2026-11-18T11:33:46-03:00"
   }
 }
