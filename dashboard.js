@@ -207,7 +207,14 @@ window.DASHBOARD_SHOW_META = true;
 
   function prepareProjects(projects) {
     return flattenProjects(projects)
-      .map(project => project && typeof project === 'object' ? { ...project, area: normalizeGerencia(project.area) } : project)
+      .map(project => {
+        if (!project || typeof project !== 'object') return project;
+        // Marca (DGP)/(ICG) do título: vira campo marcaDgpIcg e sai do nome exibido
+        const raw = String(project.projeto ?? '');
+        const tag = raw.match(/\(\s*(DGP|ICG)\s*\)/i);
+        const projeto = tag ? raw.replace(/\s*\(\s*(?:DGP|ICG)\s*\)\s*/gi, ' ').replace(/\s{2,}/g, ' ').trim() : project.projeto;
+        return { ...project, projeto, marcaDgpIcg: clean(project.marcaDgpIcg).toUpperCase() || (tag ? tag[1].toUpperCase() : ''), area: normalizeGerencia(project.area) };
+      })
       .filter(project => project && /^LOG-\d+(?:\.\d+)?$/i.test(clean(project.id)) && projectPolicy(project))
       .sort((a, b) => idNumber(a.id) - idNumber(b.id));
   }
@@ -987,6 +994,13 @@ window.DASHBOARD_SHOW_META = true;
     if (total || clean(project.ganhoProjeto).toLocaleLowerCase('pt-BR') === 'quantitativo') return moneyMM(total);
     return clean(project.ganhoProjeto) || 'Não informado';
   }
+  // Meta (Budget) e Forecast 2026 do projeto: linha Total da Base_Financ. (mesma base do financeiro da Home)
+  function finance2026Label(project, icg) {
+    const records = arrayOf(project.financeiro).filter(record => clean(record?.icg) === icg && Number(record?.ano) === 2026 && clean(record?.tipoDespesa) === 'Total');
+    const total = records.reduce((sum, record) => sum + n(record.resultado), 0);
+    if (records.length || clean(project.ganhoProjeto).toLocaleLowerCase('pt-BR') === 'quantitativo') return moneyMM(total);
+    return clean(project.ganhoProjeto) || 'Não informado';
+  }
   function renderTable() {
     const query = clean($('#tableSearch')?.value).toLocaleLowerCase('pt-BR');
     const selectedSituation = $('#portfolioStatusFilter')?.value || '';
@@ -1004,8 +1018,8 @@ window.DASHBOARD_SHOW_META = true;
       const situation = situationOf(project);
       const stage = clean(project.status) || 'Não informado';
       const risk = clean(project.risco) || 'Não informado';
-      return `<tr data-status="${esc(situation)}"><td title="${esc(`${id} · ${name}`)}"><span class="portfolio-project"><b>${esc(id)}</b> · ${esc(name)}</span></td><td class="portfolio-detail" title="${esc(formatDate(project.inicio))}">${esc(formatDate(project.inicio))}</td><td class="portfolio-detail" title="${esc(formatDate(project.termino))}">${esc(formatDate(project.termino))}</td><td class="portfolio-detail" title="${esc(focal)}">${esc(focal)}</td><td class="portfolio-detail" title="${esc(management)}">${esc(management)}</td><td title="${esc(situation)}">${esc(situation)}</td><td title="${esc(stage)}">${esc(stage)}</td><td title="${esc(risk)}"><span class="chip ${riskClass(risk)}">${esc(risk)}</span></td><td title="${esc(savingLabel(project))}">${esc(savingLabel(project))}</td><td title="${esc(saving2026Label(project))}">${esc(saving2026Label(project))}</td><td><button class="open-project" type="button" data-project-id="${esc(id)}" onclick="if(typeof openProject==='function')openProject(this.dataset.projectId)">Abrir visão</button></td></tr>`;
-    }).join('') || '<tr><td colspan="11" class="empty-state">Nenhum projeto corresponde aos filtros.</td></tr>';
+      return `<tr data-status="${esc(situation)}"><td title="${esc(`${id} · ${name}`)}"><span class="portfolio-project"><b>${esc(id)}</b> · ${esc(name)}</span></td><td class="portfolio-detail" title="${esc(formatDate(project.inicio))}">${esc(formatDate(project.inicio))}</td><td class="portfolio-detail" title="${esc(formatDate(project.termino))}">${esc(formatDate(project.termino))}</td><td class="portfolio-detail" title="${esc(focal)}">${esc(focal)}</td><td class="portfolio-detail" title="${esc(management)}">${esc(management)}</td><td title="${esc(situation)}">${esc(situation)}</td><td title="${esc(stage)}">${esc(stage)}</td><td title="${esc(risk)}"><span class="chip ${riskClass(risk)}">${esc(risk)}</span></td><td title="${esc(finance2026Label(project, 'Budget'))}">${esc(finance2026Label(project, 'Budget'))}</td><td title="${esc(finance2026Label(project, 'Fcst'))}">${esc(finance2026Label(project, 'Fcst'))}</td><td title="${esc(savingLabel(project))}">${esc(savingLabel(project))}</td><td title="${esc(saving2026Label(project))}">${esc(saving2026Label(project))}</td><td><button class="open-project" type="button" data-project-id="${esc(id)}" onclick="if(typeof openProject==='function')openProject(this.dataset.projectId)">Abrir visão</button></td></tr>`;
+    }).join('') || '<tr><td colspan="13" class="empty-state">Nenhum projeto corresponde aos filtros.</td></tr>';
   }
 
   const SCHEDULE_STATUS = [

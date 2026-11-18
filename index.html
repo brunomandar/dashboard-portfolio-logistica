@@ -683,6 +683,27 @@ body #dgpView .area-tbl th:first-child,body #dgpView .area-tbl td:first-child{wi
 #dgpView #dgpDetailTable td,#dgpView #dgpDetailTable tfoot td{padding-right:20px;font-variant-numeric:tabular-nums}
 #dgpView #dgpDetailTable th:nth-child(n+6):nth-child(-n+10),#dgpView #dgpDetailTable td:nth-child(n+6):nth-child(-n+10){text-align:right}
 #dgpView #dgpDetailTable tfoot td:nth-child(n+2):nth-child(-n+5){text-align:right}
+
+/* Financeiro DGP: filtro principal "DGP e ICG" (acima do Ano, ao lado do card Projetos ICG) */
+body #dgpView .dgp-scope{position:absolute;left:0;top:0;height:22px;display:inline-flex;align-items:center;gap:7px;padding:2px 11px;border-radius:7px;background:#fff;border:1.5px solid #df3232;color:#c00000;font-size:11.5px;font-weight:800;cursor:pointer;user-select:none;box-shadow:0 2px 8px rgba(223,50,50,.12)}
+body #dgpView .dgp-scope input{accent-color:#df3232;width:14px;height:14px;margin:0;cursor:pointer}
+body #dgpView .dgp-scope:has(input:checked){background:#df3232;color:#fff}
+body #dgpView .dgp-scope:has(input:checked) input{accent-color:#fff}
+
+/* Portfólio completo: colunas Meta e Forecast */
+#portfolio col:nth-child(1){width:21%!important}
+#portfolio col:nth-child(2){width:7%!important}
+#portfolio col:nth-child(3){width:7%!important}
+#portfolio col:nth-child(4){width:7%!important}
+#portfolio col:nth-child(5){width:8%!important}
+#portfolio col:nth-child(6){width:8%!important}
+#portfolio col:nth-child(7){width:4%!important}
+#portfolio col:nth-child(8){width:6%!important}
+#portfolio col:nth-child(9){width:6%!important}
+#portfolio col:nth-child(10){width:6%!important}
+#portfolio col:nth-child(11){width:6%!important}
+#portfolio col:nth-child(12){width:6%!important}
+#portfolio col:nth-child(13){width:8%!important}
 </style>
 </head>
 <body>
@@ -1117,7 +1138,7 @@ body #dgpView .area-tbl th:first-child,body #dgpView .area-tbl td:first-child{wi
             })();
           </script>
 
-            <div class="table-wrap"><table><colgroup><col><col><col><col><col><col><col><col><col><col><col></colgroup><thead><tr><th>Projeto</th><th>Início</th><th>Término do projeto</th><th>Ponto focal</th><th>Gerência</th><th>Status</th><th>Stage</th><th>Risco</th><th>Saving</th><th>Saving 2026</th><th></th></tr></thead><tbody id="portfolioRows"><tr><td colspan="10" class="empty-state">Carregando portfólio…</td></tr></tbody></table></div>
+            <div class="table-wrap"><table><colgroup><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup><thead><tr><th>Projeto</th><th>Início</th><th>Término do projeto</th><th>Ponto focal</th><th>Gerência</th><th>Status</th><th>Stage</th><th>Risco</th><th>Meta</th><th>Forecast</th><th>Saving</th><th>Saving 2026</th><th></th></tr></thead><tbody id="portfolioRows"><tr><td colspan="10" class="empty-state">Carregando portfólio…</td></tr></tbody></table></div>
           </article>
           <script>
           (() => {
@@ -1338,7 +1359,12 @@ body #dgpView .area-tbl th:first-child,body #dgpView .area-tbl td:first-child{wi
       const iniOne = norm(p.iniciativa);
       // Escopo: DGP, ICG e todos os projetos quantitativos (com a iniciativa da One_Page)
       const quantitativo = norm(p.ganhoProjeto).startsWith('quantitativ');
-      const iniciativa = iniOne === 'consultoriadgp' || iniOne === 'dgp' ? 'DGP' : iniOne === 'icg' ? 'ICG' : (quantitativo ? (clean(p.iniciativa) || 'Não informado') : '');
+      // Marca (DGP)/(ICG) no título do projeto (One_Page): define DGP/ICG e não aparece no nome
+      const rawName = String(p.projeto ?? '');
+      const tagMatch = rawName.match(/\(\s*(DGP|ICG)\s*\)/i);
+      const marca = clean(p.marcaDgpIcg).toUpperCase() || (tagMatch ? tagMatch[1].toUpperCase() : '');
+      const nomeLimpo = rawName.replace(/\s*\(\s*(?:DGP|ICG)\s*\)\s*/gi, ' ').replace(/\s{2,}/g, ' ').trim();
+      const iniciativa = marca || (iniOne === 'consultoriadgp' || iniOne === 'dgp' ? 'DGP' : iniOne === 'icg' ? 'ICG' : (quantitativo ? (clean(p.iniciativa) || 'Não informado') : ''));
       if (!iniciativa) return;
       const startRows = rows.length;
       recs.forEach(r => {
@@ -1350,11 +1376,11 @@ body #dgpView .area-tbl th:first-child,body #dgpView .area-tbl td:first-child{wi
         const mi = monthIndex(r.mes), ano = Number(r.ano);
         if (!item || mi < 0 || !Number.isFinite(ano) || !ano) return;
         const stage = clean(p.status).toUpperCase(), situacao = clean(r.situacao);
-        const fase = stage && situacao ? `${stage} - ${situacao}` : (stage || situacao || 'N/D');
+        const fase = stage || 'N/D'; // Fase = estágio L do projeto (L0 a L5), como no dashboard
         const obj = {
           id: clean(p.id), iniciativa,
           area: normalizeGerencia(clean(r.gerencia) || clean(p.area)) || 'Não informado',
-          projeto: clean(p.projeto) || clean(r.projeto) || 'Não informado',
+          projeto: nomeLimpo || clean(r.projeto) || 'Não informado', marca,
           status: situacao, item, tipo: tipo || 'N/D', ano, mes: MES[mi],
           resultado: num(r.resultado), fase
         };
@@ -1386,7 +1412,7 @@ body #dgpView .area-tbl th:first-child,body #dgpView .area-tbl td:first-child{wi
         rows.push({
           id: clean(p.id), iniciativa,
           area: normalizeGerencia(clean(p.area)) || 'Não informado',
-          projeto: clean(p.projeto) || 'Não informado',
+          projeto: nomeLimpo || 'Não informado', marca,
           status: '', item: 'Real', tipo: tipoUnico || 'N/D', ano: new Date().getFullYear(), mes: MES[0],
           resultado: 0, fase: stage || 'N/D'
         });
@@ -1413,12 +1439,15 @@ body #dgpView .area-tbl th:first-child,body #dgpView .area-tbl td:first-child{wi
   const pageSize = 10;
   const sel = { year: [], month: [], area: [], phase: [], project: [] };
   let iniciativa = '';
+  let RAW_ALL = [];
+  let onlyDgpIcg = false; // filtro principal "DGP e ICG" (desmarcado ao abrir a aba)
+  const applyScope = () => { RAW = onlyDgpIcg ? RAW_ALL.filter(x => x.marca) : RAW_ALL; };
   const MULTI = {
     year:    { label: 'Ano',     all: 'Todos os anos',     many: n => `${n} anos selecionados`,     tags: false },
     month:   { label: 'Mês',     all: 'Todos os meses',    many: n => `${n} meses selecionados`,    tags: true  },
     area:    { label: 'Área',    all: 'Todas as áreas',    many: n => `${n} áreas selecionadas`,    tags: false },
     phase:   { label: 'Fase',    all: 'Todas as fases',    many: n => `${n} fases selecionadas`,    tags: false },
-    project: { label: 'Projeto', all: 'Todos os projetos', many: n => `${n} projetos selecionados`, tags: true  }
+    project: { label: 'Projeto', all: 'Todos os projetos', many: n => `${n} projetos selecionados`, tags: false, countOnly: true }
   };
 
   function optionsFor(name) {
@@ -1827,7 +1856,7 @@ body.dgp-open #projectView{display:none!important}
       afterFilter(name);
     });
     const chosen = opts.filter(v => sel[name].includes(v));
-    $(`#dgpTrig-${name}`).textContent = !chosen.length || chosen.length === opts.length ? cfg.all : chosen.length === 1 ? optLabel(name, chosen[0]) : cfg.many(chosen.length);
+    $(`#dgpTrig-${name}`).textContent = !chosen.length || chosen.length === opts.length ? cfg.all : cfg.countOnly ? (chosen.length === 1 ? '1 projeto selecionado' : cfg.many(chosen.length)) : chosen.length === 1 ? optLabel(name, chosen[0]) : cfg.many(chosen.length);
     if (cfg.tags) {
       const tags = $(`#dgpTags-${name}`);
       tags.innerHTML = chosen.map(v => `<span class="f-tag">${esc(optLabel(name, v))}<button type="button" data-v="${esc(v)}" aria-label="Remover">×</button></span>`).join('');
@@ -1858,6 +1887,13 @@ body.dgp-open #projectView{display:none!important}
     view.querySelectorAll('.f-menu').forEach(m => m.onclick = e => e.stopPropagation());
     view.querySelectorAll('[data-all]').forEach(b => b.onclick = () => { const n = b.dataset.all; sel[n] = optionsFor(n); afterFilter(n); });
     view.querySelectorAll('[data-clear]').forEach(b => b.onclick = () => { const n = b.dataset.clear; sel[n] = []; afterFilter(n); });
+    $('#dgpScope').onchange = e => {
+      onlyDgpIcg = e.target.checked; applyScope();
+      Object.keys(MULTI).forEach(buildMulti);
+      ini.innerHTML = '<option value="">Todas as iniciativas</option>' + uniq(RAW.map(x => x.iniciativa)).sort().map(v => `<option>${esc(v)}</option>`).join('');
+      if ([...ini.options].some(o => o.value === iniciativa)) ini.value = iniciativa; else { iniciativa = ''; ini.value = ''; }
+      updatePeriod(); page = 1; renderAll();
+    };
     $('#dgpClear').onclick = () => { Object.keys(sel).forEach(k => sel[k] = []); iniciativa = ''; ini.value = ''; Object.keys(MULTI).forEach(buildMulti); updatePeriod(); page = 1; renderAll(); };
     updatePeriod();
   }
@@ -1913,7 +1949,7 @@ body.dgp-open #projectView{display:none!important}
   function renderModule() {
     const view = $('#dgpView');
     const data = buildData();
-    RAW = data.rows; FCA = data.fca;
+    RAW_ALL = data.rows; FCA = data.fca; applyScope();
     const projects = uniq(RAW.map(x => x.id)).length, areas = uniq(RAW.map(x => x.area)).length;
     const rl = rollingLabel();
     view.innerHTML = `${topbar()}
@@ -1924,7 +1960,7 @@ body.dgp-open #projectView{display:none!important}
       </section>
       <div class="x-period"><strong>Período selecionado:</strong><span id="dgpPeriod">Todos os meses</span></div>
       <div class="x-section">KPIs executivos</div>
-      <section class="x-line"><div class="x-counts" id="dgpCounts"></div><div class="x-filters">${multiHTML('year')}${multiHTML('month')}${multiHTML('area')}<div class="f-card"><label for="dgpIniciativa">Iniciativa</label><select class="f-select" id="dgpIniciativa"></select></div>${multiHTML('phase')}<div class="f-project"><button type="button" class="f-clear" id="dgpClear">Limpar filtros</button>${multiHTML('project')}</div></div></section>
+      <section class="x-line"><div class="x-counts" id="dgpCounts"></div><div class="x-filters"><label class="dgp-scope" title="Mostra somente os projetos marcados com (DGP) ou (ICG) no título"><input type="checkbox" id="dgpScope" ${onlyDgpIcg ? 'checked' : ''}><span>DGP e ICG</span></label>${multiHTML('year')}${multiHTML('month')}${multiHTML('area')}<div class="f-card"><label for="dgpIniciativa">Iniciativa</label><select class="f-select" id="dgpIniciativa"></select></div>${multiHTML('phase')}<div class="f-project"><button type="button" class="f-clear" id="dgpClear">Limpar filtros</button>${multiHTML('project')}</div></div></section>
       <section class="x-fin" id="dgpFin"></section>
       <div class="x-section">Evolução financeira</div>
       <section class="x-card chart-card"><div><b class="chart-title">Meta, FCST e Realizado por mês</b><div class="legend-note">Passe o mouse para visualizar a variação detalhada</div></div><div id="dgpLine"></div></section>
@@ -1973,6 +2009,7 @@ body.dgp-open #projectView{display:none!important}
   }
 
   window.openFinanceiroDGP = () => {
+    onlyDgpIcg = false; // ao abrir a aba, o filtro "DGP e ICG" vem desmarcado
     injectStyles();
     const view = ensureView();
     $('#projectView')?.classList.remove('show');
