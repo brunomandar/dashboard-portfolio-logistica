@@ -704,6 +704,9 @@ body #dgpView .dgp-scope:has(input:checked) input{accent-color:#fff}
 #portfolio col:nth-child(11){width:6%!important}
 #portfolio col:nth-child(12){width:6%!important}
 #portfolio col:nth-child(13){width:8%!important}
+
+/* FCA e acompanhamento: campo único com o Status do Projeto */
+#dgpView .x-modal-body .fca-status{min-height:140px;max-height:60vh;overflow-y:auto;white-space:pre-wrap;line-height:1.5}
 </style>
 </head>
 <body>
@@ -1423,7 +1426,8 @@ body #dgpView .dgp-scope:has(input:checked) input{accent-color:#fff}
         fca.set(clean(p.id), {
           justificativa: clean(f.justificativa),
           planoAcao: clean(f.planoAcao || f.planoDeAcao),
-          observacao: clean(f.observacao)
+          observacao: clean(f.observacao),
+          statusProjeto: String(p.statusProjeto ?? '').replace(/\u00a0/g, ' ').trim() // texto completo do Status do Projeto (One_Page)
         });
       }
     });
@@ -1827,9 +1831,7 @@ body.dgp-open #projectView{display:none!important}
     if (!p) return;
     const f = FCA.get(String(id)) || {};
     $('#dgpFcaProject').textContent = `ID ${p.id} · ${p.projeto}`;
-    $('#dgpFcaJust').textContent = f.justificativa || 'Não informada';
-    $('#dgpFcaAction').textContent = f.planoAcao || 'Não informado';
-    $('#dgpFcaObs').textContent = f.observacao || 'Não informada';
+    $('#dgpFcaStatus').textContent = f.statusProjeto || 'Status do projeto não informado.';
     $('#dgpFcaModal').classList.add('show');
   }
   function updatePeriod() {
@@ -1974,7 +1976,7 @@ body.dgp-open #projectView{display:none!important}
         <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;margin-top:12px;gap:8px"><div id="dgpPageInfo" style="color:#777;font-size:12px"></div><div class="pager" id="dgpPager"></div></div>
       </section>
       <div class="footer-note">Fonte: JSONs do portfólio (aba Base_Financ. de cada projeto). Indicadores calculados dinamicamente conforme os filtros selecionados.</div>
-      <div class="x-modal" id="dgpFcaModal"><div class="x-modal-box" role="dialog" aria-modal="true"><div class="x-modal-head"><div><h5>📋 FCA e acompanhamento</h5><div style="color:#777;font-size:12px;margin-top:4px" id="dgpFcaProject"></div></div><button type="button" class="x-close" data-close aria-label="Fechar">×</button></div><div class="x-modal-body"><div class="fca-label">Justificativa</div><div class="fca-box" id="dgpFcaJust"></div><div class="fca-label">Plano de ação</div><div class="fca-box" id="dgpFcaAction" style="min-height:74px"></div><div class="fca-label">Observação</div><div class="fca-box" id="dgpFcaObs" style="min-height:74px;margin-bottom:0"></div></div><div class="x-modal-foot"><button type="button" class="dgp-btn" data-close>Fechar</button></div></div></div>`;
+      <div class="x-modal" id="dgpFcaModal"><div class="x-modal-box" role="dialog" aria-modal="true"><div class="x-modal-head"><div><h5>📋 FCA e acompanhamento</h5><div style="color:#777;font-size:12px;margin-top:4px" id="dgpFcaProject"></div></div><button type="button" class="x-close" data-close aria-label="Fechar">×</button></div><div class="x-modal-body"><div class="fca-box fca-status" id="dgpFcaStatus" style="margin-bottom:0"></div></div><div class="x-modal-foot"><button type="button" class="dgp-btn" data-close>Fechar</button></div></div></div>`;
 
     bindTips(view);
     initFilters(view);
