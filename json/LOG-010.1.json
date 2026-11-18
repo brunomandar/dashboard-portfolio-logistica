@@ -1,6 +1,7 @@
 {
   "id": "LOG-010.1",
   "projeto": "BID Transportes - Engenharia",
+  "marcaDgpIcg": "",
   "area": "Transportes",
   "pontoFocal": "Jaime de Melo",
   "inicio": "2026-07-06",
@@ -453,20 +454,20 @@
     },
     {
       "numero": 20,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Abertura de chamado para construção da tabela Expressa/CV no TMS",
+      "responsavel": "Logística/Catalde",
+      "status": 1,
+      "inicio": "2026-11-17",
+      "fim": "2026-11-17",
       "anotacao": ""
     },
     {
       "numero": 21,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Entrega do chamado 47260 da tabela Expressa",
+      "responsavel": "Catalde",
+      "status": 0,
+      "inicio": "2026-11-17",
+      "fim": "2026-11-27",
       "anotacao": ""
     },
     {
@@ -1183,6 +1184,16 @@
   ],
   "historico": [
     {
+      "data": "2026-11-17",
+      "acoes": "Logistica Iniciativas TMS - Chamado 47260 aberto para parametrização do novo fluxo de cotação mais tabela expressa/CV",
+      "detalhe": "Equipe de Transportes solicita adequação do TMS para uso da nova Tabela Expressa e Tabela de Generalidades provenientes do BID Nacional.\nNo anexo do chamado, há as diretrizes para a adequação deste processo."
+    },
+    {
+      "data": "2026-11-17",
+      "acoes": "Compras/logistica :Governança TMS - Logística Fretes",
+      "detalhe": "Considerando que os BIDs de Engenharia e Móvel estão nas etapas finais de negociação, será realizada uma revisão da governança do TMS.\n\nPara suportar essa iniciativa, é necessária a extração das regras atualmente parametrizadas no sistema. Caso esse material não esteja disponível internamente, solicita-se o acionamento da Catalde para disponibilização do levantamento.\n\nA disponibilização dessas informações é fundamental para garantir a correta avaliação e estruturação da nova governança do processo."
+    },
+    {
       "data": "2026-11-13",
       "acoes": "Logistica: Refazer o fluxo e requisito de aplicação das tabelas de CV e generalidases conforme definição da reunião",
       "detalhe": "Reunião realizada com equipe de transporte para alinhar as duvidas sobre a tabela de generalidades .\nFicou definido que içamento, empilhadeira e tde serão incluidos como taxa extra após a conclusão do frete e com aprovação da area. Similar ao processo que é realizado hoje com escolta."
@@ -1318,7 +1329,7 @@
       "detalhe": "Aqui foi colocado a mesa qual seria o foco do BID"
     }
   ],
-  "statusProjeto": "11/11 - Logistica Iniciativas TMS , apresentar fluxo revisado cotação/CV\nFluxo aprovado pelo Alex Lencione, com abertura do chamado condicionada à conclusão dos requisitos.\n A entrega incluirá comunicado, orientações no TMS e FAQ sobre o novo processo.\n06/11 - Logistica/Mck/Compras: Pipeline de iniciativas logísticas e BID de Fretes de Engenharia\n R4 enviada para 14 fornecedores. Definido cenário alvo com 8 fornecedores, saving estimado em R$ 12,5 MM, cobertura nacional e direcionamento automático do TMS para o menor frete.\n03/11 - Logistica: Reunião Transporte/Catalde\n Definidas regras para Canal Vermelho, Entregas Expressas, Necessidades Especiais e Cotações, priorizando a menor alternativa de custo sugerida pelo TMS.    \n03/11 - Logistica: Reunião Transporte/Catalde (Próximos Passos)\n Atualizar fluxo conforme definições da reunião, posicionar exceções como caminhos alternativos e abrir chamado para desenvolvimento sistêmico.\n30/10 - Mck: Agenda Checkpoint Executivo\n BID de Engenharia apresentou potencial de saving de R$ 12,5 MM. Avaliada necessidade de nova rodada de negociação para rotas estratégicas e garantia de cobertura nacional.\n30/10 - Mck: Agenda Checkpoint Executivo (Tema Transportadores)\n Iniciada revisão da short list de transportadores, incluindo análise de permanência, risco operacional e validação dos parceiros estratégicos.\n29/10 - Logistica: Iniciativas TMS, Construir fluxo cotação/CV\n Fluxo de Cotação e Canal Vermelho concluído e preparado para validação final da gestão e abertura do desenvolvimento.",
+  "statusProjeto": "17/11 -Logistica Iniciativas TMS - Chamado 47260 aberto para parametrização do novo fluxo de cotação mais tabela expressa/CV\n11/11 - Logistica Iniciativas TMS , apresentar fluxo revisado cotação/CV\nFluxo aprovado pelo Alex Lencione, com abertura do chamado condicionada à conclusão dos requisitos.\n A entrega incluirá comunicado, orientações no TMS e FAQ sobre o novo processo.\n06/11 - Logistica/Mck/Compras: Pipeline de iniciativas logísticas e BID de Fretes de Engenharia\n R4 enviada para 14 fornecedores. Definido cenário alvo com 8 fornecedores, saving estimado em R$ 12,5 MM, cobertura nacional e direcionamento automático do TMS para o menor frete.\n03/11 - Logistica: Reunião Transporte/Catalde\n Definidas regras para Canal Vermelho, Entregas Expressas, Necessidades Especiais e Cotações, priorizando a menor alternativa de custo sugerida pelo TMS.    \n03/11 - Logistica: Reunião Transporte/Catalde (Próximos Passos)\n Atualizar fluxo conforme definições da reunião, posicionar exceções como caminhos alternativos e abrir chamado para desenvolvimento sistêmico.\n30/10 - Mck: Agenda Checkpoint Executivo\n BID de Engenharia apresentou potencial de saving de R$ 12,5 MM. Avaliada necessidade de nova rodada de negociação para rotas estratégicas e garantia de cobertura nacional.\n30/10 - Mck: Agenda Checkpoint Executivo (Tema Transportadores)\n Iniciada revisão da short list de transportadores, incluindo análise de permanência, risco operacional e validação dos parceiros estratégicos.\n29/10 - Logistica: Iniciativas TMS, Construir fluxo cotação/CV\n Fluxo de Cotação e Canal Vermelho concluído e preparado para validação final da gestão e abertura do desenvolvimento.",
   "financeiro": [
     {
       "id": "LOG-010.1",
@@ -3917,6 +3928,6 @@
   "fonte": {
     "arquivo": "LOG-010.1 - BID Transportes - Engenharia.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.1%20-%20BID%20Transportes%20-%20Engenharia.xlsx?web=1",
-    "extraidoEm": "2026-11-17T18:11:35-03:00"
+    "extraidoEm": "2026-11-18T09:45:52-03:00"
   }
 }

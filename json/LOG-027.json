@@ -1,6 +1,7 @@
 {
   "id": "LOG-027",
   "projeto": "Inventário Automatizado e Inventário de Equipamentos",
+  "marcaDgpIcg": "",
   "area": "CDs",
   "pontoFocal": "Cleria Plaster",
   "inicio": "2026-04-01",
@@ -2969,6 +2970,6 @@
   "fonte": {
     "arquivo": "LOG-027 - Inv. Automatizado e Inv. Equipamentos.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-027%20-%20Inv.%20Automatizado%20e%20Inv.%20Equipamentos.xlsx?web=1",
-    "extraidoEm": "2026-11-17T18:12:23-03:00"
+    "extraidoEm": "2026-11-18T09:47:02-03:00"
   }
 }
