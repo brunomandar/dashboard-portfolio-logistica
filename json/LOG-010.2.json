@@ -37,8 +37,8 @@
       "atividade": "Envio e recebimento da RFP — Rodada 1",
       "responsavel": "Compras",
       "status": "2026-09-17",
-      "inicio": "",
-      "fim": "1900-01-18",
+      "inicio": "2026-09-17",
+      "fim": "2026-09-30",
       "anotacao": ""
     },
     {
@@ -46,8 +46,8 @@
       "atividade": "Live com fornecedores + Q&A / esclarecimentos",
       "responsavel": "Compras/Log",
       "status": "2026-09-22",
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-09-22",
+      "fim": "2026-09-22",
       "anotacao": ""
     },
     {
@@ -55,8 +55,8 @@
       "atividade": "Recebimento de propostas — Rodada 1",
       "responsavel": "Fornecedores",
       "status": "2026-10-01",
-      "inicio": "",
-      "fim": "1900-01-06",
+      "inicio": "2026-10-01",
+      "fim": "2026-10-06",
       "anotacao": ""
     },
     {
@@ -64,8 +64,8 @@
       "atividade": "Equalização e faróis — Rodada 1",
       "responsavel": "Compras/McK",
       "status": "2026-10-12",
-      "inicio": "",
-      "fim": "1900-01-06",
+      "inicio": "2026-10-12",
+      "fim": "2026-10-19",
       "anotacao": ""
     },
     {
@@ -73,8 +73,8 @@
       "atividade": "Validação técnica com time de Risco (paralela)",
       "responsavel": "Compras/Risco",
       "status": "2026-10-01",
-      "inicio": "",
-      "fim": "1900-03-01",
+      "inicio": "2026-10-01",
+      "fim": "2026-11-13",
       "anotacao": ""
     },
     {
@@ -82,8 +82,8 @@
       "atividade": "Rodada 2 de cotação",
       "responsavel": "Compras",
       "status": "2026-10-18",
-      "inicio": "",
-      "fim": "1900-01-18",
+      "inicio": "2026-10-18",
+      "fim": "2026-10-30",
       "anotacao": ""
     },
     {
@@ -91,8 +91,8 @@
       "atividade": "Equalização e faróis — Rodada 2",
       "responsavel": "Compras/McK",
       "status": "2026-11-02",
-      "inicio": "",
-      "fim": "1900-01-05",
+      "inicio": "2026-11-02",
+      "fim": "2026-11-06",
       "anotacao": ""
     },
     {
@@ -100,8 +100,8 @@
       "atividade": "Rodada final de negociação",
       "responsavel": "Compras",
       "status": "2026-11-07",
-      "inicio": "",
-      "fim": "1900-01-10",
+      "inicio": "2026-11-07",
+      "fim": "2026-11-16",
       "anotacao": ""
     },
     {
@@ -109,8 +109,8 @@
       "atividade": "Definição do(s) vencedor(es) do BID",
       "responsavel": "Compras/Dir",
       "status": "2026-11-15",
-      "inicio": "",
-      "fim": "1900-01-10",
+      "inicio": "2026-11-15",
+      "fim": "2026-11-24",
       "anotacao": ""
     },
     {
@@ -118,8 +118,8 @@
       "atividade": "Aprovação e assinatura de contrato",
       "responsavel": "Compras/Jur",
       "status": "2026-11-23",
-      "inicio": "",
-      "fim": "1900-01-27",
+      "inicio": "2026-11-23",
+      "fim": "2026-12-14",
       "anotacao": ""
     },
     {
@@ -283,7 +283,7 @@
       "responsavel": "Compras",
       "status": "",
       "inicio": "2026-09-17",
-      "fim": "2026-10-06",
+      "fim": "2026-09-30",
       "anotacao": ""
     },
     {
@@ -301,7 +301,7 @@
       "responsavel": "Fornecedores",
       "status": "",
       "inicio": "2026-10-01",
-      "fim": "2026-10-08",
+      "fim": "2026-10-06",
       "anotacao": ""
     },
     {
@@ -319,7 +319,7 @@
       "responsavel": "Compras/Risco",
       "status": "",
       "inicio": "2026-10-01",
-      "fim": "2026-12-02",
+      "fim": "2026-11-13",
       "anotacao": ""
     },
     {
@@ -328,7 +328,7 @@
       "responsavel": "Compras",
       "status": "",
       "inicio": "2026-10-18",
-      "fim": "2026-11-04",
+      "fim": "2026-10-30",
       "anotacao": ""
     },
     {
@@ -346,7 +346,7 @@
       "responsavel": "Compras",
       "status": "",
       "inicio": "2026-11-07",
-      "fim": "2026-11-17",
+      "fim": "2026-11-16",
       "anotacao": ""
     },
     {
@@ -364,7 +364,7 @@
       "responsavel": "Compras/Jur",
       "status": "",
       "inicio": "2026-11-23",
-      "fim": "2026-12-21",
+      "fim": "2026-12-14",
       "anotacao": ""
     },
     {
@@ -1194,7 +1194,7 @@
       "detalhe": "1-Reinião com gestão de riscos \n2- Primeira revisão do Sow e da RFP\n3 - Fechamento da lista de fornecedores"
     }
   ],
-  "statusProjeto": "Risco:\n06/11/2026:Logistica/Mck/Compras :Pipeline de iniciativas logísticas \nCompras Informou que foram mapeados 138 fornecedores, incluindo operadores de entregas rápidas, aplicativos e empresas especializadas.\nA RFI foi enviada aos 138 fornecedores, com prazo de retorno até a sexta-feira seguinte.\nO processo seguirá uma dinâmica semelhante à utilizada no BID de Engenharia:\n26/10/2026:  Concluído a revisão do SOW de transportes\n23/10/2026: Envio da RFI para o mercado\n21/10/2026: Chegamos a conclusão que o BID da Expressa deverá ser segmentado em 2 dois documentos em processos distintos, para não termos impactos nas despesas.\n12/10/2026: Elaboração do SOW preliminar para contratação\n10/09/2026: Envio do baseline da expressa para o time McKinsey",
+  "statusProjeto": "06/11/2026 -  Logistica/Mck/Compras :Pipeline de iniciativas logísticas - Compras Informou que foram mapeados 138 fornecedores, incluindo operadores de entregas rápidas, aplicativos e empresas especializadas.\nA RFI foi enviada aos 138 fornecedores, com prazo de retorno até a sexta-feira seguinte.\nO processo seguirá uma dinâmica semelhante à utilizada no BID de Engenharia:\n26/10/2026:  Concluído a revisão do SOW de transportes\n23/10/2026: Envio da RFI para o mercado\n21/10/2026: Chegamos a conclusão que o BID da Expressa deverá ser segmentado em 2 dois documentos em processos distintos, para não termos impactos nas despesas.\n12/10/2026: Elaboração do SOW preliminar para contratação\n10/09/2026: Envio do baseline da expressa para o time McKinsey",
   "financeiro": [
     {
       "id": "LOG-010.2",
@@ -3793,6 +3793,6 @@
   "fonte": {
     "arquivo": "LOG-010.2 - BID Transportes - Expressa.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.2%20-%20BID%20Transportes%20-%20Expressa.xlsx?web=1",
-    "extraidoEm": "2026-11-18T11:31:47-03:00"
+    "extraidoEm": "2026-11-18T14:59:57-03:00"
   }
 }

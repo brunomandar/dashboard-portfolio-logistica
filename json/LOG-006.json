@@ -1181,6 +1181,11 @@
   ],
   "historico": [
     {
+      "data": "2026-11-18",
+      "acoes": "Pendências para cadastro no Wave e cancelamento do DX22",
+      "detalhe": "Em reunião realizada em 16/11 com a Andreia (Projetos), foi orientado que o gestor do projeto seja o responsável pelo cadastro da iniciativa no Wave.\nAdicionalmente, é necessário alinhar com o Edgar que a iniciativa DX22, considerando que o ganho previsto já está incorporado ao projeto Retirada de Equipamento por Regional (ICG).\nPara tratar desse tema, foram realizadas tentativas de contato com o gestor do projeto, Bernardino, por meio de reuniões agendadas nos dias 16/11, 17/11 e 18/11. Entretanto, até o momento, não obtivemos retorno para os devidos alinhamentos."
+    },
+    {
       "data": "2026-10-15",
       "acoes": "Definição de premissas",
       "detalhe": "Premissas: Quando o gerado for superior ao baseline, usar o realizado. Quando o gerado for inferior ao baseline, usar o baseline"
@@ -3805,6 +3810,6 @@
   "fonte": {
     "arquivo": "LOG-006 - Projeto Retirada de Equipamento por Regional.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-006%20-%20Projeto%20Retirada%20de%20Equipamento%20por%20Regional.xlsx?web=1",
-    "extraidoEm": "2026-11-18T11:31:25-03:00"
+    "extraidoEm": "2026-11-18T14:59:32-03:00"
   }
 }
