@@ -4,11 +4,11 @@
   "marcaDgpIcg": "",
   "area": "Transportes",
   "pontoFocal": "Jaime de Melo",
-  "inicio": "2026-07-06",
+  "inicio": "2026-09-17",
   "termino": "2027-02-26",
   "inicioAnotacao": "",
   "terminoAnotacao": "",
-  "inicioCaptura": "2027-02-01",
+  "inicioCaptura": "2027-03-01",
   "iniciativa": "Consultoria",
   "pmo": "Raquel",
   "risco": "Médio",
@@ -17,7 +17,9 @@
   "prioridade": "P0",
   "tipoAgenda": "Estratégica",
   "ganhoProjeto": "Quantitativo",
-  "tipos": [],
+  "tipos": [
+    "Opex"
+  ],
   "escopo": "Realizar um BID nacional para contratar fornecedores para entrega do canal E-commerce e Expresso (Sim Cards).\nEscopo do E-commerce prevê a contratação de transportadores especializados no B2C, com a possibilidade de emissão de CT-es. A operação irá ocorrer através dos nossos CDs e Estoques Televendas\nEscopo da Expressa prevê a contratação de empresas especializadas em entregas através de motos, atendendo nossos clientes na modalidade D0 e D+1. Esta contratação não requer um transportador que realize a emissão de CT-es",
   "entregaveis": [
     "Contratação de Transportador especializado em E-commerce",
@@ -26,9 +28,9 @@
     "Redução dos prazos de Entrega"
   ],
   "saving": {
-    "opex12M": 0.0,
+    "opex12M": 1.9,
     "capex12M": 0.0,
-    "total12M": 0.0,
+    "total12M": 1.9,
     "opex2026": 0.0,
     "capex2026": 0.0,
     "total2026": 0.0
@@ -36,7 +38,7 @@
   "macroAtividades": [
     {
       "numero": "01.",
-      "atividade": "Envio e recebimento da RFP — Rodada 1",
+      "atividade": "Escopo validado e envio de RFI a Mercado",
       "responsavel": "Compras",
       "status": "2026-09-17",
       "inicio": "2026-09-17",
@@ -45,7 +47,7 @@
     },
     {
       "numero": "02.",
-      "atividade": "Live com fornecedores + Q&A / esclarecimentos",
+      "atividade": "RFI fechado (retorno transportadoras) e Envio de RFP",
       "responsavel": "Compras/Log",
       "status": "2026-09-22",
       "inicio": "2026-09-22",
@@ -54,7 +56,7 @@
     },
     {
       "numero": "03.",
-      "atividade": "Recebimento de propostas — Rodada 1",
+      "atividade": "Live com fornecedores",
       "responsavel": "Fornecedores",
       "status": "2026-10-01",
       "inicio": "2026-10-01",
@@ -63,92 +65,92 @@
     },
     {
       "numero": "04.",
-      "atividade": "Equalização e faróis — Rodada 1",
+      "atividade": "Envio e validação  RFI ao mercado",
       "responsavel": "Compras/McK",
-      "status": "2026-10-12",
-      "inicio": "2026-10-12",
-      "fim": "2026-10-19",
+      "status": "1900-01-04",
+      "inicio": "2026-10-07",
+      "fim": "2026-10-27",
       "anotacao": ""
     },
     {
       "numero": "05.",
-      "atividade": "Validação técnica com time de Risco (paralela)",
+      "atividade": "Validação plano de trabalho RFP",
       "responsavel": "Compras/Risco",
-      "status": "2026-10-01",
-      "inicio": "2026-10-01",
-      "fim": "2026-11-13",
-      "anotacao": ""
-    },
-    {
-      "numero": "06.",
-      "atividade": "Rodada 2 de cotação",
-      "responsavel": "Compras",
-      "status": "2026-10-18",
-      "inicio": "2026-10-18",
-      "fim": "2026-10-30",
-      "anotacao": ""
-    },
-    {
-      "numero": "07.",
-      "atividade": "Equalização e faróis — Rodada 2",
-      "responsavel": "Compras/McK",
-      "status": "2026-11-02",
-      "inicio": "2026-11-02",
-      "fim": "2026-11-06",
-      "anotacao": ""
-    },
-    {
-      "numero": "08.",
-      "atividade": "Rodada final de negociação",
-      "responsavel": "Compras",
-      "status": "2026-11-07",
-      "inicio": "2026-11-07",
-      "fim": "2026-11-16",
-      "anotacao": ""
-    },
-    {
-      "numero": "09.",
-      "atividade": "Definição do(s) vencedor(es) do BID",
-      "responsavel": "Compras/Dir",
-      "status": "2026-11-15",
-      "inicio": "2026-11-15",
+      "status": "1900-01-01",
+      "inicio": "2026-10-28",
       "fim": "2026-11-24",
       "anotacao": ""
     },
     {
+      "numero": "06.",
+      "atividade": "Deadline envio RFP Round 1",
+      "responsavel": "Compras",
+      "status": "1900-01-01",
+      "inicio": "2026-11-25",
+      "fim": "2026-12-09",
+      "anotacao": ""
+    },
+    {
+      "numero": "07.",
+      "atividade": "Deadline envio RFP Round 2",
+      "responsavel": "Compras/McK",
+      "status": "1900-01-01",
+      "inicio": "2026-12-10",
+      "fim": "2026-12-23",
+      "anotacao": ""
+    },
+    {
+      "numero": "08.",
+      "atividade": "Equalização Round Round 2",
+      "responsavel": "Compras",
+      "status": "1900-01-01",
+      "inicio": "2026-12-24",
+      "fim": "2026-12-30",
+      "anotacao": ""
+    },
+    {
+      "numero": "09.",
+      "atividade": "Deadline envio RFP Round 3",
+      "responsavel": "Compras/Dir",
+      "status": "1900-01-01",
+      "inicio": "2026-12-31",
+      "fim": "2027-01-06",
+      "anotacao": ""
+    },
+    {
       "numero": "10.",
-      "atividade": "Aprovação e assinatura de contrato",
+      "atividade": "Equalização Round Round 3",
       "responsavel": "Compras/Jur",
-      "status": "2026-11-23",
-      "inicio": "2026-11-23",
-      "fim": "2026-12-14",
+      "status": "1900-01-01",
+      "inicio": "2027-01-07",
+      "fim": "2027-01-13",
       "anotacao": ""
     },
     {
       "numero": "11.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Round Final de Negociações",
+      "responsavel": "Compras/Log",
+      "status": 0,
+      "inicio": "2027-01-14",
+      "fim": "2027-01-20",
       "anotacao": ""
     },
     {
       "numero": "12.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Equalização Round Round Final",
+      "responsavel": "Compras/McK",
+      "status": "1900-01-01",
+      "inicio": "2027-01-21",
+      "fim": "2027-01-27",
       "anotacao": ""
     },
     {
       "numero": "13.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Plano finalizado (contrato + ramp-up)",
+      "responsavel": "Compras/Risco",
+      "status": "1900-01-01",
+      "inicio": "2027-01-28",
+      "fim": "2027-02-26",
       "anotacao": ""
     },
     {
@@ -1206,1302 +1208,6 @@
       "situacao": "Iniciado",
       "icg": "Real",
       "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Jan",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Fev",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Mar",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Abr",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Mai",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Jun",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Jul",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Ago",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Set",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Out",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Nov",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Dez",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Jan",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Fev",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Mar",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Abr",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Mai",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Jun",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Jul",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Ago",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Set",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Out",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Nov",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Dez",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Jan",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Fev",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Mar",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Abr",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Mai",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Jun",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Jul",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Ago",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Set",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Out",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Nov",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Dez",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Jan",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Fev",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Mar",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Abr",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Mai",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Jun",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Jul",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Ago",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Set",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Out",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Nov",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Dez",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Jan",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Fev",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Mar",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Abr",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Mai",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Jun",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Jul",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Ago",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Set",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Out",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Nov",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Dez",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Jan",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Fev",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Mar",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Abr",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Mai",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Jun",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Jul",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Ago",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Set",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Out",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Nov",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Fcst",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Dez",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Jan",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Fev",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Mar",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Abr",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Mai",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Jun",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Jul",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Ago",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Set",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Out",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Nov",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Opex",
-      "ano": 2026,
-      "mes": "Dez",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Jan",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Fev",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Mar",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Abr",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Mai",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Jun",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Jul",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Ago",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Set",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Out",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Nov",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Capex",
-      "ano": 2026,
-      "mes": "Dez",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Jan",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Fev",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Mar",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Abr",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Mai",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Jun",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Jul",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Ago",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Set",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Out",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Nov",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Budget",
-      "tipoDespesa": "Total",
-      "ano": 2026,
-      "mes": "Dez",
-      "resultado": 0.0
-    },
-    {
-      "id": "LOG-010.2",
-      "iniciativa": "Consultoria",
-      "gerencia": "Transportes",
-      "projeto": "BID Transportes - Expressa",
-      "situacao": "Iniciado",
-      "icg": "Real",
-      "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jan",
       "resultado": 0.0
@@ -2528,7 +1234,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2540,7 +1246,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2552,7 +1258,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mai",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2564,7 +1270,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2576,7 +1282,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2588,7 +1294,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2600,7 +1306,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Set",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2612,7 +1318,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Out",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2624,7 +1330,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Nov",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2636,7 +1342,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Dez",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2816,7 +1522,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2828,7 +1534,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2840,7 +1546,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Mai",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2852,7 +1558,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2864,7 +1570,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2876,7 +1582,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2888,7 +1594,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Set",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2900,7 +1606,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Out",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2912,7 +1618,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Nov",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2924,7 +1630,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Dez",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2960,7 +1666,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2972,7 +1678,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2984,7 +1690,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mai",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2996,7 +1702,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3008,7 +1714,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3020,7 +1726,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3032,7 +1738,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Set",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3044,7 +1750,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Out",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3056,7 +1762,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Nov",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3068,7 +1774,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Dez",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3248,7 +1954,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3260,7 +1966,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3272,7 +1978,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Mai",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3284,7 +1990,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3296,7 +2002,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3308,7 +2014,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3320,7 +2026,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Set",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3332,7 +2038,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Out",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3344,7 +2050,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Nov",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3356,7 +2062,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Dez",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3392,7 +2098,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3404,7 +2110,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3416,7 +2122,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mai",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3428,7 +2134,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3440,7 +2146,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3452,7 +2158,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3464,7 +2170,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Set",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3476,7 +2182,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Out",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3488,7 +2194,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Nov",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3500,7 +2206,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Dez",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3680,7 +2386,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3692,7 +2398,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Abr",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3704,7 +2410,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Mai",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3716,7 +2422,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jun",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3728,7 +2434,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Jul",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3740,7 +2446,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Ago",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3752,7 +2458,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Set",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3764,7 +2470,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Out",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3776,7 +2482,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Nov",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3787,6 +2493,1302 @@
       "icg": "Budget",
       "tipoDespesa": "Total",
       "ano": 2027,
+      "mes": "Dez",
+      "resultado": 0.2
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Jan",
+      "resultado": 0.2
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Fev",
+      "resultado": 0.2
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Mar",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Abr",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Mai",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Jun",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Jul",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Ago",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Set",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Out",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Nov",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Dez",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Jan",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Fev",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Mar",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Abr",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Mai",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Jun",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Jul",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Ago",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Set",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Out",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Nov",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Dez",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Jan",
+      "resultado": 0.2
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Fev",
+      "resultado": 0.2
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Mar",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Abr",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Mai",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Jun",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Jul",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Ago",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Set",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Out",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Nov",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Real",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Dez",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Jan",
+      "resultado": 0.2
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Fev",
+      "resultado": 0.2
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Mar",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Abr",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Mai",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Jun",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Jul",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Ago",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Set",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Out",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Nov",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Dez",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Jan",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Fev",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Mar",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Abr",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Mai",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Jun",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Jul",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Ago",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Set",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Out",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Nov",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Dez",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Jan",
+      "resultado": 0.2
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Fev",
+      "resultado": 0.2
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Mar",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Abr",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Mai",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Jun",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Jul",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Ago",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Set",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Out",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Nov",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Fcst",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Dez",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Jan",
+      "resultado": 0.2
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Fev",
+      "resultado": 0.2
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Mar",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Abr",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Mai",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Jun",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Jul",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Ago",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Set",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Out",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Nov",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Opex",
+      "ano": 2028,
+      "mes": "Dez",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Jan",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Fev",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Mar",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Abr",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Mai",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Jun",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Jul",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Ago",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Set",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Out",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Nov",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Capex",
+      "ano": 2028,
+      "mes": "Dez",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Jan",
+      "resultado": 0.2
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Fev",
+      "resultado": 0.2
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Mar",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Abr",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Mai",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Jun",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Jul",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Ago",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Set",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Out",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Total",
+      "ano": 2028,
+      "mes": "Nov",
+      "resultado": 0.0
+    },
+    {
+      "id": "LOG-010.2",
+      "iniciativa": "Consultoria",
+      "gerencia": "Transportes",
+      "projeto": "BID Transportes - Expressa",
+      "situacao": "Iniciado",
+      "icg": "Budget",
+      "tipoDespesa": "Total",
+      "ano": 2028,
       "mes": "Dez",
       "resultado": 0.0
     }
@@ -3795,6 +3797,6 @@
   "fonte": {
     "arquivo": "LOG-010.2 - BID Transportes - Expressa.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.2%20-%20BID%20Transportes%20-%20Expressa.xlsx?web=1",
-    "extraidoEm": "2026-11-19T10:52:11-03:00"
+    "extraidoEm": "2026-11-19T12:43:35-03:00"
   }
 }
