@@ -6,6 +6,8 @@
   "pontoFocal": "Jaime de Melo",
   "inicio": "2026-07-06",
   "termino": "2027-02-26",
+  "inicioAnotacao": "",
+  "terminoAnotacao": "",
   "inicioCaptura": "2027-02-01",
   "iniciativa": "Consultoria",
   "pmo": "Raquel",
@@ -290,7 +292,7 @@
       "numero": 2,
       "atividade": "Live com fornecedores + Q&A / esclarecimentos",
       "responsavel": "Compras/Log",
-      "status": "",
+      "status": 4,
       "inicio": "2026-09-22",
       "fim": "2026-09-22",
       "anotacao": ""
@@ -3793,6 +3795,6 @@
   "fonte": {
     "arquivo": "LOG-010.2 - BID Transportes - Expressa.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.2%20-%20BID%20Transportes%20-%20Expressa.xlsx?web=1",
-    "extraidoEm": "2026-11-19T09:44:53-03:00"
+    "extraidoEm": "2026-11-19T09:51:48-03:00"
   }
 }

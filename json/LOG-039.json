@@ -6,6 +6,8 @@
   "pontoFocal": "Ingrid Alcici",
   "inicio": "2026-01-05",
   "termino": "2026-10-30",
+  "inicioAnotacao": "",
+  "terminoAnotacao": "",
   "inicioCaptura": "",
   "iniciativa": "Op. Transporte",
   "pmo": "Wagner",
@@ -3589,6 +3591,6 @@
   "fonte": {
     "arquivo": "LOG-039 -Torre de controle.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-039%20-Torre%20de%20controle.xlsx?web=1",
-    "extraidoEm": "2026-11-19T09:46:03-03:00"
+    "extraidoEm": "2026-11-19T09:53:25-03:00"
   }
 }

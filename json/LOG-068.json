@@ -6,6 +6,8 @@
   "pontoFocal": "Fabio Costa",
   "inicio": "2026-08-01",
   "termino": "2026-10-30",
+  "inicioAnotacao": "",
+  "terminoAnotacao": "",
   "inicioCaptura": "2026-11-01",
   "iniciativa": "Op. Transporte",
   "pmo": "Bruno",
@@ -2953,6 +2955,6 @@
   "fonte": {
     "arquivo": "LOG-068 - Retornar Entrega de Simcard e ComboMulti para EPO.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-068%20-%20Retornar%20Entrega%20de%20Simcard%20e%20ComboMulti%20para%20EPO.xlsx?web=1",
-    "extraidoEm": "2026-11-19T09:46:41-03:00"
+    "extraidoEm": "2026-11-19T09:54:17-03:00"
   }
 }
