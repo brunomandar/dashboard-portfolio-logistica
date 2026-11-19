@@ -18,7 +18,7 @@
   "tipos": [
     "Opex"
   ],
-  "escopo": "O projeto busca reduzir a dependência dos Correios no canal e-commerce, por meio de BID com novos transportadores e da estruturação de um modelo logístico alternativo, visando reduzir custos e riscos operacionais, melhorar prazos de entrega e competitividade e mitigar sinistros, avarias e fraudes. A iniciativa considera como premissas que os novos fornecedores terão melhor desempenho operacional, que a cobertura de seguros será adequada ao novo modelo e que o volume do e-commerce justifica a mudança estratégica.",
+  "escopo": "O projeto busca reduzir a dependência dos Correios no canal e-commerce, por meio de BID com novos transportadores e da estruturação de um modelo logístico alternativo, visando reduzir custos e riscos operacionais, melhorar prazos de entrega e competitividade e mitigar sinistros, avarias e fraudes. A iniciativa considera como premissas que os novos fornecedores terão melhor desempenho operacional, que a cobertura de seguros será adequada ao novo modelo e que o volume do e-commerce justifica a mudança estratégica.\nProcesso em compras: WS1887363752",
   "entregaveis": [
     "Processo de BID concluído com novos transportadores.",
     "Novos fornecedores homologados definidos.",
@@ -28,9 +28,9 @@
     "Integração com a TEX implantada."
   ],
   "saving": {
-    "opex12M": -1.1537613599999998,
+    "opex12M": 1.1537613599999998,
     "capex12M": 0.0,
-    "total12M": -1.1537613599999998,
+    "total12M": 1.1537613599999998,
     "opex2026": 0.0,
     "capex2026": 0.0,
     "total2026": 0.0
@@ -41,9 +41,9 @@
       "atividade": "Contrato",
       "responsavel": "Compras/Jurídico",
       "status": 3,
-      "inicio": "2026-05-08",
-      "fim": "2026-11-17",
-      "anotacao": ""
+      "inicio": "2026-04-01",
+      "fim": "2026-12-04",
+      "anotacao": "17/11/2026\n30/10/2026\n25/09/2026"
     },
     {
       "numero": "02.",
@@ -78,7 +78,7 @@
       "responsavel": "Claro / TEX / Catalde",
       "status": 2,
       "inicio": "2026-08-01",
-      "fim": "2026-12-03",
+      "fim": "2026-12-11",
       "anotacao": ""
     },
     {
@@ -86,8 +86,8 @@
       "atividade": "KICK OFF / RAMPUP",
       "responsavel": "Claro / TEX",
       "status": 0,
-      "inicio": "2026-12-03",
-      "fim": "2026-12-05",
+      "inicio": "2026-12-14",
+      "fim": "2026-12-18",
       "anotacao": ""
     },
     {
@@ -95,8 +95,8 @@
       "atividade": "RAMPUP  (CD / EA)",
       "responsavel": "Helder Claro",
       "status": 0,
-      "inicio": "2026-12-05",
-      "fim": "2026-12-17",
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     }
   ],
@@ -3116,6 +3116,6 @@
   "fonte": {
     "arquivo": "LOG-022 - Cronograma Ecommerce_Tex.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-022%20-%20Cronograma%20Ecommerce_Tex.xlsx?web=1",
-    "extraidoEm": "2026-11-18T18:35:54-03:00"
+    "extraidoEm": "2026-11-19T09:45:39-03:00"
   }
 }
