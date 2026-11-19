@@ -494,7 +494,7 @@
       "numero": "4.2",
       "atividade": "Criar ambiente de homologação e fazer o cadastro da aplicação no PingFederate",
       "responsavel": "PING Arquiteto SI",
-      "status": 0,
+      "status": 4,
       "inicio": "2026-11-11",
       "fim": "2026-11-13",
       "anotacao": ""
@@ -503,7 +503,7 @@
       "numero": "4.3",
       "atividade": "Gerar Client ID e Client Secret",
       "responsavel": "PING Arquiteto SI",
-      "status": 0,
+      "status": 4,
       "inicio": "2026-11-16",
       "fim": "2026-11-18",
       "anotacao": ""
@@ -511,8 +511,8 @@
     {
       "numero": "4.4",
       "atividade": "Disponibilizar Endpoints OIDC (Authorization, Token, UserInfo e Logout)",
-      "responsavel": "PING Arquiteto SI",
-      "status": 0,
+      "responsavel": "PING Arquiteto SI  dia 17",
+      "status": 4,
       "inicio": "2026-11-19",
       "fim": "2026-11-23",
       "anotacao": ""
@@ -520,8 +520,8 @@
     {
       "numero": "4.5",
       "atividade": "Configurar autenticação OpenID Connect na aplicação",
-      "responsavel": "logistica / Catalde",
-      "status": 0,
+      "responsavel": "logistica / Catalde  dia 17",
+      "status": 4,
       "inicio": "2026-11-24",
       "fim": "2026-11-30",
       "anotacao": ""
@@ -636,7 +636,7 @@
     },
     {
       "numero": 6,
-      "atividade": "",
+      "atividade": "Aguardando validação informações ambiente PING ( catalde) dia 17",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -645,7 +645,7 @@
     },
     {
       "numero": 7,
-      "atividade": "",
+      "atividade": "Solicitar cadastratosr terceiros sgt3",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -654,7 +654,7 @@
     },
     {
       "numero": 8,
-      "atividade": "",
+      "atividade": "levantamentos de todos usuários ativos no SGT3",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -3840,6 +3840,6 @@
   "fonte": {
     "arquivo": "LOG-079 -TMS Criação do Segundo Fator de Autenticação.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-079%20-TMS%20Cria%C3%A7%C3%A3o%20do%20Segundo%20Fator%20de%20Autentica%C3%A7%C3%A3o.xlsx?web=1",
-    "extraidoEm": "2026-11-19T09:54:46-03:00"
+    "extraidoEm": "2026-11-19T10:55:52-03:00"
   }
 }
