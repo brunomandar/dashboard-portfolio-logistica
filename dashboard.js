@@ -1317,7 +1317,7 @@ window.DASHBOARD_SHOW_META = true;
   function dateCard(label, value, note) {
     const lost = lostDates(note, value);
     const tip = clean(note) ? ` data-info-tip="${esc(JSON.stringify({ t: `${label} reprogramado`, text: clean(note) }))}"` : '';
-    return `<article class="card detail"${tip}><small>${label}</small>${lost.length ? `<span class="lost-dates">${lost.map(date => `<s>${date}</s>`).join('')}</span>` : ''}<b>${formatDate(value)}</b></article>`;
+    return `<article class="card detail"${tip}><small>${label}</small>${lost.length ? `<span class="lost-dates"><s>${lost[lost.length - 1]}</s></span>` : ''}<b>${formatDate(value)}</b></article>`;
   }
   function renderProject(project) {
     const view = $('#projectView');
