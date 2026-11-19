@@ -230,6 +230,15 @@ def valor_ao_lado(ws, rotulos, *nomes):
     return ""
 
 
+def anotacao_ao_lado(ws, rotulos, *nomes):
+    """Anotação (comentário) da célula de valor ao lado do rótulo ou do próprio rótulo."""
+    for nome in nomes:
+        pos = rotulos.get(chave(nome))
+        if pos:
+            return anotacao(ws.cell(pos[0], pos[1] + 1)) or anotacao(ws.cell(pos[0], pos[1]))
+    return ""
+
+
 def valor_abaixo(ws, rotulos, *nomes):
     for nome in nomes:
         pos = rotulos.get(chave(nome))
@@ -283,6 +292,8 @@ def ler_one_page(ws):
         "pontoFocal": valor_ao_lado(ws, rot, "Ponto Focal:"),
         "inicio": data_iso(valor_ao_lado(ws, rot, "Início:")),
         "termino": data_iso(valor_ao_lado(ws, rot, "Término:")),
+        "inicioAnotacao": anotacao_ao_lado(ws, rot, "Início:"),
+        "terminoAnotacao": anotacao_ao_lado(ws, rot, "Término:"),
         "inicioCaptura": data_iso(valor_ao_lado(ws, rot, "Início Capt.:", "Início Captura:")),
         "iniciativa": valor_ao_lado(ws, rot, "Iniciativa:"),
         "pmo": valor_ao_lado(ws, rot, "Focal Acompanhamento:", "Focal Acomp.:", "Focal Acomp:", "PMO:"),
@@ -513,6 +524,8 @@ def processar(caminho):
         "pontoFocal": one["pontoFocal"],
         "inicio": one["inicio"],
         "termino": one["termino"],
+        "inicioAnotacao": one["inicioAnotacao"],
+        "terminoAnotacao": one["terminoAnotacao"],
         "inicioCaptura": one["inicioCaptura"],
         "iniciativa": one["iniciativa"],
         "pmo": one["pmo"],

@@ -1301,6 +1301,24 @@ window.DASHBOARD_SHOW_META = true;
   }
 
 
+  // Datas perdidas: datas escritas na anotação da célula de Início/Término (One_Page), exibidas riscadas no card
+  function lostDates(note, current) {
+    const found = [];
+    clean(note).replace(/(\d{1,2})[\/.\-](\d{1,2})[\/.\-](\d{4}|\d{2})(?!\d)/g, (all, dd, mm, yy) => {
+      const year = Number(yy.length === 2 ? `20${yy}` : yy), month = Number(mm), day = Number(dd);
+      const valid = new Date(year, month - 1, day);
+      if (valid.getFullYear() !== year || valid.getMonth() !== month - 1 || valid.getDate() !== day) return all;
+      const label = `${String(day).padStart(2, '0')}/${String(month).padStart(2, '0')}/${year}`;
+      if (label !== formatDate(current) && !found.includes(label)) found.push(label);
+      return all;
+    });
+    return found;
+  }
+  function dateCard(label, value, note) {
+    const lost = lostDates(note, value);
+    const tip = clean(note) ? ` data-info-tip="${esc(JSON.stringify({ t: `${label} reprogramado`, text: clean(note) }))}"` : '';
+    return `<article class="card detail"${tip}><small>${label}</small>${lost.length ? `<span class="lost-dates">${lost.map(date => `<s>${date}</s>`).join('')}</span>` : ''}<b>${formatDate(value)}</b></article>`;
+  }
   function renderProject(project) {
     const view = $('#projectView');
     if (!view) return;
@@ -1311,7 +1329,7 @@ window.DASHBOARD_SHOW_META = true;
     view.innerHTML = `
       <div class="project-topbar"><button class="back" type="button" onclick="closeProject()">← Voltar ao portfólio</button><select class="project-selector" onchange="openProject(this.value)">${state.projects.map(item => `<option value="${esc(item.id)}" ${item.id === project.id ? 'selected' : ''}>${esc(item.id)} · ${esc(item.projeto)}</option>`).join('')}</select><div class="project-search"><input type="search" id="projectSearch" placeholder="Buscar projeto por nome ou LOG..." autocomplete="off" oninput="searchProjects(this.value)" onkeydown="if(event.key==='Enter'){const f=document.querySelector('#projectSearchResults [data-id]');if(f)openProject(f.dataset.id);}"><div id="projectSearchResults" class="project-search-results"></div></div></div>
       <section class="project-hero hero-v9"><div class="hero-main"><div class="pid">${esc(project.id)} · ${esc(project.area || 'Não informado')} · ${esc(initiative)}</div><h1>${esc(project.projeto || 'Projeto sem nome')}</h1><div class="hero-tags-row"><div class="meta-row"><span class="chip">${esc(project.status || 'Sem stage')}</span><span class="chip">${esc(project.prioridade || 'S/P')}</span><span class="chip green">${esc(project.ganhoProjeto || 'Não informado')}</span><span class="chip risk-tag risk-${clean(project.risco || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z]/g, '') || 'na'}">Risco - ${esc(project.risco || 'Não informado')}</span></div></div></div></section>
-      <section class="detail-grid"><article class="card detail"><small>Início</small><b>${formatDate(project.inicio)}</b></article><article class="card detail"><small>Término</small><b>${formatDate(project.termino)}</b></article><article class="card detail"><small>Ponto focal</small><b title="${esc(project.pontoFocal)}">${esc(compact(project.pontoFocal || 'Não informado', 25))}</b></article><article class="card detail"><small>Focal Acompanhamento</small><b title="${esc(project.pmo)}">${esc(compact(project.pmo || 'Não informado', 25))}</b></article></section>
+      <section class="detail-grid">${dateCard('Início', project.inicio, project.inicioAnotacao)}${dateCard('Término', project.termino, project.terminoAnotacao)}<article class="card detail"><small>Ponto focal</small><b title="${esc(project.pontoFocal)}">${esc(compact(project.pontoFocal || 'Não informado', 25))}</b></article><article class="card detail"><small>Focal Acompanhamento</small><b title="${esc(project.pmo)}">${esc(compact(project.pmo || 'Não informado', 25))}</b></article></section>
       <section class="detail-grid"><article class="card detail"><small>Saving Opex 12M</small><b>${cardMM(savingField(project, 'opex12M'))}</b></article><article class="card detail"><small>Saving Capex 12M</small><b>${cardMM(savingField(project, 'capex12M'))}</b></article><article class="card detail"><small>Saving total 12M</small><b>${cardMM(savingField(project, 'total12M'))}</b></article><article class="card detail"><small>Saving 2026</small><b>${cardMM(savingField(project, 'total2026'))}</b></article></section>
       <section class="section two-col"><article class="card text-card scroll-card"><div class="chart-title">Escopo do projeto</div><p class="scroll-content">${esc(project.escopo || 'Escopo não preenchido no arquivo de origem.')}</p></article><article class="card text-card scroll-card"><div class="chart-title">Principais entregáveis</div><ul class="checklist scroll-content">${deliverables.length ? deliverables.map(item => `<li>${esc(item)}</li>`).join('') : '<li>Entregáveis não preenchidos no arquivo de origem.</li>'}</ul></article></section>
       <section class="section"><div class="section-head"><div><h2>Cronograma do projeto</h2><p>Alternância entre visão executiva e detalhada.</p></div></div><div class="tabs"><button class="tab ${state.scheduleMode === 'macro' ? 'active' : ''}" type="button" ${scheduleSummaryAttr(project, 'macro', 'Resumo do macrocronograma')} onclick="switchSchedule('macro')">Macrocronograma</button>${canOpenDetailed(project) ? `<button class="tab ${state.scheduleMode === 'detalhado' ? 'active' : ''}" type="button" ${scheduleSummaryAttr(project, 'detalhado', 'Resumo do cronograma detalhado')} onclick="switchSchedule('detalhado')">Cronograma detalhado</button>` : `<button class="tab tab-locked" type="button" disabled title="Cronograma detalhado disponível apenas para projetos da gerência de Transportes">🔒 Cronograma detalhado</button>`}</div><article class="card roadmap-card" id="projectSchedule">${scheduleCard(project, state.scheduleMode)}</article></section>
