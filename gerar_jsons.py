@@ -448,6 +448,16 @@ def ler_fca(ws):
     }
 
 
+def separar_marca(nome):
+    """'Projeto X (DGP)' -> ('Projeto X', 'DGP'). A marca (DGP)/(ICG) não aparece no nome do projeto."""
+    texto = str(nome or "")
+    m = re.search(r"\(\s*(DGP|ICG)\s*\)", texto, re.I)
+    if not m:
+        return texto.strip(), ""
+    limpo = re.sub(r"\s*\(\s*(?:DGP|ICG)\s*\)\s*", " ", texto, flags=re.I)
+    return re.sub(r"\s{2,}", " ", limpo).strip(" -–"), m.group(1).upper()
+
+
 def aba(wb, *nomes):
     alvo = {chave(n) for n in nomes}
     for ws in wb.worksheets:
@@ -494,9 +504,11 @@ def processar(caminho):
     ws_fca = aba(wb, "FCA")
     saving = one["saving"]
     tipos = [t for t, v in (("Opex", saving["opex12M"]), ("Capex", saving["capex12M"])) if v]
+    nome_projeto, marca_dgp_icg = separar_marca(one["projeto"] or re.sub(r"^LOG-[\d.]+\s*-\s*", "", os.path.splitext(arquivo)[0]))
     projeto = {
         "id": project_id,
-        "projeto": one["projeto"] or re.sub(r"^LOG-[\d.]+\s*-\s*", "", os.path.splitext(arquivo)[0]),
+        "projeto": nome_projeto,
+        "marcaDgpIcg": marca_dgp_icg,
         "area": one["area"],
         "pontoFocal": one["pontoFocal"],
         "inicio": one["inicio"],
