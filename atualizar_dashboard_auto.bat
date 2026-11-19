@@ -27,6 +27,7 @@ if exist "%LOCK%" (
     call :log "Execucao anterior ainda em andamento. Pulando."
     exit /b 0
   )
+  call :log "Trava antiga (mais de 30 min) removida."
 )
 echo %date% %time%>"%LOCK%"
 call :log "==== Inicio ===="
@@ -51,9 +52,14 @@ if exist ".git\rebase-apply" rmdir /s /q ".git\rebase-apply"
 if exist ".git\MERGE_HEAD" git merge --abort >>"%LOG%" 2>&1
 
 rem --- 1) Gera os JSONs
+rem     -u  = grava o andamento no log na hora (sem buffer)
+rem     <nul = se o script pedir "Pressione Enter" (input), responde sozinho e nao trava
 call :log "Gerando JSONs..."
-%PY% gerar_jsons.py >>"%LOG%" 2>&1
-if errorlevel 1 ( call :log "ERRO ao gerar JSONs. Nada foi enviado." & goto :fim )
+set "PYTHONIOENCODING=utf-8"
+%PY% -u gerar_jsons.py <nul >>"%LOG%" 2>&1
+if errorlevel 1 ( call :log "ERRO ao gerar JSONs (ou o script terminou pedindo Enter). Veja as linhas acima." )
+if not exist "json\projects.index.js" ( call :log "ERRO: JSONs nao gerados. Nada foi enviado." & goto :fim )
+call :log "JSONs gerados."
 
 rem --- 2) So faz commit se houver mudanca
 git add -A >>"%LOG%" 2>&1
