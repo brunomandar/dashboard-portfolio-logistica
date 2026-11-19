@@ -143,7 +143,7 @@
       "responsavel": "Compras/Log/Mck",
       "status": 1,
       "inicio": "2026-11-11",
-      "fim": "2026-11-24",
+      "fim": "2026-11-23",
       "anotacao": "18/11/2026"
     },
     {
@@ -151,8 +151,8 @@
       "atividade": "Round Final de Negociações",
       "responsavel": "Compras/Log/Mck",
       "status": 0,
-      "inicio": "2026-11-25",
-      "fim": "2026-12-08",
+      "inicio": "2026-11-24",
+      "fim": "2026-12-07",
       "anotacao": ""
     },
     {
@@ -160,8 +160,8 @@
       "atividade": "Equalização Round Round Final",
       "responsavel": "Compras/Log/Mck",
       "status": 0,
-      "inicio": "2026-12-09",
-      "fim": "2026-12-22",
+      "inicio": "2026-12-08",
+      "fim": "2026-12-21",
       "anotacao": ""
     },
     {
@@ -169,8 +169,8 @@
       "atividade": "Plano finalizado (Contrato)",
       "responsavel": "Compras/Log/Mck",
       "status": 0,
-      "inicio": "2026-12-23",
-      "fim": "2027-01-05",
+      "inicio": "2026-12-22",
+      "fim": "2027-01-04",
       "anotacao": ""
     },
     {
@@ -3930,6 +3930,6 @@
   "fonte": {
     "arquivo": "LOG-010.1 - BID Transportes - Engenharia.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.1%20-%20BID%20Transportes%20-%20Engenharia.xlsx?web=1",
-    "extraidoEm": "2026-11-19T16:32:10-03:00"
+    "extraidoEm": "2026-11-19T18:32:05-03:00"
   }
 }
