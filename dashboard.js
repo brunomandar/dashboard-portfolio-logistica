@@ -1465,6 +1465,18 @@ window.DASHBOARD_SHOW_META = true;
     }));
   }
 
+  // Atualização automática: a cada 15 min, das 08h às 18h, relê os JSONs publicados (mantém filtros e tela aberta)
+  const AUTO_REFRESH_MIN = 15, AUTO_REFRESH_START = 8, AUTO_REFRESH_END = 18;
+  function startAutoRefresh() {
+    if (window.__autoRefreshTimer) return;
+    window.__autoRefreshTimer = setInterval(() => {
+      const hour = new Date().getHours();
+      if (hour < AUTO_REFRESH_START || hour >= AUTO_REFRESH_END) return;
+      if (document.hidden || state.refreshing) return;
+      if (document.querySelector('.mf-box.open, .nd-modal.show, #dgpFcaModal.show')) return; // não interrompe quem está usando um filtro/janela
+      refreshDashboard();
+    }, AUTO_REFRESH_MIN * 60 * 1000);
+  }
   async function init() {
     try {
       const projects = prepareProjects(await loadProjects());
@@ -1475,6 +1487,7 @@ window.DASHBOARD_SHOW_META = true;
       window.dashboardFilters = currentFilters();
       renderDashboard();
       bindEvents();
+      startAutoRefresh();
     } catch (error) {
       console.error(error);
       const updated = $('.updated');
