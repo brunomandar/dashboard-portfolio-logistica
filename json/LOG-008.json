@@ -97,7 +97,7 @@
       "responsavel": "Negócios",
       "status": 2,
       "inicio": "2026-07-02",
-      "fim": "2027-01-27",
+      "fim": "2026-12-30",
       "anotacao": "09/11/2026\n03/11/2026"
     },
     {
@@ -1210,9 +1210,14 @@
       "data": "2026-08-11",
       "acoes": "Massificação eSIM PME e GE - 5G NSA-Volume de SIMcards - impacto potencial",
       "detalhe": "Realizar levantamento de volume de SIMcards distribuídos por canal/segmento"
+    },
+    {
+      "data": "2026-11-17",
+      "acoes": "Riscos retirados de one page",
+      "detalhe": "Risco: 04/11/2026  Atraso na implementação da SD 234435| OS 232024.(Depende de orçamento)\nRisco: 30/10/2026  Transferência Rápida:Identificados casos isolados de aparelhos importados incompatíveis com eSIM. Contingência operacional definida (chip físico) e validação pré-venda em implementação. Potencial impacto no rollout."
     }
   ],
-  "statusProjeto": "Risco: 04/11/2026  Atraso na implementação da SD 234435| OS 232024.(Depende de orçamento)\nRisco: 30/10/2026  Transferência Rápida:Identificados casos isolados de aparelhos importados incompatíveis com eSIM. Contingência operacional definida (chip físico) e validação pré-venda em implementação. Potencial impacto no rollout.\n04/11/2026 - Antecipação da Janela de Portabilidade: Testes de portabilidade aguardam nova massa de dados. Pendente início do B-SIM e implementação da OS 232024. Como contingência, será realizado teste em produção com 1 vendedor até 05/12.\n04/11/2026 - Televendas Receptivo (B-SIM): 18 pedidos com eSIM. SD 234435 aberta; pendente alinhamento da solução e aprovação de verba. Melhoria crítica para o rollout.\n30/10/2026 - As implantações de LP, ALS e Transferência Rápida foram concluídas conforme planejado, porém a frente de Transferência Rápida permanece sob monitoramento devido à dependência da correção do bundle Motorola, que pode impactar os próximos marcos comerciais da implementação do E-SIM.\n21/10/2026 - Teste de migração do eSIM para o televendas concluídos para novos clientes. Nos casos de portabilidade estão verificando jornada no solar, prazo 30/10.",
+  "statusProjeto": "Risco: Televendas não há data de implantação prevista.\n17/11/26: BSIM TELEVENDAS Concluído com 35 vendedores, porem ROLLOUT ainda depende ações de segmentação e portabilidade\n04/11/2026 - Antecipação da Janela de Portabilidade: Testes de portabilidade aguardam nova massa de dados. Pendente início do B-SIM e implementação da OS 232024. Como contingência, será realizado teste em produção com 1 vendedor até 05/12.\n- Televendas Receptivo (B-SIM): 18 pedidos com eSIM. SD 234435 aberta; pendente alinhamento da solução e aprovação de verba. Melhoria crítica para o rollout.\n30/10/2026 - As implantações de LP, ALS e Transferência Rápida foram concluídas conforme planejado, porém a frente de Transferência Rápida permanece sob monitoramento devido à dependência da correção do bundle Motorola, que pode impactar os próximos marcos comerciais da implementação do E-SIM.\n21/10/2026 - Teste de migração do eSIM para o televendas concluídos para novos clientes. Nos casos de portabilidade estão verificando jornada no solar, prazo 30/10.",
   "financeiro": [
     {
       "id": "LOG-008",
@@ -3811,6 +3816,6 @@
   "fonte": {
     "arquivo": "LOG-008 - Massificação eSIM (Saving Logístico).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-008%20-%20Massifica%C3%A7%C3%A3o%20eSIM%20%28Saving%20Log%C3%ADstico%29.xlsx?web=1",
-    "extraidoEm": "2026-11-19T14:10:27-03:00"
+    "extraidoEm": "2026-11-19T16:31:56-03:00"
   }
 }

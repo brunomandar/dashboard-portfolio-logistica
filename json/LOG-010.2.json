@@ -3,12 +3,12 @@
   "projeto": "BID Transportes - Expressa",
   "marcaDgpIcg": "",
   "area": "Transportes",
-  "pontoFocal": "Jaime de Melo",
+  "pontoFocal": "Raquel",
   "inicio": "2026-09-17",
-  "termino": "2027-02-26",
+  "termino": "2027-03-30",
   "inicioAnotacao": "",
   "terminoAnotacao": "",
-  "inicioCaptura": "2027-03-01",
+  "inicioCaptura": "2027-04-01",
   "iniciativa": "Consultoria",
   "pmo": "Raquel",
   "risco": "Médio",
@@ -38,29 +38,29 @@
   "macroAtividades": [
     {
       "numero": "01.",
-      "atividade": "Escopo validado e envio de RFI a Mercado",
+      "atividade": "Escopo validado",
       "responsavel": "Compras",
       "status": "2026-09-17",
-      "inicio": "2026-09-17",
-      "fim": "2026-09-30",
+      "inicio": "2026-09-11",
+      "fim": "2026-09-11",
       "anotacao": ""
     },
     {
       "numero": "02.",
-      "atividade": "RFI fechado (retorno transportadoras) e Envio de RFP",
-      "responsavel": "Compras/Log",
+      "atividade": "Construção SOW e Template RFP",
+      "responsavel": "Compras/Log/Mck",
       "status": "2026-09-22",
-      "inicio": "2026-09-22",
-      "fim": "2026-09-22",
+      "inicio": "2026-09-14",
+      "fim": "2026-09-28",
       "anotacao": ""
     },
     {
       "numero": "03.",
-      "atividade": "Live com fornecedores",
-      "responsavel": "Fornecedores",
-      "status": "2026-10-01",
-      "inicio": "2026-10-01",
-      "fim": "2026-10-06",
+      "atividade": "Revisão SOW",
+      "responsavel": "Compras/Log/Mck",
+      "status": "1900-01-04",
+      "inicio": "2026-09-29",
+      "fim": "2026-11-03",
       "anotacao": ""
     },
     {
@@ -68,125 +68,125 @@
       "atividade": "Envio e validação  RFI ao mercado",
       "responsavel": "Compras/McK",
       "status": "1900-01-04",
-      "inicio": "2026-10-07",
-      "fim": "2026-10-27",
+      "inicio": "2026-11-04",
+      "fim": "2026-11-10",
       "anotacao": ""
     },
     {
       "numero": "05.",
-      "atividade": "Validação plano de trabalho RFP",
-      "responsavel": "Compras/Risco",
+      "atividade": "RFI fechado (retorno transportadoras)",
+      "responsavel": "Compras/McK",
       "status": "1900-01-01",
-      "inicio": "2026-10-28",
-      "fim": "2026-11-24",
+      "inicio": "2026-11-11",
+      "fim": "2026-11-11",
       "anotacao": ""
     },
     {
       "numero": "06.",
-      "atividade": "Deadline envio RFP Round 1",
-      "responsavel": "Compras",
+      "atividade": "Ultima Revisão SOW e template RFP",
+      "responsavel": "Compras/Log/Mck",
       "status": "1900-01-01",
-      "inicio": "2026-11-25",
-      "fim": "2026-12-09",
+      "inicio": "2026-11-12",
+      "fim": "2026-11-19",
       "anotacao": ""
     },
     {
       "numero": "07.",
-      "atividade": "Deadline envio RFP Round 2",
-      "responsavel": "Compras/McK",
+      "atividade": "Live com fornecedores",
+      "responsavel": "Compras/Log",
       "status": "1900-01-01",
-      "inicio": "2026-12-10",
-      "fim": "2026-12-23",
+      "inicio": "2026-11-20",
+      "fim": "2026-11-26",
       "anotacao": ""
     },
     {
       "numero": "08.",
+      "atividade": "Envio da RFP ao mercado",
+      "responsavel": "Compras/McK",
+      "status": "1900-01-01",
+      "inicio": "2026-11-27",
+      "fim": "2026-11-27",
+      "anotacao": ""
+    },
+    {
+      "numero": "09.",
+      "atividade": "Deadline envio RFP Round 1",
+      "responsavel": "Compras/McK",
+      "status": "1900-01-01",
+      "inicio": "2026-11-30",
+      "fim": "2026-12-11",
+      "anotacao": ""
+    },
+    {
+      "numero": "10.",
+      "atividade": "Deadline envio RFP Round 2",
+      "responsavel": "Compras/McK",
+      "status": "1900-01-01",
+      "inicio": "2026-12-14",
+      "fim": "2026-12-23",
+      "anotacao": ""
+    },
+    {
+      "numero": "11.",
       "atividade": "Equalização Round Round 2",
-      "responsavel": "Compras",
+      "responsavel": "Mck",
       "status": "1900-01-01",
       "inicio": "2026-12-24",
       "fim": "2026-12-30",
       "anotacao": ""
     },
     {
-      "numero": "09.",
-      "atividade": "Deadline envio RFP Round 3",
-      "responsavel": "Compras/Dir",
-      "status": "1900-01-01",
-      "inicio": "2026-12-31",
-      "fim": "2027-01-06",
-      "anotacao": ""
-    },
-    {
-      "numero": "10.",
-      "atividade": "Equalização Round Round 3",
-      "responsavel": "Compras/Jur",
-      "status": "1900-01-01",
-      "inicio": "2027-01-07",
-      "fim": "2027-01-13",
-      "anotacao": ""
-    },
-    {
-      "numero": "11.",
-      "atividade": "Round Final de Negociações",
-      "responsavel": "Compras/Log",
-      "status": 0,
-      "inicio": "2027-01-14",
-      "fim": "2027-01-20",
-      "anotacao": ""
-    },
-    {
       "numero": "12.",
-      "atividade": "Equalização Round Round Final",
+      "atividade": "Deadline envio RFP Round 3",
       "responsavel": "Compras/McK",
-      "status": "1900-01-01",
-      "inicio": "2027-01-21",
-      "fim": "2027-01-27",
+      "status": 0,
+      "inicio": "2026-12-31",
+      "fim": "2027-01-11",
       "anotacao": ""
     },
     {
       "numero": "13.",
-      "atividade": "Plano finalizado (contrato + ramp-up)",
-      "responsavel": "Compras/Risco",
+      "atividade": "Equalização Round Round 3",
+      "responsavel": "Compras/McK",
       "status": "1900-01-01",
-      "inicio": "2027-01-28",
-      "fim": "2027-02-26",
+      "inicio": "2027-01-12",
+      "fim": "2027-01-18",
       "anotacao": ""
     },
     {
       "numero": "14.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Round Final de Negociações",
+      "responsavel": "Compras/Log",
+      "status": "1900-01-01",
+      "inicio": "2027-01-19",
+      "fim": "2027-02-01",
       "anotacao": ""
     },
     {
       "numero": "15.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Equalização Round Round Final",
+      "responsavel": "Compras/Log/Mck",
+      "status": "1900-01-01",
+      "inicio": "2027-02-02",
+      "fim": "2027-02-08",
       "anotacao": ""
     },
     {
       "numero": "16.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Plano finalizado (contrato)",
+      "responsavel": "Compras/Log/Mck",
+      "status": "1900-01-01",
+      "inicio": "2027-02-09",
+      "fim": "2027-02-24",
       "anotacao": ""
     },
     {
       "numero": "17.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Integração + Ramp-up",
+      "responsavel": "Log/Catalde",
+      "status": "1900-01-01",
+      "inicio": "2027-02-11",
+      "fim": "2027-03-30",
       "anotacao": ""
     },
     {
@@ -283,155 +283,155 @@
   "cronogramaDetalhado": [
     {
       "numero": 1,
-      "atividade": "Envio e recebimento da RFP — Rodada 1",
+      "atividade": "Escopo validado",
       "responsavel": "Compras",
-      "status": "",
-      "inicio": "2026-09-17",
-      "fim": "2026-09-30",
+      "status": "2026-09-17",
+      "inicio": "2026-09-11",
+      "fim": "2026-09-11",
       "anotacao": ""
     },
     {
       "numero": 2,
-      "atividade": "Live com fornecedores + Q&A / esclarecimentos",
-      "responsavel": "Compras/Log",
-      "status": 4,
-      "inicio": "2026-09-22",
-      "fim": "2026-09-22",
+      "atividade": "Construção SOW e Template RFP",
+      "responsavel": "Compras/Log/Mck",
+      "status": "2026-09-22",
+      "inicio": "2026-09-14",
+      "fim": "2026-09-28",
       "anotacao": ""
     },
     {
       "numero": 3,
-      "atividade": "Recebimento de propostas — Rodada 1",
-      "responsavel": "Fornecedores",
-      "status": "",
-      "inicio": "2026-10-01",
-      "fim": "2026-10-06",
+      "atividade": "Revisão SOW",
+      "responsavel": "Compras/Log/Mck",
+      "status": "1900-01-04",
+      "inicio": "2026-09-29",
+      "fim": "2026-11-03",
       "anotacao": ""
     },
     {
       "numero": 4,
-      "atividade": "Equalização e faróis — Rodada 1",
+      "atividade": "Envio e validação  RFI ao mercado",
       "responsavel": "Compras/McK",
-      "status": "",
-      "inicio": "2026-10-12",
-      "fim": "2026-10-19",
+      "status": "1900-01-04",
+      "inicio": "2026-11-04",
+      "fim": "2026-11-10",
       "anotacao": ""
     },
     {
       "numero": 5,
-      "atividade": "Validação técnica com time de Risco (paralela)",
-      "responsavel": "Compras/Risco",
-      "status": "",
-      "inicio": "2026-10-01",
-      "fim": "2026-11-13",
+      "atividade": "RFI fechado (retorno transportadoras)",
+      "responsavel": "Compras/McK",
+      "status": "1900-01-01",
+      "inicio": "2026-11-11",
+      "fim": "2026-11-11",
       "anotacao": ""
     },
     {
       "numero": 6,
-      "atividade": "Rodada 2 de cotação",
-      "responsavel": "Compras",
-      "status": "",
-      "inicio": "2026-10-18",
-      "fim": "2026-10-30",
+      "atividade": "Ultima Revisão SOW e template RFP",
+      "responsavel": "Compras/Log/Mck",
+      "status": "1900-01-01",
+      "inicio": "2026-11-12",
+      "fim": "2026-11-19",
       "anotacao": ""
     },
     {
       "numero": 7,
-      "atividade": "Equalização e faróis — Rodada 2",
-      "responsavel": "Compras/McK",
-      "status": "",
-      "inicio": "2026-11-02",
-      "fim": "2026-11-06",
+      "atividade": "Live com fornecedores",
+      "responsavel": "Compras/Log",
+      "status": "1900-01-01",
+      "inicio": "2026-11-20",
+      "fim": "2026-11-26",
       "anotacao": ""
     },
     {
       "numero": 8,
-      "atividade": "Rodada final de negociação",
-      "responsavel": "Compras",
-      "status": "",
-      "inicio": "2026-11-07",
-      "fim": "2026-11-16",
+      "atividade": "Envio da RFP ao mercado",
+      "responsavel": "Compras/McK",
+      "status": "1900-01-01",
+      "inicio": "2026-11-27",
+      "fim": "2026-11-27",
       "anotacao": ""
     },
     {
       "numero": 9,
-      "atividade": "Definição do(s) vencedor(es) do BID",
-      "responsavel": "Compras/Dir",
-      "status": "",
-      "inicio": "2026-11-15",
-      "fim": "2026-11-24",
+      "atividade": "Deadline envio RFP Round 1",
+      "responsavel": "Compras/McK",
+      "status": "1900-01-01",
+      "inicio": "2026-11-30",
+      "fim": "2026-12-11",
       "anotacao": ""
     },
     {
       "numero": 10,
-      "atividade": "Aprovação e assinatura de contrato",
-      "responsavel": "Compras/Jur",
-      "status": "",
-      "inicio": "2026-11-23",
-      "fim": "2026-12-14",
+      "atividade": "Deadline envio RFP Round 2",
+      "responsavel": "Compras/McK",
+      "status": "1900-01-01",
+      "inicio": "2026-12-14",
+      "fim": "2026-12-23",
       "anotacao": ""
     },
     {
       "numero": 11,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Equalização Round Round 2",
+      "responsavel": "Mck",
+      "status": "1900-01-01",
+      "inicio": "2026-12-24",
+      "fim": "2026-12-30",
       "anotacao": ""
     },
     {
       "numero": 12,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Deadline envio RFP Round 3",
+      "responsavel": "Compras/McK",
+      "status": 0,
+      "inicio": "2026-12-31",
+      "fim": "2027-01-11",
       "anotacao": ""
     },
     {
       "numero": 13,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Equalização Round Round 3",
+      "responsavel": "Compras/McK",
+      "status": "1900-01-01",
+      "inicio": "2027-01-12",
+      "fim": "2027-01-18",
       "anotacao": ""
     },
     {
       "numero": 14,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Round Final de Negociações",
+      "responsavel": "Compras/Log",
+      "status": "1900-01-01",
+      "inicio": "2027-01-19",
+      "fim": "2027-02-01",
       "anotacao": ""
     },
     {
       "numero": 15,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Equalização Round Round Final",
+      "responsavel": "Compras/Log/Mck",
+      "status": "1900-01-01",
+      "inicio": "2027-02-02",
+      "fim": "2027-02-08",
       "anotacao": ""
     },
     {
       "numero": 16,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Plano finalizado (contrato)",
+      "responsavel": "Compras/Log/Mck",
+      "status": "1900-01-01",
+      "inicio": "2027-02-09",
+      "fim": "2027-02-24",
       "anotacao": ""
     },
     {
       "numero": 17,
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "Integração + Ramp-up",
+      "responsavel": "Log/Catalde",
+      "status": "1900-01-01",
+      "inicio": "2027-02-11",
+      "fim": "2027-03-30",
       "anotacao": ""
     },
     {
@@ -1148,6 +1148,11 @@
   ],
   "historico": [
     {
+      "data": "2026-11-19",
+      "acoes": "Compras: Marcar reunioes com os fornecedores indicados e a Live com os demais fornecedores até dia 30/11\n\nLogistica : Revisar SOW  e template da RFP até dia 25/11",
+      "detalhe": "Reunião BID Expressa B2C | Proximos passos\nMotofretista :A consultoria Mackenzie disponibilizou a lista atualizada após o envio da RFI (aba 0 da planilha Excel). Nela, encontram-se segmentados os fornecedores que responderam integralmente ao documento, bem como sinalizados aqueles que ainda necessitam de uma nova rodada de validação para confirmação do CNPJ.\nReuniões com players de maior relevância: Na planilha de Motofretista, a consultoria Mackenzie destacou os fornecedores recomendados para um contato mais próximo, com o objetivo de avaliar o interesse e a viabilidade de continuidade nas próximas etapas do processo.\nDocumentos para revisão: A consultoria Mackenzie disponibilizou a versão mais recente do SOW para revisão, sendo importante que o documento seja avaliado pelas áreas envolvidas para garantir que o escopo proposto esteja aderente às necessidades e expectativas do projeto.\n\nDocumentação disponibilizada via e-mail  pela Mackenzie:\n\nSOW e RFP Motofrete;\nSOW e RFP E-commerce."
+    },
+    {
       "data": "2026-11-06",
       "acoes": "Logistica/Mck/Compras :Pipeline de iniciativas logísticas",
       "detalhe": "Compras Informou que foram mapeados 138 fornecedores, incluindo operadores de entregas rápidas, aplicativos e empresas especializadas.\nA RFI foi enviada aos 138 fornecedores, com prazo de retorno até a sexta-feira seguinte.\nO processo seguirá uma dinâmica semelhante à utilizada no BID de Engenharia:\n\n1. Envio da RFI;\n2. Análise das respostas;\n3. Refinamento do funil de fornecedores;\n4. Envio da RFP aos fornecedores selecionados.\n\nescopo contempla o B2C e será dividido em duas vertentes:\n\n- Entrega simples: principalmente SIM Card e operações sem exigência de PGR;\n- E-commerce: entregas mais críticas, com exigências de PGR e controles adicionais"
@@ -1234,7 +1239,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.2",
@@ -1522,7 +1527,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.2",
@@ -1666,7 +1671,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.2",
@@ -1954,7 +1959,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.2",
@@ -2098,7 +2103,7 @@
       "tipoDespesa": "Opex",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.2",
@@ -2386,7 +2391,7 @@
       "tipoDespesa": "Total",
       "ano": 2027,
       "mes": "Mar",
-      "resultado": 0.2
+      "resultado": 0.0
     },
     {
       "id": "LOG-010.2",
@@ -2530,7 +2535,7 @@
       "tipoDespesa": "Opex",
       "ano": 2028,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2818,7 +2823,7 @@
       "tipoDespesa": "Total",
       "ano": 2028,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -2962,7 +2967,7 @@
       "tipoDespesa": "Opex",
       "ano": 2028,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3250,7 +3255,7 @@
       "tipoDespesa": "Total",
       "ano": 2028,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3394,7 +3399,7 @@
       "tipoDespesa": "Opex",
       "ano": 2028,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3682,7 +3687,7 @@
       "tipoDespesa": "Total",
       "ano": 2028,
       "mes": "Mar",
-      "resultado": 0.0
+      "resultado": 0.2
     },
     {
       "id": "LOG-010.2",
@@ -3797,6 +3802,6 @@
   "fonte": {
     "arquivo": "LOG-010.2 - BID Transportes - Expressa.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.2%20-%20BID%20Transportes%20-%20Expressa.xlsx?web=1",
-    "extraidoEm": "2026-11-19T14:10:54-03:00"
+    "extraidoEm": "2026-11-19T16:32:23-03:00"
   }
 }

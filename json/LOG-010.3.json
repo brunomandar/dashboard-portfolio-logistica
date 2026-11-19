@@ -4,7 +4,7 @@
   "marcaDgpIcg": "",
   "area": "Transportes",
   "pontoFocal": "Jaime de Melo",
-  "inicio": "2026-08-31",
+  "inicio": "2026-08-01",
   "termino": "2027-02-10",
   "inicioAnotacao": "",
   "terminoAnotacao": "17/11/2026",
@@ -39,97 +39,97 @@
   "macroAtividades": [
     {
       "numero": "01.",
-      "atividade": "Escopo validado e envio de RFI a Mercado",
+      "atividade": "Escopo validado",
       "responsavel": "Compras",
       "status": 4,
-      "inicio": "2026-08-31",
-      "fim": "2026-09-07",
+      "inicio": "2026-08-01",
+      "fim": "2026-08-06",
       "anotacao": ""
     },
     {
       "numero": "02.",
-      "atividade": "RFI fechado (retorno transportadoras) e Envio de RFP",
-      "responsavel": "Compras/Log",
+      "atividade": "Envio de RFI a Mercado",
+      "responsavel": "Compras/McK/Log",
       "status": 4,
-      "inicio": "2026-09-08",
-      "fim": "2026-09-14",
+      "inicio": "2026-08-07",
+      "fim": "2026-08-07",
       "anotacao": ""
     },
     {
       "numero": "03.",
-      "atividade": "Live com fornecedores",
-      "responsavel": "Compras/Log",
-      "status": 4,
-      "inicio": "2026-09-15",
-      "fim": "2026-09-15",
+      "atividade": "RFI fechado (retorno transportadoras) e envio RFP",
+      "responsavel": "Compras/McK/Log",
+      "status": 0,
+      "inicio": "2026-08-10",
+      "fim": "2026-08-10",
       "anotacao": ""
     },
     {
       "numero": "04.",
       "atividade": "Deadline envio RFP Round 1",
-      "responsavel": "Compras/McK",
-      "status": 4,
-      "inicio": "2026-09-16",
-      "fim": "2026-09-29",
-      "anotacao": ""
+      "responsavel": "Compras/McK/Log",
+      "status": 3,
+      "inicio": "2026-08-11",
+      "fim": "2026-09-15",
+      "anotacao": "04/09/2026"
     },
     {
       "numero": "05.",
-      "atividade": "Deadline envio RFP Round 2",
-      "responsavel": "Compras/McK",
+      "atividade": "Equalização Round Round 1",
+      "responsavel": "Compras/McK/Log",
       "status": 4,
-      "inicio": "2026-09-30",
-      "fim": "2026-10-13",
+      "inicio": "2026-09-16",
+      "fim": "2026-09-24",
       "anotacao": ""
     },
     {
       "numero": "06.",
-      "atividade": "Equalização Round Round 2",
-      "responsavel": "Compras/McK",
+      "atividade": "Deadline envio RFP Round 2",
+      "responsavel": "Compras/McK/Log",
       "status": 4,
-      "inicio": "2026-10-14",
-      "fim": "2026-10-21",
+      "inicio": "2026-09-25",
+      "fim": "2026-10-02",
       "anotacao": ""
     },
     {
       "numero": "07.",
-      "atividade": "Analise regras de escolta para abertura round 3",
+      "atividade": "Equalização Round Round 2",
       "responsavel": "Compras/McK/Log",
       "status": 4,
-      "inicio": "2026-10-22",
-      "fim": "2026-10-29",
+      "inicio": "2026-10-05",
+      "fim": "2026-10-12",
       "anotacao": ""
     },
     {
       "numero": "08.",
-      "atividade": "Equalização Round Round 3",
+      "atividade": "",
       "responsavel": "Compras/McK/Log",
       "status": 4,
-      "inicio": "2026-10-30",
-      "fim": "2026-11-11",
+      "inicio": "2026-10-13",
+      "fim": "2026-10-23",
       "anotacao": ""
     },
     {
       "numero": "09.",
-      "atividade": "Round Final de Negociações",
+      "atividade": "",
       "responsavel": "Compras",
       "status": 3,
-      "inicio": "2026-11-12",
-      "fim": "2026-11-25",
+      "inicio": "2026-10-26",
+      "fim": "2026-11-06",
       "anotacao": "18/11/2026"
     },
     {
       "numero": "10.",
-      "atividade": "Equalização Round Round Final",
+      "atividade": "",
       "responsavel": "Compras/Log",
       "status": 0,
-      "inicio": "2026-11-26",
+      "inicio": "2026-11-09",
       "fim": "2026-12-09",
       "anotacao": ""
     },
     {
       "numero": "11.",
-      "atividade": "Plano finalizado (contrato + ramp-up)",
+      "atividade": "",
       "responsavel": "Compras/Log",
       "status": 0,
       "inicio": "2026-12-10",
@@ -165,7 +165,7 @@
     },
     {
       "numero": "15.",
-      "atividade": "",
+      "atividade": "Deadline envio RFP Round 1",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -174,7 +174,7 @@
     },
     {
       "numero": "16.",
-      "atividade": "",
+      "atividade": "Deadline envio RFP Round 2",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -183,7 +183,7 @@
     },
     {
       "numero": "17.",
-      "atividade": "",
+      "atividade": "Equalização Round Round 2",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -192,7 +192,7 @@
     },
     {
       "numero": "18.",
-      "atividade": "",
+      "atividade": "Analise regras de escolta para abertura round 3",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -201,7 +201,7 @@
     },
     {
       "numero": "19.",
-      "atividade": "",
+      "atividade": "Equalização Round Round 3",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -210,7 +210,7 @@
     },
     {
       "numero": "20.",
-      "atividade": "",
+      "atividade": "Round Final de Negociações",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -219,7 +219,7 @@
     },
     {
       "numero": "21.",
-      "atividade": "",
+      "atividade": "Equalização Round Round Final",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -228,7 +228,7 @@
     },
     {
       "numero": "22.",
-      "atividade": "",
+      "atividade": "Plano finalizado (contrato + ramp-up)",
       "responsavel": "",
       "status": "",
       "inicio": "",
@@ -3768,6 +3768,6 @@
   "fonte": {
     "arquivo": "LOG-010.3 - BID Transportes - Móvel.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-010.3%20-%20BID%20Transportes%20-%20M%C3%B3vel.xlsx?web=1",
-    "extraidoEm": "2026-11-19T14:11:07-03:00"
+    "extraidoEm": "2026-11-19T16:32:36-03:00"
   }
 }
