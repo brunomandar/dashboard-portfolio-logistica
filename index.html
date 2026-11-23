@@ -751,7 +751,7 @@ body #dgpView .dgp-scope:has(input:checked) input{accent-color:#fff}
       <section class="global-filters" aria-label="Filtros globais do dashboard">
         <div class="global-filter"><label for="filterAno">Ano</label><select id="filterAno" onchange="applyGlobalFilters()" data-multi='["2026"]' data-multi-required="2026"><option disabled>Todos</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026" selected>2026</option><option value="2027">2027</option></select></div>
         <div class="global-filter"><label for="filterMes">Mês</label><select id="filterMes" onchange="applyGlobalFilters()"><option value="">Todos</option><option>Jan</option><option>Fev</option><option>Mar</option><option>Abr</option><option>Mai</option><option>Jun</option><option>Jul</option><option>Ago</option><option>Set</option><option>Out</option><option>Nov</option><option>Dez</option></select></div>
-        <div class="global-filter"><label for="filterGerencia">Gerência</label><select id="filterGerencia" onchange="applyGlobalFilters()"><option value="">Todas</option><option>CDs</option><option>Desconexão</option><option>Int. Logística</option><option>Estoques</option><option>Planejamento</option><option>Reparo</option><option>Transportes</option></select></div>
+        <div class="global-filter"><label for="filterGerencia">Gerência</label><select id="filterGerencia" onchange="applyGlobalFilters()"><option value="">Todas</option><option>CDs</option><option>Desconexão</option><option>Int. Logística</option><option>Estoques</option><option>Plan. Empresarial</option><option>Plan. Massivo</option><option>Reparo</option><option>Transportes</option></select></div>
         <div class="global-filter"><label for="filterStatus">Status</label><select id="filterStatus" onchange="applyGlobalFilters()"><option value="">Todos</option><option>L0</option><option>L1</option><option>L2</option><option>L3</option><option>L4</option><option>L5</option></select></div>
         <div class="global-filter"><label for="filterPrioridade">Prioridade</label><select id="filterPrioridade" onchange="applyGlobalFilters()"><option value="">Todas</option><option>P0</option><option>P1</option><option>P2</option><option>Congelado</option><option>Cancelado</option><option>Concluído</option></select></div>
         <div class="global-filter"><label for="filterGanho">Ganho do Projeto</label><select id="filterGanho" onchange="applyGlobalFilters()"><option value="">Todos</option><option>Qualitativo</option><option>Quantitativo</option></select></div>
@@ -766,7 +766,7 @@ body #dgpView .dgp-scope:has(input:checked) input{accent-color:#fff}
   (() => {
     'use strict';
     const allowed = Object.freeze({
-      gerencia: Object.freeze(['CDs','Desconexão','Int. Logística','Estoques','Planejamento','Reparo','Transportes']),
+      gerencia: Object.freeze(['CDs','Desconexão','Int. Logística','Estoques','Plan. Empresarial','Plan. Massivo','Reparo','Transportes']),
       status: Object.freeze(['L0','L1','L2','L3','L4','L5']),
       ganho: Object.freeze(['Qualitativo','Quantitativo']),
       tipo: Object.freeze(['Capex','Opex'])
