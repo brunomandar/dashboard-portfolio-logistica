@@ -762,7 +762,7 @@ window.DASHBOARD_SHOW_META = true;
     return clean(project.ganhoProjeto).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().startsWith('qualitativ');
   }
 
-  // Projetos qualitativos: progresso geral pelas etapas do macrocronograma
+  // Projetos qualitativos: progresso geral pelas etapas do Macro Cronograma
   function qualitativeProgressCard(project) {
     const items = scheduleItemsOf(project, 'macro');
     const total = items.length;
@@ -775,7 +775,7 @@ window.DASHBOARD_SHOW_META = true;
       ['Em risco', count(2)],
       ['Atrasadas', count(3)]
     ];
-    return `<article class="card line-chart project-finance-chart qualitative-progress"><div class="chart-title">Progresso geral do projeto</div><div class="chart-sub">Projeto qualitativo · calculado pelas etapas do macrocronograma</div>${total ? `<div class="qp-bar-row"><div class="qp-bar"><i style="width:${percent}%"></i></div><b class="qp-pct">${percent}%</b></div><dl class="qp-list">${rows.map(([label, value]) => `<dt>${esc(label)}</dt><dd>${esc(value)}</dd>`).join('')}</dl>` : '<div class="empty-state">Macrocronograma sem etapas registradas.</div>'}</article>`;
+    return `<article class="card line-chart project-finance-chart qualitative-progress"><div class="chart-title">Progresso geral do projeto</div><div class="chart-sub">Projeto qualitativo · calculado pelas etapas do Macro Cronograma</div>${total ? `<div class="qp-bar-row"><div class="qp-bar"><i style="width:${percent}%"></i></div><b class="qp-pct">${percent}%</b></div><dl class="qp-list">${rows.map(([label, value]) => `<dt>${esc(label)}</dt><dd>${esc(value)}</dd>`).join('')}</dl>` : '<div class="empty-state">Macro Cronograma sem etapas registradas.</div>'}</article>`;
   }
 
   function projectFinanceChart(project) {
@@ -808,7 +808,7 @@ window.DASHBOARD_SHOW_META = true;
       series[kind][index] += n(record.resultado);
       if (kind === 'base') hasBase = true;
     });
-    const body = financeChartSVG({ labels: months.map(m => m.label), years: months.map(m => m.year), real: series.real, fcst: series.fcst, meta: series.meta, base: hasBase ? series.base : null, id: `p${clean(project.id).replace(/[^a-z0-9]/gi, '')}`, noFcst: true });
+    const body = financeChartSVG({ labels: months.map(m => m.label), years: months.map(m => m.year), real: series.real, fcst: series.fcst, meta: series.meta, base: hasBase ? series.base : null, id: `p${clean(project.id).replace(/[^a-z0-9]/gi, '')}`, noFcst: true, open: months.map(m => { const [yy, mm] = m.key.split('-').map(Number); return isOpenMonth(yy, mm); }) });
     const period = `${months[0].label}/${months[0].year} a ${months[11].label}/${months[11].year}`;
     const sub = `${period} · Valores em R$ milhões`;
     return { sub, body };
@@ -816,7 +816,9 @@ window.DASHBOARD_SHOW_META = true;
 
 
   // Gráfico financeiro padrão (Home e projeto): Realizado e Forecast em barras lado a lado, desvio entre eles e Meta em linha azul
-  function financeChartSVG({ labels, years, real, fcst, meta, base, id, width, fs = 1, noFcst = false }) {
+  // Mês ainda não fechado (mês atual em diante) = YTG
+  const isOpenMonth = (year, month) => { const now = new Date(); return year > now.getFullYear() || (year === now.getFullYear() && month >= now.getMonth()); };
+  function financeChartSVG({ labels, years, real, fcst, meta, base, id, width, fs = 1, noFcst = false, open = [] }) {
     const abs = list => (list || []).map(value => n(value)); // valores com sinal (negativos considerados)
     real = abs(real); fcst = abs(fcst); meta = abs(meta); base = base ? abs(base) : null;
     const fcstTotal = fcst.reduce((acc, value) => acc + value, 0);
@@ -852,7 +854,8 @@ window.DASHBOARD_SHOW_META = true;
       if (rLabelY !== null && fLabelY !== null && Math.abs(rLabelY - fLabelY) < 12 * fs) {
         if (rLabelY <= fLabelY) rLabelY -= 12 * fs; else fLabelY -= 12 * fs;
       }
-      if (r) out += `<rect x="${rx.toFixed(1)}" y="${y(r).toFixed(1)}" width="${barW.toFixed(1)}" height="${(floor - y(r)).toFixed(1)}" rx="4" fill="url(#${id}Real)"><title>Real+FCST ${label}: R$ ${fmt(r)}</title></rect>`; if (r) lbl += `<text x="${(rx + barW / 2).toFixed(1)}" y="${rLabelY.toFixed(1)}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#1f1f1f">${fmtBar(r)}</text>`;
+      const ytgBar = Boolean(open[index]); // mês ainda não realizado: barra cinza (YTG)
+      if (r) out += `<rect x="${rx.toFixed(1)}" y="${y(r).toFixed(1)}" width="${barW.toFixed(1)}" height="${(floor - y(r)).toFixed(1)}" rx="4" fill="url(#${id}${ytgBar ? 'Ytg' : 'Real'})"><title>${ytgBar ? 'YTG (a realizar)' : 'Real+FCST'} ${label}: R$ ${fmt(r)}</title></rect>`; if (r) lbl += `<text x="${(rx + barW / 2).toFixed(1)}" y="${rLabelY.toFixed(1)}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#1f1f1f">${fmtBar(r)}</text>`;
       if (f) out += `<rect x="${fx.toFixed(1)}" y="${y(f).toFixed(1)}" width="${barW.toFixed(1)}" height="${(floor - y(f)).toFixed(1)}" rx="4" fill="url(#${id}Fcst)"><title>Forecast ${label}: R$ ${fmt(f)}</title></rect>`; if (f) lbl += `<text x="${(fx + barW / 2).toFixed(1)}" y="${fLabelY.toFixed(1)}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#15803d">${fmtBar(f)}</text>`;
       [rLabelY, fLabelY].forEach(value => { if (value !== null) occupied[index] = Math.min(occupied[index], value - 11 * fs); });
       if (floorY && occupied[index] === Infinity) occupied[index] = floorY;
@@ -895,9 +898,9 @@ window.DASHBOARD_SHOW_META = true;
     }).join('');
     const baseLine = base ? `<path d="${path(base)}" fill="none" stroke="#f08a00" stroke-width="2.5"/>${dots(base, '#f08a00', 'Baseline')}` : '';
     const axis = labels.map((label, index) => `<text x="${x(index).toFixed(1)}" y="${H - 22}" text-anchor="middle" font-size="${(10 * fs).toFixed(1)}" font-weight="800" fill="#1f1f1f">${label}</text><text x="${x(index).toFixed(1)}" y="${H - 9}" text-anchor="middle" font-size="${(8.5 * fs).toFixed(1)}" fill="#7f7f7f">${years[index]}</text>`).join('');
-    const defs = `<defs><linearGradient id="${id}Real" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b4f57"/><stop offset="1" stop-color="#15171b"/></linearGradient><linearGradient id="${id}Fcst" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34c26b"/><stop offset="1" stop-color="#15803d"/></linearGradient></defs>`;
+    const defs = `<defs><linearGradient id="${id}Real" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b4f57"/><stop offset="1" stop-color="#15171b"/></linearGradient><linearGradient id="${id}Fcst" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34c26b"/><stop offset="1" stop-color="#15803d"/></linearGradient><linearGradient id="${id}Ytg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b7bbc2"/><stop offset="1" stop-color="#7d828b"/></linearGradient></defs>`;
     const svg = `<svg class="fin-chart" viewBox="0 0 ${W} ${H}" role="img">${defs}${columns}${grid}${pairs}${baseLine}${SHOW_META ? `<path d="${path(meta)}" fill="none" stroke="#2563eb" stroke-width="3"/>${dots(meta, '#2563eb', 'Meta')}` : ''}${metaLeaders.join('')}${valueLabels.join('')}${metaLabels}${axis}</svg>`;
-    const legend = `<div class="fin-legend"><span><i class="lg-bar"></i>Real+FCST</span><span><i class="lg-bar fcst"></i>Forecast</span><span><i class="lg-line"></i>Meta${SHOW_META ? '' : ': -'}</span>${base ? '<span><i class="lg-line base"></i>Baseline / ano anterior</span>' : ''}${noFcst ? '' : '<span><i class="lg-dev">▲▼</i>Desvio Realizado x FCST</span>'}</div>`;
+    const legend = `<div class="fin-legend"><span><i class="lg-bar"></i>Real+FCST</span>${open.some(Boolean) ? '<span><i class="lg-bar ytg"></i>YTG (a realizar)</span>' : ''}<span><i class="lg-bar fcst"></i>Forecast</span><span><i class="lg-line"></i>Meta${SHOW_META ? '' : ': -'}</span>${base ? '<span><i class="lg-line base"></i>Baseline / ano anterior</span>' : ''}${noFcst ? '' : '<span><i class="lg-dev">▲▼</i>Desvio Realizado x FCST</span>'}</div>`;
     const sum = list => list.reduce((acc, value) => acc + value, 0);
     const tReal = sum(real), tFcst = noFcst ? fcstTotal : sum(fcst), tMeta = sum(meta);
     const gapBox = (a, b) => { const d = a - b; return `<b class="${d >= 0 ? 'pos' : 'neg'}">${d >= 0 ? '▲' : '▼'} ${fmtCard(Math.abs(d))}</b>`; };
@@ -924,7 +927,7 @@ window.DASHBOARD_SHOW_META = true;
       : list.length === 1 ? `${label} (captura ${list[0].id}) · Valores em R$ milhões` : 'Nenhum projeto encontrado';
     if (query && !list.length) { body.innerHTML = '<div class="empty-state">Nenhum projeto encontrado para a busca.</div>'; $('#finMiniSlot')?.replaceChildren(); return; }
     const series = aggregateFinancialPeriods(list, periods);
-    body.innerHTML = financeChartSVG({ labels: periods.map(period => LABELS[period.month]), years: periods.map(period => String(period.year).slice(-2)), real: series.Real, fcst: series.Fcst, meta: series.Budget, id: 'home', width: 1150, fs: periods.length > 12 ? 1 : 1.3 });
+    body.innerHTML = financeChartSVG({ labels: periods.map(period => LABELS[period.month]), years: periods.map(period => String(period.year).slice(-2)), real: series.Real, fcst: series.Fcst, meta: series.Budget, id: 'home', width: 1150, fs: periods.length > 12 ? 1 : 1.3, open: periods.map(period => isOpenMonth(period.year, period.month)), noFcst: true });
     const slot = $('#finMiniSlot');
     const mini = body.querySelector('.fin-mini');
     if (slot) slot.replaceChildren(...(mini ? [mini] : []));
@@ -954,7 +957,7 @@ window.DASHBOARD_SHOW_META = true;
       ytg = lastClosed < 11 ? savingFromBase(projects, ytdYears, [lastClosed + 1, 11]).total : 0;
     }
     const grid = $('#financeiro .finance-grid');
-    if (grid) grid.innerHTML = `<article class="card finance-kpi"><small>Meta</small><b>${window.DASHBOARD_SHOW_META !== false ? cardMM(budget) : '-'}</b></article><article class="card finance-kpi"><small>Forecast</small><b>${cardMM(forecast)}</b></article><article class="card finance-kpi"><small>Real+FCST</small><b>${cardMM(real)}</b></article><article class="card finance-kpi gap-kpi"><div class="gap-split"><div><span>Real x Meta</span>${window.DASHBOARD_SHOW_META !== false ? `<b style="color:${gapMeta < 0 ? 'var(--claro)' : 'var(--green)'}">${cardMM(gapMeta)}</b>` : '<b>-</b>'}</div><div><span>Real x FCST</span><b style="color:${gapForecast < 0 ? 'var(--claro)' : 'var(--green)'}">${cardMM(gapForecast)}</b></div></div></article><article class="card finance-kpi"><small>Saving Opex</small><b>${cardMM(opex)}</b></article><article class="card finance-kpi"><small>Saving Capex</small><b>${cardMM(capex)}</b></article><article class="card finance-kpi"><small>YTD (Year To Date)</small><b>${ytd === null ? '-' : cardMM(ytd)}</b></article><article class="card finance-kpi"><small>YTG (Year To Go)</small><b>${ytg === null ? '-' : cardMM(ytg)}</b></article>`;
+    if (grid) grid.innerHTML = `<article class="card finance-kpi"><small>Meta</small><b>${window.DASHBOARD_SHOW_META !== false ? cardMM(budget) : '-'}</b></article><article class="card finance-kpi"><small>Real+FCST</small><b>${cardMM(real)}</b></article><article class="card finance-kpi"><small>Real x Meta</small>${window.DASHBOARD_SHOW_META !== false ? `<b style="color:${gapMeta < 0 ? 'var(--claro)' : '#530b03'}">${cardMM(gapMeta)}</b>` : '<b>-</b>'}</article><article class="card finance-kpi" title="FCST do mês atual x FCST do mês anterior (em definição)"><small>FCST x FCST (mês atual x mês anterior)</small><b>-</b></article><article class="card finance-kpi"><small>Saving Opex</small><b>${cardMM(opex)}</b></article><article class="card finance-kpi"><small>Saving Capex</small><b>${cardMM(capex)}</b></article><article class="card finance-kpi"><small>YTD (Year To Date)</small><b>${ytd === null ? '-' : cardMM(ytd)}</b></article><article class="card finance-kpi"><small>YTG (Year To Go)</small><b>${ytg === null ? '-' : cardMM(ytg)}</b></article>`;
     state.finProjects = projects;
     const card = $('#financeiro .line-chart');
     if (card) {
@@ -1332,7 +1335,7 @@ window.DASHBOARD_SHOW_META = true;
       <section class="detail-grid">${dateCard('Início', project.inicio, project.inicioAnotacao)}${dateCard('Término', project.termino, project.terminoAnotacao)}<article class="card detail"><small>Ponto focal</small><b title="${esc(project.pontoFocal)}">${esc(compact(project.pontoFocal || 'Não informado', 25))}</b></article><article class="card detail"><small>Focal Acompanhamento</small><b title="${esc(project.pmo)}">${esc(compact(project.pmo || 'Não informado', 25))}</b></article></section>
       <section class="detail-grid"><article class="card detail"><small>Saving Opex 12M</small><b>${cardMM(savingField(project, 'opex12M'))}</b></article><article class="card detail"><small>Saving Capex 12M</small><b>${cardMM(savingField(project, 'capex12M'))}</b></article><article class="card detail"><small>Saving total 12M</small><b>${cardMM(savingField(project, 'total12M'))}</b></article><article class="card detail"><small>Saving 2026</small><b>${cardMM(savingField(project, 'total2026'))}</b></article></section>
       <section class="section two-col"><article class="card text-card scroll-card"><div class="chart-title">Escopo do projeto</div><p class="scroll-content">${esc(project.escopo || 'Escopo não preenchido no arquivo de origem.')}</p></article><article class="card text-card scroll-card"><div class="chart-title">Principais entregáveis</div><ul class="checklist scroll-content">${deliverables.length ? deliverables.map(item => `<li>${esc(item)}</li>`).join('') : '<li>Entregáveis não preenchidos no arquivo de origem.</li>'}</ul></article></section>
-      <section class="section"><div class="section-head"><div><h2>Cronograma do projeto</h2><p>Alternância entre visão executiva e detalhada.</p></div></div><div class="tabs"><button class="tab ${state.scheduleMode === 'macro' ? 'active' : ''}" type="button" ${scheduleSummaryAttr(project, 'macro', 'Resumo do macrocronograma')} onclick="switchSchedule('macro')">Macrocronograma</button>${canOpenDetailed(project) ? `<button class="tab ${state.scheduleMode === 'detalhado' ? 'active' : ''}" type="button" ${scheduleSummaryAttr(project, 'detalhado', 'Resumo do cronograma detalhado')} onclick="switchSchedule('detalhado')">Cronograma detalhado</button>` : `<button class="tab tab-locked" type="button" disabled title="Cronograma detalhado disponível apenas para projetos da gerência de Transportes">🔒 Cronograma detalhado</button>`}</div><article class="card roadmap-card" id="projectSchedule">${scheduleCard(project, state.scheduleMode)}</article></section>
+      <section class="section"><div class="section-head"><div><h2>Cronograma do projeto</h2><p>Alternância entre visão executiva e detalhada.</p></div></div><div class="tabs"><button class="tab ${state.scheduleMode === 'macro' ? 'active' : ''}" type="button" ${scheduleSummaryAttr(project, 'macro', 'Resumo do Macro Cronograma')} onclick="switchSchedule('macro')">Macro Cronograma</button>${canOpenDetailed(project) ? `<button class="tab ${state.scheduleMode === 'detalhado' ? 'active' : ''}" type="button" ${scheduleSummaryAttr(project, 'detalhado', 'Resumo do cronograma detalhado')} onclick="switchSchedule('detalhado')">Cronograma detalhado</button>` : `<button class="tab tab-locked" type="button" disabled title="Cronograma detalhado disponível apenas para projetos da gerência de Transportes">🔒 Cronograma detalhado</button>`}</div><article class="card roadmap-card" id="projectSchedule">${scheduleCard(project, state.scheduleMode)}</article></section>
       <section class="section two-col">${isQualitative(project) ? qualitativeProgressCard(project) : `<article class="card line-chart project-finance-chart"><div class="chart-title">Desempenho financeiro do projeto</div><div class="chart-sub">${esc(projectFinance.sub)}</div>${projectFinance.body}</article>`}<article class="card timeline"><div class="chart-title" style="margin-bottom:18px">Histórico de atualizações</div>${projectRiskNote(project) ? `<div class="timeline-risk"><b>⚠ Risco</b><p>${esc(projectRiskNote(project))}</p></div>` : ''}${timeline.length ? timeline.map(item => `<div class="time-item"><div class="time-date">${shortDate(item.data)}</div><div class="time-line"></div><div class="time-copy"><b>Atualização registrada</b><p>${esc(item.detalhe)}</p></div></div>`).join('') : '<div class="empty-state">Sem atualizações registradas no Status do Projeto.</div>'}</article></section>`;
   }
 
