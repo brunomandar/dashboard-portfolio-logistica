@@ -5,7 +5,7 @@
   "area": "Transportes",
   "pontoFocal": "Helder Silva",
   "inicio": "2026-03-01",
-  "termino": "2026-08-01",
+  "termino": "2026-08-21",
   "inicioAnotacao": "",
   "terminoAnotacao": "",
   "inicioCaptura": "",
@@ -39,7 +39,7 @@
       "atividade": "Alinhamento e desenho do fluxo fim a fim",
       "responsavel": "Bruno Mandar Silva",
       "status": 5,
-      "inicio": "2026-04-29",
+      "inicio": "2026-04-01",
       "fim": "2026-05-13",
       "anotacao": ""
     },
@@ -47,7 +47,7 @@
       "numero": "2",
       "atividade": "Preparação de acessos, usuários e protocolo",
       "responsavel": "Bruno Mandar Silva / Leandro Carlos",
-      "status": 0,
+      "status": 4,
       "inicio": "2026-05-13",
       "fim": "2026-05-25",
       "anotacao": ""
@@ -57,7 +57,7 @@
       "atividade": "Demonstração e validação inicial SOL–TMS",
       "responsavel": "TCIA / Catalde / Transportes",
       "status": 5,
-      "inicio": "2026-06-02",
+      "inicio": "2026-05-26",
       "fim": "2026-06-09",
       "anotacao": ""
     },
@@ -67,7 +67,7 @@
       "responsavel": "Coordenação / Gerência de Transportes",
       "status": 5,
       "inicio": "2026-06-11",
-      "fim": "2026-08-13",
+      "fim": "2026-06-21",
       "anotacao": ""
     },
     {
@@ -75,8 +75,8 @@
       "atividade": "Absorção pela Torre e congelamento da demanda",
       "responsavel": "A confirmar",
       "status": 5,
-      "inicio": "2026-08-13",
-      "fim": "2026-08-21",
+      "inicio": "2026-06-22",
+      "fim": "2026-07-02",
       "anotacao": ""
     },
     {
@@ -84,35 +84,35 @@
       "atividade": "Integração WhatsApp com CRO",
       "responsavel": "TCIA / Wagner / Karolina",
       "status": 5,
-      "inicio": "2026-07-06",
-      "fim": "2026-09-02",
+      "inicio": "2026-07-03",
+      "fim": "2026-07-10",
       "anotacao": ""
     },
     {
       "numero": "7",
       "atividade": "Homologação do WhatsApp",
       "responsavel": "Wagner / Karolina / Fabiana / TCIA",
-      "status": 1,
-      "inicio": "2026-08-03",
-      "fim": "2026-10-30",
+      "status": 4,
+      "inicio": "2026-07-11",
+      "fim": "2026-07-19",
       "anotacao": ""
     },
     {
       "numero": "8",
       "atividade": "Melhorias de layout e respostas do WhatsApp",
       "responsavel": "Wagner / Karolina / TCIA",
-      "status": 1,
-      "inicio": "2026-09-01",
-      "fim": "2026-10-30",
+      "status": 4,
+      "inicio": "2026-07-21",
+      "fim": "2026-08-05",
       "anotacao": ""
     },
     {
       "numero": "9",
       "atividade": "Backlog complementar de ocorrências",
       "responsavel": "TCIA / Equipe Transportes",
-      "status": 0,
-      "inicio": "2026-10-01",
-      "fim": "2026-12-30",
+      "status": 4,
+      "inicio": "2026-08-06",
+      "fim": "2026-08-21",
       "anotacao": ""
     }
   ],
@@ -3078,6 +3078,6 @@
   "fonte": {
     "arquivo": "LOG-049 - Whatsapp Transportador.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-049%20-%20Whatsapp%20Transportador.xlsx?web=1",
-    "extraidoEm": "2026-11-23T13:40:46-03:00"
+    "extraidoEm": "2026-11-23T18:16:44-03:00"
   }
 }

@@ -4,8 +4,8 @@
   "marcaDgpIcg": "",
   "area": "Int. Logística",
   "pontoFocal": "Ingrid Alcici",
-  "inicio": "2026-01-01",
-  "termino": "2026-12-31",
+  "inicio": "2026-04-01",
+  "termino": "2026-08-28",
   "inicioAnotacao": "",
   "terminoAnotacao": "",
   "inicioCaptura": "",
@@ -38,8 +38,8 @@
       "atividade": "Alinhamento de comunicação e definição de escopo",
       "responsavel": "A confirmar",
       "status": "A confirmar",
-      "inicio": "2026-04-24",
-      "fim": "2026-05-13",
+      "inicio": "2026-04-01",
+      "fim": "2026-04-28",
       "anotacao": ""
     },
     {
@@ -48,7 +48,7 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-05-07",
-      "fim": "2026-05-11",
+      "fim": "2026-05-18",
       "anotacao": ""
     },
     {
@@ -65,8 +65,8 @@
       "atividade": "Procuração ao Catalão",
       "responsavel": "A confirmar",
       "status": "A confirmar",
-      "inicio": "2026-06-23",
-      "fim": "2026-07-29",
+      "inicio": "2026-06-13",
+      "fim": "2026-07-24",
       "anotacao": ""
     },
     {
@@ -75,7 +75,7 @@
       "responsavel": "Fiscalização",
       "status": "A confirmar",
       "inicio": "2026-07-29",
-      "fim": "2026-08-28",
+      "fim": "2026-08-11",
       "anotacao": ""
     },
     {
@@ -83,8 +83,8 @@
       "atividade": "Adequação ao novo fluxo DUIMP",
       "responsavel": "A confirmar",
       "status": "A confirmar",
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-08-12",
+      "fim": "2026-08-21",
       "anotacao": ""
     },
     {
@@ -92,8 +92,8 @@
       "atividade": "Integração com o sistema Fenícia",
       "responsavel": "A confirmar",
       "status": "A confirmar",
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-08-13",
+      "fim": "2026-08-25",
       "anotacao": ""
     },
     {
@@ -101,7 +101,7 @@
       "atividade": "Encerramento do projeto",
       "responsavel": "Ingrid Alcici",
       "status": "Concluído",
-      "inicio": "2026-08-28",
+      "inicio": "2026-08-26",
       "fim": "2026-08-28",
       "anotacao": ""
     },
@@ -283,8 +283,8 @@
       "atividade": "Alinhamento de comunicação e definição de escopo",
       "responsavel": "A confirmar",
       "status": "A confirmar",
-      "inicio": "2026-04-24",
-      "fim": "2026-05-13",
+      "inicio": "2026-04-01",
+      "fim": "2026-05-12",
       "anotacao": ""
     },
     {
@@ -292,8 +292,8 @@
       "atividade": "Alinhar comunicação do Produto com Edgar e Devanil",
       "responsavel": "A confirmar",
       "status": "A confirmar",
-      "inicio": "2026-04-24",
-      "fim": "2026-05-11",
+      "inicio": "2026-04-01",
+      "fim": "2026-04-28",
       "anotacao": ""
     },
     {
@@ -301,8 +301,8 @@
       "atividade": "Registrar resumo, objetivos, entregas, restrições e premissas do projeto",
       "responsavel": "A confirmar",
       "status": "Concluído",
-      "inicio": "2026-05-13",
-      "fim": "2026-05-13",
+      "inicio": "2026-05-02",
+      "fim": "2026-05-12",
       "anotacao": ""
     },
     {
@@ -311,7 +311,7 @@
       "responsavel": "A confirmar",
       "status": "A confirmar",
       "inicio": "2026-05-07",
-      "fim": "2026-05-11",
+      "fim": "2026-05-18",
       "anotacao": ""
     },
     {
@@ -346,8 +346,8 @@
       "atividade": "Procuração ao Catalão",
       "responsavel": "A confirmar",
       "status": "A confirmar",
-      "inicio": "2026-06-23",
-      "fim": "2026-07-29",
+      "inicio": "2026-06-13",
+      "fim": "2026-07-24",
       "anotacao": ""
     },
     {
@@ -355,8 +355,8 @@
       "atividade": "Validar a procuração a ser submetida ao Catalão",
       "responsavel": "A confirmar",
       "status": "A confirmar",
-      "inicio": "2026-06-23",
-      "fim": "2026-07-17",
+      "inicio": "2026-06-13",
+      "fim": "2026-07-08",
       "anotacao": ""
     },
     {
@@ -364,8 +364,8 @@
       "atividade": "Tratar a não aprovação da procuração pelo Catalão com apoio da área fiscal",
       "responsavel": "Michele",
       "status": "A confirmar",
-      "inicio": "2026-07-17",
-      "fim": "2026-07-29",
+      "inicio": "2026-07-09",
+      "fim": "2026-07-27",
       "anotacao": ""
     },
     {
@@ -374,7 +374,7 @@
       "responsavel": "Fiscalização",
       "status": "A confirmar",
       "inicio": "2026-07-29",
-      "fim": "2026-08-28",
+      "fim": "2026-08-11",
       "anotacao": ""
     },
     {
@@ -382,8 +382,8 @@
       "atividade": "Adequação ao novo fluxo DUIMP",
       "responsavel": "A confirmar",
       "status": "A confirmar",
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-08-12",
+      "fim": "2026-08-21",
       "anotacao": ""
     },
     {
@@ -391,8 +391,8 @@
       "atividade": "Integração com o sistema Fenícia",
       "responsavel": "A confirmar",
       "status": "A confirmar",
-      "inicio": "",
-      "fim": "",
+      "inicio": "2026-08-13",
+      "fim": "2026-08-25",
       "anotacao": ""
     },
     {
@@ -400,7 +400,7 @@
       "atividade": "Encerramento do projeto – conclusão informada pela Ingrid",
       "responsavel": "Ingrid Alcici",
       "status": "Concluído",
-      "inicio": "2026-08-28",
+      "inicio": "2026-08-26",
       "fim": "2026-08-28",
       "anotacao": ""
     }
@@ -3005,6 +3005,6 @@
   "fonte": {
     "arquivo": "LOG-045 - DUIMP – COMEX (Acompanhamento RFP).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-045%20-%20DUIMP%20%E2%80%93%20COMEX%20%28Acompanhamento%20RFP%29.xlsx?web=1",
-    "extraidoEm": "2026-11-23T13:40:39-03:00"
+    "extraidoEm": "2026-11-23T18:16:38-03:00"
   }
 }

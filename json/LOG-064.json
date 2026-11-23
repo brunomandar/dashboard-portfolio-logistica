@@ -11,9 +11,9 @@
   "inicioCaptura": "",
   "iniciativa": "Op. Transporte",
   "pmo": "Edinalva",
-  "risco": "Alto",
+  "risco": "Médio",
   "status": "L2",
-  "situacao": "Em risco",
+  "situacao": "Atenção",
   "prioridade": "P1",
   "tipoAgenda": "Geral",
   "ganhoProjeto": "Qualitativo",
@@ -61,7 +61,7 @@
       "numero": "03.",
       "atividade": "Fluxograma TO BE",
       "responsavel": "Emerson/Adão (E4U)",
-      "status": 2,
+      "status": 4,
       "inicio": "2026-10-13",
       "fim": "2026-10-15",
       "anotacao": ""
@@ -97,7 +97,7 @@
       "numero": "07.",
       "atividade": "Formalizar escopo  da solução.",
       "responsavel": "Edinalva",
-      "status": 2,
+      "status": 4,
       "inicio": "2026-11-16",
       "fim": "2026-11-19",
       "anotacao": ""
@@ -462,12 +462,12 @@
       "detalhe": "Realizada reunião de alinhamento, com definição da retirada do BI do escopo do projeto. A importação dos relatórios para o sistema de Rastreabilidade utilizará licença fornecida pela Claro, sem custo adicional de licenciamento. A previsão de entrega é de 60 dias úteis. Como próximo passo, será agendada reunião com Michelle para apresentação da estimativa de custos e posterior inclusão do desenvolvimento no orçamento da E4U."
     }
   ],
-  "statusProjeto": "17/11/2026 - Definida a retirada do BI do escopo. A importação dos relatórios no Rastreabilidade utilizará licença fornecida pela Claro, sem custo adicional. Prazo estimado de entrega: 60 dias úteis. Próximo passo: alinhamento com Michelle para apresentação dos custos e inclusão do desenvolvimento no orçamento da E4U.A entrega ocorrerá em ambiente de teste do novo sistema\n11/11/2026 Em fase de alinhamento dos requisitos do projeto, contemplando a revisão do cronograma de 8 semanas, definição do modelo de pagamento, validação do fluxo operacional e do escopo técnico, além da internalização dos relatórios de BI para suporte ao dashboard COMEX e inclusão da previsão de custos no backlog da solução. (Agendadpo\n23/10/26 - Solicitação de abertura de PPM 149837\n23/10/26 -Estimar o volume de horas necessário para compor o bolsão de horas a ser considerado na renovação do contrato.\n13/10/26 -Conclusão do mapeamento dos Requisitos funcionais/Time E4U iniciou o desenho da solução\n15/09/26 - Inserção da Integração SAP x Rastreabilidade na Agenda Prioritária de TI",
+  "statusProjeto": "Risco: A integração entre SAP e Rastreabilidade ainda depende da conclusão da análise de viabilidade técnica de TI, com SD em aberto para definição da solução.\n17/11/2026 - Definida a retirada do BI do escopo. A importação dos relatórios no Rastreabilidade utilizará licença fornecida pela Claro, sem custo adicional. Prazo estimado de entrega: 60 dias úteis. Próximo passo: alinhamento com Michelle para apresentação dos custos e inclusão do desenvolvimento no orçamento da E4U.A entrega ocorrerá em ambiente de teste do novo sistema\n11/11/2026 Em fase de alinhamento dos requisitos do projeto, contemplando a revisão do cronograma de 8 semanas, definição do modelo de pagamento, validação do fluxo operacional e do escopo técnico, além da internalização dos relatórios de BI para suporte ao dashboard COMEX e inclusão da previsão de custos no backlog da solução. (Agendadpo\n23/10/26 - Solicitação de abertura de PPM 149837\n23/10/26 -Estimar o volume de horas necessário para compor o bolsão de horas a ser considerado na renovação do contrato.\n13/10/26 -Conclusão do mapeamento dos Requisitos funcionais/Time E4U iniciou o desenho da solução\n15/09/26 - Inserção da Integração SAP x Rastreabilidade na Agenda Prioritária de TI",
   "financeiro": [],
   "fca": {},
   "fonte": {
     "arquivo": "LOG-064 - Rastreabilidade - COMEX.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-064%20-%20Rastreabilidade%20-%20COMEX.xlsx?web=1",
-    "extraidoEm": "2026-11-23T13:41:05-03:00"
+    "extraidoEm": "2026-11-23T18:17:04-03:00"
   }
 }

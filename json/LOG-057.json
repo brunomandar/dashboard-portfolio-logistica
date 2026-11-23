@@ -42,7 +42,7 @@
       "responsavel": "Ana Célia / Paulo Quinete / Karolina / Helder",
       "status": 4,
       "inicio": "2026-04-01",
-      "fim": "2026-04-27",
+      "fim": "2026-04-20",
       "anotacao": ""
     },
     {
@@ -51,16 +51,16 @@
       "responsavel": "Helder / Ingrid",
       "status": 4,
       "inicio": "2026-04-22",
-      "fim": "2026-04-27",
+      "fim": "2026-05-01",
       "anotacao": ""
     },
     {
       "numero": "03.",
       "atividade": "Aprovação da SD e cronograma de implantação (Tributário)",
       "responsavel": "Planejamento Tributário",
-      "status": 3,
-      "inicio": "2026-04-27",
-      "fim": "2026-05-04",
+      "status": 4,
+      "inicio": "2026-05-02",
+      "fim": "2026-05-31",
       "anotacao": ""
     },
     {
@@ -68,8 +68,8 @@
       "atividade": "Governança e acompanhamento do projeto",
       "responsavel": "A confirmar",
       "status": 4,
-      "inicio": "2026-04-29",
-      "fim": "2026-07-16",
+      "inicio": "2026-06-01",
+      "fim": "2026-06-23",
       "anotacao": ""
     },
     {
@@ -77,8 +77,8 @@
       "atividade": "Criação de CNPJs e centros (Telmex e Americel)",
       "responsavel": "Ana Célia / Daiana / Emerson Jacinto",
       "status": 4,
-      "inicio": "2026-04-27",
-      "fim": "2026-07-09",
+      "inicio": "2026-06-24",
+      "fim": "2026-07-10",
       "anotacao": ""
     },
     {
@@ -86,8 +86,8 @@
       "atividade": "Migração e go-live da Telmex",
       "responsavel": "A confirmar",
       "status": 4,
-      "inicio": "2026-06-30",
-      "fim": "2026-07-01",
+      "inicio": "2026-07-11",
+      "fim": "2026-07-21",
       "anotacao": ""
     },
     {
@@ -95,8 +95,8 @@
       "atividade": "Incorporação da Americel",
       "responsavel": "A confirmar",
       "status": 4,
-      "inicio": "2026-07-30",
-      "fim": "2026-08-04",
+      "inicio": "2026-07-22",
+      "fim": "2026-08-14",
       "anotacao": ""
     },
     {
@@ -104,8 +104,8 @@
       "atividade": "Acompanhamento pós-implantação (operação assistida)",
       "responsavel": "A confirmar",
       "status": 4,
-      "inicio": "2026-07-01",
-      "fim": "2026-09-22",
+      "inicio": "2026-08-15",
+      "fim": "2026-09-02",
       "anotacao": ""
     },
     {
@@ -113,7 +113,7 @@
       "atividade": "Encerramento do projeto",
       "responsavel": "A confirmar",
       "status": 4,
-      "inicio": "2026-09-22",
+      "inicio": "2026-09-03",
       "fim": "2026-09-22",
       "anotacao": ""
     },
@@ -3782,6 +3782,6 @@
   "fonte": {
     "arquivo": "LOG-057 - Incorporação TELMEX_AMERICEL.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-057%20-%20Incorpora%C3%A7%C3%A3o%20TELMEX_AMERICEL.xlsx?web=1",
-    "extraidoEm": "2026-11-23T13:40:55-03:00"
+    "extraidoEm": "2026-11-23T18:16:54-03:00"
   }
 }

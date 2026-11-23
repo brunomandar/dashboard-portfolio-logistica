@@ -66,7 +66,7 @@
     },
     {
       "numero": "04.",
-      "atividade": "Mitigação dos riscos relacionados à subcontratação de transportadoras",
+      "atividade": "AC 35079 Mitigação dos riscos relacionados à subcontratação de transportadoras",
       "responsavel": "",
       "status": 2,
       "inicio": "2026-11-01",
@@ -84,7 +84,7 @@
     },
     {
       "numero": "06.",
-      "atividade": "Cobrança da Verko e aplicação do programa GFT",
+      "atividade": "AC 35087 Cobrança da Verko e aplicação do programa GFT",
       "responsavel": "",
       "status": 2,
       "inicio": "2026-11-01",
@@ -93,7 +93,7 @@
     },
     {
       "numero": "07.",
-      "atividade": "Substituição da Verko e avaliação de permanência dos demais transportadores",
+      "atividade": "AC 35088 Substituição da Verko e avaliação de permanência dos demais transportadores",
       "responsavel": "",
       "status": 2,
       "inicio": "2026-11-01",
@@ -120,7 +120,7 @@
     },
     {
       "numero": "10.",
-      "atividade": "Criação de monitoramento das aprovações excepcionais (Chamado 45121)",
+      "atividade": "AC 35453 Criação de monitoramento das aprovações excepcionais (Chamado 45121)",
       "responsavel": "",
       "status": 2,
       "inicio": "2026-11-01",
@@ -129,7 +129,7 @@
     },
     {
       "numero": "11.",
-      "atividade": "Implantação da política de exclusão automática de usuários (Chamado 45122)",
+      "atividade": "AC 35082 Implantação da política de exclusão automática de usuários (Chamado 45122)",
       "responsavel": "",
       "status": 2,
       "inicio": "2026-11-01",
@@ -3243,6 +3243,6 @@
   "fonte": {
     "arquivo": "LOG-082 - Auditoria 2026.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-082%20-%20Auditoria%202026.xlsx?web=1",
-    "extraidoEm": "2026-11-23T13:41:42-03:00"
+    "extraidoEm": "2026-11-23T18:17:39-03:00"
   }
 }
