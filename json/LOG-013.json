@@ -5,15 +5,15 @@
   "area": "CDs",
   "pontoFocal": "Evandro Felix",
   "inicio": "2026-01-01",
-  "termino": "2026-09-30",
+  "termino": "2027-03-15",
   "inicioAnotacao": "",
   "terminoAnotacao": "",
   "inicioCaptura": "",
   "iniciativa": "Op. Logística",
   "pmo": "Bruno",
-  "risco": "Sim",
-  "status": "L0",
-  "situacao": "Planejado",
+  "risco": "Médio",
+  "status": "L3",
+  "situacao": "Atenção",
   "prioridade": "P1",
   "tipoAgenda": "Estratégica",
   "ganhoProjeto": "Qualitativo",
@@ -128,20 +128,20 @@
     },
     {
       "numero": "11.",
-      "atividade": "Conclusão e aceite do projeto",
-      "responsavel": "Time CD",
-      "status": 4,
-      "inicio": "2026-12-16",
-      "fim": "2026-12-17",
+      "atividade": "Dahsboard IN para automatizar a Blacklist mensal",
+      "responsavel": "Serviços Técnicos",
+      "status": 0,
+      "inicio": "2026-10-01",
+      "fim": "2027-03-30",
       "anotacao": ""
     },
     {
       "numero": "12.",
-      "atividade": "Dahsboard IN para automatizar a Blacklist mensal",
-      "responsavel": "Serviços Técnicos",
+      "atividade": "Conclusão e aceite do projeto",
+      "responsavel": "Time CD",
       "status": 0,
-      "inicio": "2026-09-01",
-      "fim": "2027-02-28",
+      "inicio": "2027-03-01",
+      "fim": "2027-03-15",
       "anotacao": ""
     },
     {
@@ -3188,6 +3188,6 @@
   "fonte": {
     "arquivo": "LOG-013 - Ciclo de Vida.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-013%20-%20Ciclo%20de%20Vida.xlsx?web=1",
-    "extraidoEm": "2026-11-19T18:32:30-03:00"
+    "extraidoEm": "2026-11-23T13:39:53-03:00"
   }
 }

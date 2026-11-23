@@ -39,19 +39,19 @@
     {
       "numero": "1",
       "atividade": "Planejamento e definição gerencial do escopo",
-      "responsavel": "Cleria Plaster",
-      "status": 0,
+      "responsavel": "Time CDs",
+      "status": 4,
       "inicio": "2026-04-01",
-      "fim": "",
+      "fim": "2026-05-10",
       "anotacao": ""
     },
     {
       "numero": "2",
       "atividade": "Pesquisa de mercado e validação técnica",
-      "responsavel": "Cleria Plaster",
-      "status": 1,
+      "responsavel": "Time CDs",
+      "status": 4,
       "inicio": "2026-05-15",
-      "fim": "",
+      "fim": "2026-06-20",
       "anotacao": ""
     },
     {
@@ -59,71 +59,71 @@
       "atividade": "Testes e contagens com drones - Campinas",
       "responsavel": "Cleria Plaster / Marinalva",
       "status": 1,
-      "inicio": "2026-05-15",
-      "fim": "",
+      "inicio": "2026-07-05",
+      "fim": "2026-07-30",
       "anotacao": ""
     },
     {
       "numero": "4",
       "atividade": "Contagens com drones - Palhoça",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CDs",
       "status": 1,
-      "inicio": "2026-08-28",
-      "fim": "",
+      "inicio": "2026-08-01",
+      "fim": "2026-08-30",
       "anotacao": ""
     },
     {
       "numero": "5",
       "atividade": "Retomada da frente RFID",
       "responsavel": "Cleria Plaster / Time de Processos",
-      "status": "",
-      "inicio": "2026-05-15",
-      "fim": "",
+      "status": 1,
+      "inicio": "2026-09-02",
+      "fim": "2026-09-25",
       "anotacao": ""
     },
     {
       "numero": "6",
       "atividade": "Solução com coletores MWS/TOTVS/Celistics",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CDs",
       "status": 1,
-      "inicio": "2026-08-28",
-      "fim": "",
+      "inicio": "2026-09-26",
+      "fim": "2026-10-19",
       "anotacao": ""
     },
     {
       "numero": "7",
       "atividade": "Processo de totalização de pallet",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CDs",
       "status": 5,
-      "inicio": "",
-      "fim": "2026-08-28",
+      "inicio": "2026-10-20",
+      "fim": "2026-10-30",
       "anotacao": ""
     },
     {
       "numero": "8",
       "atividade": "Inventário rotativo x anual (Móvel)",
-      "responsavel": "A confirmar",
+      "responsavel": "Time CDs",
       "status": 1,
-      "inicio": "2026-08-28",
-      "fim": "",
+      "inicio": "2026-11-01",
+      "fim": "2026-11-30",
       "anotacao": ""
     },
     {
       "numero": "9",
       "atividade": "Integração do inventário com HUB AMX",
-      "responsavel": "A confirmar",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "responsavel": "Time CDs",
+      "status": 0,
+      "inicio": "2026-12-02",
+      "fim": "2026-12-11",
       "anotacao": ""
     },
     {
       "numero": "10",
       "atividade": "Definição de KPIs de monitoramento",
-      "responsavel": "A confirmar",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "responsavel": "Time CDs",
+      "status": 0,
+      "inicio": "2026-12-12",
+      "fim": "2026-12-31",
       "anotacao": ""
     }
   ],
@@ -2972,6 +2972,6 @@
   "fonte": {
     "arquivo": "LOG-027 - Inv. Automatizado e Inv. Equipamentos.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-027%20-%20Inv.%20Automatizado%20e%20Inv.%20Equipamentos.xlsx?web=1",
-    "extraidoEm": "2026-11-19T18:32:49-03:00"
+    "extraidoEm": "2026-11-23T13:40:12-03:00"
   }
 }

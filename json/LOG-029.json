@@ -2,9 +2,9 @@
   "id": "LOG-029",
   "projeto": "Esteira da Reversa (operação, velocidade, qualidade)",
   "marcaDgpIcg": "",
-  "area": "Planejamento",
+  "area": "Plan. Massivo",
   "pontoFocal": "Ademilson Silva",
-  "inicio": "2026-02-01",
+  "inicio": "2026-04-01",
   "termino": "2026-12-31",
   "inicioAnotacao": "",
   "terminoAnotacao": "",
@@ -12,9 +12,9 @@
   "iniciativa": "Op. Logística",
   "pmo": "Bruno",
   "risco": "Médio",
-  "status": "L5",
-  "situacao": "Concluído",
-  "prioridade": "Concluído",
+  "status": "L4",
+  "situacao": "Atenção",
+  "prioridade": "P0",
   "tipoAgenda": "Estratégica",
   "ganhoProjeto": "Qualitativo",
   "tipos": [],
@@ -41,8 +41,8 @@
       "atividade": "Diagnóstico e mapeamento E2E da reversa",
       "responsavel": "Fabio Mattos",
       "status": 4,
-      "inicio": "2026-04-30",
-      "fim": "2026-05-30",
+      "inicio": "2026-04-01",
+      "fim": "2026-04-30",
       "anotacao": ""
     },
     {
@@ -59,7 +59,7 @@
       "atividade": "Viabilidade de laboratório de triagem (CD Jaboatão e Palhoça)",
       "responsavel": "Fabio Mattos",
       "status": 4,
-      "inicio": "2026-05-20",
+      "inicio": "2026-05-18",
       "fim": "2026-05-28",
       "anotacao": ""
     },
@@ -68,8 +68,8 @@
       "atividade": "Análise de malha e modais de transporte da reversa",
       "responsavel": "Fabio Mattos",
       "status": 4,
-      "inicio": "2026-03-01",
-      "fim": "2026-05-30",
+      "inicio": "2026-06-01",
+      "fim": "2026-06-30",
       "anotacao": ""
     },
     {
@@ -77,8 +77,8 @@
       "atividade": "Integração de sistemas TMS x Qualitor (Stefanini)",
       "responsavel": "Fabio Mattos",
       "status": 4,
-      "inicio": "2026-03-01",
-      "fim": "2026-08-30",
+      "inicio": "2026-07-02",
+      "fim": "2026-07-30",
       "anotacao": ""
     },
     {
@@ -86,8 +86,8 @@
       "atividade": "Plano de ação com squad",
       "responsavel": "Fabio Mattos",
       "status": 4,
-      "inicio": "2026-03-01",
-      "fim": "2026-11-30",
+      "inicio": "2026-08-03",
+      "fim": "2026-09-29",
       "anotacao": ""
     },
     {
@@ -95,7 +95,7 @@
       "atividade": "Gestão e acompanhamento do projeto",
       "responsavel": "Fabio Mattos",
       "status": 4,
-      "inicio": "2026-03-01",
+      "inicio": "2026-10-01",
       "fim": "2026-11-30",
       "anotacao": ""
     },
@@ -103,8 +103,8 @@
       "numero": "8",
       "atividade": "Medição de resultados e encerramento",
       "responsavel": "Fabio Mattos",
-      "status": 4,
-      "inicio": "2026-11-30",
+      "status": 1,
+      "inicio": "2026-12-02",
       "fim": "2026-12-31",
       "anotacao": ""
     }
@@ -2936,6 +2936,6 @@
   "fonte": {
     "arquivo": "LOG-029 - Esteira da Reversa (operação, velocidade, qualidade).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-029%20-%20Esteira%20da%20Reversa%20%28opera%C3%A7%C3%A3o%2C%20velocidade%2C%20qualidade%29.xlsx?web=1",
-    "extraidoEm": "2026-11-19T18:32:51-03:00"
+    "extraidoEm": "2026-11-23T13:40:14-03:00"
   }
 }

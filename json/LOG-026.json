@@ -12,7 +12,7 @@
   "iniciativa": "Op. Logística",
   "pmo": "Bruno",
   "risco": "Médio",
-  "status": "L0",
+  "status": "L2",
   "situacao": "Atenção",
   "prioridade": "P2",
   "tipoAgenda": "Estratégica",
@@ -37,82 +37,82 @@
     {
       "numero": "1",
       "atividade": "Análise documental e técnica (Fases 1 e 2)",
-      "responsavel": "A confirmar",
-      "status": "A confirmar",
-      "inicio": "",
-      "fim": "",
+      "responsavel": "Time Int.Logística",
+      "status": 4,
+      "inicio": "2026-03-01",
+      "fim": "2026-05-01",
       "anotacao": ""
     },
     {
       "numero": "2",
       "atividade": "Funding - FAPESP e alternativas",
-      "responsavel": "A confirmar",
-      "status": 1,
-      "inicio": "2026-06-08",
-      "fim": "2026-07-28",
+      "responsavel": "Time Int.Logística",
+      "status": 4,
+      "inicio": "2026-05-08",
+      "fim": "2026-06-28",
       "anotacao": ""
     },
     {
       "numero": "3",
       "atividade": "PoC e contrato - Usiminas",
-      "responsavel": "A confirmar",
-      "status": 3,
-      "inicio": "2026-07-20",
+      "responsavel": "Time Int.Logística",
+      "status": 4,
+      "inicio": "2026-06-20",
       "fim": "2026-07-20",
       "anotacao": ""
     },
     {
       "numero": "4",
       "atividade": "PoC - Gerdau",
-      "responsavel": "A confirmar",
+      "responsavel": "Time Int.Logística",
       "status": 3,
-      "inicio": "2026-08-30",
+      "inicio": "2026-08-01",
       "fim": "2026-08-30",
       "anotacao": ""
     },
     {
       "numero": "5",
       "atividade": "Proposta e aprovação - Ternium",
-      "responsavel": "A confirmar",
+      "responsavel": "Time Int.Logística / Compras",
       "status": 3,
-      "inicio": "2026-07-15",
-      "fim": "2026-07-15",
+      "inicio": "2026-09-01",
+      "fim": "2026-12-31",
       "anotacao": ""
     },
     {
       "numero": "6",
       "atividade": "Avaliar teste no CD de Campinas",
-      "responsavel": "A confirmar",
-      "status": 0,
-      "inicio": "",
-      "fim": "",
+      "responsavel": "Time Int.Logística / Time CD",
+      "status": 1,
+      "inicio": "2027-01-04",
+      "fim": "2027-01-20",
       "anotacao": ""
     },
     {
       "numero": "7",
       "atividade": "Desenvolvimento da plataforma (Planejamento, Data Hub, IA e Decisão)",
-      "responsavel": "A confirmar",
-      "status": "A confirmar",
-      "inicio": "",
-      "fim": "",
+      "responsavel": "Time Int.Logística",
+      "status": 0,
+      "inicio": "2027-01-25",
+      "fim": "2027-02-15",
       "anotacao": ""
     },
     {
       "numero": "8",
       "atividade": "Integração, testes e validação em ambiente real",
-      "responsavel": "A confirmar",
+      "responsavel": "Time Int.Logística",
       "status": 0,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2027-02-19",
+      "fim": "2027-03-16",
       "anotacao": ""
     },
     {
       "numero": "9",
       "atividade": "Preparação para escalabilidade (previsto Jun/27)",
-      "responsavel": "A confirmar",
+      "responsavel": "Time Int.Logística",
       "status": 0,
-      "inicio": "",
-      "fim": "",
+      "inicio": "2027-03-20",
+      "fim": "2027-06-01",
       "anotacao": ""
     }
   ],
@@ -121,7 +121,7 @@
       "numero": "1",
       "atividade": "Análise documental e técnica (Fases 1 e 2)",
       "responsavel": "A confirmar",
-      "status": "A confirmar",
+      "status": 4,
       "inicio": "",
       "fim": "",
       "anotacao": ""
@@ -139,7 +139,7 @@
       "numero": "1.2",
       "atividade": "Fase 2 - Análise técnica (em andamento no status de 23/06/2026; sem atualização posterior)",
       "responsavel": "A confirmar",
-      "status": "A confirmar",
+      "status": 4,
       "inicio": "",
       "fim": "",
       "anotacao": ""
@@ -238,7 +238,7 @@
       "numero": "4",
       "atividade": "PoC - Gerdau",
       "responsavel": "A confirmar",
-      "status": 3,
+      "status": 4,
       "inicio": "2026-08-30",
       "fim": "2026-08-30",
       "anotacao": ""
@@ -398,7 +398,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "03/10/26 - Em análise novas alternativas, pois o projeto não foi aprovado na FAPESP.\n22/09/26 - Ingrid sinalizou que não há nenhuma atualização por enquanto.\n21/08/26 - Prazo da PoC (Gerdau) reprogramado para 30/08.\n21/08/26 - Avaliação de teste no CD de Campinas definida como próximo passo.\n14/08/26 - Venda de R$ 400 mil realizada, com potencial de R$ 50 MM.\n03/07/26 - Previsto retorno do recurso FAPESP para 10/07.\n03/07/26 - Prevista proposta técnica e comercial da PoC (Ternium) para 15/07.\n03/07/26 - Prevista entrega (Usiminas) para 20/07.\n03/07/26 - Prevista conclusão da PoC (Gerdau) para 30/07.\n23/06/26 - Ingrid irá atualizar o Card com status report.\n08/06/26 - Solicitados atualização e detalhes do projeto à Ingrid, sem retorno.\n08/05/26 - Alinhamento da comunicação do Produto com Edgar e Devanil registrado como pendência (conferir andamento em 11/05).\n06/05/26 - Ingrid informou que atualizará o Planner com todos os seus projetos.",
+  "statusProjeto": "Risco: Dependencia de Investimento para criação do produto — decisão da Logística vinculada à definição de continuidade do produto (Planejamento, Data Hub, IA)\n23/11 - Cronograma revisado. Alternativas de funding seguem em avaliação, com PoC da Gerdau concluída e teste no CD de Campinas em análise. Próximas etapas serão replanejadas após definição do funding.\n23/11 - Entrega Usiminas atrasada (previsão inicial 20/07) - BeOn\n23/11 - Terminum atradasa (Previsão 15/07) - Beon\n03/10/26 - Em análise novas alternativas, pois o projeto não foi aprovado na FAPESP.\n22/09/26 - Ingrid sinalizou que não há nenhuma atualização por enquanto.\n21/08/26 - Prazo da PoC (Gerdau) reprogramado para 30/08.\n21/08/26 - Avaliação de teste no CD de Campinas definida como próximo passo.\n14/08/26 - Venda de R$ 400 mil realizada, com potencial de R$ 50 MM.\n03/07/26 - Previsto retorno do recurso FAPESP para 10/07.\n03/07/26 - Prevista proposta técnica e comercial da PoC (Ternium) para 15/07.\n03/07/26 - Prevista entrega (Usiminas) para 20/07.\n03/07/26 - Prevista conclusão da PoC (Gerdau) para 30/07.\n23/06/26 - Ingrid irá atualizar o Card com status report.\n08/06/26 - Solicitados atualização e detalhes do projeto à Ingrid, sem retorno.\n08/05/26 - Alinhamento da comunicação do Produto com Edgar e Devanil registrado como pendência (conferir andamento em 11/05).\n06/05/26 - Ingrid informou que atualizará o Planner com todos os seus projetos.",
   "financeiro": [
     {
       "id": "LOG-026",
@@ -2997,6 +2997,6 @@
   "fonte": {
     "arquivo": "LOG-026 - Torre de Comando (Gestor de Alertas Beon).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-026%20-%20Torre%20de%20Comando%20%28Gestor%20de%20Alertas%20Beon%29.xlsx?web=1",
-    "extraidoEm": "2026-11-19T18:32:47-03:00"
+    "extraidoEm": "2026-11-23T13:40:10-03:00"
   }
 }

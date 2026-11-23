@@ -5,15 +5,15 @@
   "area": "Estoques",
   "pontoFocal": "Gustavo Mendes",
   "inicio": "2026-01-01",
-  "termino": "2026-12-31",
+  "termino": "2027-03-15",
   "inicioAnotacao": "",
   "terminoAnotacao": "",
   "inicioCaptura": "",
   "iniciativa": "Op. Logística",
   "pmo": "Bruno",
-  "risco": "A validar",
+  "risco": "Alto",
   "status": "L3",
-  "situacao": "Em execução",
+  "situacao": "Em risco",
   "prioridade": "P1",
   "tipoAgenda": "Estratégica",
   "ganhoProjeto": "Qualitativo",
@@ -2962,6 +2962,6 @@
   "fonte": {
     "arquivo": "LOG-014 - RAI de Estoques.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-014%20-%20RAI%20de%20Estoques.xlsx?web=1",
-    "extraidoEm": "2026-11-19T18:32:32-03:00"
+    "extraidoEm": "2026-11-23T13:39:55-03:00"
   }
 }

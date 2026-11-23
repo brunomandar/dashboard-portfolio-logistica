@@ -2,7 +2,7 @@
   "id": "LOG-016",
   "projeto": "Calendarização, Roteirização e Capilaridade",
   "marcaDgpIcg": "",
-  "area": "Planejamento",
+  "area": "Plan. Massivo",
   "pontoFocal": "Jefferson Santana",
   "inicio": "2026-02-01",
   "termino": "2026-11-20",
@@ -11,9 +11,9 @@
   "inicioCaptura": "",
   "iniciativa": "Op. Logística",
   "pmo": "Bruno",
-  "risco": "Médio",
+  "risco": "Alto",
   "status": "L2",
-  "situacao": "Atenção",
+  "situacao": "Em risco",
   "prioridade": "P1",
   "tipoAgenda": "Estratégica",
   "ganhoProjeto": "Qualitativo",
@@ -112,20 +112,20 @@
     },
     {
       "numero": "9",
-      "atividade": "Conclusão e aceite do projeto",
+      "atividade": "Mensuração do retorno das melhorias aplicadas",
       "responsavel": "Time Planejamento",
-      "status": 0,
-      "inicio": "2026-11-25",
-      "fim": "2026-11-30",
+      "status": 1,
+      "inicio": "2026-05-19",
+      "fim": "2026-12-30",
       "anotacao": ""
     },
     {
       "numero": "10",
-      "atividade": "Mensuração do retorno das melhorias aplicadas",
+      "atividade": "Conclusão e aceite do projeto",
       "responsavel": "Time Planejamento",
-      "status": 1,
-      "inicio": "2026-06-14",
-      "fim": "2026-12-30",
+      "status": 0,
+      "inicio": "2026-12-15",
+      "fim": "2026-12-31",
       "anotacao": ""
     }
   ],
@@ -2947,6 +2947,6 @@
   "fonte": {
     "arquivo": "LOG-016 - Calendarização, Roteirização e Capilaridade.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-016%20-%20Calendariza%C3%A7%C3%A3o%2C%20Roteiriza%C3%A7%C3%A3o%20e%20Capilaridade.xlsx?web=1",
-    "extraidoEm": "2026-11-19T18:32:36-03:00"
+    "extraidoEm": "2026-11-23T13:39:59-03:00"
   }
 }

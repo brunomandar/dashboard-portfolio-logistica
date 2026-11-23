@@ -138,7 +138,7 @@
       "numero": "12.",
       "atividade": "Conclusão e aceite operacional do projeto",
       "responsavel": "",
-      "status": 2,
+      "status": 4,
       "inicio": "2026-11-30",
       "fim": "2026-12-31",
       "anotacao": ""
@@ -147,7 +147,7 @@
       "numero": "13.",
       "atividade": "Mensuração de Ganhos",
       "responsavel": "",
-      "status": 2,
+      "status": 4,
       "inicio": "2026-09-30",
       "fim": "2027-08-31",
       "anotacao": ""
@@ -670,6 +670,11 @@
   ],
   "historico": [
     {
+      "data": "2026-11-23",
+      "acoes": "Mensuração de ganhos",
+      "detalhe": "Projeto Unificação da Malha: possui meta de saving de R$ 2,82 milhões em 12 meses, desconsiderando a ação Quick Win (Expressa). Até outubro, o projeto apresenta saving acumulado de -R$ 221.746,19 em relação ao baseline e desvio de 3,4% em relação à meta, com saving realizado de -R$ 188.230,47."
+    },
+    {
       "data": "2025-11-17",
       "acoes": "Ajuste Operacional: Consolidação das Equipes e Recursos - Manaus",
       "detalhe": "Foi proposta a consolidação das equipes operacionais da Hexpress em Manaus em função da entrada do EAN e da unificação dos estoques, concentrando a operação na equipe 67199 – Hexpress AM D+1, passando de 4 para 6 motos. O objetivo é otimizar rotas e reduzir custos operacionais.\n\nDurante a análise, foi identificado que as motos das duas equipes possuem valores de remuneração diferentes. A transportadora informou que, para viabilizar o ajuste, seria necessário manter o valor das motos do Combo Multi, porém essa tabela ainda não está homologada pela área de Compras. Como alternativa, foi orientado seguir inicialmente com os valores praticados para o Single e, caso a Hexpress"
@@ -680,7 +685,7 @@
       "detalhe": "A readequação do quadro resultou na redução de 42 motos (19 em set/26 e 23 em out/26), superando as 33 previstas inicialmente. O ajuste foi viabilizado pela migração de parte das entregas da modalidade Expressa para D+1, gerando saving acumulado de R$ 184,4 mil até outubro e economia anualizada estimada em R$ 2,7 MM."
     }
   ],
-  "statusProjeto": "19/10/26 - Time Claro - Fim da 2ª Onda com a redução de 11 moto\n20/09/26 - Time Claro - Fim da 1ª Onda com a redução de 22 motos.\n11/09/26 - Unificação do SIMC NP em operação por Analitycs para equalizar SAP/ATLAS (Unificação de estoques).\n03/09/26 - RAMPUP por regional, definida com avaliação do Fabricio (Onda 1 - 22 motos até 20/09 / Onda 2 - 11 motos até 19/out)\n02/09/26 - Assinatura de contrato realizada.\n14/08/26 - 400k esse ano no BID.  Compra do plastico ficou para 2a quinzena de setembro.\n08/07/26 - Reunião realizada com Fabricio em 08/07 foi aprovado a proposta da Hexpress mediante unificação da malha e saving de 1.93MM com captura de 500k em 2026.\n12/06/26 - Compras irá entrar em contato com Hexpress para negociação.\n09/06/26 - Em renegociação com compras.\n22/05/26 - Valores finais em validação com time logística para aprovação em compras.\n15/05/26 - FCST ajustado pois ha dependencia de conclusão do BID.\n11/05/26 - SIMCARD e BID de transportes terão ajuste no FCST, pois não há BID finalizado.\n31/03/26 - WS1932943741  Avaliar propostas técnicas fornecedores Total Express ,C -Trends e MC Tech\n16/12/25 - WS193294374 Abertura de RFP para contratação de fornecedor para prestação de serviços de entrega de chips (SIM cards) em todo o território nacional – Claro.",
+  "statusProjeto": "23/11/26 - Projeto Unificação da Malha - Projeto tem como meta o saving de 2,82 em 12 meses desconsiderando Ação Quick Win (Expressa) saving acumulado até outubro de  221.746,19 .\n19/10/26 - Time Claro - Fim da 2ª Onda com a redução de 11 moto\n20/09/26 - Time Claro - Fim da 1ª Onda com a redução de 22 motos.\n11/09/26 - Unificação do SIMC NP em operação por Analitycs para equalizar SAP/ATLAS (Unificação de estoques).\n03/09/26 - RAMPUP por regional, definida com avaliação do Fabricio (Onda 1 - 22 motos até 20/09 / Onda 2 - 11 motos até 19/out)\n02/09/26 - Assinatura de contrato realizada.\n14/08/26 - 400k esse ano no BID.  Compra do plastico ficou para 2a quinzena de setembro.\n08/07/26 - Reunião realizada com Fabricio em 08/07 foi aprovado a proposta da Hexpress mediante unificação da malha e saving de 1.93MM com captura de 500k em 2026.\n12/06/26 - Compras irá entrar em contato com Hexpress para negociação.\n09/06/26 - Em renegociação com compras.\n22/05/26 - Valores finais em validação com time logística para aprovação em compras.\n15/05/26 - FCST ajustado pois ha dependencia de conclusão do BID.\n11/05/26 - SIMCARD e BID de transportes terão ajuste no FCST, pois não há BID finalizado.\n31/03/26 - WS1932943741  Avaliar propostas técnicas fornecedores Total Express ,C -Trends e MC Tech\n16/12/25 - WS193294374 Abertura de RFP para contratação de fornecedor para prestação de serviços de entrega de chips (SIM cards) em todo o território nacional – Claro.",
   "financeiro": [
     {
       "id": "LOG-009",
@@ -3279,6 +3284,6 @@
   "fonte": {
     "arquivo": "LOG-009 - Unificação da Malha (Single x CM).xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-009%20-%20Unifica%C3%A7%C3%A3o%20da%20Malha%20%28Single%20x%20CM%29.xlsx?web=1",
-    "extraidoEm": "2026-11-19T18:31:55-03:00"
+    "extraidoEm": "2026-11-23T13:39:22-03:00"
   }
 }
