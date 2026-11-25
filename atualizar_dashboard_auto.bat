@@ -1,19 +1,19 @@
-﻿@echo off
+@echo off
 setlocal EnableExtensions EnableDelayedExpansion
 chcp 65001 >nul
 rem ===================================================================
-rem  Atualizacao AUTOMATICA do Dashboard Portfolio Logistica - VERSAO 4
+rem  Atualizacao AUTOMATICA do Dashboard Portfolio Logistica - VERSAO 5
 rem  - Agendador de Tarefas: 15 em 15 min, 08h-18h (seg a sex)
 rem  - Teste manual em qualquer horario: atualizar_dashboard_auto.bat /forcar
-rem  - Envio principal: GitHub (origin)
-rem  - Espelho corporativo: GitLab (gitlab)
+rem  - Fonte central: GitLab corporativo (remoto "gitlab")
+rem  - GitHub (remoto "origin"): copia opcional, so quando a rede permitir
 rem  - Log: logs\auto_atualizacao.log
 rem ===================================================================
 cd /d "%~dp0"
 if not exist "logs" mkdir "logs"
 set "LOG=%~dp0logs\auto_atualizacao.log"
 set "LOCK=%~dp0logs\auto.lock"
-call :log "---- Chamada recebida (versao 4) %~1 ----"
+call :log "---- Chamada recebida (versao 5) %~1 ----"
 rem --- Janela de horario: 08:00 a 17:59 (ignorada com /forcar)
 set "HH=%time:~0,2%"
 set "HH=%HH: =0%"
@@ -55,31 +55,32 @@ set "PYTHONIOENCODING=utf-8"
 if errorlevel 1 ( call :log "AVISO: gerar_jsons.py terminou com erro. Veja as linhas acima." )
 if not exist "json\projects.index.js" ( call :log "ERRO: JSONs nao gerados. Nada foi enviado." & goto :fim )
 call :log "JSONs gerados."
-rem --- 2) Commit so se houver mudanca
+rem --- 2) Commit so se houver mudanca (sem mudanca, segue para enviar pendencias)
 git add -A >>"%LOG%" 2>&1
 git diff --cached --quiet
 if not errorlevel 1 (
-  call :log "Sem alteracoes nos dados. Nada a enviar."
-  goto :fim
+  call :log "Sem alteracoes novas nos dados. Verificando envios pendentes."
+) else (
+  git commit -m "Atualizacao automatica %date% %time:~0,5%" >>"%LOG%" 2>&1
+  if errorlevel 1 ( call :log "ERRO: commit nao foi criado. Nada foi enviado." & goto :fim )
 )
-git commit -m "Atualizacao automatica %date% %time:~0,5%" >>"%LOG%" 2>&1
-if errorlevel 1 ( call :log "ERRO: commit nao foi criado. Nada foi enviado." & goto :fim )
-rem --- 3) Sincroniza e envia ao GitHub (fluxo principal)
-git fetch origin >>"%LOG%" 2>&1
-if errorlevel 1 ( call :log "AVISO: sem conexao com o GitHub (rede?). Envio fica para a proxima rodada." & goto :fim )
-git merge origin/main -X ours --no-edit -m "Sincroniza com o GitHub" >>"%LOG%" 2>&1
-if errorlevel 1 ( git merge --abort >>"%LOG%" 2>&1 & call :log "ERRO no merge. Nada foi enviado." & goto :fim )
-git push origin HEAD:refs/heads/main >>"%LOG%" 2>&1
-if errorlevel 1 ( call :log "AVISO: push para o GitHub falhou. Tenta de novo na proxima rodada." & goto :fim )
-call :log "Dashboard atualizado e enviado ao GitHub."
-rem --- 4) Espelha o mesmo commit no GitLab corporativo
-call :log "Enviando espelho ao GitLab corporativo..."
+rem --- 3) GitLab corporativo = FONTE CENTRAL
+git fetch gitlab >>"%LOG%" 2>&1
+if errorlevel 1 ( call :log "ERRO: sem conexao com o GitLab. Envio fica para a proxima rodada." & goto :github )
+git merge gitlab/main -X ours --no-edit -m "Sincroniza com o GitLab" >>"%LOG%" 2>&1
+if errorlevel 1 ( git merge --abort >>"%LOG%" 2>&1 & call :log "ERRO no merge com o GitLab. Nada foi enviado ao GitLab." & goto :github )
 git push gitlab HEAD:refs/heads/main >>"%LOG%" 2>&1
-if errorlevel 1 (
-  call :log "AVISO: push para o GitLab falhou. GitHub/Cloudflare permanecem atualizados; nova tentativa na proxima rodada."
-  goto :fim
-)
-call :log "Espelho corporativo atualizado no GitLab."
+if errorlevel 1 ( call :log "ERRO: push para o GitLab falhou. Tenta de novo na proxima rodada." & goto :github )
+call :log "GitLab corporativo atualizado (fonte central)."
+:github
+rem --- 4) GitHub = copia OPCIONAL (bloqueado na rede Claro; funciona fora dela)
+git fetch origin >>"%LOG%" 2>&1
+if errorlevel 1 ( call :log "GitHub indisponivel nesta rede. Ignorado (esperado na rede Claro)." & goto :fim )
+git merge origin/main -X ours --no-edit -m "Sincroniza com o GitHub" >>"%LOG%" 2>&1
+if errorlevel 1 ( git merge --abort >>"%LOG%" 2>&1 & call :log "AVISO: merge com o GitHub falhou. GitHub nao atualizado." & goto :fim )
+git push origin HEAD:refs/heads/main >>"%LOG%" 2>&1
+if errorlevel 1 ( call :log "AVISO: push para o GitHub falhou." & goto :fim )
+call :log "Copia no GitHub tambem atualizada."
 :fim
 call :log "==== Fim ===="
 del "%LOCK%" >nul 2>&1

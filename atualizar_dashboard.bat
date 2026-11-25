@@ -1,4 +1,4 @@
-﻿@echo off
+@echo off
 chcp 65001 >nul
 setlocal EnableDelayedExpansion
 cd /d "%~dp0"
@@ -15,7 +15,7 @@ python -c "import openpyxl" >nul 2>&1 || python -m pip install --user openpyxl
 python gerar_jsons.py
 if errorlevel 1 (
   echo.
-  echo Geracao interrompida. Nada foi enviado ao GitHub ou GitLab.
+  echo Geracao interrompida. Nada foi enviado.
   pause & exit /b 1
 )
 echo.
@@ -31,46 +31,50 @@ if errorlevel 1 (
   )
 )
 if not defined GIT (
-  echo Git nao encontrado. Abra o GitHub Desktop e faca Commit + Push manualmente.
-  pause & exit /b 0
+  echo Git nao encontrado.
+  pause & exit /b 1
 )
 echo.
 echo ============================================================
-echo  3/3  Enviando para GitHub e GitLab corporativo
+echo  3/3  Enviando para o GitLab corporativo - fonte central
 echo ============================================================
-"%GIT%" pull --rebase --autostash
-if errorlevel 1 (
-  echo.
-  echo ERRO ao sincronizar com o GitHub. Nenhum envio foi realizado.
-  pause & exit /b 1
-)
 "%GIT%" add -A json MANIFESTO.txt
 "%GIT%" diff --cached --quiet
-if not errorlevel 1 (
-  echo Nenhuma alteracao nos dados. Nada para enviar.
-  pause & exit /b 0
-)
-"%GIT%" commit -m "Atualizacao de dados %date% %time:~0,5%"
 if errorlevel 1 (
-  echo.
-  echo ERRO ao criar o commit. Nada foi enviado.
+  "%GIT%" commit -m "Atualizacao de dados %date% %time:~0,5%"
+  if errorlevel 1 (
+    echo ERRO ao criar o commit. Nada foi enviado.
+    pause & exit /b 1
+  )
+) else (
+  echo Nenhuma alteracao nova nos dados. Verificando envios pendentes...
+)
+"%GIT%" fetch gitlab
+if errorlevel 1 (
+  echo ERRO: sem conexao com o GitLab corporativo. Verifique a rede.
   pause & exit /b 1
 )
-"%GIT%" push origin HEAD:refs/heads/main
+"%GIT%" merge gitlab/main -X ours --no-edit -m "Sincroniza com o GitLab"
 if errorlevel 1 (
-  echo.
-  echo ERRO no envio ao GitHub. Abra o GitHub Desktop e verifique o repositorio.
+  "%GIT%" merge --abort
+  echo ERRO ao sincronizar com o GitLab. Nada foi enviado.
   pause & exit /b 1
 )
-echo GitHub atualizado com sucesso.
 "%GIT%" push gitlab HEAD:refs/heads/main
 if errorlevel 1 (
-  echo.
-  echo AVISO: GitHub/Cloudflare foram atualizados, mas o espelho no GitLab falhou.
-  echo Verifique a rede corporativa, o token e o remoto gitlab.
+  echo ERRO no envio ao GitLab. Verifique a rede e o token.
   pause & exit /b 1
 )
 echo GitLab corporativo atualizado com sucesso.
 echo.
-echo Pronto! Aguarde 1 a 2 minutos e clique em "Atualizar dados" no dashboard.
+echo Tentando copia opcional no GitHub...
+"%GIT%" fetch origin >nul 2>&1
+if errorlevel 1 (
+  echo GitHub indisponivel nesta rede. Ignorado.
+) else (
+  "%GIT%" merge origin/main -X ours --no-edit -m "Sincroniza com o GitHub"
+  "%GIT%" push origin HEAD:refs/heads/main
+)
+echo.
+echo Pronto.
 pause
