@@ -88,9 +88,9 @@
       "numero": "06.",
       "atividade": "Detalhar fluxo operacional e documentação técnica.",
       "responsavel": "Emerson (E4U)",
-      "status": 0,
-      "inicio": "",
-      "fim": "",
+      "status": 4,
+      "inicio": "2026-11-17",
+      "fim": "2026-11-23",
       "anotacao": ""
     },
     {
@@ -113,15 +113,24 @@
     },
     {
       "numero": "09.",
-      "atividade": "Abertura de requisição de compra.",
-      "responsavel": "Edinalva",
-      "status": 0,
-      "inicio": "",
-      "fim": "",
+      "atividade": "Abertura de requisição de compra. SR2484180420",
+      "responsavel": "Gustavo",
+      "status": 4,
+      "inicio": "2026-11-19",
+      "fim": "2026-11-24",
       "anotacao": ""
     },
     {
       "numero": "10.",
+      "atividade": "Aprovação do Orçamento em compras",
+      "responsavel": "Compras",
+      "status": 2,
+      "inicio": "2026-11-24",
+      "fim": "2026-12-14",
+      "anotacao": ""
+    },
+    {
+      "numero": "11.",
       "atividade": "Desenvolvimento",
       "responsavel": "Emerson (E4U)",
       "status": 0,
@@ -130,19 +139,10 @@
       "anotacao": ""
     },
     {
-      "numero": "11.",
+      "numero": "12.",
       "atividade": "Homologação",
       "responsavel": "Michelle/Luis",
       "status": 0,
-      "inicio": "",
-      "fim": "",
-      "anotacao": ""
-    },
-    {
-      "numero": "12.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
       "inicio": "",
       "fim": "",
       "anotacao": ""
@@ -358,11 +358,29 @@
     },
     {
       "numero": "1.10",
-      "atividade": "Fluxograma",
+      "atividade": "Mapeamento da previsão de custo",
       "responsavel": "Emerson/Adão (E4U)",
       "status": 4,
-      "inicio": "2026-10-13",
-      "fim": "2026-10-15",
+      "inicio": "2026-11-11",
+      "fim": "2026-11-17",
+      "anotacao": ""
+    },
+    {
+      "numero": "",
+      "atividade": "Revisão do Escopo Tecnico",
+      "responsavel": "Emerson/Edinalva",
+      "status": 4,
+      "inicio": "2026-11-17",
+      "fim": "2026-11-23",
+      "anotacao": ""
+    },
+    {
+      "numero": "",
+      "atividade": "Aprovação da SR para liberação da verba",
+      "responsavel": "Compras",
+      "status": 0,
+      "inicio": "",
+      "fim": "",
       "anotacao": ""
     },
     {
@@ -394,8 +412,8 @@
     },
     {
       "numero": "2.3",
-      "atividade": "API Portal Único - Permitir integração futura com Catálogo, LPCO e DUIMP",
-      "responsavel": "",
+      "atividade": "API Portal Único - Permitir integração futura com Catálogo, LPCO e DUIMP (Depende do Catalão)",
+      "responsavel": "Michelle/Fabricio",
       "status": 0,
       "inicio": "",
       "fim": "",
@@ -414,32 +432,22 @@
       "numero": "2.5",
       "atividade": "Abertura de PPM para definição da arquitetura da solução.",
       "responsavel": "Gustavo",
-      "status": 0,
+      "status": 4,
       "inicio": "2026-10-23",
-      "fim": "",
+      "fim": "2026-10-23",
       "anotacao": ""
     }
   ],
   "historico": [
     {
-      "data": "2026-09-15",
-      "acoes": "Automação dos Relatórios SAP",
-      "detalhe": "Demanda inclusa na lista de prioridades de TI"
+      "data": "2026-11-17",
+      "acoes": "Reunião de alinhamento",
+      "detalhe": "Realizada reunião de alinhamento, com definição da retirada do BI do escopo do projeto. A importação dos relatórios para o sistema de Rastreabilidade utilizará licença fornecida pela Claro, sem custo adicional de licenciamento. A previsão de entrega é de 60 dias úteis. Como próximo passo, será agendada reunião com Michelle para apresentação da estimativa de custos e posterior inclusão do desenvolvimento no orçamento da E4U."
     },
     {
-      "data": "2026-10-13",
-      "acoes": "Conclusão da definição do escopo com os requisitos funcionais",
-      "detalhe": "E4U irá fazer o desenho da solução e enviar fluxograma para validação da Michelle"
-    },
-    {
-      "data": "2026-10-14",
-      "acoes": "Reforma Tributária - Adequar cálculos e campos fiscais às novas regras",
-      "detalhe": "Testes permanecem previstos para iniciar em 16/10/2026.\nDúvidas da E4U foram respondidas.\nDefinidos os códigos fiscais que deverão ser utilizados no sistema.\nMapeadas as células da memória de cálculo DUIMP para integração.\nCampo IS será previsto, mas sem alimentação inicial pelo SAP."
-    },
-    {
-      "data": "2026-10-14",
-      "acoes": "API Portal Único - Permitir integração futura com Catálogo, LPCO e DUIMP",
-      "detalhe": "Aguardando retorno do representante legal para conclusão das etapas de habilitação e autorização de acessos."
+      "data": "2026-11-11",
+      "acoes": "Próximos Passos Definidos em Reunião",
+      "detalhe": "Foram alinhados os seguintes pontos:\nRevisar a viabilidade do cronograma proposto de 8 semanas, considerando possíveis impactos e dependências.\nValidar o modelo de pagamento, definindo se o faturamento ocorrerá por módulo entregue ou ao final do projeto.\nDetalhar o fluxo operacional, incluindo a definição da ferramenta de cotação a ser utilizada.\nRevisar e consolidar o escopo técnico, garantindo o atendimento de todos os requisitos e solicitações mapeados.\nRetirar do orçamento o custo da licença de BI e avaliar a internalização dos relatórios junto ao time do Lecione, com definição dos insumos necessários para construção do dashboard de acompanhamento do COMEX.\nIncluir no backlog o item de previsão de custos, para acompanhamento e gestão financeira da solução."
     },
     {
       "data": "2026-10-23",
@@ -452,14 +460,24 @@
       "detalhe": "Enviado documentação para Gustavo, concluir requisição"
     },
     {
-      "data": "2026-11-11",
-      "acoes": "Próximos Passos Definidos em Reunião",
-      "detalhe": "Foram alinhados os seguintes pontos:\nRevisar a viabilidade do cronograma proposto de 8 semanas, considerando possíveis impactos e dependências.\nValidar o modelo de pagamento, definindo se o faturamento ocorrerá por módulo entregue ou ao final do projeto.\nDetalhar o fluxo operacional, incluindo a definição da ferramenta de cotação a ser utilizada.\nRevisar e consolidar o escopo técnico, garantindo o atendimento de todos os requisitos e solicitações mapeados.\nRetirar do orçamento o custo da licença de BI e avaliar a internalização dos relatórios junto ao time do Lecione, com definição dos insumos necessários para construção do dashboard de acompanhamento do COMEX.\nIncluir no backlog o item de previsão de custos, para acompanhamento e gestão financeira da solução."
+      "data": "2026-10-14",
+      "acoes": "Reforma Tributária - Adequar cálculos e campos fiscais às novas regras",
+      "detalhe": "Testes permanecem previstos para iniciar em 16/10/2026.\nDúvidas da E4U foram respondidas.\nDefinidos os códigos fiscais que deverão ser utilizados no sistema.\nMapeadas as células da memória de cálculo DUIMP para integração.\nCampo IS será previsto, mas sem alimentação inicial pelo SAP."
     },
     {
-      "data": "2026-11-17",
-      "acoes": "Reunião de alinhamento",
-      "detalhe": "Realizada reunião de alinhamento, com definição da retirada do BI do escopo do projeto. A importação dos relatórios para o sistema de Rastreabilidade utilizará licença fornecida pela Claro, sem custo adicional de licenciamento. A previsão de entrega é de 60 dias úteis. Como próximo passo, será agendada reunião com Michelle para apresentação da estimativa de custos e posterior inclusão do desenvolvimento no orçamento da E4U."
+      "data": "2026-10-14",
+      "acoes": "API Portal Único - Permitir integração futura com Catálogo, LPCO e DUIMP",
+      "detalhe": "Aguardando retorno do representante legal para conclusão das etapas de habilitação e autorização de acessos."
+    },
+    {
+      "data": "2026-10-13",
+      "acoes": "Conclusão da definição do escopo com os requisitos funcionais",
+      "detalhe": "E4U irá fazer o desenho da solução e enviar fluxograma para validação da Michelle"
+    },
+    {
+      "data": "2026-09-15",
+      "acoes": "Automação dos Relatórios SAP",
+      "detalhe": "Demanda inclusa na lista de prioridades de TI"
     }
   ],
   "statusProjeto": "Risco: A integração entre SAP e Rastreabilidade ainda depende da conclusão da análise de viabilidade técnica de TI, com SD em aberto para definição da solução.\n17/11/2026 - Definida a retirada do BI do escopo. A importação dos relatórios no Rastreabilidade utilizará licença fornecida pela Claro, sem custo adicional. Prazo estimado de entrega: 60 dias úteis. Próximo passo: alinhamento com Michelle para apresentação dos custos e inclusão do desenvolvimento no orçamento da E4U.A entrega ocorrerá em ambiente de teste do novo sistema\n11/11/2026 Em fase de alinhamento dos requisitos do projeto, contemplando a revisão do cronograma de 8 semanas, definição do modelo de pagamento, validação do fluxo operacional e do escopo técnico, além da internalização dos relatórios de BI para suporte ao dashboard COMEX e inclusão da previsão de custos no backlog da solução. (Agendadpo\n23/10/26 - Solicitação de abertura de PPM 149837\n23/10/26 -Estimar o volume de horas necessário para compor o bolsão de horas a ser considerado na renovação do contrato.\n13/10/26 -Conclusão do mapeamento dos Requisitos funcionais/Time E4U iniciou o desenho da solução\n15/09/26 - Inserção da Integração SAP x Rastreabilidade na Agenda Prioritária de TI",
@@ -468,6 +486,6 @@
   "fonte": {
     "arquivo": "LOG-064 - Rastreabilidade - COMEX.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-064%20-%20Rastreabilidade%20-%20COMEX.xlsx?web=1",
-    "extraidoEm": "2026-11-23T18:17:04-03:00"
+    "extraidoEm": "2026-11-25T14:07:47-03:00"
   }
 }

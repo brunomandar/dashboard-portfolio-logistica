@@ -5,7 +5,7 @@
   "area": "Transportes",
   "pontoFocal": "Wagner Alves",
   "inicio": "2026-10-15",
-  "termino": "2027-01-15",
+  "termino": "2027-02-02",
   "inicioAnotacao": "",
   "terminoAnotacao": "",
   "inicioCaptura": "",
@@ -77,19 +77,19 @@
     {
       "numero": "05.",
       "atividade": "VALIDAÇÃO E CRIAÇAO CADASTROS SGT3 E AD",
-      "responsavel": "Logistica",
+      "responsavel": "Logistica/GA",
       "status": 0,
       "inicio": "2026-11-19",
-      "fim": "2026-12-22",
+      "fim": "2026-12-30",
       "anotacao": ""
     },
     {
       "numero": "06.",
-      "atividade": "",
-      "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "atividade": "HOMOLAGAÇÃO E ENTRADA EM PRODUÇÃO",
+      "responsavel": "?",
+      "status": 0,
+      "inicio": "2027-01-15",
+      "fim": "2027-02-02",
       "anotacao": ""
     },
     {
@@ -628,10 +628,10 @@
     {
       "numero": 5,
       "atividade": "VALIDAÇÃO E CRIAÇAO CADASTROS SGT3 E AD",
-      "responsavel": "Logistica",
+      "responsavel": "Logistica/GA",
       "status": 0,
       "inicio": "2026-11-19",
-      "fim": "2026-12-22",
+      "fim": "2026-12-30",
       "anotacao": ""
     },
     {
@@ -663,15 +663,87 @@
     },
     {
       "numero": "5.4",
-      "atividade": "Validar do TMS cadastrados no SGT3 e no AD",
-      "responsavel": "Logistisca",
+      "atividade": "Definir quantidades de perfis por usuário",
+      "responsavel": "Logistica",
       "status": 0,
       "inicio": "2026-12-17",
-      "fim": "2026-12-22",
+      "fim": "2026-12-21",
+      "anotacao": ""
+    },
+    {
+      "numero": "5.5",
+      "atividade": "Definir se as solcitaçõe de perfis serão enviados em um unico atributo ou vinculados a grupos de AD específicos",
+      "responsavel": "Logistica",
+      "status": 0,
+      "inicio": "2026-11-23",
+      "fim": "2026-12-16",
+      "anotacao": ""
+    },
+    {
+      "numero": "5.6",
+      "atividade": "Definiir estrutura de perfis que será adotada para o IGA SailPoint.",
+      "responsavel": "Logistica",
+      "status": 0,
+      "inicio": "2026-12-17",
+      "fim": "2026-12-30",
+      "anotacao": ""
+    },
+    {
+      "numero": "5.7",
+      "atividade": "Atualizar as bases autoritativas com todos os usuários ativos e comunicar  à equipe de Segurança da Informação",
+      "responsavel": "Logistica",
+      "status": 0,
+      "inicio": "2026-11-23",
+      "fim": "2026-12-18",
+      "anotacao": ""
+    },
+    {
+      "numero": "5.8",
+      "atividade": "Validar  critérios para atribuição de um ou mais perfis por usuário",
+      "responsavel": "Logistica",
+      "status": 0,
+      "inicio": "2026-11-23",
+      "fim": "2026-12-25",
+      "anotacao": ""
+    },
+    {
+      "numero": "5.9",
+      "atividade": "Criação e concessão do grupo de logins",
+      "responsavel": "GA",
+      "status": 0,
+      "inicio": "2026-12-22",
+      "fim": "2026-12-30",
       "anotacao": ""
     },
     {
       "numero": 6,
+      "atividade": "HOMOLAGAÇÃO E ENTRADA EM PRODUÇÃO",
+      "responsavel": "?",
+      "status": 0,
+      "inicio": "2027-01-15",
+      "fim": "2027-02-02",
+      "anotacao": ""
+    },
+    {
+      "numero": "6.1",
+      "atividade": "Testes ambiente homologação.",
+      "responsavel": "?",
+      "status": 0,
+      "inicio": "2027-01-15",
+      "fim": "2027-01-25",
+      "anotacao": ""
+    },
+    {
+      "numero": "6.2",
+      "atividade": "Valiação para ambiente produção",
+      "responsavel": "?",
+      "status": 0,
+      "inicio": "2027-01-26",
+      "fim": "2027-02-02",
+      "anotacao": ""
+    },
+    {
+      "numero": 14,
       "atividade": "",
       "responsavel": "",
       "status": "",
@@ -680,7 +752,7 @@
       "anotacao": ""
     },
     {
-      "numero": 7,
+      "numero": 15,
       "atividade": "",
       "responsavel": "",
       "status": "",
@@ -689,7 +761,7 @@
       "anotacao": ""
     },
     {
-      "numero": 8,
+      "numero": 16,
       "atividade": "",
       "responsavel": "",
       "status": "",
@@ -698,7 +770,7 @@
       "anotacao": ""
     },
     {
-      "numero": 9,
+      "numero": 17,
       "atividade": "",
       "responsavel": "",
       "status": "",
@@ -707,7 +779,7 @@
       "anotacao": ""
     },
     {
-      "numero": 10,
+      "numero": 18,
       "atividade": "",
       "responsavel": "",
       "status": "",
@@ -716,7 +788,394 @@
       "anotacao": ""
     },
     {
-      "numero": 11,
+      "numero": 19,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 20,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 21,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 22,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 23,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 24,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 25,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 26,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 27,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 28,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 29,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 31,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 32,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 33,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 34,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 35,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 36,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 37,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 38,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 39,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 40,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 41,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 42,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 43,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 44,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 45,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 46,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 47,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 48,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 49,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 50,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 51,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 52,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 53,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 54,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 55,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 56,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 57,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 58,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 59,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 60,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 61,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 62,
+      "atividade": "",
+      "responsavel": "",
+      "status": "",
+      "inicio": "",
+      "fim": "",
+      "anotacao": ""
+    },
+    {
+      "numero": 63,
       "atividade": "",
       "responsavel": "",
       "status": "",
@@ -785,9 +1244,59 @@
       "data": "2026-11-19",
       "acoes": "Ajuste cronogramas com novas atividades",
       "detalhe": "Reunião realizada com a Andreia para alinhamento e ajuste do cronograma. Durante a discussão, foram definidos dois pontos principais:\n1.Revisar a base do TMS e validar se os cadastros estão corretamente registrados no SGT3 e no AD.\n2. Criar um grupo no Teams com a participação da Catalde, permitindo acesso ao chat para agilizar o esclarecimento de dúvidas e os retornos relacionados às configurações do IGA e do PING."
+    },
+    {
+      "data": "2026-11-24",
+      "acoes": "API da aplicação TMS para consulta e gestão das informações cadastrais",
+      "detalhe": "Foi discutida a existência de uma API da aplicação TMS para consulta e gestão das informações cadastrais e dos perfis de acesso de colaboradores e terceiros, incluindo processos de atribuição, ativação e desativação de perfis."
+    },
+    {
+      "data": "2026-11-24",
+      "acoes": "API da aplicação TMS disponível para realizar a associação e a gestão centralizada de perfis para usuários corporativos",
+      "detalhe": "Foi esclarecido que atualmente não existe uma API da aplicação TMS disponível para realizar a associação e a gestão centralizada de perfis para usuários corporativos, incluindo processos de cadastro, ativação e desativação de perfis."
+    },
+    {
+      "data": "2026-11-24",
+      "acoes": "Estratégia de representação e consumo de perfis entre o PING Identity e o IGA SailPoint",
+      "detalhe": "Em função desse cenário, foi discutida a estratégia de representação e consumo de perfis entre o PING Identity e o IGA SailPoint, bem como os impactos dessa definição na governança e no provisionamento de acessos."
+    },
+    {
+      "data": "2026-11-24",
+      "acoes": "Necessidade de definição da configuração dos Claims no PING Identity",
+      "detalhe": "Felix apresentou a necessidade de definição da configuração dos Claims no PING Identity, avaliando as seguintes alternativas:\n* Utilização de um único atributo contendo múltiplos perfis separados por vírgula; ou\n* Utilização de perfis distintos, associados a grupos específicos do Active Directory (AD)."
+    },
+    {
+      "data": "2026-11-24",
+      "acoes": "Configuração dos Claims no PING Identity",
+      "detalhe": "Foi alinhado que, embora a definição esteja relacionada à configuração dos Claims no PING Identity, ela impacta diretamente o IGA SailPoint, influenciando a modelagem dos perfis, o catálogo de acessos, as regras de governança e os processos de provisionamento e gestão de identidades."
+    },
+    {
+      "data": "2026-11-24",
+      "acoes": "Quantidade de perfis atribuido por usuário",
+      "detalhe": "Foi informado que a definição sobre a quantidade de perfis atribuídos a cada usuário é uma responsabilidade da área de negócios, considerando as necessidades operacionais e as regras de negócio da aplicação."
+    },
+    {
+      "data": "2026-11-24",
+      "acoes": "Modelagem dos perfis",
+      "detalhe": "As definições relacionadas à modelagem dos perfis deverão ser realizadas em conjunto com a área de Controles Internos, garantindo aderência às regras de governança e segregação de funções."
+    },
+    {
+      "data": "2026-11-24",
+      "acoes": "Definições relacionadas aos Claims, perfis e grupos de Active Directory",
+      "detalhe": "Considerando a inexistência de uma API da aplicação TMS para gestão centralizada de perfis, as definições relacionadas aos Claims, perfis e grupos de Active Directory deverão ser consideradas nas integrações entre o PING Identity, o IGA SailPoint e a aplicação TMS, de forma a atender aos requisitos de gestão de identidades e governança de acessos."
+    },
+    {
+      "data": "2026-11-24",
+      "acoes": "Atualização das bases autoritativas da Claro",
+      "detalhe": "discutida a necessidade de atualização das bases autoritativas da Claro, incluindo todos os usuários ativos que deverão estar cadastrados no SGT3/AD, para viabilizar a correta gestão e governança das identidades."
+    },
+    {
+      "data": "2026-11-24",
+      "acoes": "Acessos a outras plataformas externas sistemas CATALDE",
+      "detalhe": "Necessidade de migração das solicitações de acessos realizados através do TMS para acesso a plataformas externas sejam realizadas diretamente nessas plataformas"
     }
   ],
-  "statusProjeto": "19/11/2026- Revisar os cadastros da base TMS e validar sua existência e conformidade no SGT3 e AD. Responsável: Logística.\n19/11/2026- Criar de um grupo no Teams com a participação da Catalde ao chat para agilizar retornos com dúvidas refernte as configurações do IGA e do PING- Responsavél: Logistica\n09/11/2026- Definido 02 níveis para aprovações no IGA. Incilmente será realizado manulmente pela equipe GA até aumatização do IGA. Pendente envio do escopo técnico dos perfis no TMS \n05/10/2026- Abertura chamados para Inclusão da aplicação no CMDB (inventário de ativos) da Claro: Resp- Wagner\n05/10/2026- Mapeamento de Perfis x Owners- Responsável: Rogério e time Catalde\n05/10/2026- Criação dos grupos de aprovadores\n05/10/2026- Definições para o Ambiente de Homologação do PING",
+  "statusProjeto": "24/11/2026-Solicitações de acessos a platafomas externas da CATALDE feitas através do TMS, devem ser migradas para a própria platoforma- responsavel: Catalde\n24/11/2026-  Definir a quantidasde de perfis que os usuário poderão ter acessos - Responsavel: Logistica\n24/11/2026- Definir  configuração dos Claims no PING Identity- responsavel: Catalde\n19/11/2026- Revisar os cadastros da base TMS e validar sua existência e conformidade no SGT3 e AD. Responsável: Logística.\n19/11/2026- Criar de um grupo no Teams com a participação da Catalde ao chat para agilizar retornos com dúvidas refernte as configurações do IGA e do PING- Responsavél: Logistica\n09/11/2026- Definido 02 níveis para aprovações no IGA. Incilmente será realizado manulmente pela equipe GA até aumatização do IGA. Pendente envio do escopo técnico dos perfis no TMS \n05/10/2026- Abertura chamados para Inclusão da aplicação no CMDB (inventário de ativos) da Claro: Resp- Wagner\n05/10/2026- Mapeamento de Perfis x Owners- Responsável: Rogério e time Catalde\n05/10/2026- Criação dos grupos de aprovadores\n05/10/2026- Definições para o Ambiente de Homologação do PING",
   "financeiro": [
     {
       "id": "LOG-079",
@@ -3386,6 +3895,6 @@
   "fonte": {
     "arquivo": "LOG-079 -TMS Criação do Segundo Fator de Autenticação.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-079%20-TMS%20Cria%C3%A7%C3%A3o%20do%20Segundo%20Fator%20de%20Autentica%C3%A7%C3%A3o.xlsx?web=1",
-    "extraidoEm": "2026-11-23T18:17:33-03:00"
+    "extraidoEm": "2026-11-25T14:08:16-03:00"
   }
 }

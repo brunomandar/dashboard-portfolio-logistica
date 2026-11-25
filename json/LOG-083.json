@@ -291,7 +291,7 @@
     {
       "numero": 2,
       "atividade": "Mapa completo da operação atual",
-      "responsavel": "",
+      "responsavel": "McKinsey",
       "status": 1,
       "inicio": "2026-11-10",
       "fim": "2026-12-21",
@@ -411,9 +411,19 @@
       "data": "2026-11-16",
       "acoes": "Acompanhar a definição de qual fórum de TI permanece (PMO/Vanessa e Luiz)\nAcompanhar o plano de detalhamento da implementação do PMO (semana de 23/11) e mapear os impactos na operação de Transportes/Logística",
       "detalhe": "Reunião de governança do Projeto Ruby, conduzida pela Vanessa Simões (McKinsey) Serão criados fóruns semanais com lideranças seniores, com início na semana de 23/11: Engenharia e Operações (segunda, 10h) e TI (segunda, 15h), cada um com temas específicos para que as lideranças direcionem pedidos de ajuda. Maria Júlia (Ger. Marketing e Produtos Financeiros) sugeriu incluir o Rogério (Minha Claro/autoatendimento) em Operação e Atendimento e questionou a necessidade de representante em Operações Técnicas e Redes. Vanessa e Luiz concordaram em consolidar em uma única agenda, fechando primeiro a lista de participantes e depois definindo qual fórum permanece; se ficar o novo, a Engenharia deve participar.Treinamento do Business Case (Luiza Cereda): apresentado o template, válido apenas para iniciativas de redução de custos, com impacto mensal separado entre Claro e Desktop, validação pelo financeiro e upload no Wave. Prazo para as principais iniciativas: esta semana; plano de detalhamento da implementação na semana de 23/11."
+    },
+    {
+      "data": "2026-11-24",
+      "acoes": "Estabelecer gobernança do time de desconexão com time desktop",
+      "detalhe": "Caros, boa tarde!\n\nTime DESKTOP, obrigado pela agenda e explicações.\n\nDe forma resumida, segue próximos passos:\nReunião de trabalho (2x por semana se possível) para imersão\nAvaliação de fluxos e indicadores (Processos)\nIndicadores - disponibilizar o que for possível anterior a agenda\nFluxos - disponibilizar para que possamos iniciar a análise de sinergia entre os processos\nLista de municípios (DDDs).\nDesktop está harmonizando, porém vamos tentar apoiar no que for possível dentro da estrutura de municípios atuais da CLARO\nSinergia de parceiros / fornecedores\nPontos de evolução das discussões\n\n@Geovane de Faria, pode me acionar para fazer essa ponte do projeto, ok?"
+    },
+    {
+      "data": "2026-11-24",
+      "acoes": "Criada agenda de trabalho recorrente as terças e quintas",
+      "detalhe": "Objetivo:\nEntendimento dos Fluxos\nAnálise de indicadores\nBase de clientes / Minicípios"
     }
   ],
-  "statusProjeto": "16/11/26 - Reunião de governança do Projeto Ruby (PMO/IMO): definidos fóruns semanais com lideranças a partir de 23/11. Apresentado o template de Business Case do PMO.\nPrazo do PMO: business cases das principais iniciativas até esta semana, plano de detalhamento da implementação na semana de 23/11. Transportes acompanha em paralelo para mapear impactos na operação.\n11/11/26 - Realizada agenda para elaboração dos cenários de transporte junto ao time McKinsey. Ficou pedente da Mckinsey enviar uma base dos fretes realizados dos últimos 3 meses para o opreação Desktop para o time de transportes Claro elaborarem uma simulação. Foco em entendermos as discrepancias de valores.\n10/11/26 - Visita do time Claro na Operação Desktop, Leandro e Ingrid representaram a área de transportes\n29/10/26 - Primeiro contato entre o time de logística transportes com a equip Desktop, colaboradores Thiago Morishita (Financeiro FP&A + Logística), Vinicius Jore Souza ( Ger. Loística e Frota) e o Mateus Henrique Stahanoy (torre de controle, Logística e frota) esses são os colaboradores Desktop que possuem sinergia com a nossa área",
+  "statusProjeto": "24/11/26 - Alinhamento Time Desconexão Claro e Desktop para entendimento de processos (As/Is)\n16/11/26 - Reunião de governança do Projeto Ruby (PMO/IMO): definidos fóruns semanais com lideranças a partir de 23/11. Apresentado o template de Business Case do PMO.\nPrazo do PMO: business cases das principais iniciativas até esta semana, plano de detalhamento da implementação na semana de 23/11. Transportes acompanha em paralelo para mapear impactos na operação.\n11/11/26 - Realizada agenda para elaboração dos cenários de transporte junto ao time McKinsey. Ficou pedente da Mckinsey enviar uma base dos fretes realizados dos últimos 3 meses para o opreação Desktop para o time de transportes Claro elaborarem uma simulação. Foco em entendermos as discrepancias de valores.\n10/11/26 - Visita do time Claro na Operação Desktop, Leandro e Ingrid representaram a área de transportes\n29/10/26 - Primeiro contato entre o time de logística transportes com a equip Desktop, colaboradores Thiago Morishita (Financeiro FP&A + Logística), Vinicius Jore Souza ( Ger. Loística e Frota) e o Mateus Henrique Stahanoy (torre de controle, Logística e frota) esses são os colaboradores Desktop que possuem sinergia com a nossa área",
   "financeiro": [
     {
       "id": "LOG-083",
@@ -3012,6 +3022,6 @@
   "fonte": {
     "arquivo": "LOG-083 - RUBY Absorção Operações Desktop.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-083%20-%20RUBY%20Absor%C3%A7%C3%A3o%20Opera%C3%A7%C3%B5es%20Desktop.xlsx?web=1",
-    "extraidoEm": "2026-11-23T18:17:41-03:00"
+    "extraidoEm": "2026-11-25T14:08:23-03:00"
   }
 }

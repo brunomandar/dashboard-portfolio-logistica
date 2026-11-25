@@ -4,8 +4,8 @@
   "marcaDgpIcg": "",
   "area": "Transportes",
   "pontoFocal": "Alex Lencione",
-  "inicio": "2026-11-01",
-  "termino": "2026-12-31",
+  "inicio": "2024-11-06",
+  "termino": "2027-06-30",
   "inicioAnotacao": "",
   "terminoAnotacao": "",
   "inicioCaptura": "",
@@ -57,128 +57,128 @@
     },
     {
       "numero": "03.",
-      "atividade": "Regularização do processo de contratação e aderência ao procedimento PR-CPS-001 (Compras)",
+      "atividade": "35079 - Criar um grupo de trabalho com as áreas de Compras e Gerenciamento de Risco para buscar uma solução para mitigar os riscos relacionados a subcontratação;",
       "responsavel": "",
       "status": 2,
-      "inicio": "2026-11-01",
-      "fim": "2026-12-31",
+      "inicio": "2026-08-31",
+      "fim": "2027-01-29",
       "anotacao": ""
     },
     {
       "numero": "04.",
-      "atividade": "AC 35079 Mitigação dos riscos relacionados à subcontratação de transportadoras",
+      "atividade": "35080 - Estabelecer modelo de governança, com definição de alçadas, critérios de decisão e controles para iniciativas que alterem o modelo de atendimento logístico",
       "responsavel": "",
       "status": 2,
-      "inicio": "2026-11-01",
-      "fim": "2026-12-31",
+      "inicio": "2026-07-22",
+      "fim": "2027-06-30",
       "anotacao": ""
     },
     {
       "numero": "05.",
-      "atividade": "Realização do BID Nacional e implementação de cláusulas de SLA, ônus e bônus",
+      "atividade": "35081 - Definir funcionalidades críticas no sistema TMS (exemplo. bloqueios de tabelas e aprovação de cotações diferentes da opção de menor custo ou prazo) e incluir o de acordo do Diretor para todos os chamados ao fornecedor Catalde administrador do sistema TMS",
       "responsavel": "",
       "status": 2,
-      "inicio": "2026-11-01",
-      "fim": "2026-12-31",
+      "inicio": "2026-07-22",
+      "fim": "2027-01-29",
       "anotacao": ""
     },
     {
       "numero": "06.",
-      "atividade": "AC 35087 Cobrança da Verko e aplicação do programa GFT",
+      "atividade": "35082 - Determinar um prazo de bloqueio automático de usuários com mais de 90 dias sem utilização/acesso a ferramenta, bem como na rescisão contratual de funcionários e transportadora",
       "responsavel": "",
-      "status": 2,
-      "inicio": "2026-11-01",
-      "fim": "2026-12-31",
+      "status": 5,
+      "inicio": "2026-08-31",
+      "fim": "2027-02-26",
       "anotacao": ""
     },
     {
       "numero": "07.",
-      "atividade": "AC 35088 Substituição da Verko e avaliação de permanência dos demais transportadores",
+      "atividade": "35083 - Criar relatório, com informações registradas no Sistema TMS referentes as aprovações de cotações realizadas por exceção, bem como, aquelas com percentual superior às tabelas vigentes, aprovadas pelo Gerente de Transportes, dando visibilidade periódica ao Diretor de Logística",
       "responsavel": "",
       "status": 2,
-      "inicio": "2026-11-01",
-      "fim": "2026-12-31",
+      "inicio": "2026-09-06",
+      "fim": "2027-01-29",
       "anotacao": ""
     },
     {
       "numero": "08.",
-      "atividade": "Implantação dos controles de cotação no TMS (Chamado 45029)",
+      "atividade": "35084 - Implementar o bloqueio da visualização do nome das transportadoras nas cotações realizadas via aplicativo, de forma alinhada ao modelo já adotado na plataforma WEB, onde essa informação não é disponibilizada",
       "responsavel": "",
       "status": 2,
-      "inicio": "2026-11-01",
-      "fim": "2026-12-31",
+      "inicio": "2026-07-22",
+      "fim": "2027-06-30",
       "anotacao": ""
     },
     {
       "numero": "09.",
-      "atividade": "Inclusão da categoria de veículos especiais no ICG",
+      "atividade": "35085 - Incluir no ICG uma medida comparativa com os valores referentes a categoria de veículos especiais no indicador de Canal Vermelho",
       "responsavel": "",
-      "status": 2,
-      "inicio": "2026-11-01",
-      "fim": "2026-12-31",
+      "status": 5,
+      "inicio": "2026-03-01",
+      "fim": "2026-04-30",
       "anotacao": ""
     },
     {
       "numero": "10.",
-      "atividade": "AC 35453 Criação de monitoramento das aprovações excepcionais (Chamado 45121)",
+      "atividade": "35086 - Avaliar a permanência das transportadoras Brasil Fleet, Prestex e REC, considerando sua performance após a conclusão da licitação (BID nacional) com novos transportadores;",
       "responsavel": "",
       "status": 2,
-      "inicio": "2026-11-01",
-      "fim": "2026-12-31",
+      "inicio": "2026-08-31",
+      "fim": "2027-01-29",
       "anotacao": ""
     },
     {
       "numero": "11.",
-      "atividade": "AC 35082 Implantação da política de exclusão automática de usuários (Chamado 45122)",
+      "atividade": "35087 - Efetivar a cobrança das multas por performance conforme estabelecido em contrato",
       "responsavel": "",
       "status": 2,
-      "inicio": "2026-11-01",
-      "fim": "2026-12-31",
+      "inicio": "2026-08-31",
+      "fim": "2027-01-29",
       "anotacao": ""
     },
     {
       "numero": "12.",
-      "atividade": "",
+      "atividade": "35088 - Substituir o transportador Verko, atualmente com 9% do volume",
       "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "status": 2,
+      "inicio": "2026-08-31",
+      "fim": "2027-01-29",
       "anotacao": ""
     },
     {
       "numero": "13.",
-      "atividade": "",
+      "atividade": "35089 - Realizar, via área de Compras, uma licitação nacional (BID) com a padronização das cláusulas contratuais (SLA, ônus, bônus) e sua aplicação para os casos em atraso sem justificativa.",
       "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "status": 2,
+      "inicio": "2026-07-23",
+      "fim": "2027-01-29",
       "anotacao": ""
     },
     {
       "numero": "14.",
-      "atividade": "",
+      "atividade": "35453 - Emissão de protocolos de frete TMS - Tabela fixa",
       "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "status": 2,
+      "inicio": "2026-07-22",
+      "fim": "2027-01-29",
       "anotacao": ""
     },
     {
       "numero": "15.",
-      "atividade": "",
+      "atividade": "31954 - Acompanhamento e monitoramento do cumprimento dos prazos de entregas pelas transportadoras (BID)",
       "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "status": 2,
+      "inicio": "2024-09-06",
+      "fim": "2027-01-29",
       "anotacao": ""
     },
     {
       "numero": "16.",
-      "atividade": "",
+      "atividade": "32072 - Cadastro das tabelas de preços, definição na escolha das transportadoras via sistema TMS e suas respectivas aprovações (BID)",
       "responsavel": "",
-      "status": "",
-      "inicio": "",
-      "fim": "",
+      "status": 2,
+      "inicio": "2024-09-06",
+      "fim": "2027-01-29",
       "anotacao": ""
     },
     {
@@ -186,8 +186,8 @@
       "atividade": "",
       "responsavel": "",
       "status": "",
-      "inicio": "",
-      "fim": "",
+      "inicio": "2024-09-06",
+      "fim": "2027-01-29",
       "anotacao": ""
     },
     {
@@ -644,7 +644,7 @@
     }
   ],
   "historico": [],
-  "statusProjeto": "19/11/2026 - Chamado 45122 - Usuários sem atividade\n19/11/2026 - Chamado 45121 - Envio de relatório de Cotação para Liderança Transportes\n19/11/2026 - Chamado 45029 -  inibição dos nomes dos transportadores na tela de cotação\n12/11/2026 - Criação do Cronograma executivo da Auditoria.\n13/04/2026 - Revisão dos Requisitos da Auditoria.",
+  "statusProjeto": "19/11/2026 - Reunião realizada com o Daniel Gonçalves, onde ficou registrado que iremos enviar o cronograma para ele até dia 25/11/2026\n19/11/2026 - Chamado 45122 - Usuários sem atividade  \n19/11/2026 - Chamado 45121 - Envio de relatório de Cotação para Liderança Transportes\n19/11/2026 - Chamado 45029 -  inibição dos nomes dos transportadores na tela de cotação\n12/11/2026 - Criação do Cronograma executivo da Auditoria.\n13/04/2026 - Revisão dos Requisitos da Auditoria.",
   "financeiro": [
     {
       "id": "LOG-082",
@@ -3243,6 +3243,6 @@
   "fonte": {
     "arquivo": "LOG-082 - Auditoria 2026.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-082%20-%20Auditoria%202026.xlsx?web=1",
-    "extraidoEm": "2026-11-23T18:17:39-03:00"
+    "extraidoEm": "2026-11-25T14:08:21-03:00"
   }
 }

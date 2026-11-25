@@ -1184,6 +1184,16 @@
   ],
   "historico": [
     {
+      "data": "2026-11-19",
+      "acoes": "Responder as perguntas que foram solicitadas",
+      "detalhe": "Falamos com o Giusepe do time de segurança preditiva e nos informou que não é possível seguir sem o NDA aprovado pelo jurídico por envolver dados do cliente\nTambém nos pediu algumas respostas para fornecer a ele sobre o tema abordado, o objetivo da POC e como iam ser tratados os dados, segue as perguntas que ele solicitou: \nObjetivo da POC/PILOTO\nPrazo para POC/PILOTO\nQuais soluçoes serão utilizadas\nO que a solução irá realizar\nHaverá algum integração com a Claro, como será feito?\nPossuir Contrato com fornecedor (avaliar com Juridico)\nNDA Assinado ( avaliar com Juridico)\nDocumentação técnica da Zello - uso de IA\nDesenho de arquitetura com o Fluxo da jornada do processo de logistica (desde a extração, compartilhamento e tratamento dos dados no destino final)"
+    },
+    {
+      "data": "2026-11-18",
+      "acoes": "Verificar se é possível seguir sem o fornecer dados sensíveis para ínico da POC",
+      "detalhe": "Tivemos uma reunião com a Denise Faldini para explicar os processos da claro referente ao NDA para o ínicio da POC, ela trouxe algumas sugestões para verificarmos se seria possível fazer a POC sem precisar fornecer os dados da Claro"
+    },
+    {
       "data": "2026-11-04",
       "acoes": "-",
       "detalhe": "Falei com a Paula Araujo sobre o NDA e ela me informou que o Guilherme Strazzer Novais que está tratando esse assunto, que até sexta dia 06/11 ele me da um retorno."
@@ -3793,6 +3803,6 @@
   "fonte": {
     "arquivo": "LOG-077 - POC Zello.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-077%20-%20POC%20Zello.xlsx?web=1",
-    "extraidoEm": "2026-11-23T18:17:29-03:00"
+    "extraidoEm": "2026-11-25T14:08:11-03:00"
   }
 }
