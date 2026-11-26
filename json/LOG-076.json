@@ -1185,6 +1185,11 @@
   ],
   "historico": [
     {
+      "data": "2026-11-25",
+      "acoes": "Gerar relatorio direto do TOA",
+      "detalhe": "Definido novo SLA para entrega\nVamos utilizar coloborador interno para gerar os relatorios extraidos do TOA"
+    },
+    {
       "data": "2026-11-18",
       "acoes": "Ajustar os relatórios da Postal para refletirem corretamente os números de ativação, improdutividade e cancelamentos.\nCriar e acompanhar o fluxo de reversa, incluindo status de retorno, trânsito e recebimento dos equipamentos cancelados.\nInvestigar e tratar os mais de 1.500 casos em auditoria de coleta junto ao time de transportes.\nReclassificar e tratar os casos pendentes de ativação/baixa (aproximadamente 469 casos identificados).\nRealizar reunião específica para definir o tratamento dos cancelamentos pós-expedição e critérios de controle operacional.",
       "detalhe": "A reunião teve foco na correção dos indicadores da Postal e na confiabilidade dos relatórios operacionais. Foram identificadas divergências nos números de improdutividade, ativação e auditoria de coleta, além da necessidade de estruturar melhor o controle de cancelamentos e devoluções. Também foi alinhado o acompanhamento do fluxo de reversa e a revisão dos critérios utilizados nos relatórios para refletir corretamente a operação."
@@ -3849,6 +3854,6 @@
   "fonte": {
     "arquivo": "LOG-076 - Desativação DTH.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-076%20-%20Desativa%C3%A7%C3%A3o%20DTH.xlsx?web=1",
-    "extraidoEm": "2026-11-26T09:37:26-03:00"
+    "extraidoEm": "2026-11-26T11:37:49-03:00"
   }
 }
