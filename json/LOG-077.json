@@ -1184,6 +1184,11 @@
   ],
   "historico": [
     {
+      "data": "2026-11-26",
+      "acoes": "Aprovação dos documentos",
+      "detalhe": "Recebido as informações solicitadas a Zello para dar andamento na POC, estamos esperando confirmação do time de segurança preditiva para dar sequência na abertura do Card solicitado pelo time jurídico para criação do NDA"
+    },
+    {
       "data": "2026-11-19",
       "acoes": "Responder as perguntas que foram solicitadas",
       "detalhe": "Falamos com o Giusepe do time de segurança preditiva e nos informou que não é possível seguir sem o NDA aprovado pelo jurídico por envolver dados do cliente\nTambém nos pediu algumas respostas para fornecer a ele sobre o tema abordado, o objetivo da POC e como iam ser tratados os dados, segue as perguntas que ele solicitou: \nObjetivo da POC/PILOTO\nPrazo para POC/PILOTO\nQuais soluçoes serão utilizadas\nO que a solução irá realizar\nHaverá algum integração com a Claro, como será feito?\nPossuir Contrato com fornecedor (avaliar com Juridico)\nNDA Assinado ( avaliar com Juridico)\nDocumentação técnica da Zello - uso de IA\nDesenho de arquitetura com o Fluxo da jornada do processo de logistica (desde a extração, compartilhamento e tratamento dos dados no destino final)"
@@ -1204,7 +1209,7 @@
       "detalhe": "Esse aplicativo do zello ele é por comando de voz,  a ideia do zello é trabalhar em paralelo junto com as entregas da bring (Modelo bring de estoque avançado dos chips, monitoramento das rotas)\nDiario de bordo por comando de voz\nQuestao operacional - precido de 5 pessoas para testar, o fornecedor (transportadora) falou que não tem problema\nO que precisa de informações? Que dia vai fazer,  qual o periodo, etc?\nQuestao contratual - NDA"
     }
   ],
-  "statusProjeto": "18/11/2026: Sugestão da Zello de usar caminhos alternativos para ínicio da POC - utilizar apenas o número da OS como rastreio para evitar o uso de dados sensíveis da Claro e/ou utilizar o transportador como intermediário para aprovação da POC\n06/11/2026: Solicitado abertura de Card e/ou avaliação da equipe de SIC/Privacidade para a POC\n04/11/26: Segunda a Paula do Jurídico, previsão de conclusão em 06/11. Processo sendo conduzido pelo Dr. Guilherme\n23/10/26: Encaminhado ao Jurídico da Claro para avaliar NDA\n20/10/26: Solicitado documento NDA\n19/10/26: Passado informação para criação do projeto",
+  "statusProjeto": "26/11/2026: Recebemos as informações da Zello para andamdento da POC, aguardando o time de segurança para seguir com a abertuda do Card\n19/11/2026: Solicitado informações adicionais pelo time de segurança preditiva para a continuidade da POC Zello\n18/11/2026: Sugestão da Zello de usar caminhos alternativos para ínicio da POC - utilizar apenas o número da OS como rastreio para evitar o uso de dados sensíveis da Claro e/ou utilizar o transportador como intermediário para aprovação da POC\n06/11/2026: Solicitado abertura de Card e/ou avaliação da equipe de SIC/Privacidade para a POC\n04/11/26: Segunda a Paula do Jurídico, previsão de conclusão em 06/11. Processo sendo conduzido pelo Dr. Guilherme\n23/10/26: Encaminhado ao Jurídico da Claro para avaliar NDA\n20/10/26: Solicitado documento NDA\n19/10/26: Passado informação para criação do projeto",
   "financeiro": [
     {
       "id": "LOG-077",
@@ -3803,6 +3808,6 @@
   "fonte": {
     "arquivo": "LOG-077 - POC Zello.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-077%20-%20POC%20Zello.xlsx?web=1",
-    "extraidoEm": "2026-11-26T13:37:46-03:00"
+    "extraidoEm": "2026-11-26T17:12:25-03:00"
   }
 }
