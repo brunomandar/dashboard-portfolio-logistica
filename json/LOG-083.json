@@ -421,6 +421,11 @@
       "data": "2026-11-24",
       "acoes": "Criada agenda de trabalho recorrente as terças e quintas",
       "detalhe": "Objetivo:\nEntendimento dos Fluxos\nAnálise de indicadores\nBase de clientes / Minicípios"
+    },
+    {
+      "data": "2026-05-27",
+      "acoes": "Criar apresentação para Edgar com:\n1. Fluxo As/IS\n2. Comparação de custo unitário\n3. Sobreposição da Malha\n4. Produtividade\n5.",
+      "detalhe": ""
     }
   ],
   "statusProjeto": "24/11/26 - Alinhamento Time Desconexão Claro e Desktop para entendimento de processos (As/Is)\n16/11/26 - Reunião de governança do Projeto Ruby (PMO/IMO): definidos fóruns semanais com lideranças a partir de 23/11. Apresentado o template de Business Case do PMO.\nPrazo do PMO: business cases das principais iniciativas até esta semana, plano de detalhamento da implementação na semana de 23/11. Transportes acompanha em paralelo para mapear impactos na operação.\n11/11/26 - Realizada agenda para elaboração dos cenários de transporte junto ao time McKinsey. Ficou pedente da Mckinsey enviar uma base dos fretes realizados dos últimos 3 meses para o opreação Desktop para o time de transportes Claro elaborarem uma simulação. Foco em entendermos as discrepancias de valores.\n10/11/26 - Visita do time Claro na Operação Desktop, Leandro e Ingrid representaram a área de transportes\n29/10/26 - Primeiro contato entre o time de logística transportes com a equip Desktop, colaboradores Thiago Morishita (Financeiro FP&A + Logística), Vinicius Jore Souza ( Ger. Loística e Frota) e o Mateus Henrique Stahanoy (torre de controle, Logística e frota) esses são os colaboradores Desktop que possuem sinergia com a nossa área",
@@ -3022,6 +3027,6 @@
   "fonte": {
     "arquivo": "LOG-083 - RUBY Absorção Operações Desktop.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-083%20-%20RUBY%20Absor%C3%A7%C3%A3o%20Opera%C3%A7%C3%B5es%20Desktop.xlsx?web=1",
-    "extraidoEm": "2026-11-27T14:50:10-03:00"
+    "extraidoEm": "2026-11-27T15:03:21-03:00"
   }
 }
