@@ -97,8 +97,8 @@
       "atividade": "CRIAÇÃO PO PAGAMENTO FORNECEDORES",
       "responsavel": "Logistica ( Clizia)",
       "status": 0,
-      "inicio": "2026-01-11",
-      "fim": "2026-01-13",
+      "inicio": "2027-01-11",
+      "fim": "2027-01-14",
       "anotacao": ""
     },
     {
@@ -747,26 +747,26 @@
       "atividade": "CRIAÇÃO PO PAGAMENTO FORNECEDORES",
       "responsavel": "Logistica ( Clizia)",
       "status": 0,
-      "inicio": "2026-01-11",
-      "fim": "2026-01-14",
+      "inicio": "2027-01-11",
+      "fim": "2027-01-14",
       "anotacao": ""
     },
     {
       "numero": "7.1",
-      "atividade": "Criação PO arquitetura de seguraça",
+      "atividade": "Criação PO arquitetura de segurança",
       "responsavel": "Logistica ( Clizia)",
       "status": 0,
-      "inicio": "2026-01-11",
-      "fim": "2026-01-12",
+      "inicio": "2027-01-11",
+      "fim": "2027-01-12",
       "anotacao": ""
     },
     {
       "numero": "7.2",
-      "atividade": "Criação PO serviço especializado de segurança pentester III",
+      "atividade": "Criação PO serviço especializado de segurança pentester  III",
       "responsavel": "Logistica ( Clizia)",
       "status": 0,
-      "inicio": "2026-01-13",
-      "fim": "2026-01-14",
+      "inicio": "2027-01-13",
+      "fim": "2027-01-14",
       "anotacao": ""
     },
     {
@@ -3895,6 +3895,6 @@
   "fonte": {
     "arquivo": "LOG-079 -TMS Criação do Segundo Fator de Autenticação.xlsx",
     "url": "https://corpclarobr.sharepoint.com/sites/USER-Transporte-TorrePerformanceeProjetos/Documentos%20Compartilhados/Sustenta%C3%A7%C3%A3o%20Transporte/_Suporte%20operacional%20e%20melhoria%20cont%C3%ADnua/_Portfolio/0_Portfolio_Log%C3%ADstica/LOG-079%20-TMS%20Cria%C3%A7%C3%A3o%20do%20Segundo%20Fator%20de%20Autentica%C3%A7%C3%A3o.xlsx?web=1",
-    "extraidoEm": "2026-11-27T09:02:50-03:00"
+    "extraidoEm": "2026-11-27T09:18:00-03:00"
   }
 }
